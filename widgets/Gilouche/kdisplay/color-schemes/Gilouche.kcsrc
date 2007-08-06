@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Gilouche
+activeBackground=106,143,193
+activeBlend=82,117,165
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=238,238,238
+background=251,248,241
+buttonBackground=255,250,237
+buttonForeground=16,16,16
+contrast=7
+foreground=0,0,0
+frame=82,117,165
+handle=82,117,165
+inactiveBackground=251,248,241
+inactiveBlend=251,248,241
+inactiveForeground=86,85,83
+inactiveFrame=251,248,241
+inactiveHandle=251,248,241
+inactiveTitleBtnBg=86,85,83
+linkColor=64,114,180
+selectBackground=90,129,180
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=142,121,176
+windowBackground=255,255,255
+windowForeground=16,16,16
