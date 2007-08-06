@@ -1,0 +1,329 @@
+/*
+		Novell Stylesheet
+		Copyright (c) 2004 Jakub Steiner, Benjamin Khan, Garrett Le Sage
+
+
+    KDE-wide default CSS for HTML documentation (all media types).
+    Copyright (C) 2000 Frederik Fouvry
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+    Send comments, suggestions, etc. to Frederik Fouvry 
+    <fouvry@sfs.nphil.uni-tuebingen.de>. */
+
+/*
+   Important note: these setting may be overridden by localised CSS.  Do not 
+   add here any localization-sensitive style declarations.
+
+   Any updates should be validated, e.g. http://jigsaw.w3.org/css-validator/ */
+
+/* Note: "should be inherit" means that in a proper browser inherit should work.
+         Somehow Netscape manages to interpret "inherit" as bright green. 
+         Yuck.  */
+
+body {
+	font-family: "Trebuchet MS", "Bitstream Vera Sans", Sans-Serif;
+	display: block;
+	background-color: #fff;
+	/* background: #fff url("bcg.png") top left repeat-y; */
+	font-size: 9pt;
+	margin: 0px;
+}
+
+/*
+a:link { color: #4d4466 !important; }
+a:visited { color: #2e3436 !important; }
+a:active { color: #e1d54b !important; }
+a:hover { color: #6484a4 !important; }
+*/
+	
+a:link { color: #3465a4 !important; }
+a:visited { color: #204a87 !important; }
+a:active { color: #729fcf !important; }
+a:hover { color: #82afdf !important; }
+
+
+/* the content frame - it changes, only affect the first one (comming after table) */
+div.book, table+div.chapter, table+div.sect1, div.article {
+	margin: 0pt 20pt 20pt 30px;
+	max-width: 600px;
+}
+
+/* header HACK */
+body table:first-child {
+	width: 100%;
+	background: #376d03 url("help-stripe.png") 0px 0px no-repeat;
+}
+
+img[src="help:/common/kde_logo.png"] {
+	display: none;
+}
+
+tr.header {
+	display: none;
+}
+
+tr#logo td:first-child {
+	width: 1px;
+}
+
+tr#logo h1 {
+	color: white;
+	padding: 4px;
+	margin-left: 30px;
+	margin-top: .3em;
+	text-align: left !important;
+}
+
+div {
+	display: block;
+}
+
+h1,h2 {
+	margin-top: 2em;
+	color: #6b6c69;
+	font-size: 13pt;
+	display: block;
+}
+
+h3,h4 {
+	color: #6b6c69;
+	font-size: 12pt;
+}
+
+p {
+	margin-bottom: 1em;
+	display: block;
+}
+
+div.table {
+	min-width: 400px;
+	display: block;
+}
+
+div.table div.label {
+	font-size: 10pt;
+	display: block;
+}
+
+table {
+	border-top: 1px dotted #888;
+	border-bottom: 1px dotted #888;
+	padding: 1em;
+	width: 400px;
+	padding: 4px;
+	border-collapse: collapse;
+	margin-bottom: 6pt;
+	display: table;
+}
+
+tr {
+	/* debug 
+	border: 2px solid blue;*/
+	display: table-row;
+}
+
+th {
+	text-align: left;
+	color: #f6f6f6;
+	background-color: #6b6c69;
+	padding: 8px 4px 4px 4px;
+	margin: 0px;
+	font-weight: bold;
+	letter-spacing: .2em;
+	display: table-cell;
+}
+
+td {
+	color: #111;
+	min-width: 30px;
+	padding: 4pt;
+	display: table-cell;
+}
+
+.example {
+	margin-bottom: 2em;
+	display: block;
+}
+
+.example pre {
+	/* -moz-border-radius: 6pt; */
+	padding: 20pt 20pt 20pt 70pt;
+	border-top: 1px dotted #808080;
+	border-bottom: 1px dotted #808080;
+	background: transparent url("example.png") 5pt 15pt no-repeat;
+	white-space: pre;
+	margin: 0px;
+	font-family: "Bitstream Vera Sans Mono", "Courier New", Monospace;
+	font-size: 9pt;
+	display: block;
+}
+
+.example .label {
+	margin-top: 2ex;
+	font-size: 9pt;
+	color: #2e3436;
+	display: block;
+}
+
+.figure {
+	margin: 40pt auto;
+	width: 280px;
+	display: block;
+}
+
+.figure p {
+	font-size: 9pt;
+	display: block;
+}
+
+.note {
+	border-top: 1px dotted #c9ccb9;
+	border-bottom: 1px dotted #c9ccb9;
+	padding: 10pt 20pt 10pt 70pt;
+	color: #888;
+	font-size: 9pt;
+	background: transparent url("note.png") 5pt 15pt no-repeat;
+	margin: 2em 0px 4em 0px;
+	letter-spacing: .2ex;
+	display: block;
+}
+
+.warning {
+	border-top: 2px dotted #000;
+	border-bottom: 2px dotted #000;
+	padding: 10pt 20pt 10pt 70pt;
+	color: black;
+	font-size: 9pt;
+	background: #f6f6f6 url("warning.png") 5pt 15pt no-repeat;
+	margin: 2em 0px 4em 0px;
+	letter-spacing: .2ex;
+	display: block;
+}
+
+.tip {
+	padding: 10pt 20pt 10pt 70pt;
+	letter-spacing: .2ex;
+	color: #888;
+	font-size: 9pt;
+	background: transparent url("tip.png") 5pt 15pt no-repeat;
+	margin: 2em 0px 2em 0px;
+	border-top: 1px dotted #aaa;
+	border-bottom: 1px dotted #aaa;
+	display: block;
+}
+
+.tip p {
+	margin: 0px 0px 2em 0px;
+	display: block;
+}
+
+
+table.header {
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	width: 200px;
+	height: 24px;
+	font-size: 10px;
+	border: 0px;
+}
+
+table.header td {
+	vertical-align: center !important;
+}
+
+td.navLeft {
+	text-align: left;
+}
+
+td.navLeft a {
+	color: #82afdf !important;
+	padding-left: 18px !important;
+	padding-bottom: 4px !important;
+	/* background: url('left-arrow-inactive.png') no-repeat top left; */
+	background: url('left-arrow.png') no-repeat top left;
+	opacity: 0.6;
+}
+
+td.navLeft a:hover {
+	color: white !important;
+	opacity: 1;
+}
+
+td.navCenter a {
+	color: #82afdf !important;
+	padding-left: 18px !important;
+	padding-bottom: 4px !important;
+/*	background: url('home-inactive.png') no-repeat top left; */
+	background: url('home.png') no-repeat top left;
+	opacity: 0.6;
+}
+
+td.navCenter a:hover {
+	color: white !important;
+	opacity: 1;
+}
+
+td.navRight a {
+	color: #82afdf !important;
+	padding-right: 18px !important;
+	padding-bottom: 4px !important;
+	/* background: url('right-arrow-inactive.png') no-repeat top right; */
+	background: url('right-arrow.png') no-repeat top right;
+	opacity: 0.6;
+}
+
+td.navRight a:hover {
+	color: white !important;
+	opacity: 1;
+}
+
+
+table.bottom-nav {
+	width: 100%;
+	margin: 40px 0px 0px 0px;
+	font-size: 10px;
+	border: 0px;
+	background-color: #d3d7cf;
+	padding: 8px !important;
+	border-collapse: collapse;
+	color: #aaa !important;
+}
+
+table.bottom-nav td {
+	padding: 10px;
+}
+
+table.bottom-nav td.navLeft a, table.bottom-nav td.navCenter a, table.bottom-nav td.navRight a  {
+	color: #2e3436 !important;
+}
+
+table.bottom-nav td.navLeft a:hover, table.bottom-nav td.navCenter a:hover, table.bottom-nav td.navRight a:hover  {
+	color: white !important;
+}
+
+table.bottom-nav tr + tr td.navCenter a:link {
+	color: #2e3436 !important;
+	padding-left: 18px !important;
+/*	background: url('up-arrow-inactive.png') no-repeat top left; */
+	background: url('up-arrow.png') no-repeat top left;
+	opacity: 0.6;
+}
+
+table.bottom-nav tr + tr td.navCenter a:hover {
+	color: white !important;
+	opacity: 1;
+}
