@@ -1,0 +1,79 @@
+body {
+	margin: 0px;
+	background: url(images/background.png) top left no-repeat;
+	font-family: DeJaVu, Sans-Serif;
+	font-size: 9pt;
+}
+
+a {
+	color: #4e9a06;
+}
+
+
+#header {
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+		#header img {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			display: none;
+		}
+
+#container {
+	background-image: url(images/transpwhite.png);
+	margin: 0px;
+	padding: 2em 4em 2em 2em;
+	min-height: 600px;
+}
+
+h2 {
+	font-size: 120%;
+	color: #888;
+}
+
+ul li {
+	display: block;
+	list-style-type: none;
+	padding-left: 8em;
+	min-height: 70px;
+	margin-bottom: 2em;
+}
+
+		li#opensuse {
+			background: url(images/geeko.png) top left no-repeat;
+		}
+
+		li#support {
+			background: url(images/community.png) top left no-repeat;
+		}
+
+		li#build {
+			background: url(images/build.png) top left no-repeat;
+		}
+
+		li#linux {
+			background: url(images/linux.png) top left no-repeat;
+		}
+
+
+#button {
+	width: 135px;
+	height: 40px;
+	background: transparent url(images/close.png) no-repeat 0px 0px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+
+		#button:focus { background-position: 0px -40px; }
+		#button:hover { background-position: 0px -40px; }
+		#button:active { background-position: 0px -80px; }
