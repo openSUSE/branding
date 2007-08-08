@@ -64,6 +64,7 @@ ul li {
 
 
 #button {
+	display: block;
 	width: 135px;
 	height: 40px;
 	background: transparent url(images/close.png) no-repeat 0px 0px;
