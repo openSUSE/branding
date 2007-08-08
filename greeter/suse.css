@@ -77,3 +77,10 @@ ul li {
 		#button:focus { background-position: 0px -40px; }
 		#button:hover { background-position: 0px -40px; }
 		#button:active { background-position: 0px -80px; }
+
+		#button i18n {
+			display: block;
+			color: white;
+			font-weight: bold;
+			padding: 10px 0px 0px 55px;
+		}

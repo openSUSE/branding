@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="64"
@@ -43,13 +44,25 @@
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:zoom="1"
-     inkscape:cx="90.66652"
-     inkscape:cy="-87.253925"
-     inkscape:window-x="288"
-     inkscape:window-y="45"
+     inkscape:cx="43.440975"
+     inkscape:cy="36.733705"
+     inkscape:window-x="428"
+     inkscape:window-y="79"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6123">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6125" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6127" />
+    </linearGradient>
     <marker
        id="ArrowEnd"
        viewBox="0 0 10 10"
@@ -90,18 +103,6 @@
     </filter>
     <filter
        inkscape:collect="always"
-       id="filter7921"
-       x="-0.10179686"
-       width="1.2035937"
-       y="-0.15904257"
-       height="1.3180851">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.3906116"
-         id="feGaussianBlur7923" />
-    </filter>
-    <filter
-       inkscape:collect="always"
        id="filter7963"
        x="-0.13694581"
        width="1.2738916"
@@ -112,6 +113,271 @@
          stdDeviation="2.3206479"
          id="feGaussianBlur7965" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter6119"
+       x="-0.035968923"
+       width="1.0719378"
+       y="-0.1183681"
+       height="1.2367362">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0067419"
+         id="feGaussianBlur6121" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6129"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6131"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6133"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6135"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6137"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6139"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6141"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6143"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6145"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6147"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6149"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6151"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6153"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6155"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6157"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6159"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6161"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6163"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6165"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6167"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6169"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6171"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6123"
+       id="radialGradient6173"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3006484,-0.4394095,9.7259818e-2,0.2878882,-62.079693,148.62023)"
+       cx="160.35916"
+       cy="142.58676"
+       fx="160.35916"
+       fy="142.58676"
+       r="33.587059" />
   </defs>
   <path
      style="opacity:0.51204816;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter7060);enable-background:accumulate"
@@ -3041,556 +3307,596 @@
   </g>
   <g
      id="g1584"
-     transform="matrix(0.1609245,0,0,0.1609245,4.798595,2.000004)">
+     transform="matrix(0.1609245,0,0,0.1609245,5.048595,2.750004)"
+     style="opacity:0.41566264;fill:url(#radialGradient6129);fill-opacity:1;filter:url(#filter6119)">
     <g
-       id="g1586">
+       id="g1586"
+       style="fill:url(#radialGradient6173);fill-opacity:1">
       <path
-         style="fill:#ffcc00;stroke:none"
+         style="fill:url(#radialGradient6131);fill-opacity:1;stroke:none"
          d="M 137.79,109.277 C 139.767,110.643 139.821,110.884 142.738,112.791 C 147.378,116.559 155.623,117.407 159.66,117.541 C 168.893,119.008 185.398,110.38 191.933,106.43 C 195.224,103.967 201.313,98.8795 203.593,98.7935 C 204.998,100.279 202.932,100.585 200.006,102.569 C 196.099,105.348 192.756,107.725 186.834,111.084 C 180.496,114.4 170.756,119.878 158.286,119.138 C 151.744,118.179 151.719,118.114 147.679,116.052 C 145.279,114.319 139.778,111.443 137.79,109.277 z"
          id="path1588" />
       <g
-         id="g1590">
+         id="g1590"
+         style="fill:url(#radialGradient6171);fill-opacity:1">
         <defs
-           id="defs1592">
+           id="defs1592"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="1"
              x1="137.742"
              y1="108.994"
              x2="203.998"
              y2="108.994"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#fac700"
+               style="stop-color:#fac700;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1595" />
             <stop
                offset="0.415"
-               style="stop-color:#f7c400"
+               style="stop-color:#f7c400;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1597" />
             <stop
                offset="1"
-               style="stop-color:#f7c400"
+               style="stop-color:#f7c400;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1599" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#1);stroke:none"
+           style="fill:url(#radialGradient6133);fill-opacity:1;stroke:none"
            d="M 137.742,109.259 C 139.668,110.533 139.907,110.902 142.825,112.813 C 147.441,116.547 155.541,117.429 159.621,117.576 C 168.986,119.028 185.671,110.282 191.977,106.417 C 195.335,103.911 201.321,98.9195 203.572,98.8134 C 204.937,100.285 202.844,100.581 199.884,102.628 C 195.995,105.381 192.764,107.693 186.912,111.011 C 180.622,114.302 170.834,119.806 158.376,119.115 C 151.815,118.17 151.525,118.045 147.618,116.036 C 145.15,114.28 139.742,111.448 137.742,109.259 z"
            id="path1601" />
         <defs
-           id="defs1603">
+           id="defs1603"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="2"
              x1="137.69299"
              y1="108.988"
              x2="203.953"
              y2="108.988"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#f6c200"
+               style="stop-color:#f6c200;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1606" />
             <stop
                offset="0.415"
-               style="stop-color:#efbc00"
+               style="stop-color:#efbc00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1608" />
             <stop
                offset="1"
-               style="stop-color:#efbc00"
+               style="stop-color:#efbc00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1610" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#2);stroke:none"
+           style="fill:url(#radialGradient6135);fill-opacity:1;stroke:none"
            d="M 137.693,109.24 C 139.569,110.423 139.993,110.92 142.911,112.835 C 147.504,116.535 155.459,117.451 159.581,117.611 C 169.079,119.048 185.945,110.183 192.021,106.404 C 195.446,103.854 201.329,98.9595 203.55,98.8333 C 204.876,100.29 202.755,100.576 199.761,102.688 C 195.891,105.413 192.771,107.661 186.991,110.938 C 180.748,114.204 170.913,119.734 158.466,119.092 C 151.886,118.161 151.332,117.975 147.557,116.019 C 145.021,114.24 139.705,111.452 137.693,109.24 z"
            id="path1612" />
         <defs
-           id="defs1614">
+           id="defs1614"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="3"
              x1="137.645"
              y1="108.983"
              x2="203.909"
              y2="108.983"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#f1bd00"
+               style="stop-color:#f1bd00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1617" />
             <stop
                offset="0.415"
-               style="stop-color:#e8b500"
+               style="stop-color:#e8b500;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1619" />
             <stop
                offset="1"
-               style="stop-color:#e8b500"
+               style="stop-color:#e8b500;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1621" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#3);stroke:none"
+           style="fill:url(#radialGradient6137);fill-opacity:1;stroke:none"
            d="M 137.645,109.222 C 139.47,110.313 140.079,110.937 142.997,112.857 C 147.566,116.522 155.377,117.472 159.541,117.646 C 169.172,119.068 186.218,110.084 192.065,106.391 C 195.556,103.797 201.337,98.9995 203.528,98.8532 C 204.815,100.295 202.667,100.571 199.639,102.746 C 195.787,105.445 192.779,107.628 187.069,110.865 C 180.874,114.106 170.991,119.662 158.556,119.068 C 151.957,118.152 151.138,117.905 147.496,116.002 C 144.892,114.201 139.669,111.456 137.645,109.222 z"
            id="path1623" />
         <defs
-           id="defs1625">
+           id="defs1625"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="4"
              x1="137.59599"
              y1="108.978"
              x2="203.86501"
              y2="108.978"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#edb800"
+               style="stop-color:#edb800;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1628" />
             <stop
                offset="0.415"
-               style="stop-color:#e0ad00"
+               style="stop-color:#e0ad00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1630" />
             <stop
                offset="1"
-               style="stop-color:#e0ad00"
+               style="stop-color:#e0ad00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1632" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#4);stroke:none"
+           style="fill:url(#radialGradient6139);fill-opacity:1;stroke:none"
            d="M 137.596,109.203 C 139.371,110.203 140.165,110.955 143.084,112.879 C 147.629,116.51 155.295,117.494 159.502,117.68 C 169.265,119.088 186.491,109.985 192.11,106.378 C 195.667,103.741 201.346,99.0395 203.507,98.8731 C 204.754,100.3 202.579,100.566 199.516,102.805 C 195.683,105.477 192.787,107.596 187.147,110.791 C 180.999,114.008 171.069,119.59 158.646,119.045 C 152.027,118.143 150.944,117.835 147.436,115.986 C 144.763,114.161 139.632,111.461 137.596,109.203 z"
            id="path1634" />
         <defs
-           id="defs1636">
+           id="defs1636"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="5"
              x1="137.548"
              y1="108.973"
              x2="203.82201"
              y2="108.973"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#e9b300"
+               style="stop-color:#e9b300;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1639" />
             <stop
                offset="0.415"
-               style="stop-color:#d8a500"
+               style="stop-color:#d8a500;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1641" />
             <stop
                offset="1"
-               style="stop-color:#d8a500"
+               style="stop-color:#d8a500;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1643" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#5);stroke:none"
+           style="fill:url(#radialGradient6141);fill-opacity:1;stroke:none"
            d="M 137.548,109.184 C 139.271,110.093 140.251,110.972 143.17,112.901 C 147.692,116.498 155.213,117.516 159.462,117.715 C 169.358,119.108 186.764,109.886 192.154,106.365 C 195.778,103.684 201.354,99.0795 203.485,98.893 C 204.693,100.305 202.49,100.561 199.393,102.865 C 195.579,105.509 192.794,107.563 187.225,110.718 C 181.125,113.91 171.148,119.518 158.736,119.021 C 152.098,118.134 150.75,117.765 147.375,115.969 C 144.634,114.121 139.596,111.465 137.548,109.184 z"
            id="path1645" />
         <defs
-           id="defs1647">
+           id="defs1647"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="6"
              x1="137.49899"
              y1="108.968"
              x2="203.77901"
              y2="108.968"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#e4ae00"
+               style="stop-color:#e4ae00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1650" />
             <stop
                offset="0.415"
-               style="stop-color:#d19e00"
+               style="stop-color:#d19e00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1652" />
             <stop
                offset="1"
-               style="stop-color:#d19e00"
+               style="stop-color:#d19e00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1654" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#6);stroke:none"
+           style="fill:url(#radialGradient6143);fill-opacity:1;stroke:none"
            d="M 137.499,109.166 C 139.172,109.983 140.337,110.99 143.256,112.923 C 147.755,116.485 155.131,117.537 159.422,117.75 C 169.451,119.128 187.037,109.787 192.198,106.352 C 195.889,103.627 201.362,99.1195 203.463,98.9129 C 204.632,100.31 202.402,100.557 199.271,102.923 C 195.475,105.541 192.802,107.531 187.303,110.645 C 181.251,113.812 171.226,119.446 158.826,118.998 C 152.169,118.125 150.556,117.695 147.314,115.952 C 144.505,114.082 139.559,111.469 137.499,109.166 z"
            id="path1656" />
         <defs
-           id="defs1658">
+           id="defs1658"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="7"
              x1="137.451"
              y1="108.964"
              x2="203.737"
              y2="108.964"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#e0a900"
+               style="stop-color:#e0a900;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1661" />
             <stop
                offset="0.415"
-               style="stop-color:#c99600"
+               style="stop-color:#c99600;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1663" />
             <stop
                offset="1"
-               style="stop-color:#c99600"
+               style="stop-color:#c99600;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1665" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#7);stroke:none"
+           style="fill:url(#radialGradient6145);fill-opacity:1;stroke:none"
            d="M 137.451,109.147 C 139.073,109.873 140.423,111.007 143.343,112.945 C 147.817,116.473 155.048,117.559 159.383,117.785 C 169.544,119.147 187.311,109.688 192.242,106.338 C 195.999,103.571 201.37,99.1595 203.442,98.9328 C 204.572,100.315 202.314,100.552 199.148,102.982 C 195.371,105.574 192.809,107.499 187.382,110.571 C 181.377,113.714 171.304,119.374 158.916,118.975 C 152.24,118.116 150.363,117.625 147.253,115.936 C 144.376,114.042 139.523,111.474 137.451,109.147 z"
            id="path1667" />
         <defs
-           id="defs1669">
+           id="defs1669"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="8"
              x1="137.403"
              y1="108.96"
              x2="203.696"
              y2="108.96"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#dca400"
+               style="stop-color:#dca400;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1672" />
             <stop
                offset="0.415"
-               style="stop-color:#c18e00"
+               style="stop-color:#c18e00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1674" />
             <stop
                offset="1"
-               style="stop-color:#c18e00"
+               style="stop-color:#c18e00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1676" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#8);stroke:none"
+           style="fill:url(#radialGradient6147);fill-opacity:1;stroke:none"
            d="M 137.403,109.129 C 138.974,109.763 140.509,111.025 143.429,112.967 C 147.88,116.461 154.966,117.581 159.343,117.819 C 169.637,119.167 187.584,109.589 192.286,106.325 C 196.11,103.514 201.378,99.1995 203.42,98.9527 C 204.511,100.32 202.225,100.547 199.026,103.041 C 195.267,105.606 192.817,107.466 187.46,110.498 C 181.503,113.616 171.383,119.302 159.006,118.951 C 152.311,118.107 150.169,117.555 147.192,115.919 C 144.247,114.002 139.486,111.478 137.403,109.129 z"
            id="path1678" />
         <defs
-           id="defs1680">
+           id="defs1680"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="9"
              x1="137.354"
              y1="108.956"
              x2="203.655"
              y2="108.956"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#d79f00"
+               style="stop-color:#d79f00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1683" />
             <stop
                offset="0.415"
-               style="stop-color:#ba8700"
+               style="stop-color:#ba8700;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1685" />
             <stop
                offset="1"
-               style="stop-color:#ba8700"
+               style="stop-color:#ba8700;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1687" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#9);stroke:none"
+           style="fill:url(#radialGradient6149);fill-opacity:1;stroke:none"
            d="M 137.354,109.11 C 138.875,109.653 140.595,111.042 143.515,112.989 C 147.943,116.448 154.884,117.602 159.303,117.854 C 169.73,119.187 187.857,109.49 192.33,106.312 C 196.221,103.457 201.386,99.2395 203.398,98.9726 C 204.45,100.325 202.137,100.542 198.903,103.1 C 195.163,105.638 192.825,107.434 187.538,110.425 C 181.628,113.518 171.461,119.23 159.096,118.928 C 152.381,118.098 149.975,117.485 147.131,115.902 C 144.118,113.963 139.45,111.482 137.354,109.11 z"
            id="path1689" />
         <defs
-           id="defs1691">
+           id="defs1691"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="10"
              x1="137.306"
              y1="108.953"
              x2="203.61501"
              y2="108.953"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#d39b00"
+               style="stop-color:#d39b00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1694" />
             <stop
                offset="0.415"
-               style="stop-color:#b27f00"
+               style="stop-color:#b27f00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1696" />
             <stop
                offset="1"
-               style="stop-color:#b27f00"
+               style="stop-color:#b27f00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1698" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#10);stroke:none"
+           style="fill:url(#radialGradient6151);fill-opacity:1;stroke:none"
            d="M 137.306,109.091 C 138.776,109.542 140.681,111.06 143.602,113.01 C 148.006,116.436 154.802,117.624 159.264,117.889 C 169.823,119.207 188.13,109.391 192.374,106.299 C 196.332,103.4 201.394,99.2795 203.377,98.9925 C 204.389,100.33 202.049,100.537 198.781,103.159 C 195.059,105.67 192.832,107.401 187.616,110.351 C 181.754,113.419 171.539,119.158 159.186,118.904 C 152.452,118.088 149.781,117.415 147.07,115.885 C 143.989,113.923 139.413,111.486 137.306,109.091 z"
            id="path1700" />
         <defs
-           id="defs1702">
+           id="defs1702"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="11"
              x1="137.257"
              y1="108.949"
              x2="203.576"
              y2="108.949"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#cf9600"
+               style="stop-color:#cf9600;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1705" />
             <stop
                offset="0.415"
-               style="stop-color:#aa7700"
+               style="stop-color:#aa7700;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1707" />
             <stop
                offset="1"
-               style="stop-color:#aa7700"
+               style="stop-color:#aa7700;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1709" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#11);stroke:none"
+           style="fill:url(#radialGradient6153);fill-opacity:1;stroke:none"
            d="M 137.257,109.073 C 138.677,109.432 140.767,111.078 143.688,113.032 C 148.068,116.424 154.72,117.646 159.224,117.924 C 169.916,119.227 188.403,109.293 192.418,106.286 C 196.442,103.344 201.402,99.3195 203.355,99.0124 C 204.328,100.335 201.96,100.533 198.658,103.218 C 194.955,105.702 192.84,107.369 187.694,110.278 C 181.88,113.321 171.617,119.086 159.276,118.881 C 152.523,118.079 149.587,117.346 147.009,115.869 C 143.86,113.883 139.377,111.491 137.257,109.073 z"
            id="path1711" />
         <defs
-           id="defs1713">
+           id="defs1713"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="12"
              x1="137.209"
              y1="108.947"
              x2="203.537"
              y2="108.947"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#ca9100"
+               style="stop-color:#ca9100;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1716" />
             <stop
                offset="0.415"
-               style="stop-color:#a37000"
+               style="stop-color:#a37000;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1718" />
             <stop
                offset="1"
-               style="stop-color:#a37000"
+               style="stop-color:#a37000;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1720" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#12);stroke:none"
+           style="fill:url(#radialGradient6155);fill-opacity:1;stroke:none"
            d="M 137.209,109.054 C 138.577,109.322 140.853,111.095 143.774,113.054 C 148.131,116.411 154.638,117.667 159.184,117.958 C 170.009,119.247 188.677,109.194 192.462,106.273 C 196.553,103.287 201.41,99.3595 203.333,99.0323 C 204.267,100.34 201.872,100.528 198.536,103.277 C 194.851,105.734 192.847,107.337 187.773,110.205 C 182.006,113.223 171.696,119.014 159.366,118.858 C 152.594,118.07 149.394,117.276 146.948,115.852 C 143.731,113.844 139.34,111.495 137.209,109.054 z"
            id="path1722" />
         <defs
-           id="defs1724">
+           id="defs1724"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="13"
              x1="137.16"
              y1="108.944"
              x2="203.49899"
              y2="108.944"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#c68c00"
+               style="stop-color:#c68c00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1727" />
             <stop
                offset="0.415"
-               style="stop-color:#9b6800"
+               style="stop-color:#9b6800;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1729" />
             <stop
                offset="1"
-               style="stop-color:#9b6800"
+               style="stop-color:#9b6800;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1731" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#13);stroke:none"
+           style="fill:url(#radialGradient6157);fill-opacity:1;stroke:none"
            d="M 137.16,109.036 C 138.478,109.212 140.939,111.113 143.861,113.076 C 148.194,116.399 154.556,117.689 159.145,117.993 C 170.102,119.267 188.95,109.095 192.506,106.26 C 196.664,103.23 201.418,99.3995 203.312,99.0522 C 204.206,100.345 201.784,100.523 198.413,103.336 C 194.747,105.766 192.855,107.304 187.851,110.132 C 182.132,113.125 171.774,118.942 159.456,118.834 C 152.665,118.061 149.2,117.206 146.887,115.835 C 143.602,113.804 139.304,111.499 137.16,109.036 z"
            id="path1733" />
         <defs
-           id="defs1735">
+           id="defs1735"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="14"
              x1="137.112"
              y1="108.942"
              x2="203.461"
              y2="108.942"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#c28700"
+               style="stop-color:#c28700;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1738" />
             <stop
                offset="0.415"
-               style="stop-color:#936000"
+               style="stop-color:#936000;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1740" />
             <stop
                offset="1"
-               style="stop-color:#936000"
+               style="stop-color:#936000;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1742" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#14);stroke:none"
+           style="fill:url(#radialGradient6159);fill-opacity:1;stroke:none"
            d="M 137.112,109.017 C 138.379,109.102 141.024,111.13 143.947,113.098 C 148.257,116.387 154.474,117.711 159.105,118.028 C 170.195,119.286 189.223,108.996 192.551,106.246 C 196.775,103.174 201.427,99.4395 203.29,99.0721 C 204.145,100.35 201.695,100.518 198.29,103.395 C 194.642,105.799 192.863,107.272 187.929,110.058 C 182.257,113.027 171.852,118.87 159.546,118.811 C 152.735,118.052 149.006,117.136 146.827,115.819 C 143.473,113.764 139.267,111.504 137.112,109.017 z"
            id="path1744" />
         <defs
-           id="defs1746">
+           id="defs1746"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="15"
              x1="137.063"
              y1="108.94"
              x2="203.425"
              y2="108.94"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#bd8200"
+               style="stop-color:#bd8200;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1749" />
             <stop
                offset="0.415"
-               style="stop-color:#8c5900"
+               style="stop-color:#8c5900;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1751" />
             <stop
                offset="1"
-               style="stop-color:#8c5900"
+               style="stop-color:#8c5900;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1753" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#15);stroke:none"
+           style="fill:url(#radialGradient6161);fill-opacity:1;stroke:none"
            d="M 137.063,108.998 C 138.28,108.992 141.11,111.148 144.033,113.12 C 148.319,116.374 154.392,117.732 159.065,118.063 C 170.288,119.306 189.496,108.897 192.595,106.233 C 196.885,103.117 201.435,99.4795 203.268,99.092 C 204.084,100.355 201.607,100.513 198.168,103.454 C 194.538,105.831 192.87,107.239 188.007,109.985 C 182.383,112.929 171.931,118.798 159.636,118.787 C 152.806,118.043 148.812,117.066 146.766,115.802 C 143.344,113.725 139.231,111.508 137.063,108.998 z"
            id="path1755" />
         <defs
-           id="defs1757">
+           id="defs1757"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="16"
              x1="137.015"
              y1="108.938"
              x2="203.38901"
              y2="108.938"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#b97d00"
+               style="stop-color:#b97d00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1760" />
             <stop
                offset="0.415"
-               style="stop-color:#845100"
+               style="stop-color:#845100;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1762" />
             <stop
                offset="1"
-               style="stop-color:#845100"
+               style="stop-color:#845100;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1764" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#16);stroke:none"
+           style="fill:url(#radialGradient6163);fill-opacity:1;stroke:none"
            d="M 137.015,108.98 C 138.181,108.882 141.196,111.165 144.12,113.142 C 148.382,116.362 154.31,117.754 159.026,118.097 C 170.381,119.326 189.769,108.798 192.639,106.22 C 196.996,103.06 201.443,99.5195 203.247,99.1119 C 204.023,100.36 201.519,100.509 198.045,103.513 C 194.434,105.863 192.878,107.207 188.085,109.912 C 182.509,112.831 172.009,118.726 159.726,118.764 C 152.877,118.034 148.618,116.996 146.705,115.785 C 143.215,113.685 139.194,111.512 137.015,108.98 z"
            id="path1766" />
         <defs
-           id="defs1768">
+           id="defs1768"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="17"
              x1="136.967"
              y1="108.936"
              x2="203.353"
              y2="108.936"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#b57800"
+               style="stop-color:#b57800;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1771" />
             <stop
                offset="0.415"
-               style="stop-color:#7c4900"
+               style="stop-color:#7c4900;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1773" />
             <stop
                offset="1"
-               style="stop-color:#7c4900"
+               style="stop-color:#7c4900;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1775" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#17);stroke:none"
+           style="fill:url(#radialGradient6165);fill-opacity:1;stroke:none"
            d="M 136.967,108.961 C 138.082,108.772 141.282,111.183 144.206,113.164 C 148.445,116.35 154.227,117.776 158.986,118.132 C 170.474,119.346 190.043,108.699 192.683,106.207 C 197.107,103.004 201.451,99.5595 203.225,99.1318 C 203.962,100.365 201.43,100.504 197.923,103.572 C 194.33,105.895 192.885,107.175 188.164,109.838 C 182.635,112.733 172.087,118.654 159.816,118.741 C 152.948,118.025 148.425,116.926 146.644,115.769 C 143.086,113.645 139.158,111.517 136.967,108.961 z"
            id="path1777" />
         <defs
-           id="defs1779">
+           id="defs1779"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="18"
              x1="136.918"
              y1="108.934"
              x2="203.319"
              y2="108.934"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#b07300"
+               style="stop-color:#b07300;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1782" />
             <stop
                offset="0.415"
-               style="stop-color:#754200"
+               style="stop-color:#754200;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1784" />
             <stop
                offset="1"
-               style="stop-color:#754200"
+               style="stop-color:#754200;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1786" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#18);stroke:none"
+           style="fill:url(#radialGradient6167);fill-opacity:1;stroke:none"
            d="M 136.918,108.943 C 137.982,108.662 141.368,111.2 144.292,113.186 C 148.508,116.337 154.145,117.797 158.946,118.167 C 170.567,119.366 190.316,108.6 192.727,106.194 C 197.218,102.947 201.459,99.5995 203.203,99.1517 C 203.901,100.37 201.342,100.499 197.8,103.631 C 194.226,105.927 192.893,107.142 188.242,109.765 C 182.761,112.635 172.166,118.582 159.906,118.717 C 153.019,118.016 148.231,116.856 146.583,115.752 C 142.957,113.606 139.121,111.521 136.918,108.943 z"
            id="path1788" />
         <defs
-           id="defs1790">
+           id="defs1790"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <linearGradient
              id="19"
              x1="136.87"
              y1="108.933"
              x2="203.284"
              y2="108.933"
-             gradientUnits="userSpaceOnUse">
+             gradientUnits="userSpaceOnUse"
+             style="fill:url(#radialGradient6129);fill-opacity:1">
             <stop
                offset="0"
-               style="stop-color:#ac6e00"
+               style="stop-color:#ac6e00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1793" />
             <stop
                offset="0.415"
-               style="stop-color:#6d3a00"
+               style="stop-color:#6d3a00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1795" />
             <stop
                offset="1"
-               style="stop-color:#6d3a00"
+               style="stop-color:#6d3a00;fill-opacity:1;fill:url(#radialGradient6129)"
                id="stop1797" />
           </linearGradient>
         </defs>
         <path
-           style="fill:url(#19);stroke:none"
+           style="fill:url(#radialGradient6169);fill-opacity:1;stroke:none"
            d="M 136.87,108.924 C 137.883,108.552 141.454,111.218 144.379,113.208 C 148.57,116.325 154.063,117.819 158.907,118.202 C 170.66,119.386 190.589,108.501 192.771,106.181 C 197.328,102.89 201.467,99.6395 203.182,99.1716 C 203.84,100.375 201.254,100.494 197.678,103.69 C 194.122,105.959 192.901,107.11 188.32,109.692 C 182.886,112.537 172.244,118.51 159.996,118.694 C 153.089,118.007 148.037,116.786 146.522,115.735 C 142.828,113.566 139.085,111.525 136.87,108.924 z"
            id="path1799" />
       </g>
       <defs
-         id="defs1801">
+         id="defs1801"
+         style="fill:url(#radialGradient6129);fill-opacity:1">
         <linearGradient
            id="20"
            x1="136.821"
            y1="108.931"
            x2="203.25101"
            y2="108.931"
-           gradientUnits="userSpaceOnUse">
+           gradientUnits="userSpaceOnUse"
+           gradientTransform="translate(0,2.3302854)"
+           style="fill:url(#radialGradient6129);fill-opacity:1">
           <stop
              offset="0"
-             style="stop-color:#a86a00"
+             style="stop-color:#a86a00;fill-opacity:1;fill:url(#radialGradient6129)"
              id="stop1804" />
           <stop
              offset="0.415"
-             style="stop-color:#663200"
+             style="stop-color:#663200;fill-opacity:1;fill:url(#radialGradient6129)"
              id="stop1806" />
           <stop
              offset="1"
-             style="stop-color:#663200"
+             style="stop-color:#663200;fill-opacity:1;fill:url(#radialGradient6129)"
              id="stop1808" />
         </linearGradient>
       </defs>
-      <path
-         style="fill:url(#20);stroke:none"
-         d="M 136.821,108.905 C 137.784,108.441 141.54,111.235 144.465,113.229 C 148.633,116.312 153.981,117.84 158.867,118.236 C 170.753,119.405 190.862,108.402 192.815,106.167 C 197.439,102.833 201.475,99.6795 203.16,99.1915 C 203.779,100.38 201.165,100.489 197.555,103.749 C 194.018,105.991 192.908,107.077 188.398,109.618 C 183.012,112.438 172.322,118.438 160.086,118.67 C 153.16,117.997 147.843,116.716 146.461,115.718 C 142.699,113.526 139.048,111.529 136.821,108.905 z"
-         id="path1810" />
     </g>
   </g>
   <path
