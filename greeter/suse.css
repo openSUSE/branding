@@ -44,23 +44,16 @@ ul li {
 	padding-left: 8em;
 	min-height: 70px;
 	margin-bottom: 2em;
+    background-repeat: no-repeat;
 }
 
-		li#opensuse {
-			background: url(images/geeko.png) top left no-repeat;
-		}
+		li#opensuse { background-image: url(images/geeko.png); }
 
-		li#support {
-			background: url(images/community.png) top left no-repeat;
-		}
+		li#support { background-image: url(images/community.png); }
 
-		li#build {
-			background: url(images/build-lihm.png) top left no-repeat;
-		}
+		li#build { background-image: url(images/build-lihm.png); }
 
-		li#linux {
-			background: url(images/linux.png) top left no-repeat;
-		}
+		li#linux { background-image: url(images/linux.png); }
 
 
 #button {
