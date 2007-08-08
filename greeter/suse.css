@@ -82,13 +82,8 @@ ul li {
 		#button div {
 			text-align: center;
 			margin: 0px;
-			padding: 0px 0px 0px 8px;
+			padding: 10px 0px 0px 8px;
 			width: 100%;
 			color: white;
 			font-weight: bold;
-		}
-
-		#button i18n {
-			display: block;
-			margin-top: 10px;
 		}
