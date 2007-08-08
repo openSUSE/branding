@@ -35,7 +35,8 @@ a {
 
 h2 {
 	font-size: 120%;
-	color: #888;
+	color: #444;
+	margin-bottom: .4em;
 }
 
 ul li {
@@ -55,7 +56,7 @@ ul li {
 		}
 
 		li#build {
-			background: url(images/build.png) top left no-repeat;
+			background: url(images/build-lihm.png) top left no-repeat;
 		}
 
 		li#linux {
@@ -83,11 +84,11 @@ ul li {
 			margin: 0px;
 			padding: 0px 0px 0px 8px;
 			width: 100%;
+			color: white;
+			font-weight: bold;
 		}
 
 		#button i18n {
 			display: block;
-			color: white;
-			font-weight: bold;
 			margin-top: 10px;
 		}

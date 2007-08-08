@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#header img").fadeIn(2000);
+	$("#header img").fadeIn("slow");
 	//setTimeout("$(\"#button\").fadeIn(1000)", 2000);
 	$("#button").click(function() {
 		console.log("clicked");
