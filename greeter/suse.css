@@ -77,10 +77,17 @@ ul li {
 		#button:focus { background-position: 0px -40px; }
 		#button:hover { background-position: 0px -40px; }
 		#button:active { background-position: 0px -80px; }
+		
+		#button div {
+			text-align: center;
+			margin: 0px;
+			padding: 0px 0px 0px 8px;
+			width: 100%;
+		}
 
 		#button i18n {
 			display: block;
 			color: white;
 			font-weight: bold;
-			padding: 10px 0px 0px 55px;
+			margin-top: 10px;
 		}
