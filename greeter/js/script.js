@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	$("#header img").fadeIn("slow");
-	//setTimeout("$(\"#button\").fadeIn(1000)", 2000);
+	$("#header img").hide().fadeIn(3000);
+	$("#button").hide();
+	setTimeout("$(\"#button\").fadeIn(1000)", 2000);
 	$("#button").click(function() {
-		console.log("clicked");
 		self.close();
 	});
 });
