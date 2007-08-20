@@ -228,10 +228,12 @@ style "theme-shell-highlight" = "theme-default"
 }
 
 style "theme-shell-yast2-control-center-gnome" = "theme-shell" {
-    bg[NORMAL] = shade (0.2, @bg_color)      # Left side bg color
+    bg[NORMAL]   = "#dfe0de"    # Left side bg color
+
 }
 style "theme-shell-yast2-control-center-gnome-headings" = "theme-default" {
-    bg[SELECTED] = shade (0.4, @bg_color)      # Left side text color
+    bg[SELECTED] = "#626460"    # Left side header text color
+    fg[NORMAL]   = "#000000"    # Left side action text color
 }
 
 #nautilus search stripe and other specialties
