@@ -110,7 +110,7 @@ style "theme-tree" = "theme-default"
 
 style "theme-frame-title" = "theme-default"
 {
-    fg[NORMAL] = "#f00" #buttun frames
+    fg[NORMAL] = "#f00" #button frames
 }
 
 style "theme-tooltips" = "theme-default"
