@@ -52,6 +52,12 @@ style "theme-default"
 		text[INSENSITIVE] = darker (@bg_color) # "#b5b3ac" # dark beige
 
 	  engine "clearlooks"  {
+      # Avoid the Cimi-bulkiness
+      style               = CLASSIC # classic tabs
+      toolbarstyle        = 0       # flat toolbars
+      animation           = TRUE    # animated progressbars
+      menubarstyle        = 0       # flat menus
+      colorize_scrollbar  = FALSE   # no colored slider
 		}
 }
 
