@@ -27,38 +27,38 @@ style "theme-default"
     xthickness = 2
     ythickness = 2
 
-		fg[NORMAL]        = @fg_color #"#000000" # black
-		fg[PRELIGHT]      = @fg_color #"#000000" # black
-		fg[SELECTED]      = @selected_fg_color #"#ffffff" # white 
-		fg[ACTIVE]        = @fg_color #"#000000" # black
-		fg[INSENSITIVE]   = darker (@bg_color) #"#b5b3ac" # dark beige
+    fg[NORMAL]        = @fg_color #"#000000" # black
+    fg[PRELIGHT]      = @fg_color #"#000000" # black
+    fg[SELECTED]      = @selected_fg_color #"#ffffff" # white 
+    fg[ACTIVE]        = @fg_color #"#000000" # black
+    fg[INSENSITIVE]   = darker (@bg_color) #"#b5b3ac" # dark beige
 
-		bg[NORMAL]        = @bg_color # "#ede9e3"
-		bg[PRELIGHT]      = shade (1.02, @bg_color) #"#f9f7f3" # very light beige
-		bg[SELECTED]	    = @selected_bg_color # "#5598d7" # deepsky
-		bg[INSENSITIVE]   = @bg_color # "#efebe5" # beige
-		bg[ACTIVE]        = shade (0.9, @bg_color) #"#dcd4c9" #"#d7d3ca" # dark beige
+    bg[NORMAL]        = @bg_color # "#ede9e3"
+    bg[PRELIGHT]      = shade (1.02, @bg_color) #"#f9f7f3" # very light beige
+    bg[SELECTED]      = @selected_bg_color # "#5598d7" # deepsky
+    bg[INSENSITIVE]   = @bg_color # "#efebe5" # beige
+    bg[ACTIVE]        = shade (0.9, @bg_color) #"#dcd4c9" #"#d7d3ca" # dark beige
 
-		base[NORMAL]      = @base_color # "#ffffff" # white 
-		base[PRELIGHT]    = shade (0.95, @bg_color) # "#5f8ec4" # dark beige
-		base[ACTIVE]      = shade (0.9, @selected_bg_color) # "#a69f91" # darker deepsky
-		base[SELECTED]    = @selected_bg_color # "#5598d7" # deepsky
-		base[INSENSITIVE] = @bg_color # "#e8e5de" # beige
+    base[NORMAL]      = @base_color # "#ffffff" # white 
+    base[PRELIGHT]    = shade (0.95, @bg_color) # "#5f8ec4" # dark beige
+    base[ACTIVE]      = shade (0.9, @selected_bg_color) # "#a69f91" # darker deepsky
+    base[SELECTED]    = @selected_bg_color # "#5598d7" # deepsky
+    base[INSENSITIVE] = @bg_color # "#e8e5de" # beige
 
-		text[NORMAL]      = @text_color # "#000000" # black
-		text[PRELIGHT]    = @text_color # "#000000" # black
-		text[ACTIVE]      = @selected_fg_color # "#ffffff" # white
-		text[SELECTED]    = @selected_fg_color # "#ffffff" # white
-		text[INSENSITIVE] = darker (@bg_color) # "#b5b3ac" # dark beige
+    text[NORMAL]      = @text_color # "#000000" # black
+    text[PRELIGHT]    = @text_color # "#000000" # black
+    text[ACTIVE]      = @selected_fg_color # "#ffffff" # white
+    text[SELECTED]    = @selected_fg_color # "#ffffff" # white
+    text[INSENSITIVE] = darker (@bg_color) # "#b5b3ac" # dark beige
 
-	  engine "clearlooks"  {
+    engine "clearlooks"  {
       # Avoid the Cimi-bulkiness
       style               = CLASSIC # classic tabs
       toolbarstyle        = 0       # flat toolbars
       animation           = TRUE    # animated progressbars
       menubarstyle        = 0       # flat menus
       colorize_scrollbar  = FALSE   # no colored slider
-		}
+    }
 }
 
 style "theme-wide" = "theme-default"
@@ -69,13 +69,13 @@ style "theme-wide" = "theme-default"
 
 style "theme-text" = "theme-default"
 {
-    #base[SELECTED]   	= "#fc9747"  # Outline?
+    #base[SELECTED]     = "#fc9747"  # Outline?
 }
 
 style "theme-toolbar" = "theme-default" 
 {
     #top and bottom border
-		bg[NORMAL] = shade (0.25, @bg_color)
+    bg[NORMAL] = shade (0.25, @bg_color)
 }
 
 style "theme-tasklist" = "theme-default"
@@ -164,7 +164,7 @@ style "theme-panel" = "theme-default"
 
 style "theme-notebook" = "theme-wide"
 {
-    base[SELECTED]   	= @selected_bg_color  # Tab selection color
+    base[SELECTED]    = @selected_bg_color  # Tab selection color
     bg[ACTIVE]        = shade(0.9, @bg_color)  # Unselected tabs
 }
 
@@ -266,31 +266,31 @@ style "theme-panelbutton" = "theme-default"
     {
         image
         {
-            function		= BOX
-            state			= NORMAL
-            recolorable		= TRUE
-            file			= "bg-normal.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = NORMAL
+            recolorable   = TRUE
+            file      = "bg-normal.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }        
         image
         {
-            function		= BOX
-            state			= PRELIGHT
-            recolorable		= TRUE
-            file			= "bg-prelight.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = PRELIGHT
+            recolorable   = TRUE
+            file      = "bg-prelight.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "bg-selected.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "bg-selected.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
     
@@ -304,13 +304,13 @@ style "theme-panelbutton-top" = "theme-panelbutton" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "bg-selected-top.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "bg-selected-top.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -323,12 +323,12 @@ style "theme-panelbutton-left" = "theme-panelbutton" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            recolorable		= TRUE
-            file			= "bg-selected-left.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            recolorable   = TRUE
+            file      = "bg-selected-left.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -341,12 +341,12 @@ style "theme-panelbutton-right" = "theme-panelbutton" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            recolorable		= TRUE
-            file			= "bg-selected-right.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            recolorable   = TRUE
+            file      = "bg-selected-right.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -358,30 +358,30 @@ style "theme-panelbutton-clock" = "theme-panelbutton" {
     {
         image
         {
-            function		= BOX
-            state			= NORMAL
-            recolorable		= TRUE
-            file			= "bg-normal.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = NORMAL
+            recolorable   = TRUE
+            file      = "bg-normal.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }        
         image
         {
-            function		= BOX
-            state			= PRELIGHT
-            recolorable		= TRUE
-            file			= "bg-prelight.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = PRELIGHT
+            recolorable   = TRUE
+            file      = "bg-prelight.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            recolorable		= TRUE
-            file			= "bg-selected.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            recolorable   = TRUE
+            file      = "bg-selected.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -391,12 +391,12 @@ style "theme-panelbutton-clock-top" = "theme-panelbutton-top" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            recolorable		= TRUE
-            file			= "bg-selected-top.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            recolorable   = TRUE
+            file      = "bg-selected-top.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -406,12 +406,12 @@ style "theme-panelbutton-clock-left" = "theme-panelbutton-left" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            recolorable		= TRUE
-            file			= "bg-selected-left.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            recolorable   = TRUE
+            file      = "bg-selected-left.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -421,12 +421,12 @@ style "theme-panelbutton-clock-right" = "theme-panelbutton-right" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            recolorable		= TRUE
-            file			= "bg-selected-right.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            recolorable   = TRUE
+            file      = "bg-selected-right.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -438,31 +438,31 @@ style "theme-panelbutton-events" = "theme-panelbutton" {
     {
         image
         {
-            function		= BOX
-            state			= NORMAL
-            recolorable		= TRUE
-            file			= "bg-normal.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = NORMAL
+            recolorable   = TRUE
+            file      = "bg-normal.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }        
         image
         {
-            function		= BOX
-            state			= PRELIGHT
-            recolorable		= TRUE
-            file			= "bg-prelight.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = PRELIGHT
+            recolorable   = TRUE
+            file      = "bg-prelight.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "bg-selected.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "bg-selected.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -472,13 +472,13 @@ style "theme-panelbutton-events-top" = "theme-panelbutton-top" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "bg-selected-top.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "bg-selected-top.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -488,13 +488,13 @@ style "theme-panelbutton-events-left" = "theme-panelbutton-left" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "bg-selected-left.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "bg-selected-left.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -504,13 +504,13 @@ style "theme-panelbutton-events-right" = "theme-panelbutton-right" {
     {
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "bg-selected-right.png"
-            border			= { 6, 6, 6, 6}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "bg-selected-right.png"
+            border      = { 6, 6, 6, 6}
+            stretch     = TRUE
         }
     }
 }
@@ -533,32 +533,32 @@ style "theme-slab-switcherbutton" = "theme-default" {
     {
         image
         {
-            function		= BOX
-            state			= PRELIGHT
-            recolorable		= TRUE
-            file			= "button-prelight.png"
-            border			= { 2, 2, 2, 2}
-            stretch			= TRUE
+            function    = BOX
+            state     = PRELIGHT
+            recolorable   = TRUE
+            file      = "button-prelight.png"
+            border      = { 2, 2, 2, 2}
+            stretch     = TRUE
         }
         image
         {
-            function		= BOX
-            state			= ACTIVE
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "button-selected.png"
-            border			= { 2, 2, 2, 2}
-            stretch			= TRUE
+            function    = BOX
+            state     = ACTIVE
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "button-selected.png"
+            border      = { 2, 2, 2, 2}
+            stretch     = TRUE
         }
         image
         {
-            function		= BOX
-            state			= NORMAL
-            #recolorable	= TRUE
-            recolorable		= TRUE
-            file			= "button-normal.png"
-            border			= { 2, 2, 2, 2}
-            stretch			= TRUE
+            function    = BOX
+            state     = NORMAL
+            #recolorable  = TRUE
+            recolorable   = TRUE
+            file      = "button-normal.png"
+            border      = { 2, 2, 2, 2}
+            stretch     = TRUE
         }
     }
 }
