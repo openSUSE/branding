@@ -52,12 +52,12 @@ style "theme-default"
     text[INSENSITIVE] = darker (@bg_color) # "#b5b3ac" # dark beige
 
     engine "clearlooks"  {
-      # Avoid the Cimi-bulkiness
-      style               = CLASSIC # classic tabs
+      #style               = CLASSIC # classic tabs
+      style               = GUMMY   # classic tabs
       toolbarstyle        = 0       # flat toolbars
       animation           = TRUE    # animated progressbars
-      menubarstyle        = 0       # flat menus
-      colorize_scrollbar  = FALSE   # no colored slider
+      menubarstyle        = 2       # flat menus
+      colorize_scrollbar  = TRUE   
     }
 }
 
@@ -77,6 +77,12 @@ style "theme-toolbar" = "theme-default"
     #top and bottom border
     bg[NORMAL] = shade (0.25, @bg_color)
 }
+
+style "theme-scrollbar" = "theme-default"
+{
+    bg[SELECTED] = lighter (@selected_bg_color)
+}
+
 
 style "theme-tasklist" = "theme-default"
 {
@@ -166,6 +172,11 @@ style "theme-notebook" = "theme-wide"
 {
     base[SELECTED]    = @selected_bg_color  # Tab selection color
     bg[ACTIVE]        = shade(0.9, @bg_color)  # Unselected tabs
+
+		engine "clearlooks" {
+        style = CLASSIC
+    }
+
 }
 
 style "metacity-frame"
@@ -601,6 +612,9 @@ widget_class "*.GtkFrame.GtkLabel" style "theme-frame-title"
 # notebook stuff
 widget_class "*.GtkNotebook.*.GtkEventBox" style "theme-notebook"
 widget_class "*.GtkNotebook.*.GtkViewport" style "theme-notebook"
+
+# scrollbar stuff
+class "GtkScrollbar" style "theme-scrollbar"
 
 # Metacity window manager
 class "MetaFrames" style "metacity-frame"
