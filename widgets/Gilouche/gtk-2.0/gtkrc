@@ -201,11 +201,13 @@ style "theme-slab" = "theme-default"
 style "theme-slab-label" = "theme-slab"
 {
     fg[NORMAL] = shade (0.3, @bg_color)       # Slab group label
+		font_name = "Bold"
 }
 
 style "theme-slab-side-label" = "theme-slab"
 {
     fg[NORMAL] = shade (.8, @selected_bg_color)     # Slab side group label
+		font_name = "Bold"
 }
 
 style "theme-clock" = "theme-slab" {
