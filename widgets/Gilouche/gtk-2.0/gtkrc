@@ -80,7 +80,7 @@ style "theme-toolbar" = "theme-default"
 
 style "theme-scrollbar" = "theme-default"
 {
-    bg[SELECTED] = lighter (@selected_bg_color)
+		bg[SELECTED] = shade (1.1, @selected_bg_color)
 }
 
 
@@ -118,11 +118,18 @@ style "theme-tree" = "theme-default"
     ythickness = 2
     GtkTreeView::odd-row-color = shade(0.9, @base_color)
     GtkTreeView::even-row-color = @base_color
+		engine "clearlooks" {
+			style = CLASSIC
+		}
+
 }
 
 style "theme-frame-title" = "theme-default"
 {
     #fg[NORMAL] = "#f00" #button frames
+		base[SELECTED]    = @selected_bg_color  # Tab selection color
+		bg[ACTIVE]        = shade(0.9, @bg_color)  # Unselected tabs
+
 }
 
 style "theme-tooltips" = "theme-default"
@@ -240,6 +247,9 @@ style "evolution-hack" = "clearlooks-default"
     bg[SELECTED] = "#96b9d5"
     fg[ACTIVE]   = "#000000"
     fg[SELECTED] = "#ffffff"
+		engine "clearlooks" {
+			style = CLASSIC
+		}
 }
 
 style "theme-shell-highlight" = "theme-default"
