@@ -1,0 +1,28 @@
+2003-05-14  Jakub Steiner <jimmac@ximian.com>
+
+	* Bulletproof.sfd:
+	* Bulletproof.ttf: remove
+	* Lingdings.ttf:
+	* Lingdings.sfd: former bulletproof
+	* Netdings.ttf:
+	* Netdings.sfd: more bullets
+
+2003-04-10  Jakub Steiner <jimmac@ximian.com>
+
+	* Bulletproof.sfd: 60% complete
+	* Bulletproof.ttf: TTF export updated
+
+2003-04-04  Jakub Steiner <jimmac@ximian.com>
+
+	* Bulletproof.sfd: more cut'n'paste
+
+2003-04-03  Jakub Steiner <jimmac@ximian.com>
+
+	* Bulletproof.sfd: Wingding-compatible font. The wingding glyps
+	  are at the background
+	* Bulletproof.ttf: TTF export (under construction)
+	
+2003-04-03  Jakub Steiner <jimmac@ximian.com>
+
+	* kocourkov-grotesk.sfd: Type1 version of the Monotype Tahoma
+	  Sans Serif. Simplified. (still gazillions of glyphs to do)
