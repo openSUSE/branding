@@ -33,7 +33,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="137.57068"
+     inkscape:cx="-0.92932"
      inkscape:cy="93.532784"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -74,7 +74,7 @@
          offset="0.64237297"
          style="stop-color:#39352a;stop-opacity:1;" />
       <stop
-         style="stop-color:#82765f;stop-opacity:1"
+         style="stop-color:#5c5443;stop-opacity:1;"
          offset="1"
          id="stop6603" />
     </linearGradient>
@@ -5263,7 +5263,7 @@
          sodipodi:nodetypes="csscccc"
          id="path4323"
          d="M 107.53611,103.56497 C 107.53611,103.56497 122.17221,133.87085 156.41242,133.01588 C 228.16706,131.20829 240.74959,93.623208 242.54978,88.200428 C 244.34996,82.777649 247.10445,83.599059 247.74129,88.610802 C 271.14366,301.90675 85.332196,210.38978 78.733196,174.06109 C 108.13693,164.71553 106.13602,153.92821 106.63602,142.42821 L 107.53611,103.56497 z"
-         style="fill:url(#radialGradient7412);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.99999970000000005;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+         style="fill:url(#radialGradient7412);fill-opacity:1.0;fill-rule:evenodd;stroke:none;stroke-width:0.99999970000000005;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
       <path
          style="opacity:0.11445785;fill:url(#linearGradient7409);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.9999997;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter6708)"
          d="M 153.83895,198.41925 C 180.90625,203.85523 195.57418,197.93099 203.64139,191.67618 C 201.51128,188.91345 196.98847,186.76725 196.98847,186.76725 C 196.98847,186.76725 202.2557,187.76699 205.68642,191.40149 C 208.03458,193.88914 208.25005,197.90779 207.73651,203.41162 C 207.22294,201.0729 206.71871,196.08099 206.05259,194.42763 C 198.79757,203.25033 178.77116,207.25871 153.83895,198.41925 z"
