@@ -33,8 +33,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="181.78551"
-     inkscape:cy="157.97994"
+     inkscape:cx="137.57068"
+     inkscape:cy="93.532784"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      width="300px"
@@ -44,7 +44,7 @@
      showgrid="false"
      inkscape:window-width="1022"
      inkscape:window-height="968"
-     inkscape:window-x="651"
+     inkscape:window-x="417"
      inkscape:window-y="112"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -59,6 +59,25 @@
   </sodipodi:namedview>
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient6597">
+      <stop
+         style="stop-color:#b5ae9c;stop-opacity:1;"
+         offset="0"
+         id="stop6599" />
+      <stop
+         id="stop6605"
+         offset="0.3416886"
+         style="stop-color:#8e8469;stop-opacity:1;" />
+      <stop
+         id="stop6601"
+         offset="0.64237297"
+         style="stop-color:#39352a;stop-opacity:1;" />
+      <stop
+         style="stop-color:#82765f;stop-opacity:1"
+         offset="1"
+         id="stop6603" />
+    </linearGradient>
     <linearGradient
        id="linearGradient8613">
       <stop
@@ -906,6 +925,10 @@
          id="stop6502"
          offset="0"
          style="stop-color:#857c63;stop-opacity:1;" />
+      <stop
+         style="stop-color:#6d6551;stop-opacity:1;"
+         offset="0.5"
+         id="stop6595" />
       <stop
          id="stop6504"
          offset="1"
@@ -5028,14 +5051,14 @@
        y2="155.59515" />
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient6500"
+       xlink:href="#linearGradient6597"
        id="radialGradient7412"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(9.0262828,0,0,6.6294639,-28.487048,5.996061)"
-       cx="18.557627"
-       cy="22.300018"
-       fx="18.557627"
-       fy="22.300018"
+       gradientTransform="matrix(5.6178107,-7.1248323e-8,4.7556158e-8,4.6606342,44.410407,48.502323)"
+       cx="21.33312"
+       cy="22.790178"
+       fx="21.33312"
+       fy="22.790178"
        r="19.2292" />
   </defs>
   <metadata
@@ -5240,7 +5263,7 @@
          sodipodi:nodetypes="csscccc"
          id="path4323"
          d="M 107.53611,103.56497 C 107.53611,103.56497 122.17221,133.87085 156.41242,133.01588 C 228.16706,131.20829 240.74959,93.623208 242.54978,88.200428 C 244.34996,82.777649 247.10445,83.599059 247.74129,88.610802 C 271.14366,301.90675 85.332196,210.38978 78.733196,174.06109 C 108.13693,164.71553 106.13602,153.92821 106.63602,142.42821 L 107.53611,103.56497 z"
-         style="fill:url(#radialGradient7412);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.9999997;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+         style="fill:url(#radialGradient7412);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.99999970000000005;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
       <path
          style="opacity:0.11445785;fill:url(#linearGradient7409);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.9999997;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter6708)"
          d="M 153.83895,198.41925 C 180.90625,203.85523 195.57418,197.93099 203.64139,191.67618 C 201.51128,188.91345 196.98847,186.76725 196.98847,186.76725 C 196.98847,186.76725 202.2557,187.76699 205.68642,191.40149 C 208.03458,193.88914 208.25005,197.90779 207.73651,203.41162 C 207.22294,201.0729 206.71871,196.08099 206.05259,194.42763 C 198.79757,203.25033 178.77116,207.25871 153.83895,198.41925 z"
