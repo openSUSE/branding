@@ -33,7 +33,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="-0.92932"
+     inkscape:cx="150"
      inkscape:cy="93.532784"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -44,8 +44,8 @@
      showgrid="false"
      inkscape:window-width="1022"
      inkscape:window-height="968"
-     inkscape:window-x="417"
-     inkscape:window-y="112"
+     inkscape:window-x="792"
+     inkscape:window-y="141"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -5306,7 +5306,7 @@
       <path
          transform="translate(29.183915,44.744279)"
          clip-path="url(#clipPath6405)"
-         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.10885608;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter6453)"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.66531386;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter6453)"
          d="M 78.352199,58.820687 C 78.352199,58.820687 92.98829,89.126572 127.22851,88.2716 C 198.98314,86.464009 211.56568,48.878929 213.36586,43.456149 C 215.16604,38.03337 217.92054,38.85478 218.55737,43.866523 C 241.95974,257.16247 56.148281,165.6455 49.549281,129.31681 C 78.953017,119.97125 76.952106,109.18393 77.452106,97.683932 L 78.352199,58.820687 z"
          id="path6401"
          sodipodi:nodetypes="csscccc" />
