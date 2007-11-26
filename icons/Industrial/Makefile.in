@@ -42,8 +42,7 @@ DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	config.guess config.sub install-sh missing mkinstalldirs
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
-	$(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
@@ -96,7 +95,6 @@ CATOBJEXT = @CATOBJEXT@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
-CONVERT = @CONVERT@
 CPP = @CPP@
 CPPFLAGS = @CPPFLAGS@
 CYGPATH_W = @CYGPATH_W@
@@ -107,8 +105,6 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-ENABLE_ICON_FRAMING_FALSE = @ENABLE_ICON_FRAMING_FALSE@
-ENABLE_ICON_FRAMING_TRUE = @ENABLE_ICON_FRAMING_TRUE@
 ENABLE_LARGE_BITMAPS_FALSE = @ENABLE_LARGE_BITMAPS_FALSE@
 ENABLE_LARGE_BITMAPS_TRUE = @ENABLE_LARGE_BITMAPS_TRUE@
 EXEEXT = @EXEEXT@
@@ -218,7 +214,7 @@ sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 themedir = @themedir@
-DISTCHECK_CONFIGURE_FLAGS = --disable-icon-framing --enable-png-creation
+DISTCHECK_CONFIGURE_FLAGS = --enable-png-creation
 SUBDIRS = 16x16 22x22 24x24 32x32 48x48 scalable po
 THEME_IN_FILES = index.theme.in
 theme_DATA = index.theme

@@ -2,7 +2,7 @@
 size = scalable
 context = status
 
-iconsdir = $(iconthemedir)/$(size)/$(context)
+iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA =			\
 	folder-drag-accept.svg	\
@@ -13,4 +13,4 @@ EXTRA_DIST =			\
 	$(icons_DATA)
 
 install-data-local: install-iconsDATA
-	(cd $(DESTDIR)$(iconthemedir)/$(size) && $(ICONMAP) -c $(context))
+	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))

@@ -1,7 +1,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([industrial-icon-theme], [0.0.1])
+AC_INIT([industrial-icon-theme], [11.0.1])
 AC_CONFIG_SRCDIR(index.theme.in)
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar])
@@ -42,34 +42,6 @@ else
                  and install industrial-icon-theme])
 fi
 
-# Check for convert from ImageMagick to add the 1x1 frame to 22x22 icons
-AC_ARG_ENABLE(icon-framing,
-   AC_HELP_STRING([--disable-icon-framing],
-                   [disable creation of 24x24 icons [default=enabled]]),
-    enable_framing=$enableval,
-    enable_framing=yes)
-AM_CONDITIONAL(ENABLE_ICON_FRAMING, test x$enable_framing = xyes)
-
-
-if test "x$enable_framing" = "xyes"; then
-   PKG_CHECK_EXISTS([ImageMagick >= 5.5.7],
-                    [enable_framing=yes],
-		    PKG_CHECK_EXISTS([GraphicsMagick >= 1.1],
-				     [enable_framing=yes], [enable_framing=no]))
-   if test "x$enable_framing" = "xyes"; then
-      AC_PATH_PROG(CONVERT, convert)
-      if test -z "$CONVERT"; then
-      	 AC_MSG_ERROR([ImageMagick is required to build tango-icon-theme])
-      fi
-
-      # Add the command line options we need here
-      CONVERT="$CONVERT -bordercolor Transparent -border 1x1"
-      AC_SUBST(CONVERT)
-   else
-      AC_MSG_ERROR([ImageMagick is required to build tango-icon-theme])
-   fi
-fi
-
 # Check for rsvg or ksvgtopng for creating large scale bitmaps from svg
 AC_ARG_ENABLE(png-creation,
    AC_HELP_STRING([--enable-png-creation],
@@ -80,17 +52,16 @@ AC_ARG_ENABLE(png-creation,
 SVGCONVERT=""
 AC_MSG_CHECKING([SVG to PNG conversion method])
 if test "x$enable_large_bitmaps" = "xyes"; then
-   PKG_CHECK_EXISTS([librsvg-2.0 >= 2.12.3],
-                    [enable_large_bitmaps=yes], [enable_large_bitmaps=no])
+   PKG_CHECK_EXISTS([enable_large_bitmaps=yes], [enable_large_bitmaps=no])
    if test "x$enable_large_bitmaps" = "xyes"; then
-      svgconvert_prog="rsvg"
+      svgconvert_prog="inkscape"
    else
       svgconvert_prog="ksvgtopng"
    fi
    AC_MSG_RESULT([$svgconvert_prog])
    AC_PATH_PROG(SVGCONVERT, $svgconvert_prog)
    if test -z "$SVGCONVERT"; then
-      AC_MSG_ERROR([You need librsvg >= 2.12.3 or ksvgtopng installed to create large scale bitmaps])
+      AC_MSG_ERROR([You need inkscape or ksvgtopng installed to create large scale bitmaps])
    else
       enable_large_bitmaps=yes
    fi

@@ -2,7 +2,7 @@
 size = 24x24
 context = places
 
-iconsdir = $(iconthemedir)/$(size)/$(context)
+iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA =			\
 	folder.png		\
@@ -13,5 +13,5 @@ EXTRA_DIST =			\
 	$(icons_DATA)
 
 install-data-local: install-iconsDATA
-	(cd $(DESTDIR)$(iconthemedir)/$(size) && $(ICONMAP) -c $(context))
+	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
 
