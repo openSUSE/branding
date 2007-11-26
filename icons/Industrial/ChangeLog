@@ -1,3 +1,7 @@
+2007-11-26  Jakub Steiner <jimmac@ximian.com>
+
+	* *: move to opensuse-art. Touch up all shadows.
+
 2006-10-16  Jakub Steiner <jimmac@ximian.com>
 
 	* icons/Industrial/*/places/Makefile.am: add folder-saved-search

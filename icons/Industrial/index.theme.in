@@ -1,7 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=index.theme.in
+Name[en_US]=index.theme.in
+
 [Icon Theme]
-Name=Industrial
+Name=openSUSE 11 Industrial
 _Comment=Industrial icon theme for GNOME
-Inherits=Tango
+Inherits=Oxygen,Tango
 Directories=48x48/apps,24x24/actions,24x24/apps,24x24/mimetypes,24x24/places,24x24/status,22x22/actions,22x22/emblems,22x22/mimetypes,22x22/places,22x22/status,16x16/actions,16x16/mimetypes,16x16/places,16x16/status,scalable/actions,scalable/emblems,scalable/mimetypes,scalable/places,scalable/status
 
 [scalable/actions]
@@ -116,4 +122,3 @@ Type=Fixed
 Size=16
 Context=Status
 Type=Fixed
-
