@@ -50,15 +50,6 @@
 <constant name="ButtonIPad" value="3"/>
 
 <draw_ops name="inner_window_border">
-<!--
-	<line color="blend/gtk:bg[SELECTED]/#000000/.2" 
-						x1="left_width-1" y1="top_height-2"
-						x2="right_width-1" y2="top_height-2"
-
-	/>
-	-->
-	<!-- blue on top, gtk normal on bottom, gradient on sides -->
-
   <gradient type="vertical" x="left_width-1" y="top_height-1" width="1" height="height-bottom_height-top_height">
 	<color value="blend/gtk:bg[SELECTED]/#000000/.5"/>
 	<color value="gtk:bg[NORMAL]"/>
@@ -76,57 +67,19 @@
 	<line color="gtk:bg[NORMAL]" 
 	x1="left_width" y1="height-bottom_height" x2="width-right_width"
 	y2="height-bottom_height" />
-	<!--
-  <rectangle color="blend/gtk:bg[SELECTED]/gtk:bg[NORMAL]/.7"
-             x="left_width-1" y="top_height-1"
-             width="width-left_width-right_width+1"
-             height="height-top_height-bottom_height+1"/>
-	-->
 </draw_ops>
 
 <!-- ** stripes ** -->
 <draw_ops name="title_tile">
 <!-- too slow
 	<image filename="stripes.png" x="0" y="0" width="width" height="height" alpha=".05"/>
-	-->
-	<!--
   <tint color="black" x="0" y="0" width="width" height="0" alpha="0.1"/>
   <tint color="white" x="0" y="1" width="width" height="1" alpha="0.05"/>
 	-->
-
 </draw_ops>
 
-
-<draw_ops name="bevel_maximized_unfocused">
-
-  <!-- ** 3d beveled frame ** -->
-
-  <line color="#000000" x1="0" y1="0" 
-     x2="width" y2="0"/>
-  <line color="shade/gtk:light[NORMAL]/1.6" x1="0" y1="1" 
-     x2="width" y2="1"/>
-  <rectangle color="gtk:bg[NORMAL]" filled="true"
-             x="0" y="2"
-             width="width"
-             height="title_height + 4"/>
-
-
-  <!-- ** fancy gradient ** 
-  <gradient type="vertical" x="2" y="2" width="width - 4" height="title_height + 4">
-	<color value="shade/gtk:bg[NORMAL]/1.1"/>
-	<color value="shade/gtk:bg[NORMAL]/0.7"/>
-  </gradient>
-  <gradient type="vertical" x="2" y="title_height+4" width="width - 4" height="32">
-	<color value="shade/gtk:bg[NORMAL]/0.7"/>
-	<color value="shade/gtk:bg[NORMAL]/1.0"/>
-  </gradient>
-  -->
-
-</draw_ops>
 
 <draw_ops name="bevel_maximized">
-
-
 <!-- horizontal gradient -->
   <gradient type="horizontal" x="0" y="0" width="width" height="title_height + 10">
 	<color value="shade/gtk:bg[SELECTED]/0.9"/>
@@ -523,7 +476,6 @@
 </frame_style>
 
 <frame_style name="normal_maximized" geometry="normal_maximized">
-  <piece position="entire_background" draw_ops="bevel_maximized_unfocused"/>
   <piece position="title" draw_ops="title_unfocused"/>
   <button function="close" state="normal" draw_ops="close_button_unfocused"/>
   <button function="close" state="pressed" draw_ops="close_button_unfocused_pressed"/>
