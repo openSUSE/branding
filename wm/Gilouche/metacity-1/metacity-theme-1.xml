@@ -4,8 +4,8 @@
 <info>
   <name>Gilouche</name>
   <author>Daniel Borgmann &lt;daniel.borgmann@gmail.com&gt;, Tuomas Kuosmanen &lt;tigert@ximian.com&gt;, Jakub Steiner &lt;jimmac@novell.com&gt;</author>
-  <copyright>&#194; 2002 Ximian, Inc., 2004 Canonical Ltd., 2005 Daniel Borgmann, 2006 Novell, Inc.</copyright>
-  <date>Jan, 2006</date>
+  <copyright>&#194; 2002 Ximian, Inc., 2004 Canonical Ltd., 2005 Daniel Borgmann, 2006-2007 Novell, Inc.</copyright>
+  <date>Nov, 2007</date>
   <description>Slim, flat, fast theme to complement the Tango icon set.</description>
 </info>
  
@@ -50,15 +50,15 @@
 <constant name="ButtonIPad" value="3"/>
 
 <draw_ops name="inner_window_border">
-  <gradient type="vertical" x="left_width-1" y="top_height-1" width="1" height="height-bottom_height-top_height">
-	<color value="blend/gtk:bg[SELECTED]/#000000/.5"/>
-	<color value="gtk:bg[NORMAL]"/>
-	<color value="gtk:bg[NORMAL]"/>
+  <gradient type="vertical" x="left_width-1" y="top_height-1" width="1" height="height-bottom_height-top_height+2">
+    <color value="blend/gtk:bg[SELECTED]/#000000/.5"/>
+    <color value="gtk:bg[NORMAL]"/>
+    <color value="gtk:bg[NORMAL]"/>
   </gradient>
-  <gradient type="vertical" x="width-right_width" y="top_height-1" width="1" height="height-bottom_height-top_height">
-	<color value="blend/gtk:bg[SELECTED]/#000000/.5"/>
-	<color value="gtk:bg[NORMAL]"/>
-	<color value="gtk:bg[NORMAL]"/>
+  <gradient type="vertical" x="width-right_width" y="top_height-1" width="1" height="height-bottom_height-top_height+2">
+    <color value="blend/gtk:bg[SELECTED]/#000000/.5"/>
+    <color value="gtk:bg[NORMAL]"/>
+    <color value="gtk:bg[NORMAL]"/>
   </gradient>
 
 	<line color="blend/gtk:bg[SELECTED]/#000000/.5" 
@@ -95,26 +95,20 @@
 
 <draw_ops name="bevel_unfocused">
 
-  <!-- ** inner stroke ** -->
-  <rectangle color="blend/gtk:bg[NORMAL]/#ffffff/0.2" filled="false"
+  <!-- outer stroke -->
+  <rectangle color="blend/gtk:bg[NORMAL]/#000000/0.1" filled="false"
+             x="0" y="0"
+             width="width - 1"
+             height="height - 1"/>
+             <!-- inner stroke -->
+  <rectangle color="blend/gtk:bg[NORMAL]/#ffffff/.3" filled="false"
              x="1" y="1"
              width="width - 3"
              height="height - 3"/>
-  <!-- ** fancy gradient ** 
-  <gradient type="vertical" x="2" y="2" width="width - 4" height="title_height + 4">
-	<color value="shade/gtk:bg[NORMAL]/1.1"/>
-	<color value="shade/gtk:bg[NORMAL]/0.7"/>
-  </gradient>
-  <gradient type="vertical" x="2" y="title_height+4" width="width - 4" height="32">
-	<color value="shade/gtk:bg[NORMAL]/0.7"/>
-	<color value="shade/gtk:bg[NORMAL]/1.0"/>
-  </gradient>
-  -->
-  <rectangle color="blend/gtk:bg[NORMAL]/#000000/0.1" filled="false"
-       x="0" y="0"
-       width="width - 1"
-       height="height - 1"/>
-
+  <rectangle color="gtk:bg[NORMAL]" filled="true"
+             x="2" y="2"
+             width="width - 4"
+             height="height - 4"/>
 <!-- rounded corner -->
 <!-- outside left -->
 <line color="blend/gtk:bg[NORMAL]/#000000/0.1" x1="3" y1="1" x2="4" y2="1" />
@@ -136,54 +130,34 @@
 
 <!-- horizontal gradient -->
   <gradient type="horizontal" x="2" y="2" width="width - 4" height="title_height + 5">
-	<color value="shade/gtk:bg[SELECTED]/0.9"/>
-	<color value="shade/gtk:bg[SELECTED]/1.1"/>
-	<color value="shade/gtk:bg[SELECTED]/0.9"/>
+    <color value="shade/gtk:bg[SELECTED]/0.9"/>
+    <color value="shade/gtk:bg[SELECTED]/1.1"/>
+    <color value="shade/gtk:bg[SELECTED]/0.9"/>
   </gradient>
   <!-- inner stroke -->
   <rectangle color="blend/gtk:bg[SELECTED]/#ffffff/.2" filled="false"
              x="1" y="1"
              width="width - 3"
              height="height - 3"/>
-<!-- causes problems with shaded mode 
-	<line color="blend/gtk:bg[SELECTED]/#ffffff/.2" x1="1" y1="1" x2="width" y2="1" />
-  <gradient type="vertical" x="1" y="1" width="1" height="height - 3">
-	<color value="blend/gtk:bg[SELECTED]/#ffffff/.2"/>
-	<color value="gtk:bg[NORMAL]"/>
-	<color value="gtk:bg[NORMAL]"/>
-	<color value="gtk:bg[NORMAL]"/>
-	</gradient>
-  <gradient type="vertical" x="width - 2" y="1" width="1" height="height - 3">
-	<color value="blend/gtk:bg[SELECTED]/#ffffff/.2"/>
-	<color value="gtk:bg[NORMAL]"/>
-	<color value="gtk:bg[NORMAL]"/>
-	<color value="gtk:bg[NORMAL]"/>
-	</gradient>
-	<line color="gtk:bg[NORMAL]" x1="1" y1="height-2" x2="width" y2="height-2" />
--->
-
-<!-- stripes are 1990
-<tile name="title_tile" tile_width="width" tile_height="2" x="1" y="title_height / 2 + 3" width="width - 2" height="10"/>
--->
 	<!-- outer border -->
   <rectangle color="blend/gtk:bg[SELECTED]/#000000/.5" filled="false"
        x="0" y="0"
        width="width - 1"
        height="height - 1"/>
 
-<!-- rounded corner -->
-<!-- outside left -->
+<!-- rounded corners -->
+<!-- outside top left -->
 <line color="blend/gtk:bg[SELECTED]/#000000/.5" x1="3" y1="1" x2="4" y2="1" />
 <line color="blend/gtk:bg[SELECTED]/#000000/.5" x1="2" y1="2" x2="2" y2="2" />
 <line color="blend/gtk:bg[SELECTED]/#000000/.5" x1="1" y1="3" x2="1" y2="4" />
-<!-- inside left -->
+<!-- inside top left -->
 <line color="blend/gtk:bg[SELECTED]/#ffffff/.2" x1="3" y1="2" x2="4" y2="2" />
 <line color="blend/gtk:bg[SELECTED]/#ffffff/.2" x1="2" y1="3" x2="2" y2="4" />
-<!-- outside right -->
+<!-- outside top right -->
 <line color="blend/gtk:bg[SELECTED]/#000000/.5" x1="width - 5" y1="1" x2="width - 3" y2="1" />
 <line color="blend/gtk:bg[SELECTED]/#000000/.5" x1="width - 3" y1="2" x2="width - 2" y2="2" />
 <line color="blend/gtk:bg[SELECTED]/#000000/.5" x1="width - 2" y1="3" x2="width - 2" y2="4" />
-<!-- inside right -->
+<!-- inside top right -->
 <line color="blend/gtk:bg[SELECTED]/#ffffff/.2" x1="width - 5" y1="2" x2="width - 4" y2="2" />
 <line color="blend/gtk:bg[SELECTED]/#ffffff/.2" x1="width - 3" y1="3" x2="width - 3" y2="4" />
 
