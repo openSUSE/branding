@@ -1,0 +1,67 @@
+8
+
+dir
+74
+https://forgesvn1.novell.com/svn/opensuse-art/trunk/icons/Industrial/scalable/status
+https://forgesvn1.novell.com/svn/opensuse-art
+
+
+
+2007-11-23T16:45:28.480496Z
+74
+jimmacfx
+
+
+svn:special svn:externals svn:needs-lock
+
+folder-drag-accept.svg
+file
+
+
+
+
+2007-11-23T16:38:58.000000Z
+b64b023b811345e3a526be4dc5063368
+2007-11-23T16:45:28.480496Z
+74
+jimmacfx
+has-props
+
+folder-visiting.svg
+file
+
+
+
+
+2007-11-23T16:39:23.000000Z
+9d6e675498607f113b24a4016700d551
+2007-11-23T16:45:28.480496Z
+74
+jimmacfx
+has-props
+
+folder-open.svg
+file
+
+
+
+
+2007-11-23T16:39:12.000000Z
+5d4697816067a178f5dbbaec84d1ad7f
+2007-11-23T16:45:28.480496Z
+74
+jimmacfx
+has-props
+
+Makefile.am
+file
+76
+
+
+
+2007-11-26T15:35:47.000000Z
+6b44e8ef6daf419050f0912ab2f2b498
+2007-11-26T16:03:56.042819Z
+76
+jimmacfx
+

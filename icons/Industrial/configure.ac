@@ -90,10 +90,9 @@ Makefile
 32x32/status/Makefile
 48x48/Makefile
 48x48/apps/Makefile
-scalable/Makefile
-scalable/actions/Makefile
-scalable/places/Makefile
-scalable/status/Makefile
+48x48/actions/Makefile
+48x48/places/Makefile
+48x48/status/Makefile
 po/Makefile.in
 svg2png.sh
 ])	
