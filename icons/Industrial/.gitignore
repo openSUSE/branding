@@ -18,3 +18,4 @@ intltool-update.in
 missing
 mkinstalldirs
 svg2png.sh
+*.swp
