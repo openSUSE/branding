@@ -9,7 +9,7 @@ REQUIRED_AUTOMAKE_VERSION=1.9
 
 (test -f $srcdir/configure.ac \
   && test -f $srcdir/index.theme.in \
-  && test -d $srcdir/scalable) || {
+  && test -d $srcdir/svg) || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
     echo " top-level $PKG_NAME directory"
     exit 1
