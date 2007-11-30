@@ -6,7 +6,8 @@ iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA =			\
 	folder.icon		\
-	folder.png		
+	folder.png		\
+	user-home.png
 
 EXTRA_DIST =			\
 	$(icons_DATA)
