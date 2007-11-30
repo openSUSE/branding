@@ -1,15 +1,12 @@
 
-size = scalable
+size = 256x256
 context = places
 
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA =			\
 	folder.icon		\
-	folder.svg		\
-	folder-remote.svg	\
-	folder-saved-search.svg	\
-	user-home.svg
+	folder.png		
 
 EXTRA_DIST =			\
 	$(icons_DATA)

@@ -2,50 +2,60 @@
 Version=1.0
 Encoding=UTF-8
 Name=index.theme.in
-_Name[en_US]=index.theme.in
+Name[en_US]=index.theme.in
 
 [Icon Theme]
 Name=openSUSE 11 Industrial
 Comment=Industrial icon theme for GNOME
 Inherits=Oxygen,Tango
-Directories=48x48/apps,24x24/actions,24x24/apps,24x24/mimetypes,24x24/places,24x24/status,22x22/actions,22x22/emblems,22x22/mimetypes,22x22/places,22x22/status,16x16/actions,16x16/mimetypes,16x16/places,16x16/status,scalable/actions,scalable/emblems,scalable/mimetypes,scalable/places,scalable/status
+Directories=256x256/actions,256x256/emblems,256x256/mimetypes,256x256/places,256x256/status,48x48/apps,48x48/places,48x48/status,24x24/actions,24x24/apps,24x24/mimetypes,24x24/places,24x24/status,22x22/actions,22x22/emblems,22x22/mimetypes,22x22/places,22x22/status,16x16/actions,16x16/mimetypes,16x16/places,16x16/status
 
-[scalable/actions]
-Size=48
+[256x256/actions]
+Size=256
 Context=Actions
 Type=Scalable
-MinSize=25
+MinSize=49
 MaxSize=256
 
-[scalable/emblems]
-Size=48
-Context=Emblems
-Type=Fixed
-
-[scalable/mimetypes]
-Size=48
+[256x256/mimetypes]
+Size=256
 Context=MimeTypes
 Type=Scalable
-MinSize=25
+MinSize=49
 MaxSize=256
 
-[scalable/places]
-Size=48
+[256x256/places]
+Size=256
 Context=Places
 Type=Scalable
-MinSize=25
+MinSize=49
 MaxSize=256
 
-[scalable/status]
-Size=48
+[256x256/status]
+Size=256
 Context=Status
 Type=Scalable
-MinSize=25
+MinSize=49
 MaxSize=256
+
+[48x48/actions]
+Size=48
+Context=Actions
+Type=Fixed
 
 [48x48/apps]
 Size=48
 Context=Applications
+Type=Fixed
+
+[48x48/places]
+Size=48
+Context=Places
+Type=Fixed
+
+[48x48/status]
+Size=48
+Context=Status
 Type=Fixed
 
 [22x22/actions]
