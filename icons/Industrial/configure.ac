@@ -93,6 +93,9 @@ Makefile
 48x48/actions/Makefile
 48x48/places/Makefile
 48x48/status/Makefile
+256x256/Makefile
+256x256/places/Makefile
+256x256/status/Makefile
 po/Makefile.in
 svg2png.sh
 ])	

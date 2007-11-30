@@ -2,7 +2,7 @@
 Version=1.0
 Encoding=UTF-8
 Name=index.theme.in
-Name[en_US]=index.theme.in
+_Name[en_US]=index.theme.in
 
 [Icon Theme]
 Name=openSUSE 11 Industrial

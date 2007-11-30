@@ -1,6 +1,6 @@
 DISTCHECK_CONFIGURE_FLAGS = --enable-png-creation
 
-SUBDIRS = 16x16 22x22 24x24 32x32 48x48 scalable po
+SUBDIRS = 16x16 22x22 24x24 32x32 48x48 256x256 po
 
 THEME_IN_FILES = index.theme.in
 
