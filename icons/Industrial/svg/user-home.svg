@@ -1049,8 +1049,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="195.28884"
-     inkscape:cy="308.36701"
+     inkscape:cx="215.95852"
+     inkscape:cy="378.27318"
      inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:grid-bbox="true"
@@ -1058,7 +1058,7 @@
      inkscape:showpageshadow="false"
      inkscape:window-width="872"
      inkscape:window-height="698"
-     inkscape:window-x="96"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      width="512px"
      height="512px"
@@ -1150,6 +1150,14 @@
        x="283"
        y="189"
        inkscape:label="16x16/places/user-home.png" />
+    <rect
+       style="opacity:1;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5028"
+       width="24"
+       height="24"
+       x="307.95709"
+       y="145.95343"
+       inkscape:label="24x24/places/user-home.png" />
   </g>
   <g
      id="layer1"
@@ -2162,5 +2170,13 @@
          d="M 46.890018,26.654215 A 0.35355338,0.35355338 0 1 1 46.182911,26.654215 A 0.35355338,0.35355338 0 1 1 46.890018,26.654215 z"
          transform="matrix(2.7499907,0,0,2.4629325,-110.03123,-57.714289)" />
     </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g6751"
+       id="use5030"
+       transform="translate(26,0)"
+       width="512"
+       height="512" />
   </g>
 </svg>
