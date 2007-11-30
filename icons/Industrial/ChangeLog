@@ -1,0 +1,115 @@
+2007-11-26  Jakub Steiner <jimmac@ximian.com>
+
+	* *: move to opensuse-art. Touch up all shadows.
+
+2006-10-16  Jakub Steiner <jimmac@ximian.com>
+
+	* icons/Industrial/*/places/Makefile.am: add folder-saved-search
+
+2006-10-06  Rodney Dawes  <dobey@novell.com>
+
+	* index.theme.in: Don't translate the Name tag
+	Update the Comment tag text to be better
+
+2006-07-06  Jakub Steiner <jimmac@ximian.com>
+
+	* document-open: make it look less like a printer
+
+2005-12-12  Rodney Dawes  <dobey@novell.com>
+
+	* index.theme.in: Add the new contexts for the places and status
+	icons in here, so that they will be found by the theme
+
+	* */Makefile.am (SUBDIRS): Remove mimetypes and add places and status
+
+	* */emblems/emblem-favorites: Renamed to emblem-favorite
+
+	* */mimetypes: Removed these folders, and moved and renamed the folder
+	icons to places or status as appropriate for the latest version of the
+	Icon Naming Specification
+
+	* */places: Put home, folder, and remote folder in here
+	
+	* */status: Put drag-accept, open, and visiting folder status icons
+	in here
+
+2005-12-03  Jakub Steiner <jimmac@ximian.com>
+
+	* x-directory-normal-visiting.icon:
+	* x-directory-normal-drag-accept.icon: removed. They don't map
+		anyway
+	* x-directory-normal.icon: fix up placement. This needs to be
+	symlinked as gnome-fs-directory, gnome-fs-directory-accept and
+	gnome-fs-directory-vising
+
+2005-11-16  Rodney Dawes  <dobey@novell.com>
+
+	* index.theme.in: Inherit from Tango and apply fixes for directory
+	ordering and types so that bitmap icons don't get scaled incorrectly
+
+	* */*: Remove icons that are no longer needed in the Industrial theme
+	and add in new Tango-style folder icons
+	Also add in a 24px version of the spinner image
+	Use names from the Icon Naming spec for the folder icons as well,
+	and use the icon-naming-utils script to create symlinks at install time
+
+2004-05-11  Jakub Steiner <jimmac@ximian.com>
+
+	* cursors/cross: metacity uses this when moving windows
+	* cursors/Makefile.am: add a couple of symlinks
+
+2004-05-11  Jakub Steiner <jimmac@ximian.com>
+
+	* 48x48/apps/gnome-spinner.png:
+	* 48x48/apps/gnome-spinner-rest.png: Simplistic Novell style
+
+2004-05-11  Jakub Steiner <jimmac@ximian.com>
+
+	* cursors/Makefile.am: add a couple of symlinks
+	* cursors/pencil: exposed in epiphany
+
+2004-05-11  Jakub Steiner <jimmac@ximian.com>
+
+	* cursors/left_ptr_watch: 
+	* cursors/watch: 35 frames of smooth animation
+	
+2003-05-14  Christopher James Lahey  <clahey@ximian.com>
+
+	* cursors/Makefile.am (install-data-local): Fixed this to work
+	with DESTDIR.
+
+2003-05-14  Christopher James Lahey  <clahey@ximian.com>
+
+	* cursors/Makefile.am (install-data-local): mkdir -p the $icondir
+	directory.
+
+2003-03-10  Dave Camp  <dave@ximian.com>
+
+	* index.theme.in: Added MinSize and MaxSize elements for the
+	scalable directories.
+
+2003-03-07  Tuomas Kuosmanen  <tigert@ximian.com>
+
+	* 48x48/apps/web-browser.png, 48x48/apps/web-browser.png: new icon
+	for web browser..
+	* 48x48/apps/Makefile.am, 32x32/apps/Makefile.am: added to icon_DATA
+
+2003-02-06    <tigert@ximian.com>
+
+	* *x*/apps/gnome-globe.png: Added a new globe icon for "Internet"
+	menu, will make a "web browser" icon based on this as well.
+
+2003-01-28  Dave Camp  <dave@ximian.com>
+
+	* Added some 32x32 application icons.
+	
+2003-01-22  Jakub Steiner <jimmac * ximian * com>
+
+	* 48x48/filesystems/gnome-fs-blockdev.png: remove
+	* 48x48/filesystems/gnome-fs-web.png: new globe icon
+    
+2003-01-13  Jakub Steiner <jimmac@ximian.com>
+
+	* imported nautilus2 theme + cleanup
+	  unfortunately the png versions seem to have preference over SVG
+	  versions
