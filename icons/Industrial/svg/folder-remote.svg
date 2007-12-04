@@ -27,6 +27,30 @@
      id="defs3">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient9015">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop9017" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop9019" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient9007">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop9009" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop9011" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient8866">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -2399,6 +2423,52 @@
        x2="147.375"
        y2="274.99716"
        gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       id="filter9001"
+       x="-0.077638608"
+       width="1.1552772"
+       y="-0.51199513"
+       height="2.0239903">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="6.1866079"
+         id="feGaussianBlur9003" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9007"
+       id="radialGradient9013"
+       cx="145"
+       cy="273"
+       fx="145"
+       fy="273"
+       r="95.62162"
+       gradientTransform="matrix(1,0,0,0.1516393,0,231.60246)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9015"
+       id="radialGradient9021"
+       cx="145"
+       cy="273"
+       fx="145"
+       fy="273"
+       r="95.62162"
+       gradientTransform="matrix(1,0,0,0.1516393,0,231.60246)"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       id="filter9051"
+       x="-0.12271423"
+       width="1.2454285"
+       y="-0.80925057"
+       height="2.6185011">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="9.7784444"
+         id="feGaussianBlur9053" />
+    </filter>
   </defs>
   <sodipodi:namedview
      stroke="#ef2929"
@@ -2410,9 +2480,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="146.99301"
-     inkscape:cy="28.708706"
-     inkscape:current-layer="g6302"
+     inkscape:cx="159.92659"
+     inkscape:cy="97.954487"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
@@ -2832,6 +2902,16 @@
     <g
        id="g6302"
        transform="translate(0,-2)">
+      <rect
+         transform="matrix(1.4531875,0,0,0.6630721,-65.712188,98.48134)"
+         ry="21.867912"
+         rx="9.9780655"
+         y="258.5"
+         x="49.37838"
+         height="29"
+         width="191.24324"
+         id="rect9005"
+         style="opacity:0.34482759;fill:url(#radialGradient9013);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.16662252000000000;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter9051);enable-background:accumulate" />
       <g
          transform="matrix(6.7530761,0,0,6.5143739,-29.47318,15.355758)"
          id="g6690"
@@ -2873,6 +2953,16 @@
            style="fill:url(#pattern5989);fill-opacity:1;stroke:none;stroke-width:0.1507692;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            sodipodi:nodetypes="ccccccccccccc" />
       </g>
+      <rect
+         style="opacity:1;fill:url(#radialGradient9021);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.16662252;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter9001);enable-background:accumulate"
+         id="rect8874"
+         width="191.24324"
+         height="29"
+         x="49.37838"
+         y="258.5"
+         rx="30.401474"
+         ry="31.871998"
+         transform="matrix(0.4769505,0,0,0.4549449,74.756388,155.30006)" />
       <g
          transform="matrix(2.8752363,0,0,2.8752363,-882.10283,-96.122864)"
          id="g6266">
