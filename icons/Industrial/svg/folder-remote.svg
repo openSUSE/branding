@@ -2456,7 +2456,7 @@
        fx="145"
        fy="273"
        r="95.62162"
-       gradientTransform="matrix(1,0,0,0.1516393,0,231.60246)"
+       gradientTransform="matrix(0.9286973,0,0,0.140827,10.338895,234.55422)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -2469,18 +2469,6 @@
        r="95.62162"
        gradientTransform="matrix(1,0,0,0.1516393,0,231.60246)"
        gradientUnits="userSpaceOnUse" />
-    <filter
-       inkscape:collect="always"
-       id="filter9051"
-       x="-0.12271423"
-       width="1.2454285"
-       y="-0.80925057"
-       height="2.6185011">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="9.7784444"
-         id="feGaussianBlur9053" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient9057"
@@ -2502,6 +2490,18 @@
          stdDeviation="0.55813258"
          id="feGaussianBlur9087" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter9137"
+       x="-0.17644213"
+       width="1.3528843"
+       y="-1.1635643"
+       height="3.3271286">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="14.059735"
+         id="feGaussianBlur9139" />
+    </filter>
   </defs>
   <sodipodi:namedview
      stroke="#ef2929"
@@ -2513,8 +2513,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="231.00394"
-     inkscape:cy="68.265454"
+     inkscape:cx="211.01"
+     inkscape:cy="29.906984"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
@@ -2936,15 +2936,15 @@
        id="g6302"
        transform="translate(0,-2)">
       <rect
-         transform="matrix(1.4531875,0,0,0.6630721,-65.712188,98.48134)"
-         ry="21.867912"
-         rx="9.9780655"
+         transform="matrix(1.2440295,0,0,0.3607395,-35.384328,180.01811)"
+         ry="40.195229"
+         rx="11.655669"
          y="258.5"
          x="49.37838"
          height="29"
          width="191.24324"
          id="rect9005"
-         style="opacity:0.34482759;fill:url(#radialGradient9013);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.16662252000000000;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter9051);enable-background:accumulate" />
+         style="opacity:0.51149425;fill:url(#radialGradient9013);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.16662252000000000;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter9137);enable-background:accumulate" />
       <g
          transform="matrix(6.7530761,0,0,6.5143739,-29.47318,15.355758)"
          id="g6690"
@@ -2993,9 +2993,9 @@
          height="29"
          x="49.37838"
          y="258.5"
-         rx="30.401474"
-         ry="31.871998"
-         transform="matrix(0.4769505,0,0,0.4549449,74.756388,155.30006)" />
+         rx="35.512848"
+         ry="58.583645"
+         transform="matrix(0.4083025,0,0,0.2475096,84.866568,210.92999)" />
       <g
          transform="matrix(2.8752363,0,0,2.8752363,-882.10283,-96.122864)"
          id="g6266">
