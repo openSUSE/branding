@@ -86,6 +86,7 @@ Makefile
 24x24/places/Makefile
 24x24/status/Makefile
 32x32/Makefile
+32x32/actions/Makefile
 32x32/places/Makefile
 32x32/status/Makefile
 48x48/Makefile
@@ -94,12 +95,10 @@ Makefile
 48x48/places/Makefile
 48x48/status/Makefile
 256x256/Makefile
+256x256/actions/Makefile
 256x256/places/Makefile
 256x256/status/Makefile
 po/Makefile.in
-svg2png.sh
 ])	
 
 AC_OUTPUT
-
-chmod +x svg2png.sh
