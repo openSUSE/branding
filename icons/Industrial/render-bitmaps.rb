@@ -2,7 +2,7 @@
 
 require "rexml/document"
 include REXML
-INKSCAPE = 'env inkscape'
+INKSCAPE = '/opt/artlibre/bin/inkscape'
 SRC = "./svg"
 
 puts "Rendering from SVGs in #{SRC}"
