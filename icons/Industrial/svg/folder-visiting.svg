@@ -24,6 +24,13 @@
    style="enable-background:new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective66"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient5859">
@@ -215,15 +222,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="10.81457"
-     inkscape:cy="157.43877"
-     inkscape:current-layer="layer3"
+     inkscape:cx="291.17645"
+     inkscape:cy="91.861961"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1415"
-     inkscape:window-height="877"
+     inkscape:window-height="878"
      inkscape:window-x="25"
      inkscape:window-y="0"
      width="400px"
@@ -355,8 +362,9 @@
        id="path6757" />
     <path
        style="opacity:1;fill:url(#linearGradient6158);fill-opacity:1;fill-rule:nonzero;stroke:#888a85;stroke-width:0.99999952;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 303.9375,209.53125 C 303.75604,209.53125 303.59375,209.7225 303.59375,209.90625 L 303.59375,214.65625 C 303.55794,214.68648 303.54443,214.71517 303.5625,214.75 C 303.56251,214.75 303.58798,221.52805 303.59375,223.28125 C 303.59451,223.51244 303.59375,224.40625 303.59375,224.40625 C 303.6354,224.48418 303.69779,224.5625 303.78125,224.5625 L 317.5,224.5625 C 317.58344,224.56251 317.6513,224.47588 317.6875,224.40625 C 318.24538,224.6852 319.06493,214.93871 318.6875,214.75 C 318.7181,214.67792 318.65643,214.59375 318.53125,214.59375 L 317.4375,214.59375 L 317.40625,211.53125 C 317.40625,211.34751 317.27521,211.25 317.09375,211.25 L 311.78125,211.25 C 311.59978,211.25 311.37199,211.14858 311.28125,210.84375 L 310.84375,209.96875 C 310.73658,209.68121 310.43147,209.53125 310.25,209.53125 L 303.9375,209.53125 z"
-       id="path6841" />
+       d="M 303.9375,209.53125 C 303.75604,209.53125 303.59375,209.7225 303.59375,209.90625 L 303.59375,214.65625 C 303.55794,214.68648 303.54443,214.71517 303.5625,214.75 C 303.56251,214.75 303.58798,221.52805 303.59375,223.28125 C 303.59451,223.51244 303.59375,224.40625 303.59375,224.40625 C 303.6354,224.48418 303.69779,224.5625 303.78125,224.5625 L 317.5,224.5625 C 317.58344,224.56251 317.6513,224.47588 317.6875,224.40625 C 318.24538,224.6852 319.06493,214.93871 318.6875,214.75 C 318.7181,214.67792 318.65643,214.59375 318.53125,214.59375 L 317.4375,214.59375 L 317.40625,211.79642 C 317.40625,211.61268 317.27521,211.51517 317.09375,211.51517 L 311.78125,211.51517 C 311.59978,211.51517 311.37199,211.41375 311.28125,211.10892 L 310.84375,209.96875 C 310.73658,209.68121 310.43147,209.53125 310.25,209.53125 L 303.9375,209.53125 z"
+       id="path6841"
+       sodipodi:nodetypes="cccsscccccccccccccc" />
     <g
        id="g6684"
        style="opacity:0.49484534"
@@ -428,7 +436,7 @@
     <path
        id="path5919"
        d="M 29.75,20.625 C 27.04877,20.624999 24.34375,23.238 24.34375,25.84375 L 24.34375,104.3125 L 12.71875,104.3125 C 11.437786,104.3125 9.6015671,105.46565 10.15625,106.40625 C 10.15625,106.40625 21.5,224.4375 21.5,224.4375 C 22.139271,225.48965 23.406536,226.5625 24.6875,226.5625 L 230.9375,226.5625 C 232.21846,226.5625 233.56935,225.37769 234.125,224.4375 C 234.125,224.4375 244.1875,106.40625 244.1875,106.40625 C 244.65713,105.43293 243.54644,104.3125 241.625,104.3125 L 229.75,104.3125 L 229.375,52.46875 C 229.37501,49.863001 227.63873,48.4375 224.9375,48.4375 L 146.25,48.4375 C 143.54877,48.437502 140.47562,46.729106 139.125,42.40625 L 132.25,26.90625 C 130.65464,22.828696 126.10748,20.625 123.40625,20.625 L 29.75,20.625 z"
-       style="opacity:0.44827588;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5949)"
+       style="opacity:0.44827594;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5949)"
        clip-path="url(#clipPath5923)"
        transform="translate(20,20)" />
     <g

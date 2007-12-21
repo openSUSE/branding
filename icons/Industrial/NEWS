@@ -1,3 +1,10 @@
-* Move Industrial from ximian-art to opensuse-art. Touch up shadows.
-* Add a high resolution size (256x256px, but with enough detail to get rendered at 512x512px)
-* One canvas-per icon workflow (all resolutions). Rendered by a ruby script calling Inkscape.
+10.0.2
+  * Make 16x16 folder snap properly to grid.
+  * Avoid clipping on 32x32 folder-drag-accept
+   
+10.0.1
+  * Move Industrial from ximian-art to opensuse-art. Touch up shadows.
+  * Add a high resolution size (256x256px, but with enough detail to get
+    rendered at 512x512px) One canvas-per icon workflow (all resolutions).
+  * Rendered by a ruby script calling Inkscape.
+  * Fix anchor placement
