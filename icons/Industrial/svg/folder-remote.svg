@@ -2256,6 +2256,18 @@
          stdDeviation="14.059735"
          id="feGaussianBlur9139" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter9181"
+       x="-0.046489286"
+       width="1.0929786"
+       y="-0.1226041"
+       height="1.2452082">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6053371"
+         id="feGaussianBlur9183" />
+    </filter>
   </defs>
   <sodipodi:namedview
      stroke="#ef2929"
