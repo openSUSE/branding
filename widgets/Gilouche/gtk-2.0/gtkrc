@@ -59,6 +59,11 @@ style "theme-default"
       menubarstyle        = 2       # flat menus
       colorize_scrollbar  = TRUE   
     }
+    
+    #engines 2.22 -- supposedly gets rid of menu/toolbar separator
+    GtkMenuBar::shadow_type = GTK_SHADOW_NONE
+    GtkToolbar::shadow_type = GTK_SHADOW_NONE
+
 }
 
 style "theme-wide" = "theme-default"
@@ -80,7 +85,7 @@ style "theme-toolbar" = "theme-default"
 
 style "theme-scrollbar" = "theme-default"
 {
-		bg[SELECTED] = shade (1.1, @selected_bg_color)
+    bg[SELECTED] = shade (1.1, @selected_bg_color)
 }
 
 
@@ -118,17 +123,17 @@ style "theme-tree" = "theme-default"
     ythickness = 2
     GtkTreeView::odd-row-color = shade(0.9, @base_color)
     GtkTreeView::even-row-color = @base_color
-		engine "clearlooks" {
-			style = CLASSIC
-		}
+    engine "clearlooks" {
+      style = CLASSIC
+    }
 
 }
 
 style "theme-frame-title" = "theme-default"
 {
     #fg[NORMAL] = "#f00" #button frames
-		base[SELECTED]    = @selected_bg_color  # Tab selection color
-		bg[ACTIVE]        = shade(0.9, @bg_color)  # Unselected tabs
+    base[SELECTED]    = @selected_bg_color  # Tab selection color
+    bg[ACTIVE]        = shade(0.9, @bg_color)  # Unselected tabs
 
 }
 
@@ -180,7 +185,7 @@ style "theme-notebook" = "theme-wide"
     base[SELECTED]    = @selected_bg_color  # Tab selection color
     bg[ACTIVE]        = shade(0.9, @bg_color)  # Unselected tabs
 
-		engine "clearlooks" {
+    engine "clearlooks" {
         style = CLASSIC
     }
 
@@ -219,13 +224,13 @@ style "theme-slab" = "theme-default"
 style "theme-slab-label" = "theme-slab"
 {
     fg[NORMAL] = shade (0.3, @bg_color)       # Slab group label
-		font_name = "Bold"
+    font_name = "Bold"
 }
 
 style "theme-slab-side-label" = "theme-slab"
 {
     fg[NORMAL] = shade (.8, @selected_bg_color)     # Slab side group label
-		font_name = "Bold"
+    font_name = "Bold"
 }
 
 style "theme-clock" = "theme-slab" {
@@ -241,16 +246,7 @@ style "theme-shell" = "theme-default"
     text[INSENSITIVE] = "#6a97c5"   # Base text color
 }
 
-style "evolution-hack" = "clearlooks-default"
-{
-    bg[ACTIVE]   = "#a29e8e"
-    bg[SELECTED] = "#96b9d5"
-    fg[ACTIVE]   = "#000000"
-    fg[SELECTED] = "#ffffff"
-		engine "clearlooks" {
-			style = CLASSIC
-		}
-}
+
 
 style "theme-shell-highlight" = "theme-default"
 {
@@ -529,20 +525,20 @@ style "theme-panelbutton-events-left" = "theme-panelbutton-left" {
     }
 }
 style "theme-panelbutton-events-right" = "theme-panelbutton-right" {
-    ythickness = 0
-    engine "pixmap" 
-    {
-        image
-        {
-            function    = BOX
-            state     = ACTIVE
-            #recolorable  = TRUE
-            recolorable   = TRUE
-            file      = "bg-selected-right.png"
-            border      = { 6, 6, 6, 6}
-            stretch     = TRUE
-        }
-    }
+  ythickness = 0
+  engine "pixmap" 
+  {
+      image
+      {
+          function    = BOX
+          state     = ACTIVE
+          #recolorable  = TRUE
+          recolorable   = TRUE
+          file      = "bg-selected-right.png"
+          border      = { 6, 6, 6, 6}
+          stretch     = TRUE
+      }
+  }
 }
 
 
@@ -592,6 +588,7 @@ style "theme-slab-switcherbutton" = "theme-default" {
         }
     }
 }
+
 
 # widget styles
 class "GtkWidget" style "theme-default"
@@ -663,10 +660,27 @@ widget "y2ccg-control-center.*.ShellWindow" style "theme-shell-yast2-control-cen
 widget "y2ccg-control-center.*slab_section_style1*" style "theme-shell-yast2-control-center-gnome-headings"
 
 # Evolution
+style "evolution-hack" = "clearlooks-default"
+{
+    xthickness = 2
+    ythickness = 1
+    bg[ACTIVE]   = "#a29e8e"
+    bg[SELECTED] = "#96b9d5"
+    fg[ACTIVE]   = "#000000"
+    fg[SELECTED] = "#ffffff"
+    engine "clearlooks" {
+      style = CLASSIC
+      #2.22 engines requires this:
+      hint = "treeview-header"
+    }
+}
 widget_class "*GtkCTree*" style "evolution-hack"
 widget_class "*GtkList*" style "evolution-hack"
 widget_class "*GtkCList*" style "evolution-hack"
 widget_class "*.ETree.*" style "evolution-hack"
+widget_class "*.ETable.ECanvas" style "evolution-hack"
+#widget_class "*.ETree.ECanvas" style "evolution-hack"
+
 
 # panel clock / calendar
 widget "intlclock-main-menu-window" style "theme-slab"
@@ -703,3 +717,12 @@ widget "*slab-recent-documents*" style "theme-slab-label"
 widget "*slab-favorite-places*" style "theme-slab-label"
 widget "*slab-side-system-label*" style "theme-slab-side-label"
 widget "*slab-side-status-label*" style "theme-slab-side-label"
+
+#playback sliders (Banshee/Totem)
+style "clearlooks-scale" = "clearooks-button"
+{
+    GtkRange::trough-side-details = 1
+}
+
+class "GtkScale" style "clearlooks-scale"
+
