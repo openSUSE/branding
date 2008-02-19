@@ -55,6 +55,11 @@ Size=48
 Context=Applications
 Type=Fixed
 
+[48x48/emblems]
+Size=48
+Context=Emblems
+Type=Fixed
+
 [48x48/places]
 Size=48
 Context=Places
