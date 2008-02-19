@@ -14,6 +14,6 @@ for file in files:
 		png = re.sub(r"([^.]*)\.svg$", r"\1.png", file)
 		print png
 		size = re.sub(r"([^x]*)x.*", r"\1", res)
-		cmd = "/opt/artlibre/bin/inkscape -w %s -h %s -e pic/%s %s" % (size,size,png,file)
+		cmd = "/usr/bin/inkscape -w %s -h %s -e pic/%s %s" % (size,size,png,file)
 		print "rendering %s at %s" % (file,res)
 		os.system(cmd)
