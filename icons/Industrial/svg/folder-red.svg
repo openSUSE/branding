@@ -30,6 +30,13 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="700 : 600 : 1"
        inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective514" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
        id="perspective513" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
@@ -2309,17 +2316,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="323.84812"
+     inkscape:cx="196.84812"
      inkscape:cy="117.60745"
      inkscape:current-layer="layer3"
-     showgrid="true"
+     showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="966"
      inkscape:window-height="792"
-     inkscape:window-x="197"
-     inkscape:window-y="150"
+     inkscape:window-x="455"
+     inkscape:window-y="243"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
@@ -2368,7 +2375,7 @@
           <rdf:Bag />
         </dc:subject>
         <dc:coverage></dc:coverage>
-        <dc:description></dc:description>
+        <dc:description>places</dc:description>
         <dc:contributor>
           <cc:Agent>
             <dc:title></dc:title>
@@ -2404,9 +2411,9 @@
        height="256"
        x="20"
        y="30"
-       inkscape:label="256x256/places/folder-red.png" />
+       inkscape:label="256x256" />
     <rect
-       inkscape:label="48x48/places/folder-red.png"
+       inkscape:label="48x48"
        y="49.99633"
        x="296.0625"
        height="48"
@@ -2420,9 +2427,9 @@
        height="32"
        x="303"
        y="125.99633"
-       inkscape:label="32x32/places/folder-red.png" />
+       inkscape:label="32x32" />
     <rect
-       inkscape:label="22x22/places/folder-red.png"
+       inkscape:label="22x22"
        y="177.05884"
        x="303"
        height="22"
@@ -2436,7 +2443,7 @@
        height="16"
        x="303"
        y="219"
-       inkscape:label="16x16/places/folder-red.png" />
+       inkscape:label="16x16" />
     <rect
        style="opacity:1;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8104"

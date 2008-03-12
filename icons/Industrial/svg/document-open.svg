@@ -30,6 +30,13 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="700 : 600 : 1"
        inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective620" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
        id="perspective619" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
@@ -1720,7 +1727,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="328.09086"
+     inkscape:cx="201.09086"
      inkscape:cy="107.80801"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -1729,7 +1736,7 @@
      inkscape:showpageshadow="false"
      inkscape:window-width="1415"
      inkscape:window-height="878"
-     inkscape:window-x="323"
+     inkscape:window-x="179"
      inkscape:window-y="88"
      width="400px"
      height="300px"
@@ -1783,7 +1790,7 @@
         <dc:relation></dc:relation>
         <dc:language></dc:language>
         <dc:coverage></dc:coverage>
-        <dc:description></dc:description>
+        <dc:description>actions</dc:description>
         <dc:contributor>
           <cc:Agent>
             <dc:title></dc:title>
@@ -1819,9 +1826,9 @@
        height="256"
        x="20"
        y="30"
-       inkscape:label="256x256/actions/document-open.png" />
+       inkscape:label="256x256" />
     <rect
-       inkscape:label="48x48/actions/document-open.png"
+       inkscape:label="48x48"
        y="49.99633"
        x="296.0625"
        height="48"
@@ -1835,9 +1842,9 @@
        height="32"
        x="303"
        y="125.99633"
-       inkscape:label="32x32/actions/document-open.png" />
+       inkscape:label="32x32" />
     <rect
-       inkscape:label="22x22/actions/document-open.png"
+       inkscape:label="22x22"
        y="177.05884"
        x="303"
        height="22"
@@ -1851,7 +1858,7 @@
        height="16"
        x="303"
        y="219"
-       inkscape:label="16x16/actions/document-open.png" />
+       inkscape:label="16x16" />
     <rect
        style="opacity:1;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8104"
@@ -1859,7 +1866,7 @@
        height="24"
        x="302"
        y="176"
-       inkscape:label="24x24/actions/document-open.png" />
+       inkscape:label="24x24" />
   </g>
   <g
      id="layer1"

@@ -30,6 +30,13 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="700 : 600 : 1"
        inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective68" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
        id="perspective67" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
@@ -229,17 +236,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="325.76232"
+     inkscape:cx="198.76232"
      inkscape:cy="120.14198"
-     inkscape:current-layer="layer3"
-     showgrid="true"
+     inkscape:current-layer="layer1"
+     showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1056"
      inkscape:window-height="926"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="314"
+     inkscape:window-y="57"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
@@ -294,7 +301,7 @@
         <dc:relation></dc:relation>
         <dc:language></dc:language>
         <dc:coverage></dc:coverage>
-        <dc:description></dc:description>
+        <dc:description>status</dc:description>
         <dc:contributor>
           <cc:Agent>
             <dc:title></dc:title>
@@ -330,9 +337,9 @@
        height="256"
        x="20"
        y="20"
-       inkscape:label="256x256/status/folder-visiting.png" />
+       inkscape:label="256x256" />
     <rect
-       inkscape:label="48x48/status/folder-visiting.png"
+       inkscape:label="48x48"
        y="39.99633"
        x="296.0625"
        height="48"
@@ -346,9 +353,9 @@
        height="32"
        x="303"
        y="115.99633"
-       inkscape:label="32x32/status/folder-visiting.png" />
+       inkscape:label="32x32" />
     <rect
-       inkscape:label="22x22/status/folder-visiting.png"
+       inkscape:label="22x22"
        y="167.05884"
        x="303"
        height="22"
@@ -362,7 +369,7 @@
        height="16"
        x="303"
        y="209"
-       inkscape:label="16x16/status/folder-visiting.png" />
+       inkscape:label="16x16" />
     <rect
        style="opacity:1;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8104"
