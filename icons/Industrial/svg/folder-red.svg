@@ -16,14 +16,21 @@
    height="300"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.45.17116"
    sodipodi:docbase="/home/jimmac/src/cvs/gnome/ximian-artwork/icons/Industrial/scalable/places"
    sodipodi:docname="folder-red.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
-   style="enable-background:new">
+   style="display:inline;enable-background:new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective513" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        id="perspective512"
@@ -1570,7 +1577,7 @@
        cy="23.630968"
        fx="-0.98633432"
        fy="23.630968"
-       r="9.5319751"
+       r="9.5319748"
        gradientTransform="matrix(0.8540115,0,0,0.6166277,3.2470933,5.4352121)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
@@ -1581,7 +1588,7 @@
        cy="20.757702"
        fx="1.5890608"
        fy="20.757702"
-       r="9.3606136"
+       r="9.3606138"
        gradientTransform="matrix(0.9374829,0,0,1.2024828,9.9343443e-2,-5.2094558)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
@@ -1763,7 +1770,7 @@
        cy="23.630968"
        fx="-0.98633432"
        fy="23.630968"
-       r="9.5319751" />
+       r="9.5319748" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5872"
@@ -2302,26 +2309,29 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="34.28223"
-     inkscape:cy="171.21823"
+     inkscape:cx="323.84812"
+     inkscape:cy="117.60745"
      inkscape:current-layer="layer3"
-     showgrid="false"
+     showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="966"
      inkscape:window-height="792"
-     inkscape:window-x="393"
-     inkscape:window-y="217"
+     inkscape:window-x="197"
+     inkscape:window-y="150"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     gridtolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid5883"
        spacingx="1px"
-       spacingy="1px" />
+       spacingy="1px"
+       enabled="true"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata4">
@@ -2432,8 +2442,8 @@
        id="rect8104"
        width="24"
        height="24"
-       x="327"
-       y="175.99634"
+       x="302"
+       y="176"
        inkscape:label="24x24/places/folder-red.png" />
   </g>
   <g
@@ -3744,14 +3754,6 @@
          style="opacity:1;fill:#d3d3d3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:block;overflow:visible"
          sodipodi:type="arc" />
     </g>
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g6751"
-       id="use8106"
-       transform="translate(24.9375,0)"
-       width="512"
-       height="512" />
     <path
        id="path5729"
        d="M 308.32465,152.2702 C 308.39527,152.38643 308.53693,152.50255 308.67844,152.50255 L 331.46243,152.50255 C 331.60395,152.50255 331.75483,152.37407 331.81623,152.2702 C 331.81623,152.2702 332.92766,139.22981 332.92766,139.22981 C 332.97954,139.12228 332.8569,138.99745 332.64463,138.99745 L 307.35474,138.99745 C 307.21321,138.99745 307.01043,139.1259 307.07171,139.22981 C 307.07171,139.22981 308.32465,152.2702 308.32465,152.2702 z"

@@ -16,7 +16,7 @@
    height="300"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.45.17116"
    sodipodi:docbase="/home/jimmac/gfx/novell/openoffice-art/icons/Industrial/svg"
    sodipodi:docname="folder-open.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -24,6 +24,13 @@
    style="enable-background:new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective421" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        id="perspective420"
@@ -1355,26 +1362,29 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="327.30159"
-     inkscape:cy="70.282489"
-     inkscape:current-layer="layer1"
+     inkscape:cx="324.18047"
+     inkscape:cy="116.99567"
+     inkscape:current-layer="layer3"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1415"
-     inkscape:window-height="878"
-     inkscape:window-x="25"
-     inkscape:window-y="0"
+     inkscape:window-width="933"
+     inkscape:window-height="861"
+     inkscape:window-x="345"
+     inkscape:window-y="207"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     gridtolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid5883"
        spacingx="1px"
-       spacingy="1px" />
+       spacingy="1px"
+       enabled="true"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata4">
@@ -1400,6 +1410,27 @@
             <rdf:li>content</rdf:li>
           </rdf:Bag>
         </dc:subject>
+        <dc:date></dc:date>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier></dc:identifier>
+        <dc:relation></dc:relation>
+        <dc:language></dc:language>
+        <dc:coverage></dc:coverage>
+        <dc:description></dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -1474,8 +1505,8 @@
        id="rect8104"
        width="24"
        height="24"
-       x="327"
-       y="175.99634"
+       x="302"
+       y="176"
        inkscape:label="24x24/status/folder-open.png" />
   </g>
   <g
@@ -2647,14 +2678,6 @@
          d="M 30.75,162.55828 L 33,164.87811 L 41.5,238.72606 L 39.25,236.98619 L 30.75,162.55828 z"
          style="opacity:0.73991029;fill:url(#radialGradient5282);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
     </g>
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g6751"
-       id="use8106"
-       transform="translate(24.9375,0)"
-       width="512"
-       height="512" />
     <g
        style="enable-background:new;display:inline"
        id="g5785">

@@ -16,7 +16,7 @@
    height="300"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.45.17116"
    sodipodi:docbase="/home/jimmac/src/cvs/gnome/ximian-artwork/icons/Industrial/scalable/places"
    sodipodi:docname="folder-saved-search.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -24,6 +24,13 @@
    style="enable-background:new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective415" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient7566">
@@ -1322,16 +1329,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="136.84473"
-     inkscape:cy="82.876639"
-     inkscape:current-layer="g6835"
+     inkscape:cx="184.51594"
+     inkscape:cy="141.36298"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1415"
-     inkscape:window-height="877"
-     inkscape:window-x="25"
+     inkscape:window-width="1240"
+     inkscape:window-height="914"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      width="400px"
      height="300px"
@@ -1371,6 +1378,27 @@
             <rdf:li>beagle</rdf:li>
           </rdf:Bag>
         </dc:subject>
+        <dc:date></dc:date>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier></dc:identifier>
+        <dc:relation></dc:relation>
+        <dc:language></dc:language>
+        <dc:coverage></dc:coverage>
+        <dc:description></dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
@@ -1439,7 +1467,7 @@
        id="rect5028"
        width="24"
        height="24"
-       x="328.95709"
+       x="302.95709"
        y="165.95343"
        inkscape:label="24x24/places/folder-saved-search.png" />
   </g>
@@ -1830,14 +1858,6 @@
          d="M 14.36411,14.812649 C 11.285026,15.004325 8.8338058,17.109847 8.8338058,19.645972 C 8.8338058,22.306826 11.544996,24.499351 14.835303,24.499351 C 16.448323,24.499351 17.920394,23.984503 19.001628,23.135593 C 19.068126,23.272869 19.17818,23.404661 19.299224,23.516641 C 19.409326,23.614605 19.548414,23.709242 19.696015,23.777361 L 23.663945,25.702668 C 24.41725,26.068184 25.394324,25.870642 25.846307,25.261451 C 26.29829,24.652259 26.05402,23.862102 25.300715,23.496587 L 21.332787,21.571279 C 21.064477,21.43626 20.753234,21.362142 20.440002,21.370727 C 20.692817,20.836593 20.811995,20.248822 20.811995,19.645972 C 20.811995,16.985118 18.125607,14.812649 14.835303,14.812649 C 14.681067,14.812649 14.515541,14.803221 14.36411,14.812649 z M 14.686505,16.737956 C 14.732965,16.736553 14.788376,16.737956 14.835303,16.737956 C 16.837466,16.737956 18.43124,18.02683 18.43124,19.645972 C 18.431237,21.265114 16.837466,22.553988 14.835303,22.553988 C 12.833136,22.553988 11.239366,21.265114 11.239366,19.645972 C 11.239365,18.064779 12.750619,16.796424 14.686505,16.737956 z"
          style="opacity:0.33888891;fill:url(#linearGradient5554);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3pt;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
     </g>
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g6751"
-       id="use5030"
-       transform="translate(26,0)"
-       width="512"
-       height="512" />
     <g
        id="g6937"
        transform="translate(355.01658,40)">

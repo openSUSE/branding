@@ -16,7 +16,7 @@
    height="300"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.45.17116"
    sodipodi:docbase="/home/jimmac/src/cvs/gnome/ximian-artwork/icons/Industrial/scalable/places"
    sodipodi:docname="folder-remote.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -25,6 +25,13 @@
    enable-background="new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective693" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6741"
@@ -574,18 +581,6 @@
        y1="16.850323"
        x2="26.715637"
        y2="11.804284" />
-    <filter
-       height="1.5955876"
-       y="-0.29779381"
-       width="1.0455449"
-       x="-0.022772469"
-       id="filter5815"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur5817"
-         stdDeviation="0.40326246"
-         inkscape:collect="always" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient9057">
@@ -2796,18 +2791,6 @@
        gradientTransform="translate(-321,0)" />
     <filter
        inkscape:collect="always"
-       id="filter9085"
-       x="-0.0062666629"
-       width="1.0125333"
-       y="-0.14100191"
-       height="1.2820038">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.55813258"
-         id="feGaussianBlur9087" />
-    </filter>
-    <filter
-       inkscape:collect="always"
        id="filter9137"
        x="-0.17644213"
        width="1.3528843"
@@ -2829,10 +2812,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="88.459365"
-     inkscape:cy="41.048946"
-     inkscape:current-layer="g6302"
-     showgrid="false"
+     inkscape:cx="195.00867"
+     inkscape:cy="127.25791"
+     inkscape:current-layer="layer3"
+     showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
@@ -2843,14 +2826,17 @@
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     gridtolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid5883"
        spacingx="0px"
        spacingy="0px"
        originx="0px"
-       originy="0px" />
+       originy="0px"
+       enabled="true"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata4">
@@ -2969,8 +2955,8 @@
        id="rect8104"
        width="24"
        height="24"
-       x="327"
-       y="175.99634"
+       x="302"
+       y="176"
        inkscape:label="24x24/places/folder-remote.png" />
   </g>
   <g
@@ -4122,14 +4108,6 @@
        d="M 155.5,250.625 L 155.5,260.125 C 155.5,260.125 150.87711,263.7894 145.75,263.625 C 140.62537,263.46068 136.75,260.125 136.75,260.125 L 136.75,250.5 L 155.5,250.625 z"
        id="path7662"
        sodipodi:nodetypes="cczccc" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g6751"
-       id="use8106"
-       transform="translate(24.9375,0)"
-       width="512"
-       height="512" />
     <g
        id="g5777"
        transform="translate(296.83601,50.023455)">

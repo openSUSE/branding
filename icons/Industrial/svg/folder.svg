@@ -16,7 +16,7 @@
    height="300"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.45.17116"
    sodipodi:docbase="/home/jimmac/src/cvs/gnome/ximian-artwork/icons/Industrial/scalable/places"
    sodipodi:docname="folder.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -25,6 +25,13 @@
    enable-background="new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective450" />
     <pattern
        inkscape:collect="always"
        xlink:href="#pattern6013"
@@ -1569,26 +1576,29 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="212.07177"
-     inkscape:cy="77.130275"
-     inkscape:current-layer="g5916"
-     showgrid="false"
+     inkscape:cx="310.67005"
+     inkscape:cy="122.40552"
+     inkscape:current-layer="layer3"
+     showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1140"
      inkscape:window-height="989"
-     inkscape:window-x="458"
-     inkscape:window-y="84"
+     inkscape:window-x="140"
+     inkscape:window-y="98"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     gridtolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid5883"
        spacingx="1px"
-       spacingy="1px" />
+       spacingy="1px"
+       enabled="true"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata4">
@@ -1703,8 +1713,8 @@
        id="rect8104"
        width="24"
        height="24"
-       x="327"
-       y="175.99634"
+       x="302"
+       y="176"
        inkscape:label="24x24/places/folder.png" />
   </g>
   <g
@@ -2877,14 +2887,6 @@
          d="M 30.75,135 L 33,138 L 41.5,233.5 L 39.25,231.25 L 30.75,135 z"
          style="opacity:0.73991029;fill:url(#radialGradient5542);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
     </g>
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g6751"
-       id="use8106"
-       transform="translate(24.9375,0)"
-       width="512"
-       height="512" />
     <g
        id="g5876"
        style="opacity:0.57731958"

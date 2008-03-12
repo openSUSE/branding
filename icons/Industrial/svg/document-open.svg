@@ -16,7 +16,7 @@
    height="300"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.45.17116"
    sodipodi:docbase="/home/jimmac/src/cvs/gnome/ximian-artwork/icons/Industrial/scalable/places"
    sodipodi:docname="document-open.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -24,6 +24,13 @@
    style="enable-background:new">
   <defs
      id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective619" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        id="perspective618"
@@ -1713,26 +1720,29 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="321.45816"
-     inkscape:cy="73.593411"
-     inkscape:current-layer="layer1"
+     inkscape:cx="328.09086"
+     inkscape:cy="107.80801"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1415"
      inkscape:window-height="878"
-     inkscape:window-x="25"
-     inkscape:window-y="0"
+     inkscape:window-x="323"
+     inkscape:window-y="88"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     gridtolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid5883"
        spacingx="1px"
-       spacingy="1px" />
+       spacingy="1px"
+       enabled="true"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata4">
@@ -1758,6 +1768,27 @@
             <rdf:li>document</rdf:li>
           </rdf:Bag>
         </dc:subject>
+        <dc:date></dc:date>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier></dc:identifier>
+        <dc:relation></dc:relation>
+        <dc:language></dc:language>
+        <dc:coverage></dc:coverage>
+        <dc:description></dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
@@ -1826,8 +1857,8 @@
        id="rect8104"
        width="24"
        height="24"
-       x="327"
-       y="175.99634"
+       x="302"
+       y="176"
        inkscape:label="24x24/actions/document-open.png" />
   </g>
   <g
@@ -4000,14 +4031,6 @@
          d="M 29,24.604537 L 28.656975,27.930705 L 2.8443964,28 L 2.5013721,24.604537 L 29,24.604537 z"
          style="opacity:0.36571428;fill:url(#linearGradient6173);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g6751"
-       id="use8106"
-       transform="translate(24.9375,0)"
-       width="512"
-       height="512" />
     <path
        id="path5729"
        d="M 308.32465,152.64595 C 308.39527,152.72874 308.53693,152.81144 308.67844,152.81144 L 331.46243,152.81144 C 331.60395,152.81144 331.75483,152.71993 331.81623,152.64595 C 331.81623,152.64595 332.92766,143.35818 332.92766,143.35818 C 332.97954,143.2816 332.8569,143.19269 332.64463,143.19269 L 307.35474,143.19269 C 307.21321,143.19269 307.01043,143.28418 307.07171,143.35818 C 307.07171,143.35818 308.32465,152.64595 308.32465,152.64595 z"
