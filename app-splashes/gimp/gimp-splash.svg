@@ -64,6 +64,13 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="700 : 600 : 1"
        inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective526" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
        id="perspective524" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
@@ -3174,16 +3181,17 @@
        id="g6450"
        transform="translate(6.2978452,20)">
       <text
-         sodipodi:linespacing="125%"
+         sodipodi:linespacing="100%"
          id="text7413"
-         y="109.84962"
-         x="77.599205"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Myriad;-inkscape-font-specification:Myriad"
+         y="110.55559"
+         x="77.659081"
+         style="font-size:9.03482819px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:100%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Myriad;-inkscape-font-specification:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           y="109.84962"
-           x="77.599205"
+           y="110.55559"
+           x="77.659081"
            id="tspan7415"
-           sodipodi:role="line">GNU Image Manipulation Program</tspan></text>
+           sodipodi:role="line"
+           style="font-size:9.03482819px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">GNU Image Manipulation Program</tspan></text>
       <g
          style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
          transform="translate(-52.40859,-35.65625)"
