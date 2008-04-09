@@ -1,6 +1,6 @@
 GIMP Palette
 Name: openSUSE
-Columns: 6
+Columns: 7
 #
 252 177  28	Orange Light
 255 255 102	Butter Light
@@ -16,3 +16,4 @@ Columns: 6
   0   0 116	Sky
  46  52  54	Dust 
 140   0   0	Blood
+115 186  37	SUSE Green
