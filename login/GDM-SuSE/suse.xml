@@ -19,6 +19,12 @@
     <normal file="opensuse.png" alpha="0.9"/>
     <pos x="-10" y="10" width="64" height="26" anchor="ne"/>
   </item>
+
+  <!-- dark stripe -->
+  <item type="svg">
+    <normal file="stripe.svg" />
+    <pos anchor="c" x="50%" y="50%" width="100%" height="50%" />
+  </item>
   
 	<!-- timer -->
   <item type="rect" id="timed-rect">

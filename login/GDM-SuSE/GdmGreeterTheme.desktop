@@ -1,8 +1,8 @@
 [GdmGreeterTheme]
 Encoding=UTF-8
 Greeter=suse.xml
-Name=SUSE Linux 10.3
-Description=Default SL 10.3 Theme
+Name=openSUSE 11.0
+Description=Default openSUSE 11.0 Theme
 Author=Jakub Steiner
-Copyright=(c) 2007 Novell, Inc.
+Copyright=(c) 2008 Novell, Inc.
 Screenshot=screenshot.png
