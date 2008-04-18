@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Splash Mockup</title>
+        <style type="text/css" media="screen">
+        /* <![CDATA[ */
+          #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          #stripe {
+            position: absolute;
+            width: 100%;
+            height: 214px;
+            left: 0;
+            top: 50%;
+            margin-top: -107px;
+          }
+          #kde-logo {
+            width: 19px;
+            height: 20px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+          #progress {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25px 0 0 -75px;
+            width:150px;
+            height:50px;
+            background: url(progress.png) no-repeat top left;
+          }
+        /* ]]> */
+        </style>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.timers.js"></script>
+        <script type="text/javascript" language="javascript" charset="utf-8">
+        // <![CDATA[
+          $(document).ready(function() {
+            var pw=150;
+            var cycle = 0;
+            var steps = 5;
+            $('#progress').everyTime(2000,function(i) {
+              var offset= i-(cycle*steps)-1;
+              if (offset+1>=steps) {
+                //new cycle
+                cycle++;
+              }
+              var pxoffset = pw*offset;
+              //console.log(i,offset);
+              $('#progress').css('background-position','-'+pxoffset+'px');;
+            });
+          });
+        // ]]>
+        </script>
+          
+      </head>
+<body>
+<img id="background" src="background.png" alt="." />
+<img id="stripe" src="stripe.png" alt="." />
+<img id="kde-logo" src="kde-logo.png" alt="." />
+<div id="progress"></div>
+
+</body>
+</html>
