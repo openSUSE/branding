@@ -1,11 +1,11 @@
 
 size = 48x48
-context = apps
+context = animations
 
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA =					\
-	process-stop.png			\
+	process-idle.png			\
 	process-working.png
 
 EXTRA_DIST =					\

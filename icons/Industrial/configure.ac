@@ -90,7 +90,7 @@ Makefile
 32x32/places/Makefile
 32x32/status/Makefile
 48x48/Makefile
-48x48/apps/Makefile
+48x48/animations/Makefile
 48x48/actions/Makefile
 48x48/places/Makefile
 48x48/status/Makefile
