@@ -1,5 +1,5 @@
 
-size = scalable
+size = 256x256
 context = status
 
 iconsdir = $(themedir)/$(size)/$(context)
