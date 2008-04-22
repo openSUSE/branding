@@ -5,8 +5,8 @@ context = apps
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA =					\
-	gnome-spinner-rest.png			\
-	gnome-spinner.png
+	process-stop.png			\
+	process-working.png
 
 EXTRA_DIST =					\
 	$(icons_DATA)
