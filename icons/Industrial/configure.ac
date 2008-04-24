@@ -1,7 +1,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([industrial-icon-theme], [11.0.4])
+AC_INIT([industrial-icon-theme], [11.0.5])
 AC_CONFIG_SRCDIR(index.theme.in)
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar])

@@ -1,3 +1,16 @@
+2008-04-23  Jakub Steiner <jimmac@ximian.com>
+
+	* configure.ac: Up version to 11.0.5 for a release
+
+2008-04-23  Jakub Steiner <jimmac@ximian.com>
+
+	* folder-new: Recreate a mysteriously lost icon.
+
+2008-04-23  Jakub Steiner <jimmac@ximian.com>
+
+	* apps/gnome* -> animations/process-working,process-idle: use
+		naming spec names.
+
 2007-11-26  Jakub Steiner <jimmac@ximian.com>
 
 	* *: move to opensuse-art. Touch up all shadows.
