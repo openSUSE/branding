@@ -3,7 +3,7 @@
 <greeter>
 <!-- first we take care of the background stuff -->
   <item type="pixmap" id="background">
-    <normal file="Background.jpeg" alpha="1"/>
+    <normal file="Background.svg" alpha="1"/>
     <pos x="0" y="0" width="100%" height="100%"/>
   </item>
   <item type="rect" id="userlist-background">
@@ -12,7 +12,7 @@
       <item type="rect" id="userlist">
         <pos x="0" y="0" width="100%" height="100%"/>
         <show type="userlist"/>
-        <normal color="#ffffff" alpha="0"/>
+        <normal color="#3a3a3a" alpha="0"/>
       </item>
     </fixed>
   </item>
@@ -62,7 +62,7 @@
     <box ypadding="5" xpadding="5" spacing="25" orientation="horizontal">
 <!-- "(o) |" logo -->
       <item type="pixmap">
-        <normal file="suse.svg" alpha="1"/>
+        <normal file="suse.png" alpha="1"/>
         <pos y="40%" x="50%" width="60" height="60" anchor="c"/>
         <show type="!userlist"/>
       </item>
