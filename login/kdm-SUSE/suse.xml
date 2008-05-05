@@ -3,7 +3,7 @@
 <greeter>
 <!-- first we take care of the background stuff -->
   <item type="pixmap" id="background">
-    <normal file="Background.jpg" alpha="1"/>
+    <normal file="Background.png" alpha="1"/>
     <pos x="0" y="0" width="100%" height="100%"/>
   </item>
   <!-- the Novell Logo topright -->
