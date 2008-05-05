@@ -3,20 +3,9 @@
 <greeter>
 <!-- first we take care of the background stuff -->
   <item type="pixmap" id="background">
-    <normal file="Background.svg" alpha="1"/>
+    <normal file="Background.jpg" alpha="1"/>
     <pos x="0" y="0" width="100%" height="100%"/>
   </item>
-  <item type="rect" id="userlist-background">
-    <pos x="12%" y="10%" width="22%" height="70%"/>
-    <fixed>
-      <item type="rect" id="userlist">
-        <pos x="0" y="0" width="100%" height="100%"/>
-        <show type="userlist"/>
-        <normal color="#3a3a3a" alpha="0"/>
-      </item>
-    </fixed>
-  </item>
-
   <!-- the Novell Logo topright -->
   <item type="pixmap">
     <normal file="opensuse.png" alpha="0.9"/>
@@ -24,10 +13,26 @@
   </item>
 
   <!-- dark stripe -->
-  <item type="svg">
-    <normal file="stripe.svg" />
+  <item type="pixmap">
+    <normal file="stripe.png" />
     <pos anchor="c" x="50%" y="50%" width="100%" height="50%" />
   </item>
+
+  <!-- the user list -->
+  <item type="rect" id="userlist-background">
+    <pos x="12%" y="10%" width="22%" height="70%"/>
+    <fixed>
+      <item type="rect" id="userlist">
+        <pos x="0" y="0" width="100%" height="100%"/>
+        <show type="userlist"/>
+        <normal color="#ffffff"/>
+        <active color="#ffffff"/>
+        <prelight color="#ffffff"/>
+      </item>
+    </fixed>
+  </item>
+
+
 
 <!-- remote logins have a hostname shown -->
 <item type="rect">
