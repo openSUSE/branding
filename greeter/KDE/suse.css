@@ -23,7 +23,7 @@ a {
 		#header img {
 			position: absolute;
 			top: 5px;
-			left: -3px;
+			right: 0;
 		}
 
 #container {
@@ -59,7 +59,7 @@ ul li {
 
 		li#support { background-image: url(images/community.png); }
 
-		li#build { background-image: url(images/build-lihm.png); }
+		li#build { background-image: url(images/build.png); }
 
 		li#linux { background-image: url(images/linux.png); }
 

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#header img').css('top','-30px').animate({top: 5},300);
+  $('#header img').css('top','-30px').animate({top: 5},500);
   $("#opensuse").css('opacity',0).delayedShow(300,800);
   $("#support").css('opacity',0).delayedShow(800,800);
   $("#build").css('opacity',0).delayedShow(1200,800);
