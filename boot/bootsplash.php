@@ -99,8 +99,8 @@ while (list($res,$q) = each($resolutions)) {
 	fwrite($fp, "mnganim logo $imagepath/logo.mng initframe logo silent center $lx $ly\n");
 	
 	//overlay title (verbose)
-	$vlx = 0;
-	$vly = 0;
+	$vlx = 2;
+	$vly = 2;
 	fwrite($fp, "mnganim logov $imagepath/logov.mng initframe logov origin 0 $vlx $vly\n");
 	
 	//animation triggers
@@ -110,11 +110,12 @@ while (list($res,$q) = each($resolutions)) {
 	fwrite($fp, "trigger \"rlchange 6\" tosilent\n");
 
 	$verticalpcnt = 0.8;
-	$width = 180; //width of the progress bar
+	$width = 160; //width of the progress bar
 	$voffset = 30; //vertical offset from the title (defined by verticalpcnt above)
 	$x1 = $lx - round($width/2) - 4;
 	$x2 = $x1 + $width;
-	$y1 = round($verticalpcnt*$y);
+	//$y1 = round($verticalpcnt*$y);
+	$y1 = round($ly+$voffset);
 	$y2 = $y1+1; //let's try a 2 pixel line
 	fwrite($fp, "\n\n");
 	fwrite($fp, "progress_enable=1\n"); //enable progress
