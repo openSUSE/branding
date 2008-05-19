@@ -32,9 +32,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="519.77992"
-     inkscape:cy="334.33849"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="367.00752"
+     inkscape:cy="240.03801"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      width="800px"
@@ -77,12 +77,12 @@
        inkscape:collect="always"
        xlink:href="#linearGradient14837"
        id="radialGradient14843"
-       cx="514.35791"
-       cy="270.64273"
-       fx="516.77789"
-       fy="-31.399448"
+       cx="514.35785"
+       cy="479.06934"
+       fx="516.77783"
+       fy="177.0273"
        r="400"
-       gradientTransform="matrix(0.8264951,0,2.5675201e-7,0.5661465,-1.8657559,78.527969)"
+       gradientTransform="matrix(0.9537809,-2.7186499e-8,1.2190787e-6,1.314403,-67.336656,-279.93876)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient9387"
@@ -144,14 +144,6 @@
        y2="106.00022"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1,0,0,3.8803418,0,192.68376)" />
-    <filter
-       inkscape:collect="always"
-       id="filter7144">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.4"
-         id="feGaussianBlur7146" />
-    </filter>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 300 : 1"
@@ -1804,7 +1796,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="gilouche"
-     style="opacity:0.29712871;filter:url(#filter10408)"
+     style="opacity:0.09090911;display:inline;filter:url(#filter10408)"
      sodipodi:insensitive="true">
     <g
        id="g12300"
