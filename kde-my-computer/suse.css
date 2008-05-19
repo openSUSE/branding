@@ -15,8 +15,8 @@ body>h1 {
 }
 
 body>h3 {
-	color: #ffffff;
-	opacity: 0.4;
+	color: #000;
+	opacity: 0.6;
 	padding: 0px 0px 5px 44px;
 	font-size: 8pt;
 	font-weight: normal;
@@ -29,7 +29,7 @@ div#container1 {
 	background-repeat: repeat-x;
 	background-image: url('images/inner-bcg.png');
 	padding: 2em;
-	border: 1px solid #bbb;
+	border: 1px solid #999;
 	margin: 10px 0px 0px 0px;
 	min-width: 630px;
 }
