@@ -141,7 +141,7 @@
     </box>
   </item>
   <item type="label" id="pam-error">
-    <pos x="50%" y="70%" anchor="c"/>
+    <pos x="50%" y="65%" anchor="c"/>
     <normal font="Sans Bold 12" color="#ffffff"/>
     <text> </text>
   </item>
