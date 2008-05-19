@@ -25,7 +25,6 @@ body>h3 {
 
 div#container1 {
 	background-color: #ffffff;
-	/* opacity: 0.6; doesn't work in konqui */
 	background-repeat: repeat-x;
 	background-image: url('images/inner-bcg.png');
 	padding: 2em;
