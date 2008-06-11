@@ -40,6 +40,7 @@ function localized_message() {
 }
 
 $(document).ready(function() {
+  console.log('foo');
   var prefix = 'http://forgeftp.novell.com/opensuse-art/openSUSE11/web-banner/'; //base location of the script
   var message = localized_message();
 
@@ -47,37 +48,43 @@ $(document).ready(function() {
   var releasedate = new Date();
   releasedate.setFullYear(2008,5,19); //19.6.2008
   var today = new Date();
-  var daystogo = days_remaining(today,releasedate);
+  //var daystogo = days_remaining(today,releasedate);
+  var daystogo = 0;
 
   $('#nojavascriptlink').hide();
-  $('#countercontainer').append("<div id='SUSEcounter'></div>");
-  $('#SUSEcounter').css({
-    'overflow': 'hidden',
-    'position': 'relative',
-    'width':  '256px',
-    'height':  '256px',
-    'background-image': 'url(' + prefix + 'images/background.png)'
-  });
-  $('#SUSEcounter').append("<div id='SUSEdaystogo'>" + daystogo + "</div>");
+  if (daystogo>0) {
+    $('#countercontainer').append("<div id='SUSEcounter'></div>");
+    $('#SUSEcounter').css({
+      'overflow': 'hidden',
+      'position': 'relative',
+      'width':  '256px',
+      'height':  '256px',
+      'background-image': 'url(' + prefix + 'images/background.png)'
+    });
+    $('#SUSEcounter').append("<div id='SUSEdaystogo'>" + daystogo + "</div>");
 
-  $('#SUSEdaystogo').hide().css({
-    'color': '#ffffff',
-    'font-family': "'Trebuchet MS', Sans-Serif",
-    'font-size':  '60pt',
-    'height':  '1em',
-    'font-weight': 'bold',
-    'line-height': '1em',
-    'text-align': 'center',
-    'margin-top': '43%'
-  }).fadeIn();
-  $('#SUSEcounter').append("<div id='SUSEdays'>" + message + "</div>");
-  $('#SUSEdays').hide().css({
-    'position': 'absolute',
-    'bottom': '30px',
-    'right': '30px',
-    'color': '#ffffff',
-    'line-height': '1em',
-    'font-size':  '16pt',
-    'font-family': "'Trebuchet MS', Sans-Serif"
-  }).fadeIn(2000);
+    $('#SUSEdaystogo').hide().css({
+      'color': '#ffffff',
+      'font-family': "'Trebuchet MS', Sans-Serif",
+      'font-size':  '60pt',
+      'height':  '1em',
+      'font-weight': 'bold',
+      'line-height': '1em',
+      'text-align': 'center',
+      'margin-top': '43%'
+    }).fadeIn();
+    $('#SUSEcounter').append("<div id='SUSEdays'>" + message + "</div>");
+    $('#SUSEdays').hide().css({
+      'position': 'absolute',
+      'bottom': '30px',
+      'right': '30px',
+      'color': '#ffffff',
+      'line-height': '1em',
+      'font-size':  '16pt',
+      'font-family': "'Trebuchet MS', Sans-Serif"
+    }).fadeIn(2000);
+  } else {
+    console.log('it\'s ready');
+  $('#nojavascriptlink>img').attr('src',prefix+'images/getit.png').parent().attr('href','http://software.opensuse.org').show();
+  }
 });
