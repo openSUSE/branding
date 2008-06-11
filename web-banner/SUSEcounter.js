@@ -84,7 +84,6 @@ $(document).ready(function() {
       'font-family': "'Trebuchet MS', Sans-Serif"
     }).fadeIn(2000);
   } else {
-    console.log('it\'s ready');
-  $('#nojavascriptlink>img').attr('src',prefix+'images/getit.png').parent().attr('href','http://software.opensuse.org').show();
+    $('#nojavascriptlink>img').attr('src',prefix+'images/getit.png').parent().attr('href','http://software.opensuse.org').show();
   }
 });
