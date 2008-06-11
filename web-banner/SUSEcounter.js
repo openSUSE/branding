@@ -48,8 +48,8 @@ $(document).ready(function() {
   var releasedate = new Date();
   releasedate.setFullYear(2008,5,19); //19.6.2008
   var today = new Date();
-  //var daystogo = days_remaining(today,releasedate);
-  var daystogo = 0;
+  var daystogo = days_remaining(today,releasedate);
+  //var daystogo = 0;
 
   $('#nojavascriptlink').hide();
   if (daystogo>0) {
