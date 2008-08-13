@@ -88,7 +88,6 @@
 								<text> </text>
 							</item>
 
-<![CDATA[
 					<!-- domain label + combo -->
 							<item type="label" id="domain-label">
 								<pos x="0" min-width="100"/>
@@ -105,7 +104,6 @@
 									</item>
 								</fixed>
 							</item>	
-]]>
 					<!-- filler -->
 					<item type="rect">
 						<pos width="200" height="30"/>
