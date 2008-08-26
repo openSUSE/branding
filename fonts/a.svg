@@ -128,13 +128,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline">
-    <path
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 450,380 C 377.81967,380 380,490 380,490 L 580,490 C 584.875,490.125 589.875,495 590,500 L 590,587.0625 L 465,558.22425 C 381,542.22425 330,569.48561 330,640 L 330,690 C 330,767.00162 370.4846,823.98679 464.4846,799.98679 L 590,762.34375 L 590,800 L 700,800 L 700,540 C 700,440 640,380 540,380 L 450,380 z M 440,641.17157 C 440,635.66589 444.74432,631.17157 450.25,631.17157 L 590,631.17157 L 590,715 L 450,715 C 445.24343,715 440,709.75625 440,704.75 L 440,641.17157 z"
-       id="rect9615"
-       sodipodi:nodetypes="cccccccccccccccccccccc" />
     <g
        id="g9629"
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 450,380 C 377.81967,380 380,490 380,490 L 580,490 C 584.875,490.125 589.875,495 590,500 L 590,565.0625 L 465,536.22425 C 381,520.22425 330,547.48561 330,618 L 330,690 C 330,767.00162 370.4846,823.98679 464.4846,799.98679 L 590,762.34375 L 590,800 L 700,800 L 700,540 C 700,440 640,380 540,380 L 450,380 z M 440,641.79899 C 440,636.29331 444.74432,631.79899 450.25,631.79899 L 590,631.79899 L 590,692.37258 L 450,692.37258 C 445.24343,692.37258 440,687.12883 440,682.12258 L 440,641.79899 z"
+       id="path10008"
+       sodipodi:nodetypes="cccccccccccccccccccccc" />
   </g>
 </svg>
