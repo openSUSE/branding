@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
+NeedsXUIDChange: 1
 XUID: [1021 505 18653696 15144810]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1219743539
+ModificationTime: 1219748944
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -49,8 +50,63 @@ DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
 WinInfo: 0 47 21
-OnlyBitmaps: 1
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 256 0
+BeginChars: 256 2
+
+StartChar: b
+Encoding: 98 98 0
+Width: 490
+VWidth: 0
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+170 610 m 1
+ 170 375 l 1
+ 280 420 l 2
+ 350 440 430.031 380 430.031 319.938 c 2
+ 430.031 100 l 2
+ 430.031 40.5859 350 -20 280 0 c 2
+ 170 40 l 1
+ 170 0 l 1
+ 60 0 l 1
+ 60 490 l 2
+ 60 570 115 610 170 610 c 1
+180 310 m 2
+ 175 310 170 305 170 300 c 2
+ 170 120 l 2
+ 170.25 115.25 174.75 109.75 180 110 c 2
+ 310 110 l 2
+ 315 110 320 115 320 120.5 c 2
+ 320 300 l 2
+ 320 305 315 310 310 310 c 2
+ 180 310 l 2
+EndSplineSet
+EndChar
+
+StartChar: h
+Encoding: 104 104 1
+Width: 490
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+170 610 m 1
+ 170 375 l 1
+ 280 420 l 2
+ 335 440 430 390 430.031 319.938 c 2
+ 430.031 -0.03125 l 1
+ 320 0 l 1
+ 320 300 l 2
+ 320 305 315 310 310 310 c 2
+ 180 310 l 2
+ 175 310 170 305 170 300 c 2
+ 170 0 l 1
+ 60 0 l 1
+ 60 490 l 2
+ 60 570 115 610 170 610 c 1
+EndSplineSet
+EndChar
 EndChars
 EndSplineFont
