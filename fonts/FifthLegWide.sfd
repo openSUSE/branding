@@ -3,7 +3,7 @@ FontName: FifthLegWide
 FullName: FifthLeg Wide
 FamilyName: FifthLeg
 Weight: Bold
-Copyright: Created by Jakub Steiner with FontForge 2.0 (http://fontforge.sf.net)
+Copyright: Created by Jakub Steiner <jimmac@gmail.com> with FontForge 2.0\n\nhttp://jimmac.musichall.cz\n
 UComments: "2008-8-26: Created." 
 Version: 0.1
 ItalicAngle: 0
@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
-NeedsXUIDChange: 1
 XUID: [1021 505 18653696 15144822]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1219835586
+ModificationTime: 1219835698
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
