@@ -14,7 +14,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="l.svg"
+   sodipodi:docname="I.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
@@ -58,9 +58,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="620.88387"
-     inkscape:cy="464.18037"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="174.58767"
+     inkscape:cy="33.756904"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -71,9 +71,9 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
-     inkscape:window-height="1030"
-     inkscape:window-x="225"
-     inkscape:window-y="144">
+     inkscape:window-height="904"
+     inkscape:window-x="207"
+     inkscape:window-y="102">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -137,8 +137,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;overflow:visible;enable-background:accumulate"
-       d="M 535,200 C 504.53,200 480,224.53 480,255 L 480,800 C 526.66667,800 573.33333,800 620,800 C 620,800 620,770 620,770 C 620,753.44 606.56,740 590,740 L 590,255 C 590,224.53 565.47,200 535,200 z"
-       id="rect10981"
-       sodipodi:nodetypes="cccccccc" />
+       d="M 535,200 C 504.53,200 480,224.53 480,255 L 480,800 L 590,800 L 590,200 C 590,200 535,200 535,200 z"
+       id="path15906"
+       sodipodi:nodetypes="cccccc" />
   </g>
 </svg>
