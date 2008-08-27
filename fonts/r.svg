@@ -12,7 +12,7 @@
    height="1000"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.46+devel"
    version="1.0"
    sodipodi:docname="r.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -58,9 +58,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-6.8544998"
-     inkscape:cy="51.936077"
+     inkscape:zoom="1"
+     inkscape:cx="459.1022"
+     inkscape:cy="514.68248"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -73,7 +73,7 @@
      inkscape:window-width="1239"
      inkscape:window-height="1030"
      inkscape:window-x="193"
-     inkscape:window-y="119">
+     inkscape:window-y="120">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -137,7 +137,7 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 410,380 C 410,380 300,380 300,380 L 300,800 L 410,800 L 410,569.25 C 410,561.24609 415,557.75 420,555 L 545.75,493.25 C 551.75,490.25 560,495 560,500 L 657.30333,438.69968 C 638.21727,403.22144 559.54822,351.66209 508,394 L 410,476 L 410,380 z"
+       d="m 410,380 c 0,0 -110,0 -110,0 l 0,420 110,0 0,-300 c 0,-5 5,-10 10,-10 l 130,0 c 5,0 10,5 10,10 L 670.03125,474.76213 C 671.45129,404.63565 585.0335,359.88392 507,383 l -97,28 0,-31 z"
        id="rect8981"
        sodipodi:nodetypes="cccccccccccc" />
   </g>
