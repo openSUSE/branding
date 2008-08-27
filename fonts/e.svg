@@ -12,7 +12,7 @@
    height="1000"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.46+devel"
    version="1.0"
    sodipodi:docname="e.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -58,9 +58,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="486.3678"
-     inkscape:cy="470.3418"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="-140.87087"
+     inkscape:cy="264.98867"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -145,7 +145,7 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 431.15625,380 C 358.48958,380 300,438.48958 300,511.15625 L 300,668.84375 C 300,741.51042 346.72203,811.24264 435,811.24264 C 495.94071,811.24264 660.46233,748.98008 660.46233,748.98008 C 666.77953,747.2874 668.53683,742.43216 668.07031,738.83548 C 668.07031,738.83548 668,690 668,690 L 420,690 C 414.5,690 410.0625,685.5625 410.0625,680.0625 L 410.0625,626.96875 L 711.15625,626.96875 L 711.15625,511.15625 C 711.15625,438.48958 652.66664,380 580,380 L 431.15625,380 z M 430,490 L 581.15625,490 C 591.15625,490 601.15625,500 601.15625,510 L 601.03125,550.98719 L 410,550.98719 L 410,510 C 410,500 420,490 430,490 z"
+       d="M 431.15625,380 C 358.48958,380 300,438.48958 300,511.15625 l 0,157.6875 c 0,72.66667 46.72203,142.39889 135,142.39889 60.94071,0 225.46233,-62.26256 225.46233,-62.26256 6.3172,-1.69268 8.0745,-6.54792 7.60798,-10.1446 C 668.07031,738.83548 668,690 668,690 l -248,0 c -5.5,0 -9.9375,-4.4375 -9.9375,-9.9375 l 0,-53.09375 301.09375,0 0,-115.8125 C 711.15625,438.48958 652.66664,380 580,380 l -148.84375,0 z M 430,484 l 151.15625,0 c 10,0 20,10 20,20 l -0.125,46.98719 -191.03125,0 L 410,504 c 0,-10 10,-20 20,-20 z"
        id="rect10077"
        sodipodi:nodetypes="cccsccccccccccccccccc" />
   </g>
