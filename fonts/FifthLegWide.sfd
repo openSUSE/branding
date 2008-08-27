@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
+NeedsXUIDChange: 1
 XUID: [1021 505 18653696 15144822]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1219835698
+ModificationTime: 1219836947
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -61,7 +62,7 @@ Grid
  523 419 l 25
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 256 35
+BeginChars: 256 38
 
 StartChar: b
 Encoding: 98 98 0
@@ -1119,6 +1120,84 @@ SplineSet
  60.5518 578.451 85.3936 603 115.969 603 c 0
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: M
+Encoding: 77 77 35
+Width: 675
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+130 600 m 0
+ 160.47 600 170 579.47 185 561 c 2
+ 337.5 351.844 l 1
+ 490 561 l 2
+ 505 579.47 514.53 600 545 600 c 0
+ 575.47 600 600 575.47 600 545 c 2
+ 600 0 l 1
+ 490 0 l 1
+ 490 384.406 l 1
+ 353.531 210.073 l 2
+ 349.687 205.075 343.501 202.351 337.239 202.351 c 0
+ 331.286 202.351 325.264 204.813 321.117 210.125 c 2
+ 185 384.406 l 1
+ 185 0 l 1
+ 75 0 l 1
+ 75 545 l 2
+ 75 575.47 99.5303 600 130 600 c 0
+EndSplineSet
+EndChar
+
+StartChar: N
+Encoding: 78 78 36
+Width: 630
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+130 600 m 0
+ 160.47 600 170 579.47 185 561 c 2
+ 445.5 215.594 l 1
+ 445.5 600 l 1
+ 555.5 600 l 1
+ 555.5 55 l 2
+ 555.5 24.5303 530.97 0 500.5 0 c 0
+ 470.03 0 460.5 20.5303 445.5 39 c 2
+ 185 384.406 l 1
+ 185 0 l 1
+ 75 0 l 1
+ 75 545 l 2
+ 75 575.47 99.5303 600 130 600 c 0
+EndSplineSet
+EndChar
+
+StartChar: H
+Encoding: 72 72 37
+Width: 600
+VWidth: 0
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+130 600 m 0
+ 160.47 600 185 575.47 185 545 c 2
+ 185 348.406 l 1
+ 415 348.406 l 1
+ 415 545 l 2
+ 415 575.47 439.53 600 470 600 c 2
+ 525 600 l 1
+ 525 0 l 1
+ 415 0 l 1
+ 415 238.406 l 1
+ 185 238.406 l 1
+ 185 0 l 1
+ 75 0 l 1
+ 75 545 l 2
+ 75 575.47 99.5303 600 130 600 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
