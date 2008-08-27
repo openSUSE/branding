@@ -15,13 +15,13 @@ LayerCount: 2
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
 NeedsXUIDChange: 1
-XUID: [1021 505 18653696 15144819]
+XUID: [1021 505 18653696 15144820]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1219779526
+ModificationTime: 1219779912
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -58,7 +58,7 @@ Grid
  523 419 l 25
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 256 27
+BeginChars: 256 28
 
 StartChar: b
 Encoding: 98 98 0
@@ -708,11 +708,35 @@ EndSplineSet
 Validated: 1
 EndChar
 
-StartChar: y
-Encoding: 121 121 22
-Width: 417
+StartChar: comma
+Encoding: 44 44 22
+Width: 242
 VWidth: 0
 Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+122.359 110.438 m 0
+ 155.715 110.438 182.797 83.3555 182.797 50 c 2
+ 182.797 8.06348 l 2
+ 182.797 -12.4395 176.559 -30.9932 168.547 -43.5938 c 2
+ 116.609 -117.531 l 2
+ 107.9 -127.884 97.3627 -132.11 87.7522 -132.11 c 0
+ 72.7464 -132.11 60.0001 -121.807 60.0001 -108.436 c 0
+ 60.0001 -103.808 61.527 -98.8129 65.0156 -93.75 c 2
+ 98.7031 -28.6562 l 1
+ 102.813 -23.159 103.931 -18.2699 103.931 -13.0382 c 0
+ 103.931 -11.2354 103.798 -9.39187 103.609 -7.46875 c 1
+ 79.4258 0.427734 61.9531 23.1865 61.9531 50 c 0
+ 61.9531 83.3555 89.0039 110.438 122.359 110.438 c 0
+EndSplineSet
+EndChar
+
+StartChar: y
+Encoding: 121 121 23
+Width: 417
+VWidth: 0
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -731,10 +755,11 @@ SplineSet
  2.2832 368.207 13.8164 400.916 41.3047 414.062 c 0
  49.0361 417.76 57.1738 419.515 65.1797 419.5 c 0
 EndSplineSet
+Validated: 33
 EndChar
 
 StartChar: c
-Encoding: 99 99 23
+Encoding: 99 99 24
 Width: 468
 VWidth: 0
 Flags: W
@@ -762,7 +787,7 @@ Validated: 1
 EndChar
 
 StartChar: w
-Encoding: 119 119 24
+Encoding: 119 119 25
 Width: 673
 VWidth: 0
 Flags: W
@@ -802,10 +827,11 @@ Validated: 1
 EndChar
 
 StartChar: z
-Encoding: 122 122 25
+Encoding: 122 122 26
 Width: 470
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: 0 110<204.813 405.748> 310 110<60.4973 253.338>
 LayerCount: 2
 Fore
 SplineSet
@@ -831,10 +857,11 @@ SplineSet
  30.0117 310 l 1
  30.0117 358.104 39.4912 420 130.012 420 c 2
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: x
-Encoding: 120 120 26
+Encoding: 120 120 27
 Width: 451
 VWidth: 0
 Flags: W
