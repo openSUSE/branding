@@ -86,8 +86,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="904"
-     inkscape:window-x="97"
-     inkscape:window-y="186">
+     inkscape:window-x="176"
+     inkscape:window-y="138">
     <sodipodi:guide
        orientation="0,1"
        position="880,800"
@@ -151,8 +151,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 404.44151,200 c -90.52072,0 -100.19887,61.89595 -100.19887,110 L 560,310 323.78801,650.15872 C 310.44487,669.60849 299.5,691.5 300,710 c 10e-6,0 0,50 0,50 10e-6,20 29.62132,40 42.12132,40 0,0 277.87868,0 277.87868,0 80,0 80,-80 80,-110 l -270,0 260,-370 c 7.6771,-11.81005 14.24264,-23.61369 14.24264,-40 0,0 0,-40 0,-40 0,-20 -15,-40 -40,-40 l -259.80113,0 z"
+       d="m 398.78466,200 c -90.52072,0 -100.19887,61.89595 -100.19887,110 L 560,310 323.78801,650.15872 C 310.44487,669.60849 299.5,691.5 300,710 c 10e-6,0 0,50 0,50 10e-6,20 29.62132,40 42.12132,40 0,0 293.43503,0 293.43503,0 80,0 80,-80 80,-110 L 430,690 690,320 c 7.6771,-11.81005 14.24264,-23.61369 14.24264,-40 0,0 0,-40 0,-40 0,-20 -15,-40 -40,-40 l -265.45798,0 0,0 z"
        id="rect10077"
-       sodipodi:nodetypes="ccccscccccccccc" />
+       sodipodi:nodetypes="ccccsccccccccccc" />
   </g>
 </svg>
