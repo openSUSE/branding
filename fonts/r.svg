@@ -58,9 +58,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="459.1022"
-     inkscape:cy="514.68248"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="448.31774"
+     inkscape:cy="581.62392"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -137,8 +137,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 410,380 c 0,0 -110,0 -110,0 l 0,420 110,0 0,-300 c 0,-5 5,-10 10,-10 l 130,0 c 5,0 10,5 10,10 L 670.03125,474.76213 C 671.45129,404.63565 585.0335,359.88392 507,383 l -97,28 0,-31 z"
+       d="m 410,380 c 0,0 -110,0 -110,0 l 0,420 110,0 0,-300 c 0,-5 5,-10 10,-10 l 250.03125,0 C 671.45129,419.87352 585.0335,359.88392 507,383 l -97,28 0,-31 z"
        id="rect8981"
-       sodipodi:nodetypes="cccccccccccc" />
+       sodipodi:nodetypes="cccccccccc" />
   </g>
 </svg>

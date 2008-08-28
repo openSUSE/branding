@@ -15,13 +15,13 @@ LayerCount: 2
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
 NeedsXUIDChange: 1
-XUID: [1021 505 18653696 15144838]
+XUID: [1021 505 18653696 15144839]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1219938772
+ModificationTime: 1219939040
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -257,7 +257,7 @@ Encoding: 114 114 6
 Width: 415
 VWidth: 0
 Flags: W
-HStem: 0 21G<60 170> 310 113.134<212.438 319.996>
+HStem: 0 21G<60 170> 310 112.039<209.406 374.162>
 VStem: 60 110<0 310 389 420>
 LayerCount: 2
 Fore
@@ -265,11 +265,9 @@ SplineSet
 170 420 m 1
  170 389 l 1
  267 417 l 2
- 281.085 421.173 295.444 423.134 309.509 423.134 c 0
- 372.736 423.134 430.049 383.503 430.049 326.941 c 0
- 430.049 326.375 430.043 325.808 430.031 325.238 c 1
- 320 300 l 1
- 320 305 315 310 310 310 c 2
+ 278.611 420.44 290.408 422.039 302.073 422.039 c 0
+ 368.169 422.039 430.049 370.686 430.049 311.706 c 0
+ 430.049 311.138 430.043 310.569 430.031 310 c 1
  180 310 l 2
  175 310 170 305 170 300 c 2
  170 0 l 1
@@ -277,7 +275,6 @@ SplineSet
  60 420 l 1
  170 420 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: g
@@ -1720,8 +1717,8 @@ StartChar: W
 Encoding: 87 87 54
 Width: 717
 VWidth: 0
-Flags: HW
-HStem: 0 21G<-39.0005 119.602 197.117 355.699> 400.019 20G<196.982 202.279>
+Flags: W
+HStem: 0 21G<156.382 308.902 396.997 551.082> 400.019 20G<392.365 397.662>
 LayerCount: 2
 Fore
 SplineSet
@@ -1751,6 +1748,7 @@ SplineSet
  34.9997 574.355 52.12 596.843 77.5771 602.763 c 0
  81.2871 603.625 84.9805 604.099 88.6396 604.2 c 0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: Y
