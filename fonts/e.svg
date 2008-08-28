@@ -47,6 +47,34 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective9638-1" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective8102-2" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective8089-4" />
+    <inkscape:perspective
+       id="perspective10-5"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -58,12 +86,12 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-140.87087"
-     inkscape:cy="264.98867"
+     inkscape:zoom="0.25"
+     inkscape:cx="327.54447"
+     inkscape:cy="417.75447"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
@@ -145,8 +173,11 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 431.15625,380 C 358.48958,380 300,438.48958 300,511.15625 l 0,157.6875 c 0,72.66667 46.72203,142.39889 135,142.39889 60.94071,0 225.46233,-62.26256 225.46233,-62.26256 6.3172,-1.69268 8.0745,-6.54792 7.60798,-10.1446 C 668.07031,738.83548 668,690 668,690 l -248,0 c -5.5,0 -9.9375,-4.4375 -9.9375,-9.9375 l 0,-53.09375 301.09375,0 0,-115.8125 C 711.15625,438.48958 652.66664,380 580,380 l -148.84375,0 z M 430,484 l 151.15625,0 c 10,0 20,10 20,20 l -0.125,46.98719 -191.03125,0 L 410,504 c 0,-10 10,-20 20,-20 z"
+       d="M 431.15625,380 C 358.48958,380 300,438.48958 300,511.15625 L 300,668 c 0,70 50,140 130,140 l 122,0 c 80,0 120,-40 120,-110 0,0 -120,0 -120,0 l -122,0 c -12,0 -19.9375,-8.99984 -19.9375,-21 l 0,-50.03125 301.09375,0 0,-115.8125 C 711.15625,438.48958 652.66664,380 580,380 l -148.84375,0 z M 430,484 l 151.15625,0 c 10,0 20,10 20,20 l -0.125,47 L 410,551 l 0,-47 c 0,-10 10,-20 20,-20 z"
        id="rect10077"
-       sodipodi:nodetypes="cccsccccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccccccc" />
+    <g
+       id="g9629-7"
+       transform="matrix(0.8901714,0,0,-0.8901714,-832.22279,800.96323)" />
   </g>
 </svg>
