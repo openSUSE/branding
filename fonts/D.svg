@@ -12,7 +12,7 @@
    height="1000"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46+devel"
+   inkscape:version="0.46"
    version="1.0"
    sodipodi:docname="D.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -63,12 +63,12 @@
      inkscape:cy="741.19561"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
      inkscape:snap-nodes="true"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="1030"
@@ -141,7 +141,7 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 575,800 c 50,0 115,-37.48561 115,-110 l 0,-374.46182 C 690,254.79091 635.51135,200 567.57238,200 L 320,200 l 0,600 255,0 z m 5,-120 c 0,5.50568 -4.74432,10 -10.25,10 l -139.75,0 0,-379.05508 140,0 c 4.75657,0 10,5.24375 10,10.25 L 580,680 z"
+       d="M 595,800 C 645,800 710,762.51439 710,690 L 710,315.53818 C 710,254.79091 655.51135,200 587.57238,200 L 320,200 L 320,800 L 595,800 z M 600,680 C 600,685.50568 595.25568,690 589.75,690 L 430,690 L 430,310.94492 L 590,310.94492 C 594.75657,310.94492 600,316.18867 600,321.19492 L 600,680 z"
        id="rect9615"
        sodipodi:nodetypes="cccccccccccccc" />
   </g>
