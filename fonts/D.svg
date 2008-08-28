@@ -12,7 +12,7 @@
    height="1000"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.46+devel"
    version="1.0"
    sodipodi:docname="D.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -58,9 +58,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="561.99048"
-     inkscape:cy="547.03253"
+     inkscape:zoom="0.5"
+     inkscape:cx="130.4307"
+     inkscape:cy="741.19561"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -68,7 +68,7 @@
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
      inkscape:snap-nodes="true"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="1030"
@@ -141,8 +141,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 575,800 C 625,800 690,762.51439 690,690 L 690,315.53818 C 690,238.53656 649.5154,181.55139 555.5154,205.55139 L 430,243.19443 L 430,200 L 320,200 L 320,800 L 575,800 z M 580,680 C 580,685.50568 575.25568,690 569.75,690 L 430,690 L 430,310.94492 L 570,310.94492 C 574.75657,310.94492 580,316.18867 580,321.19492 L 580,680 z"
+       d="m 575,800 c 50,0 115,-37.48561 115,-110 l 0,-374.46182 C 690,254.79091 635.51135,200 567.57238,200 L 320,200 l 0,600 255,0 z m 5,-120 c 0,5.50568 -4.74432,10 -10.25,10 l -139.75,0 0,-379.05508 140,0 c 4.75657,0 10,5.24375 10,10.25 L 580,680 z"
        id="rect9615"
-       sodipodi:nodetypes="cccccccccccccccc" />
+       sodipodi:nodetypes="cccccccccccccc" />
   </g>
 </svg>
