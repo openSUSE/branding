@@ -144,7 +144,7 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 377,380 c -55.42041,0 -67,64.89428 -67,110 L 630.09375,490 409.40625,986 507,986 c 16.50757,0 36.37044,-10.3383 43.37044,-27.8383 L 753.5,492.8125 c 4.5,-10 6.5,-19.5625 6.5,-33.0625 0,0 0,-24.75 0,-24.75 0,-30.47 -24.53,-55 -55,-55 l -328,0 z"
+       d="m 393,380 c -55.42041,0 -67,64.89428 -67,110 L 598.09375,490 425.40625,986 523,986 c 16.50757,0 36.37044,-10.3383 43.37044,-27.8383 L 721.5,492.8125 c 4.5,-10 6.5,-19.5625 6.5,-33.0625 0,0 0,-24.75 0,-24.75 0,-30.47 -24.53,-55 -55,-55 l -280,0 z"
        id="rect10981"
        sodipodi:nodetypes="ccccccccccc" />
   </g>
