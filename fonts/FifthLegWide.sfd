@@ -15,13 +15,13 @@ LayerCount: 2
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
 NeedsXUIDChange: 1
-XUID: [1021 505 18653696 15144839]
+XUID: [1021 505 18653696 15144840]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1219939040
+ModificationTime: 1219944180
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -64,7 +64,7 @@ Grid
  523 419 l 25
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 256 63
+BeginChars: 256 64
 
 StartChar: b
 Encoding: 98 98 0
@@ -275,6 +275,7 @@ SplineSet
  60 420 l 1
  170 420 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: g
@@ -1951,6 +1952,22 @@ SplineSet
  371.656 584.844 l 2
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: one
+Encoding: 49 49 63
+Width: 410
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+200 430 m 1
+ 200 0 l 1
+ 90 0 l 1
+ 90 310 l 2
+ 90 390 145 430 200 430 c 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
