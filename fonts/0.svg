@@ -14,11 +14,14 @@
    sodipodi:version="0.32"
    inkscape:version="0.46+devel"
    version="1.0"
-   sodipodi:docname="6.svg"
+   sodipodi:docname="0.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
      id="defs4">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8337" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 526.18109 : 1"
@@ -47,34 +50,6 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective10825"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 0.5 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective10825-7"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 0.5 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective10856"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 0.5 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective8221"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 0.5 : 1"
-       sodipodi:type="inkscape:persp3d" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -86,12 +61,12 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="365.23777"
-     inkscape:cy="502.42673"
+     inkscape:zoom="0.25"
+     inkscape:cx="-65.107217"
+     inkscape:cy="-120.85657"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
@@ -100,8 +75,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="1030"
-     inkscape:window-x="265"
-     inkscape:window-y="39">
+     inkscape:window-x="225"
+     inkscape:window-y="144">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -164,9 +139,9 @@
        id="g9629"
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
-       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 454,200 c -68.02941,0 -116,43.97298 -116,118 l 0,356.84375 C 338,747.51042 396.48958,806 469.15625,806 l 127.6875,0 C 669.51042,806 728,747.51039 728,674.84375 l 0,-169.6875 C 728,432.48958 669.51039,384 596.84375,384 l -127.6875,0 c -7.20573,0 -14.27253,0.58045 -21.15625,1.6875 L 448,320 c 0.125,-5 5.125,-9.875 10,-10 l 240,0 c 0,0 2.18033,-110 -70,-110 l -174,0 z m 4,292 150,0 c 5.5,0 9.9375,4.4375 9.9375,9.9375 l 0,178.125 c 0,5.5 -4.4375,9.9375 -9.9375,9.9375 l -150,0 c -5.5,0 -9.9375,-4.4375 -9.9375,-9.9375 l 0,-178.125 C 448.0625,496.4375 452.5,492 458,492 z"
-       id="rect10077-4"
-       sodipodi:nodetypes="cccccccccccccccccccccccc" />
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 431.15625,380 C 358.48958,380 300,438.48958 300,511.15625 L 300,720 c 0,40 50,80 80,80 l 138.90625,0 C 591.57292,800 650.0625,741.51039 650.0625,668.84375 L 650.0625,450 C 650.0625,409.99995 610,380 590,380 l -158.84375,0 z M 420,490 l 110.0625,0 c 5.5,0 9.9375,4.4375 9.9375,9.9375 l 0,180.125 c 0,5.5 -4.4375,9.9375 -9.9375,9.9375 L 420,690 c -5.5,0 -9.9375,-4.4375 -9.9375,-9.9375 l 0,-180.125 C 410.0625,494.4375 414.5,490 420,490 z"
+       id="rect10077"
+       sodipodi:nodetypes="cccccccccccccccccc" />
   </g>
 </svg>
