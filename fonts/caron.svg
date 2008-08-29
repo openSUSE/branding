@@ -14,7 +14,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="grave.svg"
+   sodipodi:docname="caron.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
@@ -58,12 +58,12 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="520.74261"
-     inkscape:cy="559.99313"
+     inkscape:zoom="0.5"
+     inkscape:cx="589.52062"
+     inkscape:cy="851.79512"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
@@ -71,9 +71,9 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
-     inkscape:window-height="904"
-     inkscape:window-x="168"
-     inkscape:window-y="74">
+     inkscape:window-height="1030"
+     inkscape:window-x="355"
+     inkscape:window-y="14">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -100,21 +100,13 @@
        position="597,310"
        id="guide8999" />
     <sodipodi:guide
-       orientation="-0.37460659,0.92718385"
-       position="460,186"
+       orientation="-0.25881905,0.96592583"
+       position="262,152"
        id="guide9513" />
     <sodipodi:guide
-       orientation="-0.9961947,0.087155743"
-       position="559.5,505.5"
+       orientation="0.25881905,0.96592583"
+       position="1044,674"
        id="guide9515" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="515,375"
-       id="guide9625" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="737.66546,14.440433"
-       id="guide10011" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -137,8 +129,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.04586792;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 417.86586,212.3201 C 406.24565,232.44689 412.08923,259.56784 432.81188,270.04633 L 605.73655,348.96415 C 617.33392,354.55979 631.46962,350.34005 638.0114,339.00935 C 638.0114,339.00935 649.82284,319.68123 649.82284,319.68123 C 649.82284,319.68123 475.99272,196.72767 475.99272,196.72767 C 455.6517,184.98377 429.60976,191.97907 417.86586,212.3201 z"
+       d="M 411.8125,195.4375 C 411.81251,195.4375 400,214.78125 400,214.78125 C 400,214.78126 533.84375,337.71875 533.84375,337.71875 C 548.19105,345.44321 563.63774,344.98532 578,337.71875 C 578,337.71875 711.81253,214.78126 711.8125,214.78125 C 711.8125,214.78125 699.99999,195.4375 700,195.4375 C 693.45822,184.1068 679.34735,179.90436 667.75,185.5 L 667.71875,185.4375 L 555.90625,254.78125 L 444.125,185.4375 L 444.09375,185.5 C 431.83127,179.69471 419.45501,184.93679 411.8125,195.4375 z"
        id="path14207"
-       sodipodi:nodetypes="cccsccc" />
+       sodipodi:nodetypes="cccccscccccc" />
   </g>
 </svg>
