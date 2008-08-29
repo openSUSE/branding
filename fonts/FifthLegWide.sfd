@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1220023206
+ModificationTime: 1220023374
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -50,7 +50,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 28 14 11
+WinInfo: 154 14 11
 BeginPrivate: 2
 BlueValues 22 [-6 0 418 429 610 610]
 OtherBlues 11 [-191 -186]
@@ -66,7 +66,7 @@ Grid
  523 419 l 25
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65536 424
+BeginChars: 65536 427
 
 StartChar: b
 Encoding: 98 98 0
@@ -7650,6 +7650,39 @@ SplineSet
  19.1807 192.656 l 1
  46.3223 223.903 97.4863 279.638 140.556 279.844 c 0
 EndSplineSet
+EndChar
+
+StartChar: atilde
+Encoding: 227 227 424
+Width: 493
+VWidth: 0
+Flags: H
+LayerCount: 2
+Fore
+Refer: 423 126 S 0.7 0 0 0.7 96.0376 436.021 2
+Refer: 3 97 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ntilde
+Encoding: 241 241 425
+Width: 510
+VWidth: 0
+Flags: H
+LayerCount: 2
+Fore
+Refer: 423 126 S 0.7 0 0 0.7 87.0376 436.021 2
+Refer: 5 110 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: otilde
+Encoding: 245 245 426
+Width: 550
+VWidth: 0
+Flags: HO
+LayerCount: 2
+Fore
+Refer: 423 126 S 0.7 0 0 0.7 107.038 436.021 2
+Refer: 8 111 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
