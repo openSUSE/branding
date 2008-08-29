@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219742876
-ModificationTime: 1220020269
+ModificationTime: 1220020736
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -50,7 +50,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 14 11
+WinInfo: 154 14 11
 BeginPrivate: 2
 BlueValues 22 [-6 0 418 429 610 610]
 OtherBlues 11 [-191 -186]
@@ -3354,16 +3354,15 @@ EndChar
 
 StartChar: dcaron
 Encoding: 271 271 142
-Width: 490
+Width: 530
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -3.89551 113.896<170.243 266.906> 310 113.923<170.067 260.617> 367.452 242.548<574.429 591.509> 590 20<420.281 450.031>
 VStem: 60 110.031<110 310> 340.031 110<0 40 109.996 120 120 310 375 568.341> 530.031 122.797<505.066 594.291> 573.962 78.866<445.571 492.093>
 LayerCount: 2
 Fore
-Refer: 22 44 S 1 0 0 1 470.031 499.562 2
+Refer: 22 44 N 1 0 0 1 429.031 499.562 2
 Refer: 9 100 N 1 0 0 1 0 0 2
-Validated: 1
 EndChar
 
 StartChar: Ebreve
@@ -7203,9 +7202,9 @@ StartChar: dollar
 Encoding: 36 36 415
 Width: 478
 VWidth: 0
-Flags: HWO
-HStem: -0.96875 102<-181.107 -72 -10 39.3828> 238.406 110.25<-130 41.9963> 498 102<-130 -72 -10 84.9618>
-VStem: -240 110<348.656 498> -72 62<-76.6108 -0.96875 600 672.611> 42 110<102.557 111 111 236.16>
+Flags: W
+HStem: -0.96875 102<98.8933 208 270 319.383> 238.406 110.594<150 322> 498 102<150 208 270 364.962>
+VStem: 40 110<349 498> 208 62<-76.6108 -0.96875 600 672.611> 322 110<102.557 111 111 236.161>
 LayerCount: 2
 Fore
 SplineSet
@@ -7241,6 +7240,7 @@ SplineSet
  208 660.174 221.826 674 239 674 c 2
  270 674 l 1
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: Euro
