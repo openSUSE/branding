@@ -43,8 +43,8 @@
      showgrid="false"
      inkscape:window-width="1022"
      inkscape:window-height="968"
-     inkscape:window-x="88"
-     inkscape:window-y="70"
+     inkscape:window-x="484"
+     inkscape:window-y="50"
      showguides="true"
      inkscape:guide-bbox="true">
     <inkscape:grid
@@ -8243,6 +8243,13 @@
        y1="101.5"
        x2="90"
        y2="112.65313" />
+    <inkscape:perspective
+       id="perspective9347"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <metadata
      id="metadata7">
@@ -8313,6 +8320,14 @@
        height="306.99075"
        x="-2.7861633"
        y="-0.49537656" />
+    <image
+       y="-276"
+       x="-534"
+       id="image9336"
+       height="1200"
+       width="1600"
+       sodipodi:absref="/home/jimmac/gfx/novell/products/openSUSE11/mockups/installerBG.png"
+       xlink:href="/home/jimmac/gfx/novell/products/openSUSE11/mockups/installerBG.png" />
     <g
        style="fill:#ffffff;fill-opacity:1"
        id="g8866"

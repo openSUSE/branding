@@ -14,9 +14,8 @@
    height="290"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45.17116"
+   inkscape:version="0.46+devel"
    version="1.0"
-   sodipodi:docbase="/home/jimmac/gfx/novell/pdes/branches/openSUSE10.3/gnome-session"
    sodipodi:docname="gimp-splash.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/jimmac/gfx/novell/pdes/branches/experiments/suse-1/boot4-tongue.png"
@@ -44,8 +43,8 @@
      showgrid="false"
      inkscape:window-width="1022"
      inkscape:window-height="968"
-     inkscape:window-x="301"
-     inkscape:window-y="119"
+     inkscape:window-x="102"
+     inkscape:window-y="100"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-bbox="true"
@@ -3008,6 +3007,13 @@
        fx="150"
        fy="289"
        r="144" />
+    <inkscape:perspective
+       id="perspective9347"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <metadata
      id="metadata7">
@@ -3017,35 +3023,35 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-        <dc:date></dc:date>
+        <dc:title />
+        <dc:date />
         <dc:creator>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:creator>
         <dc:rights>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:rights>
         <dc:publisher>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:publisher>
-        <dc:identifier></dc:identifier>
-        <dc:source></dc:source>
-        <dc:relation></dc:relation>
-        <dc:language></dc:language>
+        <dc:identifier />
+        <dc:source />
+        <dc:relation />
+        <dc:language />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
-        <dc:coverage></dc:coverage>
-        <dc:description></dc:description>
+        <dc:coverage />
+        <dc:description />
         <dc:contributor>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:contributor>
         <cc:license
@@ -3061,13 +3067,14 @@
      inkscape:label="logo"
      id="layer2"
      inkscape:groupmode="layer">
-    <rect
-       style="opacity:1;fill:url(#linearGradient8012);fill-opacity:1;fill-rule:evenodd;stroke:#2e3436;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect8230"
-       width="301.53571"
-       height="291.10345"
-       x="-0.76785672"
-       y="-0.55172479" />
+    <image
+       y="-304"
+       x="-742"
+       id="image9336"
+       height="1200"
+       width="1600"
+       sodipodi:absref="/home/jimmac/gfx/novell/products/openSUSE11/mockups/installerBG.png"
+       xlink:href="/home/jimmac/gfx/novell/products/openSUSE11/mockups/installerBG.png" />
     <path
        sodipodi:type="inkscape:offset"
        inkscape:radius="-1.073054"
@@ -3218,10 +3225,10 @@
            sodipodi:cy="21.837049"
            sodipodi:rx="2.2980971"
            sodipodi:ry="2.2980971"
-           d="M 24.041631,21.837049 A 2.2980971,2.2980971 0 1 1 19.445437,21.837049 A 2.2980971,2.2980971 0 1 1 24.041631,21.837049 z"
+           d="m 24.041631,21.837049 c 0,1.26855 -1.029547,2.298098 -2.298097,2.298098 -1.26855,0 -2.298097,-1.029548 -2.298097,-2.298098 0,-1.268549 1.029547,-2.298097 2.298097,-2.298097 1.26855,0 2.298097,1.029548 2.298097,2.298097 z"
            transform="matrix(1.2815418,0,0,1.2815418,-74.68606,73.03819)" />
         <path
-           d="M 24.041631,21.837049 A 2.2980971,2.2980971 0 1 1 19.445437,21.837049 A 2.2980971,2.2980971 0 1 1 24.041631,21.837049 z"
+           d="m 24.041631,21.837049 c 0,1.26855 -1.029547,2.298098 -2.298097,2.298098 -1.26855,0 -2.298097,-1.029548 -2.298097,-2.298098 0,-1.268549 1.029547,-2.298097 2.298097,-2.298097 1.26855,0 2.298097,1.029548 2.298097,2.298097 z"
            sodipodi:ry="2.2980971"
            sodipodi:rx="2.2980971"
            sodipodi:cy="21.837049"

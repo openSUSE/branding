@@ -14,9 +14,8 @@
    height="95"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45.17116"
+   inkscape:version="0.46+devel"
    version="1.0"
-   sodipodi:docbase="/home/jimmac/gfx/novell/pdes/branches/openSUSE10.3/openoffice.org"
    sodipodi:docname="ooabout.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/jimmac/gfx/novell/pdes/branches/experiments/suse-1/boot4-tongue.png"
@@ -8415,6 +8414,13 @@
        y1="342.61313"
        x2="639.22455"
        y2="-248.52814" />
+    <inkscape:perspective
+       id="perspective9347"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <metadata
      id="metadata7">
@@ -8424,35 +8430,35 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-        <dc:date></dc:date>
+        <dc:title />
+        <dc:date />
         <dc:creator>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:creator>
         <dc:rights>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:rights>
         <dc:publisher>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:publisher>
-        <dc:identifier></dc:identifier>
-        <dc:source></dc:source>
-        <dc:relation></dc:relation>
-        <dc:language></dc:language>
+        <dc:identifier />
+        <dc:source />
+        <dc:relation />
+        <dc:language />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
-        <dc:coverage></dc:coverage>
-        <dc:description></dc:description>
+        <dc:coverage />
+        <dc:description />
         <dc:contributor>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:contributor>
         <cc:license
@@ -8485,6 +8491,14 @@
        height="102.99076"
        x="-5.7861638"
        y="-3.495379" />
+    <image
+       y="-547"
+       x="-773"
+       id="image9336"
+       height="1200"
+       width="1600"
+       sodipodi:absref="/home/jimmac/gfx/novell/products/openSUSE11/mockups/installerBG.png"
+       xlink:href="/home/jimmac/gfx/novell/products/openSUSE11/mockups/installerBG.png" />
     <g
        style="fill:#ffffff;fill-opacity:1"
        id="g8866"
@@ -8568,7 +8582,7 @@
          transform="translate(66.420761,17.402247)">
         <path
            transform="matrix(3.0751287e-2,0,0,5.0321588e-2,18.352199,0.4312324)"
-           d="M 681.65094,533.34583 A 478.00418,281.4285 0 1 1 -274.35742,533.34583 A 478.00418,281.4285 0 1 1 681.65094,533.34583 z"
+           d="m 681.65094,533.34583 c 0,155.34853 -214.14587,281.42849 -478.00418,281.42849 -263.858309,0 -478.00418,-126.07996 -478.00418,-281.42849 0,-155.34854 214.145871,-281.4285 478.00418,-281.4285 263.85831,0 478.00418,126.07996 478.00418,281.4285 z"
            sodipodi:ry="281.4285"
            sodipodi:rx="478.00418"
            sodipodi:cy="533.34583"
