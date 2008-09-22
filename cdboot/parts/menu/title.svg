@@ -12,7 +12,7 @@
    height="30"
    id="svg5934"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.46+devel"
    version="1.0"
    sodipodi:docname="title.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
@@ -46,8 +46,8 @@
      inkscape:showpageshadow="false"
      inkscape:window-width="641"
      inkscape:window-height="652"
-     inkscape:window-x="377"
-     inkscape:window-y="275" />
+     inkscape:window-x="733"
+     inkscape:window-y="351" />
   <metadata
      id="metadata5939">
     <rdf:RDF>
@@ -66,15 +66,15 @@
      transform="translate(-272.68264,-469.08986)">
     <text
        xml:space="preserve"
-       style="font-size:17.84898949px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:300%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:ChollaWideBold;-inkscape-font-specification:ChollaWideBold Bold"
+       style="font-size:17.84898949px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:300%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
        x="311.18457"
-       y="490.06332"
+       y="489.06332"
        id="text5553"
        sodipodi:linespacing="300%"><tspan
          sodipodi:role="line"
          id="tspan5557"
          x="311.18457"
-         y="490.06332">openSUSE Installer</tspan></text>
+         y="489.06332">openSUSE Installer</tspan></text>
     <g
        id="g5607"
        inkscape:label="Layer 1"
