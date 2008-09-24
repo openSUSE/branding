@@ -2,7 +2,7 @@
 <?php
 //depends on graphicsmagic and rsvg
 
-$distro = "openSUSE 11.0";
+$distro = "openSUSE 11.1";
 $themename = "SuSE";
 $themepath = "./bootsplash/$themename";
 $imagepath = "/etc/bootsplash/themes/$themename/images";
