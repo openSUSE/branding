@@ -1,8 +1,0 @@
-[GdmGreeterTheme]
-Encoding=UTF-8
-Greeter=suse.xml
-Name=openSUSE 11.0
-Description=Default openSUSE 11.0 Theme
-Author=Jakub Steiner
-Copyright=(c) 2008 Novell, Inc.
-Screenshot=screenshot.png
