@@ -2,7 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,12 +12,19 @@
    height="60"
    id="svg4791"
    sodipodi:version="0.32"
-   inkscape:version="0.45+devel"
+   inkscape:version="0.46+devel"
    version="1.0"
    sodipodi:docname="suse.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <defs
      id="defs4793">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 30 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="60 : 30 : 1"
+       inkscape:persp3d-origin="30 : 20 : 1"
+       id="perspective15" />
     <filter
        inkscape:collect="always"
        id="filter5993">
@@ -35,7 +42,7 @@
      gridtolerance="10000"
      guidetolerance="10"
      objecttolerance="10"
-     inkscape:pageopacity="0.75686275"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="86.714286"
@@ -48,8 +55,9 @@
      height="60px"
      inkscape:window-width="872"
      inkscape:window-height="623"
-     inkscape:window-x="0"
-     inkscape:window-y="25" />
+     inkscape:window-x="3"
+     inkscape:window-y="23"
+     showgrid="false" />
   <metadata
      id="metadata4796">
     <rdf:RDF>
@@ -95,7 +103,7 @@
            sodipodi:cy="262"
            sodipodi:rx="29"
            sodipodi:ry="29"
-           d="M 268,262 A 29,29 0 1 1 210,262 A 29,29 0 1 1 268,262 z"
+           d="m 268,262 c 0,16.008 -12.992,29 -29,29 -16.008,0 -29,-12.992 -29,-29 0,-16.008 12.992,-29 29,-29 16.008,0 29,12.992 29,29 z"
            transform="matrix(0.8275862,0,0,0.8275862,39.206897,44.172414)" />
       </g>
     </g>
