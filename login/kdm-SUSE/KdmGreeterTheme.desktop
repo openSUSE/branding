@@ -1,8 +1,8 @@
 [KdmGreeterTheme]
 Encoding=UTF-8
-Greeter=suse4.xml
-Name=openSUSE 11.0
-Description=Default openSUSE 11.0 Theme
+Greeter=suse.xml
+Name=openSUSE 11.1
+Description=Default openSUSE 11.1 Theme
 Author=Jakub Steiner
 Copyright=(c) 2008 Novell, Inc.
 Screenshot=screenshot.png
