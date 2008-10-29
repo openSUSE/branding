@@ -3,15 +3,15 @@
 //depends on graphicsmagic and rsvg
 
 $distro = "openSUSE 11.1";
-$themename = "SuSE";
+$themename = "openSUSE";
 $themepath = "./bootsplash/$themename";
 $imagepath = "/etc/bootsplash/themes/$themename/images";
 //resolution, jpeg export quality pairs
 $resolutions = array("640x480"=>"95", "800x600"=>"95", "1024x600"=>"95", 
-										 "1024x768"=>"92", "1152x768"=>"92", "1152x864"=>"92", 
-										 "1280x768"=>"92", "1366x768"=>"92", "1280x800"=>"92", 
-										 "1280x854"=>"92", 
-										 "1280x960"=>"92", "1280x1024"=>"92", "1400x1050"=>"91",
+										 "1024x768"=>"95", "1152x768"=>"95", "1152x864"=>"95", 
+										 "1280x768"=>"95", "1366x768"=>"95", "1280x800"=>"95", 
+										 "1280x854"=>"95", 
+										 "1280x960"=>"95", "1280x1024"=>"95", "1400x1050"=>"91",
 										 "1440x900"=>"91", "1600x1024"=>"90", "1600x1200"=>"89", 
 										 "1680x1050"=>"89", "1920x1200"=>"80", "3200x1200"=>"70");
 /*
@@ -95,7 +95,7 @@ while (list($res,$q) = each($resolutions)) {
 	fwrite($fp, "silentjpeg=$imagepath/silent-$res.jpg\n");
 	fwrite($fp, "\n\n");
 	$lx = round($x/2); 
-	$ly = round($y/2); 
+	$ly = round($y/2)-20; 
 	fwrite($fp, "mnganim logo $imagepath/logo.mng initframe logo silent center $lx $ly\n");
 	
 	//overlay title (verbose)
