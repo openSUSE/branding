@@ -17,7 +17,10 @@
    version="1.0"
    sodipodi:docname="Background.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   enable-background="new">
+   enable-background="new"
+   inkscape:export-filename="/home/jimmac/gfx/novell/products/openSUSE11/boot/background.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
   <defs
      id="defs4">
     <linearGradient
