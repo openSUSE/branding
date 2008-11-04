@@ -3,3 +3,4 @@ aclocal.m4
 configure
 stamp-it
 cs.gmo
+.intltool-merge-cache
