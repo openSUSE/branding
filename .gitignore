@@ -1,3 +1,5 @@
-**/Makefile.in
-**/aclocal.m4
-**/configure
+Makefile.in
+aclocal.m4
+configure
+stamp-it
+cs.gmo
