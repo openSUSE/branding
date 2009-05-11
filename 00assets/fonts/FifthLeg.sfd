@@ -15,13 +15,14 @@ LayerCount: 3
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
 Layer: 2 0 "Alt" 
+NeedsXUIDChange: 1
 XUID: [1021 332 1867756345 15220581]
 FSType: 0
 OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242054377
+ModificationTime: 1242056092
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -58,7 +59,6 @@ Lookup: 258 0 0 "Pairwise Positioning (kerning) in Latin lookup 0"  {"Pairwise P
 DEI: 0
 LangName: 1033 "" "" "Regular" "" "" "Version 1.0" "" "" "" "Jakub Steiner" "" "" "" "Copyright (c) 2008, Jakub Steiner (http://jimmac.musichall.cz/),+AAoA-with Reserved Font Name sixth leg.+AAoACgAA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is copied below, and is also available with a FAQ at:+AAoA-http://scripts.sil.org/OFL+AAoACgAK------------------------------------------------------------+AAoA-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007+AAoA------------------------------------------------------------+AAoACgAA-PREAMBLE+AAoA-The goals of the Open Font License (OFL) are to stimulate worldwide+AAoA-development of collaborative font projects, to support the font creation+AAoA-efforts of academic and linguistic communities, and to provide a free and+AAoA-open framework in which fonts may be shared and improved in partnership+AAoA-with others.+AAoACgAA-The OFL allows the licensed fonts to be used, studied, modified and+AAoA-redistributed freely as long as they are not sold by themselves. The+AAoA-fonts, including any derivative works, can be bundled, embedded, +AAoA-redistributed and/or sold with any software provided that any reserved+AAoA-names are not used by derivative works. The fonts and derivatives,+AAoA-however, cannot be released under any other type of license. The+AAoA-requirement for fonts to remain under this license does not apply+AAoA-to any document created using the fonts or their derivatives.+AAoACgAA-DEFINITIONS+AAoAIgAA-Font Software+ACIA refers to the set of files released by the Copyright+AAoA-Holder(s) under this license and clearly marked as such. This may+AAoA-include source files, build scripts and documentation.+AAoACgAi-Reserved Font Name+ACIA refers to any names specified as such after the+AAoA-copyright statement(s).+AAoACgAi-Original Version+ACIA refers to the collection of Font Software components as+AAoA-distributed by the Copyright Holder(s).+AAoACgAi-Modified Version+ACIA refers to any derivative made by adding to, deleting,+AAoA-or substituting -- in part or in whole -- any of the components of the+AAoA-Original Version, by changing formats or by porting the Font Software to a+AAoA-new environment.+AAoACgAi-Author+ACIA refers to any designer, engineer, programmer, technical+AAoA-writer or other person who contributed to the Font Software.+AAoACgAA-PERMISSION & CONDITIONS+AAoA-Permission is hereby granted, free of charge, to any person obtaining+AAoA-a copy of the Font Software, to use, study, copy, merge, embed, modify,+AAoA-redistribute, and sell modified and unmodified copies of the Font+AAoA-Software, subject to the following conditions:+AAoACgAA-1) Neither the Font Software nor any of its individual components,+AAoA-in Original or Modified Versions, may be sold by itself.+AAoACgAA-2) Original or Modified Versions of the Font Software may be bundled,+AAoA-redistributed and/or sold with any software, provided that each copy+AAoA-contains the above copyright notice and this license. These can be+AAoA-included either as stand-alone text files, human-readable headers or+AAoA-in the appropriate machine-readable metadata fields within text or+AAoA-binary files as long as those fields can be easily viewed by the user.+AAoACgAA-3) No Modified Version of the Font Software may use the Reserved Font+AAoA-Name(s) unless explicit written permission is granted by the corresponding+AAoA-Copyright Holder. This restriction only applies to the primary font name as+AAoA-presented to the users.+AAoACgAA-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font+AAoA-Software shall not be used to promote, endorse or advertise any+AAoA-Modified Version, except to acknowledge the contribution(s) of the+AAoA-Copyright Holder(s) and the Author(s) or with their explicit written+AAoA-permission.+AAoACgAA-5) The Font Software, modified or unmodified, in part or in whole,+AAoA-must be distributed entirely under this license, and must not be+AAoA-distributed under any other license. The requirement for fonts to+AAoA-remain under this license does not apply to any document created+AAoA-using the Font Software.+AAoACgAA-TERMINATION+AAoA-This license becomes null and void if any of the above conditions are+AAoA-not met.+AAoACgAA-DISCLAIMER+AAoA-THE FONT SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND,+AAoA-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF+AAoA-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT+AAoA-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE+AAoA-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,+AAoA-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL+AAoA-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING+AAoA-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM+AAoA-OTHER DEALINGS IN THE FONT SOFTWARE." "http://scripts.sil.org/ofl" 
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
@@ -83,7 +83,7 @@ Grid
  687 698 l 25
 EndSplineSet
 TeXData: 1 0 0 368050 184025 122683 519045 1048576 122683 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65536 235
+BeginChars: 65536 236
 
 StartChar: b
 Encoding: 98 98 0
@@ -6171,6 +6171,172 @@ SplineSet
  264 600 l 1
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: at
+Encoding: 64 64 235
+Width: 802
+VWidth: 14
+Flags: HWO
+LayerCount: 3
+Back
+SplineSet
+747 122 m 6
+ 747 482 l 6
+ 747 495.333 744.5 507.5 739.5 518.5 c 132
+ 734.5 529.5 727.667 539.333 719 548 c 132
+ 710.333 556.667 700 563.333 688 568 c 132
+ 676 572.667 663.333 575 650 575 c 6
+ 157 575 l 6
+ 143.667 575 131.167 572.667 119.5 568 c 132
+ 107.833 563.333 97.5 556.667 88.5 548 c 132
+ 79.5 539.333 72.5 529.5 67.5 518.5 c 132
+ 62.5 507.5 60 495.333 60 482 c 6
+ 60 -8 l 6
+ 60 -20.6667 62.5 -32.6667 67.5 -44 c 132
+ 72.5 -55.3333 79.5 -65.1667 88.5 -73.5 c 132
+ 97.5 -81.8333 107.833 -88.5 119.5 -93.5 c 132
+ 131.167 -98.5 143.667 -101 157 -101 c 6
+ 532 -101 l 6
+ 545.333 -101 555.167 -97.5 561.5 -90.5 c 132
+ 567.833 -83.5 571 -75.3333 571 -66 c 6
+ 571 -35 l 5
+ 164 -35 l 6
+ 154 -35 145.833 -31.8333 139.5 -25.5 c 132
+ 133.167 -19.1667 130 -11.3333 130 -2 c 6
+ 130 476 l 6
+ 130 485.333 133.167 493.167 139.5 499.5 c 132
+ 145.833 505.833 154 509 164 509 c 6
+ 642 509 l 6
+ 652 509 660.333 505.833 667 499.5 c 132
+ 673.667 493.167 677 485.333 677 476 c 6
+ 677 134 l 6
+ 677 124.667 673.667 116.833 667 110.5 c 132
+ 660.333 104.167 652.333 101 643 101 c 6
+ 571 101 l 5
+ 571 348 l 6
+ 571 376 562.667 399.833 546 419.5 c 132
+ 529.333 439.167 501.667 449 463 449 c 6
+ 301 449 l 6
+ 293 449 286.5 446.5 281.5 441.5 c 132
+ 276.5 436.5 274 431 274 425 c 6
+ 274 377 l 5
+ 450 377 l 6
+ 462.667 377 473.333 372.5 482 363.5 c 132
+ 490.667 354.5 495 344 495 332 c 6
+ 495 275 l 6
+ 495 269.667 493.5 265 490.5 261 c 132
+ 487.5 257 483.667 255 479 255 c 260
+ 474.333 255 468.5 257.167 461.5 261.5 c 132
+ 454.5 265.833 445.833 270.667 435.5 276 c 132
+ 425.167 281.333 413.333 286.167 400 290.5 c 132
+ 386.667 294.833 371.333 297 354 297 c 6
+ 333 297 l 6
+ 290.333 297 259 286.167 239 264.5 c 132
+ 219 242.833 209 216.333 209 185 c 6
+ 209 138 l 6
+ 209 106.667 219 80.1667 239 58.5 c 132
+ 259 36.8333 290.333 26 333 26 c 6
+ 354 26 l 6
+ 371.333 26 386.667 28.1667 400 32.5 c 132
+ 413.333 36.8333 425.167 41.6667 435.5 47 c 132
+ 445.833 52.3333 454.5 57.1667 461.5 61.5 c 132
+ 468.5 65.8333 474.333 68 479 68 c 4
+ 487 68 494 64 500 56 c 6
+ 520 29 l 5
+ 650 29 l 6
+ 663.333 29 676 31.5 688 36.5 c 132
+ 700 41.5 710.333 48.1667 719 56.5 c 132
+ 727.667 64.8333 734.5 74.6667 739.5 86 c 132
+ 744.5 97.3333 747 109.333 747 122 c 6
+495 142 m 6
+ 495 130.667 491.167 121 483.5 113 c 132
+ 475.833 105 466.333 101 455 101 c 6
+ 325 101 l 6
+ 313.667 101 304.167 105 296.5 113 c 132
+ 288.833 121 285 130.667 285 142 c 6
+ 285 181 l 6
+ 285 192.333 288.833 202 296.5 210 c 132
+ 304.167 218 313.667 222 325 222 c 6
+ 455 222 l 6
+ 466.333 222 475.833 218 483.5 210 c 132
+ 491.167 202 495 192.333 495 181 c 6
+ 495 142 l 6
+EndSplineSet
+Fore
+SplineSet
+495.143 29.665 m 1
+ 495.143 58.5811 l 1
+ 331.112 29.1826 l 2
+ 315.729 26.1191 302.026 24.5479 290.117 24.5479 c 0
+ 224.042 24.5479 207.375 80.0645 207.375 127.424 c 2
+ 207.375 195.418 l 2
+ 207.375 234.811 224.534 271.24 287.67 271.24 c 0
+ 302.916 271.24 312.045 268.541 330.764 266.777 c 2
+ 495.143 247.944 l 1
+ 495.143 308.012 l 2
+ 495.143 312.953 488.213 324.311 476.954 324.311 c 2
+ 274.401 324.311 l 1
+ 275.408 336.724 l 2
+ 278.999 380.992 300.076 416.004 339.07 416.004 c 2
+ 434.528 416.004 l 2
+ 531.852 416.004 587.438 362.695 587.438 269.993 c 2
+ 587.438 110 l 1
+ 651 110 l 2
+ 669 110 674 113.7 674 133 c 2
+ 674 484 l 2
+ 674 504.303 668.291 513 648 513 c 2
+ 156 513 l 2
+ 138.065 513 130 512.395 130 478 c 2
+ 130 4 l 2
+ 130 -29.4248 139.929 -31 153 -31 c 2
+ 595 -31 l 1
+ 595 -111 l 1
+ 153 -111 l 2
+ 108.925 -111 50 -88 50 4 c 2
+ 50 478 l 2
+ 50 570 104.975 593 156 593 c 2
+ 648 593 l 2
+ 718.209 593 754 543.298 754 484 c 2
+ 754 133 l 2
+ 754 78.2979 721.995 30 651 30 c 2
+ 495.143 29.665 l 1
+317.857 189.782 m 2
+ 306.944 189.782 299.669 182.971 299.669 172.752 c 2
+ 299.669 134.734 l 2
+ 299.669 121.574 316.666 118.436 317.857 118.436 c 2
+ 495.143 118.436 l 1
+ 495.143 189.782 l 1
+ 317.857 189.782 l 2
+EndSplineSet
+Layer: 2
+SplineSet
+317.857 189.782 m 2xbc
+ 306.944 189.782 299.669 182.971 299.669 172.752 c 2
+ 299.669 134.734 l 2
+ 299.669 121.574 316.666 118.436 317.857 118.436 c 2
+ 495.143 118.436 l 1
+ 495.143 189.782 l 1xdc
+ 317.857 189.782 l 2xbc
+434.528 416.004 m 2
+ 531.852 416.004 587.438 362.695 587.438 269.993 c 2
+ 587.438 29.665 l 1
+ 495.143 29.665 l 1
+ 495.143 58.5811 l 1
+ 331.112 29.1826 l 2
+ 315.729 26.1191 302.026 24.5479 290.117 24.5479 c 0
+ 224.042 24.5479 207.375 80.0645 207.375 127.424 c 2
+ 207.375 195.418 l 2
+ 207.375 234.811 224.534 271.24 287.67 271.24 c 0xbc
+ 302.916 271.24 312.045 268.541 330.764 266.777 c 2
+ 495.143 247.944 l 1
+ 495.143 308.012 l 2
+ 495.143 312.953 488.213 324.311 476.954 324.311 c 2
+ 274.401 324.311 l 1
+ 275.408 336.724 l 2
+ 278.997 380.992 300.076 416.004 339.07 416.004 c 2
+ 434.528 416.004 l 2
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
