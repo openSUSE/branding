@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="329.6992"
-     inkscape:cy="547.34521"
+     inkscape:cx="384.6992"
+     inkscape:cy="667.34521"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1096"
      inkscape:window-height="965"
-     inkscape:window-x="251"
-     inkscape:window-y="120"
+     inkscape:window-x="406"
+     inkscape:window-y="118"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -145,11 +145,15 @@
            width="571.34229"
            id="rect9991" /></flowRegion><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara9993">5th Leg is the (type)face of openSUSE. A geometric sans serif to be used as a headline font in all openSUSE materials. I would like to make this a default font for the window decorations in the defualt theme for 11.2, Sonar.</flowPara><flowPara
+         id="flowPara9993">5th Leg is the (type)face of openSUSE. A geometric sans serif to be used as a headline font in all openSUSE materials. I would like to make this a default font for the window decorations in openSUSE 11.2.</flowPara><flowPara
          id="flowPara10606"
          style="font-size:12px;fill:#000000;fill-opacity:1" /><flowPara
          id="flowPara10608"
-         style="font-size:12px;fill:#000000;fill-opacity:1">v0.3 has improved metrics, but still nowhere near being good enough.</flowPara></flowRoot>    <text
+         style="font-size:12px;fill:#000000;fill-opacity:1">v0.3 — improved metrics, but still nowhere near being good enough.</flowPara><flowPara
+         style="font-size:12px;fill:#000000;fill-opacity:1"
+         id="flowPara123">v0.2 — better coverage, normal weight.</flowPara><flowPara
+         style="font-size:12px;fill:#000000;fill-opacity:1"
+         id="flowPara125">v0.1 — initial version, result of the openSUSE hackweek.</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text10018"
        y="99.182243"
@@ -393,7 +397,7 @@
          y="379.36218"
          x="115"
          id="tspan10272"
-         sodipodi:role="line">OHamburgefonstiv</tspan></text>
+         sodipodi:role="line">OHamburgefonsiv</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Expanded"
@@ -404,7 +408,7 @@
          sodipodi:role="line"
          id="tspan11050"
          x="115"
-         y="419.36218">OHamburgefonstiv</tspan></text>
+         y="419.36218">OHamburgefonsiv</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text11052"
@@ -415,7 +419,7 @@
          y="467.36218"
          x="115"
          id="tspan11054"
-         sodipodi:role="line">OHamburgefonstiv</tspan></text>
+         sodipodi:role="line">OHamburgefonsiv</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text11056"
@@ -459,7 +463,7 @@
          sodipodi:role="line"
          id="tspan11072"
          x="115"
-         y="527.36218">OHamburgefonstiv</tspan></text>
+         y="527.36218">OHamburgefonsiv</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Rave In;-inkscape-font-specification:Rave In"
@@ -476,12 +480,12 @@
        id="text11078"
        y="607.36218"
        x="115"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Expanded"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Expanded"
        xml:space="preserve"><tspan
          y="607.36218"
          x="115"
          id="tspan11080"
-         sodipodi:role="line">OHamburgefonsti</tspan></text>
+         sodipodi:role="line">OHamburgefonsiv</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text11082"
@@ -516,12 +520,12 @@
          id="tspan130"
          sodipodi:role="line">Fifth Leg Bold</tspan></text>
     <flowRoot
-       transform="translate(-21.0475,-12.24787)"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:140%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+       transform="translate(-21.0475,7.75213)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:139.99999762%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
        id="flowRoot84"
        xml:space="preserve"><flowRegion
          id="flowRegion86"><rect
-           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:140%;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
            y="751.1347"
            x="87.681244"
            height="208.17365"
@@ -548,15 +552,15 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot375"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:140%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
-       transform="translate(270.80859,-12.24787)"><flowRegion
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:139.99999762%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+       transform="translate(270.80859,7.75213)"><flowRegion
          id="flowRegion377"><rect
            id="rect379"
            width="287.34229"
            height="208.17365"
            x="87.681244"
            y="751.1347"
-           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:140%;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg" /></flowRegion><flowPara
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg" /></flowRegion><flowPara
          id="flowPara389">sed dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec gravida, ante vel ornare lacinia, orci enim porta est, eget sollicitudin lectus lectus eget lacus. Quisque pretium rutrum ligula. Suspendisse potenti. Donec tempus quam quis neque. Suspendisse lectus. Maecenas convallis dui. Suspendisse molestie sem. Nam rhoncus, lectus vel hendrerit congue, nisl lorem feugiat ante, in fermentum erat nulla tristique arcu. Vestibulum non arcu a ante feugiat vestibulum. </flowPara><flowPara
          id="flowPara406" /><flowPara
          id="flowPara408">Etiam pede nunc, vestibulum vel, rutrum et, tincidunt eu, enim. Morbi turpis arcu, egestas congue, condimentum quis, tristique cursus, leo. Phasellus nisi metus, tempus sit amet, ultrices ac, porta nec, felis. Aliquam velit dui, commodo quis, porttitor eget, convallis et, nisi. </flowPara><flowPara
