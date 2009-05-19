@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="372.01775"
-     inkscape:cy="514.60744"
+     inkscape:cx="310.14555"
+     inkscape:cy="440.12032"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -137,7 +137,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <flowRoot
-       transform="translate(-21.25869,-64)"
+       transform="translate(-21.25869,-44)"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Expanded"
        id="flowRoot9987"
        xml:space="preserve"><flowRegion
@@ -153,13 +153,13 @@
          id="flowPara10606"
          style="font-size:12px;fill:#000000;fill-opacity:1" /><flowPara
          id="flowPara10608"
-         style="font-size:12px;fill:#000000;fill-opacity:1">v0.4 — kerning pairs.</flowPara><flowPara
+         style="font-size:12px;fill:#000000;fill-opacity:1">v0.4 — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures.</flowPara><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara161">v0.3 — improved metrics, but still nowhere near being good enough.</flowPara><flowPara
+         id="flowPara161">v0.3 — Improved metrics, but still nowhere near being good enough.</flowPara><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara123">v0.2 — better coverage, normal weight.</flowPara><flowPara
+         id="flowPara123">v0.2 — Better coverage, normal weight.</flowPara><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara125">v0.1 — initial version, result of the openSUSE hackweek.</flowPara></flowRoot>    <text
+         id="flowPara125">v0.1 — Initial version, result of the openSUSE hackweek.</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text10018"
        y="99.182243"
@@ -504,7 +504,7 @@
          id="tspan130"
          sodipodi:role="line">Fifth Leg Bold</tspan></text>
     <flowRoot
-       transform="translate(-21.0475,67.75213)"
+       transform="translate(-21.0475,87.75213)"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:139.99999762%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
        id="flowRoot84"
        xml:space="preserve"><flowRegion
@@ -537,7 +537,7 @@
        xml:space="preserve"
        id="flowRoot375"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:139.99999762%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
-       transform="translate(270.80859,67.75213)"><flowRegion
+       transform="translate(270.80859,87.75213)"><flowRegion
          id="flowRegion377"><rect
            id="rect379"
            width="287.34229"
@@ -579,12 +579,16 @@
        id="text149"
        y="591.09985"
        x="67"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:RaveIn;-inkscape-font-specification:RaveIn"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:RaveIn;-inkscape-font-specification:RaveIn"
        xml:space="preserve"><tspan
          y="591.09985"
          x="67"
          id="tspan151"
-         sodipodi:role="line">kerning</tspan></text>
+         sodipodi:role="line">kerning</tspan><tspan
+         y="603.59985"
+         x="67"
+         sodipodi:role="line"
+         id="tspan149">by class</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
@@ -599,7 +603,7 @@
          style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg">0123456789</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:RaveIn;-inkscape-font-specification:RaveIn"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:RaveIn;-inkscape-font-specification:RaveIn"
        x="347"
        y="591.09985"
        id="text162"
@@ -644,5 +648,40 @@
          x="495"
          y="621.0481"
          style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"></tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text140"
+       y="652.341"
+       x="395"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+       xml:space="preserve"><tspan
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+         y="652.341"
+         x="395"
+         id="tspan142"
+         sodipodi:role="line">ﬀ ﬁ ﬂ ﬃ ﬄ</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text144"
+       y="651.09985"
+       x="347"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:RaveIn;-inkscape-font-specification:RaveIn"
+       xml:space="preserve"><tspan
+         y="651.09985"
+         x="347"
+         id="tspan146"
+         sodipodi:role="line">ligatures</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"
+       x="395"
+       y="680.341"
+       id="text932"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan934"
+         x="395"
+         y="680.341"
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold">ﬀ ﬁ ﬂ ﬃ ﬄ</tspan></text>
   </g>
 </svg>
