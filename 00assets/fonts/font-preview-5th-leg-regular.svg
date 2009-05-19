@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="310.14555"
-     inkscape:cy="440.12032"
+     inkscape:zoom="1"
+     inkscape:cx="300.64525"
+     inkscape:cy="360.86837"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -145,21 +145,15 @@
            style="font-size:36px;fill:#000000;fill-opacity:1"
            y="751.1347"
            x="87.681244"
-           height="236.17366"
+           height="43.17366"
            width="571.34229"
            id="rect9991" /></flowRegion><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
          id="flowPara9993">5th Leg is the (type)face of openSUSE. A geometric sans serif to be used as a headline font in all openSUSE materials. I would like to make this a default font for the window decorations in openSUSE 11.2.</flowPara><flowPara
          id="flowPara10606"
          style="font-size:12px;fill:#000000;fill-opacity:1" /><flowPara
-         id="flowPara10608"
-         style="font-size:12px;fill:#000000;fill-opacity:1">v0.4 — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures.</flowPara><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara161">v0.3 — Improved metrics, but still nowhere near being good enough.</flowPara><flowPara
-         style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara123">v0.2 — Better coverage, normal weight.</flowPara><flowPara
-         style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara125">v0.1 — Initial version, result of the openSUSE hackweek.</flowPara></flowRoot>    <text
+         id="flowPara125" /></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text10018"
        y="99.182243"
@@ -683,5 +677,28 @@
          x="395"
          y="680.341"
          style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold">ﬀ ﬁ ﬂ ﬃ ﬄ</tspan></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot230"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:140%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+       transform="translate(-21.0475,7.75213)"><flowRegion
+         id="flowRegion232"><rect
+           id="rect234"
+           width="547.34229"
+           height="67.927429"
+           x="87.681244"
+           y="751.1347"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:140%;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg" /></flowRegion><flowPara
+         id="flowPara250"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan293">v0.4</flowSpan> — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures.</flowPara><flowPara
+         id="flowPara287"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan301">v0.3</flowSpan> — Improved metrics, but still nowhere near being good enough.</flowPara><flowPara
+         id="flowPara289"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan303">v0.2</flowSpan> — Better coverage, normal weight.</flowPara><flowPara
+         id="flowPara291"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan305">v0.1</flowSpan> — Initial version, result of the openSUSE hackweek.</flowPara></flowRoot>  </g>
 </svg>
