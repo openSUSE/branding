@@ -21,7 +21,7 @@ OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242747813
+ModificationTime: 1242750457
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -56,7 +56,7 @@ OS2Vendor: 'SUSE'
 OS2CodePages: 00000001.00000000
 Lookup: 3 0 0 "'onum' Old Style Numerals"  {} ['onum' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Latin Ligatures"  {"ligatures-1"  } ['liga' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 258 0 0 "FifthLeg-kerning"  {"class-kerning"  "pair-kerning"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Kerning"  {"class-kerning"  "pair-kerning"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 DEI: 0
 KernClass2: 4 4 "class-kerning" 
  43 A Agrave Aacute Acircumflex Adieresis Aring
@@ -74,7 +74,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 11 12
+WinInfo: 0 11 9
 BeginPrivate: 9
 BlueValues 21 [0 0 312 312 438 438]
 OtherBlues 10 [-125 -94]
@@ -2996,7 +2996,7 @@ EndChar
 
 StartChar: one
 Encoding: 49 49 63
-Width: 219
+Width: 233
 VWidth: 14
 Flags: W
 VStem: 54.2715 113.144<1.83398 655.614>
@@ -3026,12 +3026,12 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-167.415 712.113 m 5
- 167.415 1.83398 l 5
- 54.2715 1.83398 l 5
- 54.2715 575.775 l 6
- 54.2715 652.835 99.8926 696.638 149.799 708.076 c 6
- 167.415 712.113 l 5
+167.415 712.113 m 1
+ 167.415 1.83398 l 1
+ 54.2715 1.83398 l 1
+ 54.2715 575.775 l 2
+ 54.2715 652.835 99.8926 696.638 149.799 708.076 c 2
+ 167.415 712.113 l 1
 EndSplineSet
 EndChar
 
@@ -3445,7 +3445,7 @@ StartChar: nine
 Encoding: 57 57 69
 Width: 553
 VWidth: 14
-Flags: WO
+Flags: W
 HStem: 0.773438 113.145<81.2243 375.965> 255.468 113.144<133.957 379.102> 583.011 114.978<134.238 375.869>
 VStem: 16.7705 114.978<369.729 391.8 391.8 579.692> 379.277 114.059<117.386 260.107 368.636 579.692>
 LayerCount: 3
@@ -3529,7 +3529,7 @@ EndChar
 
 StartChar: zero
 Encoding: 48 48 70
-Width: 496
+Width: 524
 VWidth: 14
 Flags: W
 HStem: 0.916016 114.062<161.497 354.107> 304 80<226.378 297.622> 580.378 114.976<161.599 357.263>
@@ -3574,11 +3574,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-222 344 m 4
- 222 366.08 239.92 384 262 384 c 4
- 284.08 384 302 366.08 302 344 c 4
- 302 321.92 284.08 304 262 304 c 4
- 239.92 304 222 321.92 222 344 c 4
+222 344 m 0
+ 222 366.08 239.92 384 262 384 c 0
+ 284.08 384 302 366.08 302 344 c 0
+ 302 321.92 284.08 304 262 304 c 0
+ 239.92 304 222 321.92 222 344 c 0
 333.697 580.378 m 2
  185.229 580.378 l 2
  171.388 580.378 161.497 572.32 161.497 559.94 c 2
