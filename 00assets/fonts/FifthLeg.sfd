@@ -21,7 +21,7 @@ OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242756983
+ModificationTime: 1242757488
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -55,7 +55,7 @@ OS2FamilyClass: 2048
 OS2Vendor: 'SUSE'
 OS2CodePages: 00000001.00000000
 Lookup: 4 0 1 "'liga' Standard Lating Ligatures"  {"'liga' Standard Lating Ligatures-1"  } ['liga' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 258 0 0 "FifthLeg-Bold-FifthLeg-kerning"  {"class-kerning"  "pair-kerning"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Kerning"  {"class-kerning"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 DEI: 0
 KernClass2: 4 4 "class-kerning" 
  43 A Agrave Aacute Acircumflex Adieresis Aring
