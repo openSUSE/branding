@@ -15,8 +15,7 @@ LayerCount: 3
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
 Layer: 2 0 "Alt" 
-NeedsXUIDChange: 1
-XUID: [1021 332 1867756345 992181]
+XUID: [1021 332 1867756345 992182]
 FSType: 0
 OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
@@ -1061,7 +1060,7 @@ StartChar: p
 Encoding: 112 112 18
 Width: 554
 VWidth: -9
-Flags: WO
+Flags: W
 HStem: -6.67578 120.563<217.176 393.03> 367.455 116.809<243.55 395.735>
 VStem: 54.6328 115.871<-228.372 23.5449 113.888 367.455 443.587 462.72> 396.131 115.869<114.488 364.917>
 LayerCount: 3
@@ -2166,8 +2165,8 @@ StartChar: V
 Encoding: 86 86 44
 Width: 606
 VWidth: -4
-Flags: HW
-HStem: 0.916016 21G<229.237 376.363>
+Flags: W
+HStem: 0.916016 21G<229.236 376.364>
 LayerCount: 3
 Back
 SplineSet
