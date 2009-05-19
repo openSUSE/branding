@@ -26,14 +26,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
      inkscape:cx="372.01775"
-     inkscape:cy="401.47036"
+     inkscape:cy="514.60744"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1096"
      inkscape:window-height="965"
-     inkscape:window-x="446"
-     inkscape:window-y="44"
+     inkscape:window-x="286"
+     inkscape:window-y="29"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -56,6 +56,10 @@
        orientation="0,1"
        position="452,971"
        id="guide10063" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="458.20518,431.33513"
+       id="guide178" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -583,25 +587,62 @@
          sodipodi:role="line">kerning</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.85908318;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new;font-family:RaveIn;-inkscape-font-specification:RaveIn"
-       x="327.08536"
-       y="592.74274"
-       id="text153"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+       x="395"
+       y="592.341"
+       id="text158"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan155"
-         x="327.08536"
-         y="592.74274">« no kerning at the moment</tspan></text>
+         id="tspan160"
+         x="395"
+         y="592.341"
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg">0123456789</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:RaveIn;-inkscape-font-specification:RaveIn"
+       x="347"
+       y="591.09985"
+       id="text162"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan164"
+         x="347"
+         y="591.09985">numerals</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text157"
-       y="620.74274"
-       x="327.08536"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.85908318;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new;font-family:RaveIn;-inkscape-font-specification:RaveIn"
+       id="text166"
+       y="592.341"
+       x="495"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
        xml:space="preserve"><tspan
-         y="620.74274"
-         x="327.08536"
-         id="tspan159"
-         sodipodi:role="line">« kerning pairs AV, AW, To, Ta</tspan></text>
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+         y="592.341"
+         x="495"
+         id="tspan168"
+         sodipodi:role="line"></tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text170"
+       y="621.0481"
+       x="395"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"
+       xml:space="preserve"><tspan
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"
+         y="621.0481"
+         x="395"
+         id="tspan172"
+         sodipodi:role="line">0123456789</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"
+       x="495"
+       y="621.0481"
+       id="text174"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan176"
+         x="495"
+         y="621.0481"
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"></tspan></text>
   </g>
 </svg>
