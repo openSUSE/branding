@@ -15,13 +15,13 @@ LayerCount: 3
 Layer: 0 0 "Back" 
 Layer: 1 0 "Fore" 
 Layer: 2 0 "Alt" 
-XUID: [1021 332 1867756345 992182]
+XUID: [1021 332 1867756345 992183]
 FSType: 0
 OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242754618
+ModificationTime: 1242756539
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -68,13 +68,12 @@ KernClass2: 4 4 "class-kerning"
  0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} -145 {} 0 {} 0 {} 0 {} 0 {} -100 {}
 LangName: 1033 "" "" "Bold" "" "" "Version 1.0" "" "" "" "Jakub Steiner" "" "" "" "Copyright (c) 2008, Jakub Steiner (http://jimmac.musichall.cz/),+AAoA-with Reserved Font Name sixth leg.+AAoACgAA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is copied below, and is also available with a FAQ at:+AAoA-http://scripts.sil.org/OFL+AAoACgAK------------------------------------------------------------+AAoA-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007+AAoA------------------------------------------------------------+AAoACgAA-PREAMBLE+AAoA-The goals of the Open Font License (OFL) are to stimulate worldwide+AAoA-development of collaborative font projects, to support the font creation+AAoA-efforts of academic and linguistic communities, and to provide a free and+AAoA-open framework in which fonts may be shared and improved in partnership+AAoA-with others.+AAoACgAA-The OFL allows the licensed fonts to be used, studied, modified and+AAoA-redistributed freely as long as they are not sold by themselves. The+AAoA-fonts, including any derivative works, can be bundled, embedded, +AAoA-redistributed and/or sold with any software provided that any reserved+AAoA-names are not used by derivative works. The fonts and derivatives,+AAoA-however, cannot be released under any other type of license. The+AAoA-requirement for fonts to remain under this license does not apply+AAoA-to any document created using the fonts or their derivatives.+AAoACgAA-DEFINITIONS+AAoAIgAA-Font Software+ACIA refers to the set of files released by the Copyright+AAoA-Holder(s) under this license and clearly marked as such. This may+AAoA-include source files, build scripts and documentation.+AAoACgAi-Reserved Font Name+ACIA refers to any names specified as such after the+AAoA-copyright statement(s).+AAoACgAi-Original Version+ACIA refers to the collection of Font Software components as+AAoA-distributed by the Copyright Holder(s).+AAoACgAi-Modified Version+ACIA refers to any derivative made by adding to, deleting,+AAoA-or substituting -- in part or in whole -- any of the components of the+AAoA-Original Version, by changing formats or by porting the Font Software to a+AAoA-new environment.+AAoACgAi-Author+ACIA refers to any designer, engineer, programmer, technical+AAoA-writer or other person who contributed to the Font Software.+AAoACgAA-PERMISSION & CONDITIONS+AAoA-Permission is hereby granted, free of charge, to any person obtaining+AAoA-a copy of the Font Software, to use, study, copy, merge, embed, modify,+AAoA-redistribute, and sell modified and unmodified copies of the Font+AAoA-Software, subject to the following conditions:+AAoACgAA-1) Neither the Font Software nor any of its individual components,+AAoA-in Original or Modified Versions, may be sold by itself.+AAoACgAA-2) Original or Modified Versions of the Font Software may be bundled,+AAoA-redistributed and/or sold with any software, provided that each copy+AAoA-contains the above copyright notice and this license. These can be+AAoA-included either as stand-alone text files, human-readable headers or+AAoA-in the appropriate machine-readable metadata fields within text or+AAoA-binary files as long as those fields can be easily viewed by the user.+AAoACgAA-3) No Modified Version of the Font Software may use the Reserved Font+AAoA-Name(s) unless explicit written permission is granted by the corresponding+AAoA-Copyright Holder. This restriction only applies to the primary font name as+AAoA-presented to the users.+AAoACgAA-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font+AAoA-Software shall not be used to promote, endorse or advertise any+AAoA-Modified Version, except to acknowledge the contribution(s) of the+AAoA-Copyright Holder(s) and the Author(s) or with their explicit written+AAoA-permission.+AAoACgAA-5) The Font Software, modified or unmodified, in part or in whole,+AAoA-must be distributed entirely under this license, and must not be+AAoA-distributed under any other license. The requirement for fonts to+AAoA-remain under this license does not apply to any document created+AAoA-using the Font Software.+AAoACgAA-TERMINATION+AAoA-This license becomes null and void if any of the above conditions are+AAoA-not met.+AAoACgAA-DISCLAIMER+AAoA-THE FONT SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND,+AAoA-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF+AAoA-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT+AAoA-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE+AAoA-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,+AAoA-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL+AAoA-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING+AAoA-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM+AAoA-OTHER DEALINGS IN THE FONT SOFTWARE." "http://scripts.sil.org/ofl" 
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 11 9
+WinInfo: 64229 11 9
 BeginPrivate: 9
 BlueValues 21 [0 0 312 312 438 438]
 OtherBlues 10 [-125 -94]
@@ -95,7 +94,7 @@ Grid
  687 698 l 25
 EndSplineSet
 TeXData: 1 0 0 368050 184025 122683 519045 1048576 122683 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65536 246
+BeginChars: 65536 254
 
 StartChar: b
 Encoding: 98 98 0
@@ -7054,6 +7053,251 @@ SplineSet
  493.336 -152.347 440.417 -201.227 361.475 -201.227 c 2
  127.432 -201.227 l 2
 EndSplineSet
+EndChar
+
+StartChar: hyphen
+Encoding: 45 45 246
+Width: 415
+Flags: W
+HStem: 230 100<55 360>
+VStem: 55 305<230 330>
+LayerCount: 3
+Fore
+SplineSet
+55 330 m 1
+ 360 330 l 1
+ 360 230 l 1
+ 55 230 l 1
+ 55 330 l 1
+EndSplineSet
+EndChar
+
+StartChar: emdash
+Encoding: 8212 8212 247
+Width: 655
+Flags: W
+HStem: 230 100<55 600>
+LayerCount: 3
+Fore
+SplineSet
+55 330 m 1
+ 600 330 l 5
+ 600 230 l 5
+ 55 230 l 1
+ 55 330 l 1
+EndSplineSet
+EndChar
+
+StartChar: endash
+Encoding: 8211 8211 248
+Width: 475
+Flags: W
+HStem: 230 100<55 420>
+LayerCount: 3
+Fore
+SplineSet
+55 330 m 5
+ 420 330 l 5
+ 420 230 l 5
+ 55 230 l 5
+ 55 330 l 5
+EndSplineSet
+EndChar
+
+StartChar: ff
+Encoding: 64256 64256 249
+Width: 680
+VWidth: 0
+Flags: HW
+LayerCount: 3
+Fore
+SplineSet
+338.703 572.31 m 2
+ 338.703 647.775 397.418 698.086 485.49 698.086 c 2
+ 668.566 698.086 l 1
+ 668.566 655.032 l 2
+ 668.566 616.859 654.106 582.373 596.268 582.373 c 2
+ 485.49 582.373 l 2
+ 468.674 582.373 457.517 573.875 457.517 553.444 c 2
+ 457.517 475.577 l 1
+ 559.021 475.577 l 2
+ 564.654 474.861 573.849 475.537 586.225 464.458 c 0
+ 596.236 455.495 607.178 437.835 606.492 420.108 c 0
+ 605.778 401.674 599.576 387.183 586.084 375.406 c 0
+ 579.119 369.328 569.794 364.64 559.021 364.64 c 2
+ 457.517 364.64 l 1
+ 457.517 0.954102 l 1
+ 338.703 0.954102 l 1
+ 338.703 364.64 l 1
+ 167.517 364.64 l 1
+ 167.517 0.954102 l 1
+ 48.7031 0.954102 l 1
+ 48.7031 532.31 l 2
+ 48.7031 608.38 99.8896 668.086 191.734 668.086 c 2
+ 310.65 668.086 l 1
+ 310.65 625.032 l 2
+ 310.65 584.978 298.87 552.373 230.264 552.373 c 2
+ 178.397 552.373 l 2
+ 170.394 552.373 167.517 550 167.517 542.444 c 2
+ 167.517 475.577 l 1
+ 338.703 475.577 l 1
+ 338.703 572.31 l 2
+EndSplineSet
+Ligature2: "ligatures-1" f f
+EndChar
+
+StartChar: fi
+Encoding: 64257 64257 250
+Width: 510
+VWidth: 0
+Flags: HW
+LayerCount: 3
+Fore
+SplineSet
+48.7031 572.31 m 2
+ 48.7031 647.775 107.418 698.086 201.793 698.086 c 2
+ 458.566 698.086 l 1
+ 458.566 655.032 l 2
+ 458.566 616.859 444.106 582.373 386.268 582.373 c 2
+ 201.793 582.373 l 2
+ 181.187 582.373 167.517 573.875 167.517 553.444 c 2
+ 167.517 475.576 l 1
+ 389.457 475.567 l 2
+ 422.795 475.564 449.472 449.747 449.471 418.354 c 2
+ 449.471 0.954102 l 1
+ 330.659 0.954102 l 1
+ 330.659 364.64 l 1
+ 167.517 364.64 l 1
+ 167.517 0.954102 l 1
+ 48.7031 0.954102 l 1
+ 48.7031 572.31 l 2
+EndSplineSet
+Ligature2: "ligatures-1" f i
+EndChar
+
+StartChar: fl
+Encoding: 64258 64258 251
+Width: 561
+VWidth: 0
+Flags: HW
+LayerCount: 3
+Fore
+SplineSet
+478.471 639.158 m 2
+ 478.471 102.888 l 1
+ 499.06 102.377 515.716 87.8516 515.716 66.2559 c 2
+ 515.716 0.954102 l 1
+ 442.5 0.954102 l 2
+ 389.576 0.954102 349.515 41.1943 349.515 88.0078 c 2
+ 349.515 582.373 l 1
+ 198.916 582.373 l 2
+ 180.039 582.373 167.517 573.875 167.517 553.444 c 2
+ 167.517 475.577 l 1
+ 281.453 475.577 l 2
+ 287.774 474.861 298.095 475.536 311.987 464.457 c 0
+ 323.225 455.495 335.505 437.835 334.735 420.108 c 0
+ 333.934 401.674 326.972 387.183 311.828 375.406 c 0
+ 304.011 369.328 293.544 364.64 281.453 364.64 c 2
+ 167.517 364.64 l 1
+ 167.517 0.954102 l 1
+ 48.7031 0.954102 l 1
+ 48.7031 572.31 l 2
+ 48.7031 647.775 107.418 698.086 198.916 698.086 c 2
+ 438.085 698.086 l 1
+ 438.085 694.981 l 1
+ 462.121 687.013 478.471 664.67 478.471 639.158 c 2
+EndSplineSet
+Ligature2: "ligatures-1" f l
+EndChar
+
+StartChar: ffi
+Encoding: 64259 64259 252
+Width: 769
+VWidth: 0
+Flags: HW
+LayerCount: 3
+Fore
+SplineSet
+328.703 572.31 m 2
+ 328.703 647.775 387.418 698.086 482.305 698.086 c 2
+ 738.566 698.086 l 1
+ 738.566 655.032 l 2
+ 738.566 616.859 724.106 582.373 666.268 582.373 c 2
+ 482.305 582.373 l 2
+ 461.392 582.373 447.517 573.875 447.517 553.444 c 2
+ 447.517 475.577 l 1
+ 659.456 475.577 l 2
+ 692.801 475.577 719.471 449.745 719.471 418.355 c 2
+ 719.471 0.954102 l 1
+ 600.659 0.954102 l 1
+ 600.659 364.64 l 1
+ 447.517 364.64 l 1
+ 447.517 0.954102 l 1
+ 328.703 0.954102 l 1
+ 328.703 364.64 l 1
+ 167.517 364.64 l 1
+ 167.517 0.954102 l 1
+ 48.7031 0.954102 l 1
+ 48.7031 532.31 l 2
+ 48.7031 608.38 99.8896 668.086 192.058 668.086 c 2
+ 312.562 668.086 l 1
+ 312.562 625.032 l 2
+ 312.562 584.978 300.625 552.373 231.102 552.373 c 2
+ 178.542 552.373 l 2
+ 170.432 552.373 167.517 550 167.517 542.444 c 2
+ 167.517 475.577 l 1
+ 328.703 475.577 l 1
+ 328.703 572.31 l 2
+EndSplineSet
+Ligature2: "ligatures-1" f f i
+EndChar
+
+StartChar: ffl
+Encoding: 64260 64260 253
+Width: 823
+VWidth: 0
+Flags: HW
+LayerCount: 3
+Fore
+SplineSet
+768.471 639.158 m 2
+ 768.471 102.888 l 1
+ 789.06 102.377 805.716 87.8516 805.716 66.2559 c 2
+ 805.716 0.954102 l 1
+ 732.5 0.954102 l 2
+ 679.576 0.954102 639.515 41.1943 639.515 88.0078 c 2
+ 639.515 582.373 l 1
+ 488.916 582.373 l 2
+ 470.04 582.373 457.517 573.875 457.517 553.444 c 2
+ 457.517 475.577 l 1
+ 571.453 475.577 l 2
+ 577.774 474.861 588.094 475.537 601.987 464.457 c 0
+ 613.225 455.495 625.505 437.835 624.735 420.108 c 0
+ 623.934 401.674 616.972 387.183 601.828 375.406 c 0
+ 594.011 369.328 583.544 364.64 571.453 364.64 c 2
+ 457.517 364.64 l 1
+ 457.517 0.954102 l 1
+ 338.703 0.954102 l 1
+ 338.703 364.64 l 1
+ 167.517 364.64 l 1
+ 167.517 0.954102 l 1
+ 48.7031 0.954102 l 1
+ 48.7031 532.31 l 2
+ 48.7031 608.38 99.8896 668.086 191.734 668.086 c 2
+ 310.65 668.086 l 1
+ 310.65 625.032 l 2
+ 310.65 584.978 298.87 552.373 230.264 552.373 c 2
+ 178.397 552.373 l 2
+ 170.394 552.373 167.517 550 167.517 542.444 c 2
+ 167.517 475.577 l 1
+ 338.703 475.577 l 1
+ 338.703 572.31 l 2
+ 338.703 647.775 397.418 698.086 488.916 698.086 c 2
+ 728.085 698.086 l 1
+ 728.085 694.981 l 1
+ 752.121 687.013 768.471 664.67 768.471 639.158 c 2
+EndSplineSet
+Ligature2: "ligatures-1" f f l
 EndChar
 EndChars
 EndSplineFont
