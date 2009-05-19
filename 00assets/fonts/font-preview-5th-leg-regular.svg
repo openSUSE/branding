@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="300.64525"
-     inkscape:cy="360.86837"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="169.94016"
+     inkscape:cy="299.82042"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -526,7 +526,7 @@
          sodipodi:role="line"
          id="tspan4745"
          x="148.54861"
-         y="1000.0513">v0.3 May 11, 2009</tspan></text>
+         y="1000.0513">v0.4 May 19, 2009</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot375"
@@ -667,7 +667,7 @@
          sodipodi:role="line">ligatures</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"
+       style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold"
        x="395"
        y="680.341"
        id="text932"
@@ -676,7 +676,7 @@
          id="tspan934"
          x="395"
          y="680.341"
-         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold">ﬀ ﬁ ﬂ ﬃ ﬄ</tspan></text>
+         style="font-size:16.86214066px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:FifthLeg;-inkscape-font-specification:FifthLeg Bold">ﬀ ﬁ ﬂ ﬃ ﬄ</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot230"

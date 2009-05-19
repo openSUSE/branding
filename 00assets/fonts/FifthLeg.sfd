@@ -12,16 +12,17 @@ UnderlineWidth: 49
 Ascent: 800
 Descent: 200
 LayerCount: 3
-Layer: 0 0 "Back" 
-Layer: 1 0 "Fore" 
-Layer: 2 0 "Alt" 
+Layer: 0 0 "Back"  1
+Layer: 1 0 "Fore"  0
+Layer: 2 0 "Alt"  0
+NeedsXUIDChange: 1
 XUID: [1021 332 1867756345 15220598]
 FSType: 0
 OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242758975
+ModificationTime: 1242774179
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -56,7 +57,7 @@ OS2Vendor: 'SUSE'
 OS2CodePages: 00000001.00000000
 Lookup: 4 0 1 "'liga' Standard Lating Ligatures"  {"'liga' Standard Lating Ligatures-1"  } ['liga' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning"  {"class-kerning"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
-DEI: 0
+DEI: 91125
 KernClass2: 4 4 "class-kerning" 
  43 A Agrave Aacute Acircumflex Adieresis Aring
  8 T Tcaron
@@ -73,7 +74,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 11 12
+WinInfo: 0 11 11
 BeginPrivate: 9
 BlueValues 21 [0 0 312 312 438 438]
 OtherBlues 10 [-125 -94]
@@ -384,14 +385,14 @@ StartChar: n
 Encoding: 110 110 5
 Width: 530
 VWidth: -20
-Flags: WO
+Flags: W
 HStem: 385.764 97.7227<236.472 383.972>
 VStem: 59.029 89.766<-0.0440063 350.431 350.431 382.527 444.973 474.579> 388.548 87.8588<-0.0440063 382.351>
 LayerCount: 3
 Back
 Refer: 4 117 N -1 0 0 -1 534.606 475.533 2
 Fore
-Refer: 4 117 N -1 0 0 -1 534.606 475.533 2
+Refer: 4 117 S -1 0 0 -1 534.606 475.533 2
 EndChar
 
 StartChar: r
@@ -805,7 +806,7 @@ StartChar: t
 Encoding: 116 116 13
 Width: 395
 VWidth: -20
-Flags: W
+Flags: HWO
 HStem: 0.954102 21G<121.786 210.599> 391.811 83.7664<16.3201 121.786 210.599 355.927>
 VStem: 121.786 88.813<0.954102 391.811 475.577 691.636>
 LayerCount: 3
@@ -830,22 +831,27 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-166.67 698.086 m 0
- 190.545 698.086 210.599 678.032 210.599 654.158 c 2
- 210.599 475.577 l 1
- 314.691 475.577 l 2
- 339.521 475.577 360.53 460.567 360.53 435.738 c 2
- 360.53 391.811 l 1
- 210.599 391.811 l 1
- 210.599 0.954102 l 1
- 121.786 0.954102 l 1
- 121.786 391.811 l 1
- 54.9375 391.811 l 2
- 29.1533 391.811 10.0537 411.864 10.0537 435.738 c 0
- 10.0537 460.567 29.1533 475.577 54.9375 475.577 c 2
- 121.786 475.577 l 1
- 121.786 654.158 l 2
- 121.786 678.032 141.842 698.086 166.67 698.086 c 0
+166.67 698.086 m 4
+ 190.545 698.086 210.599 678.032 210.599 654.158 c 6
+ 210.599 475.577 l 5
+ 314.691 475.577 l 6
+ 339.521 475.577 360.53 460.567 360.53 435.738 c 6
+ 360.53 391.811 l 5
+ 210.599 391.811 l 5
+ 210.599 120 l 5
+ 210.599 96 221 85.9717 243 85.9717 c 5
+ 242 86 329.314 85.8789 330.046 85.5986 c 5
+ 348 85.5986 360.046 75 360.046 57 c 5
+ 360.046 -0.213867 l 5
+ 360.022 -0.105469 239 0 239 0.448008 c 5
+ 165 0 121.786 40 121.786 118 c 5
+ 121.786 391.811 l 5
+ 54.9375 391.811 l 6
+ 29.1533 391.811 10.0537 408.864 10.0537 432.738 c 4
+ 10.0537 457.567 29.1533 475.577 54.9375 475.577 c 6
+ 121.786 475.577 l 5
+ 121.786 654.158 l 6
+ 121.786 678.032 141.842 698.086 166.67 698.086 c 4
 EndSplineSet
 EndChar
 
@@ -5265,7 +5271,7 @@ StartChar: tcaron
 Encoding: 357 357 193
 Width: 375
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0.954102 21<121.786 210.599> 391.811 83.7664<16.3201 121.786 210.599 355.927> 529.574 263.068
 VStem: 121.786 88.813<0.954102 391.811 475.577 691.636> 255.272 112.183<691.819 780.576> 308.056 59.3994<619.631 665.78 665.78 678.79>
 LayerCount: 3
