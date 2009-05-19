@@ -5,7 +5,8 @@ FamilyName: FifthLeg
 Weight: Bold
 Copyright: Designed by Jakub Steiner <jimmac@gmail.com> with FontForge 2.0\n\nhttp://jimmac.musichall.cz\n
 UComments: "2008-8-26: Created." 
-Version: 0.3
+FontLog: "v0.4 +IBQA Moved oldstyle numerals to U+-F730 ... Kerning by class. Basic latin ligatures.+AAoA-v0.3 +IBQA Improved metrics, but still nowhere near being good enough.+AAoA-v0.2 +IBQA Better coverage, normal weight.+AAoA-v0.1 +IBQA Initial version, result of the openSUSE hackweek.+AAoA" 
+Version: 0.4
 ItalicAngle: 0
 UnderlinePosition: 122
 UnderlineWidth: 49
@@ -22,7 +23,7 @@ OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242774341
+ModificationTime: 1242774626
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -697,7 +698,7 @@ StartChar: s
 Encoding: 115 115 10
 Width: 501
 VWidth: -4
-Flags: W
+Flags: WO
 HStem: 0 103.977<71.4067 333.446> 191.303 102.412<157.962 333.64> 374.665 111.976<157.022 401.723>
 VStem: 39.5977 115.343<294.641 374.622> 336.858 113.142<104.594 130.413 130.413 189.012>
 LayerCount: 3
@@ -865,8 +866,8 @@ Encoding: 116 116 13
 Width: 422
 VWidth: -4
 Flags: HWO
-HStem: 0.916016 21G<112.518 243.927> 370.378 100.976<14.4504 112.518 243.927 392.606>
-VStem: 112.518 131.409<0.916016 370.378 471.354 660.328>
+HStem: -0.213867 113.186<242.733 273 273.01 387.446> 371.811 103.767<9.84939 121.786 240.599 385.927>
+VStem: 121.786 118.812<114.372 371.811 475.577 685.755>
 LayerCount: 3
 Back
 SplineSet
@@ -896,10 +897,10 @@ SplineSet
  369.521 475.577 390.53 460.567 390.53 435.738 c 2
  390.53 371.811 l 1
  240.599 371.811 l 1
- 240.599 147 l 1
- 240.599 123 251 112.972 273 112.972 c 1
- 272 113 349.314 112.879 350.046 112.599 c 1
- 376 112.599 390.046 100 390.046 74 c 1
+ 240.599 138 l 5
+ 240.599 114 251 103.972 273 103.972 c 5
+ 272 104 349.314 103.879 350.046 103.599 c 5
+ 376 103.599 390.046 91 390.046 65 c 5
  390.046 -0.213867 l 1
  390.022 -0.105469 239 0 239 0.448242 c 1
  165 0 121.786 40 121.786 118 c 1
@@ -5489,8 +5490,8 @@ Encoding: 357 357 193
 Width: 383
 VWidth: 14
 Flags: HW
-HStem: 0.916016 21<112.518 243.927> 370.378 100.976<14.4504 112.518 243.927 392.606> 517.791 271.746<331.315 372.568>
-VStem: 112.518 131.409<0.916016 370.378 471.354 660.328> 308.661 126.896<677.91 772.819> 359.333 76.224<609.934 657.034 657.034 663.333>
+HStem: -0.213867 113.186<242.733 273 273.01 387.446> 371.811 103.767<9.84939 121.786 240.599 385.927> 517.791 271.746<331.315 372.568>
+VStem: 121.786 118.812<114.372 371.811 475.577 685.755> 308.661 126.896<677.91 772.819> 359.333 76.224<609.934 657.034 657.034 663.333>
 LayerCount: 3
 Fore
 Refer: 22 44 S 1 0 0 1 246 661.24 2

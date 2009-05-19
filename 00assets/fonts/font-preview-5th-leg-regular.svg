@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="169.94016"
-     inkscape:cy="299.82042"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="315.22591"
+     inkscape:cy="243.29053"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -149,7 +149,7 @@
            width="571.34229"
            id="rect9991" /></flowRegion><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
-         id="flowPara9993">5th Leg is the (type)face of openSUSE. A geometric sans serif to be used as a headline font in all openSUSE materials. I would like to make this a default font for the window decorations in openSUSE 11.2.</flowPara><flowPara
+         id="flowPara9993">5th Leg is the (type)face of openSUSE. A geometric sans serif to be used as a headline font in all openSUSE materials. I would like to make this the official default font for the window decorations in openSUSE 11.2.</flowPara><flowPara
          id="flowPara10606"
          style="font-size:12px;fill:#000000;fill-opacity:1" /><flowPara
          style="font-size:12px;fill:#000000;fill-opacity:1"
@@ -509,7 +509,7 @@
            height="133.92743"
            width="279.34229"
            id="rect88" /></flowRegion><flowPara
-         id="flowPara734">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ultrices turpis. Curabitur tincidunt tellus nec purus. Suspendisse molestie sem. Sed a lorem ut est tincidunt consectetuer. Phasellus magna sem, vulputate eget, ornare sed, dignissim sit amet, pede. Phasellus magna sem, vulputate eget, ornare sed, dignissim sit amet, pede. Sed quis elit. Sed quis elit. Nulla blandit justo a metus. Quisque vehicula porttitor odio. Praesent a eros. Donec interdum vestibulum libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </flowPara><flowPara
+         id="flowPara734">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ultrices turpis. Curabitur tincidunt tellus nec purus. Suspendisse molestie sem. Sed a lorem ut est tincidunt consectetuer. Phasellus magna sem, vulputate eget, ornare sed, dignissim sit amet, pede. Phasellus magna sem, vulputate eget reffultum, ornare sed, dignissim sit amet, pede. Sed quis elit officin. Sed quis elit. Nulla blandit justo a metus. Quisque vehicula final porttitor odio. Praesent a eros. Donec interdum vestibulum libero fjord. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </flowPara><flowPara
          id="flowPara736" /><flowPara
          id="flowPara738">Donec tempus quam quis neque. In commodo, dolor quis fermentum ullamcorper, urna massa volutpat massa, vitae mattis purus arcu nec nulla. Sed at turpis vitae velit euismod aliquet. Nunc in turpis ac lacus eleifend sagittis. </flowPara><flowPara
          id="flowPara740" /><flowPara
@@ -680,7 +680,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot230"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:140%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:139.99999762%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
        transform="translate(-21.0475,7.75213)"><flowRegion
          id="flowRegion232"><rect
            id="rect234"
@@ -688,10 +688,10 @@
            height="67.927429"
            x="87.681244"
            y="751.1347"
-           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:140%;writing-mode:lr;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg" /></flowRegion><flowPara
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg" /></flowRegion><flowPara
          id="flowPara250"><flowSpan
    style="font-weight:bold"
-   id="flowSpan293">v0.4</flowSpan> — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures.</flowPara><flowPara
+   id="flowSpan293">v0.4</flowSpan> — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures. </flowPara><flowPara
          id="flowPara287"><flowSpan
    style="font-weight:bold"
    id="flowSpan301">v0.3</flowSpan> — Improved metrics, but still nowhere near being good enough.</flowPara><flowPara
