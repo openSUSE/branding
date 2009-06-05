@@ -1,0 +1,32 @@
+
+# GPOS 
+
+
+lookup kerning {
+  lookupflag 0;
+    @kc0_first_1 = [\A \Agrave \Aacute \Acircumflex \Adieresis \Aring ];
+    @kc0_first_2 = [\T \Tcaron ];
+    @kc0_second_1 = [\V \W \Wcircumflex ];
+    @kc0_second_2 = [\a \c \e \g \i \j \m \n \o \p \q \r \s \u \v \w \x \y \z \agrave \aacute \acircumflex \atilde 
+	\adieresis \aring \ae \ccedilla \egrave \eacute \ecircumflex \edieresis 
+	\igrave \iacute \icircumflex \idieresis \ntilde \ograve \oacute 
+	\ocircumflex \otilde \odieresis \ugrave \uacute \ucircumflex 
+	\udieresis \yacute \ydieresis \abreve \cacute \ccircumflex \cdotaccent 
+	\ccaron \dcaron \ebreve \edotaccent \ecaron \gcircumflex \gbreve 
+	\gdotaccent \dotlessi \nacute \ncommaaccent \ncaron \obreve \racute 
+	\rcommaaccent \rcaron \sacute \scircumflex \scaron \tcaron \ubreve 
+	\uring \wcircumflex \zacute \zdotaccent \zcaron \ygrave ];
+    pos @kc0_first_1 @kc0_second_1 -80;
+    pos @kc0_first_2 @kc0_second_2 -90;
+} kerning;
+
+feature kern {
+
+  script DFLT;
+     language dflt ;
+      lookup kerning;
+
+  script latn;
+     language dflt ;
+      lookup kerning;
+} kern;
