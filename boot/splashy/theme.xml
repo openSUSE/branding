@@ -117,7 +117,7 @@
         <text>
             <!-- font file to use, path relative to theme -->
             <font>
-                <file>FifthLegWide.ttf</file>
+                <file>FifthLeg-Bold.ttf</file>
                 <height>10</height>
             </font>
             <!-- here you can set the color of the text/font...

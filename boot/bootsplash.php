@@ -111,7 +111,7 @@ while (list($res,$q) = each($resolutions)) {
 
 	$verticalpcnt = 0.8;
 	$width = 160; //width of the progress bar
-	$voffset = 30; //vertical offset from the title (defined by verticalpcnt above)
+	$voffset = 80; //vertical offset from the title (defined by verticalpcnt above)
 	$x1 = $lx - round($width/2) - 4;
 	$x2 = $x1 + $width;
 	//$y1 = round($verticalpcnt*$y);
