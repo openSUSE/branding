@@ -5,7 +5,7 @@ FamilyName: FifthLeg
 Weight: Bold
 Copyright: Designed by Jakub Steiner <jimmac@gmail.com> with FontForge 2.0\n\nhttp://jimmac.musichall.cz\n
 UComments: "2008-8-26: Created." 
-FontLog: "v0.4 +IBQA Moved oldstyle numerals to U+----F730 ... Kerning by class. Basic latin ligatures. Improved 'g'+AAoA-v0.3 +IBQA Improved metrics, but still nowhere near being good enough.+AAoA-v0.2 +IBQA Better coverage, normal weight.+AAoA-v0.1 +IBQA Initial version, result of the openSUSE hackweek.+AAoA" 
+FontLog: "v0.4 +IBQA Moved oldstyle numerals to U+-----F730 ... Kerning by class. Basic latin ligatures. Improved 'g'+AAoA-v0.3 +IBQA Improved metrics, but still nowhere near being good enough.+AAoA-v0.2 +IBQA Better coverage, normal weight.+AAoA-v0.1 +IBQA Initial version, result of the openSUSE hackweek.+AAoA" 
 Version: 0.4
 ItalicAngle: 0
 UnderlinePosition: 122
@@ -23,7 +23,7 @@ OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1219682457
-ModificationTime: 1242994719
+ModificationTime: 1256910994
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -70,13 +70,12 @@ KernClass2: 4 4 "class-kerning"
  0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} -145 {} 0 {} 0 {} 0 {} 0 {} -100 {}
 LangName: 1033 "" "" "Bold" "" "" "Version 1.0" "" "" "" "Jakub Steiner" "" "" "" "Copyright (c) 2008, Jakub Steiner (http://jimmac.musichall.cz/),+AAoA-with Reserved Font Name sixth leg.+AAoACgAA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is copied below, and is also available with a FAQ at:+AAoA-http://scripts.sil.org/OFL+AAoACgAK------------------------------------------------------------+AAoA-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007+AAoA------------------------------------------------------------+AAoACgAA-PREAMBLE+AAoA-The goals of the Open Font License (OFL) are to stimulate worldwide+AAoA-development of collaborative font projects, to support the font creation+AAoA-efforts of academic and linguistic communities, and to provide a free and+AAoA-open framework in which fonts may be shared and improved in partnership+AAoA-with others.+AAoACgAA-The OFL allows the licensed fonts to be used, studied, modified and+AAoA-redistributed freely as long as they are not sold by themselves. The+AAoA-fonts, including any derivative works, can be bundled, embedded, +AAoA-redistributed and/or sold with any software provided that any reserved+AAoA-names are not used by derivative works. The fonts and derivatives,+AAoA-however, cannot be released under any other type of license. The+AAoA-requirement for fonts to remain under this license does not apply+AAoA-to any document created using the fonts or their derivatives.+AAoACgAA-DEFINITIONS+AAoAIgAA-Font Software+ACIA refers to the set of files released by the Copyright+AAoA-Holder(s) under this license and clearly marked as such. This may+AAoA-include source files, build scripts and documentation.+AAoACgAi-Reserved Font Name+ACIA refers to any names specified as such after the+AAoA-copyright statement(s).+AAoACgAi-Original Version+ACIA refers to the collection of Font Software components as+AAoA-distributed by the Copyright Holder(s).+AAoACgAi-Modified Version+ACIA refers to any derivative made by adding to, deleting,+AAoA-or substituting -- in part or in whole -- any of the components of the+AAoA-Original Version, by changing formats or by porting the Font Software to a+AAoA-new environment.+AAoACgAi-Author+ACIA refers to any designer, engineer, programmer, technical+AAoA-writer or other person who contributed to the Font Software.+AAoACgAA-PERMISSION & CONDITIONS+AAoA-Permission is hereby granted, free of charge, to any person obtaining+AAoA-a copy of the Font Software, to use, study, copy, merge, embed, modify,+AAoA-redistribute, and sell modified and unmodified copies of the Font+AAoA-Software, subject to the following conditions:+AAoACgAA-1) Neither the Font Software nor any of its individual components,+AAoA-in Original or Modified Versions, may be sold by itself.+AAoACgAA-2) Original or Modified Versions of the Font Software may be bundled,+AAoA-redistributed and/or sold with any software, provided that each copy+AAoA-contains the above copyright notice and this license. These can be+AAoA-included either as stand-alone text files, human-readable headers or+AAoA-in the appropriate machine-readable metadata fields within text or+AAoA-binary files as long as those fields can be easily viewed by the user.+AAoACgAA-3) No Modified Version of the Font Software may use the Reserved Font+AAoA-Name(s) unless explicit written permission is granted by the corresponding+AAoA-Copyright Holder. This restriction only applies to the primary font name as+AAoA-presented to the users.+AAoACgAA-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font+AAoA-Software shall not be used to promote, endorse or advertise any+AAoA-Modified Version, except to acknowledge the contribution(s) of the+AAoA-Copyright Holder(s) and the Author(s) or with their explicit written+AAoA-permission.+AAoACgAA-5) The Font Software, modified or unmodified, in part or in whole,+AAoA-must be distributed entirely under this license, and must not be+AAoA-distributed under any other license. The requirement for fonts to+AAoA-remain under this license does not apply to any document created+AAoA-using the Font Software.+AAoACgAA-TERMINATION+AAoA-This license becomes null and void if any of the above conditions are+AAoA-not met.+AAoACgAA-DISCLAIMER+AAoA-THE FONT SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND,+AAoA-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF+AAoA-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT+AAoA-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE+AAoA-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,+AAoA-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL+AAoA-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING+AAoA-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM+AAoA-OTHER DEALINGS IN THE FONT SOFTWARE." "http://scripts.sil.org/ofl" 
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 54 9 7
+WinInfo: 324 9 7
 BeginPrivate: 9
 BlueValues 21 [0 0 312 312 438 438]
 OtherBlues 10 [-125 -94]
@@ -97,7 +96,7 @@ Grid
  687 698 l 25
 EndSplineSet
 TeXData: 1 0 0 368050 184025 122683 519045 1048576 122683 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65536 254
+BeginChars: 65536 259
 
 StartChar: b
 Encoding: 98 98 0
@@ -7328,6 +7327,85 @@ SplineSet
 EndSplineSet
 LCarets2: 2 0 0 
 Ligature2: "ligatures-1" f f l
+EndChar
+
+StartChar: hungarumlaut
+Encoding: 733 733 254
+Width: 390
+Flags: W
+HStem: 543 133<67.9365 135.972 253.936 321.972>
+LayerCount: 3
+Fore
+SplineSet
+346 653 m 4
+ 346 667.869 336.968 676 320 676 c 6
+ 291 676 l 6
+ 265.8 676 253.546 657.773 249 643 c 6
+ 231 576 l 6
+ 224.392 553.532 240.051 543 257 543 c 6
+ 282 543 l 6
+ 297.782 543 319.49 550.468 327 576 c 6
+ 345 643 l 6
+ 345.667 645 346 648.333 346 653 c 4
+44 565 m 4
+ 44 547.4 60.2 543 71 543 c 6
+ 96 543 l 6
+ 111.782 543 133.49 550.468 141 576 c 6
+ 159 643 l 6
+ 164.537 660.995 155.757 676 134 676 c 6
+ 105 676 l 6
+ 79.8 676 67.5457 657.773 63 643 c 6
+ 45 576 l 6
+ 44.3333 573.333 44 569.667 44 565 c 4
+EndSplineSet
+EndChar
+
+StartChar: Ohungarumlaut
+Encoding: 336 336 255
+Width: 665
+VWidth: 0
+HStem: 0.916016 114.062<186.399 477.195> 584.903 114.06<186.394 477.2> 758.963 133<223.2 291.235 409.2 477.235>
+VStem: 68.7715 116.374<114.993 584.275> 479.388 116.373<118.53 584.32>
+LayerCount: 3
+Fore
+Refer: 254 733 N 1 0 0 1 155.264 215.963 2
+Refer: 38 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ohungarumlaut
+Encoding: 337 337 256
+Width: 527
+VWidth: 0
+HStem: -7.33398 114.06<157.884 379.077> 371.295 114.059<157.885 379.349> 545.354 133<159.917 227.953 345.917 413.953>
+VStem: 39.96 115.872<107.088 370.934> 381.127 115.873<107.087 370.893>
+LayerCount: 3
+Fore
+Refer: 254 733 N 1 0 0 1 91.981 2.354 2
+Refer: 8 111 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Uhungarumlaut
+Encoding: 368 368 257
+Width: 624
+VWidth: 0
+HStem: 0.916016 114.062<177.997 437.032> 763.547 133<203.28 271.315 389.28 457.315>
+VStem: 61.4395 116.557<114.978 692.061> 437.032 116.559<115.006 135.415 135.415 687.64>
+LayerCount: 3
+Fore
+Refer: 254 733 S 1 0 0 1 135.344 220.547 2
+Refer: 47 85 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uhungarumlaut
+Encoding: 369 369 258
+Width: 548
+VWidth: 0
+HStem: -7.63574 122.614<154.945 309.472> 545.354 133<160.578 228.613 346.578 414.613>
+VStem: 40 114.945<115.083 485.354> 381.505 116.777<0.916016 26.291 115.012 134.497 134.497 485.354 485.354 485.354>
+LayerCount: 3
+Fore
+Refer: 254 733 N 1 0 0 1 92.6411 2.354 2
+Refer: 4 117 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
