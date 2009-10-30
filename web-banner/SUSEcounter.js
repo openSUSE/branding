@@ -5,7 +5,10 @@
 //
 // code & images redistributable under the GNU LGPL v2 or later
 //
-function days_remaining(date1, date2) {
+SUSECOUNTER = {
+  daystogo: 0,
+  message: 'days to go',
+  days_remaining: function (date1,date2) {
     var dayinmiliseconds = 1000 * 60 * 60 * 24
 
     // Convert both dates to milliseconds
@@ -19,49 +22,45 @@ function days_remaining(date1, date2) {
     } else {
       return 0;
     }
-
-}
-
-function localized_message() {
-  var lang = window.navigator.language; //FIXME: this is broken, 
-                                        //it's not the user set language-accept.
-                                        //I cannot figure out how to read HTTP headers either.
-
-  var message = new Object();
-  message.en = "days to go.";
-  message.de = "Tage bis zum release."; //FIXME: denglish
-  message.cs = "dní do vydání.";
-
-  if (message[lang]) { //default to english if not localized
-    return message[lang];
-  } else {
-    return message['en'];
+  },
+  fadeInCounter: function () {
+    var containerWidth = $('#countercontainer').width();
+    $('#SUSEcounter').append("<div id='SUSEdaystogo'>" + SUSECOUNTER.daystogo + "</div>");
+    $('#SUSEdaystogo')
+    	.css({
+    	  opacity: 0,
+    		top: '-33%',
+    		width: containerWidth
+    	})
+    	.animate({
+    	  opacity: 1,
+    	  top: '33%'
+    	}, 200);
+    $('#SUSEcounter').append("<div id='SUSEdays'>" + SUSECOUNTER.message + "</div>");
+    $('#SUSEdays').hide().fadeIn(4000);
+  },
+  loadStylesheet: function (url) {
+    $('head').append('<link rel="stylesheet" type="text/css" href="'+url+'" title="suse counter">');
   }
 }
 
-function loadStylesheet(url) {
-  $('head').append('<link rel="stylesheet" type="text/css" href="'+url+'" title="suse counter">');
-}
 
 $(document).ready(function() {
   //console.log('foo');
   var prefix = ''; //base location of the script
-  var message = localized_message();
 
-  loadStylesheet('counter.css');
+  SUSECOUNTER.loadStylesheet('counter.css');
   var releasedate = new Date();
-  releasedate.setFullYear(2009,11,12); 
+  releasedate.setFullYear(2009,10,12); 
   var today = new Date();
-  var daystogo = days_remaining(today,releasedate);
+  SUSECOUNTER.daystogo = SUSECOUNTER.days_remaining(today,releasedate);
+  //console.log(SUSECOUNTER.daystogo, today, releasedate)
   //var daystogo = 0;
 
   $('#nojavascriptlink').hide();
-  if (daystogo>0) {
-    $('#countercontainer').append("<div id='SUSEcounter'></div>");
-    $('#SUSEcounter').append("<div id='SUSEdaystogo'>" + daystogo + "</div>");
-    $('#SUSEdaystogo').hide().fadeIn();
-    $('#SUSEcounter').append("<div id='SUSEdays'>" + message + "</div>");
-    $('#SUSEdays').hide().fadeIn(2000);
+  $('#countercontainer').append("<div id='SUSEcounter'></div>");
+  if (SUSECOUNTER.daystogo>0) {
+    setTimeout(SUSECOUNTER.fadeInCounter, 2000);
   } else {
     //it's time, get it!
     $('#countercontainer').append("<div id='SUSEcounter'><a class='message' href='http://software.opensuse.org'>download here!</div>");
