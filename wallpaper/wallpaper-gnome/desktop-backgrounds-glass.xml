@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+	<wallpaper deleted="false">
+	
+		<name>openSUSE Glass</name>
+		<filename>/usr/share/backgrounds/glass/glass.xml</filename>
+		<options>stretched</options>
+	</wallpaper>
+</wallpapers>

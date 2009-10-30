@@ -39,14 +39,18 @@ function localized_message() {
   }
 }
 
+function loadStylesheet(url) {
+  $('head').append('<link rel="stylesheet" type="text/css" href="'+url+'" title="suse counter">');
+}
+
 $(document).ready(function() {
-  console.log('foo');
-  var prefix = 'http://forgeftp.novell.com/opensuse-art/openSUSE11/web-banner/'; //base location of the script
+  //console.log('foo');
+  var prefix = ''; //base location of the script
   var message = localized_message();
 
-  
+  loadStylesheet('counter.css');
   var releasedate = new Date();
-  releasedate.setFullYear(2008,5,19); //19.6.2008
+  releasedate.setFullYear(2009,11,12); 
   var today = new Date();
   var daystogo = days_remaining(today,releasedate);
   //var daystogo = 0;
@@ -54,36 +58,12 @@ $(document).ready(function() {
   $('#nojavascriptlink').hide();
   if (daystogo>0) {
     $('#countercontainer').append("<div id='SUSEcounter'></div>");
-    $('#SUSEcounter').css({
-      'overflow': 'hidden',
-      'position': 'relative',
-      'width':  '256px',
-      'height':  '256px',
-      'background-image': 'url(' + prefix + 'images/background.png)'
-    });
     $('#SUSEcounter').append("<div id='SUSEdaystogo'>" + daystogo + "</div>");
-
-    $('#SUSEdaystogo').hide().css({
-      'color': '#ffffff',
-      'font-family': "'Trebuchet MS', Sans-Serif",
-      'font-size':  '60pt',
-      'height':  '1em',
-      'font-weight': 'bold',
-      'line-height': '1em',
-      'text-align': 'center',
-      'margin-top': '43%'
-    }).fadeIn();
+    $('#SUSEdaystogo').hide().fadeIn();
     $('#SUSEcounter').append("<div id='SUSEdays'>" + message + "</div>");
-    $('#SUSEdays').hide().css({
-      'position': 'absolute',
-      'bottom': '30px',
-      'right': '30px',
-      'color': '#ffffff',
-      'line-height': '1em',
-      'font-size':  '16pt',
-      'font-family': "'Trebuchet MS', Sans-Serif"
-    }).fadeIn(2000);
+    $('#SUSEdays').hide().fadeIn(2000);
   } else {
-    $('#nojavascriptlink>img').attr('src',prefix+'images/getit.png').parent().attr('href','http://software.opensuse.org').show();
+    //it's time, get it!
+    $('#countercontainer').append("<div id='SUSEcounter'><a class='message' href='http://software.opensuse.org'>download here!</div>");
   }
 });
