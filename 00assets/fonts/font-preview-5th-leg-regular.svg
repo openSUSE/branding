@@ -16,7 +16,8 @@
    sodipodi:version="0.32"
    inkscape:version="0.46+devel"
    sodipodi:docname="font-preview-5th-leg-regular.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
      inkscape:cx="315.22591"
-     inkscape:cy="243.29053"
+     inkscape:cy="241.87632"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,7 +36,8 @@
      inkscape:window-x="286"
      inkscape:window-y="29"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:window-maximized="0">
     <sodipodi:guide
        id="guide10020"
        position="67,1005"
@@ -526,7 +528,7 @@
          sodipodi:role="line"
          id="tspan4745"
          x="148.54861"
-         y="1000.0513">v0.4 May 19, 2009</tspan></text>
+         y="1000.0513">v0.5 October 19, 2009</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot375"
@@ -691,7 +693,10 @@
            style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg" /></flowRegion><flowPara
          id="flowPara250"><flowSpan
    style="font-weight:bold"
-   id="flowSpan293">v0.4</flowSpan> — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures. </flowPara><flowPara
+   id="flowSpan2962">v0.5</flowSpan> — Hungarian glyphs.</flowPara><flowPara
+         id="flowPara2958"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan2960">v0.4</flowSpan> — Moved oldstyle numerals to U+F730 … Kerning by class. Basic latin ligatures. </flowPara><flowPara
          id="flowPara287"><flowSpan
    style="font-weight:bold"
    id="flowSpan301">v0.3</flowSpan> — Improved metrics, but still nowhere near being good enough.</flowPara><flowPara
