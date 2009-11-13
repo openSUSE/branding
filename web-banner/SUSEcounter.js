@@ -63,6 +63,6 @@ $(document).ready(function() {
     setTimeout(SUSECOUNTER.fadeInCounter, 2000);
   } else {
     //it's time, get it!
-    $('#countercontainer').append("<div id='SUSEcounter'><a class='message' href='http://software.opensuse.org'>download here!</div>");
+    $('#SUSEcounter').append("<a target='_parent' class='message' href='http://software.opensuse.org'>download here!</a>");
   }
 });
