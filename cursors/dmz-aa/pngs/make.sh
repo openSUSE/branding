@@ -53,6 +53,7 @@ xcursorgen dnd-copy.in ../xcursors/dnd-copy
 xcursorgen dnd-link.in ../xcursors/dnd-link
 xcursorgen dnd-move.in ../xcursors/dnd-move
 xcursorgen dnd-ask.in ../xcursors/dnd-ask
+xcursorgen color-picker.in ../xcursors/color-picker
 
 cd ../xcursors
 ln -sf    dotbox			draped_box
@@ -97,4 +98,4 @@ ln -sf    sb_v_double_arrow	2870a09082c103050810ffdffffe0204
 ln -sf    v_double_arrow	00008160000006810000408080010102
 #ln -sf    center_ptr		centre_ptr
 
-cp -RPv * /usr/share/icons/dmz-aa/cursors/
+#cp -RPv * /usr/share/icons/dmz-aa/cursors/
