@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,7 +14,7 @@
    height="600"
    id="svg6898"
    sodipodi:version="0.32"
-   inkscape:version="0.46+devel"
+   inkscape:version="0.47+devel r9385 custom"
    version="1.0"
    sodipodi:docname="bg-head-800x58.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -837,15 +838,6 @@
        id="radialGradient14843"
        xlink:href="#linearGradient14837"
        inkscape:collect="always" />
-    <filter
-       id="filter14833"
-       inkscape:collect="always">
-      <feBlend
-         id="feBlend14835"
-         in2="BackgroundImage"
-         mode="screen"
-         inkscape:collect="always" />
-    </filter>
     <linearGradient
        y2="463.56079"
        x2="401.30548"
@@ -5010,8 +5002,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="392.86202"
-     inkscape:cy="186.17675"
+     inkscape:cx="284.20216"
+     inkscape:cy="246.9176"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      width="1600px"
@@ -5020,11 +5012,12 @@
      inkscape:showpageshadow="false"
      inkscape:window-width="1386"
      inkscape:window-height="1026"
-     inkscape:window-x="1554"
+     inkscape:window-x="1600"
      inkscape:window-y="0"
      showgrid="false"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
        id="grid6906"
@@ -5047,15 +5040,14 @@
      id="layer4"
      inkscape:label="bcg">
     <image
-       y="-60"
-       x="-273"
-       id="image9373"
-       height="848"
-       width="1600"
-       sodipodi:absref="/home/jimmac/gfx/novell/products/openSUSE11/wallpaper/alt.png"
-       xlink:href="/home/jimmac/gfx/novell/products/openSUSE11/wallpaper/alt.png" />
+       y="-31.001505"
+       x="-123.17331"
+       id="image10928"
+       xlink:href="file:///home/jimmac/gfx/novell/products/openSUSE11/wallpaper/wallpaper-gnome/IK/1-dawn.jpg"
+       height="645.40582"
+       width="1032.6494" />
     <rect
-       style="opacity:0.7425743;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.69856459;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect6449"
        width="823"
        height="716"
