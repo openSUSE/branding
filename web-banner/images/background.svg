@@ -16,7 +16,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.47+devel r9385 custom"
    version="1.0"
-   sodipodi:docname="nojavascript.svg"
+   sodipodi:docname="background.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/jimmac/gfx/novell/products/openSUSE11/web-banner/images/nojavascript.png"
    inkscape:export-xdpi="90"
@@ -27,7 +27,7 @@
        inkscape:collect="always"
        xlink:href="#pattern13140"
        id="pattern13154"
-       patternTransform="matrix(2.7126466,0,0,2.7126466,-288.78908,-47.189338)" />
+       patternTransform="matrix(2.7126466,0,0,2.7126466,-288.78908,-18.097397)" />
     <pattern
        inkscape:collect="always"
        xlink:href="#pattern13135"
@@ -138,14 +138,6 @@
        y1="500.9314"
        x2="401.30548"
        y2="463.56079" />
-    <filter
-       inkscape:collect="always"
-       id="filter6060">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.3894114"
-         id="feGaussianBlur6062" />
-    </filter>
     <inkscape:perspective
        id="perspective2932"
        inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
@@ -611,17 +603,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="140.18904"
+     inkscape:cx="142.18904"
      inkscape:cy="116.67915"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="757"
+     inkscape:window-width="1122"
      inkscape:window-height="842"
-     inkscape:window-x="598"
-     inkscape:window-y="257"
+     inkscape:window-x="1865"
+     inkscape:window-y="210"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
      inkscape:snap-page="true"
@@ -640,7 +632,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date />
         <dc:creator>
           <cc:Agent>
@@ -693,7 +685,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       transform="matrix(1.4172298,0,0,1.4172298,-52.988181,-78.252465)"
+       transform="matrix(1.4172298,0,0,1.4172298,-52.988181,-94.252465)"
        id="g13142"
        style="opacity:0.32057417;fill:#ffffff;fill-opacity:1">
       <g
@@ -720,7 +712,7 @@
     </g>
     <g
        id="g13127"
-       transform="matrix(1.4172298,0,0,1.4172298,-52.988181,-80.024002)">
+       transform="matrix(1.4172298,0,0,1.4172298,-52.988181,-96.024002)">
       <g
          style="opacity:0.58369099;fill:#000000;fill-opacity:1;display:inline;filter:url(#filter15859)"
          transform="matrix(0.38806727,0,0,0.38806727,50.220169,73.763076)"
