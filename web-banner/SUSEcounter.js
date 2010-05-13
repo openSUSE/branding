@@ -51,7 +51,7 @@ $(document).ready(function() {
 
   SUSECOUNTER.loadStylesheet('counter.css');
   var releasedate = new Date();
-  releasedate.setFullYear(2009,10,12); 
+  releasedate.setFullYear(2010,06,15); //month - 1
   var today = new Date();
   SUSECOUNTER.daystogo = SUSECOUNTER.days_remaining(today,releasedate);
   //console.log(SUSECOUNTER.daystogo, today, releasedate)
