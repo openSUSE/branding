@@ -15,7 +15,7 @@
    height="95"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.47+devel r9385 custom"
+   inkscape:version="0.47+devel r9448 custom"
    version="1.0"
    sodipodi:docname="ooabout.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -44,8 +44,8 @@
      showgrid="false"
      inkscape:window-width="1022"
      inkscape:window-height="968"
-     inkscape:window-x="2210"
-     inkscape:window-y="155"
+     inkscape:window-x="211"
+     inkscape:window-y="88"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-maximized="0">
@@ -8779,12 +8779,13 @@
      id="layer1"
      inkscape:groupmode="layer">
     <image
-       y="-127"
-       x="-9.5999985"
-       id="image13828"
-       xlink:href="file:///home/jimmac/gfx/novell/products/openSUSE11/wallpaper/wallpaper-gnome/IK/1-dawn.jpg"
+       sodipodi:absref="/home/jimmac/gfx/novell/products/openSUSE11/app-splashes/openoffice.org/../../wallpaper/wallpaper-gnome/IK/1-dawn.jpg"
+       xlink:href="../../wallpaper/wallpaper-gnome/IK/1-dawn.jpg"
+       width="432.00003"
        height="270"
-       width="432.00003" />
+       id="image13828"
+       x="-9.5999985"
+       y="-127" />
     <g
        id="g9264"
        inkscape:label="Layer 1"
