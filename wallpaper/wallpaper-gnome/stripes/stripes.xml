@@ -3,48 +3,54 @@
     <year>2011</year>
     <month>2</month>
     <day>9</day>
-    <hour>07</hour>
+    <hour>10</hour>
     <minute>00</minute>
     <second>00</second>
   </starttime>
 
+<!-- This animation will start at 10 AM. -->
+
+<!-- Day, from 10 AM to 4 PM -->
 <static>
-<duration>21.0</duration>
+<duration>21600.0</duration>
 <file>
-<size width="1600" height="1200">/usr/share/wallpapers/stripes/celadon-1600x1200.jpg</size>
-<size width="1920" height="1200">/usr/share/wallpapers/stripes/celadon-1920x1200.jpg</size>
+<size width="1600" height="1200">/usr/share/backgrounds/stripes/celadon-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/backgrounds/stripes/celadon-1920x1200.jpg</size>
 </file>
 </static>
 
+<!-- Transition to night, from 4 PM to 10 PM -->
 <transition type="overlay">
-<duration>21.0</duration>
+<duration>21600.0</duration>
 <from>
-<size width="1600" height="1200">/usr/share/wallpapers/stripes/celadon-1600x1200.jpg</size>
-<size width="1920" height="1200">/usr/share/wallpapers/stripes/celadon-1920x1200.jpg</size>
+<size width="1600" height="1200">/usr/share/backgrounds/stripes/celadon-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/backgrounds/stripes/celadon-1920x1200.jpg</size>
 </from>
 <to>
-<size width="1600" height="1200">/usr/share/wallpapers/stripes/gray-1600x1200.jpg</size>
-<size width="1920" height="1200">/usr/share/wallpapers/stripes/gray-1920x1200.jpg</size>
+<size width="1600" height="1200">/usr/share/backgrounds/stripes/gray-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/backgrounds/stripes/gray-1920x1200.jpg</size>
 </to>
 </transition>
 
+<!-- Night, from 10 PM to 4 AM -->
 <static>
-<duration>21.0</duration>
+<duration>21600.0</duration>
 <file>
-<size width="1600" height="1200">/usr/share/wallpapers/stripes/gray-1600x1200.jpg</size>
-<size width="1920" height="1200">/usr/share/wallpapers/stripes/gray-1920x1200.jpg</size>
+<size width="1600" height="1200">/usr/share/backgrounds/stripes/gray-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/backgrounds/stripes/gray-1920x1200.jpg</size>
 </file>
 </static>
 
+<!-- Transition to day, from 4 AM to 10 AM -->
 <transition type="overlay">
-<duration>21.0</duration>
+<duration>21600.0</duration>
 <from>
-<size width="1600" height="1200">/usr/share/wallpapers/stripes/gray-1600x1200.jpg</size>
-<size width="1920" height="1200">/usr/share/wallpapers/stripes/gray-1920x1200.jpg</size>
+<size width="1600" height="1200">/usr/share/backgrounds/stripes/gray-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/backgrounds/stripes/gray-1920x1200.jpg</size>
 </from>
 <to>
-<size width="1600" height="1200">/usr/share/wallpapers/stripes/celadon-1600x1200.jpg</size>
-<size width="1920" height="1200">/usr/share/wallpapers/stripes/celadon-1920x1200.jpg</size>
+<size width="1600" height="1200">/usr/share/backgrounds/stripes/celadon-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/backgrounds/stripes/celadon-1920x1200.jpg</size>
 </to>
 </transition>
 
