@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+	<wallpaper deleted="false">
+	
+		<name>openSUSE stripes</name>
+		<filename>/usr/share/backgrounds/stripes/stripes.xml</filename>
+		<options>zoom</options>
+	</wallpaper>
+</wallpapers>

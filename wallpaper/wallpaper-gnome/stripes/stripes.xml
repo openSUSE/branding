@@ -1,0 +1,51 @@
+<background>
+  <starttime>
+    <year>2011</year>
+    <month>2</month>
+    <day>9</day>
+    <hour>07</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+
+<static>
+<duration>21.0</duration>
+<file>
+<size width="1600" height="1200">/usr/share/wallpapers/stripes/celadon-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/wallpapers/stripes/celadon-1920x1200.jpg</size>
+</file>
+</static>
+
+<transition type="overlay">
+<duration>21.0</duration>
+<from>
+<size width="1600" height="1200">/usr/share/wallpapers/stripes/celadon-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/wallpapers/stripes/celadon-1920x1200.jpg</size>
+</from>
+<to>
+<size width="1600" height="1200">/usr/share/wallpapers/stripes/gray-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/wallpapers/stripes/gray-1920x1200.jpg</size>
+</to>
+</transition>
+
+<static>
+<duration>21.0</duration>
+<file>
+<size width="1600" height="1200">/usr/share/wallpapers/stripes/gray-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/wallpapers/stripes/gray-1920x1200.jpg</size>
+</file>
+</static>
+
+<transition type="overlay">
+<duration>21.0</duration>
+<from>
+<size width="1600" height="1200">/usr/share/wallpapers/stripes/gray-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/wallpapers/stripes/gray-1920x1200.jpg</size>
+</from>
+<to>
+<size width="1600" height="1200">/usr/share/wallpapers/stripes/celadon-1600x1200.jpg</size>
+<size width="1920" height="1200">/usr/share/wallpapers/stripes/celadon-1920x1200.jpg</size>
+</to>
+</transition>
+
+</background>
