@@ -563,7 +563,7 @@
       <image
          width="409.60001"
          height="256"
-         xlink:href="file:///home/jimmac/gfx/novell/products/openSUSE11/wallpaper/wallpaper-gnome/IK/3-evening.jpg"
+         xlink:href="../../wallpaper/wallpaper-gnome/IK/3-evening.jpg"
          id="image15304"
          x="0"
          y="0"
@@ -575,7 +575,7 @@
        height="256"
        id="pattern11597">
       <image
-         xlink:href="file:///home/jimmac/gfx/novell/products/openSUSE11/web-banner/images/background.png"
+          xlink:href="file:background.png"
          width="256"
          height="256"
          id="image2934"
