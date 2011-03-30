@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="nametag.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective4844"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="537.54704"
+     inkscape:cy="370.49978"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="999"
+     inkscape:window-x="1676"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4850"
+       transform="matrix(0.5976192,0,0,0.5706301,9.793207,5.1141827)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2383"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3169"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan3171"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3161"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan3165"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect4776"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image4846"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2398"
+       transform="matrix(0.5976192,0,0,0.5706301,10.508905,204.05882)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2400"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2402"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2404"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2406"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2408"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2410"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2412"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2414"
+       transform="matrix(0.5976192,0,0,0.5706301,9.4987509,403.05887)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2416"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2418"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2420"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2422"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2424"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2426"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2428"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2430"
+       transform="matrix(0.5976192,0,0,0.5706301,345.87955,6.0689228)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2432"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2434"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2436"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2438"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2440"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2442"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2444"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2446"
+       transform="matrix(0.5976192,0,0,0.5706301,346.8897,204.05881)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2448"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2450"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2452"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2454"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2456"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2458"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2460"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2462"
+       transform="matrix(0.5976192,0,0,0.5706301,346.8897,403.05886)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2464"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2466"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2468"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2470"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2472"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2474"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2476"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2478"
+       transform="matrix(0.5976192,0,0,0.5706301,8.9936748,600.03862)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2480"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2482"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2484"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2486"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2488"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2490"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2492"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2494"
+       transform="matrix(0.5976192,0,0,0.5706301,349.41509,600.03861)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2496"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2498"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2500"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2502"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2504"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2506"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2508"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2510"
+       transform="matrix(0.5976192,0,0,0.5706301,3.9429102,797.01836)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2512"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2514"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2516"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2518"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2520"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2522"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2524"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+    <g
+       id="g2581"
+       transform="matrix(0.5976192,0,0,0.5706301,348.91001,799.20984)">
+      <rect
+         ry="48.57143"
+         y="19.808767"
+         x="37.142857"
+         height="334.28571"
+         width="532.85712"
+         id="rect2583"
+         style="fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2585"
+         y="141.23734"
+         x="264.28571"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:ChollaWideItalic;-inkscape-font-specification:ChollaWideItalic Medium"
+           y="141.23734"
+           x="264.28571"
+           id="tspan2587"
+           sodipodi:role="line">my name is</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2589"
+         y="112.66591"
+         x="342.85715"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan2591"
+           style="font-size:120px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:ChollaWideUltraBoldOS;-inkscape-font-specification:ChollaWideUltraBoldOS Bold"
+           y="112.66591"
+           x="342.85715"
+           sodipodi:role="line">HELLO</tspan></text>
+      <rect
+         rx="0"
+         ry="47.439091"
+         y="158.37625"
+         x="37.138916"
+         height="149.29359"
+         width="532.68652"
+         id="rect2593"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99211431;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         xlink:href="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         sodipodi:absref="/suse/hvogel/Downloads/Opensuse-geeko.png"
+         width="130.28572"
+         height="127.42857"
+         id="image2595"
+         x="43.428593"
+         y="26.094498" />
+    </g>
+  </g>
+</svg>
