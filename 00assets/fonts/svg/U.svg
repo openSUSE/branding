@@ -12,9 +12,9 @@
    height="1000"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46+devel"
+   inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="U.svg"
+   sodipodi:docname="u.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
@@ -58,12 +58,12 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="217.54528"
-     inkscape:cy="689.43165"
+     inkscape:zoom="0.25"
+     inkscape:cx="209.3086"
+     inkscape:cy="57.602422"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
@@ -72,8 +72,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="1030"
-     inkscape:window-x="259"
-     inkscape:window-y="69">
+     inkscape:window-x="243"
+     inkscape:window-y="28">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -133,8 +133,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 365.375,195.625 C 338,195.5 310.5,213.5 310,250 l 0,450 c 0,60 40,100 90,100 l 222.0313,0 c 50,0 90,-40 90,-100 l 0,-500 c 0,0 -54.53244,0.62688 -54.53244,0.62688 C 629.8433,200.3774 602.0313,218.63066 602.0313,255 L 602,679.90625 c 0,5 -5,9.99998 -10,10 l -161.9688,0 c -5,-2e-5 -10,-5 -10,-10 L 420,250 c 0,-36 -27.25,-54.25 -54.625,-54.375 z"
+       d="M 310,380 L 310,700 C 310,777.38801 349.16824,817.26473 460.1468,795.75736 L 590,768.40625 L 590,800 L 700,800 L 700,380 L 590,380 L 590,680 C 589.91161,684.86136 585.12652,689.95192 580,689.95192 L 430.03125,689.91975 C 425.03125,689.91973 420.03125,684.91975 420.03125,679.91975 L 420,380 L 310,380 z"
        id="rect9830"
-       sodipodi:nodetypes="ccccccccccccccc" />
+       sodipodi:nodetypes="cccccccccccccc" />
   </g>
 </svg>

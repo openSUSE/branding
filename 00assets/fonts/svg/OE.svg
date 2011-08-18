@@ -14,7 +14,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="OE.svg"
+   sodipodi:docname="oe.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
@@ -58,9 +58,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="346.2016"
-     inkscape:cy="565.95971"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="460.77711"
+     inkscape:cy="368.04347"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -72,8 +72,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="1030"
-     inkscape:window-x="200"
-     inkscape:window-y="79">
+     inkscape:window-x="225"
+     inkscape:window-y="144">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -113,8 +113,8 @@
        id="guide9625" />
     <sodipodi:guide
        orientation="0,1"
-       position="602.45498,438.4062"
-       id="guide14482" />
+       position="737.66546,14.440433"
+       id="guide10011" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -131,14 +131,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="opacity:1;display:inline">
     <g
        id="g9629"
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 391.15625,200 C 318.48958,200 260,258.48958 260,331.15625 L 260,668.84375 C 260,741.51042 318.48958,800 391.15625,800 C 508.48958,800 625.82292,800 743.15625,800 C 773.58557,798.42607 798.15625,775.47 798.15625,745 C 798.15625,714.53 773.489,692.88883 743.15625,690 C 743.15625,690 593.15625,690 593.15625,690 C 593.15625,690 593.15625,562 593.15625,562 C 593.15625,562 703.15625,562 703.15625,562 C 733.4126,558.39805 758.15625,537.47 758.15625,507 C 758.15625,476.53 733.489,454.88883 703.15625,452 C 703.15625,452 593.15625,452 593.15625,452 C 593.15625,452 593.15625,310 593.15625,310 C 593.15625,310 725.15625,310 725.15625,310 C 755.62625,310 780.15625,285.47 780.15625,255 C 780.15625,255 780.15625,200 780.15625,200 L 391.15625,200 z M 380,310 L 483.15625,310 C 483.15625,423.78889 483.15625,576.21111 483.15625,690 L 380,690 C 374.5,690 370.0625,685.5625 370.0625,680.0625 L 370.0625,319.9375 C 370.0625,314.4375 374.5,310 380,310 z"
+       d="M 373.47117,380 C 300.8045,380 242.31492,438.48958 242.31492,511.15625 L 242.31492,668.84375 C 242.31492,741.51042 300.8045,800 373.47117,800 L 443.6875,800 C 471.45672,800 497.12566,791.45387 518.28125,776.84375 C 538.89076,791.87229 564.87749,800.9375 595.1875,800.9375 L 668.34375,800.9375 C 748.34375,800.93747 788.34375,760.9375 788.34375,690.9375 C 788.34375,690.93747 668.34375,690.9375 668.34375,690.9375 L 595.1875,690.9375 C 583.1875,690.93747 575.25,681.93766 575.25,669.9375 L 575.25,626.96875 L 827.5,626.96875 L 827.5,511.15625 C 827.5,438.48958 769.01039,380 696.34375,380 L 596.34375,380 C 567.82089,380 541.47457,389.00065 520,404.34375 C 498.52587,389.00171 472.20928,380 443.6875,380 L 373.47117,380 z M 595.1875,489.65625 L 697.5,489.65625 C 707.5,489.65624 717.5,499.65625 717.5,509.65625 L 717.375,556.65625 L 575.1875,556.65625 L 575.1875,509.65625 C 575.1875,499.65624 585.1875,489.65625 595.1875,489.65625 z M 362.31492,490 L 454.84375,490 C 460.34375,490 464.78125,494.4375 464.78125,499.9375 L 464.78125,680.0625 C 464.78125,685.5625 460.34375,690 454.84375,690 L 362.31492,690 C 356.81492,690 352.37742,685.5625 352.37742,680.0625 L 352.37742,499.9375 C 352.37742,494.4375 356.81492,490 362.31492,490 z"
        id="rect10077"
-       sodipodi:nodetypes="cccccsccccscccccccccccccc" />
+       sodipodi:nodetypes="ccccccccsccccccccccccccccccccccccccc" />
   </g>
 </svg>

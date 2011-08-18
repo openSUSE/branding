@@ -14,7 +14,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="J.svg"
+   sodipodi:docname="j.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
@@ -109,7 +109,7 @@
        id="guide9515" />
     <sodipodi:guide
        orientation="1,0"
-       position="-554.37172,845.69971"
+       position="515,375"
        id="guide9625" />
     <sodipodi:guide
        orientation="0,1"
@@ -137,8 +137,8 @@
        transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 535,196 C 504.53,196 480,220.53 480,251 L 480,830 L 480.1875,830 C 480.6875,850 478.14326,856.09013 466.14326,874.09013 L 402.71567,939.83458 C 374.9375,980.14829 436.84194,1017.3794 474.3186,972.83164 L 567.94636,886.95584 C 584.94636,870.45584 588.3125,852.05108 588.3125,830 L 590,251 C 590,220.53 565.47,196 535,196 z"
+       d="M 534.5625,197.5625 C 501.20669,197.5625 474.15624,224.64418 474.15625,258 C 474.15625,291.35582 501.20667,318.43751 534.5625,318.4375 C 567.91832,318.4375 595,291.35582 595,258 C 595,224.64418 567.9183,197.5625 534.5625,197.5625 z M 535,380 C 504.53,380 480,404.53 480,435 L 480,830 L 480.1875,830 C 480.6875,850 478.14326,856.09013 466.14326,874.09013 L 402.71567,939.83458 C 374.9375,980.14829 436.84194,1017.3794 474.3186,972.83164 L 567.94636,886.95584 C 584.94636,870.45584 588.3125,852.05108 588.3125,830 L 590,435 C 590,404.53 565.47,380 535,380 z"
        id="rect10981"
-       sodipodi:nodetypes="ccccccccccc" />
+       sodipodi:nodetypes="cssscccccccccccc" />
   </g>
 </svg>

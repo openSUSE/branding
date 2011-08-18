@@ -14,7 +14,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="M.svg"
+   sodipodi:docname="m.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    style="display:inline">
   <defs
@@ -40,13 +40,6 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective9638"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       sodipodi:type="inkscape:persp3d" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -58,12 +51,12 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="323.92384"
-     inkscape:cy="401.98715"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="547.6226"
+     inkscape:cy="547.3837"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
@@ -72,8 +65,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1239"
      inkscape:window-height="1030"
-     inkscape:window-x="317"
-     inkscape:window-y="144">
+     inkscape:window-x="160"
+     inkscape:window-y="1">
     <sodipodi:guide
        orientation="0,1"
        position="565.71429,200"
@@ -101,24 +94,12 @@
        id="guide8999" />
     <sodipodi:guide
        orientation="-0.37460659,0.92718385"
-       position="460,186"
+       position="528.91587,1021.0622"
        id="guide9513" />
     <sodipodi:guide
        orientation="0.37460659,0.92718385"
-       position="658,384"
+       position="858,1084"
        id="guide9515" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="515,375"
-       id="guide9625" />
-    <sodipodi:guide
-       orientation="-0.27563736,0.9612617"
-       position="398,724"
-       id="guide9962" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="602.45498,438.4062"
-       id="guide14482" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -136,13 +117,10 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline">
-    <g
-       id="g9629"
-       transform="matrix(0.8901714,0,0,-0.8901714,-42.22279,801.94124)" />
     <path
-       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;overflow:visible;enable-background:accumulate"
-       d="M 315,200 C 284.53,200 260,224.53 260,255 L 260,800 L 370,800 L 370,415.59375 L 506.11759,589.875 C 514.625,600.77292 531.03143,599.67675 538.53143,589.92675 L 675,415.59375 L 675,800 L 785,800 L 785,255 C 785,224.53 760.47,200 730,200 C 699.53,200 690,220.53 675,239 L 522.5,448.15625 L 370,239 C 355,220.53 345.47,200 315,200 z"
-       id="path14523"
-       sodipodi:nodetypes="cccccccccccscccc" />
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 462.4375,375.625 C 452.08975,375.64452 441.25,376.96875 430,379.78125 L 340,415.875 L 340,380 L 230,380 L 230,800 L 340,800 C 340,700.02517 340,500.0625 340,500.0625 C 340.0625,495.06251 345.0625,490.0625 350,490 L 449.96875,489.9375 C 454.96875,489.9375 459.96875,494.9375 459.96875,499.9375 L 460,800 L 570,800 L 570,500.0755 C 570,495.12576 574.78509,490.17678 580,490 L 679.96875,489.9375 C 684.96875,489.9375 689.96875,494.9375 689.96875,499.9375 L 690,800 L 800,800 L 800,480 C 800,415 740,359.78125 660,379.78125 L 552.75,422.5625 C 534.22615,394.60315 502.03243,375.55031 462.4375,375.625 z"
+       id="rect9497"
+       sodipodi:nodetypes="ccccccccccccccccccccccc" />
   </g>
 </svg>
