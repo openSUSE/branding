@@ -1,0 +1,7 @@
+make will create openSUSE.tar.gz to be changed in branding-openSUSE
+
+important files:
+  default*.jpg - wallpapers, also used by various svg in subdirectories
+  yast/background.png - a reprise of the wallpaper  
+
+Stephan Kulow
