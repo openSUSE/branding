@@ -1,7 +1,20 @@
-make will create openSUSE.tar.gz to be changed in branding-openSUSE
 
 important files:
   default*.jpg - wallpapers, also used by various svg in subdirectories
   yast/background.png - a reprise of the wallpaper  
 
-Stephan Kulow
+make will create openSUSE.tar.gz to be changed in branding-openSUSE
+
+pushd art/12.1
+make
+popd
+
+osc branch openSUSE:Factory branding-openSUSE -c
+cp art/12.1/openSUSE.tar.gz home:*branches*/branding-openSUSE
+cd home:*branches*/branding-openSUSE
+osc vc
+osc ci
+osc sr
+  -> created request id XXXXX
+
+Stephan Kulow <coolo@suse.de>
