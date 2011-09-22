@@ -8,7 +8,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d
 
 gfxboot.d:
 	rm -rf openSUSE/gfxboot
@@ -40,3 +40,19 @@ kdelibs.d:
 	rm -rf openSUSE/kdelibs
 	mkdir -p openSUSE/kdelibs
 	cp kdelibs/body-background.jpg openSUSE/kdelibs
+
+yast.d:
+	rm -rf openSUSE/yast_wizard
+	mkdir -p openSUSE
+	cp -a yast openSUSE/yast_wizard
+	rm -f openSUSE/yast_wizard/*.svg
+
+wallpaper.d:
+	rm -rf openSUSE/wallpapers
+	mkdir -p openSUSE
+	cp -a wallpapers openSUSE/
+	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSE121-1600x1200.jpg
+	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSE121-1920x1200.jpg
+	ln -s openSUSE121-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
+	ln -s openSUSE121-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
+
