@@ -10,7 +10,7 @@ openSUSE.tar.gz: openSUSE.d
 
 openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d
 
-gfxboot.d:
+gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
 	inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
@@ -22,7 +22,7 @@ gfxboot.d:
 	convert tmp.png openSUSE/gfxboot/data-install/welcome.jpg
 	rm tmp.png
 
-bootsplash.d:
+bootsplash.d: defaults
 	mkdir -p openSUSE
 	rm -rf openSUSE/bootsplash
 	rm -rf bs
@@ -36,7 +36,7 @@ bootsplash.d:
 	mv bs/output openSUSE/bootsplash
 	rm -rf bs
 
-kdelibs.d:
+kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
 	mkdir -p openSUSE/kdelibs
 	cp kdelibs/body-background.jpg openSUSE/kdelibs
@@ -47,7 +47,7 @@ yast.d:
 	cp -a yast openSUSE/yast_wizard
 	rm -f openSUSE/yast_wizard/*.svg
 
-wallpaper.d:
+wallpaper.d: defaults
 	rm -rf openSUSE/wallpapers
 	mkdir -p openSUSE
 	cp -a wallpapers openSUSE/
@@ -55,4 +55,11 @@ wallpaper.d:
 	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSE121-1920x1200.jpg
 	ln -s openSUSE121-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -s openSUSE121-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
+
+defaults:
+	inkscape -e default-1600x1200.png -w 1600 background-43.svg
+	convert -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
+	inkscape -e default-1900.png -w 1920 background-169.svg
+	convert -geometry 1920x1200 default-1900.png default-1920x1200.jpg
+	rm default-1900.png default-1600x1200.png
 
