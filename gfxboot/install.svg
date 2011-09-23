@@ -3357,13 +3357,13 @@
      id="layer1"
      style="filter:url(#filter9012)">
     <image
-       y="-1.0108244"
-       x="-37.09166"
+       sodipodi:absref="/space3/prod/art/12.1/gfxboot/../background-without-logo.svg"
+       xlink:href="../background-without-logo.svg"
+       width="898.6322"
+       height="601.52185"
        id="image3583"
-       xlink:href="../default-1600x1200.jpg"
-       height="605.50836"
-       width="904.58771"
-       style="filter:url(#filter3586)" />
+       x="-37.09166"
+       y="-1.0108244" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -3394,12 +3394,12 @@
     <image
        sodipodi:absref="/space3/prod/art/12.1/gfxboot/logov.png"
        xlink:href="logov.png"
-       width="52.105263"
-       height="33"
-       id="image4133-4"
-       x="9"
+       style="display:inline"
        y="-0.5"
-       style="display:inline" />
+       x="9"
+       id="image4133-4"
+       height="33"
+       width="52.105263" />
   </g>
   <g
      inkscape:groupmode="layer"

@@ -27,12 +27,32 @@ bootsplash.d: defaults
 	rm -rf openSUSE/bootsplash
 	rm -rf bs
 	mkdir bs
-	cp -a bootsplash/bootsplash.php bs
+	cp -a bootsplash/create_bootsplash.sh bs
 	inkscape -w 180 -e bs/logo.png bootsplash/logo.svg
 	inkscape -w 90 -e bs/logov.png bootsplash/logo-verbose.svg
-	inkscape -w 1600 -e bs/background.png bootsplash/background.svg
-	inkscape -w 1600 -e bs/background-verbose.png bootsplash/background-verbose.svg
-	cd bs; php ./bootsplash.php
+	cd bs ;\
+	  sh create_bootsplash.sh 640 480 95 43 ;\
+	  sh create_bootsplash.sh 800 600 95 43 ;\
+	  sh create_bootsplash.sh 1024 600 94 169 ;\
+	  sh create_bootsplash.sh 1024 768 94 43 ;\
+	  sh create_bootsplash.sh 1152 768 94 43 ;\
+	  sh create_bootsplash.sh 1152 864 93 43 ;\
+	  sh create_bootsplash.sh 1280 768 93 169 ;\
+	  sh create_bootsplash.sh 1366 768 93 169 ;\
+	  sh create_bootsplash.sh 1280 800 93 169 ;\
+	  sh create_bootsplash.sh 1280 854 93 43 ;\
+	  sh create_bootsplash.sh 1280 960 92 43 ;\
+	  sh create_bootsplash.sh 1280 1024 92 43 ;\
+	  sh create_bootsplash.sh 1400 1050 91 43 ;\
+	  sh create_bootsplash.sh 1440 900 91 169 ;\
+	  sh create_bootsplash.sh 1600 1024 90 169 ;\
+	  sh create_bootsplash.sh 1600 1200 89 43 ;\
+	  sh create_bootsplash.sh 1600 900 90 169 ;\
+	  sh create_bootsplash.sh 1920 1080 90 169 ;\
+	  sh create_bootsplash.sh 1680 1050 89 169 ;\
+	  sh create_bootsplash.sh 1920 1200 80 169 ;\
+	  sh create_bootsplash.sh 3200 1200 70 169
+
 	mv bs/output openSUSE/bootsplash
 	rm -rf bs
 
