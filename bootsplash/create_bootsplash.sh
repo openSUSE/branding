@@ -24,9 +24,6 @@ shift
 
 # scale backgrounds
 
-echo $x/$y | bc -l
-echo $type
-
 res="$x"x$y;
 echo "creating $res resolution images";
 silent="$themepath/images/silent-$res.jpg";
