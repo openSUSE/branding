@@ -24,7 +24,7 @@ gfxboot.d: defaults
 	convert tmp.png openSUSE/gfxboot/data-install/welcome.jpg
 	rm tmp.png
 
-bootsplash.d: defaults
+bootsplash.d:
 	mkdir -p openSUSE
 	rm -rf openSUSE/bootsplash
 	rm -rf bs

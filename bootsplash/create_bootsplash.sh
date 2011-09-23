@@ -130,5 +130,6 @@ echo "box silent noover $x1 $y1 $x2 $y2 #ffffff10" >> $cfgfile
 y1_minus=$[$y1-1]
 y1_plus=$[$y1+1]
 echo "box silent inter $x1 $y1_minus $x1 $y1_plus #ffffff80" >> $cfgfile
-echo "box silent $x1 $x1 $y1_minus $x1 $y1_plus #ffffff80" >> $cfgfile
+y1_plusplus=$[y1+2]
+echo "box silent $x1 $y1_minus $x2 $y1_plusplus #ffffff80" >> $cfgfile
 
