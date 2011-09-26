@@ -1,3 +1,5 @@
+VERSION=12.1
+VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 
 all: info openSUSE.tar.gz
 
@@ -31,27 +33,27 @@ bootsplash.d: defaults
 	inkscape -w 180 -e bs/logo.png bootsplash/logo.svg
 	inkscape -w 90 -e bs/logov.png bootsplash/logo-verbose.svg
 	cd bs ;\
-	  sh create_bootsplash.sh 640 480 95 43 ;\
-	  sh create_bootsplash.sh 800 600 95 43 ;\
-	  sh create_bootsplash.sh 1024 600 94 169 ;\
-	  sh create_bootsplash.sh 1024 768 94 43 ;\
-	  sh create_bootsplash.sh 1152 768 94 43 ;\
-	  sh create_bootsplash.sh 1152 864 93 43 ;\
-	  sh create_bootsplash.sh 1280 768 93 169 ;\
-	  sh create_bootsplash.sh 1366 768 93 169 ;\
-	  sh create_bootsplash.sh 1280 800 93 169 ;\
-	  sh create_bootsplash.sh 1280 854 93 43 ;\
-	  sh create_bootsplash.sh 1280 960 92 43 ;\
-	  sh create_bootsplash.sh 1280 1024 92 43 ;\
-	  sh create_bootsplash.sh 1400 1050 91 43 ;\
-	  sh create_bootsplash.sh 1440 900 91 169 ;\
-	  sh create_bootsplash.sh 1600 1024 90 169 ;\
-	  sh create_bootsplash.sh 1600 1200 89 43 ;\
-	  sh create_bootsplash.sh 1600 900 90 169 ;\
-	  sh create_bootsplash.sh 1920 1080 90 169 ;\
-	  sh create_bootsplash.sh 1680 1050 89 169 ;\
-	  sh create_bootsplash.sh 1920 1200 80 169 ;\
-	  sh create_bootsplash.sh 3200 1200 70 169
+	  sh create_bootsplash.sh ${VERSION} 640 480 95 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 800 600 95 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1024 600 94 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1024 768 94 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1152 768 94 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1152 864 93 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 768 93 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1366 768 93 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 800 93 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 854 93 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 960 92 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 1024 92 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1400 1050 91 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1440 900 91 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1600 1024 90 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1600 1200 89 43 ;\
+	  sh create_bootsplash.sh ${VERSION} 1600 900 90 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1920 1080 90 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1680 1050 89 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1920 1200 80 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 3200 1200 70 169
 
 	mv bs/output openSUSE/bootsplash
 	rm -rf bs
@@ -69,12 +71,15 @@ yast.d:
 
 wallpaper.d: defaults
 	rm -rf openSUSE/wallpapers
-	mkdir -p openSUSE
-	cp -a wallpapers openSUSE/
-	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSE121-1600x1200.jpg
-	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSE121-1920x1200.jpg
-	ln -s openSUSE121-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
-	ln -s openSUSE121-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
+	mkdir -p openSUSE/wallpapers
+	cp wallpapers/default-1600x1200.jpg.desktop openSUSE/wallpapers
+	cp wallpapers/default-1920x1200.jpg.desktop openSUSE/wallpapers
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1600x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg.desktop
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg.desktop
+	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
+	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
+	ln -s openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
+	ln -s openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 
 defaults:
 	inkscape -e default-1600x1200.png -w 1600 background-43.svg

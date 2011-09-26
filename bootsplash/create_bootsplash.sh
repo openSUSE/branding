@@ -2,7 +2,10 @@
 
 #depends on graphicsmagic and rsvg
 
-distro="openSUSE 12.1";
+version=$1
+shift
+
+distro="openSUSE ${version}";
 themename="openSUSE";
 themepath="output";
 imagepath="/etc/bootsplash/themes/$themename/images";
