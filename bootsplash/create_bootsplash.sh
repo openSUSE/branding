@@ -2,6 +2,18 @@
 
 #depends on graphicsmagic and rsvg
 
+which gm > /dev/null 2>&1
+if test $? -ne 0; then
+  echo "Please install GraphicsMagick."
+  exit 1
+fi
+
+which inkscape > /dev/null 2>&1
+if test $? -ne 0; then
+  echo "Please install inkscape."
+  exit 1
+fi
+
 version=$1
 shift
 
