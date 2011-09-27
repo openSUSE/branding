@@ -30,6 +30,9 @@ bootsplash.d:
 	rm -rf bs
 	mkdir bs
 	cp -a bootsplash/create_bootsplash.sh bs
+	inkscape -e bs/auge_1.png --export-id=Auge_1 -C -j bootsplash/geeko-animation.svg 
+	inkscape -e bs/auge_2.png --export-id=Auge_2 -C -j bootsplash/geeko-animation.svg
+	inkscape -e bs/body.png --export-id=Geeko_Body -C -j bootsplash/geeko-animation.svg
 	inkscape -w 180 -e bs/logo.png bootsplash/logo.svg
 	inkscape -w 90 -e bs/logov.png bootsplash/logo-verbose.svg
 	cd bs ;\
