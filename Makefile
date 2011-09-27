@@ -10,7 +10,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kde-workspace.d
 
 gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
@@ -106,3 +106,10 @@ ksplashx.d: defaults
 	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1600x1200.jpg openSUSE/ksplashx/1600x1200/background.jpg
 	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1920x1200.jpg openSUSE/ksplashx/1920x1200/background.jpg
 	convert -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
+
+kde-workspace.d: defaults
+	rm -rf openSUSE/kde-workspace
+	mkdir -p openSUSE/kde-workspace
+	cp -a kde-workspace/* openSUSE/kde-workspace/
+	convert -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
+
