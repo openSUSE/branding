@@ -22,12 +22,6 @@ themename="openSUSE";
 themepath="output";
 imagepath="/etc/bootsplash/themes/$themename/images";
 
-mkdir -p $themepath/config
-mkdir -p $themepath/images
-
-gm convert -comment "id logo deltabg stop" logo.png logo.png $themepath/images/logo.mng
-gm convert -colorspace gray -comment "id logov deltabg stop" logov.png logov.png $themepath/images/logov.mng
-
 x=$1
 shift
 y=$1
