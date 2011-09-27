@@ -14,7 +14,7 @@
    height="600"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.48.1 r9760"
    version="1.0"
    sodipodi:docname="install.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -3326,9 +3326,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.0820624"
-     inkscape:cx="32.459325"
-     inkscape:cy="530.6106"
+     inkscape:zoom="0.3852578"
+     inkscape:cx="-97.778369"
+     inkscape:cy="565.41788"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -3338,16 +3338,20 @@
      inkscape:snap-intersection-line-segments="false"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="852"
+     inkscape:window-width="1280"
+     inkscape:window-height="743"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="26"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
-       id="grid5339" />
+       id="grid5339"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -3400,7 +3404,7 @@
      style="filter:url(#filter9012)">
     <g
        id="g3455"
-       transform="translate(-735.591,-209.826)">
+       transform="matrix(-1,0,0,1,1545.2064,-61.873127)">
       <rect
          id="Gradient"
          width="1600"
@@ -3447,14 +3451,14 @@
          id="tspan4217-4"
          style="fill:#436400;fill-opacity:1">openSUSE installer</tspan></text>
     <image
-       sodipodi:absref="/Users/rlihm/Work/Repositories/art/12.1/gfxboot/logov.png"
+       sodipodi:absref="/home/mm/marcusmoellers-art/12.1/gfxboot/logov.png"
        xlink:href="logov.png"
-       style="display:inline"
-       y="-0.5"
-       x="9"
-       id="image4133-4"
+       width="52.105263"
        height="33"
-       width="52.105263" />
+       id="image4133-4"
+       x="9"
+       y="-0.5"
+       style="display:inline" />
   </g>
   <g
      inkscape:groupmode="layer"
