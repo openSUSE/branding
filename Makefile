@@ -33,13 +33,13 @@ bootsplash.d:
 	inkscape -w 200 -e bs/auge_1.png --export-id=Auge_1 -C -j bootsplash/geeko-animation.svg 
 	inkscape -w 200 -e bs/auge_2.png --export-id=Auge_2 -C -j bootsplash/geeko-animation.svg
 	inkscape -w 200 -e bs/body.png --export-id=Geeko_Body -C -j bootsplash/geeko-animation.svg
-	gm composite bs/auge_2.png bs/body.png bs/logo-right.png
-	gm composite bs/auge_1.png bs/body.png bs/logo-left.png
+	gm composite bs/auge_1.png bs/body.png bs/logo-right.png
+	gm composite bs/auge_2.png bs/body.png bs/logo-left.png
 	inkscape -w 200 -e bs/logo.png bootsplash/logo.svg
 	inkscape -w 90 -e bs/logov.png bootsplash/logo-verbose.svg
 	mkdir -p bs/output/config
 	mkdir -p bs/output/images
-	gm convert -comment "id logov delay 1000 deltaprevbg" bs/logo-left.png -comment "id auge1 delay 1000 loop logov deltaprevbg" bs/logo-right.png bs/output/images/logo.mng
+	gm convert -comment "id logo delay 1000 deltaprevbg" bs/logo-right.png -comment "id eye1 delay 1000 loop logo deltaprevbg" bs/logo-left.png bs/output/images/logo.mng
 	gm convert -colorspace gray -comment "id logov deltabg stop" bs/logov.png bs/output/images/logov.mng
 	cd bs ;\
 	  sh create_bootsplash.sh ${VERSION} 640 480 95 43 ;\

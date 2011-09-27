@@ -86,6 +86,7 @@ th=$(echo $y-$ty | bc)
 lx=$(echo $x/2 | bc); 
 ly=$(echo $y/2-20 | bc); 
 
+lw=$(echo $x*20/100 | bc)
 vlx=2;
 vly=2;
 
@@ -99,7 +100,7 @@ th=$th
 jpeg=$imagepath/bootsplash-$res.jpg
 silentjpeg=$imagepath/silent-$res.jpg
 
-mnganim logo $imagepath/logo.mng initframe logo silent center $lx $ly
+mnganim logo $imagepath/logo.mng initframe logo silent center $lx $ly scale $lw:200
 	
 # overlay title (verbose)
 mnganim logov $imagepath/logov.mng initframe logov origin 0 $vlx $vly
