@@ -4,3 +4,5 @@ Makefile~
 */*~
 default-1600x1200.jpg
 default-1920x1200.jpg
+.DS_Store
+*/.DS_Store
