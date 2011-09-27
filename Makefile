@@ -10,7 +10,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d
 
 gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
@@ -97,3 +97,12 @@ defaults:
 	convert -geometry 1920x1200 default-1900.png default-1920x1200.jpg
 	rm default-1900.png default-1600x1200.png 
 
+ksplashx.d: defaults
+	rm -rf openSUSE/ksplashx
+	mkdir -p openSUSE/ksplashx
+	cp ksplashx/Theme.rc openSUSE/ksplashx/
+	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
+	mkdir -p openSUSE/ksplashx/1920x1200
+	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1600x1200.jpg openSUSE/ksplashx/1600x1200/background.jpg
+	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1920x1200.jpg openSUSE/ksplashx/1920x1200/background.jpg
+	convert -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
