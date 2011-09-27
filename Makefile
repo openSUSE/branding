@@ -86,5 +86,5 @@ defaults:
 	convert -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
 	inkscape -e default-1900.png -w 1920 background-169.svg
 	convert -geometry 1920x1200 default-1900.png default-1920x1200.jpg
-	rm default-1900.png default-1600x1200.png
+	rm default-1900.png default-1600x1200.png 
 
