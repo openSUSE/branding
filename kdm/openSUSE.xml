@@ -12,7 +12,7 @@
 	       frame="false" />
 	       
 	<item type="pixmap" id="background" background="true">
-		<normal file="bg.png" scalemode="free"/>
+		<normal file="bg.jpg" scalemode="crop"/>
 		<pos x="0" y="0" width="100%" height="100%"/>
 	</item>
 	
