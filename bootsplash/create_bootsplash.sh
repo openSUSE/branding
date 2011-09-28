@@ -83,10 +83,10 @@ ty=60;
 tw=$(echo $x-$tx-10 |bc)
 th=$(echo $y-$ty | bc)
 
-lx=$(echo $x/2 | bc); 
-ly=$(echo $y/2-20 | bc); 
+lx=$(perl -e "use POSIX; print floor($x*.746+0.5);")
+ly=$(perl -e "use POSIX; print floor($y*.718+0.5);")
 
-lw=$(echo $x*20/100 | bc)
+lw=$(perl -e "use POSIX; print floor($x*.182+0.5);")
 vlx=2;
 vly=2;
 
@@ -100,7 +100,7 @@ th=$th
 jpeg=$imagepath/bootsplash-$res.jpg
 silentjpeg=$imagepath/silent-$res.jpg
 
-mnganim logo $imagepath/logo.mng initframe logo silent center $lx $ly scale $lw:200
+mnganim logo $imagepath/logo.mng initframe logo origin 0 $lx $ly scale $lw:200
 	
 # overlay title (verbose)
 mnganim logov $imagepath/logov.mng initframe logov origin 0 $vlx $vly
@@ -110,6 +110,7 @@ trigger "isdown" quit
 trigger "rlreached 5" toverbose
 trigger "rlchange 0" tosilent
 trigger "rlchange 6" tosilent
+trigger "coolo" play logo
 EOF
 
 verticalpcnt=0.8;
