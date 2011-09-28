@@ -6,5 +6,3 @@ Greeter=openSUSE.xml
 Name=openSUSE KDM Theme
 Author=Marcus Moeller
 Copyright=GPL 2011
-#Screenshot=screenshot.png
-#X-Ubuntu-Gettext-Domain=desktop_kdebase-workspace

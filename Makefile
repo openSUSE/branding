@@ -10,7 +10,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kde-workspace.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kde-workspace.d kdm.d
 
 gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
@@ -35,7 +35,6 @@ bootsplash.d:
 	inkscape -w 200 -e bs/body.png --export-id=Geeko_Body -C -j bootsplash/geeko-animation.svg
 	gm composite bs/auge_1.png bs/body.png bs/logo-right.png
 	gm composite bs/auge_2.png bs/body.png bs/logo-left.png
-	inkscape -w 200 -e bs/logo.png bootsplash/logo.svg
 	inkscape -w 90 -e bs/logov.png bootsplash/logo-verbose.svg
 	mkdir -p bs/output/config
 	mkdir -p bs/output/images
@@ -113,4 +112,11 @@ kde-workspace.d: defaults
 	mkdir -p openSUSE/kde-workspace
 	cp -a kde-workspace/* openSUSE/kde-workspace/
 	convert -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
+
+kdm.d: defaults
+	rm -rf openSUSE/kdm
+	mkdir -p openSUSE/kdm/themes
+	cp -a kdm openSUSE/kdm/themes/SUSE
+	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
+	inkscape -e openSUSE/kdm/themes/SUSE/bg.png -w 1920 background-169.svg
 
