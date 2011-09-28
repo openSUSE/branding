@@ -102,6 +102,7 @@ ksplashx.d: defaults
 	mkdir -p openSUSE/ksplashx
 	cp ksplashx/Theme.rc openSUSE/ksplashx/
 	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
+	inkscape -w 260 -e openSUSE/ksplashx/1600x1200/opensuse-logo.png ksplashx/logo.svg
 	mkdir -p openSUSE/ksplashx/1920x1200
 	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1600x1200.jpg openSUSE/ksplashx/1600x1200/background.jpg
 	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1920x1200.jpg openSUSE/ksplashx/1920x1200/background.jpg

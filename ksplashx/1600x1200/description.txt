@@ -1,16 +1,16 @@
-# updated for openSUSE 11.3
+# updated for openSUSE 12.1
 SCALE ON
 BACKGROUND_IMAGE 0 0 background.jpg
 SCALE OFF
 IMAGE_REL RT -15 15 CC kde-logo.png
-IMAGE_REL CC 0 -60 CC opensuse-logo.png
-IMAGE_REL CC 0 0 CC progress0.png
+IMAGE_REL RB -235 -160 CC opensuse-logo.png
+IMAGE_REL RB -235 -130 CC progress0.png
 #WAIT_STATE initial
-IMAGE_REL CC 0 0 CC progress1.png
+IMAGE_REL RB -235 -130 CC progress1.png
 WAIT_STATE kcminit
-IMAGE_REL CC 0 0 CC progress2.png
+IMAGE_REL RB -235 -130 CC progress2.png
 WAIT_STATE wm
-IMAGE_REL CC 0 0 CC progress3.png
+IMAGE_REL RB -235 -130 CC progress3.png
 WAIT_STATE desktop
-IMAGE_REL CC 0 0 CC progress4.png
+IMAGE_REL RB -235 -130 CC progress4.png
 WAIT_STATE ready
