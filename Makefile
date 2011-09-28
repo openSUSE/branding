@@ -118,5 +118,4 @@ kdm.d: defaults
 	mkdir -p openSUSE/kdm/themes
 	cp -a kdm openSUSE/kdm/themes/SUSE
 	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
-	inkscape -e openSUSE/kdm/themes/SUSE/bg.png -w 1920 background-169.svg
 
