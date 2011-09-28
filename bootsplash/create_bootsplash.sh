@@ -100,7 +100,7 @@ th=$th
 jpeg=$imagepath/bootsplash-$res.jpg
 silentjpeg=$imagepath/silent-$res.jpg
 
-mnganim logo $imagepath/logo.mng initframe logo origin 0 $lx $ly scale $lw:200
+mnganim logo $imagepath/logo.mng initframe logo silent origin 0 $lx $ly scale $lw:200
 	
 # overlay title (verbose)
 mnganim logov $imagepath/logov.mng initframe logov origin 0 $vlx $vly
@@ -114,10 +114,9 @@ trigger "coolo" play logo
 EOF
 
 verticalpcnt=0.8;
-width=160; # width of the progress bar
-voffset=80; # vertical offset from the title (defined by verticalpcnt above)
-x1=$(echo "$lx-$width/2 - 4" | bc);
-x2=$[$x1+$width]
+voffset=$(perl -e "use POSIX; print floor($lw*113./200+6+0.5);")
+x1=$(perl -e "use POSIX; print floor($x*.771+0.5);")
+x2=$(perl -e "use POSIX; print floor($x*.917+0.5);")
 y1=$(echo $ly+$voffset | bc);
 y2=$[$y1+1]; # let's try a 2 pixel line
 
