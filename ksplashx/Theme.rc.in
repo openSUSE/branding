@@ -1,6 +1,6 @@
 [KSplash Theme: ksplashx-suse]
-Name = openSUSE 11.4
-Description = KDE openSUSE 11.4 Splash
+Name = openSUSE @VERSION@
+Description = KDE openSUSE @VERSION@ Splash
 Version = 1.0
 Author = Ivan Čukić
 #Homepage = http://plasma.kde.org

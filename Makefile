@@ -99,7 +99,7 @@ defaults:
 ksplashx.d: defaults
 	rm -rf openSUSE/ksplashx
 	mkdir -p openSUSE/ksplashx
-	cp ksplashx/Theme.rc openSUSE/ksplashx/
+	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
 	inkscape -w 260 -e openSUSE/ksplashx/1600x1200/opensuse-logo.png ksplashx/logo.svg
 	mkdir -p openSUSE/ksplashx/1920x1200
