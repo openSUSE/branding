@@ -34,11 +34,11 @@ YQLogView QTextEdit, YQRichText > YQTextBrowser {
 
 .done-step-name {
   font-weight: normal;
-  color: #dddddd;
+  color: #eee;
 }
 
 .todo-step-name {
-  color: #ccc;
+  color: #eee;
   font-weight: normal;
 }
 
@@ -296,6 +296,7 @@ QTabWidget::tab-bar {
   #work_area QPushButton:focus, #work_area QPushButton:focus:default {
     outline: none;
     border: 2px solid #173c10;
+    border: 2px solid #ccc;
   }
 
   #work_area QPushButton:disabled,
@@ -319,13 +320,13 @@ QTabWidget::tab-bar {
 
   #work_area QPushButton:default {
     border: 1px solid #173c10;
-    color: white;
+    color: #eee;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-      stop: 0 #7da58f, stop: 0.8 #0a5327, stop: 1 #0d6c1f);
+      stop: 0 #78a028, stop: 0.8 #436400, stop: 1 #436400);
   }
   #work_area QPushButton:default:hover {
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-      stop: 0 #75ce1f, stop: 0.7 #4d8e0d, stop: 1 #7ac52f);
+      stop: 0 #76b000, stop: 0.7 #4d8e0d, stop: 1 #76b000);
   }
 
   /* odd dropdown button widget */
