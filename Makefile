@@ -10,7 +10,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kde-workspace.d kdm.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kde-workspace.d kdm.d gnome.d
 
 gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
@@ -119,3 +119,8 @@ kdm.d: defaults
 	cp -a kdm openSUSE/kdm/themes/SUSE
 	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
 
+gnome.d:
+	rm -rf openSUSE/gnome
+	mkdir -p openSUSE/gnome
+	sed "s:@VERSION@:${VERSION}:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
+	sed "s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" gnome/openSUSE-default-static.xml.in > openSUSE/gnome/openSUSE-default-static.xml

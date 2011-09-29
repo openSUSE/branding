@@ -1,0 +1,12 @@
+GNOME Default Wallpaper
+=======================
+
+openSUSE-default-static.xml:
+ This is a XML file as understood by gnome-desktop, that describes a slideshow.
+ There is only one slide, the default wallpaper, available in various
+ resolutions.
+
+wallpaper-branding-openSUSE.xml:
+ This is a XML file as understood by gnome-control-center. It describes a
+ specific wallpaper that gnome-control-center can set as wallpaper
+ (openSUSE-default-static.xml).
