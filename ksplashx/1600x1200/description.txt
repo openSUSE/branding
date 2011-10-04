@@ -1,5 +1,5 @@
 SCALE ON
-BACKGROUND_IMAGE 0 0 background.png
+BACKGROUND_IMAGE 0 0 background.jpg
 SCALE OFF
 
 # the image is 390x234, make it centered, all icons need the same adjustment too
