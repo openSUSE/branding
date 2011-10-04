@@ -101,7 +101,7 @@ ksplashx.d: defaults
 	mkdir -p openSUSE/ksplashx
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
-	inkscape -w 260 --export-id=Geeko -e openSUSE/ksplashx/1600x1200/opensuse-logo.png logo.svg
+	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1600x1200/opensuse-logo.png logo.svg
 	mkdir -p openSUSE/ksplashx/1920x1200
 	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1600x1200.jpg openSUSE/ksplashx/1600x1200/background.jpg
 	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1920x1200.jpg openSUSE/ksplashx/1920x1200/background.jpg
