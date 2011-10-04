@@ -15,7 +15,7 @@
 	</linearGradient>
 	<rect id="Gradient" x="-0.476" fill="url(#Gradient_1_)" width="802.036" height="601.528"/>
 	
-		<image overflow="visible" enable-background="new    " width="2560" height="1600" id="smoke" xlink:href="../../../../../../Desktop/414C14C3.png"  transform="matrix(-0.376 0 0 0.376 918.8577 0.002)">
+		<image overflow="visible" enable-background="new    " width="2560" height="1600" id="smoke" xlink:href="smoke.png"  transform="matrix(-0.376 0 0 0.376 918.8577 0.002)">
 	</image>
 	<g id="logo" transform="matrix(1.7538571,0,0,1.7538571,317.21589,323.32312)" opacity="0.65">
 		<path id="path5" fill="#FFFFFF" d="M242.08,105.266c-0.471-0.017-0.919,0.15-1.26,0.469c-0.341,0.321-0.542,0.756-0.556,1.225
