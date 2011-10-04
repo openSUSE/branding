@@ -91,6 +91,7 @@ wallpaper.d: defaults
 	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -s openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -s openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
+	echo ${NAME} > openSUSE/wallpaper-name
 
 # When changing the commands below, also update the commands in gnome_dynamic
 defaults:
