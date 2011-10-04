@@ -113,6 +113,7 @@ trigger "rlchange 6" tosilent
 trigger "coolo" play logo
 EOF
 
+exit 0
 verticalpcnt=0.8;
 voffset=$(perl -e "use POSIX; print floor($lw*113./200+6+0.5);")
 x1=$(perl -e "use POSIX; print floor($x*.771+0.5);")
@@ -120,7 +121,7 @@ x2=$(perl -e "use POSIX; print floor($x*.917+0.5);")
 y1=$(echo $ly+$voffset | bc);
 y2=$[$y1+1]; # let's try a 2 pixel line
 
-echo "progress_enable=1" >> $cfgfile
+echo "progress_enable=0" >> $cfgfile
 echo "box silent noover $x1 $y1 $x2 $y2 #ffffff10" >> $cfgfile
 y1_minus=$[$y1-1]
 y1_plus=$[$y1+1]
