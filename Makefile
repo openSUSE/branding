@@ -17,12 +17,12 @@ gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
 	inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
-	convert tmp.png openSUSE/gfxboot/data-boot/back.jpg
+	convert -quality 90 tmp.png openSUSE/gfxboot/data-boot/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/install.svg
 	mkdir -p openSUSE/gfxboot/data-install
-	convert tmp.png openSUSE/gfxboot/data-install/back.jpg
+	convert -quality 90 tmp.png openSUSE/gfxboot/data-install/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	convert tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	convert -quality 90 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
 	rm tmp.png
 
 bootsplash.d:
@@ -96,9 +96,9 @@ wallpaper.d: defaults
 # When changing the commands below, also update the commands in gnome_dynamic
 defaults:
 	inkscape -e default-1600x1200.png -w 1600 background-43.svg
-	convert -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
+	convert -quality 95 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
 	inkscape -e default-1900.png -w 1920 background-169.svg
-	convert -geometry 1920x1200 default-1900.png default-1920x1200.jpg
+	convert -quality 95 -geometry 1920x1200 default-1900.png default-1920x1200.jpg
 	rm default-1900.png default-1600x1200.png 
 
 ksplashx.d: defaults
@@ -107,13 +107,13 @@ ksplashx.d: defaults
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1600x1200/opensuse-logo.png logo.svg
-	convert -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
+	convert -quality 90 -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
 
 kde-workspace.d: defaults
 	rm -rf openSUSE/kde-workspace
 	mkdir -p openSUSE/kde-workspace
 	cp -p kde-workspace/*.desktop openSUSE/kde-workspace/
-	convert -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
+	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
 
 kdm.d: defaults
 	rm -rf openSUSE/kdm
