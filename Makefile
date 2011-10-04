@@ -112,7 +112,7 @@ ksplashx.d: defaults
 kde-workspace.d: defaults
 	rm -rf openSUSE/kde-workspace
 	mkdir -p openSUSE/kde-workspace
-	cp -p kde-workspace/* openSUSE/kde-workspace/
+	cp -p kde-workspace/*.desktop openSUSE/kde-workspace/
 	convert -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
 
 kdm.d: defaults
