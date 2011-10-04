@@ -1,16 +1,42 @@
-# updated for openSUSE 12.1
 SCALE ON
-BACKGROUND_IMAGE 0 0 background.jpg
+BACKGROUND_IMAGE 0 0 background.png
 SCALE OFF
-IMAGE_REL RT -15 15 CC kde-logo.png
-IMAGE_REL RB -235 -160 CC opensuse-logo.png
-IMAGE_REL RB -235 -130 CC progress0.png
-#WAIT_STATE initial
-IMAGE_REL RB -235 -130 CC progress1.png
+
+# the image is 390x234, make it centered, all icons need the same adjustment too
+IMAGE_REL CC 0 0 CC rectangle.png
+
+# these have their relative positions to the rectangle adjusted by -195,-117
+# (i.e. half of the rectangle size)
+# 3,32
+ANIM_REL 1 CC -192 -50 LT 30 icon1_anim.png 85 1
+WAIT_STATE kded
+
+# 69,32
+ANIM_REL 2 CC -126 -50 LT 30 icon2_anim.png 85 1
 WAIT_STATE kcminit
-IMAGE_REL RB -235 -130 CC progress2.png
+
+# 135,32
+ANIM_REL 3 CC -60 -50 LT 29 icon3_anim.png 85 1
+WAIT_STATE ksmserver
+
+# 201,32
+ANIM_REL 4 CC 6 -50  LT 30 icon4_anim.png 85 1
 WAIT_STATE wm
-IMAGE_REL RB -235 -130 CC progress3.png
+
+# 263,15
+ANIM_REL 5 CC 68 -88 LT 30 icon5_anim.png 85 1
 WAIT_STATE desktop
-IMAGE_REL RB -235 -130 CC progress4.png
+
 WAIT_STATE ready
+
+# show the icons fully right before the splash goes away
+STOP_ANIM 1
+IMAGE_REL CC -192 -50 LT icon1.png
+STOP_ANIM 2
+IMAGE_REL CC -126 -50 LT icon2.png
+STOP_ANIM 3
+IMAGE_REL CC -60 -50 LT icon3.png
+STOP_ANIM 4
+IMAGE_REL CC 6 -50 LT icon4.png
+STOP_ANIM 5
+IMAGE_REL CC 68 -88 LT icon5.png
