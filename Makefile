@@ -104,15 +104,12 @@ ksplashx.d: defaults
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1600x1200/opensuse-logo.png logo.svg
-	mkdir -p openSUSE/ksplashx/1920x1200
-	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1600x1200.jpg openSUSE/ksplashx/1600x1200/background.jpg
-	ln -s /etc/bootsplash/themes/openSUSE/images/silent-1920x1200.jpg openSUSE/ksplashx/1920x1200/background.jpg
 	convert -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
 
 kde-workspace.d: defaults
 	rm -rf openSUSE/kde-workspace
 	mkdir -p openSUSE/kde-workspace
-	cp -a kde-workspace/* openSUSE/kde-workspace/
+	cp -p kde-workspace/* openSUSE/kde-workspace/
 	convert -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
 
 kdm.d: defaults
