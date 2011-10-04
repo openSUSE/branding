@@ -128,9 +128,9 @@ gnome_dynamic: defaults
 	mkdir -p gnome/dynamic
 	for file in morning night; do \
 		inkscape -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
-		convert -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
+		convert -quality 95 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
 		inkscape -e gnome/$${file}-1920x1200.png -w 1920 gnome/$${file}169.svg ; \
-		convert -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
+		convert -quality 95 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
 		rm gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png ; \
 	done
 	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
