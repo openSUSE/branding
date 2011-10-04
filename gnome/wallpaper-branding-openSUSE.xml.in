@@ -2,7 +2,7 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
 	<wallpaper deleted="false">
-		<filename>/usr/share/wallpapers/openSUSE-default-static.xml</filename>
+		<filename>/usr/share/wallpapers/openSUSE-default-@GNOME_STATIC_DYNAMIC@.xml</filename>
 		<options>zoom</options>
 		<name>openSUSE @VERSION@</name>
 	</wallpaper>

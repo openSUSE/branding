@@ -1,3 +1,4 @@
+NAME=upwind
 VERSION=12.1
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 
@@ -91,6 +92,7 @@ wallpaper.d: defaults
 	ln -s openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -s openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 
+# When changing the commands below, also update the commands in gnome_dynamic
 defaults:
 	inkscape -e default-1600x1200.png -w 1600 background-43.svg
 	convert -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
@@ -119,11 +121,30 @@ kdm.d: defaults
 	cp logo.svg openSUSE/kdm/themes/SUSE
 	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
 
-gnome.d:
+# Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
+gnome_dynamic: defaults
+	rm -rf gnome/dynamic
+	mkdir -p gnome/dynamic
+	for file in morning night; do \
+		inkscape -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
+		convert -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
+		inkscape -e gnome/$${file}-1920x1200.png -w 1920 gnome/$${file}169.svg ; \
+		convert -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
+		rm gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png ; \
+	done
+	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
+	cp default-1920x1200.jpg gnome/dynamic/day-1920x1200.jpg
+	sed "s:@PATH_TO_IMAGES@:/usr/share/backgrounds/${NAME}:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic/${NAME}.xml
+	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest.xml
+	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g;s:7200:6:g;s:14400:12:g;s:18000:15:g;s:25200:21:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest-fast.xml
+
+gnome.d: gnome_dynamic
 	rm -rf openSUSE/gnome
 	mkdir -p openSUSE/gnome
-	sed "s:@VERSION@:${VERSION}:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
+	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
 	sed "s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" gnome/openSUSE-default-static.xml.in > openSUSE/gnome/openSUSE-default-static.xml
+	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
+	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
 
 susegreeter.d:
 	rm -rf openSUSE/SUSEgreeter

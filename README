@@ -2,6 +2,11 @@ Important files
 ===============
 
   default*.jpg: wallpapers, also used by various svg in subdirectories
+
+  gnome/morning*.jpg gnome/night*.jpg dynamic-wallpaper.xml.in: files used to
+  create the dynamic wallpaper used by GNOME. See gnome/README for more
+  details.
+
   yast/background.png: a reprise of the wallpaper
 
 Note that the current setup assumes we ship the wallpapers in two resolutions:
@@ -40,8 +45,12 @@ data and submit the changes:
 How to create artwork for a new version of openSUSE
 ===================================================
 
-Simply create all files from this directory to a new directory, and change the
-VERSION variable at the top of Makefile to the version of openSUSE you target.
+Simply copy all files from this directory to a new directory, and change:
+
+ - the NAME variable at the top of Makefile to the name of the artwork theme
+   for the version of openSUSE you target.
+ - the VERSION variable at the top of Makefile to the version of openSUSE you
+   target.
 
 
 Need help?
