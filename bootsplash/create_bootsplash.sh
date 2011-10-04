@@ -83,10 +83,18 @@ ty=60;
 tw=$(echo $x-$tx-10 |bc)
 th=$(echo $y-$ty | bc)
 
-lx=$(perl -e "use POSIX; print floor($x*.746+0.5);")
-ly=$(perl -e "use POSIX; print floor($y*.718+0.5);")
+if test "$type" = 169; then
+  lw=$(perl -e "use POSIX; print floor($x*320./1920+0.5);")
+  lh=$(perl -e "use POSIX; print floor($lw*200./320+0.5);")
+  lx=$(perl -e "use POSIX; print floor($x*(1920.-320-160)/1920+0.5);")
+  ly=$(perl -e "use POSIX; print floor($y-$y*130./1200-$lh+0.5);")
+else
+  lw=$(perl -e "use POSIX; print floor($x*320./1600+0.5);")
+  lh=$(perl -e "use POSIX; print floor($lw*200./320+0.5);")
+  lx=$(perl -e "use POSIX; print floor($x*(1600.-320-160)/1600+0.5);")
+  ly=$(perl -e "use POSIX; print floor($y-$y*130./1200-$lh+0.5);")
+fi
 
-lw=$(perl -e "use POSIX; print floor($x*.182+0.5);")
 vlx=2;
 vly=2;
 
