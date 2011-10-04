@@ -83,10 +83,18 @@ ty=60;
 tw=$(echo $x-$tx-10 |bc)
 th=$(echo $y-$ty | bc)
 
-lx=$(perl -e "use POSIX; print floor($x*.746+0.5);")
-ly=$(perl -e "use POSIX; print floor($y*.718+0.5);")
+if test "$type" = 169; then
+  lw=$(perl -e "use POSIX; print floor($x*320./1920+0.5);")
+  lh=$(perl -e "use POSIX; print floor($lw*200./320+0.5);")
+  lx=$(perl -e "use POSIX; print floor($x*(1920.-320-160)/1920+0.5);")
+  ly=$(perl -e "use POSIX; print floor($y-$y*130./1200-$lh+0.5);")
+else
+  lw=$(perl -e "use POSIX; print floor($x*320./1600+0.5);")
+  lh=$(perl -e "use POSIX; print floor($lw*200./320+0.5);")
+  lx=$(perl -e "use POSIX; print floor($x*(1600.-320-160)/1600+0.5);")
+  ly=$(perl -e "use POSIX; print floor($y-$y*130./1200-$lh+0.5);")
+fi
 
-lw=$(perl -e "use POSIX; print floor($x*.182+0.5);")
 vlx=2;
 vly=2;
 
@@ -113,6 +121,7 @@ trigger "rlchange 6" tosilent
 trigger "coolo" play logo
 EOF
 
+exit 0
 verticalpcnt=0.8;
 voffset=$(perl -e "use POSIX; print floor($lw*113./200+6+0.5);")
 x1=$(perl -e "use POSIX; print floor($x*.771+0.5);")
@@ -120,7 +129,7 @@ x2=$(perl -e "use POSIX; print floor($x*.917+0.5);")
 y1=$(echo $ly+$voffset | bc);
 y2=$[$y1+1]; # let's try a 2 pixel line
 
-echo "progress_enable=1" >> $cfgfile
+echo "progress_enable=0" >> $cfgfile
 echo "box silent noover $x1 $y1 $x2 $y2 #ffffff10" >> $cfgfile
 y1_minus=$[$y1-1]
 y1_plus=$[$y1+1]
