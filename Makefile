@@ -5,13 +5,13 @@ VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 all: info openSUSE.tar.gz
 
 info:
-	echo "Make sure to have php and GraphicsMagick installed"
+	echo "Make sure to have inkscape and GraphicsMagick installed"
 
 openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kde-workspace.d kdm.d gnome.d susegreeter.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d
 
 gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
@@ -85,13 +85,22 @@ wallpaper.d: defaults
 	mkdir -p openSUSE/wallpapers
 	cp wallpapers/default-1600x1200.jpg.desktop openSUSE/wallpapers
 	cp wallpapers/default-1920x1200.jpg.desktop openSUSE/wallpapers
+	mkdir -p openSUSE/wallpapers/openSUSEdefault/contents/images
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1600x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg.desktop
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg.desktop
-	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
-	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -s openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -s openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
+	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	ln -s openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
+	ln -s openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
 	echo ${NAME} > openSUSE/wallpaper-name
+	inkscape -e tmp.png -w 1280 background-54.svg
+	convert -quality 95 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	inkscape -e tmp.png -w 1920 background-1610.svg
+	convert -quality 95 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
+	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 # When changing the commands below, also update the commands in gnome_dynamic
 defaults:
@@ -101,19 +110,13 @@ defaults:
 	convert -quality 95 -geometry 1920x1200 default-1900.png default-1920x1200.jpg
 	rm default-1900.png default-1600x1200.png 
 
-ksplashx.d: defaults
+ksplashx.d: 
 	rm -rf openSUSE/ksplashx
 	mkdir -p openSUSE/ksplashx
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1600x1200 openSUSE/ksplashx/
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1600x1200/opensuse-logo.png logo.svg
-	convert -quality 90 -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
-
-kde-workspace.d: defaults
-	rm -rf openSUSE/kde-workspace
-	mkdir -p openSUSE/kde-workspace
-	cp -p kde-workspace/*.desktop openSUSE/kde-workspace/
-	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/kde-workspace/screenshot.jpg
+	convert -geometry 300x250 default-1600x1200.jpg openSUSE/ksplashx/Preview.png
 
 kdm.d: defaults
 	rm -rf openSUSE/kdm
