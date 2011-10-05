@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 #depends on graphicsmagic and rsvg
 
 which gm > /dev/null 2>&1
@@ -28,8 +30,18 @@ y=$1
 shift
 q=$1
 shift
-type=$1
-shift
+
+ratio=$(perl -e "use POSIX; print floor($x*100./$y+0.5);")
+type=169
+if test "$ratio" -lt 162; then
+	type=1610
+fi
+if test "$ratio" -lt 135; then
+	type=43
+fi
+if test "$ratio" -lt 128; then
+	type=54
+fi
 
 # scale backgrounds
 
@@ -37,11 +49,11 @@ res="$x"x$y;
 echo "creating $res resolution images";
 silent="$themepath/images/silent-$res.jpg";
 verbose="$themepath/images/bootsplash-$res.jpg";
-inkscape -e tmp.png -w $x ../bootsplash/silent$type.svg
+inkscape --export-id=Gradient -e tmp.png -w $x ../bootsplash/silent-$type.svg
 cmd="gm convert tmp.png -geometry $res! -quality $q -interlace None -colorspace YCbCr ";
 cmd="$cmd -sampling-factor 2x2 $silent"; 
 $cmd
-inkscape -e tmp.png -w $x ../bootsplash/verbose$type.svg
+inkscape --export-id=Gradient -e tmp.png -w $x ../bootsplash/verbose-$type.svg
 cmd="gm convert tmp.png -geometry $res! -quality $q -interlace None -colorspace YCbCr ";
 cmd="$cmd -sampling-factor 2x2 $verbose"; 
 $cmd
@@ -83,17 +95,19 @@ ty=60;
 tw=$(echo $x-$tx-10 |bc)
 th=$(echo $y-$ty | bc)
 
-if test "$type" = 169; then
-  lw=$(perl -e "use POSIX; print floor($x*320./1920+0.5);")
-  lh=$(perl -e "use POSIX; print floor($lw*200./320+0.5);")
-  lx=$(perl -e "use POSIX; print floor($x*(1920.-320-160)/1920+0.5);")
-  ly=$(perl -e "use POSIX; print floor($y-$y*130./1200-$lh+0.5);")
-else
-  lw=$(perl -e "use POSIX; print floor($x*320./1600+0.5);")
-  lh=$(perl -e "use POSIX; print floor($lw*200./320+0.5);")
-  lx=$(perl -e "use POSIX; print floor($x*(1600.-320-160)/1600+0.5);")
-  ly=$(perl -e "use POSIX; print floor($y-$y*130./1200-$lh+0.5);")
-fi
+iw=$(inkscape -W --query-id=Gradient ../background-$type.svg)
+ih=$(inkscape -H --query-id=Gradient ../background-$type.svg)
+olw=$(inkscape -W --query-id=Logo ../background-$type.svg)
+olh=$(inkscape -H --query-id=Logo ../background-$type.svg)
+lp=$(inkscape -X --query-id=Logo ../background-$type.svg)
+dx=$(perl -e "use POSIX; print floor($iw-$olw-$lp+0.5);")
+lp=$(inkscape -Y --query-id=Logo ../background-$type.svg)
+dy=$(perl -e "use POSIX; print floor($ih-$olh-$lp+0.5);")
+echo "I $type $iw $ih $olw $olh $dx $dy"
+lw=$(perl -e "use POSIX; print floor($x*$olw/$iw+0.5);")
+lh=$(perl -e "use POSIX; print floor($lw*$olh/$olw+0.5);")
+lx=$(perl -e "use POSIX; print floor($x*($iw-$olw-$dx)/$iw+0.5);")
+ly=$(perl -e "use POSIX; print floor($y-$y*$dy/$ih-$lh+0.5);")
 
 vlx=2;
 vly=2;

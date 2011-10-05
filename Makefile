@@ -42,28 +42,28 @@ bootsplash.d:
 	gm convert -comment "id logo delay 1000 deltaprevbg" bs/logo-right.png -comment "id eye1 delay 1000 loop logo deltaprevbg" bs/logo-left.png bs/output/images/logo.mng
 	gm convert -colorspace gray -comment "id logov deltabg stop" bs/logov.png bs/output/images/logov.mng
 	cd bs ;\
-	  sh create_bootsplash.sh ${VERSION} 1440 900 91 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 1440 900 91 ;\
 	  if true; then \
-	  sh create_bootsplash.sh ${VERSION} 640 480 95 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 800 600 95 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1024 600 94 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1024 768 94 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1152 768 94 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1152 864 93 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 768 93 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1366 768 93 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 800 93 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 854 93 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 960 92 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 1024 92 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1400 1050 91 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1600 1024 90 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1600 1200 89 43 ;\
-	  sh create_bootsplash.sh ${VERSION} 1600 900 90 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1920 1080 90 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1680 1050 89 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 1920 1200 80 169 ;\
-	  sh create_bootsplash.sh ${VERSION} 3200 1200 70 169 ;\
+	  sh create_bootsplash.sh ${VERSION} 640 480 95 ;\
+	  sh create_bootsplash.sh ${VERSION} 800 600 95 ;\
+	  sh create_bootsplash.sh ${VERSION} 1024 600 94 ;\
+	  sh create_bootsplash.sh ${VERSION} 1024 768 94 ;\
+	  sh create_bootsplash.sh ${VERSION} 1152 768 94 ;\
+	  sh create_bootsplash.sh ${VERSION} 1152 864 93 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 768 93 ;\
+	  sh create_bootsplash.sh ${VERSION} 1366 768 93 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 800 93 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 854 93 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 960 92 ;\
+	  sh create_bootsplash.sh ${VERSION} 1280 1024 92 ;\
+	  sh create_bootsplash.sh ${VERSION} 1400 1050 91 ;\
+	  sh create_bootsplash.sh ${VERSION} 1600 1024 90 ;\
+	  sh create_bootsplash.sh ${VERSION} 1600 1200 89 ;\
+	  sh create_bootsplash.sh ${VERSION} 1600 900 90 ;\
+	  sh create_bootsplash.sh ${VERSION} 1920 1080 90 ;\
+	  sh create_bootsplash.sh ${VERSION} 1680 1050 89 ;\
+	  sh create_bootsplash.sh ${VERSION} 1920 1200 80 ;\
+	  sh create_bootsplash.sh ${VERSION} 3200 1200 70 ;\
 	  fi
 
 	mv bs/output openSUSE/bootsplash
