@@ -106,11 +106,11 @@
    showgrid="false"
    inkscape:zoom="1"
    inkscape:cx="417.16612"
-   inkscape:cy="273.72864"
+   inkscape:cy="368.96231"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="0"
-   inkscape:current-layer="svg6898" />
+   inkscape:current-layer="svg2" />
 <filter
    height="1.2207437"
    width="1.0415266"
@@ -125,7 +125,7 @@
 </filter>
 <g
    id="g3276"
-   transform="matrix(0.50262828,0,0,0.50262828,-158.85456,5.3931921)"><rect
+   transform="matrix(0.50262828,0,0,0.50262828,-158.85456,-2.6068079)"><rect
      id="Gradient-7"
      width="1920"
      height="1200"
@@ -146,11 +146,11 @@
    id="svg6898">
 	<path
    id="rect6449"
-   opacity="0.699"
-   fill="#FFFFFF"
    enable-background="new    "
    d="M0.876,45.5h798.245   c0.483,0,0.878,0.337,0.878,0.753v552.994c0,0.416-0.395,0.753-0.878,0.753H0.876C0.392,600,0,599.663,0,599.247V46.253   C0,45.837,0.392,45.5,0.876,45.5z"
-   style="opacity:0.9" />
+   style="opacity:0.9"
+   fill="#FFFFFF"
+   opacity="0.699" />
 	<g
    id="layer1"
    display="none">
