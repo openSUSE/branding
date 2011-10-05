@@ -10,7 +10,6 @@ dynamic/
 
 
 openSUSE-default-static.xml:
- [built from openSUSE-default-static.xml.in]
 
  This is a XML file as understood by gnome-desktop, that describes a slideshow.
  There is only one slide, the default wallpaper, available in various

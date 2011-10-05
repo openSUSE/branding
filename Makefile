@@ -90,25 +90,27 @@ wallpaper.d: defaults
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg.desktop
 	ln -s openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -s openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
+	cp default-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
 	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	cp default-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
 	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
 	ln -s openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -s openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
 	echo ${NAME} > openSUSE/wallpaper-name
-	inkscape -e tmp.png -w 1280 background-54.svg
-	convert -quality 95 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	inkscape -e tmp.png -w 1920 background-1610.svg
-	convert -quality 95 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
 	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 # When changing the commands below, also update the commands in gnome_dynamic
 defaults:
+	inkscape -e default-1280x1024.png -w 1280 background-54.svg
+	convert -quality 95 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
 	inkscape -e default-1600x1200.png -w 1600 background-43.svg
 	convert -quality 95 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
-	inkscape -e default-1900.png -w 1920 background-169.svg
-	convert -quality 95 -geometry 1920x1200 default-1900.png default-1920x1200.jpg
-	rm default-1900.png default-1600x1200.png 
+	inkscape -e default-1920x1080.png -w 1920 background-169.svg
+	convert -quality 95 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
+	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
+	convert -quality 95 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
+	rm default-1920x1200.png default-1920x1080.png default-1600x1200.png default-1280x1024.png
 
 ksplashx.d: 
 	rm -rf openSUSE/ksplashx
@@ -130,13 +132,19 @@ gnome_dynamic: defaults
 	rm -rf gnome/dynamic
 	mkdir -p gnome/dynamic
 	for file in morning night; do \
+		inkscape -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
+		convert -quality 95 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
 		inkscape -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
 		convert -quality 95 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
-		inkscape -e gnome/$${file}-1920x1200.png -w 1920 gnome/$${file}169.svg ; \
+		inkscape -e gnome/$${file}-1920x1080.png -w 1920 gnome/$${file}169.svg ; \
+		convert -quality 95 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
+		inkscape -e gnome/$${file}-1920x1200.png -w 1920 gnome/$${file}1610.svg ; \
 		convert -quality 95 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
 		rm gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png ; \
 	done
+	cp default-1280x1024.jpg gnome/dynamic/day-1280x1024.jpg
 	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
+	cp default-1920x1080.jpg gnome/dynamic/day-1920x1080.jpg
 	cp default-1920x1200.jpg gnome/dynamic/day-1920x1200.jpg
 	sed "s:@PATH_TO_IMAGES@:/usr/share/backgrounds/${NAME}:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic/${NAME}.xml
 	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest.xml
