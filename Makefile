@@ -146,7 +146,7 @@ gnome.d: gnome_dynamic
 	rm -rf openSUSE/gnome
 	mkdir -p openSUSE/gnome
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
-	sed "s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" gnome/openSUSE-default-static.xml.in > openSUSE/gnome/openSUSE-default-static.xml
+	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
 	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
 
