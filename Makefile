@@ -12,6 +12,7 @@ openSUSE.tar.gz: openSUSE.d
 #	rm -r openSUSE
 
 openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d
+	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
@@ -162,4 +163,65 @@ susegreeter.d:
 	rm -rf openSUSE/SUSEgreeter
 	mkdir -p openSUSE/SUSEgreeter
 	inkscape -w 800 -e openSUSE/SUSEgreeter/background.png kde-workspace/SUSEgreeter/background.svg
+
+WALLPAPER_NAME=$(shell cat wallpaper-name)
+install: # do not add requires here, this runs from generated openSUSE
+	mkdir -p ${DESTDIR}/etc/bootsplash/themes
+	cp -a bootsplash ${DESTDIR}/etc/bootsplash/themes/openSUSE
+	cp LICENSE ${DESTDIR}/etc/bootsplash/themes/openSUSE/LICENSE
+
+	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
+
+	install -d ${DESTDIR}/usr/share/wallpapers
+	cp -a wallpapers/* ${DESTDIR}/usr/share/wallpapers
+
+## Install xml files used by GNOME to find default wallpaper
+# Here's the setup we use:
+#  - /usr/share/wallpapers/openSUSE-default.xml is the default background
+#  - /usr/share/wallpapers/openSUSE-default.xml is a symlink (via
+#    update-alternatives) to either:
+#    a) /usr/share/wallpapers/openSUSE-default-static.xml (from
+#        wallpaper-branding-openSUSE)
+#    b) /usr/share/wallpapers/openSUSE-default-dynamic.xml (from
+#        dynamic-wallpaper-branding-openSUSE)
+#  - /usr/share/wallpapers/openSUSE-default-dynamic.xml is a symlink to the
+#    dynamic background (since this XML file moves from a version to another)
+#
+# Static wallpaper
+	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
+	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
+# Dynamic wallpaper
+	install -d ${DESTDIR}/usr/share/backgrounds
+	if test -z "${WALLPAPER_NAME}"; then \
+	    echo "Error in the tarball generated from git: wallpaper-name doesn't exist." ;\
+	    false ;\
+	fi
+	cp -a gnome/${WALLPAPER_NAME}/ ${DESTDIR}/usr/share/backgrounds/${WALLPAPER_NAME}
+	install -D -m 0644 gnome/dynamic-wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-openSUSE.xml
+	ln -s /usr/share/backgrounds/${WALLPAPER_NAME}/${WALLPAPER_NAME}.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
+# Touch the file handled with update-alternatives
+	touch ${DESTDIR}/usr/share/wallpapers/openSUSE-default.xml
+
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
+	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
+
+	install -d ${DESTDIR}/usr/share/YaST2/theme/openSUSE
+	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/openSUSE/wizard
+
+	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
+	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
+
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps
+	cp -a kdm ${DESTDIR}/usr/share/kde4/apps/kdm
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1600x1200.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1200.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1280x1024.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
 

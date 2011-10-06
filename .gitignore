@@ -9,3 +9,10 @@ default-1920x1200.jpg
 gnome/dynamic/
 gnome/dynamic-wallpaper-localtest.xml
 gnome/dynamic-wallpaper-localtest-fast.xml
+default-1280x1024.jpg
+default-1920x1080.jpg
+gnome/morning-1280x1024.png
+gnome/morning-1920x1080.png
+gnome/night-1280x1024.png
+gnome/night-1920x1080.png
+
