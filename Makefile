@@ -73,7 +73,7 @@ bootsplash.d:
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
 	mkdir -p openSUSE/kdelibs
-	cp kdelibs/body-background.jpg openSUSE/kdelibs
+	cp kdelibs/body-background.jpg kdelibs/css.diff openSUSE/kdelibs
 
 yast.d:
 	rm -rf openSUSE/yast_wizard
