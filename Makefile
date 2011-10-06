@@ -97,7 +97,6 @@ wallpaper.d: defaults
 	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
 	ln -s openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -s openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
-	echo ${NAME} > openSUSE/wallpaper-name
 	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
@@ -222,3 +221,29 @@ install: # do not add requires here, this runs from generated openSUSE
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1200.jpg
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1280x1024.jpg
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
+
+check: # do not add requires here, this runs from generated openSUSE
+	## Check GNOME-related xml files have contant that make sense
+	# Check that all files referenced in xml files actually exist
+	for xml in ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml; do \
+	  xml_basename=`basename $${xml}` ; \
+	  for file in `sed "s:<[^>]*>::g" $${xml} | grep /usr`; do \
+	      test -f ${DESTDIR}/$${file} || (echo "$${file} is mentioned in $${xml_basename} but does not exist. Please update $${xml_basename}, or contact the GNOME team for help."; false ) ; \
+	  done ; \
+	done
+
+	# Check that xml files reference all relevant files
+	for file in ${DESTDIR}/usr/share/wallpapers/openSUSEdefault/contents/images/*.jpg; do \
+	   IMG=$${file#${DESTDIR}} ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml || ( echo "$${IMG} not mentioned in openSUSE-default-static.xml. Please add it there, or contact the GNOME team for help." ; false ) ; \
+	done
+
+	for file in ${DESTDIR}/usr/share/backgrounds/${NAME}/*.jpg; do \
+	   IMG=$${file#${DESTDIR}} ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml || ( echo "$${IMG} not mentioned in openSUSE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; false ) ; \
+	done
+
+	# Check that the link for the dynamic wallpaper is valid
+	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml` ; \
+	test -f "$${LINK_TARGET}" || (echo "The link for openSUSE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; false )
+	## End check of GNOME-related xml files
