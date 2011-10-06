@@ -224,26 +224,26 @@ install: # do not add requires here, this runs from generated openSUSE
 
 check: # do not add requires here, this runs from generated openSUSE
 	## Check GNOME-related xml files have contant that make sense
+	# Check that the link for the dynamic wallpaper is valid
+	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml` ; \
+	test -f "$${LINK_TARGET}" || { echo "The link for openSUSE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; exit 1 ;}
+
 	# Check that all files referenced in xml files actually exist
 	for xml in ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml; do \
 	  xml_basename=`basename $${xml}` ; \
 	  for file in `sed "s:<[^>]*>::g" $${xml} | grep /usr`; do \
-	      test -f ${DESTDIR}/$${file} || (echo "$${file} is mentioned in $${xml_basename} but does not exist. Please update $${xml_basename}, or contact the GNOME team for help."; false ) ; \
+	      test -f ${DESTDIR}/$${file} || { echo "$${file} is mentioned in $${xml_basename} but does not exist. Please update $${xml_basename}, or contact the GNOME team for help."; exit 1 ;} ; \
 	  done ; \
 	done
 
 	# Check that xml files reference all relevant files
 	for file in ${DESTDIR}/usr/share/wallpapers/openSUSEdefault/contents/images/*.jpg; do \
 	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml || ( echo "$${IMG} not mentioned in openSUSE-default-static.xml. Please add it there, or contact the GNOME team for help." ; false ) ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml || { echo "$${IMG} not mentioned in openSUSE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 
 	for file in ${DESTDIR}/usr/share/backgrounds/${NAME}/*.jpg; do \
 	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml || ( echo "$${IMG} not mentioned in openSUSE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; false ) ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml || { echo "$${IMG} not mentioned in openSUSE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
-
-	# Check that the link for the dynamic wallpaper is valid
-	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml` ; \
-	test -f "$${LINK_TARGET}" || (echo "The link for openSUSE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; false )
 	## End check of GNOME-related xml files
