@@ -1,0 +1,11 @@
+--- kde_infopage.css	2011-04-01 15:55:50.000000000 +0200
++++ kde_infopage.css	2011-10-06 12:34:49.000000000 +0200
+@@ -4,7 +4,7 @@
+  */
+ 
+ img {margin: 0px; padding: 0px}
+-body {margin: 0px; padding: 0px; background-color: #87AEBC; background-image: url(body-background.jpg); color: #111111; height="100%"; width="100%"}
++body {margin: 0px; padding: 0px; background-color: #66881e; background-image: url(body-background.jpg); color: #111111; height="100%"; width="100%"}
+ a { color: #1A2C36; text-decoration: none; font-weight: bold; }
+ a:hover {
+   color: #003B5A;
