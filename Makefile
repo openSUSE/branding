@@ -169,8 +169,8 @@ xfce.d:
 	inkscape -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
 
 install: # do not add requires here, this runs from generated openSUSE
-	mkdir -p ${DESTDIR}/etc/bootsplash/themes
-	cp -a bootsplash ${DESTDIR}/etc/bootsplash/themes/openSUSE
+	mkdir -p ${DESTDIR}/etc/bootsplash/themes/openSUSE
+	cp -a bootsplash/* ${DESTDIR}/etc/bootsplash/themes/openSUSE/
 	cp LICENSE ${DESTDIR}/etc/bootsplash/themes/openSUSE/LICENSE
 
 	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
