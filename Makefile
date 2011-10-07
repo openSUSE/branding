@@ -166,7 +166,7 @@ susegreeter.d:
 xfce.d:
 	rm -rf openSUSE/xfce
 	mkdir -p openSUSE/xfce
-	inkscape -w 374 -e openSUSE/xfce/splash.png xfce/splash.svg
+	inkscape -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
 
 install: # do not add requires here, this runs from generated openSUSE
 	mkdir -p ${DESTDIR}/etc/bootsplash/themes
