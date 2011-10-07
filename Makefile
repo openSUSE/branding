@@ -227,6 +227,8 @@ install: # do not add requires here, this runs from generated openSUSE
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1280x1024.jpg
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
 
+	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+
 check: # do not add requires here, this runs from generated openSUSE
 	## Check GNOME-related xml files have contant that make sense
 	# Check that the link for the dynamic wallpaper is valid
