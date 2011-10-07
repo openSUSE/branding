@@ -11,7 +11,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d xfce.d
 	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
@@ -162,6 +162,11 @@ susegreeter.d:
 	rm -rf openSUSE/SUSEgreeter
 	mkdir -p openSUSE/SUSEgreeter
 	inkscape -w 800 -e openSUSE/SUSEgreeter/background.png kde-workspace/SUSEgreeter/background.svg
+
+xfce.d:
+	rm -rf openSUSE/xfce
+	mkdir -p openSUSE/xfce
+	inkscape -w 374 -e openSUSE/xfce/splash.png xfce/splash.svg
 
 install: # do not add requires here, this runs from generated openSUSE
 	mkdir -p ${DESTDIR}/etc/bootsplash/themes
