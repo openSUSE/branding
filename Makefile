@@ -167,6 +167,7 @@ xfce.d:
 	rm -rf openSUSE/xfce
 	mkdir -p openSUSE/xfce
 	inkscape -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
+	cp xfce/COPYING openSUSE/xfce/COPYING
 
 install: # do not add requires here, this runs from generated openSUSE
 	mkdir -p ${DESTDIR}/etc/bootsplash/themes/openSUSE
