@@ -18,12 +18,12 @@ gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
 	inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
-	convert -quality 90 tmp.png openSUSE/gfxboot/data-boot/back.jpg
+	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/install.svg
 	mkdir -p openSUSE/gfxboot/data-install
-	convert -quality 90 tmp.png openSUSE/gfxboot/data-install/back.jpg
+	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	convert -quality 90 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
 	rm tmp.png
 
 bootsplash.d:
