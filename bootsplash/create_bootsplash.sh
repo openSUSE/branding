@@ -122,7 +122,7 @@ th=$th
 jpeg=$imagepath/bootsplash-$res.jpg
 silentjpeg=$imagepath/silent-$res.jpg
 
-mnganim logo $imagepath/logo.mng initframe logo silent origin 0 $lx $ly scale $lw:200
+mnganim logo $imagepath/logo.mng initframe logo silent origin 0 $lx $ly scale $lw:320
 	
 # overlay title (verbose)
 mnganim logov $imagepath/logov.mng initframe logov origin 0 $vlx $vly
