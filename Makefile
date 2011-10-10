@@ -11,7 +11,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d xfce.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d xfce.d gimp.d
 	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
@@ -169,6 +169,11 @@ xfce.d:
 	inkscape -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
 	cp xfce/COPYING openSUSE/xfce/COPYING
 
+gimp.d:
+	rm -rf openSUSE/gimp
+	mkdir -p openSUSE/gimp
+	inkscape -w 300 -e openSUSE/gimp/splash.png gimp/splash.svg
+
 install: # do not add requires here, this runs from generated openSUSE
 	mkdir -p ${DESTDIR}/etc/bootsplash/themes/openSUSE
 	cp -a bootsplash/* ${DESTDIR}/etc/bootsplash/themes/openSUSE/
@@ -229,6 +234,8 @@ install: # do not add requires here, this runs from generated openSUSE
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+
+	install -D gimp/splash.png ${DESTDIR}/usr/share/gimp/2.0/images/gimp-splash.png
 
 check: # do not add requires here, this runs from generated openSUSE
 	## Check GNOME-related xml files have contant that make sense
