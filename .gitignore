@@ -4,3 +4,5 @@ configure
 stamp-it
 cs.gmo
 .intltool-merge-cache
+.DS_Store
+*/.DS_Store
