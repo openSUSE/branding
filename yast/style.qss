@@ -354,6 +354,15 @@ QComboBox::drop-down {
      border-left-style: solid; 
 }
 
+QComboBox[editable=true]{
+        border: 1px inset darkgray;  
+        border-radius: 3px;
+        margin: 0px; 
+        color: #000;
+        background: #ffffff;
+        selection-background-color: #9c3;
+        selection-color: #000;
+} 
 
 QSpinBox { 
     padding-right: 9px;
