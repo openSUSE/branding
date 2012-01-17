@@ -77,6 +77,11 @@ QPushButton:default {
         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #9c3, stop: 1 #690 ) ;
 }
 
+QPushButton:disabled {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #fbfbfb, stop: 1 #ffffff);
+	 color: gray;
+}
+
 QTabBar::tab {
         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                   stop: 0 #dddddd, stop: 1 #f8f8f8);
