@@ -1,5 +1,5 @@
-NAME=upwind
-VERSION=12.1
+NAME=lightrays
+VERSION=12.2
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 
 all: info openSUSE.tar.gz
@@ -18,57 +18,20 @@ gfxboot.d: defaults
 	rm -rf openSUSE/gfxboot
 	inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
-	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/install.svg
 	mkdir -p openSUSE/gfxboot/data-install
-	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
 	rm tmp.png
 
 bootsplash.d:
 	mkdir -p openSUSE
 	rm -rf openSUSE/bootsplash
-	rm -rf bs
-	mkdir bs
-	cp -a bootsplash/create_bootsplash.sh bs
-	inkscape -w 320 -e bs/auge_1.png --export-id=Auge_1 -C -j bootsplash/geeko-animation.svg 
-	inkscape -w 320 -e bs/auge_2.png --export-id=Auge_2 -C -j bootsplash/geeko-animation.svg
-	inkscape -w 320 -e bs/body.png --export-id=Geeko_Body -C -j bootsplash/geeko-animation.svg
-	gm composite bs/auge_1.png bs/body.png bs/logo-right.png
-	gm composite bs/auge_2.png bs/body.png bs/logo-left.png
-	inkscape -w 90 -e bs/logov.png bootsplash/logo-verbose.svg
-	mkdir -p bs/output/config
-	mkdir -p bs/output/images
-	gm convert -comment "id logo delay 1000 deltaprevbg" bs/logo-right.png -comment "id eye1 delay 1000 loop logo deltaprevbg" bs/logo-left.png bs/output/images/logo.mng
-	gm convert -colorspace gray -comment "id logov deltabg stop" bs/logov.png bs/output/images/logov.mng
-	cd bs ;\
-	  sh create_bootsplash.sh ${VERSION} 1440 900 91 ;\
-	  if true; then \
-	  sh create_bootsplash.sh ${VERSION} 640 480 95 ;\
-	  sh create_bootsplash.sh ${VERSION} 800 600 95 ;\
-	  sh create_bootsplash.sh ${VERSION} 1024 600 94 ;\
-	  sh create_bootsplash.sh ${VERSION} 1024 768 94 ;\
-	  sh create_bootsplash.sh ${VERSION} 1152 768 94 ;\
-	  sh create_bootsplash.sh ${VERSION} 1152 864 93 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 768 93 ;\
-	  sh create_bootsplash.sh ${VERSION} 1366 768 93 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 800 93 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 854 93 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 960 92 ;\
-	  sh create_bootsplash.sh ${VERSION} 1280 1024 92 ;\
-	  sh create_bootsplash.sh ${VERSION} 1400 1050 91 ;\
-	  sh create_bootsplash.sh ${VERSION} 1600 1024 90 ;\
-	  sh create_bootsplash.sh ${VERSION} 1600 1200 89 ;\
-	  sh create_bootsplash.sh ${VERSION} 1600 900 90 ;\
-	  sh create_bootsplash.sh ${VERSION} 1920 1080 90 ;\
-	  sh create_bootsplash.sh ${VERSION} 1680 1050 89 ;\
-	  sh create_bootsplash.sh ${VERSION} 1920 1200 80 ;\
-	  sh create_bootsplash.sh ${VERSION} 3200 1200 70 ;\
-	  fi
-
-	mv bs/output openSUSE/bootsplash
-	rm -rf bs
+	cd boot ;\
+	./bootsplash.php
+	cp boot/bootsplash/openSUSE openSUSE/bootsplash
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
@@ -103,13 +66,13 @@ wallpaper.d: defaults
 # When changing the commands below, also update the commands in gnome_dynamic
 defaults:
 	inkscape -e default-1280x1024.png -w 1280 background-54.svg
-	convert -quality 95 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
+	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
 	inkscape -e default-1600x1200.png -w 1600 background-43.svg
-	convert -quality 95 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
+	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
 	inkscape -e default-1920x1080.png -w 1920 background-169.svg
-	convert -quality 95 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
+	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
 	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
-	convert -quality 95 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
+	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
 	rm default-1920x1200.png default-1920x1080.png default-1600x1200.png default-1280x1024.png
 
 ksplashx.d: 
@@ -133,13 +96,13 @@ gnome_dynamic: defaults
 	mkdir -p gnome/dynamic
 	for file in morning night; do \
 		inkscape -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
-		convert -quality 95 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
+		convert -quality 100 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
 		inkscape -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
-		convert -quality 95 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
+		convert -quality 100 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
 		inkscape -e gnome/$${file}-1920x1080.png -w 1920 gnome/$${file}169.svg ; \
-		convert -quality 95 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
+		convert -quality 100 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
 		inkscape -e gnome/$${file}-1920x1200.png -w 1920 gnome/$${file}1610.svg ; \
-		convert -quality 95 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
+		convert -quality 100 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
 		rm gnome/$${file}-1280x1024.png gnome/$${file}-1600x1200.png gnome/$${file}-1920x1080.png gnome/$${file}-1920x1200.png ; \
 	done
 	cp default-1280x1024.jpg gnome/dynamic/day-1280x1024.jpg
