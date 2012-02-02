@@ -36,7 +36,7 @@
      inkscape:cx="143.51365"
      inkscape:cy="134.74544"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      width="300px"
      height="290px"
      borderlayer="true"
@@ -18662,22 +18662,22 @@
        sodipodi:linespacing="100%"
        id="text11444"
        y="114.17446"
-       x="87.340866"
+       x="67.340866"
        style="font-size:15.74322414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:100%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;fill:#2a4c38;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:FifthLeg;-inkscape-font-specification:FifthLeg"
        xml:space="preserve"><tspan
          y="114.17446"
-         x="87.340866"
+         x="67.340866"
          id="tspan11446"
          sodipodi:role="line"
          style="font-size:15.74322414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#2a4c38;fill-opacity:1;font-family:FifthLeg;-inkscape-font-specification:FifthLeg">GNU Image Manipulation </tspan><tspan
          id="tspan11464"
-         y="129.91769"
-         x="87.340866"
+         y="129.91768"
+         x="67.340866"
          sodipodi:role="line"
          style="font-size:15.74322414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#2a4c38;fill-opacity:1;font-family:FifthLeg;-inkscape-font-specification:FifthLeg">Program</tspan></text>
     <g
        style="fill:#2a4c38;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
-       transform="translate(-42.360745,-16.65625)"
+       transform="translate(-62.360745,-16.65625)"
        id="g11448">
       <path
          sodipodi:nodetypes="cc"
@@ -18687,7 +18687,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(0.82652215,0,0,0.82652215,92.894867,30.824044)"
+       transform="matrix(0.82652215,0,0,0.82652215,72.894867,30.824044)"
        id="g11452"
        style="fill:#2a4c38;fill-opacity:1">
       <path
