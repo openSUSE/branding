@@ -24,7 +24,7 @@ How to update the wallpaper in the distribution
 
 Simply type 'make' to create openSUSE.tar.gz:
 
-  pushd art/12.1
+  pushd art/12.2
   make
   popd
 
@@ -34,7 +34,7 @@ The following commands will branch the branding-openSUSE package, commit the new
 data and submit the changes:
 
   osc branch openSUSE:Factory branding-openSUSE -c
-  cp art/12.1/openSUSE.tar.gz home:*branches*/branding-openSUSE
+  cp art/12.2/openSUSE.tar.gz home:*branches*/branding-openSUSE
   cd home:*branches*/branding-openSUSE
   osc vc
   osc ci
