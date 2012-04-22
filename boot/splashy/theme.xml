@@ -3,11 +3,11 @@
     xsi:schemaLocation="http://splashy.alioth.debian.org/schemas/1.1/theme.xsd">
     <info>
         <!-- theme name is case sensitive. use directory name -->
-        <name>openSUSE 11.0</name>
+        <name>openSUSE 12.2</name>
         <version>1.0</version>
-        <description>Default openSUSE 11.0 theme</description>
+        <description>Default openSUSE 12.2 theme</description>
         <urls>http://en.opensuse.org</urls>
-        <author>Jakub Steiner</author>
+        <author>openSUSE Artwork Team</author>
     </info>
     <progressbar>
         <!-- here are tags to set the bar... x coordinate,

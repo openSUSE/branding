@@ -7,13 +7,29 @@ $themename = "openSUSE";
 $themepath = "./bootsplash/$themename";
 $imagepath = "/etc/bootsplash/themes/$themename/images";
 //resolution, jpeg export quality pairs
-$resolutions = array("640x480"=>"95", "800x600"=>"95", "1024x600"=>"94", 
-										 "1024x768"=>"94", "1152x768"=>"94", "1152x864"=>"93", 
-										 "1280x768"=>"93", "1366x768"=>"93", "1280x800"=>"93", 
-										 "1280x854"=>"93", 
-										 "1280x960"=>"92", "1280x1024"=>"92", "1400x1050"=>"91",
-										 "1440x900"=>"91", "1600x1024"=>"90", "1600x1200"=>"89", 
-										 "1680x1050"=>"89", "1920x1200"=>"80", "3200x1200"=>"70");
+// Avoid to use more than 80% too much artifacts on big screens
+$resolutions = array(
+  "640x480"=>"95", 
+  "800x600"=>"95", 
+  "1024x600"=>"94", 
+  "1024x768"=>"94", 
+  "1152x768"=>"94", 
+  "1152x864"=>"93", 
+  "1280x768"=>"93", 
+  "1366x768"=>"93", 
+  "1280x800"=>"93", 
+  "1280x854"=>"93", 
+  "1280x960"=>"92", 
+  "1280x1024"=>"92", 
+  "1400x1050"=>"91",
+  "1440x900"=>"91", 
+  "1600x1024"=>"90", 
+  "1600x1200"=>"89", 
+  "1680x1050"=>"89", 
+  "1920x1050"=>"86",
+  "1920x1200"=>"86", 
+  "3200x1200"=>"84"
+  );
 /*
 $resolutions = array("800x600"=>"95");
 */
@@ -30,9 +46,9 @@ if (!is_dir($themepath)) {
 if (!is_dir('./temp')) {
 	mkdir ("./temp");
 }
-$cmd = "inkscape -w 180 -e ./temp/logo.png logo.svg"; //silent logo
+$cmd = "inkscape -z -w 180 -e ./temp/logo.png logo.svg"; //silent logo
 exec($cmd);
-$cmd = "inkscape -w 90 -e ./temp/logov.png logo.svg"; //verbose logo
+$cmd = "inkscape -z -w 90 -e ./temp/logov.png logo.svg"; //verbose logo
 exec($cmd);
 $cmd = "gm convert -comment \"id logo deltabg stop\" ./temp/logo.png ./temp/logo.png ./temp/logo.mng";
 exec($cmd);
@@ -79,7 +95,8 @@ while (list($res,$q) = each($resolutions)) {
 	fwrite($fp, "fgcolor=7\n");
 	fwrite($fp, "bgcolor=0\n\n");
 	//text window frame
-	ereg("([0-9]+)x([0-9]+)", $res, $dimensions);
+	// deprecated ereg("([0-9]+)x([0-9]+)", $res, $dimensions);
+	preg_match("/([0-9]+)x([0-9]+)/", $res, $dimensions);
 	$x = $dimensions[1];
 	$y = $dimensions[2];
 	$tx = 20;
@@ -128,4 +145,4 @@ while (list($res,$q) = each($resolutions)) {
 	fclose($fp);
 }
 
-?>
+
