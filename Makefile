@@ -11,7 +11,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d kdm.d gnome.d susegreeter.d xfce.d gimp.d
+openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d
 	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
@@ -83,12 +83,21 @@ ksplashx.d:
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1920x1200/opensuse-logo.png logo.svg
 	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplashx/Preview.png
 
+#This should be called openSUSE
 kdm.d: defaults
 	rm -rf openSUSE/kdm
 	mkdir -p openSUSE/kdm/themes
 	cp -a kdm openSUSE/kdm/themes/SUSE
 	cp logo.svg openSUSE/kdm/themes/SUSE
 	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
+
+ksplash-qml.d: 
+	rm -rf openSUSE/ksplash-qml
+	mkdir -p openSUSE/ksplash-qml
+	sed "s:@VERSION@:${VERSION}:g" ksplash-qml/Theme.rc.in > openSUSE/ksplash-qml/Theme.rc
+	cp -a ksplash-qml/images openSUSE/ksplash-qml/
+	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplash-qml/images/opensuse-logo.png logo.svg
+	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplash-qml/Preview.png
 
 # Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
 gnome_dynamic: defaults
@@ -195,6 +204,11 @@ install: # do not add requires here, this runs from generated openSUSE
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1200.jpg
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1280x1024.jpg
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
+
+	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
+	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse/images
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse/images/background.jpg
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
