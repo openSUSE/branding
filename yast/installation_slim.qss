@@ -483,3 +483,9 @@ QAbstractScrollArea>* {
    border: 0;
 }
 
+QGroupBox {
+    border: 1px groove gray;
+    border-radius: 4px;
+    padding: 2px;
+}
+
