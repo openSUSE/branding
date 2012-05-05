@@ -94,9 +94,9 @@ ksplashx.d:
 kdm.d: defaults
 	rm -rf openSUSE/kdm
 	mkdir -p openSUSE/kdm/themes
-	cp -a kdm openSUSE/kdm/themes/SUSE
-	cp logo.svg openSUSE/kdm/themes/SUSE
-	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
+	cp -a kdm openSUSE/kdm/themes/openSUSE
+	cp logo.svg openSUSE/kdm/themes/openSUSE
+	mv openSUSE/kdm/themes/openSUSE/pics openSUSE/kdm/
 
 ksplash-qml.d: 
 	rm -rf openSUSE/ksplash-qml
@@ -207,10 +207,10 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps
 	cp -a kdm ${DESTDIR}/usr/share/kde4/apps/kdm
-	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1600x1200.jpg
-	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1200.jpg
-	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1280x1024.jpg
-	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1600x1200.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1920x1200.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1280x1024.jpg
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1920x1080.jpg
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse
