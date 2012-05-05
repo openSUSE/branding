@@ -92,27 +92,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   </item>
 
   <item type="pixmap" id="system-session">
-	<normal file="panel.svg" alpha="1.0"/>
-	<pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
-  </item>
-
-	<item type="svg" id="branding-logo" background="true">
-		<normal file="logo.svg" alpha="0.9" />
+		<normal file="panel.svg" alpha="1.0" background="true"/>
 		<pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
+  </item>
+	<item type="svg" id="branding-logo" background="true">
+		<normal file="logo.svg" alpha="0.9" scalemode="free" spacing="2" />
+		<pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="320" min-height="200"/>
 	</item>
 
 	<item type="pixmap" id="system-session">
         <normal alpha="0.1" file="rectangle_overlay.png"/>
         <pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
-		<fixed>
+				<fixed>
             <item type="label" id="welcome">
                 <pos anchor="c" x="50%" y="28"/>
                 <normal alpha="0.75" font="Sans Bold 14" color="#73ba25"/>
                 <text>%h</text>
             </item>
-		  </fixed>
-    </item>
-    
+		  	</fixed>
+	</item>
 	
 	<item type="rect">
         <pos anchor="c" x="50%" y="50%" width="393" height="100"/>
@@ -200,7 +198,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 				  <box spacing="10" xspacing="10" orientation="horizontal">
 					<item type="pixmap">
 					  <normal file="configure.png" color="#ffffff" alpha="0.75"/>
-					  <prelight file="configure.png" color="#ffffff" alpha="1.5"/>
+					  <prelight file="configure.png" color="#ffffff" alpha="1.0"/>
 					  <active file="configure.png" color="#ffffff" alpha="1.0"/>
 					  <pos y="50%" anchor="w"/>
 					  <stock type="session"/>
@@ -216,8 +214,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					-->
 					<item type="pixmap">
 					  <normal file="arrowd.png" color="#ffffff" alpha="0.75"/>
-					  <prelight file="arrowd.png" color="#ffffff" alpha="0.5"/>
-					  <active file="arrowd.png" color="#ffffff" alpha="0.5"/>
+					  <prelight file="arrowd.png" color="#ffffff" alpha="1.0"/>
+					  <active file="arrowd.png" color="#ffffff" alpha="1.0"/>
 					  <pos y="50%" anchor="w"/>
 					  <stock type="session"/>
 					</item>
@@ -236,7 +234,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 					<item type="pixmap">
 					  <normal file="system-shutdown.png" color="#ffffff" alpha="0.75"/>
-					  <prelight file="system-shutdown.png" color="#ffffff" alpha="1.5"/>
+					  <prelight file="system-shutdown.png" color="#ffffff" alpha="1.0"/>
 					  <active file="system-shutdown.png" color="#ffffff" alpha="1.0"/>
 					  <pos y="50%" anchor="w"/>
 					  <stock type="system"/>
@@ -252,8 +250,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					-->
 					<item type="pixmap">
 					  <normal file="arrowd.png" color="#ffffff" alpha="0.75"/>
-					  <prelight file="arrowd.png" color="#ffffff" alpha="0.5"/>
-					  <active file="arrowd.png" color="#ffffff" alpha="0.5"/>
+					  <prelight file="arrowd.png" color="#ffffff" alpha="1.0"/>
+					  <active file="arrowd.png" color="#ffffff" alpha="1.0"/>
 					  <pos y="50%" anchor="w"/>
 					  <stock type="system"/>
 					</item>
@@ -271,9 +269,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					</item>
 
 					<item type="label">
-					  <normal font="Sans 12" color="#ffffff" alpha="0.5"/>
-					  <prelight font="Sans 12" color="#ffffff" alpha="1"/>
-					  <active font="Sans 12" color="#ffffff" alpha="1"/>
+					  <normal font="Sans 12" color="#ffffff" alpha="0.75"/>
+					  <prelight font="Sans 12" color="#ffffff" alpha="1.0"/>
+					  <active font="Sans 12" color="#ffffff" alpha="1.0"/>
 					  <pos y="50%" anchor="w"/>
 					  <stock type="admin"/>
 					  <show modes="admin" />
@@ -291,7 +289,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					  <show modes="flexi,remote"/>
 					</item>
 					<item type="label">
-					  <normal font="Sans 12" color="#ffffff" alpha="0.5"/>
+					  <normal font="Sans 12" color="#ffffff" alpha="0.75"/>
 					  <prelight font="Sans 12" color="#ffffff" alpha="1"/>
 					  <active font="Sans 12" color="#ffffff" alpha="1"/>
 					  <pos y="50%" anchor="w"/>
@@ -304,7 +302,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					  <show modes="flexi"/>
 					</item>
 					<item type="label">
-					  <normal font="Sans 12" color="#ffffff" alpha="0.5"/>
+					  <normal font="Sans 12" color="#ffffff" alpha="0.75"/>
 					  <prelight font="Sans 12" color="#ffffff" alpha="1"/>
 					  <active font="Sans 12" color="#ffffff" alpha="1"/>
 					  <pos y="50%" anchor="w"/>
