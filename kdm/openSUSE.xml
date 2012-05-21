@@ -41,22 +41,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <pos x="-10" y="10" width="64" height="26" anchor="ne"/>
   </item>
   -->
-  <item type="svg" id="userdeco">
-    <normal file="panel.svg" alpha="1.0" scalemode="free"/>
-    <pos x="110" y="50%" width="210" height="26%" min-height="307" anchor="c"/>
-	<show type="userlist" />
-  </item>
   <!-- the user list -->
   <item type="rect" id="userlist-background">
-    <pos anchor="c" x="112" y="54%" width="190" height="20%" min-height="280"/>
+    <pos anchor="w" x="2" y="50%" width="213" height="358"/>
 	<style font="Sans 8"/>
     <fixed>
+	<item type="svg" id="usrlistdeco">
+	    <normal file="panel.svgz" alpha="1.0" background="true" scalemode="free"/>
+	    <pos x="0" y="50%" width="100%" height="100%" anchor="w" />
+  	</item>
       <item type="rect" id="userlist">
-        <pos x="0" y="34" width="98%" height="192"/>
+        <pos x="5" y="64" width="203" height="300"/>
         <show type="userlist"/>
-        <normal font="Sans 8" height="12" color="#ffffff" alpha="0.75"/>
-        <active font="Sans 8" height="12" color="#ffffff" alpha="1.0"/>
-        <prelight font="Sans 8" height="12" color="#ffffff" alpha="1.0"/>
+        <normal font="Sans 8" height="8" color="#ffffff" alpha="0.75"/>
+        <active font="Sans 8" height="8" color="#ffffff" alpha="1.0"/>
+        <prelight font="Sans 8" height="18" color="#ffffff" alpha="1.0"/>
       </item>
     </fixed>
 	<show type="userlist" />
@@ -92,90 +91,89 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   </item>
 
   <item type="pixmap" id="system-session">
-		<normal file="panel.svg" alpha="1.0" background="true"/>
-		<pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
+		<normal file="panel.svgz" alpha="1.0" background="true"/>
+		<pos anchor="c" x="50%" y="50%" width="602" height="358"/>
   </item>
 	<item type="svg" id="branding-logo" background="true">
-		<normal file="logo.svg" alpha="0.9" scalemode="free" spacing="2" />
-		<pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="320" min-height="200"/>
+		<normal file="logo.svgz" alpha="0.9" scalemode="free"/>
+		<pos anchor="c" x="50%" y="50%" width="554" height="330"/>
 	</item>
 
-	<item type="pixmap" id="system-session">
-        <normal alpha="0.1" file="rectangle_overlay.png"/>
-        <pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
-				<fixed>
-            <item type="label" id="welcome">
+	<item type="rect" id="system-session">
+    <pos anchor="c" x="50%" y="50%" width="602" height="358"/>
+		<fixed>
+    	<item type="label" id="welcome">
                 <pos anchor="c" x="50%" y="28"/>
-                <normal alpha="0.75" font="Sans Bold 14" color="#73ba25"/>
+                <normal alpha="0.75" font="Sans Bold 16" color="#73ba25"/>
                 <text>%h</text>
-            </item>
-		  	</fixed>
+      </item>
+		</fixed>
 	</item>
 	
-	<item type="rect">
-        <pos anchor="c" x="50%" y="50%" width="393" height="100"/>
-		<box orientation="vertical" spacing="10" homogeneous="true">
-            
-			<item type="rect" id="user-field">
-				<pos anchor="c" x="50%" y="50%" width="82%" height="box"/>
+	<item type="pixmap">
+        <normal alpha="0.1" file="overlay.png" scalemode="free" />
+        <pos anchor="c" x="50%" y="50%" width="566" height="175"/>
+			<box orientation="vertical" spacing="2" homogeneous="true">
+				<item type="rect" id="user-field">
+				<pos anchor="c" x="50%" y="50%" width="560" height="box"/>
 				<fixed>
                     <item type="pixmap">
-                        <pos anchor="w" x="0" y="50%"/>
+                        <pos anchor="w" x="20" y="50%"/>
                         <normal file="user_icon.png"/>
                     </item>
                 
                     <item type="pixmap">
-                        <pos anchor="w" x="42" y="50%" width="320" />
+                        <pos anchor="w" x="92" y="50%" width="320" />
                         <normal file="lineedit_normal.png"/>
                         <prelight file="lineedit_active.png"/>
                         <active file="lineedit_active.png"/>
                     </item>
                     
                     <item type="entry" id="user-entry">
-                        <pos anchor="w" x="50" y="50%" width="296" height="28"/>
+                        <pos anchor="w" x="96" y="50%" width="296" height="28"/>
                     </item>
-                </fixed>
-            </item>
+          </fixed>
+        </item>
             
             <item type="rect" id="user-field2">
-                <pos anchor="c" x="50%" y="50%" width="82%" height="box"/>
+                <pos anchor="c" x="50%" y="50%" width="560" height="box"/>
                 <fixed>
                     <item type="pixmap" button="true">
-                        <pos anchor="w" x="0" y="50%"/>
+                        <pos anchor="w" x="20" y="50%"/>
                         <normal file="lock.png"/>
                     </item>
                 
                     <item type="pixmap">
-                        <pos anchor="w" x="42" y="50%" width="320"/>
+                        <pos anchor="w" x="92" y="50%" width="320"/>
                         <normal file="lineedit_normal.png"/>
                         <prelight file="lineedit_active.png"/>
                         <active file="lineedit_active.png"/>
                     </item>
                     
                     <item type="entry" id="pw-entry">
-                        <pos anchor="w" x="50" y="50%" width="296" height="28"/>
+                        <pos anchor="w" x="96" y="50%" width="296" height="28"/>
                     </item>
                 </fixed>
             </item>
 			
             <item type="rect" id="plugin-specific-winbind">
-			  <show type="plugin-specific-winbind"/>
-                <pos anchor="c" x="50%" y="50%" width="82%" height="box"/>
+	  	<show type="plugin-specific-winbind"/>
+                <pos anchor="c" x="50%" y="50%" width="560" height="box"/>
                 <fixed>
                     <item type="pixmap" button="true">
-                        <pos anchor="w" x="0%" y="50%"/>
+                        <pos anchor="w" x="20" y="50%"/>
                         <normal file="domain.png"/>
                     </item>
                 
                     <item type="pixmap">
-                        <pos anchor="w" x="42" y="50%" width="320"/>
+                        <pos anchor="w" x="92" y="50%" width="320"/>
                         <normal file="lineedit_normal.png"/>
                         <prelight file="lineedit_active.png"/>
                         <active file="lineedit_active.png"/>
                     </item>
                     
                     <item type="entry" id="domain-entry">
-                        <pos anchor="w" x="50" y="50%" width="296" height="28"/>
+                        <pos anchor="w" x="96" y="50%" width="296" height="28"/>
                     </item>
                 </fixed>
             </item>			
@@ -183,8 +181,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	</item> 
 	
 	<item type="rect" id="system-session">
-        <pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
+        <pos anchor="c" x="50%" y="50%" width="602" height="358"/>
         <fixed>
+				<!-- time clock -->
             <item type="label">
                 <pos anchor="se" x="-16" y="-16"/>
                 <normal font="Sans 9" color="#666666"/>
@@ -319,14 +318,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <active file="login_button_down.png"/>
 				<over file="login_button_over.png"/>
 				<down file="login_button_down.png"/>
-                <pos anchor="e" x="-20" y="50%"/>
+                <pos anchor="e" x="-42" y="50%"/>
             </item>
         </fixed>
     </item>
 
     
 	<item type="rect" id="caps-lock-warning">
-        <pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
+        <pos anchor="c" x="50%" y="50%" width="602" height="388"/>
         <fixed>
             <item type="label" id="mesage">
                 <normal color="#E20800" font="Sans Bold 10"/>
@@ -337,7 +336,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	</item>
 
 	<item type="rect" id="pam-error-paceholder">
-	<pos anchor="c" x="50%" y="50%" width="50%" height="26%" min-width="593" min-height="307"/>
+	<pos anchor="c" x="50%" y="50%" width="602" height="388"/>
 		<item type="label" id="dummy1">
 			<normal alpha="0" color="#E20800" font="Sans Bold 10"/>
 			<text></text>
@@ -347,7 +346,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			<normal alpha="0" color="#E20800" font="Sans Bold 10"/>
 			<text></text>
 		</item>
-
 	</item>
 
 </greeter>
