@@ -215,9 +215,9 @@ install: # do not add requires here, this runs from generated openSUSE
 	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SUSE/background-1920x1080.jpg
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
-	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse/images
-	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-suse/images/background.jpg
+	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE/images
+	ln -s /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE/images/background.jpg
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
