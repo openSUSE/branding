@@ -1,6 +1,7 @@
 /*   vim:set foldenable foldmethod=marker:
  *
  *   Copyright (C) 2011 Ivan Cukic <ivan.cukic(at)kde.org>
+ *   Copyright (C) 2012 Bruno Friedmann <bruno(dot)friedmann(at)opensuse(dot)org>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License version 2,

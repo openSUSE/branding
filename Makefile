@@ -102,9 +102,11 @@ ksplash-qml.d:
 	rm -rf openSUSE/ksplash-qml
 	mkdir -p openSUSE/ksplash-qml
 	sed "s:@VERSION@:${VERSION}:g" ksplash-qml/Theme.rc.in > openSUSE/ksplash-qml/Theme.rc
+	cp ksplash-qml/main.qml openSUSE/ksplash-qml/main.qml
+	cp ksplash-qml/Preview.png openSUSE/ksplash-qml/Preview.png
 	cp -a ksplash-qml/images openSUSE/ksplash-qml/
-	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplash-qml/images/opensuse-logo.png logo.svg
-	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplash-qml/Preview.png
+#	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplash-qml/images/opensuse-logo.png logo.svg
+#	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplash-qml/Preview.png
 
 # Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
 gnome_dynamic: defaults
