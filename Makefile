@@ -90,13 +90,14 @@ ksplashx.d:
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1920x1200/opensuse-logo.png logo.svg
 	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplashx/Preview.png
 
-#This should be called openSUSE
+#This is called openSUSE
 kdm.d: defaults
 	rm -rf openSUSE/kdm
 	mkdir -p openSUSE/kdm/themes
-	cp -a kdm openSUSE/kdm/themes/SUSE
-	cp logo.svg openSUSE/kdm/themes/SUSE
-	mv openSUSE/kdm/themes/SUSE/pics openSUSE/kdm/
+	cp -a kdm openSUSE/kdm/themes/openSUSE
+	#Keep the source but don't package it
+	rm openSUSE/kdm/themes/openSUSE/panel.svgz
+	mv openSUSE/kdm/themes/openSUSE/pics openSUSE/kdm/
 
 ksplash-qml.d: 
 	rm -rf openSUSE/ksplash-qml
@@ -105,8 +106,6 @@ ksplash-qml.d:
 	cp ksplash-qml/main.qml openSUSE/ksplash-qml/main.qml
 	cp ksplash-qml/Preview.png openSUSE/ksplash-qml/Preview.png
 	cp -a ksplash-qml/images openSUSE/ksplash-qml/
-#	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplash-qml/images/opensuse-logo.png logo.svg
-#	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplash-qml/Preview.png
 
 # Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
 gnome_dynamic: defaults
