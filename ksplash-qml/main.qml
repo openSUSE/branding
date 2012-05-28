@@ -91,7 +91,7 @@ Item {
         x: (parent.width - width) / 2
         y: (parent.height - height) / 2
 
-        source: "images/opensuse-logo.png"
+        source: "images/opensuselogo.png"
 
         opacity: 0
         Behavior on opacity { NumberAnimation { duration: 500; easing { type: Easing.OutInQuad } } }
