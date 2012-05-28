@@ -29,9 +29,9 @@ Item {
 
     /* property declarations --------------------------{{{ */
     property int stage
-    property int iconSize: (screenSize.width <= 1024) ? 64 : 128
-    property int logoSW: (screenSize.width <= 1024) ? 130 : 260
-    property int logoSH: (screenSize.width <= 1024) ? 82 : 164
+    property int iconSize: (screenSize.width <= 1024) ? 96 : 192
+    property int logoSW: (screenSize.width <= 1024) ? 301 : 602
+    property int logoSH: (screenSize.width <= 1024) ? 179 : 358
     /* }}} */
 
     /* signal declarations ----------------------------{{{ */
@@ -41,23 +41,36 @@ Item {
     /* JavaScript functions ---------------------------{{{ */
     onStageChanged: {
         if (stage == 1) {
-            background.opacity = 1
-            gear.opacity = 0.5
-            geeko.opacity = 0.5
+          background.opacity = 1
+          mask.opacity = 0.5
+          gear.opacity = 0.5
+          geeko.opacity = 0.5
         }
         if (stage == 2) {
-            gear.opacity = 1
-            geeko.opacity = 1
-            letter.opacity = 1
+          gear.opacity = 0.8
+          geeko.opacity = 0.8
+          mask.opacity = 1
+          letter.opacity = 1
         }
         if (stage == 3) {
+          gear.opacity = 1
+          geeko.opacity = 1
+          mask.opacity = 1
+          letter.opacity = 1
         }
         if (stage == 4) {
         }
         if (stage == 5) {
+          letter.opacity = 0.5
+          gear.opacity = 0.5
+          mask.opacity = 0.5
+	  logo.opacity = 1
         }
         if (stage == 6) {
-	    logo.opacity = 1
+          letter.opacity = 0
+          gear.opacity = 0
+          mask.opacity = 0
+	  logo.opacity = 0  
         }
     }
     /* }}} */
@@ -78,7 +91,7 @@ Item {
             right: parent.right
         }
         opacity: 1
-        Behavior on opacity { NumberAnimation { duration: 1000; easing { type: Easing.OutInQuad } } }
+        Behavior on opacity { NumberAnimation { duration: 500; easing { type: Easing.OutInQuad } } }
     }
 
     Image {
@@ -91,7 +104,7 @@ Item {
         x: (parent.width - width) / 2
         y: (parent.height - height) / 2
 
-        source: "images/opensuselogo.png"
+        source: "images/opensuselogo.svgz"
 
         opacity: 0
         Behavior on opacity { NumberAnimation { duration: 500; easing { type: Easing.OutInQuad } } }
@@ -105,7 +118,7 @@ Item {
         smooth: true
 
         x: (parent.width - width) / 2
-        y: ((parent.height - height) / 2) + (geeko.y / 4)
+        y: ((parent.height - height) / 2) + geeko.y 
 
         source: "images/kdegear.png"
 
@@ -118,7 +131,7 @@ Item {
             properties: "rotation"
             from: 0
             to: 360
-            duration: 5000
+            duration: 2250
 
             loops: Animation.Infinite
             running: true
@@ -134,7 +147,7 @@ Item {
         smooth: true
 
         x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
+        y: ((parent.height - height) / 2) + geeko.y 
 
         source: "images/kdemask.png"
 
@@ -150,7 +163,7 @@ Item {
         smooth: true
 
         x: (parent.width - width) / 2 + 3
-        y: (parent.height - height) / 2  + (geeko.y / 4) - 3
+        y: (parent.height - height) / 2  + (geeko.y - 3)
 
         source: "images/kdeletter.png"
 
@@ -166,7 +179,7 @@ Item {
         smooth: true
 
         x: (parent.width - width) / 2
-        y: (parent.height - height) / 2  + (geeko.y / 4) - 1
+        y: (parent.height - height) / 2  + (geeko.y - 1)
 
         source: "images/kdelogo-contrast.png"
 
