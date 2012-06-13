@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # We have 4 main ratio 4:3 5:4 16:9 16:10
 # For each of them we create a bunch of 
@@ -15,7 +15,7 @@ R54="1280x1024 2560x2048"
 R169="854x480 1280x720 1366x768 1920x1080"
 R1610="320x200 1280x800 1440x900 1680x1050 1920x1200 2560x1600"
 #R179="2048x1080"
-cd backgrounds
+cd boot/grub2/backgrounds
 #43
 for RES in $R43; do
   ln -s -f default-43.png default-$RES.png

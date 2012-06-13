@@ -36,9 +36,8 @@ bootsplash.d:
 grub2.d:
 	rm -rf openSUSE/grub2
 	mkdir -p openSUSE/grub2
-	cd grub2 ;\ 
-	./grub2-branding.sh
-	cp -a grub2/backgrounds openSUSE/grub2
+	./boot/grub2-branding.sh
+	cp -a boot/grub2/backgrounds openSUSE/grub2/
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
