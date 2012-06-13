@@ -11,7 +11,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d
+openSUSE.d: gfxboot.d bootsplash.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d
 	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
@@ -32,6 +32,13 @@ bootsplash.d:
 	cd boot ;\
 	./bootsplash.php
 	cp -a boot/bootsplash/openSUSE openSUSE/bootsplash
+
+grub2.d:
+	rm -rf openSUSE/grub2
+	mkdir -p openSUSE/grub2
+	cd grub2 ;\ 
+	./grub2-branding.sh
+	cp -a grub2/backgrounds openSUSE/grub2
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
@@ -195,6 +202,9 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	install -d ${DESTDIR}/usr/share/YaST2/theme/openSUSE
 	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/openSUSE/wizard
+
+	install -d ${DESTDIR}/boot/grub2/backgrounds
+	cp -a grub2/backgrounds/* ${DESTDIR}/boot/grub2/backgrounds
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
