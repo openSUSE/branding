@@ -36,8 +36,9 @@ bootsplash.d:
 grub2.d:
 	rm -rf openSUSE/grub2
 	mkdir -p openSUSE/grub2
-	./boot/grub2-branding.sh
 	cp -a boot/grub2/backgrounds openSUSE/grub2/
+	cp -a boot/grub2/theme openSUSE/grub2/
+	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
@@ -202,8 +203,11 @@ install: # do not add requires here, this runs from generated openSUSE
 	install -d ${DESTDIR}/usr/share/YaST2/theme/openSUSE
 	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/openSUSE/wizard
 
-	install -d ${DESTDIR}/boot/grub2/backgrounds
-	cp -a grub2/backgrounds/* ${DESTDIR}/boot/grub2/backgrounds
+	install -d ${DESTDIR}/usr/share/grub2/backgrounds/openSUSE ${DESTDIR}/boot/grub2/backgrounds/openSUSE
+	cp -a grub2/backgrounds/* ${DESTDIR}/usr/share/grub2/backgrounds/openSUSE
+	install -d ${DESTDIR}/usr/share/grub2/themes/openSUSE ${DESTDIR}/boot/grub2/themes/openSUSE
+	cp -a grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/openSUSE
+	perl -pi -e 's/THEME_NAME/openSUSE/' ${DESTDIR}/usr/share/grub2/themes/openSUSE/activate-theme
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
