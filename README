@@ -1,0 +1,9 @@
+This repo is left intentionally blank in master branch.
+
+If you want to work on branding for a new distribution, please
+create a branch based on master and copy the artwork you want to 
+base your work on into and then push it as new branch to github.
+
+Do not rebase the history - the repository becomes too large otherwise
+and we need to be able to deleted old branches at times.
+
