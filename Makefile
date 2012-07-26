@@ -12,7 +12,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d
+openSUSE.d: gfxboot.d bootsplash.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d plymouth.d
 	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
@@ -40,6 +40,13 @@ grub2.d:
 	cp -a boot/grub2/backgrounds openSUSE/grub2/
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
+
+plymouth.d:
+	rm -rf openSUSE/plymouth
+	mkdir -p openSUSE/plymouth
+	cp -a boot/plymouth/theme openSUSE/plymouth/
+	inkscape -e openSUSE/plymouth/theme/background.png -w 1920 background-1610.svg
+	inkscape -w 260 -C -j -e openSUSE/plymouth/theme/logo.png logo.svg
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
@@ -209,6 +216,9 @@ install: # do not add requires here, this runs from generated openSUSE
 	install -d ${DESTDIR}/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
 	cp -a grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
+
+	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
+	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
