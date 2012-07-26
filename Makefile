@@ -45,6 +45,8 @@ plymouth.d:
 	rm -rf openSUSE/plymouth
 	mkdir -p openSUSE/plymouth
 	cp -a boot/plymouth/theme openSUSE/plymouth/
+	inkscape -e openSUSE/plymouth/theme/background.png -w 1920 background-1610.svg
+	inkscape -w 260 -C -j -e openSUSE/plymouth/theme/logo.png logo.svg
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
