@@ -4,6 +4,7 @@ desktop-image: "background.png"
 
 title-text: ""
 
+terminal-box: "terminal_*.png"
 terminal-font: "Gnu Unifont Mono Regular 16"
 
 + boot_menu {
