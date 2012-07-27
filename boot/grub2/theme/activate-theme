@@ -30,6 +30,7 @@ sub copy_files
   $back = "$grub2_share_dir/backgrounds/$theme/default-43.png" unless -f $back;
 
   system "cp $back $grub2_theme_dir/$theme/background.png";
+  system "cp $back $grub2_theme_dir/$theme/terminal-background.png";
 }
 
 sub update_default
