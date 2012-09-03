@@ -220,9 +220,6 @@ install: # do not add requires here, this runs from generated openSUSE
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 
-	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
