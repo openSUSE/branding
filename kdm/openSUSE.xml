@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <pos x="0" y="0" width="100%" height="100%"/>
   </item>
   
-  <!-- the Novell Logo topright 
+  <!-- the  Logo topright 
   <item type="pixmap">
     <normal file="opensuse.png" alpha="0.9"/>
     <pos x="-10" y="10" width="64" height="26" anchor="ne"/>
@@ -45,22 +45,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   <item type="rect" id="userlist-background">
     <pos anchor="w" x="2" y="50%" width="213" height="358"/>
 	<style font="Sans 8"/>
-    <fixed>
+    <fixed id="userbox">
 	<item type="svg" id="usrlistdeco">
 	    <normal file="panel.png" alpha="1.0" background="true" scalemode="free"/>
 	    <pos x="0" y="50%" width="100%" height="100%" anchor="w" />
   	</item>
-      <item type="rect" id="userlist">
-        <pos x="5" y="64" width="203" height="300"/>
+        <item type="label" id="welcome">
+                <pos anchor="c" x="50%" y="28"/>
+                <normal alpha="0.75" font="Sans Bold 16" color="#73ba25"/>
+                <text>Users</text>
+      </item>
+	<item type="list" id="userlist">
+        <pos x="5" y="98" width="203" height="238"/>
+	<style font="Sans 8" text-color="#222222" highlighted-text-color="#000000" highlight-color="#8BB300"/>
+        <normal alpha="0.75"/>
+        <active alpha="1.0"/>
+        <prelight alpha="1.0"/>
         <show type="userlist"/>
-        <normal font="Sans 8" height="8" color="#ffffff" alpha="0.75"/>
-        <active font="Sans 8" height="8" color="#ffffff" alpha="1.0"/>
-        <prelight font="Sans 8" height="18" color="#ffffff" alpha="1.0"/>
       </item>
     </fixed>
-	<show type="userlist" />
   </item>
-  
+ 
   <!-- remote logins have a hostname shown 
   12.2 removed we always present the %h name
   <item type="rect">
