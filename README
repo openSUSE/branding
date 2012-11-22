@@ -1,9 +1,64 @@
-This repo is left intentionally blank in master branch.
+Important files
+===============
 
-If you want to work on branding for a new distribution, please
-create a branch based on master and copy the artwork you want to 
-base your work on into and then push it as new branch to github.
+  default*.jpg: wallpapers, also used by various svg in subdirectories
 
-Do not rebase the history - the repository becomes too large otherwise
-and we need to be able to deleted old branches at times.
+  gnome/morning*.jpg gnome/night*.jpg dynamic-wallpaper.xml.in: files used to
+  create the dynamic wallpaper used by GNOME. See gnome/README for more
+  details.
 
+  yast/background.png: a reprise of the wallpaper
+
+Note that the current setup assumes we ship the wallpapers in two resolutions:
+  1600x1200 (4:3)
+  1920:1200 (16:9)
+
+If you want to add a new resolution, please be careful to update everything. A
+good way to do this is to grep the directory for 1920.
+
+
+How to update the wallpaper in the distribution
+===============================================
+
+1) Create openSUSE.tar.gz with make
+
+Simply type 'make' to create openSUSE.tar.gz:
+
+  pushd branding
+  git checkout 12.3
+  make
+  popd
+
+2) Update the data in the branding-openSUSE package
+
+The following commands will branch the branding-openSUSE package, commit the new
+data and submit the changes:
+
+  osc branch openSUSE:Factory branding-openSUSE -c
+  cp branding/openSUSE.tar.gz home:*branches*/branding-openSUSE
+  cd home:*branches*/branding-openSUSE
+  osc vc
+  osc ci
+  osc sr
+    -> created request id XXXXX
+
+
+How to create artwork for a new version of openSUSE
+===================================================
+
+Simply copy all files from this directory to a new directory, and change:
+
+ - the NAME variable at the top of Makefile to the name of the artwork theme
+   for the version of openSUSE you target.
+ - the VERSION variable at the top of Makefile to the version of openSUSE you
+   target.
+
+
+Need help?
+==========
+
+If you need help with packaging the artwork, you can contact the following
+people:
+
+  Stephan Kulow <coolo@suse.de>
+  Vincent Untz <vuntz@opensuse.org>
