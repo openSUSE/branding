@@ -1,6 +1,5 @@
-default-*.jpg
-gnome/dynamic*.xml
-openSUSE.tar.gz
-openSUSE/
-gnome/dynamic/*
-
+/default-*.jpg
+/gnome/dynamic*.xml
+/openSUSE
+/openSUSE.tar.gz
+/gnome/dynamic/*

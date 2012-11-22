@@ -12,7 +12,7 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
-openSUSE.d: gfxboot.d bootsplash.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d plymouth.d
+openSUSE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d plymouth.d
 	cp Makefile LICENSE openSUSE
 
 gfxboot.d: defaults
@@ -31,13 +31,6 @@ gfxboot.d: defaults
 	rm ~/.fonts/FifthLeg-Heavy-Cyrillic.otf
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
 	rm tmp.png
-
-bootsplash.d:
-	mkdir -p openSUSE
-	rm -rf openSUSE/bootsplash
-	cd boot ;\
-	./bootsplash.php
-	cp -a boot/bootsplash/openSUSE openSUSE/bootsplash
 
 grub2.d:
 	rm -rf openSUSE/grub2
@@ -175,10 +168,6 @@ gimp.d:
 	inkscape -w 300 -e openSUSE/gimp/splash.png gimp/splash.svg
 
 install: # do not add requires here, this runs from generated openSUSE
-	mkdir -p ${DESTDIR}/etc/bootsplash/themes/${THEME}
-	cp -a bootsplash/* ${DESTDIR}/etc/bootsplash/themes/${THEME}
-	cp LICENSE ${DESTDIR}/etc/bootsplash/themes/${THEME}/LICENSE
-
 	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
 
 	install -d ${DESTDIR}/usr/share/wallpapers
