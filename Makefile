@@ -25,6 +25,11 @@ gfxboot.d: defaults
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	mkdir -p ~/.fonts
+	cp gfxboot/FifthLeg-Heavy-Cyrillic.otf ~/.fonts
+	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
+	rm ~/.fonts/FifthLeg-Heavy-Cyrillic.otf
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
 	rm tmp.png
 
 bootsplash.d:
