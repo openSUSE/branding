@@ -1,5 +1,5 @@
 NAME=lightrays
-VERSION=12.2
+VERSION=12.3
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
