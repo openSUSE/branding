@@ -151,11 +151,6 @@ gnome.d: gnome_dynamic
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
 	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
 
-susegreeter.d:
-	rm -rf openSUSE/SUSEgreeter
-	mkdir -p openSUSE/SUSEgreeter
-	inkscape -w 800 -e openSUSE/SUSEgreeter/background.png kde-workspace/SUSEgreeter/background.svg
-
 xfce.d:
 	rm -rf openSUSE/xfce
 	mkdir -p openSUSE/xfce
