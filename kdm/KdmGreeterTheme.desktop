@@ -3,9 +3,8 @@
 
 [KdmGreeterTheme]
 Greeter=openSUSE.xml
-Name=openSUSE 12.3 KDM Theme
-Description=12.3 version of openSUSE KDM theme (lightray)
-Author=Eugene Trounev[it-s], Bruno Friedmann[tigerfoot], Marguerite Su[marguerite], Marcus Moeller[marcus]
-Copyright=GPL v3.0 2012 openSUSE Artwork Team
+Name=openSUSE KDE4
+Description= openSUSE Theme
+Author=openSUSE Artwork Team
+Copyright=(c) 2012 openSUSE Artwork Team
 Screenshot=screenshot.png
-
