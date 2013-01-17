@@ -3,8 +3,8 @@
 
 [KdmGreeterTheme]
 Greeter=openSUSE.xml
-Name=openSUSE KDE4
-Description= openSUSE Theme
+Name=openSUSE 12.3 KDM theme
+Description=12.3 version of the openSUSE KDM Theme (grow)
 Author=openSUSE Artwork Team
-Copyright=(c) 2012 openSUSE Artwork Team
+Copyright=GPL v3.0 2013 openSUSE Artwork Team
 Screenshot=screenshot.png
