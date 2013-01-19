@@ -1,6 +1,6 @@
 [Plymouth Theme]
-Name=openSUSE
-Description=.The openSUSE branding for plymouth
+Name=openSUSE 12.3 theme
+Description=openSUSE 12.3 Plymouth theme
 ModuleName=script
 
 [script]
