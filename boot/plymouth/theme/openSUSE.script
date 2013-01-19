@@ -61,7 +61,7 @@ else {
   anim.sprite = SpriteNew();
   anim.sprite.SetImage(RotatedImage (0));
   anim.sprite.SetX((Window.GetX() + Window.GetWidth() - RotatedImage(0).GetWidth()) / 2.5);
-  anim.sprite.SetY((Window.GetY() + Window.GetHeight() - RotatedImage(0).GetHeight()) / 2 + 75);
+  anim.sprite.SetY((Window.GetY() + Window.GetHeight() - RotatedImage(0).GetHeight()) / 2 + 100);
   anim.angle = 0;
   anim.index = 0;
 }
