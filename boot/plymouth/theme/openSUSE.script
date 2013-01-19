@@ -32,6 +32,7 @@ fun RotatedImage (index){
 	return RotatedImageCache[index];
 	}
 
+scrnratio = Window.GetWidth() / Window.GetHeight();
 
 if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
   background.original_image = ImageNew("suspend.png");
@@ -50,8 +51,21 @@ else {
     logo_it.image = ImageNew("shutdown-it.png");
     logo_de.image = ImageNew("shutdown-de.png");
   }
-  background.original_image = ImageNew("background.png");
-  geeko.original_image = ImageNew("logo.png");
+  if (scrnratio < 1.29 ) {
+       background.original_image = ImageNew("blank-background-54.png");
+       geeko.original_image = ImageNew("background-54.png");
+  } else {
+  if (scrnratio < 1.55 ) {
+       background.original_image = ImageNew("blank-background-43.png");
+       geeko.original_image = ImageNew("background-43.png");
+  } else {
+  if (scrnratio < 1.75 ) {
+       background.original_image = ImageNew("blank-background-1610.png");
+       geeko.original_image = ImageNew("background-1610.png");
+  } else {
+       background.original_image = ImageNew("blank-background-169.png");
+       geeko.original_image = ImageNew("background-169.png");
+  }}}
   Window.SetBackgroundTopColor(0.102, 0.102, 0.102);
   Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
 
