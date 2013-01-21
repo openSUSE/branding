@@ -332,6 +332,7 @@ else {
           logo_en.sprite.SetOpacity (0);
           logo_fr.sprite.SetOpacity (0);
           logo_de.sprite.SetOpacity (0);
+          logo_ru.sprite.SetOpacity (0);
           anim.sprite.SetOpacity (0);
        }
    }
