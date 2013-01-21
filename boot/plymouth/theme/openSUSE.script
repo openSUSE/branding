@@ -45,11 +45,13 @@ else {
   logo_fr.image = ImageNew("boot-fr.png");
   logo_it.image = ImageNew("boot-it.png");
   logo_de.image = ImageNew("boot-de.png");
+  logo_ru.image = ImageNew("boot-ru.png");
   } else {
     logo_en.image = ImageNew("shutdown-en.png");
     logo_fr.image = ImageNew("shutdown-fr.png");
     logo_it.image = ImageNew("shutdown-it.png");
     logo_de.image = ImageNew("shutdown-de.png");
+    logo_ru.image = ImageNew("shutdown-ru.png");
   }
   if (scrnratio < 1.29 ) {
        background.original_image = ImageNew("blank-background-54.png");
@@ -108,6 +110,13 @@ logo_de.opacity_angle = 0;
 logo_de.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_de.image.GetWidth())  / 2.5);
 logo_de.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_de.image.GetHeight())  / 2);
 logo_de.sprite.SetOpacity (0);
+# -- Russian --
+logo_ru.sprite = SpriteNew();
+logo_ru.sprite.SetImage(logo_ru.image);
+logo_ru.opacity_angle = 0;
+logo_ru.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_ru.image.GetWidth())  / 2.5);
+logo_ru.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_ru.image.GetHeight())  / 2);
+logo_ru.sprite.SetOpacity (0);
 
 background.image = background.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
 background.sprite = SpriteNew();
@@ -294,25 +303,29 @@ if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
 else {
        if (progress < 0.9) {
           geeko.sprite.SetOpacity (progress * 1.2);
-       if (progress < 0.20) {
+       if (progress < 0.15) {
            logo_en.sprite.SetOpacity (1);
        } else {
-       if (progress < 0.40) {
+       if (progress < 0.30) {
            logo_en.sprite.SetOpacity (0);
            logo_de.sprite.SetOpacity (1);
        } else {
-       if (progress < 0.60) {
+       if (progress < 0.45) {
            logo_de.sprite.SetOpacity (0);
            logo_fr.sprite.SetOpacity (1);
        } else {
-       if (progress < 0.80) {
+       if (progress < 0.60) {
            logo_fr.sprite.SetOpacity (0);
            logo_it.sprite.SetOpacity (1);
        } else {
+       if (progress < 0.75) {
+           logo_it.sprite.SetOpacity (0);
+           logo_ru.sprite.SetOpacity (1);
+       } else {
        if (progress < 0.90) {
-           logo_it.sprite.SetOpacity (0.5);
+           logo_ru.sprite.SetOpacity (0.5);
            anim.sprite.SetOpacity (0.5);
-       }}}}}}
+       }}}}}}}
        else {
           geeko.sprite.SetOpacity (1);
           logo_it.sprite.SetOpacity (0);
