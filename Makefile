@@ -50,7 +50,7 @@ plymouth.d:
 	inkscape -w 1280 -C -e openSUSE/plymouth/theme/blank-background-54.png blank-background-54.svg
 	inkscape -w 1280 -C -e openSUSE/plymouth/theme/background-54.png background-54.svg
 	inkscape -w 1600 -C -e openSUSE/plymouth/theme/blank-background-43.png blank-background-43.svg
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/background-43.png blank-background-43.svg
+	inkscape -w 1600 -C -e openSUSE/plymouth/theme/background-43.png background-43.svg
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
