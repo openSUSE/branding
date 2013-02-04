@@ -58,9 +58,11 @@ kdelibs.d: defaults
 	cp kdelibs/body-background.jpg kdelibs/css.diff openSUSE/kdelibs
 
 yast.d:
+#	create directly the background from the 4:3 root's blank background
 	rm -rf openSUSE/yast_wizard
 	mkdir -p openSUSE
 	cp -a yast openSUSE/yast_wizard
+	inkscape -w 1600 -C -e openSUSE/yast_wizard/background.png blank-background-43.svg
 	rm -f openSUSE/yast_wizard/*.svg
 
 wallpaper.d: defaults
