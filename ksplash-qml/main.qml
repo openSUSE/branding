@@ -1,7 +1,7 @@
 /*   vim:set foldenable foldmethod=marker:
  *
  *   Copyright (C) 2011 Ivan Cukic <ivan.cukic(at)kde.org>
- *   Copyright (C) 2012 Bruno Friedmann <bruno(dot)friedmann(at)opensuse(dot)org>
+ *   Copyright (C) 2013 Bruno Friedmann <bruno(dot)friedmann(at)opensuse(dot)org>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License version 2,
@@ -19,6 +19,14 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
+/*
+ * Note on 12.3 Version 
+ * The big geeko in the middle of the screen is just commented
+ * as it already exist on the leaves grow background
+ * So We just keep kde logo middle centered on the screen
+ * 
+ */
+
 import Qt 4.7
 
 Item {
@@ -30,8 +38,8 @@ Item {
     /* property declarations --------------------------{{{ */
     property int stage
     property int iconSize: (screenSize.width <= 1024) ? 96 : 192
-    property int logoSW: (screenSize.width <= 1024) ? 301 : 602
-    property int logoSH: (screenSize.width <= 1024) ? 179 : 358
+    //property int logoSW: (screenSize.width <= 1024) ? 301 : 602
+    //property int logoSH: (screenSize.width <= 1024) ? 179 : 358
     /* }}} */
 
     /* signal declarations ----------------------------{{{ */
@@ -42,34 +50,39 @@ Item {
     onStageChanged: {
         if (stage == 1) {
           background.opacity = 1
-          mask.opacity = 0.5
           gear.opacity = 0.5
           geeko.opacity = 0.5
+//          mask.opacity = 0.5
         }
         if (stage == 2) {
+	  background.opacity = 0.8
           gear.opacity = 0.8
-          geeko.opacity = 0.8
-          mask.opacity = 1
+          // geeko.opacity = 0.8
+//          mask.opacity = 1
           letter.opacity = 1
         }
         if (stage == 3) {
+	  background.opacity = 0.6
           gear.opacity = 1
-          geeko.opacity = 1
-          mask.opacity = 1
+          // geeko.opacity = 1
+//          mask.opacity = 1
           letter.opacity = 1
         }
         if (stage == 4) {
+	  background.opacity = 0.5
         }
         if (stage == 5) {
+	  background.opacity = 0.3
           letter.opacity = 0.5
           gear.opacity = 0.5
-          mask.opacity = 0.5
+//          mask.opacity = 0.5
 	  logo.opacity = 1
         }
         if (stage == 6) {
+	  background.opacity = 0.1
           letter.opacity = 0
           gear.opacity = 0
-          mask.opacity = 0
+//          mask.opacity = 0
 	  logo.opacity = 0  
         }
     }
@@ -93,7 +106,7 @@ Item {
         opacity: 1
         Behavior on opacity { NumberAnimation { duration: 500; easing { type: Easing.OutInQuad } } }
     }
-
+/*
     Image {
         id: geeko
 
@@ -109,16 +122,36 @@ Item {
         opacity: 0
         Behavior on opacity { NumberAnimation { duration: 500; easing { type: Easing.OutInQuad } } }
     }
-
-    Image {
-        id: gear
+*/
+/*Not used
+     Image {
+        id: mask
 
         height: iconSize
         width: iconSize
         smooth: true
 
         x: (parent.width - width) / 2
-        y: ((parent.height - height) / 2) + geeko.y 
+        y: (parent.height - height) / 2
+//        y: ((parent.height - height) / 2) + geeko.y 
+
+        source: "images/kdemask.png"
+
+        opacity: 0
+        Behavior on opacity { NumberAnimation { duration: 1000; easing { type: Easing.InOutQuad } } }
+    }
+*/
+
+  Image {
+        id: gear
+
+        height: iconSize
+        width: iconSize
+        smooth: true
+
+        x: (parent.width - width) / 2 
+        y: (parent.height - height) / 2 + 2
+	//y: ((parent.height - height) / 2) + geeko.y 
 
         source: "images/kdegear.png"
 
@@ -140,30 +173,15 @@ Item {
     }
 
     Image {
-        id: mask
-
-        height: iconSize
-        width: iconSize
-        smooth: true
-
-        x: (parent.width - width) / 2
-        y: ((parent.height - height) / 2) + geeko.y 
-
-        source: "images/kdemask.png"
-
-        opacity: 0
-        Behavior on opacity { NumberAnimation { duration: 1000; easing { type: Easing.InOutQuad } } }
-    }
-
-    Image {
         id: letter
 
         height: iconSize
         width: iconSize
         smooth: true
 
-        x: (parent.width - width) / 2 + 3
-        y: (parent.height - height) / 2  + (geeko.y - 3)
+        x: (parent.width - width) / 2 
+        y: (parent.height - height) / 2 - 1  
+        //y: (parent.height - height) / 2  + (geeko.y - 3)
 
         source: "images/kdeletter.png"
 
@@ -179,7 +197,8 @@ Item {
         smooth: true
 
         x: (parent.width - width) / 2
-        y: (parent.height - height) / 2  + (geeko.y - 1)
+        y: (parent.height - height) / 2  
+//        y: (parent.height - height) / 2  + (geeko.y - 1)
 
         source: "images/kdelogo-contrast.png"
 
