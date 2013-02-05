@@ -13,8 +13,6 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   top = 25%
   height = 50%	
 
-  #menu_pixmap_style = "boot_menu_*.png"
-
   item_font = "DejaVu Sans Bold 14"
   item_color = "#fff"
   item_height = 32
