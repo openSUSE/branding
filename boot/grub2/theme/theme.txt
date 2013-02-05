@@ -16,13 +16,13 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   menu_pixmap_style = "boot_menu_*.png"
 
   item_font = "DejaVu Sans Bold 14"
-  item_color = "#000"
+  item_color = "#fff"
   item_height = 32
   item_icon_space = 8
   item_spacing = 2
 
   selected_item_font = "DejaVu Sans Bold 14"
-  selected_item_color= "#fff"
+  selected_item_color= "#000"
   selected_item_pixmap_style = "select_*.png"
 
   icon_height = 32

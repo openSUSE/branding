@@ -35,7 +35,11 @@ gfxboot.d: defaults
 grub2.d:
 	rm -rf openSUSE/grub2
 	mkdir -p openSUSE/grub2
-	cp -a boot/grub2/backgrounds openSUSE/grub2/
+	mkdir -p openSUSE/grub2/backgrounds
+	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-1610.png grub-1610.svg
+	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-169.png grub-169.svg
+	inkscape -w 1280 -C -e openSUSE/grub2/backgrounds/default-54.png grub-54.svg
+	inkscape -w 1600 -C -e openSUSE/grub2/backgrounds/default-43.png grub-43.svg
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
