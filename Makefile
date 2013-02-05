@@ -12,11 +12,21 @@ openSUSE.tar.gz: openSUSE.d
 	tar cvfz openSUSE.tar.gz openSUSE
 #	rm -r openSUSE
 
+openSUSE.tar.gz_clean:
+	rm -f openSUSE.tar.gz
+
+CLEAN_DEPS+=openSUSE.tar.gz_clean
+
 openSUSE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d plymouth.d
 	cp Makefile LICENSE openSUSE
 
+openSUSE.d_clean:
+	rm -rf openSUSE/Makefile
+	rm -rf openSUSE/LICENSE
+
+CLEAN_DEPS+=openSUSE.d_clean
+
 gfxboot.d: defaults
-	rm -rf openSUSE/gfxboot
 	inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
@@ -32,9 +42,12 @@ gfxboot.d: defaults
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
 	rm tmp.png
 
+gfxboot.d_clean:
+	rm -rf openSUSE/gfxboot
+
+CLEAN_DEPS+=gfxboot.d_clean
+
 grub2.d:
-	rm -rf openSUSE/grub2
-	mkdir -p openSUSE/grub2
 	mkdir -p openSUSE/grub2/backgrounds
 	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-1610.png grub2-1610.svg
 	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-169.png grub2-169.svg
@@ -42,6 +55,11 @@ grub2.d:
 	inkscape -w 1600 -C -e openSUSE/grub2/backgrounds/default-43.png grub2-43.svg
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
+
+grub2.d_clean:
+	rm -rf openSUSE/grub2
+
+CLEAN_DEPS+=grub2.d_clean
 
 PLS=openSUSE/plymouth/theme/openSUSE.script
 
@@ -99,20 +117,27 @@ plymouth.d_clean:
 CLEAN_DEPS+=plymouth.d_clean
 
 kdelibs.d: defaults
-	rm -rf openSUSE/kdelibs
 	mkdir -p openSUSE/kdelibs
 	cp kdelibs/body-background.jpg kdelibs/css.diff openSUSE/kdelibs
 
+kdelibs.d_clean:
+	rm -rf openSUSE/kdelibs
+
+CLEAN_DEPS+=kdelibs.d_clean
+
 yast.d:
 #	create directly the background from the 4:3 root's blank background
-	rm -rf openSUSE/yast_wizard
-	mkdir -p openSUSE
-	cp -a yast openSUSE/yast_wizard
+	mkdir -p openSUSE/yast_wizard
+	cp -a yast/* openSUSE/yast_wizard
 	inkscape -w 1600 -C -e openSUSE/yast_wizard/background.png blank-background-43.svg
 	rm -f openSUSE/yast_wizard/*.svg
 
+yast.d_clean:
+	rm -rf openSUSE/yast_wizard
+
+CLEAN_DEPS+=yast.d_clean
+
 wallpaper.d: defaults
-	rm -rf openSUSE/wallpapers
 	mkdir -p openSUSE/wallpapers
 	cp wallpapers/default-1600x1200.jpg.desktop openSUSE/wallpapers
 	cp wallpapers/default-1920x1200.jpg.desktop openSUSE/wallpapers
@@ -134,6 +159,11 @@ wallpaper.d: defaults
 	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
+wallpaper.d_clean:
+	rm -rf openSUSE/wallpapers
+
+CLEAN_DEPS+=wallpaper.d_clean
+
 # When changing the commands below, also update the commands in gnome_dynamic
 defaults:
 	inkscape -e default-1280x1024.png -w 1280 background-54.svg
@@ -149,34 +179,54 @@ defaults:
 	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
 	rm default-1920x1200.png default-1920x1080.png default-1600x1200.png default-1280x1024.png
 
-ksplashx.d: 
-	rm -rf openSUSE/ksplashx
+defaults_clean:
+	rm -f default-1280x1024.jpg
+	rm -f default-1600x1200.jpg
+	rm -f default-1920x1080.jpg
+	rm -f default-1920x1200.jpg
+
+CLEAN_DEPS+=defaults_clean
+
+ksplashx.d: defaults
 	mkdir -p openSUSE/ksplashx
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1920x1200 openSUSE/ksplashx/
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1920x1200/opensuse-logo.png logo.svg
 	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplashx/Preview.png
 
+ksplashx.d_clean:
+	rm -rf openSUSE/ksplashx
+
+CLEAN_DEPS+=ksplashx.d_clean
+
 #This is called openSUSE
 kdm.d: defaults
-	rm -rf openSUSE/kdm
-	mkdir -p openSUSE/kdm/themes
-	cp -a kdm openSUSE/kdm/themes/openSUSE
+	mkdir -p openSUSE/kdm/themes/openSUSE
+	cp -a kdm/* openSUSE/kdm/themes/openSUSE
 	#Keep the source but don't package it
 	rm openSUSE/kdm/themes/openSUSE/panel.svgz
-	mv openSUSE/kdm/themes/openSUSE/pics openSUSE/kdm/
+	cp -r openSUSE/kdm/themes/openSUSE/pics/* openSUSE/kdm/
+	rm -rf openSUSE/kdm/themes/openSUSE/pics
+
+kdm.d_clean:
+	rm -rf openSUSE/kdm
+
+CLEAN_DEPS+=kdm.d_clean
 
 ksplash-qml.d: 
-	rm -rf openSUSE/ksplash-qml
 	mkdir -p openSUSE/ksplash-qml
 	sed "s:@VERSION@:${VERSION}:g" ksplash-qml/Theme.rc.in > openSUSE/ksplash-qml/Theme.rc
 	cp ksplash-qml/main.qml openSUSE/ksplash-qml/main.qml
 	cp ksplash-qml/Preview.png openSUSE/ksplash-qml/Preview.png
 	cp -a ksplash-qml/images openSUSE/ksplash-qml/
 
+ksplash-qml.d_clean:
+	rm -rf openSUSE/ksplash-qml
+
+CLEAN_DEPS+=ksplash-qml.d_clean
+
 # Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
 gnome_dynamic: defaults
-	rm -rf gnome/dynamic
 	mkdir -p gnome/dynamic
 	for file in morning night; do \
 		inkscape -z -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
@@ -197,29 +247,50 @@ gnome_dynamic: defaults
 	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest.xml
 	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g;s:7200:6:g;s:14400:12:g;s:18000:15:g;s:25200:21:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest-fast.xml
 
+gnome_dynamic_clean:
+	rm -rf gnome/dynamic
+
+CLEAN_DEPS+=gnome_dynamic_clean
+
 gnome.d: gnome_dynamic
-	rm -rf openSUSE/gnome
 	mkdir -p openSUSE/gnome
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
 	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
 	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
 
+gnome.d_clean:
+	rm -rf openSUSE/gnome
+
+CLEAN_DEPS+=gnome.d_clean
+
 susegreeter.d:
-	rm -rf openSUSE/SUSEgreeter
 	mkdir -p openSUSE/SUSEgreeter
 	inkscape -w 800 -e openSUSE/SUSEgreeter/background.png kde-workspace/SUSEgreeter/background.svg
 
+susegreeter.d_clean:
+	rm -rf openSUSE/SUSEgreeter
+
+CLEAN_DEPS+=susegreeter.d_clean
+
 xfce.d:
-	rm -rf openSUSE/xfce
 	mkdir -p openSUSE/xfce
 	inkscape -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
 	cp xfce/COPYING openSUSE/xfce/COPYING
 
+xfce.d_clean:
+	rm -rf openSUSE/xfce
+
+CLEAN_DEPS+=xfce.d_clean
+
 gimp.d:
-	rm -rf openSUSE/gimp
 	mkdir -p openSUSE/gimp
 	inkscape -w 300 -e openSUSE/gimp/splash.png gimp/splash.svg
+
+gimp.d_clean:
+	rm -rf openSUSE/gimp
+
+CLEAN_DEPS+=gimp.d_clean
 
 install: # do not add requires here, this runs from generated openSUSE
 	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
@@ -295,6 +366,7 @@ install: # do not add requires here, this runs from generated openSUSE
 	install -D gimp/splash.png ${DESTDIR}/usr/share/gimp/2.0/images/gimp-splash.png
 
 clean: ${CLEAN_DEPS}
+	rmdir openSUSE
 
 check: # do not add requires here, this runs from generated openSUSE
 	## Check GNOME-related xml files have contant that make sense
