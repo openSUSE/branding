@@ -164,20 +164,28 @@ wallpaper.d_clean:
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-# When changing the commands below, also update the commands in gnome_dynamic
-defaults:
+default-1280x1024.jpg: background-54.svg
 	inkscape -e default-1280x1024.png -w 1280 background-54.svg
 	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
-	
+	rm default-1280x1024.png
+
+default-1600x1200.jpg: background-43.svg
 	inkscape -e default-1600x1200.png -w 1600 background-43.svg
 	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
-	
+	rm default-1600x1200.png
+
+default-1920x1080.jpg: background-169.svg
 	inkscape -e default-1920x1080.png -w 1920 background-169.svg
 	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
-	
+	rm default-1920x1080.png
+
+default-1920x1200.jpg: background-1610.svg
 	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
 	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
-	rm default-1920x1200.png default-1920x1080.png default-1600x1200.png default-1280x1024.png
+	rm default-1920x1200.png
+
+# When changing the commands below, also update the commands in gnome_dynamic
+defaults: default-1280x1024.jpg default-1600x1200.jpg default-1920x1080.jpg default-1920x1200.jpg
 
 defaults_clean:
 	rm -f default-1280x1024.jpg
