@@ -34,8 +34,8 @@ terminal-font: "Gnu Unifont Mono Regular 16"
 + progress_bar {
   id = "__timeout__"
 
-  left = 30%
-  top = 80%
+  left = 33%
+  top = 85%
   height = 20
   width = 40%
 

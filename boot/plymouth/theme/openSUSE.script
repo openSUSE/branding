@@ -253,7 +253,7 @@ else {
 	}
 	else {
 		if (progress < 0.9) {
-	          geeko.sprite.SetOpacity (progress * -1.2);
+	          geeko.sprite.SetOpacity (1 - (progress * 1.2));
 	       }
 	       else {
 	          geeko.sprite.SetOpacity (0);
