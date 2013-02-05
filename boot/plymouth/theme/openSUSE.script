@@ -40,19 +40,6 @@ if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
   Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
 }
 else {
-  if (Plymouth.GetMode() == "boot") {
-  logo_en.image = ImageNew("boot-en.png");
-  logo_fr.image = ImageNew("boot-fr.png");
-  logo_it.image = ImageNew("boot-it.png");
-  logo_de.image = ImageNew("boot-de.png");
-  logo_ru.image = ImageNew("boot-ru.png");
-  } else {
-    logo_en.image = ImageNew("shutdown-en.png");
-    logo_fr.image = ImageNew("shutdown-fr.png");
-    logo_it.image = ImageNew("shutdown-it.png");
-    logo_de.image = ImageNew("shutdown-de.png");
-    logo_ru.image = ImageNew("shutdown-ru.png");
-  }
   if (scrnratio < 1.29 ) {
        background.original_image = ImageNew("blank-background-54.png");
        geeko.original_image = ImageNew("background-54.png");
@@ -71,52 +58,7 @@ else {
   Window.SetBackgroundTopColor(0.102, 0.102, 0.102);
   Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
 
-  anim.image= ImageNew("animation.png");
-  anim.original_image= anim.image.Scale(anim.target_width, anim.target_width);
-
-  anim.sprite = SpriteNew();
-  anim.sprite.SetImage(RotatedImage (0));
-  anim.sprite.SetX((Window.GetX() + Window.GetWidth() - RotatedImage(0).GetWidth()) / 2.5);
-  anim.sprite.SetY((Window.GetY() + Window.GetHeight() - RotatedImage(0).GetHeight()) / 2 + 100);
-  anim.angle = 0;
-  anim.index = 0;
 }
-
-# -- English --
-logo_en.sprite = SpriteNew();
-logo_en.sprite.SetImage(logo_en.image);
-logo_en.opacity_angle = 0;
-logo_en.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_en.image.GetWidth())  / 2.5);
-logo_en.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_en.image.GetHeight())  / 2);
-logo_en.sprite.SetOpacity (0);
-# -- French --
-logo_fr.sprite = SpriteNew();
-logo_fr.sprite.SetImage(logo_fr.image);
-logo_fr.opacity_angle = 0;
-logo_fr.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_fr.image.GetWidth())  / 2.5);
-logo_fr.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_fr.image.GetHeight())  / 2);
-logo_fr.sprite.SetOpacity (0);
-# -- Italian --
-logo_it.sprite = SpriteNew();
-logo_it.sprite.SetImage(logo_it.image);
-logo_it.opacity_angle = 0;
-logo_it.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_it.image.GetWidth())  / 2.5);
-logo_it.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_it.image.GetHeight())  / 2);
-logo_it.sprite.SetOpacity (0);
-# -- German --
-logo_de.sprite = SpriteNew();
-logo_de.sprite.SetImage(logo_de.image);
-logo_de.opacity_angle = 0;
-logo_de.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_de.image.GetWidth())  / 2.5);
-logo_de.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_de.image.GetHeight())  / 2);
-logo_de.sprite.SetOpacity (0);
-# -- Russian --
-logo_ru.sprite = SpriteNew();
-logo_ru.sprite.SetImage(logo_ru.image);
-logo_ru.opacity_angle = 0;
-logo_ru.sprite.SetX((Window.GetX() + Window.GetMaxWidth()  - logo_ru.image.GetWidth())  / 2.5);
-logo_ru.sprite.SetY((Window.GetY() + Window.GetMaxHeight()  - logo_ru.image.GetHeight())  / 2);
-logo_ru.sprite.SetOpacity (0);
 
 background.image = background.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
 background.sprite = SpriteNew();
@@ -301,40 +243,22 @@ if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
       }
   }
 else {
-       if (progress < 0.9) {
-          geeko.sprite.SetOpacity (progress * 1.2);
-       if (progress < 0.15) {
-           logo_en.sprite.SetOpacity (1);
-       } else {
-       if (progress < 0.30) {
-           logo_en.sprite.SetOpacity (0);
-           logo_de.sprite.SetOpacity (1);
-       } else {
-       if (progress < 0.45) {
-           logo_de.sprite.SetOpacity (0);
-           logo_fr.sprite.SetOpacity (1);
-       } else {
-       if (progress < 0.60) {
-           logo_fr.sprite.SetOpacity (0);
-           logo_it.sprite.SetOpacity (1);
-       } else {
-       if (progress < 0.75) {
-           logo_it.sprite.SetOpacity (0);
-           logo_ru.sprite.SetOpacity (1);
-       } else {
-       if (progress < 0.90) {
-           logo_ru.sprite.SetOpacity (0.5);
-           anim.sprite.SetOpacity (0.5);
-       }}}}}}}
-       else {
-          geeko.sprite.SetOpacity (1);
-          logo_it.sprite.SetOpacity (0);
-          logo_en.sprite.SetOpacity (0);
-          logo_fr.sprite.SetOpacity (0);
-          logo_de.sprite.SetOpacity (0);
-          logo_ru.sprite.SetOpacity (0);
-          anim.sprite.SetOpacity (0);
-       }
+	if (Plymouth.GetMode() == "boot") {
+	       if (progress < 0.9) {
+	          geeko.sprite.SetOpacity (progress * 1.2);
+	       }
+	       else {
+	          geeko.sprite.SetOpacity (1);
+	       }
+	}
+	else {
+		if (progress < 0.9) {
+	          geeko.sprite.SetOpacity (progress * -1.2);
+	       }
+	       else {
+	          geeko.sprite.SetOpacity (0);
+	       }
+	}
    }
  }
 
