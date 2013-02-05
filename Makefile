@@ -43,18 +43,60 @@ grub2.d:
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
-plymouth.d:
-	rm -rf openSUSE/plymouth
+PLS=openSUSE/plymouth/theme/openSUSE.script
+
+openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
 	mkdir -p openSUSE/plymouth
 	cp -a boot/plymouth/theme openSUSE/plymouth/
+
+PLYMOUTH_DEPS=${PLS}
+
+openSUSE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${PLS}
 	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-1610.png blank-background-1610.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-1610.png
+
+openSUSE/plymouth/theme/background-1610.png: background-1610.svg ${PLS}
 	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-1610.png background-1610.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-1610.png
+
+openSUSE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
 	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-169.png blank-background-169.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-169.png
+
+openSUSE/plymouth/theme/background-169.png: background-169.svg ${PLS}
 	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-169.png background-169.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
+
+openSUSE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
 	inkscape -w 1280 -C -e openSUSE/plymouth/theme/blank-background-54.png blank-background-54.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-54.png
+
+openSUSE/plymouth/theme/background-54.png: background-54.svg ${PLS}
 	inkscape -w 1280 -C -e openSUSE/plymouth/theme/background-54.png background-54.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
+
+openSUSE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
 	inkscape -w 1600 -C -e openSUSE/plymouth/theme/blank-background-43.png blank-background-43.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-43.png
+
+openSUSE/plymouth/theme/background-43.png: background-43.svg ${PLS}
 	inkscape -w 1600 -C -e openSUSE/plymouth/theme/background-43.png background-43.svg
+
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-43.png
+
+plymouth.d: ${PLYMOUTH_DEPS}
+
+plymouth.d_clean:
+	rm -rf openSUSE/plymouth
+
+CLEAN_DEPS+=plymouth.d_clean
 
 kdelibs.d: defaults
 	rm -rf openSUSE/kdelibs
@@ -251,6 +293,8 @@ install: # do not add requires here, this runs from generated openSUSE
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
 	install -D gimp/splash.png ${DESTDIR}/usr/share/gimp/2.0/images/gimp-splash.png
+
+clean: ${CLEAN_DEPS}
 
 check: # do not add requires here, this runs from generated openSUSE
 	## Check GNOME-related xml files have contant that make sense
