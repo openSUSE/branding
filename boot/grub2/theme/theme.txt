@@ -44,7 +44,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   text_color = "#000"
   fg_color = "#98ce57"
 
-  bg_color = "#bbb"
+  bg_color = "#fff"
   border_color = "#fff"
 
   # instead of the above colors, use pixmaps
