@@ -4,16 +4,16 @@ desktop-image: "background.png"
 
 title-text: ""
 
-terminal-box: "terminal_*.png"
+terminal-box: "terminal_box_*.png"
 terminal-font: "Gnu Unifont Mono Regular 16"
 
 + boot_menu {
-  left = 10%
-  width = 80%
-  top = 20%
+  left = 33%
+  width = 50%
+  top = 25%
   height = 50%	
 
-  menu_pixmap_style = "boot_menu_*.png"
+  #menu_pixmap_style = "boot_menu_*.png"
 
   item_font = "DejaVu Sans Bold 14"
   item_color = "#fff"
