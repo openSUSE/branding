@@ -42,9 +42,9 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   font = "DejaVu Sans Regular 12"
 
   text_color = "#000"
-  fg_color = "#bbb"
+  fg_color = "#98ce57"
 
-  bg_color = "#3a3"
+  bg_color = "#bbb"
   border_color = "#fff"
 
   # instead of the above colors, use pixmaps
