@@ -64,7 +64,7 @@ QPushButton:hover {
 }
 
 QPushButton:default:hover {
-        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ad4, stop: 1 #9c3 );
+        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #b9dc8c, stop: 1 #98ce57 );
 }
 
 QPushButton:pressed {
@@ -74,7 +74,7 @@ QPushButton:pressed {
 QPushButton:default {
 	margin: 0px;
 	color: white;
-        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #9c3, stop: 1 #690 ) ;
+        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #98ce57, stop: 1 #689b2d ) ;
 }
 
 QPushButton:disabled {
@@ -117,7 +117,7 @@ QMenu {
 }
 
 QMenu:selected {
-	background-color: #9c3;
+	background-color: #98ce57;
 	color: black;
 
 }
@@ -136,8 +136,8 @@ QProgressBar {
 
 QProgressBar:chunk {
 	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-			   stop: 0 #9c3 , stop: 0.2 #ad4 , stop: 1 #9c3 );
-	border: 1px solid #9c3;
+			   stop: 0 #98ce57 , stop: 0.2 #b9dc8c , stop: 1 #98ce57 );
+	border: 1px solid #98ce57;
 	border-radius: 4px;
 }
 
@@ -243,13 +243,13 @@ QTreeView {
 }
 
 QTreeView::item:hover {
-        background-color: #d2e7a9 ;
+        background-color: #b9dc8cf ;
 
 }
 
 QTreeView::item:selected ,
 QTreeView::branch:selected { 
-	background-color: #9c3;
+	background-color: #98ce57;
 }
 
 
@@ -303,7 +303,7 @@ QListView {
                                   stop: 0 #f8f8f8, stop: 1 #dddddd);
         border: 1px solid #C4C4C3;
         border-bottom-color: #C2C7CB; /* same as the pane color */
-	selection-background-color: #9c3;
+	selection-background-color: #98ce57;
 	selection-color: black;
 }
 
@@ -316,7 +316,7 @@ QTreeView,  QTextBrowser,  QLineEdit, QSpinBox, QTextEdit
 	margin: 0px; 
         color: #000;
 	background: #ffff;
-        selection-background-color: #9c3;
+        selection-background-color: #98ce57;
         selection-color: #000;
 }
 
@@ -325,17 +325,17 @@ QTreeView:hover, QTextBrowser:hover, QLineEdit:hover, QSpinBox:hover, QTextEdit:
 }
 
 QTreeView:focus, QTextBrowser:focus, QLineEdit:focus, QSpinBox:focus, QTextEdit:hover {
-	border: 1px inset #9c3;
+	border: 1px inset #98ce57;
 }
 
 QComboBox:focus {
-	border: 1px outset #9c3;
+	border: 1px outset #98ce57;
 }
 
 QComboBox {
         color: #000;
 	background: #ffff;
-        selection-background-color: #9c3;
+        selection-background-color: #98ce57;
         selection-color: #000;
 }
 
@@ -365,7 +365,7 @@ QComboBox[editable=true]{
         margin: 0px; 
         color: #000;
         background: #ffffff;
-        selection-background-color: #9c3;
+        selection-background-color: #98ce57;
         selection-color: #000;
 } 
 
