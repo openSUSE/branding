@@ -7,3 +7,42 @@ base your work on into and then push it as new branch to github.
 Do not rebase the history - the repository becomes too large otherwise
 and we need to be able to deleted old branches at times.
 
+=========================================================================
+Working with branding repo in GitHub
+------------------------------------
+
+First, create a fork of openSUSE branding repo, here you have a guide: 
+https://help.github.com/articles/fork-a-repo 
+
+Then clone your fork in your PC:
+
+  git clone https://github.com/$YOUR_GITHUB_ACCOUNT/branding.git
+
+and add the original repository as remote:
+
+  cd branding
+  git remote add upstream https://github.com/openSUSE/branding.git
+
+Fetch the original content and checkout/merge the branch you want to work on:
+
+  git fetch upstream
+  git checkout -b 12.3
+  git merge upstream 12.3
+
+Now you can work with your local branch as you already know.
+
+To commit your changes to your fork, do:
+
+   git commit -a -m "A useful description (eventually bnc#NR) describing what change"
+      (use -a if all the changes are relatives to the same commit)
+   git push upstream 12.3
+
+Then you can create a pull request (here you have a guide: 
+https://help.github.com/articles/creating-a-pull-request
+
+If you want to sync with upstream changes, do a:
+ git fetch upstream
+ git merge upstream 12.3
+
+ (this action is manually what git pull will do if setup)
+ 
