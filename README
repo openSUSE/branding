@@ -11,6 +11,9 @@ and we need to be able to deleted old branches at times.
 Working with branding repo in GitHub
 ------------------------------------
 
+On github world : origin link to your forked repository, and we
+standarized the name of the original to upstream by convention.
+
 First, create a fork of openSUSE branding repo, here you have a guide: 
 https://help.github.com/articles/fork-a-repo 
 
@@ -35,7 +38,8 @@ To commit your changes to your fork, do:
 
    git commit -a -m "A useful description (eventually bnc#NR) describing what change"
       (use -a if all the changes are relatives to the same commit)
-   git push upstream 12.3
+   git push 
+	will update your repository fork.
 
 Then you can create a pull request (here you have a guide: 
 https://help.github.com/articles/creating-a-pull-request
