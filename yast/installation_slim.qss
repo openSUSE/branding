@@ -321,6 +321,7 @@ QTabWidget::tab-bar {
       stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
   }
   #work_area QPushButton:default:hover {
+    color: #fff;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
       stop: 0 #689b2d, stop: 0.7 #98ce57, stop: 1 #689b2d);
   }
