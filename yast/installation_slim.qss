@@ -318,11 +318,11 @@ QTabWidget::tab-bar {
     border: 1px solid #689b2d;
     color: #000;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-      stop: 0 #689b2d, stop: 0.8 #98ce57, stop: 1 #689b2d);
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
   }
   #work_area QPushButton:default:hover {
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
+      stop: 0 #689b2d, stop: 0.7 #98ce57, stop: 1 #689b2d);
   }
 
   /* odd dropdown button widget */
@@ -366,7 +366,7 @@ QTabWidget::tab-bar {
 }
   #work_area QProgressBar:chunk {
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-      stop: 0 #689b2d, stop: 0.8 #98ce57, stop: 1 #689b2d);
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
     border: 1px solid #689b2d;
   }
 
@@ -381,7 +381,7 @@ QTabWidget::tab-bar {
     min-height: 16px;
     border: 1px solid #689b2d;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
-      stop: 0 #689b2d, stop: 0.8 #98ce57, stop: 1 #689b2d);
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
     border-radius: 3px;
   }
 
@@ -422,7 +422,7 @@ QTabWidget::tab-bar {
     min-width: 16px;
     border: 1px solid #689b2d;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-      stop: 0 #689b2d, stop: 0.8 #98ce57, stop: 1 #689b2d);
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
     border-radius: 3px;
   }
   
