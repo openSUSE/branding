@@ -101,13 +101,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </fixed>
       </item>
       <item type="rect">
-<<<<<<< HEAD
-        <pos x="7" width="586" height="2"/>
-        <normal color="#485a61" alpha="1.0"/>
-      </item>
-      <item type="rect">
-=======
->>>>>>> 094cb093b2f798d4bbc02c0ff3995d988320516c
         <pos width="100%" height="50"/>
         <fixed>
           <item type="label" id="clock">
