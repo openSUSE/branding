@@ -20,6 +20,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <greeter>
 
 <!-- BACKGROUND -->
+
+<style font="Sans 12" window-text-color="#ffffff"/>
+
   <item type="pixmap" id="background" background="true">
     <normal file="background.jpg" alpha="1" scalemode="free"/>
     <pos x="0" y="0" width="100%" height="100%"/>
@@ -51,7 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
               <item type="rect" id="userlist-background">
                 <!-- 16 pixel per user in list -->
                 <pos x="22" width="50%" height="100%"/>
-                <normal color="#ffffff" alpha="0.9"/>
+                <normal color="#000000" alpha="0.3"/>
                 <fixed>
                   <item type="list" id="userlist">
                     <pos height="100%" width="100%"/>
@@ -60,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
               </item>
               <!-- the login box contents, positioned freely -->
               <item type="rect">
-                <pos width="box" height="box" x="100%" y="46%" anchor="e"/>
+                <pos width="box" height="box" x="100%" y="60%" anchor="e"/>
                 <box orientation="vertical" spacing="8" xpadding="22">
                   <!-- Stock label for: Username: -->
                   <item type="label">
@@ -79,12 +82,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     <normal color="#FFFFFF" font="Sans  medium 12"/>
                     <stock type="password-label"/>
                   </item>
-                  <!-- user entry -->
+                  <!-- password entry -->
                   <item type="entry" id="pw-entry">
                     <pos height="24" width="230"/>
                   </item>
-                
-                <item type="rect">
+
+                   <!-- Stock label for: Domain: -->
+                   <item type="label">
+                      <show type="plugin-specific-winbind"/>
+                      <pos anchor="nw" x="0"/>
+                      <normal color="#FFFFFF" font="Sans  medium 12"/>
+                      <stock type="domain-label"/>
+                   </item>
+                   <!-- domain entry -->
+                   <item type="entry" id="domain-entry">
+                     <show type="plugin-specific-winbind"/>
+                     <pos height="24" width="230"/>
+                     <normal color="#FFFFFF" font="Sans  medium 12"/>
+                   </item>
+              
+                  <item type="rect">
                     <pos width="100%" height="20"/>
                     <fixed>
                       <item type="button" id="login_button">
@@ -93,7 +110,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                       </item>
                     </fixed>
                   </item>
-
                 </box>
               </item>
             </fixed>
@@ -103,13 +119,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <item type="rect">
         <pos width="100%" height="50"/>
         <fixed>
-          <item type="label" id="clock">
-            <normal color="#FFFFFF" font="Sans medium 12"/>
-            <pos x="22" y="50%" anchor="w"/>
-            <text>%c</text>
-          </item>
           <item type="rect">
-            <pos x="-22" y="50%" height="30" width="80" anchor="e"/>
+            <pos x="22" y="50%" height="30" width="80" anchor="w"/>
             <fixed>
               <item type="rect" id="session_button" button="true">
                 <pos x="0" y="0" width="30" height="30"/>
@@ -132,6 +143,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                   </item>
                 </fixed>
               </item>
+          <item type="label" id="clock">
+            <normal color="#FFFFFF" font="Sans medium 12"/>
+            <pos x="100" y="5"/>
+            <text>%c</text>
+          </item>
             </fixed>
           </item>
         </fixed>
