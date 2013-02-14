@@ -243,22 +243,26 @@ if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
       }
   }
 else {
-	if (Plymouth.GetMode() == "boot") {
-	       if (progress < 0.9) {
-	          geeko.sprite.SetOpacity (progress * 1.2);
-	       }
-	       else {
-	          geeko.sprite.SetOpacity (1);
-	       }
-	}
-	else {
-		if (progress < 0.9) {
-	          geeko.sprite.SetOpacity ((1 - progress) * 1.2);
-	       }
-	       else {
-	          geeko.sprite.SetOpacity (0);
-	       }
-	}
+    # Be super careful with opacity. All values are modded by 1,
+    # so if we go above 1 we will begin fading in again.
+    if (Plymouth.GetMode() == "boot")
+      {
+        opacity = progress * 1.1;
+        if (opacity > 1)
+          {
+            opacity = 1;
+          }
+        geeko.sprite.SetOpacity (opacity);
+      }
+    else
+      {
+        opacity = 1 - progress*6;
+        if (opacity < 0)
+          {
+            opacity = 0;
+          }
+        geeko.sprite.SetOpacity (opacity);
+      }
    }
  }
 
