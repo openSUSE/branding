@@ -54,7 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
               <item type="rect" id="userlist-background">
                 <!-- 16 pixel per user in list -->
                 <pos x="22" width="50%" height="100%"/>
-                <normal color="#000000" alpha="0.3"/>
+                <normal color="#FFFFFF" alpha="0.5"/>
                 <fixed>
                   <item type="list" id="userlist">
                     <pos height="100%" width="100%"/>
