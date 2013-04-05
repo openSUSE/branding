@@ -1,5 +1,5 @@
---- kde_infopage.css	2013-02-04 22:44:27.004449618 +0100
-+++ kde_infopage.css	2013-02-04 22:59:26.629202761 +0100
+--- kde_infopage.css	2013-04-04 00:45:07.620770744 +0200
++++ kde_infopage.css	2013-04-04 00:46:47.464522526 +0200
 @@ -4,14 +4,14 @@
   */
  
@@ -78,7 +78,7 @@
  }
  
  #barCenter ul {
-@@ -150,26 +150,26 @@ a:hover {
+@@ -150,27 +150,27 @@ a:hover {
    width: 16px;
    height: 16px;
    float: left;
@@ -101,6 +101,7 @@
 -  background-image: url(box-top-middle.png);
 +  //background-image: url(box-top-middle.png);
    -khtml-background-size: 100%;
+   background-size: 100% 100%;
  }
  
  #boxL {
@@ -108,8 +109,8 @@
 +  //background-image: url(box-middle-left.png);
    background-repeat: repeat-y;
    -khtml-background-size: 16px 100%;
-   background-position: left;
-@@ -177,7 +177,7 @@ a:hover {
+   background-size: 16px 100%;
+@@ -179,7 +179,7 @@ a:hover {
  }
  
  #boxCenter {
@@ -118,7 +119,7 @@
    background-position: center;
    background-repeat: no-repeat;
    -khtml-background-size: 100%;
-@@ -185,7 +185,7 @@ a:hover {
+@@ -188,10 +188,9 @@ a:hover {
  }
  
  #boxR {
@@ -126,8 +127,11 @@
 +  //background-image: url(box-middle-right.png);
    background-repeat: repeat-y;
    -khtml-background-size: 16px 100%;
+-  background-size: 16px 100%;
    background-position: right;
-@@ -201,21 +201,21 @@ a:hover {
+   padding-right: 16px;
+ }
+@@ -205,21 +204,21 @@ a:hover {
    width: 16px;
    height: 16px;
    float: left;
@@ -150,5 +154,5 @@
 -  background-image: url(box-bottom-middle.png);
 +  //background-image: url(box-bottom-middle.png);
    -khtml-background-size: 100%;
+   background-size: 100% 100%;
    background-repeat: no-repeat;
- }
