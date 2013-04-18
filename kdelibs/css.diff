@@ -1,0 +1,158 @@
+--- kde_infopage.css	2013-04-04 00:45:07.620770744 +0200
++++ kde_infopage.css	2013-04-04 00:46:47.464522526 +0200
+@@ -4,14 +4,14 @@
+  */
+ 
+ img {margin: 0px; padding: 0px}
+-body {margin: 0px; padding: 0px; background-color: #062A4B; background-image: url(body-background.png); color: #111111; height="100%"; width="100%"}
+-a { color: #1A2C36; text-decoration: none; font-weight: bold; }
++body {margin: 0px; padding: 0px; background-color: #202A2B; background-image: url(body-background.jpg); color: #aebec1; height="100%"; width="100%"}
++a { color: #aebec1; text-decoration: none; font-weight: bold; }
+ a:hover {
+-  color: #003B5A;
++  color: #aebec1;
+   text-decoration: none;
+-  text-shadow: #FFFFFF 0px 0px 6px;
++  text-shadow: #003B5A 0px 0px 6px;
+ }
+-<!-- .bar_text a {color: #FFFFFF;} -->
++<!-- .bar_text a {color: #aebec1;} -->
+ 
+ #subtext {
+     font-size: 10pt;
+@@ -61,8 +61,8 @@ a:hover {
+   text-align: right;
+   font-size: xx-large;
+   font-weight: bold;
+-  text-shadow: #FFFFFF 0px 0px 5px;
+-  color: #151515;
++  text-shadow: #1e2829 0px 0px 5px;
++  color: #aebec1;
+   z-index: 5;
+ }
+ 
+@@ -74,8 +74,8 @@ a:hover {
+   text-align: right;
+   font-size: large;
+   font-weight: bold;
+-  text-shadow: #FFFFFF 0px 0px 5px;
+-  color: #151515;
++  text-shadow: #1e2829 0px 0px 5px;
++  color: #aebec1;
+   z-index: 5;
+ }
+ 
+@@ -90,7 +90,7 @@ a:hover {
+ #barCenter {
+   text-align: center;
+   /*background-color: #F5F5F4;*/
+-  color: #B0B0B0;
++  color: #aebec1;
+   padding-top: 0.5ex;
+   padding-bottom: 0.5ex;
+   font-weight: bold;
+@@ -98,22 +98,22 @@ a:hover {
+ }
+ 
+ #barCenter a.selected, #barCenter a.selected:hover {
+-  color: #B0B0B0;
++  color: #aebec1;
+   text-decoration: none;
+   text-shadow: #ADC1DF 0px 0px 5px;
+ }
+ 
+ 
+ #barCenter li a:link, #barCenter li a:visited, #barCenter li a:active {
+-  color: #B0B0B0;
++  color: #202A2B;
+   text-decoration: none;
+   text-shadow: none;
+ }
+ 
+ #barCenter li a:hover {
+-  color: #B0B0B0;
++  color: #202A2B;
+   text-decoration: none;
+-  text-shadow: #ADC1DF 0px 0px 6px;
++  text-shadow: #1e2829 0px 0px 6px;
+ }
+ 
+ #barCenter ul {
+@@ -150,27 +150,27 @@ a:hover {
+   width: 16px;
+   height: 16px;
+   float: left;
+-  background-image: url(box-top-left.png);
++  //background-image: url(box-top-left.png);
+ }
+ 
+ #boxTR {
+   width: 16px;
+   height: 16px;
+   float: right;
+-  background-image: url(box-top-right.png);
++  //background-image: url(box-top-right.png);
+ }
+ 
+ #boxTC {
+   height: 16px;
+   margin-left: 16px;
+   margin-right: 16px;
+-  background-image: url(box-top-middle.png);
++  //background-image: url(box-top-middle.png);
+   -khtml-background-size: 100%;
+   background-size: 100% 100%;
+ }
+ 
+ #boxL {
+-  background-image: url(box-middle-left.png);
++  //background-image: url(box-middle-left.png);
+   background-repeat: repeat-y;
+   -khtml-background-size: 16px 100%;
+   background-size: 16px 100%;
+@@ -179,7 +179,7 @@ a:hover {
+ }
+ 
+ #boxCenter {
+-  background-image: url(box-center.png);
++  //background-image: url(box-center.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   -khtml-background-size: 100%;
+@@ -188,10 +188,9 @@ a:hover {
+ }
+ 
+ #boxR {
+-  background-image: url(box-middle-right.png);
++  //background-image: url(box-middle-right.png);
+   background-repeat: repeat-y;
+   -khtml-background-size: 16px 100%;
+-  background-size: 16px 100%;
+   background-position: right;
+   padding-right: 16px;
+ }
+@@ -205,21 +204,21 @@ a:hover {
+   width: 16px;
+   height: 16px;
+   float: left;
+-  background-image: url(box-bottom-left.png);
++  //background-image: url(box-bottom-left.png);
+ }
+ 
+ #boxBR {
+   width: 16px;
+   height: 16px;
+   float: right;
+-  background-image: url(box-bottom-right.png);
++  //background-image: url(box-bottom-right.png);
+ }
+ 
+ #boxBC {
+   height: 16px;
+   margin-left: 16px;
+   margin-right: 16px;
+-  background-image: url(box-bottom-middle.png);
++  //background-image: url(box-bottom-middle.png);
+   -khtml-background-size: 100%;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;

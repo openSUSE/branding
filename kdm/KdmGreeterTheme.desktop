@@ -1,0 +1,10 @@
+# This is not really a .desktop file like the rest, but it is useful to treat
+# it as such
+
+[KdmGreeterTheme]
+Greeter=openSUSE.xml
+Name=openSUSE 12.3 KDM theme
+Description=12.3 version of the openSUSE KDM Theme (grow)
+Author=openSUSE Artwork Team
+Copyright=GPL v3.0 2013 openSUSE Artwork Team
+Screenshot=screenshot.png

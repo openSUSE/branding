@@ -1,0 +1,4 @@
+KDE puts a background in several about boxes (starting konqueror or kmail)
+
+For now we simply use the default wallpaper, if you need to change it,
+add one here and adopt the Makefile

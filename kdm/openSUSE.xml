@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<!DOCTYPE greeter SYSTEM "greeter.dtd">
+<!--
+Copyright 2008 Urs Wolfer <uwolfer @ kde.org>
+Copyright 2008 Oswald Buddenhagen <ossi @ kde.org>
+Copyright 2012 openSUSE Artwork Team
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of 
+the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<greeter>
+
+<!-- BACKGROUND -->
+
+<style font="Sans 12" window-text-color="#ffffff"/>
+
+  <item type="pixmap" id="background" background="true">
+    <normal file="background.jpg" alpha="1" scalemode="free"/>
+    <pos x="0" y="0" width="100%" height="100%"/>
+  </item>
+
+  <!-- MAIN BOX -->
+  <item type="pixmap" id="system-session">
+    <normal file="panel.png" alpha="1.0" background="true"/>
+    <pos anchor="c" x="50%" y="50%" width="600" height="276"/>
+    <box orientation="vertical">
+      <item type="rect">
+        <pos width="100%" height="224"/>
+        <fixed>
+          <item type="rect">
+            <pos x="50%" height="50" width="100%" anchor="n"/>
+            <fixed>
+              <item type="label">
+                <pos x="50%" y="50%" anchor="c"/>
+                <normal color="#83af77" font="Sans 12 Bold"/>
+                <!-- Stock label for: Welcome to %h -->
+                <stock type="welcome-label"/>
+              </item>
+            </fixed>
+          </item>
+          <item type="rect">
+            <pos anchor="n" x="50%" y="50" width="100%" height="156"/>
+            <!--            <normal color="#FF0000" alpha="0.5"/>-->
+            <fixed>
+              <item type="rect" id="userlist-background">
+                <!-- 16 pixel per user in list -->
+                <pos x="22" width="50%" height="100%"/>
+                <normal color="#FFFFFF" alpha="0.5"/>
+                <fixed>
+                  <item type="list" id="userlist">
+                    <pos height="100%" width="100%"/>
+                  </item>
+                </fixed>
+              </item>
+              <!-- the login box contents, positioned freely -->
+              <item type="rect">
+                <pos width="box" height="box" x="100%" y="60%" anchor="e"/>
+                <box orientation="vertical" spacing="8" xpadding="22">
+                  <!-- Stock label for: Username: -->
+                  <item type="label">
+                    <pos anchor="nw" x="0"/>
+                    <normal color="#FFFFFF" font="Sans medium 12"/>
+                    <stock type="username-label"/>
+                  </item>
+                  <!-- user entry -->
+                  <item type="entry" id="user-entry">
+                    <pos height="24" width="230"/>
+                  </item>
+
+                  <!-- Stock label for: Password: -->
+                  <item type="label">
+                    <pos anchor="nw" x="0"/>
+                    <normal color="#FFFFFF" font="Sans  medium 12"/>
+                    <stock type="password-label"/>
+                  </item>
+                  <!-- password entry -->
+                  <item type="entry" id="pw-entry">
+                    <pos height="24" width="230"/>
+                  </item>
+
+                   <!-- Stock label for: Domain: -->
+                   <item type="label">
+                      <show type="plugin-specific-winbind"/>
+                      <pos anchor="nw" x="0"/>
+                      <normal color="#FFFFFF" font="Sans  medium 12"/>
+                      <stock type="domain-label"/>
+                   </item>
+                   <!-- domain entry -->
+                   <item type="entry" id="domain-entry">
+                     <show type="plugin-specific-winbind"/>
+                     <pos height="24" width="230"/>
+                     <normal color="#FFFFFF" font="Sans  medium 12"/>
+                   </item>
+              
+                  <item type="rect">
+                    <pos width="100%" height="20"/>
+                    <fixed>
+                      <item type="button" id="login_button">
+                        <pos height="box" x="100%" anchor="e" width="box" y="90%"/>
+                        <stock type="login"/>
+                      </item>
+                    </fixed>
+                  </item>
+                </box>
+              </item>
+            </fixed>
+          </item>
+        </fixed>
+      </item>
+      <item type="rect">
+        <pos width="100%" height="50"/>
+        <fixed>
+          <item type="rect">
+            <pos x="22" y="50%" height="30" width="80" anchor="w"/>
+            <fixed>
+              <item type="rect" id="session_button" button="true">
+                <pos x="0" y="0" width="30" height="30"/>
+                <fixed>
+                  <item type="pixmap">
+                    <normal file="session.png" tint="#dddddd"/>
+                    <prelight file="session.png"/>
+                    <active file="session.png" tint="#b8bcdb"/>
+                  </item>
+                </fixed>
+              </item>
+              <item type="rect" id="system_button" button="true">
+                <show type="system" modes="console"/>
+                <pos x="50" y="0" width="30" height="30"/>
+                <fixed>
+                  <item type="pixmap">
+                    <normal file="system.png" tint="#dddddd"/>
+                    <prelight file="system.png"/>
+                    <active file="system.png" tint="#b8bcdb"/>
+                  </item>
+                </fixed>
+              </item>
+          <item type="label" id="clock">
+            <normal color="#FFFFFF" font="Sans medium 12"/>
+            <pos x="100" y="5"/>
+            <text>%c</text>
+          </item>
+            </fixed>
+          </item>
+        </fixed>
+      </item>
+    </box>
+  </item>
+  <!-- timer -->
+  <item type="rect" id="timed-rect">
+    <show type="timed"/>
+    <normal color="#FFFFFF" alpha="0"/>
+    <pos anchor="n" x="50%" y="68%" width="box" height="box"/>
+    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
+      <item type="label" id="timed-label">
+        <normal color="#ffffff" font="Sans 12"/>
+        <pos x="50%" anchor="n"/>
+        <!-- Stock label for: User %s will login in %d seconds -->
+        <stock type="timed-label"/>
+      </item>
+    </box>
+  </item>
+  <item type="label" id="pam-error">
+    <pos x="50%" y="75%" anchor="c"/>
+    <normal font="Sans Bold 14" color="#ffffff"/>
+    <text/>
+  </item>
+  <item type="rect" id="caps-lock-warning">
+    <normal color="#FFFFFF" alpha="0"/>
+    <pos anchor="n" x="50%" y="80%" width="box" height="box"/>
+    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
+      <item type="label">
+        <normal color="#FFFFFF" font="Sans 14"/>
+        <pos x="50%" anchor="n"/>
+        <!-- Stock label for: You've got capslock on! -->
+        <stock type="caps-lock-warning"/>
+      </item>
+    </box>
+  </item>
+</greeter>
