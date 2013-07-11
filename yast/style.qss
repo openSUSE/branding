@@ -1,12 +1,12 @@
-/* Background: wizard#full work_area.png */
-/* Background: work_area#full work_area.png */
 /* Richtext: richtext.css */
 
 #wizard {
+  border-image: url(./work_area.png);
   font-size: 12pt;
 }
 
 #work_area {
+  border-image: url(./work_area.png);
   padding: 1em;
   border: none;
 }
@@ -392,5 +392,15 @@ QGroupBox {
     border: 1px groove gray;
     border-radius: 4px;
     padding: 2px;
+}
+
+QCheckBox {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#RepoUpgradeLabel {
+        color: #000000;
+        background: #98ce57;
 }
 
