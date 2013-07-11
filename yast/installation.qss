@@ -1,13 +1,13 @@
-/* Background: wizard#full background.png */
-/* Background: work_area#full work_area.png */
 /* Richtext: installation_richtext.css */
 
 #wizard {
   /* background: transparent url(gilose.png) no-repeat top left; */
+  border-image: url(./work_area.png);
   font-size: 12pt;
 }
 
 #work_area {
+  border-image: url(./work_area.png);
   padding: 1em;
   border: none;
   border-left: 2px solid #888;
