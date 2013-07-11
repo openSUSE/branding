@@ -496,3 +496,9 @@ QCheckBox {
     padding-left: 5px;
     padding-right: 5px;
 } 
+
+#RepoUpgradeLabel {
+        color: #000000;
+        background: #98ce57;
+}
+
