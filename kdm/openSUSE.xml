@@ -3,7 +3,7 @@
 <!--
 Copyright 2008 Urs Wolfer <uwolfer @ kde.org>
 Copyright 2008 Oswald Buddenhagen <ossi @ kde.org>
-Copyright 2012 openSUSE Artwork Team
+Copyright 2013 Caig & openSUSE Artwork Team
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License as
@@ -19,170 +19,149 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <greeter>
 
-<!-- BACKGROUND -->
+    <style font="Liberation Sans 14"
+        window-text-color="#bdcdd4"
+        base-color="#1b2122" alternate-base-color="#141a1a"
+        text-color="#bdcdd4" disabled-text-color="#9eabb0"
+        base-alpha="0" 
+        disabled-base-color="#1b2122"
+        disabled-base-alpha="0" 
+        disabled-highlight-alpha="0"
+        frame="false" />
+        
+    <!-- the background -->
+    <item type="pixmap" id="background" background="true">
+        <normal file="background.jpg" scalemode="free"/>
+        <pos x="0" y="0" width="100%" height="100%"/>
+    </item>
 
-<style font="Sans 12" window-text-color="#ffffff"/>
-
-  <item type="pixmap" id="background" background="true">
-    <normal file="background.jpg" alpha="1" scalemode="free"/>
-    <pos x="0" y="0" width="100%" height="100%"/>
-  </item>
-
-  <!-- MAIN BOX -->
-  <item type="pixmap" id="system-session">
-    <normal file="panel.png" alpha="1.0" background="true"/>
-    <pos anchor="c" x="50%" y="50%" width="600" height="276"/>
-    <box orientation="vertical">
-      <item type="rect">
-        <pos width="100%" height="224"/>
-        <fixed>
-          <item type="rect">
-            <pos x="50%" height="50" width="100%" anchor="n"/>
-            <fixed>
-              <item type="label">
-                <pos x="50%" y="50%" anchor="c"/>
-                <normal color="#83af77" font="Sans 12 Bold"/>
-                <!-- Stock label for: Welcome to %h -->
+    <!-- clock -->
+    <item type="label" id="clock">
+        <pos x="50%" y="10" anchor="n" />
+        <normal font="Liberation Sans 12" color="#bdcdd4" />
+        <text>%c</text>
+    </item>
+            
+    <!-- the central area -->
+    <item type="rect">
+        <pos x="50%" y="50%" width="360" min-height="350" anchor="c" />
+        <!-- <normal alpha="0.1" color="#bdcdd4" /> -->
+        <box orientation="vertical" min-height="100%" spacing="10" homogeneous="false">
+                
+            <!-- welcome message -->
+            <item type="label" id="welcome">
+                <pos x="50%" anchor="n" />
+                <normal font="Liberation Sans 15 Bold" color="#bdcdd4" />
                 <stock type="welcome-label"/>
-              </item>
-            </fixed>
-          </item>
-          <item type="rect">
-            <pos anchor="n" x="50%" y="50" width="100%" height="156"/>
-            <!--            <normal color="#FF0000" alpha="0.5"/>-->
-            <fixed>
-              <item type="rect" id="userlist-background">
-                <!-- 16 pixel per user in list -->
-                <pos x="22" width="50%" height="100%"/>
-                <normal color="#FFFFFF" alpha="0.5"/>
-                <fixed>
-                  <item type="list" id="userlist">
-                    <pos height="100%" width="100%"/>
-                  </item>
-                </fixed>
-              </item>
-              <!-- the login box contents, positioned freely -->
-              <item type="rect">
-                <pos width="box" height="box" x="100%" y="60%" anchor="e"/>
-                <box orientation="vertical" spacing="8" xpadding="22">
-                  <!-- Stock label for: Username: -->
-                  <item type="label">
-                    <pos anchor="nw" x="0"/>
-                    <normal color="#FFFFFF" font="Sans medium 12"/>
-                    <stock type="username-label"/>
-                  </item>
-                  <!-- user entry -->
-                  <item type="entry" id="user-entry">
-                    <pos height="24" width="230"/>
-                  </item>
+            </item>
+            
+            <!-- horizontal line -->
+            <item type="pixmap">
+                <pos x="50%" height="3" width="100%" anchor="n" />
+                <normal file="horizontal-line.png"/>
+            </item>
+            
+            <!-- user list -->
+            <item type="list" id="userlist">
+                <pos x="50%" min-height="100" max-height="200" width="280" anchor="n" />
+                <style highlight-color="#98ce57" font="Liberation Sans 14"/>
+                <show type="userlist"/>
+            </item>
 
-                  <!-- Stock label for: Password: -->
-                  <item type="label">
-                    <pos anchor="nw" x="0"/>
-                    <normal color="#FFFFFF" font="Sans  medium 12"/>
-                    <stock type="password-label"/>
-                  </item>
-                  <!-- password entry -->
-                  <item type="entry" id="pw-entry">
-                    <pos height="24" width="230"/>
-                  </item>
+            <!-- user entry -->
+            <item type="rect" id="user-field">
+                <pos x="50%" height="32" width="280" anchor="n" />
+                <show type="!userlist"/>
+                <fixed>
+                    <item type="pixmap">
+                        <pos x="50%" height="32" width="280" anchor="n" />  
+                        <normal file="lineedit-normal.png"/>
+                        <prelight file="lineedit-hover.png"/>
+                        <active file="lineedit-hover.png"/>
+                    </item>
+                    <item type="pixmap">
+                        <pos x="6" y="5" anchor="nw" />  
+                        <normal file="user-icon.png" />
+                    </item>
+                    <item type="entry" id="user-entry" >
+                        <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                    </item>
+                </fixed>
+            </item>
 
-                   <!-- Stock label for: Domain: -->
-                   <item type="label">
-                      <show type="plugin-specific-winbind"/>
-                      <pos anchor="nw" x="0"/>
-                      <normal color="#FFFFFF" font="Sans  medium 12"/>
-                      <stock type="domain-label"/>
-                   </item>
-                   <!-- domain entry -->
-                   <item type="entry" id="domain-entry">
-                     <show type="plugin-specific-winbind"/>
-                     <pos height="24" width="230"/>
-                     <normal color="#FFFFFF" font="Sans  medium 12"/>
-                   </item>
-              
-                  <item type="rect">
-                    <pos width="100%" height="20"/>
-                    <fixed>
-                      <item type="button" id="login_button">
-                        <pos height="box" x="100%" anchor="e" width="box" y="90%"/>
-                        <stock type="login"/>
-                      </item>
-                    </fixed>
-                  </item>
-                </box>
-              </item>
-            </fixed>
-          </item>
-        </fixed>
-      </item>
-      <item type="rect">
-        <pos width="100%" height="50"/>
-        <fixed>
-          <item type="rect">
-            <pos x="22" y="50%" height="30" width="80" anchor="w"/>
-            <fixed>
-              <item type="rect" id="session_button" button="true">
-                <pos x="0" y="0" width="30" height="30"/>
+            <!-- password entry -->
+            <item type="rect" id="user-field2">
+                <pos x="50%" height="32" width="280" anchor="n" />
                 <fixed>
-                  <item type="pixmap">
-                    <normal file="session.png" tint="#dddddd"/>
-                    <prelight file="session.png"/>
-                    <active file="session.png" tint="#b8bcdb"/>
-                  </item>
+                    <item type="pixmap">
+                        <pos x="50%" height="32" width="280" anchor="n" />  
+                        <normal file="lineedit-normal.png"/>
+                        <prelight file="lineedit-hover.png"/>
+                        <active file="lineedit-hover.png"/>
+                    </item>
+                    <item type="pixmap">
+                        <pos x="6" y="5" anchor="nw" />  
+                        <normal file="password-icon.png"/>
+                    </item>
+                    <item type="entry" id="pw-entry" >
+                        <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                    </item>
                 </fixed>
-              </item>
-              <item type="rect" id="system_button" button="true">
-                <show type="system" modes="console"/>
-                <pos x="50" y="0" width="30" height="30"/>
+            </item>
+            
+            <!-- winbind entry -->
+            <item type="rect" id="plugin-specific-winbind">
+                <pos x="50%" height="32" width="280" anchor="n" />
+                <show type="plugin-specific-winbind"/>
                 <fixed>
-                  <item type="pixmap">
-                    <normal file="system.png" tint="#dddddd"/>
-                    <prelight file="system.png"/>
-                    <active file="system.png" tint="#b8bcdb"/>
-                  </item>
+                    <item type="pixmap">
+                        <pos x="50%" height="32" width="280" anchor="n" />
+                        <normal file="lineedit-normal.png"/>
+                        <prelight file="lineedit-hover.png"/>
+                        <active file="lineedit-hover.png"/>
+                    </item>
+                    <item type="pixmap">
+                        <pos x="6" y="5" anchor="nw" />
+                        <normal file="domain-icon.png"/>
+                    </item>
+                    <item type="entry" id="domain-entry" >
+                        <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                    </item>
                 </fixed>
-              </item>
-          <item type="label" id="clock">
-            <normal color="#FFFFFF" font="Sans medium 12"/>
-            <pos x="100" y="5"/>
-            <text>%c</text>
-          </item>
-            </fixed>
-          </item>
-        </fixed>
-      </item>
-    </box>
-  </item>
-  <!-- timer -->
-  <item type="rect" id="timed-rect">
-    <show type="timed"/>
-    <normal color="#FFFFFF" alpha="0"/>
-    <pos anchor="n" x="50%" y="68%" width="box" height="box"/>
-    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
-      <item type="label" id="timed-label">
-        <normal color="#ffffff" font="Sans 12"/>
-        <pos x="50%" anchor="n"/>
-        <!-- Stock label for: User %s will login in %d seconds -->
-        <stock type="timed-label"/>
-      </item>
-    </box>
-  </item>
-  <item type="label" id="pam-error">
-    <pos x="50%" y="75%" anchor="c"/>
-    <normal font="Sans Bold 14" color="#ffffff"/>
-    <text/>
-  </item>
-  <item type="rect" id="caps-lock-warning">
-    <normal color="#FFFFFF" alpha="0"/>
-    <pos anchor="n" x="50%" y="80%" width="box" height="box"/>
-    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
-      <item type="label">
-        <normal color="#FFFFFF" font="Sans 14"/>
-        <pos x="50%" anchor="n"/>
-        <!-- Stock label for: You've got capslock on! -->
-        <stock type="caps-lock-warning"/>
-      </item>
-    </box>
-  </item>
+            </item>
+
+            <!-- messages -->
+            <item type="label" id="caps-lock-warning">
+                <pos x="50%" anchor="n" />
+                <normal font="Liberation Sans 12" color="#98ce57" />
+                <stock type="caps-lock-warning" />
+            </item>
+
+            <item type="label" id="pam-error">
+                <pos x="50%" anchor="n" expand="true" />
+                <normal font="Liberation Sans 12" color="#bf0000" />
+            </item>
+
+        </box>
+    </item>
+
+    <!-- the bottom buttons -->
+    <item type="rect" id="bottom-toolbar">
+        <pos x="50%" y="-10" width="64" height="22" anchor="s" />
+
+        <box orientation="horizontal" spacing="20" homogeneous="true">
+            <item button="true" type="pixmap" id="session_button">
+                <normal file="config-icon.png" alpha="0.7" />
+                <prelight file="config-icon.png" alpha="0.8" />
+                <active file="config-icon.png" alpha="1.0" />
+            </item>
+            <item button="true" type="pixmap" id="system_button">
+                <normal file="exit-icon.png" alpha="0.7" />
+                <prelight file="exit-icon.png" alpha="0.8" />
+                <active file="exit-icon.png" alpha="1.0" />
+            </item>
+        </box>
+
+    </item>
+
 </greeter>
