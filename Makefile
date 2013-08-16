@@ -17,7 +17,7 @@ openSUSE.tar.gz_clean:
 
 CLEAN_DEPS+=openSUSE.tar.gz_clean
 
-openSUSE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d gimp.d plymouth.d
+openSUSE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
 	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
@@ -223,8 +223,6 @@ CLEAN_DEPS+=ksplashx.d_clean
 kdm.d: defaults
 	mkdir -p openSUSE/kdm/themes/openSUSE
 	cp -a kdm/* openSUSE/kdm/themes/openSUSE
-	#Keep the source but don't package it
-	rm openSUSE/kdm/themes/openSUSE/panel.svgz
 	cp -r openSUSE/kdm/themes/openSUSE/pics/* openSUSE/kdm/
 	rm -rf openSUSE/kdm/themes/openSUSE/pics
 
@@ -303,15 +301,6 @@ xfce.d_clean:
 
 CLEAN_DEPS+=xfce.d_clean
 
-gimp.d:
-	mkdir -p openSUSE/gimp
-	inkscape -w 300 -e openSUSE/gimp/splash.png gimp/splash.svg
-
-gimp.d_clean:
-	rm -rf openSUSE/gimp
-
-CLEAN_DEPS+=gimp.d_clean
-
 install: # do not add requires here, this runs from generated openSUSE
 	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
 
@@ -382,8 +371,6 @@ install: # do not add requires here, this runs from generated openSUSE
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE/images/background.jpg
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
-
-	install -D gimp/splash.png ${DESTDIR}/usr/share/gimp/2.0/images/gimp-splash.png
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
