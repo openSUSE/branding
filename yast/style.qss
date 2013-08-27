@@ -1,7 +1,6 @@
 /* Richtext: richtext.css */
 
 #wizard {
-  border-image: url(./work_area.png);
   font-size: 12pt;
 }
 

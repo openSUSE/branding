@@ -2,7 +2,7 @@
 
 #wizard {
   /* background: transparent url(gilose.png) no-repeat top left; */
-  border-image: url(./work_area.png);
+  border-image: url(./background.png);
   font-size: 12pt;
 }
 
