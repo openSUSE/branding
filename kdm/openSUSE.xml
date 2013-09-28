@@ -126,6 +126,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </item>
                     <item type="entry" id="domain-entry" >
                         <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                        <style text-color="#141a1a" highlight-color="#98ce57" />
                     </item>
                 </fixed>
             </item>
