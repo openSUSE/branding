@@ -3,19 +3,19 @@ VERSION=13.1
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
-all: info openSUSE.tar.gz
+all: info openSUSE.tar.xz
 
 info:
 	echo "Make sure to have inkscape, GraphicsMagick and optipng installed"
 
-openSUSE.tar.gz: openSUSE.d
-	tar cvfz openSUSE.tar.gz openSUSE
+openSUSE.tar.xz: openSUSE.d
+	tar cvfJ openSUSE.tar.xz openSUSE
 #	rm -r openSUSE
 
-openSUSE.tar.gz_clean:
-	rm -f openSUSE.tar.gz
+openSUSE.tar.xz_clean:
+	rm -f openSUSE.tar.xz
 
-CLEAN_DEPS+=openSUSE.tar.gz_clean
+CLEAN_DEPS+=openSUSE.tar.xz_clean
 
 openSUSE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
 	cp Makefile LICENSE openSUSE
