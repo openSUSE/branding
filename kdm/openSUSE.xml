@@ -3,7 +3,7 @@
 <!--
 Copyright 2008 Urs Wolfer <uwolfer @ kde.org>
 Copyright 2008 Oswald Buddenhagen <ossi @ kde.org>
-Copyright 2013 Caig & openSUSE Artwork Team
+Copyright 2013 openSUSE Artwork Team
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License as
@@ -45,7 +45,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- the central area -->
     <item type="rect">
         <pos x="50%" y="50%" width="360" min-height="350" anchor="c" />
-        <!-- <normal alpha="0.1" color="#bdcdd4" /> -->
         <box orientation="vertical" min-height="100%" spacing="10" homogeneous="false">
                 
             <!-- welcome message -->
@@ -71,7 +70,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <!-- user entry -->
             <item type="rect" id="user-field">
                 <pos x="50%" height="32" width="280" anchor="n" />
-                <show type="!userlist"/>
                 <fixed>
                     <item type="pixmap">
                         <pos x="50%" height="32" width="280" anchor="n" />  
