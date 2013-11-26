@@ -30,7 +30,7 @@ How to update the wallpaper in the distribution
 Simply type 'make' to create openSUSE.tar.gz:
 
   pushd branding
-  git checkout 13.1
+  git checkout 13.2
   make
   popd
 
@@ -67,3 +67,4 @@ people:
 
   Stephan Kulow <coolo@suse.de>
   Vincent Untz <vuntz@opensuse.org>
+  Richard Brown <rbrownccb@opensuse.org>
