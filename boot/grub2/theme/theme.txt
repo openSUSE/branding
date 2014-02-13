@@ -41,11 +41,11 @@ terminal-font: "Gnu Unifont Mono Regular 16"
 
   font = "DejaVu Sans Regular 12"
 
-  text_color = "#000"
-  fg_color = "#98ce57"
+  text_color = "#fff"
+  fg_color = "#28ae73"
 
-  bg_color = "#fff"
-  border_color = "#fff"
+  bg_color = "#2d2d2d"
+  border_color = "#2d2d2d"
 
   # instead of the above colors, use pixmaps
   # bar_style = "progress_bar_*.png"
