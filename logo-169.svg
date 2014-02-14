@@ -26,30 +26,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.45254834"
-     inkscape:cx="607.18521"
+     inkscape:cx="780.53157"
      inkscape:cy="430.25468"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1854"
-     inkscape:window-height="1102"
-     inkscape:window-x="101"
-     inkscape:window-y="39"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1067"
+     inkscape:window-height="667"
+     inkscape:window-x="789"
+     inkscape:window-y="124"
+     inkscape:window-maximized="0"
      inkscape:snap-page="true"
      inkscape:snap-global="true"
      inkscape:snap-nodes="false" />
   <defs
-     id="defs3035">
-    <filter
-       id="filter3940"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3942"
-         stdDeviation="1.2175454"
-         inkscape:collect="always" />
-    </filter>
-  </defs>
+     id="defs3035" />
   <metadata
      id="metadata3038">
     <rdf:RDF>
@@ -68,7 +59,7 @@
      id="layer2"
      inkscape:groupmode="layer">
     <g
-       transform="matrix(1.8064931,0,0,1.8064931,483.25867,-9.506258)"
+       transform="matrix(1.8064931,0,0,1.8064931,-223.61993,905.49374)"
        style="display:inline"
        id="g3004">
       <text
