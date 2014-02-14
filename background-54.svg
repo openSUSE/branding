@@ -32,10 +32,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="g3004"
      showgrid="false"
-     inkscape:window-width="1854"
-     inkscape:window-height="1102"
-     inkscape:window-x="0"
-     inkscape:window-y="76"
+     inkscape:window-width="1920"
+     inkscape:window-height="1145"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
      inkscape:window-maximized="1"
      inkscape:snap-page="true"
      inkscape:snap-global="true"
@@ -194,7 +194,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -217,7 +217,7 @@
          sodipodi:rx="102"
          sodipodi:ry="102.5"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
-         transform="matrix(3.8401793,0,0,3.2475244,-1101.4894,-914.87469)" />
+         transform="matrix(3.8401793,0,0,3.2475244,-1101.4894,-902.27965)" />
       <path
          sodipodi:type="arc"
          style="color:#000000;fill:url(#radialGradient4110);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -227,9 +227,9 @@
          sodipodi:rx="102"
          sodipodi:ry="102.5"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
-         transform="matrix(2.9302722,0,0,2.3156609,-966.09891,-401.65377)" />
+         transform="matrix(2.9302722,0,0,2.3156609,-966.09891,-389.05873)" />
       <path
-         transform="matrix(2.7916123,0,0,2.2716674,-411.61953,-709.17678)"
+         transform="matrix(2.7916123,0,0,2.2716674,-411.61953,-696.58174)"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
          sodipodi:ry="102.5"
          sodipodi:rx="102"
@@ -239,7 +239,7 @@
          style="color:#000000;fill:url(#radialGradient4114);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc" />
       <path
-         transform="matrix(3.7064786,0,0,2.4756376,-1291.5225,-769.97991)"
+         transform="matrix(3.7064786,0,0,2.4756376,-1291.5225,-757.38487)"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
          sodipodi:ry="102.5"
          sodipodi:rx="102"
@@ -257,7 +257,7 @@
          sodipodi:rx="102"
          sodipodi:ry="102.5"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
-         transform="matrix(3.0936841,0,0,2.5036334,-548.04674,-430.13365)" />
+         transform="matrix(3.0936841,0,0,2.5036334,-548.04674,-417.53861)" />
       <path
          sodipodi:type="arc"
          style="color:#000000;fill:url(#radialGradient4142);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -267,9 +267,9 @@
          sodipodi:rx="102"
          sodipodi:ry="102.5"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
-         transform="matrix(2.4623199,0,0,2.0037066,-471.65167,-717.49158)" />
+         transform="matrix(2.4623199,0,0,2.0037066,-471.65167,-704.89654)" />
       <path
-         transform="matrix(2.4623199,0,0,2.0037066,-573.17505,-114.05991)"
+         transform="matrix(2.4623199,0,0,2.0037066,-573.17505,-101.46487)"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
          sodipodi:ry="102.5"
          sodipodi:rx="102"
@@ -287,7 +287,7 @@
          sodipodi:rx="102"
          sodipodi:ry="102.5"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
-         transform="matrix(2.7891437,0,0,3.1035455,-1070.5117,-746.94727)" />
+         transform="matrix(2.7891437,0,0,3.1035455,-1070.5117,-734.35223)" />
       <path
          sodipodi:type="arc"
          style="color:#000000;fill:url(#radialGradient4154);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -297,9 +297,9 @@
          sodipodi:rx="102"
          sodipodi:ry="102.5"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
-         transform="matrix(2.4623199,0,0,2.0037066,-91.317934,-373.14194)" />
+         transform="matrix(2.4623199,0,0,2.0037066,-91.317934,-360.5469)" />
       <path
-         transform="matrix(3.7162894,0.63400389,-0.31596719,2.1688917,-1171.1427,-951.92492)"
+         transform="matrix(3.7162894,0.63400389,-0.31596719,2.1688917,-1171.1427,-939.32988)"
          d="m 511,380.5 a 102,102.5 0 1 1 -204,0 102,102.5 0 1 1 204,0 z"
          sodipodi:ry="102.5"
          sodipodi:rx="102"
@@ -308,42 +308,46 @@
          id="path4156"
          style="color:#000000;fill:url(#radialGradient4158);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3828-1"
-         y="38.30423"
-         x="533.48938"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.17801047;stroke:none;display:inline;font-family:Cantrell;-inkscape-font-specification:Cantrell"
-         xml:space="preserve"><tspan
-           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:0.17801047;font-family:Cantarell;-inkscape-font-specification:Cantarell"
-           y="38.30423"
+      <g
+         id="g3018"
+         style="opacity:0.5">
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.17801047000000000;stroke:none;display:inline;font-family:Cantrell;-inkscape-font-specification:Cantrell"
            x="533.48938"
-           id="tspan3830-9"
-           sodipodi:role="line">SUSE Linux Enterprise Beta</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3828-4"
-         y="37.30423"
-         x="532.48938"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#101010;fill-opacity:1;stroke:none;display:inline;font-family:Cantrell;-inkscape-font-specification:Cantrell"
-         xml:space="preserve"><tspan
-           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101010;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell"
-           y="37.30423"
+           y="38.30423"
+           id="text3828-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3830-9"
+             x="533.48938"
+             y="38.30423"
+             style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:0.17801047000000000;font-family:Cantarell;-inkscape-font-specification:Cantarell">SUSE Linux Enterprise Beta</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#101010;fill-opacity:1;stroke:none;display:inline;font-family:Cantrell;-inkscape-font-specification:Cantrell"
            x="532.48938"
-           id="tspan3830-1"
-           sodipodi:role="line">SUSE Linux Enterprise Beta</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3828"
-         y="37.804234"
-         x="532.98938"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#063723;fill-opacity:1;stroke:none;font-family:Cantrell;-inkscape-font-specification:Cantrell"
-         xml:space="preserve"><tspan
-           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#063723;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell"
-           y="37.804234"
+           y="37.30423"
+           id="text3828-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3830-1"
+             x="532.48938"
+             y="37.30423"
+             style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101010;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell">SUSE Linux Enterprise Beta</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#063723;fill-opacity:1;stroke:none;font-family:Cantrell;-inkscape-font-specification:Cantrell"
            x="532.98938"
-           id="tspan3830"
-           sodipodi:role="line">SUSE Linux Enterprise Beta</tspan></text>
+           y="37.804234"
+           id="text3828"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3830"
+             x="532.98938"
+             y="37.804234"
+             style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#063723;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell">SUSE Linux Enterprise Beta</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
