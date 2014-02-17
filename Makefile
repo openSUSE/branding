@@ -43,7 +43,7 @@ gfxboot.d: defaults
 	rm tmp.png
 
 gfxboot.d_clean:
-	rm -rf SLE/gfxboot
+	rm -rf SLE/gfxboot tmp.png
 
 CLEAN_DEPS+=gfxboot.d_clean
 
