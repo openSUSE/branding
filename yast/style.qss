@@ -242,7 +242,7 @@ QTreeView {
 }
 
 QTreeView::item:hover {
-        background-color: #b9dc8cf ;
+        background-color: #b9dc8c;
 
 }
 
@@ -314,7 +314,7 @@ QTreeView,  QTextBrowser,  QLineEdit, QSpinBox, QTextEdit
 	border-radius: 3px;
 	margin: 0px; 
         color: #000;
-	background: #ffff;
+        background: #fff;
         selection-background-color: #98ce57;
         selection-color: #000;
 }
@@ -333,7 +333,7 @@ QComboBox:focus {
 
 QComboBox {
         color: #000;
-	background: #ffff;
+        background: #fff;
         selection-background-color: #98ce57;
         selection-color: #000;
 }
