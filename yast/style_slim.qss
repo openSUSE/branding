@@ -386,14 +386,6 @@ QSpinBox::down-button {
     background-repeat: no-repeat; 
 }
 
-
-QGroupBox {
-    border: 1px groove gray;
-    border-radius: 4px;
-    padding: 2px;
-}
-
-
 QGroupBox {
     border: 1px groove gray;
     border-radius: 4px;
