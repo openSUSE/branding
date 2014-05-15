@@ -49,13 +49,17 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p SLE/grub2/backgrounds
-	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-1610.png grub2-1610.svg
+#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-1610.png grub2-1610.svg
+	cp -f grub2-1610.png SLE/grub2/backgrounds/default-1610.png
 	optipng -o4 SLE/grub2/backgrounds/default-1610.png
-	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-169.png grub2-169.svg	
+#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-169.png grub2-169.svg	
+	cp -f grub2-169.png SLE/grub2/backgrounds/default-169.png
 	optipng -o4 SLE/grub2/backgrounds/default-169.png
-	inkscape -w 1280 -C -e SLE/grub2/backgrounds/default-54.png grub2-54.svg
+#	inkscape -w 1280 -C -e SLE/grub2/backgrounds/default-54.png grub2-54.svg
+	cp -f grub2-54.png SLE/grub2/backgrounds/default-54.png
 	optipng -o4 SLE/grub2/backgrounds/default-54.png
-	inkscape -w 1600 -C -e SLE/grub2/backgrounds/default-43.png grub2-43.svg
+#	inkscape -w 1600 -C -e SLE/grub2/backgrounds/default-43.png grub2-43.svg
+	cp -f grub2-43.png SLE/grub2/backgrounds/default-43.png
 	optipng -o4 SLE/grub2/backgrounds/default-43.png
 	cp -a boot/grub2/theme SLE/grub2/
 	./boot/grub2-branding.sh SLE/grub2/backgrounds
