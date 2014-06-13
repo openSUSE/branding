@@ -1,0 +1,504 @@
+/* Richtext: installation_richtext.css */
+
+#wizard {
+  /* background: transparent url(gilose.png) no-repeat top left; */
+  border-image: url(./background.png);
+  font-size: 12pt;
+}
+
+#work_area {
+  border-image: url(./work_area.png);
+  padding: 1em;
+  border: none;
+  border-left: 2px solid #888;
+}
+
+#steps {
+  padding: 5em 2em 1em 0.5em;
+  background: url(logo.png) no-repeat top left;
+  border: none;
+  font-size: 10pt;
+  min-width: 150px;
+}
+
+YQLogView QTextEdit, YQRichText > YQTextBrowser {
+  qproperty-frameShape: NoShape;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.current-step-name {
+  color: white;
+  font-weight: bold;
+}
+
+.done-step-name {
+  font-weight: normal;
+  color: #eee;
+}
+
+.todo-step-name {
+  color: #eee;
+  font-weight: normal;
+}
+
+.todo-step-status {
+   qproperty-pixmap: url(white-step-todo.png);
+   max-width: 14px;
+   min-width: 14px;
+}
+
+.done-step-status {
+   qproperty-pixmap: url(white-step-done.png);
+   max-width: 14px;
+   min-width: 14px;
+}
+
+.current-step-status {
+   qproperty-pixmap: url(white-step-current.png);
+   max-width: 14px;
+   min-width: 14px;
+}
+
+.steps_heading {
+   font-weight: bold;  
+   color: white;
+   margin: 1em 0 0 0;
+}
+
+/* #DialogIcon { max-width: 0px; margin: 0px; } */
+
+#DialogHeading { 
+  font-family: FifthLeg, Sans-serif;
+  font: 16pt bold;
+  padding: 12pt;
+  color: #333;
+  margin: 0px;
+}
+
+.Contents QWidget { color: black; } 
+  /* these were special cased for openSUSE, but not needed anymore
+  .Contents QComboBox,
+  .Contents QComboBox *,
+  .Contents QHeaderView,
+  .Contents QLineEdit,
+  .Contents QSpinBox,
+  .Contents QDateEdit,
+  .Contents QTimeEdit,
+  .Contents QListWidget { color: black; }
+  */
+  .Contents QCheckBox::indicator:checked { 
+     image: url(checkbox-on.png); 
+   }
+  .Contents QCheckBox::indicator:unchecked { 
+     image: url(checkbox-off.png); 
+   }
+  .Contents QCheckBox::indicator:disabled { 
+     opacity: 0.5;
+   }
+  .Contents QRadioButton::indicator:checked {
+     image: url(plastique-radiobutton.png);
+     padding-right: -1px;
+   }
+   /*
+  .Contents QComboBox::drop-down,
+  .Contents QComboBox::down-button,
+  .Contents QComboBox::down-arrow,
+  .Contents QComboBox::up-arrow,
+  .Contents QScrollBar::down-button,
+  .Contents QScrollBar::down-arrow,
+  .Contents QScrollBar::up-arrow,
+  .Contents QRadioButton::indicator,
+  .Contents QMenu,
+  .Contents YQMultiLineEdit,
+  .Contents QTreeView { color: black; }
+  */
+  .Contents QWidget:disabled { color: gray; }
+
+.Contents YQMultiLineEdit QTextEdit { color: black; }
+.Contents QMessageBox { background-color: #555; }
+
+.conflict QWidget { color: black; }
+
+YQMultiProgressMeter {
+     background-color: transparent;
+     border: 1px solid gray;
+     border-radius: 3px;
+}
+
+
+
+YQProgressBar > YQWidgetCaption { margin-top: 20px; }
+
+/*
+YQMultiProgressMeter::chunk {
+     background-color: green;
+     margin: 0.5px;
+     width: 8px;
+     height: 8px;
+}
+
+*/
+
+
+QComboBox {
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #cccccc, stop: 0.8 #999999, stop: 1 #bbbbbb);
+  padding: 4px 12px;
+  color: #111111;
+  padding: 2px 24px 2px 4px;
+  /* min-width: 6em; */
+}
+  
+  QComboBox:focus {
+    border: 2px solid #689b2d;
+  }
+
+    QComboBox:editable {
+       background: white;
+    }
+
+    QComboBox:!editable, QComboBox::drop-down:editable {
+        background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                    stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    }
+
+    /* QComboBox gets the "on" state when the popup is open */
+    QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+       background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                   stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                   stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+    }
+
+    QComboBox:on { /* shift the text when the popup opens */
+       padding-top: 3px;
+       padding-left: 4px;
+    }
+
+    QComboBox::drop-down { /* arrow part of the widget */
+       subcontrol-origin: padding;
+       subcontrol-position: top right;
+       width: 24px;
+
+       border-top-right-radius: 4px; /* same radius as the QComboBox */
+       border-bottom-right-radius: 4px;
+    }
+
+    QComboBox::down-arrow {
+       image: url(arr_down.png);
+    }
+
+    QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+       top: 1px;
+       left: 1px;
+    }
+
+    QComboBox QAbstractItemView,
+    QComboBox QMenu {
+      color: black;
+      background: #bebebe;
+      border: 1px solid #888;
+      selection-background-color: #98ce57;
+      selection-color: black;
+    }
+
+QTabWidget::tab-bar {
+  left: 5px; /* move to the right by 5px */
+}
+    /* FIXME - I wish to style the horizontal line below the tabs.
+       sadly it's not QTabWidget::pane as the Qt documentation implies.
+       I got some hints that it might be YQDumbTab, but cannot figure out a selector.
+       The one below, even if empty, will break the layout.
+
+     YQDumbTab::pane { }
+     */
+
+     /* Style the tab using the tab sub-control. Note that
+         it reads QTabBar _not_ QTabWidget */
+     QTabBar::tab {
+         background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                     stop: 0.5 #D8D8D8, stop: 1.0 rgba(255,255,255,0));
+         border: 1px solid #C4C4C3;
+         border-bottom: none;
+         border-top-left-radius: 4px;
+         border-top-right-radius: 4px;
+         min-width: 8ex;
+         padding: 2px;
+         margin-bottom: 2px;
+     }
+
+     QTabBar::tab:selected, QTabBar::tab:hover {
+         background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                     stop: 0.5 #e7e7e7, stop: 1.0 rgba(255,255,255,0));
+     }
+
+     QTabBar::tab:selected {
+       border-width: 2px;
+       border-color: #888888;
+       border-bottom: none;
+     }
+
+     QTabBar::tab:!selected {
+         margin-top: 2px; /* make non-selected tabs look smaller */
+     }
+
+     /* make use of negative margins for overlapping tabs */
+     QTabBar::tab:selected {
+         /* expand/overlap to the left and right by 4px */
+         margin-left: -2px;
+         margin-right: -2px;
+     }
+
+     QTabBar::tab:first:selected {
+         margin-left: 0; /* the first selected tab has nothing to overlap with on the left */
+         border-left: 2px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #888888, stop: 1.0 rgba(128,128,128,0));
+     }
+
+     QTabBar::tab:last:selected {
+         margin-right: 0; /* the last selected tab has nothing to overlap with on the right */
+     }
+
+     QTabBar::tab:only-one {
+         margin: 0; /* if there is only one tab, we don't want overlapping margins */
+     }
+
+#work_area QGroupBox {
+  /* Eventually I'd like to have this global. Possibly belongs to style.qss */
+  border: 0px;
+  margin-top: 2.5ex;
+  margin-left: 10px;
+}
+
+  #work_area QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: left top;
+     font-weight: bold; color: #bbb;
+     color: #333;
+  }
+
+
+#work_area QPushButton {
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #cccccc, stop: 0.8 #999999, stop: 1 #bbbbbb);
+  padding: 4px 12px;
+  color: #111111;
+  font-weight: bold;
+}
+ 
+  #work_area QPushButton:focus, #work_area QPushButton:focus:default {
+    border: 1px solid #689b2d;
+  }
+
+  #work_area QPushButton:disabled,
+  #work_area QPushButton:default:disabled {
+    color: rgba(255,255,255,80);
+    border: 1px solid rgba(0,0,0,80);
+    background: none;
+  }
+
+  #work_area QPushButton:default:pressed, #work_area QPushButton:pressed {
+    border: 1px solid #0e5a00;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+      stop: stop: 0 #689b2d, stop: 1 #98ce57);
+  }
+
+  #work_area QPushButton:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+      stop: 0 #a5a5a5, stop: 0.7 #4d4d4d, stop: 1 #747474);
+    color: white;
+  }
+
+  #work_area QPushButton:default {
+    border: 1px solid #689b2d;
+    color: #000;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
+  }
+  #work_area QPushButton:default:hover {
+    color: #fff;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+      stop: 0 #689b2d, stop: 0.7 #98ce57, stop: 1 #689b2d);
+  }
+
+  /* odd dropdown button widget */
+  #work_area QPushButton::menu-indicator,
+  #work_area QPushButton::menu-indicator:pressed, 
+  QPushButton::menu-indicator:open {
+       subcontrol-origin: margin;
+       left: -7px;
+       subcontrol-position: right;
+       image: url(arr_down.png);
+  }
+
+    #work_area QPushButton:open { /* when the button has its menu open */
+       color: black;
+       background: #eeeeee;
+       border: 1px solid #dddddd;
+     }
+
+  /* button menus */
+  QPushButton QMenu {
+    border: 1px solid #888;
+    
+  }
+  QPushButton QMenu::item { 
+                 background-color: #bebebe;
+                 color: black;
+    }
+
+  QPushButton QMenu::item:selected { 
+                 background-color: #689b2d;
+                 color: white;
+    }
+
+#work_area QProgressBar {
+  border: 1px solid #444;
+  border-radius: 2px;
+  text-align: center;
+  color: #000000;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #aaaaaa, stop: 0.4 #ffffff, stop: 1 #ffffff);
+}
+  #work_area QProgressBar:chunk {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
+    border: 1px solid #689b2d;
+  }
+
+/* vertical sliders */
+#work_area QScrollBar:vertical {
+  width: 16px;
+  margin: 16px 0 16px 0;
+  background-color: transparent;
+}
+   
+  #work_area QScrollBar::handle:vertical {
+    min-height: 16px;
+    border: 1px solid #689b2d;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
+    border-radius: 3px;
+  }
+
+  #work_area QScrollBar::add-line:vertical {
+    border: none;
+    background: transparent;
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+  }
+
+  #work_area QScrollBar::sub-line:vertical {
+    border: none;
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+  }
+
+  #work_area QScrollBar::up-arrow:vertical, #work_area QScrollBar::down-arrow:vertical {
+    width: 8px;
+    height: 8px;
+  }
+    #work_area QScrollBar::up-arrow:vertical { background-image: url(arr_up.png); }
+    #work_area QScrollBar::down-arrow:vertical { background-image: url(arr_down.png); }
+
+  #work_area QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: transparent;
+  }
+
+/* horizontal */
+#work_area QScrollBar:horizontal {
+  height: 16px;
+  margin: 0 16px 0 16px;
+  background-color: transparent;
+}
+
+  #work_area QScrollBar::handle:horizontal {
+    min-width: 16px;
+    border: 1px solid #689b2d;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+      stop: 0 #98ce57, stop: 0.7 #b9dc8c, stop: 1 #98ce57);
+    border-radius: 3px;
+  }
+  
+  #work_area QScrollBar::add-line:horizontal {
+    border: none;
+    background: transparent;
+    width: 16px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+  }
+
+  #work_area QScrollBar::sub-line:horizontal {
+    border: none;
+    width: 16px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+  }
+
+  #work_area QScrollBar::left-arrow:horizontal, #work_area QScrollBar::right-arrow:horizontal {
+    width: 8px;
+    height: 8px;
+  }
+    #work_area QScrollBar::right-arrow:horizontal { background-image: url(arr_right.png); }
+    #work_area QScrollBar::left-arrow:horizontal { background-image: url(arr_left.png); }
+
+  #work_area QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background-color: transparent;
+  }
+
+BusyBar {
+   qproperty-frameShape: NoShape;
+   border-width: 3px;
+   border: 2px solid yellow;
+   border-radius: 4px;
+}
+
+QToolTip {
+  background-color: #fffbdd;
+} 
+
+.Contents YQPkgDescriptionView {
+  color: black;
+}
+
+QSplitter::handle {
+    image: url(separator.png);
+    height: 10px;
+}
+
+/* Eeeky workaround for a light rectangle betwee H and Vscrollbars. see bug #589443 */
+QAbstractScrollArea {
+    border: 1px solid #888;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 1px;
+}
+QAbstractScrollArea>* {
+   border: 0;
+}
+
+QGroupBox {
+    border: 1px groove gray;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QCheckBox {
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+#RepoUpgradeLabel {
+        color: #000000;
+        background: #98ce57;
+}
+
