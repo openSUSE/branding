@@ -7,15 +7,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1920px"
-   height="1080px"
+   width="1920"
+   height="1080"
    id="svg3033"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="blank-background-169.svg"
+   sodipodi:docname="blank-background-1610.svg"
    inkscape:export-filename="/home/ivan/grow.png"
    inkscape:export-xdpi="90.019997"
    inkscape:export-ydpi="90.019997">
@@ -26,66 +25,45 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="591.75693"
-     inkscape:cy="430.25468"
+     inkscape:zoom="0.5"
+     inkscape:cx="1040"
+     inkscape:cy="679.99974"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1854"
      inkscape:window-height="1102"
-     inkscape:window-x="59"
-     inkscape:window-y="31"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:snap-page="true"
      inkscape:snap-global="true"
      inkscape:snap-nodes="false" />
   <defs
      id="defs3035">
-    <radialGradient
-       r="14.999995"
-       fy="480.24741"
-       fx="924.65479"
-       cy="480.24741"
-       cx="924.65479"
-       gradientTransform="matrix(-0.00207039,1.7777746,-1.0062503,-0.0037037,1415.6634,-1170.3826)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient5594-2"
-       xlink:href="#linearGradient5442-9"
-       inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient5442-9">
-      <stop
-         id="stop5444-1"
-         offset="0"
-         style="stop-color:#000000;stop-opacity:0.20422535;" />
-      <stop
-         id="stop5446-9"
-         offset="1"
-         style="stop-color:#000000;stop-opacity:0.6056338;" />
-    </linearGradient>
-    <radialGradient
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.00741286,-2.8425648,1.6089986,-0.01326132,198.19654,3113.3995)"
-       r="14.999995"
-       fy="467.41821"
-       fx="926.19055"
-       cy="467.41821"
-       cx="926.19055"
-       id="radialGradient5448-6"
-       xlink:href="#linearGradient5442-9"
-       inkscape:collect="always" />
-    <radialGradient
-       r="14.999995"
-       fy="480.24741"
-       fx="924.65479"
-       cy="480.24741"
-       cx="924.65479"
-       gradientTransform="matrix(-0.00207039,1.7777746,-1.0062503,-0.0037037,1415.6634,-1170.3826)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient4179"
-       xlink:href="#linearGradient5442-9"
-       inkscape:collect="always" />
+    <filter
+       id="filter3823"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       height="1"
+       width="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence3827"
+         numOctaves="3"
+         seed="68"
+         baseFrequency="0.20243902439024392"
+         result="fbSourceGraphic"
+         type="turbulence" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3829" />
+    </filter>
   </defs>
   <metadata
      id="metadata3038">
@@ -95,7 +73,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -107,9 +85,31 @@
     <path
        inkscape:connector-curvature="0"
        id="path5440"
-       d="m 5.0099874e-4,7.9999998e-5 0,1080.000020000002 1919.99999900126,0 0,-1080.000020000002 -1919.99999900126,0 z"
-       style="fill:#2d2d2d;fill-opacity:1;stroke:none"
+       d="m 5.0099874e-4,3.7999997e-4 0,1079.99982000003 1919.99999900126,0 0,-1079.99982000003 -1919.99999900126,0 z"
+       style="fill:#1b2021;fill-opacity:1;stroke:none"
        inkscape:transform-center-x="-2.4748737"
-       inkscape:transform-center-y="2.8284271" />
+       inkscape:transform-center-y="2.545584" />
+    <path
+       inkscape:transform-center-y="2.545584"
+       inkscape:transform-center-x="-2.4748737"
+       style="opacity:0;fill:#1b2021;fill-opacity:1;stroke:none;filter:url(#filter3817)"
+       d="m 5.0099874e-4,3.7999997e-4 0,1079.99982000003 1919.99999900126,0 0,-1079.99982000003 -1919.99999900126,0 z"
+       id="path3807"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:transform-center-y="2.545582"
+       inkscape:transform-center-x="-2.4748737"
+       style="opacity:0.02000002;fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter3823)"
+       d="m 0,-120 0,1200 1920,0 0,-1200 -1920,0 z"
+       id="path3821"
+       inkscape:connector-curvature="0"
+       transform="matrix(1,0,0,0.89999985,0,108.00018)" />
+    <path
+       inkscape:transform-center-y="2.545584"
+       inkscape:transform-center-x="-2.4748737"
+       style="opacity:0.5;fill:#1b2021;fill-opacity:1;stroke:none"
+       d="m 5.0099874e-4,3.7999997e-4 0,1079.99982000003 1919.99999900126,0 0,-1079.99982000003 -1919.99999900126,0 z"
+       id="path3776"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -14,7 +14,7 @@
    id="svg3033"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="blank-background-54.svg"
+   sodipodi:docname="blank-background-43.svg"
    inkscape:export-filename="/home/ivan/grow.png"
    inkscape:export-xdpi="90.019997"
    inkscape:export-ydpi="90.019997">
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="-527.31574"
-     inkscape:cy="528.09434"
+     inkscape:zoom="0.5"
+     inkscape:cx="1040"
+     inkscape:cy="679.99974"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -40,7 +40,31 @@
      inkscape:snap-global="true"
      inkscape:snap-nodes="false" />
   <defs
-     id="defs3035" />
+     id="defs3035">
+    <filter
+       id="filter3823"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       height="1"
+       width="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence3827"
+         numOctaves="3"
+         seed="68"
+         baseFrequency="0.20243902439024392"
+         result="fbSourceGraphic"
+         type="turbulence" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3829" />
+    </filter>
+  </defs>
   <metadata
      id="metadata3038">
     <rdf:RDF>
@@ -49,7 +73,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,9 +86,31 @@
     <path
        inkscape:connector-curvature="0"
        id="path5440"
-       d="m 6.4099914e-4,55.999872 0,1024.000028 1279.99995900086,0 0,-1024.000028 -1279.99995900086,0 z"
-       style="fill:#2d2d2d;fill-opacity:1;stroke:none"
-       inkscape:transform-center-x="-2.4748737"
-       inkscape:transform-center-y="2.8284271" />
+       d="m 3.3399933e-4,56.000371 0,1023.999829 1280.00066600067,0 0,-1023.999829 -1280.00066600067,0 z"
+       style="fill:#1b2021;fill-opacity:1;stroke:none"
+       inkscape:transform-center-x="-1.6499167"
+       inkscape:transform-center-y="2.4135901" />
+    <path
+       inkscape:transform-center-y="2.4135901"
+       inkscape:transform-center-x="-1.6499167"
+       style="opacity:0;fill:#1b2021;fill-opacity:1;stroke:none;filter:url(#filter3817)"
+       d="m 3.3399933e-4,56.000371 0,1023.999829 1280.00066600067,0 0,-1023.999829 -1280.00066600067,0 z"
+       id="path3807"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:transform-center-y="2.4135864"
+       inkscape:transform-center-x="-1.6499225"
+       style="opacity:0.02000002;fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter3823)"
+       d="m 0,-120 0,1200 1920,0 0,-1200 -1920,0 z"
+       id="path3821"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.66666702,0,0,0.85333319,0,158.40018)" />
+    <path
+       inkscape:transform-center-y="2.4135901"
+       inkscape:transform-center-x="-1.6499167"
+       style="opacity:0.5;fill:#1b2021;fill-opacity:1;stroke:none"
+       d="m 3.3399933e-4,56.000371 0,1023.999829 1280.00066600067,0 0,-1023.999829 -1280.00066600067,0 z"
+       id="path3776"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
