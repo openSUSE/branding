@@ -16,7 +16,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.48.2 r9819"
    version="1.0"
-   sodipodi:docname="startup.svg"
+   sodipodi:docname="welcome.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    enable-background="new"
    inkscape:export-filename="install.png"
@@ -68,50 +68,6 @@
        fx="926.19055"
        fy="467.41821"
        r="14.999995" />
-    <filter
-       inkscape:collect="always"
-       id="filter4392">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.52118117"
-         id="feGaussianBlur4394" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter4215">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.8162269"
-         id="feGaussianBlur4217" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter4227">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.56324537"
-         id="feGaussianBlur4229" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter4215-2">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.8162269"
-         id="feGaussianBlur4217-3" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter4227-3">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.56324537"
-         id="feGaussianBlur4229-5" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient2797-3"
@@ -133,15 +89,6 @@
          offset="1"
          style="stop-color:#ffffff;stop-opacity:0;" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       id="filter5172-3"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur5174-1"
-         stdDeviation="2.440645"
-         inkscape:collect="always" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient2797-3"
@@ -152,15 +99,6 @@
        x2="232"
        y2="-65.195312"
        gradientTransform="translate(0,2.1258009)" />
-    <filter
-       color-interpolation-filters="sRGB"
-       id="filter4199-8"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur4201-4"
-         stdDeviation="2.4476426"
-         inkscape:collect="always" />
-    </filter>
     <radialGradient
        r="102.91172"
        fy="89.561661"
@@ -1188,9 +1126,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="210.97192"
-     inkscape:cy="281.51053"
+     inkscape:zoom="0.5"
+     inkscape:cx="353.01282"
+     inkscape:cy="395.43103"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -1224,7 +1162,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date />
         <dc:creator>
           <cc:Agent>
@@ -1270,48 +1208,12 @@
      inkscape:label="art"
      style="display:inline">
     <rect
-       style="fill:#2d2d2d;fill-opacity:1;stroke:none;stroke-opacity:1"
+       style="fill:#1b2021;fill-opacity:1;stroke:none;stroke-opacity:1"
        id="rect3058"
        width="801.05823"
        height="601.05823"
        x="0"
        y="-2.2737368e-13" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.17801047;stroke:none;display:inline;font-family:Cantrell;-inkscape-font-specification:Cantrell"
-       x="533.48938"
-       y="38.30423"
-       id="text3828-1"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3830-9"
-         x="533.48938"
-         y="38.30423"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:0.17801047;font-family:Cantarell;-inkscape-font-specification:Cantarell">SUSE Linux Enterprise Beta</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#101010;fill-opacity:1;stroke:none;display:inline;font-family:Cantrell;-inkscape-font-specification:Cantrell"
-       x="532.48938"
-       y="37.30423"
-       id="text3828-4"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3830-1"
-         x="532.48938"
-         y="37.30423"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101010;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell">SUSE Linux Enterprise Beta</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#262626;fill-opacity:1;stroke:none;font-family:Cantrell;-inkscape-font-specification:Cantrell"
-       x="532.98938"
-       y="37.804234"
-       id="text3828"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3830"
-         x="532.98938"
-         y="37.804234"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#262626;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell">SUSE Linux Enterprise Beta</tspan></text>
     <g
        id="g5352"
        style="display:inline;enable-background:new"
