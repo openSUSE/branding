@@ -1,5 +1,3 @@
-# Mageia splashy like theme
-
 Window.GetMaxWidth = fun (){
   i = 0;
   width = 0;
@@ -20,66 +18,43 @@ Window.GetMaxHeight = fun (){
   return height;
 };
 
-anim.imagecount = 32;
-anim.target_width =  0.5* 0.46 * Window.GetWidth();
-anim.target_height =  0.5* 0.11 * Window.GetWidth();
-
-fun RotatedImage (index){
-	index = Math.Int(index);
-	if (!RotatedImageCache[index])
-		RotatedImageCache[index] = anim.original_image.Rotate((Math.Pi*2*index)/anim.imagecount).Scale(anim.target_width, anim.target_height);
-
-	return RotatedImageCache[index];
-	}
-
-scrnratio = Window.GetWidth() / Window.GetHeight();
-
 if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
   background.original_image = ImageNew("suspend.png");
   Window.SetBackgroundTopColor(0.102, 0.102, 0.102);
   Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
 }
 else {
-  if (scrnratio < 1.29 ) {
-       background.original_image = ImageNew("blank-background-54.png");
-       geeko.original_image = ImageNew("logo-54.png");
-  } else {
-  if (scrnratio < 1.55 ) {
-       background.original_image = ImageNew("blank-background-43.png");
-       geeko.original_image = ImageNew("logo-43.png");
-  } else {
-  if (scrnratio < 1.75 ) {
-       background.original_image = ImageNew("blank-background-1610.png");
-       geeko.original_image = ImageNew("logo-1610.png");
-  } else {
-       background.original_image = ImageNew("blank-background-169.png");
-       geeko.original_image = ImageNew("logo-169.png");
-  }}}
+  background.original_image = ImageNew("background.png");
   Window.SetBackgroundTopColor(0.102, 0.102, 0.102);
   Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
 
+  for (i = 0; i < 4; i++)
+     anim_images[i] = Image("progress-" + i + ".png");
+  anim_sprite = Sprite();
+  anim_sprite.SetX((Window.GetX() + Window.GetMaxWidth() - anim_images[0].GetWidth()) / 2 );
+  anim_sprite.SetY(Window.GetY() + Window.GetMaxHeight()/4);
 }
+
+logo.image = ImageNew("logo.png");
+logo.sprite = SpriteNew();
+logo.sprite.SetImage(logo.image);
+logo.sprite.SetX((Window.GetX() + Window.GetMaxWidth() - logo.image.GetWidth()) / 2 );
+logo.sprite.SetY(Window.GetY() + Window.GetMaxHeight() - logo.image.GetHeight()*1.5);
 
 background.image = background.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
 background.sprite = SpriteNew();
 background.sprite.SetImage(background.image);
 background.sprite.SetPosition(Window.GetX(), Window.GetY(), -10);
 
-geeko.image = geeko.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
-geeko.sprite = SpriteNew();
-geeko.sprite.SetImage(geeko.image);
-geeko.sprite.SetPosition(Window.GetX(), Window.GetY(), 0);
-geeko.sprite.SetOpacity (0);
-
 sprite_prompt = SpriteNew();
 
+progress = 0;
 fun refresh_callback ()
   {
     if (status == "normal")
       {
-	anim.index += 1;
-	anim.index %= anim.imagecount;
-	anim.sprite.SetImage(RotatedImage (anim.index));
+    progress++;
+    anim_sprite.SetImage(anim_images[Math.Int(progress / 25) % 4]);
       }
     else
       {
@@ -87,7 +62,7 @@ fun refresh_callback ()
       }
 
   }
- 
+
 if (Plymouth.GetMode() != "suspend" && Plymouth.GetMode() != "resume") {
   Plymouth.SetRefreshFunction (refresh_callback);
 }

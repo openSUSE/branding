@@ -1,178 +1,182 @@
 NAME=grow
-VERSION=13.1
+VERSION=12.0
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
-THEME=openSUSE
+THEME=SLE
 
-all: info openSUSE.tar.xz
+all: info SLE.tar.xz
 
 info:
 	echo "Make sure to have inkscape, GraphicsMagick and optipng installed"
 
-openSUSE.tar.xz: openSUSE.d
-	tar cvfJ openSUSE.tar.xz openSUSE
-#	rm -r openSUSE
+SLE.tar.xz: SLE.d
+	tar cvfJ SLE.tar.xz SLE
+#	rm -r SLE
 
-openSUSE.tar.xz_clean:
-	rm -f openSUSE.tar.xz
+SLE.tar.xz_clean:
+	rm -f SLE.tar.xz
 
-CLEAN_DEPS+=openSUSE.tar.xz_clean
+CLEAN_DEPS+=SLE.tar.xz_clean
 
-openSUSE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-	cp Makefile LICENSE openSUSE
+SLE.d: gfxboot.d grub2.d kdelibs.d yast.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
+	cp Makefile LICENSE SLE
 
-openSUSE.d_clean:
-	rm -rf openSUSE/Makefile
-	rm -rf openSUSE/LICENSE
+SLE.d_clean:
+	rm -rf SLE/Makefile
+	rm -rf SLE/LICENSE
 
-CLEAN_DEPS+=openSUSE.d_clean
+CLEAN_DEPS+=SLE.d_clean
 
 gfxboot.d: defaults
 	inkscape -w 800 -e tmp.png gfxboot/startup.svg
-	mkdir -p openSUSE/gfxboot/data-boot/
+	mkdir -p SLE/gfxboot/data-boot/
 	cp gfxboot/FifthLeg-Heavy-Cyrillic.otf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-boot/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/install.svg
-	mkdir -p openSUSE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
+	mkdir -p SLE/gfxboot/data-install
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/back.jpg
 	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/welcome.jpg
 	mkdir -p ~/.fonts
 	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
 	rm ~/.fonts/FifthLeg-Heavy-Cyrillic.otf
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/text.jpg
 	rm tmp.png
 
 gfxboot.d_clean:
-	rm -rf openSUSE/gfxboot
+	rm -rf SLE/gfxboot tmp.png
 
 CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
-	mkdir -p openSUSE/grub2/backgrounds
-	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-1610.png grub2-1610.svg
-	optipng -o4 openSUSE/grub2/backgrounds/default-1610.png
-	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-169.png grub2-169.svg	
-	optipng -o4 openSUSE/grub2/backgrounds/default-169.png
-	inkscape -w 1280 -C -e openSUSE/grub2/backgrounds/default-54.png grub2-54.svg
-	optipng -o4 openSUSE/grub2/backgrounds/default-54.png
-	inkscape -w 1600 -C -e openSUSE/grub2/backgrounds/default-43.png grub2-43.svg
-	optipng -o4 openSUSE/grub2/backgrounds/default-43.png
-	cp -a boot/grub2/theme openSUSE/grub2/
-	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
+	mkdir -p SLE/grub2/backgrounds
+#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-1610.png grub2-1610.svg
+	cp -f grub2-1610.png SLE/grub2/backgrounds/default-1610.png
+	optipng -o4 SLE/grub2/backgrounds/default-1610.png
+#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-169.png grub2-169.svg	
+	cp -f grub2-169.png SLE/grub2/backgrounds/default-169.png
+	optipng -o4 SLE/grub2/backgrounds/default-169.png
+#	inkscape -w 1280 -C -e SLE/grub2/backgrounds/default-54.png grub2-54.svg
+	cp -f grub2-54.png SLE/grub2/backgrounds/default-54.png
+	optipng -o4 SLE/grub2/backgrounds/default-54.png
+#	inkscape -w 1600 -C -e SLE/grub2/backgrounds/default-43.png grub2-43.svg
+	cp -f grub2-43.png SLE/grub2/backgrounds/default-43.png
+	optipng -o4 SLE/grub2/backgrounds/default-43.png
+	cp -a boot/grub2/theme SLE/grub2/
+	./boot/grub2-branding.sh SLE/grub2/backgrounds
 
 grub2.d_clean:
-	rm -rf openSUSE/grub2
+	rm -rf SLE/grub2
 
 CLEAN_DEPS+=grub2.d_clean
 
-PLS=openSUSE/plymouth/theme/openSUSE.script
+PLS=SLE/plymouth/theme/SLE.script
 
-openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
-	mkdir -p openSUSE/plymouth
-	cp -a boot/plymouth/theme openSUSE/plymouth/
+SLE/plymouth/theme/SLE.script: boot/plymouth/theme/*
+	mkdir -p SLE/plymouth
+	cp -a boot/plymouth/theme SLE/plymouth/
 
 PLYMOUTH_DEPS=${PLS}
 
-openSUSE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-1610.png blank-background-1610.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-1610.png
+SLE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${PLS}
+	inkscape -w 1920 -C -e SLE/plymouth/theme/blank-background-1610.png blank-background-1610.svg
+	optipng -o4 SLE/plymouth/theme/blank-background-1610.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-1610.png
 
-openSUSE/plymouth/theme/logo-1610.png: background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/logo-1610.png logo-1610.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-1610.png
+SLE/plymouth/theme/logo-1610.png: background-1610.svg ${PLS}
+	inkscape -w 1920 -C -e SLE/plymouth/theme/logo-1610.png logo-1610.svg
+	optipng -o4 SLE/plymouth/theme/logo-1610.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-1610.png
 
-openSUSE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-169.png blank-background-169.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-169.png
+SLE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
+	inkscape -w 1920 -C -e SLE/plymouth/theme/blank-background-169.png blank-background-169.svg
+	optipng -o4 SLE/plymouth/theme/blank-background-169.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-169.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-169.png
 
-openSUSE/plymouth/theme/logo-169.png: logo-169.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/logo-169.png logo-169.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-169.png
+SLE/plymouth/theme/logo-169.png: logo-169.svg ${PLS}
+	inkscape -w 1920 -C -e SLE/plymouth/theme/logo-169.png logo-169.svg
+	optipng -o4 SLE/plymouth/theme/logo-169.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-169.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-169.png
 
-openSUSE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
-	inkscape -w 1280 -C -e openSUSE/plymouth/theme/blank-background-54.png blank-background-54.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-54.png
+SLE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
+	inkscape -w 1280 -C -e SLE/plymouth/theme/blank-background-54.png blank-background-54.svg
+	optipng -o4 SLE/plymouth/theme/blank-background-54.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-54.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-54.png
 
-openSUSE/plymouth/theme/logo-54.png: logo-54.svg ${PLS}
-	inkscape -w 1280 -C -e openSUSE/plymouth/theme/logo-54.png logo-54.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-54.png
+SLE/plymouth/theme/logo-54.png: logo-54.svg ${PLS}
+	inkscape -w 1280 -C -e SLE/plymouth/theme/logo-54.png logo-54.svg
+	optipng -o4 SLE/plymouth/theme/logo-54.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-54.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-54.png
 
-openSUSE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/blank-background-43.png blank-background-43.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-43.png
+SLE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
+	inkscape -w 1600 -C -e SLE/plymouth/theme/blank-background-43.png blank-background-43.svg
+	optipng -o4 SLE/plymouth/theme/blank-background-43.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-43.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-43.png
 
-openSUSE/plymouth/theme/logo-43.png: logo-43.svg ${PLS}
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/logo-43.png logo-43.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-43.png
+SLE/plymouth/theme/logo-43.png: logo-43.svg ${PLS}
+	inkscape -w 1600 -C -e SLE/plymouth/theme/logo-43.png logo-43.svg
+	optipng -o4 SLE/plymouth/theme/logo-43.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-43.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-43.png
 
 plymouth.d: ${PLYMOUTH_DEPS}
 
 plymouth.d_clean:
-	rm -rf openSUSE/plymouth
+	rm -rf SLE/plymouth
 
 CLEAN_DEPS+=plymouth.d_clean
 
 kdelibs.d: defaults
-	mkdir -p openSUSE/kdelibs
-	cp kdelibs/body-background.jpg kdelibs/css.diff openSUSE/kdelibs
+	mkdir -p SLE/kdelibs
+	cp kdelibs/body-background.jpg kdelibs/css.diff SLE/kdelibs
 
 kdelibs.d_clean:
-	rm -rf openSUSE/kdelibs
+	rm -rf SLE/kdelibs
 
 CLEAN_DEPS+=kdelibs.d_clean
 
 yast.d:
 #	create directly the background from the 4:3 root's blank background
-	mkdir -p openSUSE/yast_wizard
-	cp -a yast/* openSUSE/yast_wizard
-	inkscape -w 1600 -C -e openSUSE/yast_wizard/background.png blank-background-43.svg
-	rm -f openSUSE/yast_wizard/*.svg
+	mkdir -p SLE/yast_wizard
+	cp -a yast/* SLE/yast_wizard
+	inkscape -w 1600 -C -e SLE/yast_wizard/background.png blank-background-43.svg
+	rm -f SLE/yast_wizard/*.svg
 
 yast.d_clean:
-	rm -rf openSUSE/yast_wizard
+	rm -rf SLE/yast_wizard
 
 CLEAN_DEPS+=yast.d_clean
 
 wallpaper.d: defaults
-	mkdir -p openSUSE/wallpapers
-	cp wallpapers/default-1600x1200.jpg.desktop openSUSE/wallpapers
-	cp wallpapers/default-1920x1200.jpg.desktop openSUSE/wallpapers
-	cp wallpapers/default-1920x1080.jpg.desktop openSUSE/wallpapers
-	mkdir -p openSUSE/wallpapers/openSUSEdefault/contents/images
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1600x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg.desktop
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg.desktop
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1080.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg.desktop
-	ln -sf openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
-	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
-	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
-	cp default-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
-	cp default-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
-	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
-	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
-	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
-	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
-	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
-	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
+	mkdir -p SLE/wallpapers
+	cp wallpapers/default-1600x1200.jpg.desktop SLE/wallpapers
+	cp wallpapers/default-1920x1200.jpg.desktop SLE/wallpapers
+	cp wallpapers/default-1920x1080.jpg.desktop SLE/wallpapers
+	mkdir -p SLE/wallpapers/SLEdefault/contents/images
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1600x1200.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1600x1200.jpg.desktop
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1920x1200.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1200.jpg.desktop
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1920x1080.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1080.jpg.desktop
+	ln -sf SLE${VERSION_NO_DOT}-1600x1200.jpg SLE/wallpapers/default-1600x1200.jpg
+	ln -sf SLE${VERSION_NO_DOT}-1920x1200.jpg SLE/wallpapers/default-1920x1200.jpg
+	ln -sf SLE${VERSION_NO_DOT}-1920x1080.jpg SLE/wallpapers/default-1920x1080.jpg
+	cp default-1280x1024.jpg SLE/wallpapers/SLEdefault/contents/images/1280x1024.jpg
+	cp default-1600x1200.jpg SLE/wallpapers/SLEdefault/contents/images/1600x1200.jpg
+	cp default-1920x1080.jpg SLE/wallpapers/SLEdefault/contents/images/1920x1080.jpg
+	cp default-1920x1200.jpg SLE/wallpapers/SLEdefault/contents/images/1920x1200.jpg
+	ln -sf SLEdefault/contents/images/1920x1080.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1080.jpg
+	ln -sf SLEdefault/contents/images/1920x1200.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1200.jpg
+	ln -sf SLEdefault/contents/images/1600x1200.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1600x1200.jpg
+	convert -quality 90 -geometry 400x250 default-1920x1200.jpg SLE/wallpapers/SLEdefault/screenshot.jpg
+	cp -p kde-workspace/metadata.desktop SLE/wallpapers/SLEdefault/metadata.desktop
 
 wallpaper.d_clean:
-	rm -rf openSUSE/wallpapers
+	rm -rf SLE/wallpapers
 
 CLEAN_DEPS+=wallpaper.d_clean
 
@@ -208,38 +212,38 @@ defaults_clean:
 CLEAN_DEPS+=defaults_clean
 
 ksplashx.d: defaults
-	mkdir -p openSUSE/ksplashx
-	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
-	cp -a ksplashx/1920x1200 openSUSE/ksplashx/
-	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1920x1200/opensuse-logo.png logo.svg
-	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplashx/Preview.png
+	mkdir -p SLE/ksplashx
+	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > SLE/ksplashx/Theme.rc
+	cp -a ksplashx/1920x1200 SLE/ksplashx/
+	inkscape -w 260 --export-id=Geeko -C -j -e SLE/ksplashx/1920x1200/opensuse-logo.png logo.svg
+	convert -geometry 300x250 default-1920x1200.jpg SLE/ksplashx/Preview.png
 
 ksplashx.d_clean:
-	rm -rf openSUSE/ksplashx
+	rm -rf SLE/ksplashx
 
 CLEAN_DEPS+=ksplashx.d_clean
 
-#This is called openSUSE
+#This is called SLE
 kdm.d: defaults
-	mkdir -p openSUSE/kdm/themes/openSUSE
-	cp -a kdm/* openSUSE/kdm/themes/openSUSE
-	cp -r openSUSE/kdm/themes/openSUSE/pics/* openSUSE/kdm/
-	rm -rf openSUSE/kdm/themes/openSUSE/pics
+	mkdir -p SLE/kdm/themes/SLE
+	cp -a kdm/* SLE/kdm/themes/SLE
+	cp -r SLE/kdm/themes/SLE/pics/* SLE/kdm/
+	rm -rf SLE/kdm/themes/SLE/pics
 
 kdm.d_clean:
-	rm -rf openSUSE/kdm
+	rm -rf SLE/kdm
 
 CLEAN_DEPS+=kdm.d_clean
 
 ksplash-qml.d: 
-	mkdir -p openSUSE/ksplash-qml
-	sed "s:@VERSION@:${VERSION}:g" ksplash-qml/Theme.rc.in > openSUSE/ksplash-qml/Theme.rc
-	cp ksplash-qml/main.qml openSUSE/ksplash-qml/main.qml
-	cp ksplash-qml/Preview.png openSUSE/ksplash-qml/Preview.png
-	cp -a ksplash-qml/images openSUSE/ksplash-qml/
+	mkdir -p SLE/ksplash-qml
+	sed "s:@VERSION@:${VERSION}:g" ksplash-qml/Theme.rc.in > SLE/ksplash-qml/Theme.rc
+	cp ksplash-qml/main.qml SLE/ksplash-qml/main.qml
+	cp ksplash-qml/Preview.png SLE/ksplash-qml/Preview.png
+	cp -a ksplash-qml/images SLE/ksplash-qml/
 
 ksplash-qml.d_clean:
-	rm -rf openSUSE/ksplash-qml
+	rm -rf SLE/ksplash-qml
 
 CLEAN_DEPS+=ksplash-qml.d_clean
 
@@ -271,37 +275,37 @@ gnome_dynamic_clean:
 CLEAN_DEPS+=gnome_dynamic_clean
 
 gnome.d: gnome_dynamic
-	mkdir -p openSUSE/gnome
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
-	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
-	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
+	mkdir -p SLE/gnome
+	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/wallpaper-branding-SLE.xml
+	cp gnome/SLE-default-static.xml SLE/gnome/SLE-default-static.xml
+	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/dynamic-wallpaper-branding-SLE.xml
+	cp -a gnome/dynamic/ SLE/gnome/${NAME}
 
 gnome.d_clean:
-	rm -rf openSUSE/gnome
+	rm -rf SLE/gnome
 
 CLEAN_DEPS+=gnome.d_clean
 
 susegreeter.d:
-	mkdir -p openSUSE/SUSEgreeter
-	inkscape -w 800 -e openSUSE/SUSEgreeter/background.png kde-workspace/SUSEgreeter/background.svg
+	mkdir -p SLE/SUSEgreeter
+	inkscape -w 800 -e SLE/SUSEgreeter/background.png kde-workspace/SUSEgreeter/background.svg
 
 susegreeter.d_clean:
-	rm -rf openSUSE/SUSEgreeter
+	rm -rf SLE/SUSEgreeter
 
 CLEAN_DEPS+=susegreeter.d_clean
 
 xfce.d:
-	mkdir -p openSUSE/xfce
-	inkscape -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
-	cp xfce/COPYING openSUSE/xfce/COPYING
+	mkdir -p SLE/xfce
+	inkscape -w 350 -e SLE/xfce/splash.png xfce/splash.svg
+	cp xfce/COPYING SLE/xfce/COPYING
 
 xfce.d_clean:
-	rm -rf openSUSE/xfce
+	rm -rf SLE/xfce
 
 CLEAN_DEPS+=xfce.d_clean
 
-install: # do not add requires here, this runs from generated openSUSE
+install: # do not add requires here, this runs from generated SLE
 	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
 
 	install -d ${DESTDIR}/usr/share/wallpapers
@@ -309,19 +313,19 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	## Install xml files used by GNOME to find default wallpaper
 	# Here's the setup we use:
-	#  - /usr/share/wallpapers/openSUSE-default.xml is the default background
-	#  - /usr/share/wallpapers/openSUSE-default.xml is a symlink (via
+	#  - /usr/share/wallpapers/SLE-default.xml is the default background
+	#  - /usr/share/wallpapers/SLE-default.xml is a symlink (via
 	#    update-alternatives) to either:
-	#    a) /usr/share/wallpapers/openSUSE-default-static.xml (from
-	#        wallpaper-branding-openSUSE)
-	#    b) /usr/share/wallpapers/openSUSE-default-dynamic.xml (from
-	#        dynamic-wallpaper-branding-openSUSE)
-	#  - /usr/share/wallpapers/openSUSE-default-dynamic.xml is a symlink to the
+	#    a) /usr/share/wallpapers/SLE-default-static.xml (from
+	#        wallpaper-branding-SLE)
+	#    b) /usr/share/wallpapers/SLE-default-dynamic.xml (from
+	#        dynamic-wallpaper-branding-SLE)
+	#  - /usr/share/wallpapers/SLE-default-dynamic.xml is a symlink to the
 	#    dynamic background (since this XML file moves from a version to another)
 	#
 	# Static wallpaper
-	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
-	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
+	install -D -m 0644 gnome/wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-SLE.xml
+	install -m 0644 gnome/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml
 	# Dynamic wallpaper
 	install -d ${DESTDIR}/usr/share/backgrounds
 	if test -z "${NAME}"; then \
@@ -329,15 +333,15 @@ install: # do not add requires here, this runs from generated openSUSE
 	    false ;\
 	fi
 	cp -a gnome/${NAME}/ ${DESTDIR}/usr/share/backgrounds/
-	install -D -m 0644 gnome/dynamic-wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-openSUSE.xml
-	ln -sf /usr/share/backgrounds/${NAME}/${NAME}.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
+	install -D -m 0644 gnome/dynamic-wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-SLE.xml
+	ln -sf /usr/share/backgrounds/${NAME}/${NAME}.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml
 	## End xml files used by GNOME
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 
-	install -d ${DESTDIR}/usr/share/YaST2/theme/openSUSE
-	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/openSUSE/wizard
+	install -d ${DESTDIR}/usr/share/YaST2/theme/SLE
+	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/SLE/wizard
 
 	install -d ${DESTDIR}/usr/share/grub2/backgrounds/${THEME} ${DESTDIR}/boot/grub2/backgrounds/${THEME}
 	cp -a grub2/backgrounds/* ${DESTDIR}/usr/share/grub2/backgrounds/${THEME}
@@ -351,38 +355,38 @@ install: # do not add requires here, this runs from generated openSUSE
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps
 	cp -a kdm ${DESTDIR}/usr/share/kde4/apps/kdm
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1600x1200.jpg
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1920x1200.jpg
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1280x1024.jpg
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1920x1080.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1600x1200.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1920x1200.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1280x1024.jpg
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1920x1080.jpg
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
-	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE/images
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-openSUSE/images/background.jpg
+	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images
+	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images/background.jpg
 
-	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-SLE.png
 
 clean: ${CLEAN_DEPS}
-	rmdir openSUSE
+	rmdir SLE
 
-check: # do not add requires here, this runs from generated openSUSE
+check: # do not add requires here, this runs from generated SLE
 	## Check GNOME-related xml files have contant that make sense
 	# Check that the link for the dynamic wallpaper is valid
-	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml` ; \
-	test -f "$${LINK_TARGET}" || { echo "The link for openSUSE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; exit 1 ;}
+	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml` ; \
+	test -f "$${LINK_TARGET}" || { echo "The link for SLE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; exit 1 ;}
 
 	# Check that all files referenced in xml files actually exist
-	for xml in ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml; do \
+	for xml in ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml; do \
 	  xml_basename=`basename $${xml}` ; \
 	  for file in `sed "s:<[^>]*>::g" $${xml} | grep /usr`; do \
 	      test -f ${DESTDIR}/$${file} || { echo "$${file} is mentioned in $${xml_basename} but does not exist. Please update $${xml_basename}, or contact the GNOME team for help."; exit 1 ;} ; \
@@ -390,13 +394,13 @@ check: # do not add requires here, this runs from generated openSUSE
 	done
 
 	# Check that xml files reference all relevant files
-	for file in ${DESTDIR}/usr/share/wallpapers/openSUSEdefault/contents/images/*.jpg; do \
+	for file in ${DESTDIR}/usr/share/wallpapers/SLEdefault/contents/images/*.jpg; do \
 	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml || { echo "$${IMG} not mentioned in openSUSE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml || { echo "$${IMG} not mentioned in SLE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 
 	for file in ${DESTDIR}/usr/share/backgrounds/${NAME}/*.jpg; do \
 	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml || { echo "$${IMG} not mentioned in openSUSE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml || { echo "$${IMG} not mentioned in SLE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 	## End check of GNOME-related xml files
