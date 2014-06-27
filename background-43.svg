@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="Bg inkscape_1600x1200.svg"
+   sodipodi:docname="background-43.svg"
    inkscape:export-filename="/Users/zmarjanovic/Desktop/Bgs/Bg inkscape.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
@@ -278,10 +278,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748738"
-     inkscape:cx="522.02175"
-     inkscape:cy="682.04862"
+     inkscape:cx="290.57934"
+     inkscape:cy="578.28336"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer5"
      showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="778"
@@ -320,11 +320,10 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="logo"
-     sodipodi:insensitive="true">
+     inkscape:label="logo">
     <g
        style="display:inline"
-       transform="matrix(2.6546234,0,0,-2.6546234,891.83339,498.80681)"
+       transform="matrix(2.6546234,0,0,-2.6546234,841.83339,548.80681)"
        id="g126">
       <g
          id="g128"

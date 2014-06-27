@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="Bg inkscape_green2.svgz"
+   sodipodi:docname="background-1610.svg"
    enable-background="new"
    inkscape:export-filename="/Users/zmarjanovic/Desktop/Bgs/Bg inkscape.png"
    inkscape:export-xdpi="90"
@@ -275,11 +275,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.175"
-     inkscape:cx="1040.7016"
-     inkscape:cy="336.65899"
+     inkscape:zoom="0.59910568"
+     inkscape:cx="801.96708"
+     inkscape:cy="582.87343"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer5"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1032"
@@ -294,7 +294,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -321,7 +321,7 @@
      style="opacity:1">
     <g
        style="display:inline"
-       transform="matrix(2.6546234,0,0,-2.6546234,1206.1191,481.09252)"
+       transform="matrix(2.6546234,0,0,-2.6546234,1146.1191,541.09252)"
        id="g126">
       <g
          id="g128"
