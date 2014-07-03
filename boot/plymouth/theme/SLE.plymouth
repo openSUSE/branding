@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=SLE 12 theme
+Description=SLE 12 Plymouth theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/SLE
+ScriptFile=/usr/share/plymouth/themes/SLE/SLE.script

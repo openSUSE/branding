@@ -1,0 +1,198 @@
+body {
+	background-color: white;
+	font-size: 9pt;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+div#background-container {
+	/*position: absolute;
+	z-index: -100;
+	top: 0;
+	left: 0;
+	/*height: 276px;
+	width: auto;*/
+	padding: 10px;
+	background-image: url('images/background.png');
+	background-repeat: no-repeat;
+}
+
+div#background-container>h1 {
+	font-size: 12pt;
+	font-family: "Trebuchet MS", Sans-Serif;
+	letter-spacing: .1em;
+	color: #fff;
+	opacity: .9;
+	margin-left: 44px;
+}
+
+div#background-container>h3 {
+	color: #fff;
+	opacity: 0.6; 
+	padding: 0px 0px 5px 44px;
+	font-size: 8pt;
+	font-weight: normal;
+	letter-spacing: .2em;
+}
+
+div#container1 {
+	background-color: #ffffff;
+	/* opacity: 0.6; doesn't work in konqui */
+	background-repeat: repeat-x;
+	background-image: url('images/inner-bcg.png');
+	padding: 2em;
+	border: 1px solid #bbb;
+	margin: 10px 0px 0px 0px;
+	min-width: 630px;
+}
+
+div#column1 {
+	width: 50%;
+}
+
+div#column2 {
+	margin-left: 20px;
+	float: right;
+}
+
+h2 {
+	color: #204a87;
+	font-size: 11pt;
+}
+
+ul {
+	list-style: none;
+	margin-left: 4px;
+	padding: 4px;
+}
+
+a {
+	color: #5c3566;
+}
+
+a:hover {
+	color: #75507b;
+}
+
+table {
+	margin-left: 10px;
+}
+
+td,th {
+	padding: 3px;
+}
+
+td { 
+        padding-left: 12px;
+}
+
+th {
+	text-align: left;
+	color: #555;
+	font-size: 8pt;
+}
+
+li {
+	margin: 0px;
+	padding: 4px;
+}
+
+span.mountpoint {
+	font-family: monospace;
+	font-weight: bold;
+	color: #2e3436;
+}
+span.freespace {
+	padding-right: 10px;
+	font-weight: bold;
+	color: #aaa;
+}
+
+h2 {
+	margin-top: 2em;
+}
+
+span.label {
+	color: #888;
+}
+
+h2#dirs+ul {
+	padding-left: 60px;
+	background-image: url('images/dirs.png');
+	background-repeat: no-repeat;
+}
+
+h2#net+ul {
+	padding-left: 60px;
+	background-image: url('images/network.png');
+	background-repeat: no-repeat;
+	min-height: 60px;
+}
+
+h2#cpu+table {
+	padding-left: 60px;
+	background-image: url('images/cpu.png');
+	background-repeat: no-repeat;
+}
+
+h2#memory+table {
+	margin-left: 4px;
+	padding-left: 50px;
+	background-image: url('images/mem.png');
+	background-repeat: no-repeat;
+}
+
+h2#sysinfo+table {
+        margin-left: 4px;
+        padding-left: 50px;
+        background-image: url('images/sysinfo.png');
+        background-repeat: no-repeat;
+}
+
+h2#display+table {
+	margin-left: 4px;
+	padding-left: 50px;
+	background-image: url('images/display.png');
+	background-repeat: no-repeat;
+}
+
+h2#battery+table {
+        margin-left: 4px;
+        padding-left: 50px;
+        background-image: url('images/battery.png');
+        background-repeat: no-repeat;
+}
+
+h2#launch+ul {
+	opacity: 1;
+	padding-left: 60px;
+	background-image: url('images/launch.png');
+	background-repeat: no-repeat;
+}
+
+h2#hdds+table tr td[rowspan] + td,
+h2#hdds+table tr td.bar {
+	padding-left: 4px;
+	color: #729fcf;
+	font-weight: bold;
+}
+
+table td:first-child {
+	color: #888;
+}
+
+h2#hdds+table tr td.bar {
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.bar .filled {
+    background-repeat: repeat;
+}
+
+.disk_text_color {
+    color:#888888;
+    font-weight: normal;
+}

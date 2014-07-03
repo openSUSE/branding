@@ -1,0 +1,9 @@
+[KSplash Theme: ksplash-qml-openSUSE]
+Name = openSUSE @VERSION@ KDE qml 
+Description = Animated KDE logo on a openSUSE @VERSION@ background
+Version = 1.1
+Author = Bruno Friedmann <bruno.friedmann at opensuse.org> Ivan Cukic <ivan.cukic at kde.org>
+Homepage = http://www.opensuse.org
+
+# Theme behaviour settings.
+Engine = KSplashQML

@@ -1,0 +1,7 @@
+/default-*.jpg
+/gnome/dynamic*.xml
+/SLE
+/SLE.tar.gz
+/SLE.tar.xz
+/gnome/dynamic/*
+.directory
