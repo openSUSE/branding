@@ -249,13 +249,12 @@ QComboBox::disabled {
 }
 QComboBox:focus {
   background-color: #35b9ab;
-  border: 1px solid #173f4f;
+  border: 1px solid #008a6f;
   color: #173f4f;
 }
 /* QComboBox gets the "on" state when the popup is open */
 QComboBox:!editable:on, QComboBox::drop-down:editable:on {
   color: #173f4f;
-  background-color: #fff;
 }
 QComboBox::drop-down { /* arrow part of the widget */
   subcontrol-origin: padding;
@@ -320,6 +319,7 @@ QPushButton {
   border-radius: 0px;
   background-color: #f1f0f2;
   min-height: 24px;
+  min-width: 40px;
   padding: 3px 12px;
   color: #008a6f;
   font-weight: bold;
@@ -386,15 +386,15 @@ QToolButton::down-arrow {
 
 
 QProgressBar {
-  border: 1px solid #008a6f;
+  border: 1px solid #666;
   border-radius: 0px;
   text-align: center;
-  color: #173f4f;
-  background-color: #f1f0f2;
+  color: #fff;
+  background-color: #bbb;
 }
 QProgressBar::chunk {
   background-color:  #35b9ab;
-  border: 1px solid #0cad7a;
+  border: 1px solid #008a6f;
   border-radius: 0px;
 }
 
