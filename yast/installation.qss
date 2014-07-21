@@ -203,25 +203,25 @@ QTabBar
   qproperty-drawBase: 0;
 }
 QTabBar::tab {
-  color: #333;
-  background: #f1f0f2;
+  color: #008a6f;
+
   border: 1px solid #bbb;
-  border-radius: 0px;
   font-weight: bold;
-  padding: 0px 8px;
+  padding: 4px 8px;
   min-width: 180px;
   min-height: 24px;
 }
 
 QTabBar::tab:selected {
-  color: #008a6f;
-  background: #f1f0f2;
-  border: 1px solid #bbb; 
+  color: #333;
+  border: 1px solid #bbb;
   border-bottom: none;
 }
 
 QTabBar::tab:!selected:hover {
-  color: #35b9ab;
+  color: #173f4f;
+  background: #35b9ab;
+  border: 1px solid #008a6f;
 }
 
 QTabBar::tear {
@@ -386,15 +386,15 @@ QToolButton::down-arrow {
 
 
 QProgressBar {
-  border: 1px solid #666;
+  border: 1px solid #aaa;
   border-radius: 0px;
   text-align: center;
   color: #fff;
-  background-color: #bbb;
+  background-color: #e5e4e6;
 }
 QProgressBar::chunk {
   background-color:  #35b9ab;
-  border: 1px solid #008a6f;
+  border: 1px solid #e5e4e6;
   border-radius: 0px;
 }
 
