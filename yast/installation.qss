@@ -7,7 +7,7 @@ YQWizard { background: #f1f0f2; }
 #LogoHBox {
   background-color: #6da741;
   background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
-    stop: 0 #0a7970, stop: 1 #6da741);
+    stop: 0 #173f4f, stop: 0.5 #00a489, stop: 1 #6da741);
   border-bottom: 1px solid #173f4f;
 }
 #DialogLogo {
@@ -15,9 +15,9 @@ YQWizard { background: #f1f0f2; }
   min-width: 88px;
   min-height: 58px;
   margin-left: 10px;
-  margin-top: 5px;
+
   margin-right: 10px;
-  margin-bottom: 4px;
+
   background-color: none;
 }
 
