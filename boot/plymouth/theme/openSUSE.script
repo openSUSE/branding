@@ -1,5 +1,3 @@
-# Mageia splashy like theme
-
 Window.GetMaxWidth = fun (){
   i = 0;
   width = 0;
@@ -63,7 +61,7 @@ else {
 background.image = background.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
 background.sprite = SpriteNew();
 background.sprite.SetImage(background.image);
-background.sprite.SetPosition(Window.GetX(), Window.GetY(), 0);
+background.sprite.SetPosition(Window.GetX(), Window.GetY(), -10);
 
 geeko.image = geeko.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
 geeko.sprite = SpriteNew();
