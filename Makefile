@@ -79,23 +79,11 @@ openSUSE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${P
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-1610.png
 
-openSUSE/plymouth/theme/logo-1610.png: background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/logo-1610.png logo-1610.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-1610.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-1610.png
-
 openSUSE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
 	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-169.png blank-background-169.svg
 	optipng -o4 openSUSE/plymouth/theme/blank-background-169.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-169.png
-
-openSUSE/plymouth/theme/logo-169.png: logo-169.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/logo-169.png logo-169.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-169.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-169.png
 
 openSUSE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
 	inkscape -w 1280 -C -e openSUSE/plymouth/theme/blank-background-54.png blank-background-54.svg
@@ -103,23 +91,11 @@ openSUSE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-54.png
 
-openSUSE/plymouth/theme/logo-54.png: logo-54.svg ${PLS}
-	inkscape -w 1280 -C -e openSUSE/plymouth/theme/logo-54.png logo-54.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-54.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-54.png
-
 openSUSE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
 	inkscape -w 1600 -C -e openSUSE/plymouth/theme/blank-background-43.png blank-background-43.svg
 	optipng -o4 openSUSE/plymouth/theme/blank-background-43.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-43.png
-
-openSUSE/plymouth/theme/logo-43.png: logo-43.svg ${PLS}
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/logo-43.png logo-43.svg
-	optipng -o4 openSUSE/plymouth/theme/logo-43.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/logo-43.png
 
 plymouth.d: ${PLYMOUTH_DEPS}
 
