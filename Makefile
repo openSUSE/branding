@@ -50,13 +50,13 @@ CLEAN_DEPS+=gfxboot.d_clean
 grub2.d:
 	mkdir -p openSUSE/grub2/backgrounds
 	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-1610.png grub2-1610.svg
-	optipng -o4 openSUSE/grub2/backgrounds/default-1610.png
+	optipng -o0 openSUSE/grub2/backgrounds/default-1610.png
 	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-169.png grub2-169.svg	
-	optipng -o4 openSUSE/grub2/backgrounds/default-169.png
+	optipng -o0 openSUSE/grub2/backgrounds/default-169.png
 	inkscape -w 1280 -C -e openSUSE/grub2/backgrounds/default-54.png grub2-54.svg
-	optipng -o4 openSUSE/grub2/backgrounds/default-54.png
+	optipng -o0 openSUSE/grub2/backgrounds/default-54.png
 	inkscape -w 1600 -C -e openSUSE/grub2/backgrounds/default-43.png grub2-43.svg
-	optipng -o4 openSUSE/grub2/backgrounds/default-43.png
+	optipng -o0 openSUSE/grub2/backgrounds/default-43.png
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
