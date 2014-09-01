@@ -51,6 +51,6 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   # bar_style = "progress_bar_*.png"
   # highlight_style = "progress_highlight_*.png"
 
-  text = "@TIMEOUT_NOTIFICATION_SHORT@"
+  text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
