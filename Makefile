@@ -312,8 +312,8 @@ install: # do not add requires here, this runs from generated openSUSE
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 
-	install -d ${DESTDIR}/usr/share/YaST2/theme/openSUSE
-	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/openSUSE/wizard
+	install -d ${DESTDIR}/usr/share/YaST2/theme/current
+	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
 
 	install -d ${DESTDIR}/usr/share/grub2/backgrounds/${THEME} ${DESTDIR}/boot/grub2/backgrounds/${THEME}
 	cp -a grub2/backgrounds/* ${DESTDIR}/usr/share/grub2/backgrounds/${THEME}
