@@ -1,9 +1,11 @@
 #
-# Makefile.am for theme/openSUSE-PrimeMeridian/wizard
+# Makefile.am for theme/openSUSE
 #
 
-wizarddir = @themedir@/openSUSE-PrimeMeridian/wizard
+SUBDIRS = control-center animations testpage worldmap
 
-wizard_DATA = $(wildcard *.png ) style.qss richtext.css
+themedir = @themedir@/openSUSE
 
-EXTRA_DIST = $(wizard_DATA)
+theme_DATA = $(wildcard *.png )
+
+EXTRA_DIST = $(theme_DATA)
