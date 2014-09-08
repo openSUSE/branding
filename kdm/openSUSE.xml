@@ -3,7 +3,7 @@
 <!--
 Copyright 2008 Urs Wolfer <uwolfer @ kde.org>
 Copyright 2008 Oswald Buddenhagen <ossi @ kde.org>
-Copyright 2013 openSUSE Artwork Team
+Copyright 2013-2014 openSUSE Artwork Team
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License as
@@ -20,9 +20,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <greeter>
 
     <style font="Liberation Sans 14"
-        window-text-color="#bdcdd4"
+        window-text-color="#FFFFFF"
         base-color="#1b2122" alternate-base-color="#141a1a"
-        text-color="#bdcdd4" disabled-text-color="#9eabb0"
+        text-color="#FFFFFF" disabled-text-color="#9eabb0"
         base-alpha="0" 
         disabled-base-color="#1b2122"
         disabled-base-alpha="0" 
@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- clock -->
     <item type="label" id="clock">
         <pos x="50%" y="10" anchor="n" />
-        <normal font="Liberation Sans 12" color="#bdcdd4" />
+        <normal font="Liberation Sans 12" color="#FFFFFF" />
         <text>%c</text>
     </item>
             
@@ -50,7 +50,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <!-- welcome message -->
             <item type="label" id="welcome">
                 <pos x="50%" anchor="n" />
-                <normal font="Liberation Sans 15 Bold" color="#bdcdd4" />
+                <normal font="Liberation Sans 15 Bold" color="#FFFFFF" />
                 <stock type="welcome-label"/>
             </item>
             
@@ -63,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <!-- user list -->
             <item type="list" id="userlist">
                 <pos x="50%" min-height="100" max-height="200" width="280" anchor="n" />
-                <style highlight-color="#98ce57" font="Liberation Sans 14"/>
+                <style highlight-color="#26BE84" font="Liberation Sans 14"/>
                 <show type="userlist"/>
             </item>
 
@@ -72,7 +72,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <pos x="50%" height="32" width="280" anchor="n" />
                 <fixed>
                     <item type="pixmap">
-                        <pos x="50%" height="32" width="280" anchor="n" />  
+                        <pos x="50%" height="32" width="280" anchor="n" />
+                        <buddy idref="user-entry"/>
                         <normal file="lineedit-normal.png"/>
                         <prelight file="lineedit-hover.png"/>
                         <active file="lineedit-hover.png"/>
@@ -92,7 +93,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <pos x="50%" height="32" width="280" anchor="n" />
                 <fixed>
                     <item type="pixmap">
-                        <pos x="50%" height="32" width="280" anchor="n" />  
+                        <pos x="50%" height="32" width="280" anchor="n" />
+                        <buddy idref="pw-entry"/>
                         <normal file="lineedit-normal.png"/>
                         <prelight file="lineedit-hover.png"/>
                         <active file="lineedit-hover.png"/>
@@ -114,6 +116,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <fixed>
                     <item type="pixmap">
                         <pos x="50%" height="32" width="280" anchor="n" />
+                        <buddy idref="domain-entry"/>
                         <normal file="lineedit-normal.png"/>
                         <prelight file="lineedit-hover.png"/>
                         <active file="lineedit-hover.png"/>
@@ -124,7 +127,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </item>
                     <item type="entry" id="domain-entry" >
                         <pos x="33" y="2" height="28" width="240" anchor="nw" />
-                        <style text-color="#141a1a" highlight-color="#98ce57" />
+                        <style text-color="#141a1a" highlight-color="#26BE84" />
                     </item>
                 </fixed>
             </item>
@@ -132,35 +135,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <!-- messages -->
             <item type="label" id="caps-lock-warning">
                 <pos x="50%" anchor="n" />
-                <normal font="Liberation Sans 12" color="#98ce57" />
+                <normal font="Liberation Sans 12" color="#FFFFFF" />
                 <stock type="caps-lock-warning" />
             </item>
 
             <item type="label" id="pam-error">
                 <pos x="50%" anchor="n" expand="true" />
-                <normal font="Liberation Sans 12" color="#bf0000" />
+                <normal font="Liberation Sans 12" color="#DD0000" />
             </item>
 
         </box>
     </item>
 
-    <!-- the bottom buttons -->
-    <item type="rect" id="bottom-toolbar">
-        <pos x="50%" y="-10" width="64" height="22" anchor="s" />
-
-        <box orientation="horizontal" spacing="20" homogeneous="true">
-            <item button="true" type="pixmap" id="session_button">
-                <normal file="config-icon.png" alpha="0.7" />
-                <prelight file="config-icon.png" alpha="0.8" />
-                <active file="config-icon.png" alpha="1.0" />
-            </item>
-            <item button="true" type="pixmap" id="system_button">
-                <normal file="exit-icon.png" alpha="0.7" />
-                <prelight file="exit-icon.png" alpha="0.8" />
-                <active file="exit-icon.png" alpha="1.0" />
-            </item>
-        </box>
-
+    <!-- the bottom buttons -->            
+    <item button="true" type="pixmap" id="session_button">
+        <pos x="0" y="-32" anchor="nw" />
+        <normal file="config-icon.png" alpha="0.7" />
+        <prelight file="config-icon.png" alpha="0.8" />
+        <active file="config-icon.png" alpha="1.0" />
+    </item>
+    
+    <item button="true" type="pixmap" id="system_button">
+        <pos x="-0" y="-32" anchor="ne" />
+        <normal file="exit-icon.png" alpha="0.7" />
+        <prelight file="exit-icon.png" alpha="0.8" />
+        <active file="exit-icon.png" alpha="1.0" />
     </item>
 
 </greeter>
