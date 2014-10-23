@@ -183,8 +183,6 @@ YQMultiLineEdit QTextEdit { color: #333; }
 
 QMessageBox { background-color: #f1f0f2; }
 
-.conflict QWidget { color: #fff; }
-
 YQMultiProgressMeter {
   background-color: transparent;
   border: 1px solid #bbb;
