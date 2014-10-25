@@ -1125,16 +1125,19 @@
        x2="558.07391"
        y2="154.00002" />
     <linearGradient
-       id="linearGradient14415-4-7"
-       inkscape:collect="always">
+       id="linearGradient14415-4-7">
       <stop
          id="stop14417-1-1"
          offset="0"
-         style="stop-color:#000000;stop-opacity:1;" />
+         style="stop-color:#22a472;stop-opacity:1;" />
+      <stop
+         style="stop-color:#22a472;stop-opacity:0.49803922;"
+         offset="0.69662923"
+         id="stop5071" />
       <stop
          id="stop14419-0-1"
          offset="1"
-         style="stop-color:#000000;stop-opacity:0;" />
+         style="stop-color:#22a472;stop-opacity:0;" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -1482,9 +1485,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="284.56285"
-     inkscape:cy="396.094"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="180.16002"
+     inkscape:cy="31.043135"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -1564,7 +1567,7 @@
      inkscape:label="art"
      style="display:inline">
     <rect
-       style="fill:#0d6967;fill-opacity:1;stroke:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
        id="rect3058"
        width="801.05823"
        height="601.05823"

@@ -34,27 +34,23 @@ scrnratio = Window.GetWidth() / Window.GetHeight();
 
 if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
   background.original_image = ImageNew("suspend.png");
-  Window.SetBackgroundTopColor(0.102, 0.102, 0.102);
-  Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
+  Window.SetBackgroundTopColor(0.000, 0.000, 0.000);
+  Window.SetBackgroundBottomColor(0.000, 0.000, 0.000);
 }
 else {
   if (scrnratio < 1.29 ) {
        background.original_image = ImageNew("background-54.png");
-       geeko.original_image = ImageNew("logo-54.png");
   } else {
   if (scrnratio < 1.55 ) {
        background.original_image = ImageNew("background-43.png");
-       geeko.original_image = ImageNew("logo-43.png");
   } else {
   if (scrnratio < 1.75 ) {
        background.original_image = ImageNew("background-1610.png");
-       geeko.original_image = ImageNew("logo-1610.png");
   } else {
        background.original_image = ImageNew("background-169.png");
-       geeko.original_image = ImageNew("logo-169.png");
   }}}
-  Window.SetBackgroundTopColor(0.102, 0.102, 0.102);
-  Window.SetBackgroundBottomColor(0.102, 0.102, 0.102);
+  Window.SetBackgroundTopColor(0.000, 0.000, 0.000);
+  Window.SetBackgroundBottomColor(0.000, 0.000, 0.000);
 
 }
 
@@ -62,12 +58,6 @@ background.image = background.original_image.Scale(Window.GetMaxWidth() , Window
 background.sprite = SpriteNew();
 background.sprite.SetImage(background.image);
 background.sprite.SetPosition(Window.GetX(), Window.GetY(), -10);
-
-geeko.image = geeko.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
-geeko.sprite = SpriteNew();
-geeko.sprite.SetImage(geeko.image);
-geeko.sprite.SetPosition(Window.GetX(), Window.GetY(), 0);
-geeko.sprite.SetOpacity (0);
 
 sprite_prompt = SpriteNew();
 
@@ -250,7 +240,7 @@ else {
           {
             opacity = 1;
           }
-        geeko.sprite.SetOpacity (opacity);
+        background.sprite.SetOpacity (opacity);
       }
     else
       {
@@ -259,7 +249,7 @@ else {
           {
             opacity = 0;
           }
-        geeko.sprite.SetOpacity (opacity);
+        background.sprite.SetOpacity (opacity);
       }
    }
  }

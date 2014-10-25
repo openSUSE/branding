@@ -1,5 +1,5 @@
-NAME=grow
-VERSION=13.1
+NAME=contours
+VERSION=13.2
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
@@ -73,29 +73,29 @@ openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
 
 PLYMOUTH_DEPS=${PLS}
 
-openSUSE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-1610.png blank-background-1610.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-1610.png
+openSUSE/plymouth/theme/background-1610.png: background-1610.svg ${PLS}
+	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-1610.png background-1610.svg
+	optipng -o4 openSUSE/plymouth/theme/background-1610.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-1610.png
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-1610.png
 
-openSUSE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/blank-background-169.png blank-background-169.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-169.png
+openSUSE/plymouth/theme/background-169.png: background-169.svg ${PLS}
+	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-169.png background-169.svg
+	optipng -o4 openSUSE/plymouth/theme/background-169.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-169.png
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
 
-openSUSE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
-	inkscape -w 1280 -C -e openSUSE/plymouth/theme/blank-background-54.png blank-background-54.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-54.png
+openSUSE/plymouth/theme/background-54.png: background-54.svg ${PLS}
+	inkscape -w 1280 -C -e openSUSE/plymouth/theme/background-54.png background-54.svg
+	optipng -o4 openSUSE/plymouth/theme/background-54.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-54.png
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
 
-openSUSE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/blank-background-43.png blank-background-43.svg
-	optipng -o4 openSUSE/plymouth/theme/blank-background-43.png
+openSUSE/plymouth/theme/background-43.png: background-43.svg ${PLS}
+	inkscape -w 1600 -C -e openSUSE/plymouth/theme/background-43.png background-43.svg
+	optipng -o4 openSUSE/plymouth/theme/background-43.png
 
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/blank-background-43.png
+PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-43.png
 
 plymouth.d: ${PLYMOUTH_DEPS}
 
@@ -117,7 +117,7 @@ yast.d:
 #	create directly the background from the 4:3 root's blank background
 	mkdir -p openSUSE/yast_wizard
 	cp -a yast/* openSUSE/yast_wizard
-	inkscape -w 1600 -C -e openSUSE/yast_wizard/background.png blank-background-43.svg
+	inkscape -w 1600 -C -e openSUSE/yast_wizard/background.png background-43.svg
 	rm -f openSUSE/yast_wizard/*.svg
 
 yast.d_clean:
