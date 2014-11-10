@@ -4,9 +4,9 @@
   */
  
  img {margin: 0px; padding: 0px}
--body {margin: 0px; padding: 0px; background-color: #062A4B; background-image: url(body-background.png); color: #111111; height="100%"; width="100%"}
+-body {margin: 0px; padding: 0px; background-color: #062A4B; background-image: url(body-background.png); color: #111111; height: 100%; width: 100%;}
 -a { color: #1A2C36; text-decoration: none; font-weight: bold; }
-+body {margin: 0px; padding: 0px; background-color: #202A2B; background-image: url(body-background.jpg); color: #aebec1; height="100%"; width="100%"}
++body {margin: 0px; padding: 0px; background-color: #202A2B; background-image: url(body-background.jpg); color: #aebec1; height: 100%; width: 100%;}
 +a { color: #aebec1; text-decoration: none; font-weight: bold; }
  a:hover {
 -  color: #003B5A;
