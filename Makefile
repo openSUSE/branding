@@ -1,5 +1,5 @@
 NAME=contours
-VERSION=13.2
+VERSION=42.1
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
@@ -49,10 +49,10 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2/backgrounds
-	cp "raw-theme-drop/grub&install-boot-1920x1200.png" openSUSE/grub2/backgrounds/default-1610.png 
-	cp "raw-theme-drop/grub&install-boot-1920x1080.png" openSUSE/grub2/backgrounds/default-169.png 
-	cp "raw-theme-drop/grub&install-boot-1350x1080.png" openSUSE/grub2/backgrounds/default-54.png 
-	cp "raw-theme-drop/grub&install-boot-1440x1080.png" openSUSE/grub2/backgrounds/default-43.png 
+	cp "raw-theme-drop/grub-boot-1920x1200.png" openSUSE/grub2/backgrounds/default-1610.png 
+	cp "raw-theme-drop/grub-boot-1920x1080.png" openSUSE/grub2/backgrounds/default-169.png 
+	cp "raw-theme-drop/grub-boot-1350x1080.png" openSUSE/grub2/backgrounds/default-54.png 
+	cp "raw-theme-drop/grub-boot-1440x1080.png" openSUSE/grub2/backgrounds/default-43.png 
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
@@ -219,7 +219,7 @@ gnome.d: # gnome_dynamic
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
 	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
-	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
+#	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
 
 gnome.d_clean:
 	rm -rf openSUSE/gnome
