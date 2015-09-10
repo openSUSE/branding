@@ -74,26 +74,22 @@ openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
 PLYMOUTH_DEPS=${PLS}
 
 openSUSE/plymouth/theme/background-1610.png: background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-1610.png background-1610.svg
-	optipng -o4 openSUSE/plymouth/theme/background-1610.png
+	cp raw-theme-drop/desktop-logo-1920x1200.png openSUSE/plymouth/theme/background-1610.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-1610.png
 
 openSUSE/plymouth/theme/background-169.png: background-169.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-169.png background-169.svg
-	optipng -o4 openSUSE/plymouth/theme/background-169.png
+	cp raw-theme-drop/desktop-logo-1920x1080.png openSUSE/plymouth/theme/background-169.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
 
 openSUSE/plymouth/theme/background-54.png: background-54.svg ${PLS}
-	inkscape -w 1280 -C -e openSUSE/plymouth/theme/background-54.png background-54.svg
-	optipng -o4 openSUSE/plymouth/theme/background-54.png
+	cp raw-theme-drop/desktop-logo-1350x1080.png openSUSE/plymouth/theme/background-54.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
 
 openSUSE/plymouth/theme/background-43.png: background-43.svg ${PLS}
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/background-43.png background-43.svg
-	optipng -o4 openSUSE/plymouth/theme/background-43.png
+	cp raw-theme-drop/desktop-logo-1440x1080.png openSUSE/plymouth/theme/background-43.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-43.png
 
@@ -137,10 +133,11 @@ wallpaper.d: defaults
 	ln -sf openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
-	cp default-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
-	cp default-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
-	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	convert -quality 100 -geometry 1280x1024 default-1280x1024.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	convert -quality 100 -geometry 1600x1200 default-1600x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	convert -quality 100 -geometry 1920x1080 default-1920x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
+	convert -quality 100 -geometry 1920x1200 default-1920x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
@@ -152,36 +149,10 @@ wallpaper.d_clean:
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-default-1280x1024.jpg: background-54.svg
-	inkscape -e default-1280x1024.png -w 1280 background-54.svg
-	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
-	rm default-1280x1024.png
-
-default-1600x1200.jpg: background-43.svg
-	inkscape -e default-1600x1200.png -w 1600 background-43.svg
-	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
-	rm default-1600x1200.png
-
-default-1920x1080.jpg: background-169.svg
-	inkscape -e default-1920x1080.png -w 1920 background-169.svg
-	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
-	rm default-1920x1080.png
-
-default-1920x1200.jpg: background-1610.svg
-	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
-	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
-	rm default-1920x1200.png
-
-# When changing the commands below, also update the commands in gnome_dynamic
-defaults: default-1280x1024.jpg default-1600x1200.jpg default-1920x1080.jpg default-1920x1200.jpg
-
-defaults_clean:
-	rm -f default-1280x1024.jpg
-	rm -f default-1600x1200.jpg
-	rm -f default-1920x1080.jpg
-	rm -f default-1920x1200.jpg
 
 CLEAN_DEPS+=defaults_clean
+
+defaults:
 
 ksplashx.d: defaults
 	mkdir -p openSUSE/ksplashx
@@ -278,7 +249,7 @@ xfce.d_clean:
 CLEAN_DEPS+=xfce.d_clean
 
 install: # do not add requires here, this runs from generated openSUSE
-	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
+	install -D -m 644 kdelibs/body-background.png ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.png
 
 	install -d ${DESTDIR}/usr/share/wallpapers
 	cp -a wallpapers/* ${DESTDIR}/usr/share/wallpapers
