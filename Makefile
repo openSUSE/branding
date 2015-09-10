@@ -49,14 +49,10 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2/backgrounds
-	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-1610.png grub2-1610.svg
-	optipng -o0 openSUSE/grub2/backgrounds/default-1610.png
-	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-169.png grub2-169.svg	
-	optipng -o0 openSUSE/grub2/backgrounds/default-169.png
-	inkscape -w 1280 -C -e openSUSE/grub2/backgrounds/default-54.png grub2-54.svg
-	optipng -o0 openSUSE/grub2/backgrounds/default-54.png
-	inkscape -w 1600 -C -e openSUSE/grub2/backgrounds/default-43.png grub2-43.svg
-	optipng -o0 openSUSE/grub2/backgrounds/default-43.png
+	cp "raw-theme-drop/grub&install-boot-1920x1200.png" openSUSE/grub2/backgrounds/default-1610.png 
+	cp "raw-theme-drop/grub&install-boot-1920x1080.png" openSUSE/grub2/backgrounds/default-169.png 
+	cp "raw-theme-drop/grub&install-boot-1350x1080.png" openSUSE/grub2/backgrounds/default-54.png 
+	cp "raw-theme-drop/grub&install-boot-1440x1080.png" openSUSE/grub2/backgrounds/default-43.png 
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
@@ -84,7 +80,7 @@ openSUSE/plymouth/theme/background-169.png: ${PLS}
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
 
 openSUSE/plymouth/theme/background-54.png: ${PLS}
-	cp raw-theme-drop/desktop-logo-1350x1080.png openSUSE/plymouth/theme/background-54.png
+	cp raw-theme-drop/desktop-logo-1280x1024.png openSUSE/plymouth/theme/background-54.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
 
@@ -121,27 +117,27 @@ CLEAN_DEPS+=yast.d_clean
 
 wallpaper.d: defaults
 	mkdir -p openSUSE/wallpapers
-	cp wallpapers/default-1440x1080.jpg.desktop openSUSE/wallpapers
+	cp wallpapers/default-1600x1200.jpg.desktop openSUSE/wallpapers
 	cp wallpapers/default-1920x1200.jpg.desktop openSUSE/wallpapers
 	cp wallpapers/default-1920x1080.jpg.desktop openSUSE/wallpapers
 	mkdir -p openSUSE/wallpapers/openSUSEdefault/contents/images
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1440x1080.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1440x1080.jpg.desktop
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1600x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg.desktop
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1200.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg.desktop
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-1920x1080.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg.desktop
-	ln -sf openSUSE${VERSION_NO_DOT}-1440x1080.jpg openSUSE/wallpapers/default-1440x1080.jpg
+	ln -sf openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
 
 	cp raw-theme-drop/desktop-3840x2400.png openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.png
 
-	convert -quality 100 -geometry 1350x1080 raw-theme-drop/desktop-1350x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
-	convert -quality 100 -geometry 1440x1080 raw-theme-drop/desktop-1440x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
+	convert -quality 100 -geometry 1280x1024 raw-theme-drop/desktop-1280x1024.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	convert -quality 100 -geometry 1600x1200 raw-theme-drop/desktop-1600x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
 	convert -quality 100 -geometry 1920x1080 raw-theme-drop/desktop-1920x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
 	convert -quality 100 -geometry 1920x1200 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
 
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
-	ln -sf openSUSEdefault/contents/images/1440x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1440x1080.jpg
+	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
 	convert -quality 90 -geometry 400x250 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
@@ -195,18 +191,18 @@ CLEAN_DEPS+=ksplash-qml.d_clean
 gnome_dynamic: defaults
 	mkdir -p gnome/dynamic
 	for file in morning night; do \
-		inkscape -z -e gnome/$${file}-1350x1080.png -w 1280 gnome/$${file}54.svg ; \
-		convert -quality 100 -geometry 1350x1080 gnome/$${file}-1350x1080.png gnome/dynamic/$${file}-1350x1080.jpg ; \
-		inkscape -z -e gnome/$${file}-1440x1080.png -w 1600 gnome/$${file}43.svg ; \
-		convert -quality 100 -geometry 1440x1080 gnome/$${file}-1440x1080.png gnome/dynamic/$${file}-1440x1080.jpg ; \
+		inkscape -z -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
+		convert -quality 100 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
+		inkscape -z -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
+		convert -quality 100 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
 		inkscape -z -e gnome/$${file}-1920x1080.png -w 1920 -h 1080 gnome/$${file}169.svg ; \
 		convert -quality 100 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
 		inkscape -z -e gnome/$${file}-1920x1200.png -w 1920 -h 1200 gnome/$${file}1610.svg ; \
 		convert -quality 100 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
-		rm gnome/$${file}-1350x1080.png gnome/$${file}-1440x1080.png gnome/$${file}-1920x1200.png gnome/$${file}-1920x1080.png ; \
+		rm gnome/$${file}-1280x1024.png gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png gnome/$${file}-1920x1080.png ; \
 	done
-	cp default-1350x1080.jpg gnome/dynamic/day-1350x1080.jpg
-	cp default-1440x1080.jpg gnome/dynamic/day-1440x1080.jpg
+	cp default-1280x1024.jpg gnome/dynamic/day-1280x1024.jpg
+	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
 	cp default-1920x1080.jpg gnome/dynamic/day-1920x1080.jpg
 	cp default-1920x1200.jpg gnome/dynamic/day-1920x1200.jpg
 	sed "s:@PATH_TO_IMAGES@:/usr/share/backgrounds/${NAME}:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic/${NAME}.xml
@@ -298,19 +294,19 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1440x1080	
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1440x1080/background.jpg
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
+	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1350x1080
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1350x1080/background.jpg
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
+	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps
 	cp -a kdm ${DESTDIR}/usr/share/kde4/apps/kdm
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1440x1080.jpg
+	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1600x1200.jpg
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1920x1200.jpg
-	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1350x1080.jpg
+	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1280x1024.jpg
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/openSUSE/background-1920x1080.jpg
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
