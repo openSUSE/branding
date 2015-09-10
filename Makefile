@@ -73,22 +73,22 @@ openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
 
 PLYMOUTH_DEPS=${PLS}
 
-openSUSE/plymouth/theme/background-1610.png: background-1610.svg ${PLS}
+openSUSE/plymouth/theme/background-1610.png: ${PLS}
 	cp raw-theme-drop/desktop-logo-1920x1200.png openSUSE/plymouth/theme/background-1610.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-1610.png
 
-openSUSE/plymouth/theme/background-169.png: background-169.svg ${PLS}
+openSUSE/plymouth/theme/background-169.png: ${PLS}
 	cp raw-theme-drop/desktop-logo-1920x1080.png openSUSE/plymouth/theme/background-169.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
 
-openSUSE/plymouth/theme/background-54.png: background-54.svg ${PLS}
+openSUSE/plymouth/theme/background-54.png: ${PLS}
 	cp raw-theme-drop/desktop-logo-1350x1080.png openSUSE/plymouth/theme/background-54.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
 
-openSUSE/plymouth/theme/background-43.png: background-43.svg ${PLS}
+openSUSE/plymouth/theme/background-43.png: ${PLS}
 	cp raw-theme-drop/desktop-logo-1440x1080.png openSUSE/plymouth/theme/background-43.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-43.png
@@ -142,7 +142,7 @@ wallpaper.d: defaults
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -sf openSUSEdefault/contents/images/1440x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1440x1080.jpg
-	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	convert -quality 90 -geometry 400x250 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 wallpaper.d_clean:
@@ -160,7 +160,7 @@ ksplashx.d: defaults
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1920x1200 openSUSE/ksplashx/
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1920x1200/opensuse-logo.png logo.svg
-	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplashx/Preview.png
+	convert -geometry 300x250  raw-theme-drop/desktop-1920x1200.png openSUSE/ksplashx/Preview.png
 
 ksplashx.d_clean:
 	rm -rf openSUSE/ksplashx
@@ -218,7 +218,7 @@ gnome_dynamic_clean:
 
 CLEAN_DEPS+=gnome_dynamic_clean
 
-gnome.d: gnome_dynamic
+gnome.d: # gnome_dynamic
 	mkdir -p openSUSE/gnome
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
 	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
