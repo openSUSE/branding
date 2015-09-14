@@ -266,16 +266,6 @@ install: # do not add requires here, this runs from generated openSUSE
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
 	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
-	# Dynamic wallpaper
-	install -d ${DESTDIR}/usr/share/backgrounds
-	if test -z "${NAME}"; then \
-	    echo "Error in Makefile: NAME variable is unset." ;\
-	    false ;\
-	fi
-	cp -a gnome/${NAME}/ ${DESTDIR}/usr/share/backgrounds/
-	install -D -m 0644 gnome/dynamic-wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-openSUSE.xml
-	ln -sf /usr/share/backgrounds/${NAME}/${NAME}.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
-	## End xml files used by GNOME
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
