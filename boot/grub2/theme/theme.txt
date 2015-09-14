@@ -20,7 +20,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   item_spacing = 2
 
   selected_item_font = "DejaVu Sans Bold 14"
-  selected_item_color= "#000"
+  selected_item_color= "#63a63d"
   selected_item_pixmap_style = "select_*.png"
 
   icon_height = 32
@@ -45,7 +45,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   fg_color = "#0d6967"
 
   bg_color = "#000"
-  border_color = "#fff"
+  #border_color = "#fff"
 
   # instead of the above colors, use pixmaps
   # bar_style = "progress_bar_*.png"
