@@ -134,6 +134,8 @@ wallpaper.d: defaults
 	convert -quality 100 -geometry 1600x1200 raw-theme-drop/desktop-1600x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
 	convert -quality 100 -geometry 1920x1080 raw-theme-drop/desktop-1920x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
 	convert -quality 100 -geometry 1920x1200 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	convert -quality 100 -geometry 1350x1080 raw-theme-drop/desktop-1350x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
+	convert -quality 100 -geometry 1440x1080 raw-theme-drop/desktop-1440x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
 
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
