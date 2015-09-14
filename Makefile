@@ -70,22 +70,22 @@ openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
 PLYMOUTH_DEPS=${PLS}
 
 openSUSE/plymouth/theme/background-1610.png: ${PLS}
-	cp raw-theme-drop/desktop-logo-1920x1200.png openSUSE/plymouth/theme/background-1610.png
+	cp raw-theme-drop/desktop-1920x1200.png openSUSE/plymouth/theme/background-1610.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-1610.png
 
 openSUSE/plymouth/theme/background-169.png: ${PLS}
-	cp raw-theme-drop/desktop-logo-1920x1080.png openSUSE/plymouth/theme/background-169.png
+	cp raw-theme-drop/desktop-1920x1080.png openSUSE/plymouth/theme/background-169.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
 
 openSUSE/plymouth/theme/background-54.png: ${PLS}
-	cp raw-theme-drop/desktop-logo-1280x1024.png openSUSE/plymouth/theme/background-54.png
+	cp raw-theme-drop/desktop-1280x1024.png openSUSE/plymouth/theme/background-54.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
 
 openSUSE/plymouth/theme/background-43.png: ${PLS}
-	cp raw-theme-drop/desktop-logo-1440x1080.png openSUSE/plymouth/theme/background-43.png
+	cp raw-theme-drop/desktop-1440x1080.png openSUSE/plymouth/theme/background-43.png
 
 PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-43.png
 
