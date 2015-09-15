@@ -18,17 +18,6 @@ Window.GetMaxHeight = fun (){
   return height;
 };
 
-anim.imagecount = 32;
-anim.target_width =  0.5* 0.46 * Window.GetWidth();
-anim.target_height =  0.5* 0.11 * Window.GetWidth();
-
-fun RotatedImage (index){
-	index = Math.Int(index);
-	if (!RotatedImageCache[index])
-		RotatedImageCache[index] = anim.original_image.Rotate((Math.Pi*2*index)/anim.imagecount).Scale(anim.target_width, anim.target_height);
-
-	return RotatedImageCache[index];
-	}
 
 scrnratio = Window.GetWidth() / Window.GetHeight();
 
@@ -52,6 +41,11 @@ else {
   Window.SetBackgroundTopColor(0.000, 0.000, 0.000);
   Window.SetBackgroundBottomColor(0.000, 0.000, 0.000);
 
+    for (i = 0; i < 4; i++)
+        anim_images[i] = Image("progress-" + i + ".png");
+    anim_sprite = Sprite();
+    anim_sprite.SetX((Window.GetX() + Window.GetMaxWidth() - anim_images[0].GetWidth()) / 2 );
+    anim_sprite.SetY(Window.GetY() + Window.GetMaxHeight()/4);
 }
 
 background.image = background.original_image.Scale(Window.GetMaxWidth() , Window.GetMaxHeight());
@@ -61,19 +55,15 @@ background.sprite.SetPosition(Window.GetX(), Window.GetY(), -10);
 
 sprite_prompt = SpriteNew();
 
+progress = 0;
 fun refresh_callback ()
   {
-    if (status == "normal")
-      {
-	anim.index += 1;
-	anim.index %= anim.imagecount;
-	anim.sprite.SetImage(RotatedImage (anim.index));
-      }
+    if (status == "normal") {
+      progress++;
+      anim_sprite.SetImage(anim_images[Math.Int(progress / 25) % 4]);
+    }
     else
-      {
         anim.sprite.SetOpacity(0);
-      }
-
   }
  
 if (Plymouth.GetMode() != "suspend" && Plymouth.GetMode() != "resume") {
