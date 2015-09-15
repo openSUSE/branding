@@ -27,15 +27,15 @@ openSUSE.d_clean:
 CLEAN_DEPS+=openSUSE.d_clean
 
 gfxboot.d: defaults
-	inkscape -w 800 -e tmp.png gfxboot/startup.svg
+	#inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
 	cp gfxboot/OpenSans-CondBold.ttf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/install.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/install-boot-800x600.png openSUSE/gfxboot/data-boot/back.jpg
+	#inkscape -w 800 -e tmp.png gfxboot/install.svg
 	mkdir -p openSUSE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/install-boot-800x600.png openSUSE/gfxboot/data-install/back.jpg
+	#inkscape -w 800 -e tmp.png gfxboot/welcome.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/install-boot-800x600.png openSUSE/gfxboot/data-install/welcome.jpg
 	mkdir -p ~/.fonts
 	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
 	rm ~/.fonts/OpenSans-CondBold.ttf
