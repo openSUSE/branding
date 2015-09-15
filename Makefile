@@ -30,10 +30,10 @@ gfxboot.d: defaults
 	#inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
 	cp gfxboot/OpenSans-CondBold.ttf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/install-boot-800x600.png openSUSE/gfxboot/data-boot/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/grub-boot-1440x1080.png openSUSE/gfxboot/data-boot/back.jpg
 	#inkscape -w 800 -e tmp.png gfxboot/install.svg
 	mkdir -p openSUSE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/install-boot-1440x1080.png openSUSE/gfxboot/data-install/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/grub-boot-1440x1080.png openSUSE/gfxboot/data-install/back.jpg
 	#inkscape -w 800 -e tmp.png gfxboot/welcome.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/install-boot-800x600.png openSUSE/gfxboot/data-install/welcome.jpg
 	mkdir -p ~/.fonts
