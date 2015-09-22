@@ -1,6 +1,6 @@
 Window.GetMaxWidth = fun (){
     i = 0;
-    width = 0;
+    width = 800; # minimum
     while (Window.GetWidth(i)){
 	width = Math.Max(width, Window.GetWidth(i));
 	i++;
@@ -10,7 +10,7 @@ Window.GetMaxWidth = fun (){
 
 Window.GetMaxHeight = fun (){
     i = 0;
-    height = 0;
+    height = 600; # minium
     while (Window.GetHeight(i)){
 	height = Math.Max(height, Window.GetHeight(i));
 	i++;
@@ -29,40 +29,34 @@ else {
 
     Window.SetBackgroundTopColor(0.000, 0.000, 0.000);
     Window.SetBackgroundBottomColor(0.000, 0.000, 0.000);
-
-    // the image was done for big screens
-    anim_scale = Window.GetMaxHeight() / background.original_image.GetHeight();
+    
     for (i = 0; i < 3; i++) {
-	progress = Image("progress-" + i + ".png");
-	anim_images[i] = progress.Scale(progress.GetWidth() * anim_scale,
-					progress.GetHeight() * anim_scale);
+	anim_images[i] = Image("progress-" + i + ".png");
     }
+
+    logo_image = Image("logo.png");
+    logo_sprite = Sprite(logo_image);
+    logo_sprite.SetX(Window.GetMaxWidth() / 2 - logo_image.GetWidth() / 2 );
+    logoy = Window.GetMaxHeight() / 2 - logo_image.GetWidth() / 2 ;
+    logo_sprite.SetY( logoy );
+    
     anim_sprite = Sprite();
-    anim_sprite.SetX(Window.GetWidth() / 2 - anim_images[0].GetWidth() / 2 );
-    anim_sprite.SetY(Window.GetHeight() / 2);
+    anim_sprite.SetX(Window.GetMaxWidth() / 2 - anim_images[0].GetWidth() / 2 );
+    anim_sprite.SetY(logoy + logo_image.GetHeight() + 10);
+
 }
 
-screen_ratio = Window.GetWidth() / Window.GetHeight();
-original_ratio = background.original_image.GetHeight() / background.original_image.GetWidth();
-
-if (screen_ratio > original_ratio)
-{
-    // Screen ratio is taller than image ratio, we will match the screen height
-    scale_factor =  Window.GetHeight() / background.original_image.GetHeight();
-}
-else
-{
-    // Screen ratio is wider than image ratio, we will match the screen width
-    scale_factor =  Window.GetWidth() / background.original_image.GetWidth();
-}
+# for now we just take the image as it is - no up or down scaling
+scale_factor = 1;
 
 background.image = background.original_image.Scale(background.original_image.GetWidth() * scale_factor,
-						   background.original_image.GetHeight() * scale_factor);
+		                                   background.original_image.GetHeight() * scale_factor);
+
 background.sprite = SpriteNew();
 background.sprite.SetImage(background.image);
 
-background.sprite.SetX(Window.GetWidth()  / 2 - background.image.GetWidth()  / 2); # Place in the centre 
-background.sprite.SetY(Window.GetHeight() / 2 - background.image.GetHeight() / 2);
+background.sprite.SetX(Window.GetMaxWidth()  / 2 - background.image.GetWidth()  / 2); # Place in the centre 
+background.sprite.SetY(Window.GetMaxHeight() / 2 - background.image.GetHeight() / 2);
 background.sprite.SetZ(-10000); # Place right at the back
 
 sprite_prompt = SpriteNew();

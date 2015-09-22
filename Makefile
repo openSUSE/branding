@@ -63,16 +63,14 @@ CLEAN_DEPS+=grub2.d_clean
 
 PLS=openSUSE/plymouth/theme/openSUSE.script
 
-openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
-	mkdir -p openSUSE/plymouth
-	cp -a boot/plymouth/theme openSUSE/plymouth/
-
 PLYMOUTH_DEPS=${PLS}
 
-openSUSE/plymouth/theme/background.png: ${PLS}
-	cp raw-theme-drop/plymouth-logo-1420x1200.png openSUSE/plymouth/theme/background.png
-
-plymouth.d: openSUSE/plymouth/theme/background.png
+plymouth.d:
+	rm -rf openSUSE/plymouth
+	mkdir -p openSUSE/plymouth
+	cp -av boot/plymouth/theme openSUSE/plymouth/
+	cp -v raw-theme-drop/plymouth-1200x1000.png openSUSE/plymouth/theme/background.png
+	cp -v raw-theme-drop/leap-logo.png openSUSE/plymouth/theme/logo.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
