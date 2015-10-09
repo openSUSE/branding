@@ -199,6 +199,10 @@ QTabWidget::pane {
 QTabBar
 {
   qproperty-drawBase: 0;
+  /* Duplicate QTabBar::tab property.
+     Without this property, the tab space is calculated narrower and bold font
+     display messes up. See bnc#888589, bsc#948311 and QTBUG#8209 */
+  font-weight: bold;
 }
 QTabBar::tab {
   color: #008a6f;
