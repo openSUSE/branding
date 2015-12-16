@@ -1,5 +1,5 @@
 NAME=contours
-VERSION=13.2
+VERSION=42.1
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
@@ -27,15 +27,15 @@ openSUSE.d_clean:
 CLEAN_DEPS+=openSUSE.d_clean
 
 gfxboot.d: defaults
-	inkscape -w 800 -e tmp.png gfxboot/startup.svg
+	#inkscape -w 800 -e tmp.png gfxboot/startup.svg
 	mkdir -p openSUSE/gfxboot/data-boot/
 	cp gfxboot/OpenSans-CondBold.ttf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/install.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/grub-boot-1440x1080.png openSUSE/gfxboot/data-boot/back.jpg
+	#inkscape -w 800 -e tmp.png gfxboot/install.svg
 	mkdir -p openSUSE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/grub-boot-1440x1080.png openSUSE/gfxboot/data-install/back.jpg
+	#inkscape -w 800 -e tmp.png gfxboot/welcome.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/install-boot-800x600.png openSUSE/gfxboot/data-install/welcome.jpg
 	mkdir -p ~/.fonts
 	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
 	rm ~/.fonts/OpenSans-CondBold.ttf
@@ -49,14 +49,10 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2/backgrounds
-	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-1610.png grub2-1610.svg
-	optipng -o0 openSUSE/grub2/backgrounds/default-1610.png
-	inkscape -w 1920 -C -e openSUSE/grub2/backgrounds/default-169.png grub2-169.svg	
-	optipng -o0 openSUSE/grub2/backgrounds/default-169.png
-	inkscape -w 1280 -C -e openSUSE/grub2/backgrounds/default-54.png grub2-54.svg
-	optipng -o0 openSUSE/grub2/backgrounds/default-54.png
-	inkscape -w 1600 -C -e openSUSE/grub2/backgrounds/default-43.png grub2-43.svg
-	optipng -o0 openSUSE/grub2/backgrounds/default-43.png
+	cp "raw-theme-drop/grub-boot-1920x1200.png" openSUSE/grub2/backgrounds/default-1610.png 
+	cp "raw-theme-drop/grub-boot-1920x1080.png" openSUSE/grub2/backgrounds/default-169.png 
+	cp "raw-theme-drop/grub-boot-1350x1080.png" openSUSE/grub2/backgrounds/default-54.png 
+	cp "raw-theme-drop/grub-boot-1440x1080.png" openSUSE/grub2/backgrounds/default-43.png 
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
@@ -67,37 +63,14 @@ CLEAN_DEPS+=grub2.d_clean
 
 PLS=openSUSE/plymouth/theme/openSUSE.script
 
-openSUSE/plymouth/theme/openSUSE.script: boot/plymouth/theme/*
-	mkdir -p openSUSE/plymouth
-	cp -a boot/plymouth/theme openSUSE/plymouth/
-
 PLYMOUTH_DEPS=${PLS}
 
-openSUSE/plymouth/theme/background-1610.png: background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-1610.png background-1610.svg
-	optipng -o4 openSUSE/plymouth/theme/background-1610.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-1610.png
-
-openSUSE/plymouth/theme/background-169.png: background-169.svg ${PLS}
-	inkscape -w 1920 -C -e openSUSE/plymouth/theme/background-169.png background-169.svg
-	optipng -o4 openSUSE/plymouth/theme/background-169.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-169.png
-
-openSUSE/plymouth/theme/background-54.png: background-54.svg ${PLS}
-	inkscape -w 1280 -C -e openSUSE/plymouth/theme/background-54.png background-54.svg
-	optipng -o4 openSUSE/plymouth/theme/background-54.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-54.png
-
-openSUSE/plymouth/theme/background-43.png: background-43.svg ${PLS}
-	inkscape -w 1600 -C -e openSUSE/plymouth/theme/background-43.png background-43.svg
-	optipng -o4 openSUSE/plymouth/theme/background-43.png
-
-PLYMOUTH_DEPS+=openSUSE/plymouth/theme/background-43.png
-
-plymouth.d: ${PLYMOUTH_DEPS}
+plymouth.d:
+	rm -rf openSUSE/plymouth
+	mkdir -p openSUSE/plymouth
+	cp -av boot/plymouth/theme openSUSE/plymouth/
+	cp -v raw-theme-drop/plymouth-1200x1000.png openSUSE/plymouth/theme/background.png
+	cp -v raw-theme-drop/leap-logo.png openSUSE/plymouth/theme/logo.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
@@ -106,7 +79,7 @@ CLEAN_DEPS+=plymouth.d_clean
 
 kdelibs.d: defaults
 	mkdir -p openSUSE/kdelibs
-	cp kdelibs/body-background.jpg kdelibs/css.diff openSUSE/kdelibs
+	cp kdelibs/body-background.png kdelibs/css.diff openSUSE/kdelibs
 
 kdelibs.d_clean:
 	rm -rf openSUSE/kdelibs
@@ -117,8 +90,6 @@ yast.d:
 #	create directly the background from the 4:3 root's blank background
 	mkdir -p openSUSE/yast_wizard
 	cp -a yast/* openSUSE/yast_wizard
-	inkscape -w 1600 -C -e openSUSE/yast_wizard/background.png background-43.svg
-	rm -f openSUSE/yast_wizard/*.svg
 
 yast.d_clean:
 	rm -rf openSUSE/yast_wizard
@@ -137,14 +108,20 @@ wallpaper.d: defaults
 	ln -sf openSUSE${VERSION_NO_DOT}-1600x1200.jpg openSUSE/wallpapers/default-1600x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
-	cp default-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	cp default-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
-	cp default-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
-	cp default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+
+	cp raw-theme-drop/desktop-3840x2400.png openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.png
+
+	convert -quality 100 -geometry 1280x1024 raw-theme-drop/desktop-1280x1024.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	convert -quality 100 -geometry 1600x1200 raw-theme-drop/desktop-1600x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	convert -quality 100 -geometry 1920x1080 raw-theme-drop/desktop-1920x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
+	convert -quality 100 -geometry 1920x1200 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	convert -quality 100 -geometry 1350x1080 raw-theme-drop/desktop-1350x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
+	convert -quality 100 -geometry 1440x1080 raw-theme-drop/desktop-1440x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
+
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
-	convert -quality 90 -geometry 400x250 default-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	convert -quality 90 -geometry 400x250 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 wallpaper.d_clean:
@@ -152,43 +129,17 @@ wallpaper.d_clean:
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-default-1280x1024.jpg: background-54.svg
-	inkscape -e default-1280x1024.png -w 1280 background-54.svg
-	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
-	rm default-1280x1024.png
-
-default-1600x1200.jpg: background-43.svg
-	inkscape -e default-1600x1200.png -w 1600 background-43.svg
-	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
-	rm default-1600x1200.png
-
-default-1920x1080.jpg: background-169.svg
-	inkscape -e default-1920x1080.png -w 1920 background-169.svg
-	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
-	rm default-1920x1080.png
-
-default-1920x1200.jpg: background-1610.svg
-	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
-	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
-	rm default-1920x1200.png
-
-# When changing the commands below, also update the commands in gnome_dynamic
-defaults: default-1280x1024.jpg default-1600x1200.jpg default-1920x1080.jpg default-1920x1200.jpg
-
-defaults_clean:
-	rm -f default-1280x1024.jpg
-	rm -f default-1600x1200.jpg
-	rm -f default-1920x1080.jpg
-	rm -f default-1920x1200.jpg
 
 CLEAN_DEPS+=defaults_clean
+
+defaults:
 
 ksplashx.d: defaults
 	mkdir -p openSUSE/ksplashx
 	sed "s:@VERSION@:${VERSION}:g" ksplashx/Theme.rc.in > openSUSE/ksplashx/Theme.rc
 	cp -a ksplashx/1920x1200 openSUSE/ksplashx/
 	inkscape -w 260 --export-id=Geeko -C -j -e openSUSE/ksplashx/1920x1200/opensuse-logo.png logo.svg
-	convert -geometry 300x250 default-1920x1200.jpg openSUSE/ksplashx/Preview.png
+	convert -geometry 300x250  raw-theme-drop/desktop-1920x1200.png openSUSE/ksplashx/Preview.png
 
 ksplashx.d_clean:
 	rm -rf openSUSE/ksplashx
@@ -246,12 +197,12 @@ gnome_dynamic_clean:
 
 CLEAN_DEPS+=gnome_dynamic_clean
 
-gnome.d: gnome_dynamic
+gnome.d: # gnome_dynamic
 	mkdir -p openSUSE/gnome
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
 	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
-	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
+#	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/dynamic-wallpaper-branding-openSUSE.xml
+#	cp -a gnome/dynamic/ openSUSE/gnome/${NAME}
 
 gnome.d_clean:
 	rm -rf openSUSE/gnome
@@ -278,7 +229,7 @@ xfce.d_clean:
 CLEAN_DEPS+=xfce.d_clean
 
 install: # do not add requires here, this runs from generated openSUSE
-	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
+	install -D -m 644 kdelibs/body-background.png ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.png
 
 	install -d ${DESTDIR}/usr/share/wallpapers
 	cp -a wallpapers/* ${DESTDIR}/usr/share/wallpapers
@@ -298,16 +249,6 @@ install: # do not add requires here, this runs from generated openSUSE
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
 	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
-	# Dynamic wallpaper
-	install -d ${DESTDIR}/usr/share/backgrounds
-	if test -z "${NAME}"; then \
-	    echo "Error in Makefile: NAME variable is unset." ;\
-	    false ;\
-	fi
-	cp -a gnome/${NAME}/ ${DESTDIR}/usr/share/backgrounds/
-	install -D -m 0644 gnome/dynamic-wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-openSUSE.xml
-	ln -sf /usr/share/backgrounds/${NAME}/${NAME}.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
-	## End xml files used by GNOME
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
@@ -371,8 +312,4 @@ check: # do not add requires here, this runs from generated openSUSE
 	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml || { echo "$${IMG} not mentioned in openSUSE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 
-	for file in ${DESTDIR}/usr/share/backgrounds/${NAME}/*.jpg; do \
-	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml || { echo "$${IMG} not mentioned in openSUSE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
-	done
 	## End check of GNOME-related xml files
