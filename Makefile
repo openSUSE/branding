@@ -1,5 +1,5 @@
 NAME=contours
-VERSION=42.1
+VERSION=13.3
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
@@ -69,8 +69,11 @@ plymouth.d:
 	rm -rf openSUSE/plymouth
 	mkdir -p openSUSE/plymouth
 	cp -av boot/plymouth/theme openSUSE/plymouth/
-	cp -v raw-theme-drop/plymouth-1200x1000.png openSUSE/plymouth/theme/background.png
-	cp -v raw-theme-drop/leap-logo.png openSUSE/plymouth/theme/logo.png
+	cp -v raw-theme-drop/plymouth-1920x1200.png openSUSE/plymouth/theme/background-1610.png
+	cp -v raw-theme-drop/plymouth-1920x1080.png openSUSE/plymouth/theme/background-169.png
+	cp -v raw-theme-drop/plymouth-1440x1080.png openSUSE/plymouth/theme/background-43.png
+	cp -v raw-theme-drop/plymouth-1350x1080.png openSUSE/plymouth/theme/background-54.png
+	cp -v raw-theme-drop/tumbleweed-logo.png openSUSE/plymouth/theme/logo.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth

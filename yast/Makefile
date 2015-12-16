@@ -70,7 +70,7 @@ plymouth.d:
 	mkdir -p openSUSE/plymouth
 	cp -av boot/plymouth/theme openSUSE/plymouth/
 	cp -v raw-theme-drop/plymouth-1200x1000.png openSUSE/plymouth/theme/background.png
-	cp -v raw-theme-drop/leap-logo.png openSUSE/plymouth/theme/logo.png
+	cp -v raw-theme-drop/tumbleweed-logo.png openSUSE/plymouth/theme/logo.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth

@@ -1,6 +1,6 @@
 [Plymouth Theme]
-Name=openSUSE Leap 42.1 theme
-Description=openSUSE Leap 42.1 Plymouth theme
+Name=openSUSE Tumbleweed theme
+Description=openSUSE Tumbleweed Plymouth theme
 ModuleName=script
 
 [script]

@@ -18,6 +18,7 @@ Window.GetMaxHeight = fun (){
     return height;
 };
 
+scrnratio = Window.GetWidth() / Window.GetHeight();
 
 if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
     background.original_image = ImageNew("suspend.png");
@@ -25,7 +26,19 @@ if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
     Window.SetBackgroundBottomColor(0.000, 0.000, 0.000);
 }
 else {
-    background.original_image = ImageNew("background.png");
+    if (scrnratio < 1.29 ) {
+        background.original_image = ImageNew("background-54.png");
+    } else {
+        if (scrnratio < 1.55 ) {
+            background.original_image = ImageNew("background-43.png");
+        } else {
+            if (scrnratio < 1.75 ) {
+                background.original_image = ImageNew("background-1610.png");
+            } else {
+                background.original_image = ImageNew("background-169.png");
+            }
+        }
+    }
 
     Window.SetBackgroundTopColor(0.000, 0.000, 0.000);
     Window.SetBackgroundBottomColor(0.000, 0.000, 0.000);
