@@ -1,3 +1,4 @@
+#-------------------------------- Own functions --------------------------------
 Window.GetMaxWidth = fun (){
     i = 0;
     width = 800; # minimum
@@ -10,7 +11,7 @@ Window.GetMaxWidth = fun (){
 
 Window.GetMaxHeight = fun (){
     i = 0;
-    height = 600; # minium
+    height = 600; # minimum
     while (Window.GetHeight(i)){
 	height = Math.Max(height, Window.GetHeight(i));
 	i++;
@@ -18,6 +19,24 @@ Window.GetMaxHeight = fun (){
     return height;
 };
 
+Window.ComputeScaleFactor = fun(image_to_scale){
+
+    screen_ratio = Window.GetHeight() / Window.GetWidth();
+    image_ratio = image_to_scale.GetHeight() / image_to_scale.GetWidth();
+
+    if (screen_ratio > image_ratio) {
+        # Screen ratio is taller than image ratio, we will match the screen height
+        scale_factor =  Window.GetHeight() / image_to_scale.GetHeight();
+    }
+    else {
+        # Screen ratio is wider than image ratio, we will match the screen width
+        scale_factor =  Window.GetWidth() / image_to_scale.GetWidth();
+    }
+
+    return scale_factor;
+};
+
+#--------------------------------------- Main ----------------------------------
 
 if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
     background.original_image = ImageNew("suspend.png");
@@ -46,8 +65,7 @@ else {
 
 }
 
-# for now we just take the image as it is - no up or down scaling
-scale_factor = 1;
+scale_factor = Window.ComputeScaleFactor(background.original_image) | 1;
 
 background.image = background.original_image.Scale(background.original_image.GetWidth() * scale_factor,
 		                                   background.original_image.GetHeight() * scale_factor);
@@ -76,7 +94,7 @@ if (Plymouth.GetMode() != "suspend" && Plymouth.GetMode() != "resume") {
     Plymouth.SetRefreshFunction (refresh_callback);
 }
 
-#----------------------------------------- Dialog --------------------------------
+#----------------------------------------- Dialog ------------------------------
 
 status = "normal";
 
@@ -190,7 +208,7 @@ Plymouth.SetDisplayNormalFunction(display_normal_callback);
 Plymouth.SetDisplayPasswordFunction(display_password_callback);
 Plymouth.SetMessageFunction(display_message_callback);
 
-#----------------------------------------- Progress Bar --------------------------------
+#----------------------------------------- Progress Bar ------------------------
 
 if (Plymouth.GetMode() == "suspend" || Plymouth.GetMode() == "resume") {
     progress_box.original_image = ImageNew("progress_box_background.png");
