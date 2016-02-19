@@ -42,7 +42,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   font = "DejaVu Sans Regular 12"
 
   text_color = "#fff"
-  fg_color = "#63a63d"
+  fg_color = "#489f96"
 
   bg_color = "#000"
   #border_color = "#fff"
