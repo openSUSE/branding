@@ -129,9 +129,6 @@ wallpaper.d_clean:
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-
-CLEAN_DEPS+=defaults_clean
-
 defaults:
 
 ksplashx.d: defaults
