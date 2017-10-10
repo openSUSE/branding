@@ -49,10 +49,10 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2/backgrounds
-	cp "raw-theme-drop/grub-boot-1920x1200.png" openSUSE/grub2/backgrounds/default-1610.png 
-	cp "raw-theme-drop/grub-boot-1920x1080.png" openSUSE/grub2/backgrounds/default-169.png 
-	cp "raw-theme-drop/grub-boot-1350x1080.png" openSUSE/grub2/backgrounds/default-54.png 
-	cp "raw-theme-drop/grub-boot-1440x1080.png" openSUSE/grub2/backgrounds/default-43.png 
+	cp "raw-theme-drop/grub-boot-1920x1200.png" openSUSE/grub2/backgrounds/default-1610.png
+	cp "raw-theme-drop/grub-boot-1920x1080.png" openSUSE/grub2/backgrounds/default-169.png
+	cp "raw-theme-drop/grub-boot-1350x1080.png" openSUSE/grub2/backgrounds/default-54.png
+	cp "raw-theme-drop/grub-boot-1440x1080.png" openSUSE/grub2/backgrounds/default-43.png
 	cp -a boot/grub2/theme openSUSE/grub2/
 	./boot/grub2-branding.sh openSUSE/grub2/backgrounds
 
@@ -109,14 +109,14 @@ wallpaper.d: defaults
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
 
-	cp raw-theme-drop/desktop-3840x2400.png openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.png
+	cp raw-theme-drop/desktop-3840x2400.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.jpg
 
-	convert -quality 100 -geometry 1280x1024 raw-theme-drop/desktop-1280x1024.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	convert -quality 100 -geometry 1600x1200 raw-theme-drop/desktop-1600x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
-	convert -quality 100 -geometry 1920x1080 raw-theme-drop/desktop-1920x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
-	convert -quality 100 -geometry 1920x1200 raw-theme-drop/desktop-1920x1200.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
-	convert -quality 100 -geometry 1350x1080 raw-theme-drop/desktop-1350x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
-	convert -quality 100 -geometry 1440x1080 raw-theme-drop/desktop-1440x1080.png openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
+	cp raw-theme-drop/desktop-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	cp raw-theme-drop/desktop-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	cp raw-theme-drop/desktop-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
+	cp raw-theme-drop/desktop-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	cp raw-theme-drop/desktop-1350x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
+	cp raw-theme-drop/desktop-1440x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
 
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
@@ -155,7 +155,7 @@ kdm.d_clean:
 
 CLEAN_DEPS+=kdm.d_clean
 
-ksplash-qml.d: 
+ksplash-qml.d:
 	mkdir -p openSUSE/ksplash-qml
 	sed "s:@VERSION@:${VERSION}:g" ksplash-qml/Theme.rc.in > openSUSE/ksplash-qml/Theme.rc
 	cp ksplash-qml/main.qml openSUSE/ksplash-qml/main.qml
@@ -264,7 +264,7 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
 	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
+	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
 	ln -sf /usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
