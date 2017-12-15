@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=X11 root access
+Comment=Grant X11 access for root
+Exec=xhost +SI:localuser:root
+Type=Application
+Terminal=false
+NoDisplay=true

@@ -169,6 +169,8 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
+	install -D -m 0644 xdg/xhost-grant-root.desktop ${DESTDIR}/etc/xdg/autostart/xhost-grant-root.desktop
+
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
 
