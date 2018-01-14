@@ -1,17 +1,19 @@
 ![Wallpaper](/raw-theme-drop/desktop-1280x1024.jpg)
 
-#Workflow process
+# Workflow process
 
 A complete workflow process in available in the master branch README
 (visible from the home page of the github repository)
 
-##Important files
+## Important files
 
-dynamic-wallpaper.xml.in: file is used to create the dynamic wallpaper used by GNOME. See gnome/README for more details.
+dynamic-wallpaper.xml.in: file used to create the dynamic wallpaper used by GNOME
 
-yast/background.png: a reprise of the wallpaper
+xfce.png: splash screen visible during XFCE login
 
-##How to update the wallpaper in the distribution
+desktop-\*.svg / .jpg used for wallpapers
+
+## How to update the wallpaper in the distribution
 
 1. Create openSUSE.tar.gz with make
 
@@ -37,7 +39,7 @@ osc ci
 osc sr
 ```
 
-##How to create artwork for a new version of openSUSE
+## How to create artwork for a new version of openSUSE
 
 Simply copy all files from this directory to a new directory, and change:
 
@@ -45,7 +47,7 @@ Simply copy all files from this directory to a new directory, and change:
 - the VERSION variable at the top of Makefile to the version of openSUSE you target.
 
 
-#Need help?
+# Need help?
 
 If you need help with packaging the artwork, you can contact the following
 people:
