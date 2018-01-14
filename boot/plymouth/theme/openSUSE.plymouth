@@ -1,8 +1,13 @@
 [Plymouth Theme]
-Name=openSUSE Tumbleweed theme
-Description=openSUSE Tumbleweed Plymouth theme
-ModuleName=script
+Name=openSUSE
+Description=Tumbleweed Logo 
+ModuleName=two-step
 
-[script]
+[two-step]
 ImageDir=/usr/share/plymouth/themes/openSUSE
-ScriptFile=/usr/share/plymouth/themes/openSUSE/openSUSE.script
+HorizontalAlignment=.5
+VerticalAlignment=.5
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x0D202F
+BackgroundEndColor=0x0D202F
