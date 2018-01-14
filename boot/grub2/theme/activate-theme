@@ -26,11 +26,6 @@ sub copy_files
   }
   close $f;
 
-  $back = "$grub2_share_dir/backgrounds/$theme/$gfx.png";
-  $back = "$grub2_share_dir/backgrounds/$theme/default-43.png" unless -f $back;
-
-  system "cp $back $grub2_theme_dir/$theme/background.png";
-  system "cp $back $grub2_theme_dir/$theme/terminal-background.png";
 }
 
 sub update_default
@@ -42,15 +37,8 @@ sub update_default
   my @f = (<$f>);
   close $f;
 
-  $l_b = "GRUB_BACKGROUND=$grub2_theme_dir/$theme/background.png\n";
-  $l_t = "GRUB_THEME=$grub2_theme_dir/$theme/theme.txt\n";
-
   # modify existing entry, or...
   for (@f) {
-    if(/^\s*#?\s*GRUB_BACKGROUND\s*=/) {
-      $_ = $l_b;
-      $ok_b = 1;
-    }
     if(/^\s*#?\s*GRUB_THEME\s*=/) {
       $_ = $l_t;
       $ok_t = 1;
