@@ -31,7 +31,7 @@ popd
 The following commands will branch the branding-openSUSE package, commit the new data and submit the changes:
 
 ```
-osc branch openSUSE:Factory branding-openSUSE -c
+osc branch openSUSE:Leap:15.0 branding-openSUSE -c
 cp branding/openSUSE.tar.gz home:*branches*/branding-openSUSE
 cd home:*branches*/branding-openSUSE
 osc vc
