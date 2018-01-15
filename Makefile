@@ -106,6 +106,7 @@ wallpaper.d: defaults
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
 	cp raw-theme-drop/desktop-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 wallpaper.d_clean:
 	rm -rf openSUSE/wallpapers
@@ -113,33 +114,6 @@ wallpaper.d_clean:
 CLEAN_DEPS+=wallpaper.d_clean
 
 defaults:
-
-# Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
-gnome_dynamic: defaults
-	mkdir -p gnome/dynamic
-	for file in morning night; do \
-		inkscape -z -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
-		convert -quality 100 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
-		inkscape -z -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
-		convert -quality 100 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
-		inkscape -z -e gnome/$${file}-1920x1080.png -w 1920 -h 1080 gnome/$${file}169.svg ; \
-		convert -quality 100 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
-		inkscape -z -e gnome/$${file}-1920x1200.png -w 1920 -h 1200 gnome/$${file}1610.svg ; \
-		convert -quality 100 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
-		rm gnome/$${file}-1280x1024.png gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png gnome/$${file}-1920x1080.png ; \
-	done
-	cp default-1280x1024.jpg gnome/dynamic/day-1280x1024.jpg
-	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
-	cp default-1920x1080.jpg gnome/dynamic/day-1920x1080.jpg
-	cp default-1920x1200.jpg gnome/dynamic/day-1920x1200.jpg
-	sed "s:@PATH_TO_IMAGES@:/usr/share/backgrounds/${NAME}:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic/${NAME}.xml
-	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest.xml
-	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g;s:7200:6:g;s:14400:12:g;s:18000:15:g;s:25200:21:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest-fast.xml
-
-gnome_dynamic_clean:
-	rm -rf gnome/dynamic
-
-CLEAN_DEPS+=gnome_dynamic_clean
 
 gnome.d: # gnome_dynamic
 	mkdir -p openSUSE/gnome
