@@ -17,7 +17,7 @@ openSUSE.tar.xz_clean:
 
 CLEAN_DEPS+=openSUSE.tar.xz_clean
 
-openSUSE.d: grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d
+openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d
 	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
@@ -25,6 +25,27 @@ openSUSE.d_clean:
 	rm -rf openSUSE/LICENSE
 
 CLEAN_DEPS+=openSUSE.d_clean
+
+gfxboot.d: defaults
+	mkdir -p openSUSE/gfxboot/data-boot/
+	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/back-800x600.png openSUSE/gfxboot/data-boot/back.jpg
+	mkdir -p openSUSE/gfxboot/data-install
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/back-1440x1080.png openSUSE/gfxboot/data-install/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/welcome.png openSUSE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/on.png openSUSE/gfxboot/data-install/on.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/off.png openSUSE/gfxboot/data-install/off.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/glow.png openSUSE/gfxboot/data-install/glow.jpg
+	mkdir -p ~/.fonts
+	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
+	rm ~/.fonts/SourceSansPro-Light.ttf
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
+	rm tmp.png
+
+gfxboot.d_clean:
+	rm -rf openSUSE/gfxboot
+
+CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2
