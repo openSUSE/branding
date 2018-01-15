@@ -21,7 +21,7 @@ Simply type 'make' to create openSUSE.tar.gz:
 
 ```
 pushd branding
-git checkout leap-15
+git checkout tumbleweed
 make
 popd
 ```
