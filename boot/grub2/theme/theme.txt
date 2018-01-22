@@ -3,6 +3,9 @@
 desktop-color: "#0D202F"
 
 title-text: ""
+title-color: "#fff"
+title-font: "DejaVu Sans Bold 14"
+
 terminal-font: "Gnu Unifont Mono Regular 16"
 
 + image {
