@@ -3,6 +3,8 @@
 desktop-image: "background.png"
 
 title-text: ""
+title-color: "#fff"
+title-font: "DejaVu Sans Bold 14"
 
 terminal-box: "terminal_box_*.png"
 terminal-font: "Gnu Unifont Mono Regular 16"
