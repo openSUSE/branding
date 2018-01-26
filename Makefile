@@ -364,7 +364,7 @@ install: # do not add requires here, this runs from generated SLE
 	install -D -m 0644 xdg/xhost-grant-root.desktop ${DESTDIR}/etc/xdg/autostart/xhost-grant-root.desktop
 
 clean: ${CLEAN_DEPS}
-	rmdir SLE
+	rmdir SLE 2> /dev/null || :
 
 check: # do not add requires here, this runs from generated SLE
 	## Check GNOME-related xml files have contant that make sense
