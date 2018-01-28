@@ -129,7 +129,7 @@ CLEAN_DEPS+=gnome.d_clean
 
 xfce.d:
 	mkdir -p openSUSE/xfce
-	convert 'xfce/splash.png[350x]' openSUSE/xfce/splash.png
+	inkscape -D -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
 
 xfce.d_clean:
 	rm -rf openSUSE/xfce
