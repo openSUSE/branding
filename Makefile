@@ -18,7 +18,7 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: kdelibs.d wallpaper.d 
+SLE.d: gfxboot.d kdelibs.d wallpaper.d 
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -27,24 +27,16 @@ SLE.d_clean:
 
 CLEAN_DEPS+=SLE.d_clean
 
-gfxboot.d: defaults
-	inkscape -w 800 -e tmp.png gfxboot/startup.svg
+gfxboot.d: gfxboot/back.jpg gfxboot/welcome.jpg gfxboot/text.jpg
 	mkdir -p SLE/gfxboot/data-boot/
-	cp gfxboot/Roboto-BoldCondensed.ttf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-boot/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/install.svg
+	cp gfxboot/back.jpg SLE/gfxboot/data-boot/back.jpg
 	mkdir -p SLE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/welcome.jpg
-	mkdir -p ~/.fonts
-	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
-	rm ~/.fonts/Roboto-BoldCondensed.ttf
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/text.jpg
-	rm tmp.png
+	cp gfxboot/back.jpg SLE/gfxboot/data-install/back.jpg
+	cp gfxboot/welcome.jpg SLE/gfxboot/data-install/welcome.jpg
+	cp gfxboot/text.jpg SLE/gfxboot/data-install/text.jpg
 
 gfxboot.d_clean:
-	rm -rf SLE/gfxboot tmp.png
+	rm -rf SLE/gfxboot
 
 CLEAN_DEPS+=gfxboot.d_clean
 
