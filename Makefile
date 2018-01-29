@@ -1,6 +1,6 @@
 NAME=grow
 VERSION=15.0
-VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
+VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.:_:g'`
 THEME=SLE
 
 all: info SLE.tar.xz
@@ -17,7 +17,8 @@ SLE.tar.xz_clean:
 
 CLEAN_DEPS+=SLE.tar.xz_clean
 
-SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
+#SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
+SLE.d: kdelibs.d wallpaper.d 
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -134,7 +135,8 @@ CLEAN_DEPS+=plymouth.d_clean
 
 kdelibs.d: defaults
 	mkdir -p SLE/kdelibs
-	cp kdelibs/body-background.jpg kdelibs/css.diff SLE/kdelibs
+	cp wallpapers/SLEdefault/contents/images/1600x1200.jpg SLE/kdelibs/body-background.jpg 
+	cp kdelibs/css.diff SLE/kdelibs
 
 kdelibs.d_clean:
 	rm -rf SLE/kdelibs
@@ -143,53 +145,41 @@ CLEAN_DEPS+=kdelibs.d_clean
 
 wallpaper.d: defaults
 	mkdir -p SLE/wallpapers
-	cp wallpapers/default-1600x1200.jpg.desktop SLE/wallpapers
-	cp wallpapers/default-1920x1200.jpg.desktop SLE/wallpapers
-	cp wallpapers/default-1920x1080.jpg.desktop SLE/wallpapers
 	mkdir -p SLE/wallpapers/SLEdefault/contents/images
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1600x1200.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1600x1200.jpg.desktop
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1920x1200.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1200.jpg.desktop
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1920x1080.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1080.jpg.desktop
-	ln -sf SLE${VERSION_NO_DOT}-1600x1200.jpg SLE/wallpapers/default-1600x1200.jpg
-	ln -sf SLE${VERSION_NO_DOT}-1920x1200.jpg SLE/wallpapers/default-1920x1200.jpg
-	ln -sf SLE${VERSION_NO_DOT}-1920x1080.jpg SLE/wallpapers/default-1920x1080.jpg
-	cp default-1280x1024.jpg SLE/wallpapers/SLEdefault/contents/images/1280x1024.jpg
-	cp default-1600x1200.jpg SLE/wallpapers/SLEdefault/contents/images/1600x1200.jpg
-	cp default-1920x1080.jpg SLE/wallpapers/SLEdefault/contents/images/1920x1080.jpg
-	cp default-1920x1200.jpg SLE/wallpapers/SLEdefault/contents/images/1920x1200.jpg
-	ln -sf SLEdefault/contents/images/1920x1080.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1080.jpg
-	ln -sf SLEdefault/contents/images/1920x1200.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1200.jpg
-	ln -sf SLEdefault/contents/images/1600x1200.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1600x1200.jpg
-	convert -quality 90 -geometry 400x250 default-1920x1200.jpg SLE/wallpapers/SLEdefault/screenshot.jpg
-	cp -p kde-workspace/metadata.desktop SLE/wallpapers/SLEdefault/metadata.desktop
+	for res in 1280x1024 1600x1200 1920x1200 1920x1080 ; do \
+		cp wallpapers/SLEdefault/contents/images/$${res}.jpg SLE/wallpapers/SLEdefault/contents/images/$${res}.jpg ;\
+		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-$${res}.jpg.desktop.in > SLE/wallpapers/SLE-${VERSION_NO_DOT}-$${res}.jpg.desktop ;\
+		ln -sf SLEdefault/contents/images/$${res}.jpg SLE/wallpapers/SLE-${VERSION_NO_DOT}-$${res}.jpg ;\
+	done
+	convert -quality 90 -geometry 400x250 wallpapers/SLEdefault/contents/images/1920x1200.jpg SLE/wallpapers/SLEdefault/screenshot.jpg
 
 wallpaper.d_clean:
 	rm -rf SLE/wallpapers
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-default-1280x1024.jpg: background-54.svg
-	inkscape -e default-1280x1024.png -w 1280 background-54.svg
-	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
-	rm default-1280x1024.png
+#default-1280x1024.jpg: background-54.svg
+#	inkscape -e default-1280x1024.png -w 1280 background-54.svg
+#	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
+#	rm default-1280x1024.png
 
-default-1600x1200.jpg: background-43.svg
-	inkscape -e default-1600x1200.png -w 1600 background-43.svg
-	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
-	rm default-1600x1200.png
+#default-1600x1200.jpg: background-43.svg
+#	inkscape -e default-1600x1200.png -w 1600 background-43.svg
+#	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
+#	rm default-1600x1200.png
 
-default-1920x1080.jpg: background-169.svg
-	inkscape -e default-1920x1080.png -w 1920 background-169.svg
-	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
-	rm default-1920x1080.png
+#default-1920x1080.jpg: background-169.svg
+#	inkscape -e default-1920x1080.png -w 1920 background-169.svg
+#	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
+#	rm default-1920x1080.png
 
-default-1920x1200.jpg: background-1610.svg
-	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
-	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
-	rm default-1920x1200.png
+#default-1920x1200.jpg: background-1610.svg
+#	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
+#	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
+#	rm default-1920x1200.png
 
 # When changing the commands below, also update the commands in gnome_dynamic
-defaults: default-1280x1024.jpg default-1600x1200.jpg default-1920x1080.jpg default-1920x1200.jpg
+defaults: wallpapers/SLEdefault/contents/images/1280x1024.jpg wallpapers/SLEdefault/contents/images/1600x1200.jpg wallpapers/SLEdefault/contents/images/1920x1200.jpg wallpapers/SLEdefault/contents/images/1920x1080.jpg
 
 defaults_clean:
 	rm -f default-1280x1024.jpg
