@@ -197,16 +197,6 @@ susegreeter.d_clean:
 
 CLEAN_DEPS+=susegreeter.d_clean
 
-xfce.d:
-	mkdir -p SLE/xfce
-	inkscape -w 350 -e SLE/xfce/splash.png xfce/splash.svg
-	cp xfce/COPYING SLE/xfce/COPYING
-
-xfce.d_clean:
-	rm -rf SLE/xfce
-
-CLEAN_DEPS+=xfce.d_clean
-
 install: # do not add requires here, this runs from generated SLE
 	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
 
