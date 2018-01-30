@@ -212,9 +212,6 @@ install: # do not add requires here, this runs from generated SLE
 	install -m 0644 gnome/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml
 	## End xml files used by GNOME
 
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
-	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
-
 	install -d ${DESTDIR}/usr/share/grub2/backgrounds/${THEME} ${DESTDIR}/boot/grub2/backgrounds/${THEME}
 	cp -a grub2/backgrounds/* ${DESTDIR}/usr/share/grub2/backgrounds/${THEME}
 	install -d ${DESTDIR}/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
@@ -224,29 +221,21 @@ install: # do not add requires here, this runs from generated SLE
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 
-	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
-	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
+#	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
+#	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
 
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps
-	cp -a kdm ${DESTDIR}/usr/share/kde4/apps/kdm
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1600x1200.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1920x1200.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1280x1024.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1920x1080.jpg
+#	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
+#	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images/background.jpg
 
-	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
-	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images/background.jpg
-
-	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-SLE.png
 
 	install -D -m 0644 xdg/xhost-grant-root.desktop ${DESTDIR}/etc/xdg/autostart/xhost-grant-root.desktop
 
