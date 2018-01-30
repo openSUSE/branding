@@ -18,7 +18,7 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: gfxboot.d kdelibs.d wallpaper.d 
+SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -40,22 +40,12 @@ gfxboot.d_clean:
 
 CLEAN_DEPS+=gfxboot.d_clean
 
-grub2.d:
+grub2.d: grub2/backgrounds/default-*.png
 	mkdir -p SLE/grub2/backgrounds
-#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-1610.png grub2-1610.svg
-	cp -f grub2-1610.png SLE/grub2/backgrounds/default-1610.png
-	optipng -o4 SLE/grub2/backgrounds/default-1610.png
-#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-169.png grub2-169.svg	
-	cp -f grub2-169.png SLE/grub2/backgrounds/default-169.png
-	optipng -o4 SLE/grub2/backgrounds/default-169.png
-#	inkscape -w 1280 -C -e SLE/grub2/backgrounds/default-54.png grub2-54.svg
-	cp -f grub2-54.png SLE/grub2/backgrounds/default-54.png
-	optipng -o4 SLE/grub2/backgrounds/default-54.png
-#	inkscape -w 1600 -C -e SLE/grub2/backgrounds/default-43.png grub2-43.svg
-	cp -f grub2-43.png SLE/grub2/backgrounds/default-43.png
-	optipng -o4 SLE/grub2/backgrounds/default-43.png
-	cp -a boot/grub2/theme SLE/grub2/
-	./boot/grub2-branding.sh SLE/grub2/backgrounds
+	cp -f grub2/backgrounds/default-*.png SLE/grub2/backgrounds/
+	optipng -o4 SLE/grub2/backgrounds/default-*.png
+	cp -a grub2/theme SLE/grub2/
+	./grub2/grub2-branding.sh SLE/grub2/backgrounds
 
 grub2.d_clean:
 	rm -rf SLE/grub2
