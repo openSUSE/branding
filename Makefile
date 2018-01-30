@@ -17,7 +17,7 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d plymouth.d gdm.d gnome.d
+SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d plymouth.d gdm.d gnome.d xdg.d
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -34,6 +34,15 @@ gdm.d_clean:
 	rm -rf SLE/gdm
 
 CLEAN_DEPS+=gdm.d_clean
+
+xdg.d: xdg/xhost-grant-root.desktop
+	mkdir -p SLE/xdg
+	cp -a xdg SLE
+
+xdg.d_clean:
+	rm -rf SLE/xdg
+
+CLEAN_DEPS+=xdg.d_clean
 
 gfxboot.d: gfxboot/back.jpg gfxboot/welcome.jpg gfxboot/text.jpg
 	mkdir -p SLE/gfxboot/data-boot/
