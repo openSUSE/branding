@@ -17,7 +17,7 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d plymouth.d gdm.d gnome.d xdg.d
+SLE.d: gfxboot.d grub2.d wallpaper.d plymouth.d gdm.d gnome.d xdg.d
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -207,8 +207,6 @@ susegreeter.d_clean:
 CLEAN_DEPS+=susegreeter.d_clean
 
 install: # do not add requires here, this runs from generated SLE
-	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
-
 	install -d ${DESTDIR}/usr/share/wallpapers
 	cp -a wallpapers/* ${DESTDIR}/usr/share/wallpapers
 
