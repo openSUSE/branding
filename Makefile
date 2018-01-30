@@ -1,4 +1,3 @@
-NAME=grow
 VERSION=15.0
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.:_:g'`
 THEME=SLE
@@ -18,7 +17,7 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d plymouth.d gdm.d
+SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d plymouth.d gdm.d gnome.d
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -179,39 +178,10 @@ ksplash-qml.d_clean:
 
 CLEAN_DEPS+=ksplash-qml.d_clean
 
-# Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
-gnome_dynamic: defaults
-	mkdir -p gnome/dynamic
-	for file in morning night; do \
-		inkscape -z -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
-		convert -quality 100 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
-		inkscape -z -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
-		convert -quality 100 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
-		inkscape -z -e gnome/$${file}-1920x1080.png -w 1920 -h 1080 gnome/$${file}169.svg ; \
-		convert -quality 100 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
-		inkscape -z -e gnome/$${file}-1920x1200.png -w 1920 -h 1200 gnome/$${file}1610.svg ; \
-		convert -quality 100 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
-		rm gnome/$${file}-1280x1024.png gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png gnome/$${file}-1920x1080.png ; \
-	done
-	cp default-1280x1024.jpg gnome/dynamic/day-1280x1024.jpg
-	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
-	cp default-1920x1080.jpg gnome/dynamic/day-1920x1080.jpg
-	cp default-1920x1200.jpg gnome/dynamic/day-1920x1200.jpg
-	sed "s:@PATH_TO_IMAGES@:/usr/share/backgrounds/${NAME}:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic/${NAME}.xml
-	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest.xml
-	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g;s:7200:6:g;s:14400:12:g;s:18000:15:g;s:25200:21:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest-fast.xml
-
-gnome_dynamic_clean:
-	rm -rf gnome/dynamic
-
-CLEAN_DEPS+=gnome_dynamic_clean
-
-gnome.d: gnome_dynamic
+gnome.d: 
 	mkdir -p SLE/gnome
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/wallpaper-branding-SLE.xml
+	sed "s:@VERSION@:${VERSION}:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/wallpaper-branding-SLE.xml
 	cp gnome/SLE-default-static.xml SLE/gnome/SLE-default-static.xml
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/dynamic-wallpaper-branding-SLE.xml
-	cp -a gnome/dynamic/ SLE/gnome/${NAME}
 
 gnome.d_clean:
 	rm -rf SLE/gnome
@@ -246,27 +216,10 @@ install: # do not add requires here, this runs from generated SLE
 	## Install xml files used by GNOME to find default wallpaper
 	# Here's the setup we use:
 	#  - /usr/share/wallpapers/SLE-default.xml is the default background
-	#  - /usr/share/wallpapers/SLE-default.xml is a symlink (via
-	#    update-alternatives) to either:
-	#    a) /usr/share/wallpapers/SLE-default-static.xml (from
-	#        wallpaper-branding-SLE)
-	#    b) /usr/share/wallpapers/SLE-default-dynamic.xml (from
-	#        dynamic-wallpaper-branding-SLE)
-	#  - /usr/share/wallpapers/SLE-default-dynamic.xml is a symlink to the
-	#    dynamic background (since this XML file moves from a version to another)
 	#
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-SLE.xml
 	install -m 0644 gnome/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml
-	# Dynamic wallpaper
-	install -d ${DESTDIR}/usr/share/backgrounds
-	if test -z "${NAME}"; then \
-	    echo "Error in Makefile: NAME variable is unset." ;\
-	    false ;\
-	fi
-	cp -a gnome/${NAME}/ ${DESTDIR}/usr/share/backgrounds/
-	install -D -m 0644 gnome/dynamic-wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-SLE.xml
-	ln -sf /usr/share/backgrounds/${NAME}/${NAME}.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml
 	## End xml files used by GNOME
 
 	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
@@ -311,11 +264,6 @@ clean: ${CLEAN_DEPS}
 	rmdir SLE 2> /dev/null || :
 
 check: # do not add requires here, this runs from generated SLE
-	## Check GNOME-related xml files have contant that make sense
-	# Check that the link for the dynamic wallpaper is valid
-	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml` ; \
-	test -f "$${LINK_TARGET}" || { echo "The link for SLE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; exit 1 ;}
-
 	# Check that all files referenced in xml files actually exist
 	for xml in ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml; do \
 	  xml_basename=`basename $${xml}` ; \
@@ -330,8 +278,4 @@ check: # do not add requires here, this runs from generated SLE
 	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml || { echo "$${IMG} not mentioned in SLE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 
-	for file in ${DESTDIR}/usr/share/backgrounds/${NAME}/*.jpg; do \
-	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml || { echo "$${IMG} not mentioned in SLE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
-	done
 	## End check of GNOME-related xml files
