@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
-<wallpapers>
-	<wallpaper deleted="false">
-		<filename>/usr/share/wallpapers/SLE-default-static.xml</filename>
-		<options>zoom</options>
-		<name>SLE 12.0</name>
-	</wallpaper>
-</wallpapers>

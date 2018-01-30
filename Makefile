@@ -1,6 +1,5 @@
-NAME=grow
 VERSION=15.0
-VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
+VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.:_:g'`
 THEME=SLE
 
 all: info SLE.tar.xz
@@ -10,14 +9,15 @@ info:
 
 SLE.tar.xz: SLE.d
 	tar cvfJ SLE.tar.xz SLE
-#	rm -r SLE
+	rm -r SLE
 
 SLE.tar.xz_clean:
 	rm -f SLE.tar.xz
 
 CLEAN_DEPS+=SLE.tar.xz_clean
 
-SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
+#SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
+SLE.d: gfxboot.d grub2.d wallpaper.d plymouth.d gdm.d gnome.d xdg.d
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -26,43 +26,43 @@ SLE.d_clean:
 
 CLEAN_DEPS+=SLE.d_clean
 
-gfxboot.d: defaults
-	inkscape -w 800 -e tmp.png gfxboot/startup.svg
+gdm.d: gdm/custom.conf gdm/distributor.svg
+	mkdir -p SLE/gdm
+	cp -a gdm SLE
+
+gdm.d_clean:
+	rm -rf SLE/gdm
+
+CLEAN_DEPS+=gdm.d_clean
+
+xdg.d: xdg/xhost-grant-root.desktop
+	mkdir -p SLE/xdg
+	cp -a xdg SLE
+
+xdg.d_clean:
+	rm -rf SLE/xdg
+
+CLEAN_DEPS+=xdg.d_clean
+
+gfxboot.d: gfxboot/back.jpg gfxboot/welcome.jpg gfxboot/text.jpg
 	mkdir -p SLE/gfxboot/data-boot/
-	cp gfxboot/Roboto-BoldCondensed.ttf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-boot/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/install.svg
+	cp gfxboot/back.jpg SLE/gfxboot/data-boot/back.jpg
 	mkdir -p SLE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/back.jpg
-	inkscape -w 800 -e tmp.png gfxboot/welcome.svg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/welcome.jpg
-	mkdir -p ~/.fonts
-	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
-	rm ~/.fonts/Roboto-BoldCondensed.ttf
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png SLE/gfxboot/data-install/text.jpg
-	rm tmp.png
+	cp gfxboot/back.jpg SLE/gfxboot/data-install/back.jpg
+	cp gfxboot/welcome.jpg SLE/gfxboot/data-install/welcome.jpg
+	cp gfxboot/text.jpg SLE/gfxboot/data-install/text.jpg
 
 gfxboot.d_clean:
-	rm -rf SLE/gfxboot tmp.png
+	rm -rf SLE/gfxboot
 
 CLEAN_DEPS+=gfxboot.d_clean
 
-grub2.d:
+grub2.d: grub2/backgrounds/default-*.png
 	mkdir -p SLE/grub2/backgrounds
-#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-1610.png grub2-1610.svg
-	cp -f grub2-1610.png SLE/grub2/backgrounds/default-1610.png
-	optipng -o4 SLE/grub2/backgrounds/default-1610.png
-#	inkscape -w 1920 -C -e SLE/grub2/backgrounds/default-169.png grub2-169.svg	
-	cp -f grub2-169.png SLE/grub2/backgrounds/default-169.png
-	optipng -o4 SLE/grub2/backgrounds/default-169.png
-#	inkscape -w 1280 -C -e SLE/grub2/backgrounds/default-54.png grub2-54.svg
-	cp -f grub2-54.png SLE/grub2/backgrounds/default-54.png
-	optipng -o4 SLE/grub2/backgrounds/default-54.png
-#	inkscape -w 1600 -C -e SLE/grub2/backgrounds/default-43.png grub2-43.svg
-	cp -f grub2-43.png SLE/grub2/backgrounds/default-43.png
-	optipng -o4 SLE/grub2/backgrounds/default-43.png
-	cp -a boot/grub2/theme SLE/grub2/
-	./boot/grub2-branding.sh SLE/grub2/backgrounds
+	cp -f grub2/backgrounds/default-*.png SLE/grub2/backgrounds/
+	optipng -o4 SLE/grub2/backgrounds/default-*.png
+	cp -a grub2/theme SLE/grub2/
+	./grub2/grub2-branding.sh SLE/grub2/backgrounds
 
 grub2.d_clean:
 	rm -rf SLE/grub2
@@ -71,59 +71,22 @@ CLEAN_DEPS+=grub2.d_clean
 
 PLS=SLE/plymouth/theme/SLE.script
 
-SLE/plymouth/theme/SLE.script: boot/plymouth/theme/*
-	mkdir -p SLE/plymouth
-	cp -a boot/plymouth/theme SLE/plymouth/
+SLE/plymouth/theme/SLE.script: plymouth/theme/SLE.*
+	mkdir -p SLE/plymouth/theme
+	cp -a plymouth/theme/{SLE.*,background.png,box.png,entry.png,lock.png,logo.png,progress*.png,suspend.png} SLE/plymouth/theme/
 
 PLYMOUTH_DEPS=${PLS}
 
-SLE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/blank-background-1610.png blank-background-1610.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-1610.png
+SLE/plymouth/theme/%.png: plymouth/theme/%.png ${PLS}
+	optipng -o4 $< -out $@
 
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-1610.png SLE/plymouth/theme/logo-1610.png
 
-SLE/plymouth/theme/logo-1610.png: background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/logo-1610.png logo-1610.svg
-	optipng -o4 SLE/plymouth/theme/logo-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-169.png SLE/plymouth/theme/logo-169.png
 
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-54.png SLE/plymouth/theme/logo-54.png
 
-SLE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/blank-background-169.png blank-background-169.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-169.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-169.png
-
-SLE/plymouth/theme/logo-169.png: logo-169.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/logo-169.png logo-169.svg
-	optipng -o4 SLE/plymouth/theme/logo-169.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-169.png
-
-SLE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
-	inkscape -w 1280 -C -e SLE/plymouth/theme/blank-background-54.png blank-background-54.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-54.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-54.png
-
-SLE/plymouth/theme/logo-54.png: logo-54.svg ${PLS}
-	inkscape -w 1280 -C -e SLE/plymouth/theme/logo-54.png logo-54.svg
-	optipng -o4 SLE/plymouth/theme/logo-54.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-54.png
-
-SLE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
-	inkscape -w 1600 -C -e SLE/plymouth/theme/blank-background-43.png blank-background-43.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-43.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-43.png
-
-SLE/plymouth/theme/logo-43.png: logo-43.svg ${PLS}
-	inkscape -w 1600 -C -e SLE/plymouth/theme/logo-43.png logo-43.svg
-	optipng -o4 SLE/plymouth/theme/logo-43.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-43.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-43.png SLE/plymouth/theme/logo-43.png
 
 plymouth.d: ${PLYMOUTH_DEPS}
 
@@ -134,7 +97,8 @@ CLEAN_DEPS+=plymouth.d_clean
 
 kdelibs.d: defaults
 	mkdir -p SLE/kdelibs
-	cp kdelibs/body-background.jpg kdelibs/css.diff SLE/kdelibs
+	cp wallpapers/SLEdefault/contents/images/1600x1200.jpg SLE/kdelibs/body-background.jpg 
+	cp kdelibs/css.diff SLE/kdelibs
 
 kdelibs.d_clean:
 	rm -rf SLE/kdelibs
@@ -143,53 +107,41 @@ CLEAN_DEPS+=kdelibs.d_clean
 
 wallpaper.d: defaults
 	mkdir -p SLE/wallpapers
-	cp wallpapers/default-1600x1200.jpg.desktop SLE/wallpapers
-	cp wallpapers/default-1920x1200.jpg.desktop SLE/wallpapers
-	cp wallpapers/default-1920x1080.jpg.desktop SLE/wallpapers
 	mkdir -p SLE/wallpapers/SLEdefault/contents/images
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1600x1200.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1600x1200.jpg.desktop
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1920x1200.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1200.jpg.desktop
-	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-1920x1080.jpg.desktop.in > SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1080.jpg.desktop
-	ln -sf SLE${VERSION_NO_DOT}-1600x1200.jpg SLE/wallpapers/default-1600x1200.jpg
-	ln -sf SLE${VERSION_NO_DOT}-1920x1200.jpg SLE/wallpapers/default-1920x1200.jpg
-	ln -sf SLE${VERSION_NO_DOT}-1920x1080.jpg SLE/wallpapers/default-1920x1080.jpg
-	cp default-1280x1024.jpg SLE/wallpapers/SLEdefault/contents/images/1280x1024.jpg
-	cp default-1600x1200.jpg SLE/wallpapers/SLEdefault/contents/images/1600x1200.jpg
-	cp default-1920x1080.jpg SLE/wallpapers/SLEdefault/contents/images/1920x1080.jpg
-	cp default-1920x1200.jpg SLE/wallpapers/SLEdefault/contents/images/1920x1200.jpg
-	ln -sf SLEdefault/contents/images/1920x1080.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1080.jpg
-	ln -sf SLEdefault/contents/images/1920x1200.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1920x1200.jpg
-	ln -sf SLEdefault/contents/images/1600x1200.jpg SLE/wallpapers/SLE${VERSION_NO_DOT}-1600x1200.jpg
-	convert -quality 90 -geometry 400x250 default-1920x1200.jpg SLE/wallpapers/SLEdefault/screenshot.jpg
-	cp -p kde-workspace/metadata.desktop SLE/wallpapers/SLEdefault/metadata.desktop
+	for res in 1280x1024 1600x1200 1920x1200 1920x1080 ; do \
+		cp wallpapers/SLEdefault/contents/images/$${res}.jpg SLE/wallpapers/SLEdefault/contents/images/$${res}.jpg ;\
+		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/SLE-$${res}.jpg.desktop.in > SLE/wallpapers/SLE-${VERSION_NO_DOT}-$${res}.jpg.desktop ;\
+		ln -sf SLEdefault/contents/images/$${res}.jpg SLE/wallpapers/SLE-${VERSION_NO_DOT}-$${res}.jpg ;\
+	done
+	convert -quality 90 -geometry 400x250 wallpapers/SLEdefault/contents/images/1920x1200.jpg SLE/wallpapers/SLEdefault/screenshot.jpg
 
 wallpaper.d_clean:
 	rm -rf SLE/wallpapers
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-default-1280x1024.jpg: background-54.svg
-	inkscape -e default-1280x1024.png -w 1280 background-54.svg
-	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
-	rm default-1280x1024.png
+#default-1280x1024.jpg: background-54.svg
+#	inkscape -e default-1280x1024.png -w 1280 background-54.svg
+#	convert -quality 100 -geometry 1280x1024 default-1280x1024.png default-1280x1024.jpg
+#	rm default-1280x1024.png
 
-default-1600x1200.jpg: background-43.svg
-	inkscape -e default-1600x1200.png -w 1600 background-43.svg
-	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
-	rm default-1600x1200.png
+#default-1600x1200.jpg: background-43.svg
+#	inkscape -e default-1600x1200.png -w 1600 background-43.svg
+#	convert -quality 100 -geometry 1600x1200 default-1600x1200.png default-1600x1200.jpg
+#	rm default-1600x1200.png
 
-default-1920x1080.jpg: background-169.svg
-	inkscape -e default-1920x1080.png -w 1920 background-169.svg
-	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
-	rm default-1920x1080.png
+#default-1920x1080.jpg: background-169.svg
+#	inkscape -e default-1920x1080.png -w 1920 background-169.svg
+#	convert -quality 100 -geometry 1920x1080 default-1920x1080.png default-1920x1080.jpg
+#	rm default-1920x1080.png
 
-default-1920x1200.jpg: background-1610.svg
-	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
-	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
-	rm default-1920x1200.png
+#default-1920x1200.jpg: background-1610.svg
+#	inkscape -e default-1920x1200.png -w 1920 background-1610.svg
+#	convert -quality 100 -geometry 1920x1200 default-1920x1200.png default-1920x1200.jpg
+#	rm default-1920x1200.png
 
 # When changing the commands below, also update the commands in gnome_dynamic
-defaults: default-1280x1024.jpg default-1600x1200.jpg default-1920x1080.jpg default-1920x1200.jpg
+defaults: wallpapers/SLEdefault/contents/images/1280x1024.jpg wallpapers/SLEdefault/contents/images/1600x1200.jpg wallpapers/SLEdefault/contents/images/1920x1200.jpg wallpapers/SLEdefault/contents/images/1920x1080.jpg
 
 defaults_clean:
 	rm -f default-1280x1024.jpg
@@ -235,39 +187,10 @@ ksplash-qml.d_clean:
 
 CLEAN_DEPS+=ksplash-qml.d_clean
 
-# Create images used for the dynamic wallpaper; note that we do the same as in the 'defaults' target
-gnome_dynamic: defaults
-	mkdir -p gnome/dynamic
-	for file in morning night; do \
-		inkscape -z -e gnome/$${file}-1280x1024.png -w 1280 gnome/$${file}54.svg ; \
-		convert -quality 100 -geometry 1280x1024 gnome/$${file}-1280x1024.png gnome/dynamic/$${file}-1280x1024.jpg ; \
-		inkscape -z -e gnome/$${file}-1600x1200.png -w 1600 gnome/$${file}43.svg ; \
-		convert -quality 100 -geometry 1600x1200 gnome/$${file}-1600x1200.png gnome/dynamic/$${file}-1600x1200.jpg ; \
-		inkscape -z -e gnome/$${file}-1920x1080.png -w 1920 -h 1080 gnome/$${file}169.svg ; \
-		convert -quality 100 -geometry 1920x1080 gnome/$${file}-1920x1080.png gnome/dynamic/$${file}-1920x1080.jpg ; \
-		inkscape -z -e gnome/$${file}-1920x1200.png -w 1920 -h 1200 gnome/$${file}1610.svg ; \
-		convert -quality 100 -geometry 1920x1200 gnome/$${file}-1920x1200.png gnome/dynamic/$${file}-1920x1200.jpg ; \
-		rm gnome/$${file}-1280x1024.png gnome/$${file}-1600x1200.png gnome/$${file}-1920x1200.png gnome/$${file}-1920x1080.png ; \
-	done
-	cp default-1280x1024.jpg gnome/dynamic/day-1280x1024.jpg
-	cp default-1600x1200.jpg gnome/dynamic/day-1600x1200.jpg
-	cp default-1920x1080.jpg gnome/dynamic/day-1920x1080.jpg
-	cp default-1920x1200.jpg gnome/dynamic/day-1920x1200.jpg
-	sed "s:@PATH_TO_IMAGES@:/usr/share/backgrounds/${NAME}:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic/${NAME}.xml
-	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest.xml
-	sed "s:@PATH_TO_IMAGES@:`pwd`/gnome/dynamic:g;s:7200:6:g;s:14400:12:g;s:18000:15:g;s:25200:21:g" gnome/dynamic-wallpaper.xml.in > gnome/dynamic-wallpaper-localtest-fast.xml
-
-gnome_dynamic_clean:
-	rm -rf gnome/dynamic
-
-CLEAN_DEPS+=gnome_dynamic_clean
-
-gnome.d: gnome_dynamic
+gnome.d: 
 	mkdir -p SLE/gnome
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/wallpaper-branding-SLE.xml
+	sed "s:@VERSION@:${VERSION}:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/wallpaper-branding-SLE.xml
 	cp gnome/SLE-default-static.xml SLE/gnome/SLE-default-static.xml
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:dynamic:g" gnome/wallpaper-branding-SLE.xml.in > SLE/gnome/dynamic-wallpaper-branding-SLE.xml
-	cp -a gnome/dynamic/ SLE/gnome/${NAME}
 
 gnome.d_clean:
 	rm -rf SLE/gnome
@@ -283,50 +206,18 @@ susegreeter.d_clean:
 
 CLEAN_DEPS+=susegreeter.d_clean
 
-xfce.d:
-	mkdir -p SLE/xfce
-	inkscape -w 350 -e SLE/xfce/splash.png xfce/splash.svg
-	cp xfce/COPYING SLE/xfce/COPYING
-
-xfce.d_clean:
-	rm -rf SLE/xfce
-
-CLEAN_DEPS+=xfce.d_clean
-
 install: # do not add requires here, this runs from generated SLE
-	install -D -m 644 kdelibs/body-background.jpg ${DESTDIR}/usr/share/kde4/apps/kdeui/about/body-background.jpg
-
 	install -d ${DESTDIR}/usr/share/wallpapers
 	cp -a wallpapers/* ${DESTDIR}/usr/share/wallpapers
 
 	## Install xml files used by GNOME to find default wallpaper
 	# Here's the setup we use:
 	#  - /usr/share/wallpapers/SLE-default.xml is the default background
-	#  - /usr/share/wallpapers/SLE-default.xml is a symlink (via
-	#    update-alternatives) to either:
-	#    a) /usr/share/wallpapers/SLE-default-static.xml (from
-	#        wallpaper-branding-SLE)
-	#    b) /usr/share/wallpapers/SLE-default-dynamic.xml (from
-	#        dynamic-wallpaper-branding-SLE)
-	#  - /usr/share/wallpapers/SLE-default-dynamic.xml is a symlink to the
-	#    dynamic background (since this XML file moves from a version to another)
 	#
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-SLE.xml
 	install -m 0644 gnome/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml
-	# Dynamic wallpaper
-	install -d ${DESTDIR}/usr/share/backgrounds
-	if test -z "${NAME}"; then \
-	    echo "Error in Makefile: NAME variable is unset." ;\
-	    false ;\
-	fi
-	cp -a gnome/${NAME}/ ${DESTDIR}/usr/share/backgrounds/
-	install -D -m 0644 gnome/dynamic-wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/dynamic-wallpaper-branding-SLE.xml
-	ln -sf /usr/share/backgrounds/${NAME}/${NAME}.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml
 	## End xml files used by GNOME
-
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
-	cp -p SUSEgreeter/* ${DESTDIR}/usr/share/kde4/apps/SUSEgreeter
 
 	install -d ${DESTDIR}/usr/share/grub2/backgrounds/${THEME} ${DESTDIR}/boot/grub2/backgrounds/${THEME}
 	cp -a grub2/backgrounds/* ${DESTDIR}/usr/share/grub2/backgrounds/${THEME}
@@ -337,41 +228,28 @@ install: # do not add requires here, this runs from generated SLE
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 
-	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
-	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
+#	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
+#	cp -a ksplashx ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200	
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1600x1200/background.jpg
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1200/background.jpg
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1280x1024/background.jpg
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/1920x1080/background.jpg
 
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps
-	cp -a kdm ${DESTDIR}/usr/share/kde4/apps/kdm
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1600x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1600x1200.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1920x1200.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1280x1024.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1280x1024.jpg
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1080.jpg ${DESTDIR}/usr/share/kde4/apps/kdm/themes/SLE/background-1920x1080.jpg
+#	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
+#	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE
+#	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images
+#	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images/background.jpg
 
-	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
-	cp -a ksplash-qml ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE
-	mkdir -p ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images
-	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images/background.jpg
-
-	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-SLE.png
 
 	install -D -m 0644 xdg/xhost-grant-root.desktop ${DESTDIR}/etc/xdg/autostart/xhost-grant-root.desktop
 
 clean: ${CLEAN_DEPS}
-	rmdir SLE
+	rmdir SLE 2> /dev/null || :
 
 check: # do not add requires here, this runs from generated SLE
-	## Check GNOME-related xml files have contant that make sense
-	# Check that the link for the dynamic wallpaper is valid
-	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml` ; \
-	test -f "$${LINK_TARGET}" || { echo "The link for SLE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; exit 1 ;}
-
 	# Check that all files referenced in xml files actually exist
 	for xml in ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml; do \
 	  xml_basename=`basename $${xml}` ; \
@@ -386,8 +264,4 @@ check: # do not add requires here, this runs from generated SLE
 	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml || { echo "$${IMG} not mentioned in SLE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 
-	for file in ${DESTDIR}/usr/share/backgrounds/${NAME}/*.jpg; do \
-	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml || { echo "$${IMG} not mentioned in SLE-default-dynamic.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
-	done
 	## End check of GNOME-related xml files
