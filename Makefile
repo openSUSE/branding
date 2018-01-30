@@ -10,7 +10,7 @@ info:
 
 SLE.tar.xz: SLE.d
 	tar cvfJ SLE.tar.xz SLE
-#	rm -r SLE
+	rm -r SLE
 
 SLE.tar.xz_clean:
 	rm -f SLE.tar.xz
@@ -18,7 +18,8 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d
+SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d plymouth.d
+
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -54,59 +55,22 @@ CLEAN_DEPS+=grub2.d_clean
 
 PLS=SLE/plymouth/theme/SLE.script
 
-SLE/plymouth/theme/SLE.script: boot/plymouth/theme/*
-	mkdir -p SLE/plymouth
-	cp -a boot/plymouth/theme SLE/plymouth/
+SLE/plymouth/theme/SLE.script: plymouth/theme/SLE.*
+	mkdir -p SLE/plymouth/theme
+	cp -a plymouth/theme/{SLE.*,background.png,box.png,entry.png,lock.png,logo.png,progress*.png,suspend.png} SLE/plymouth/theme/
 
 PLYMOUTH_DEPS=${PLS}
 
-SLE/plymouth/theme/blank-background-1610.png: blank-background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/blank-background-1610.png blank-background-1610.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-1610.png
+SLE/plymouth/theme/%.png: plymouth/theme/%.png ${PLS}
+	optipng -o4 $< -out $@
 
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-1610.png SLE/plymouth/theme/logo-1610.png
 
-SLE/plymouth/theme/logo-1610.png: background-1610.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/logo-1610.png logo-1610.svg
-	optipng -o4 SLE/plymouth/theme/logo-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-169.png SLE/plymouth/theme/logo-169.png
 
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-1610.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-54.png SLE/plymouth/theme/logo-54.png
 
-SLE/plymouth/theme/blank-background-169.png: blank-background-169.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/blank-background-169.png blank-background-169.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-169.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-169.png
-
-SLE/plymouth/theme/logo-169.png: logo-169.svg ${PLS}
-	inkscape -w 1920 -C -e SLE/plymouth/theme/logo-169.png logo-169.svg
-	optipng -o4 SLE/plymouth/theme/logo-169.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-169.png
-
-SLE/plymouth/theme/blank-background-54.png: blank-background-54.svg ${PLS}
-	inkscape -w 1280 -C -e SLE/plymouth/theme/blank-background-54.png blank-background-54.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-54.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-54.png
-
-SLE/plymouth/theme/logo-54.png: logo-54.svg ${PLS}
-	inkscape -w 1280 -C -e SLE/plymouth/theme/logo-54.png logo-54.svg
-	optipng -o4 SLE/plymouth/theme/logo-54.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-54.png
-
-SLE/plymouth/theme/blank-background-43.png: blank-background-43.svg ${PLS}
-	inkscape -w 1600 -C -e SLE/plymouth/theme/blank-background-43.png blank-background-43.svg
-	optipng -o4 SLE/plymouth/theme/blank-background-43.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-43.png
-
-SLE/plymouth/theme/logo-43.png: logo-43.svg ${PLS}
-	inkscape -w 1600 -C -e SLE/plymouth/theme/logo-43.png logo-43.svg
-	optipng -o4 SLE/plymouth/theme/logo-43.png
-
-PLYMOUTH_DEPS+=SLE/plymouth/theme/logo-43.png
+PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-43.png SLE/plymouth/theme/logo-43.png
 
 plymouth.d: ${PLYMOUTH_DEPS}
 
