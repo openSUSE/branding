@@ -46,11 +46,13 @@ CLEAN_DEPS+=xdg.d_clean
 
 gfxboot.d: gfxboot/back.jpg gfxboot/welcome.jpg gfxboot/text.jpg
 	mkdir -p SLE/gfxboot/data-boot/
-	cp gfxboot/back.jpg SLE/gfxboot/data-boot/back.jpg
+# gfxboot need jpg files in a "simple" format
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 gfxboot/back.jpg SLE/gfxboot/data-boot/back.jpg
 	mkdir -p SLE/gfxboot/data-install
-	cp gfxboot/back.jpg SLE/gfxboot/data-install/back.jpg
-	cp gfxboot/welcome.jpg SLE/gfxboot/data-install/welcome.jpg
-	cp gfxboot/text.jpg SLE/gfxboot/data-install/text.jpg
+	cp SLE/gfxboot/data-boot/back.jpg SLE/gfxboot/data-install/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 gfxboot/back.jpg SLE/gfxboot/data-install/back.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 gfxboot/welcome.jpg SLE/gfxboot/data-install/welcome.jpg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 gfxboot/text.jpg SLE/gfxboot/data-install/text.jpg
 
 gfxboot.d_clean:
 	rm -rf SLE/gfxboot
