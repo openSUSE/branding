@@ -24,7 +24,7 @@ sub copy_files
   system "cp -r $grub2_share_dir/themes/$theme $grub2_theme_dir";
   unlink "$grub2_theme_dir/$theme/activate-theme";
 
-  my $gfx_mode;
+  my $gfx_mode = "default-43.png";
   open my $f, '<', $grub2_default;
   while (<$f>) {
     $gfx_mode = $1, last if /^\s*GRUB_GFXMODE\s*=\s*(\S+)/;
