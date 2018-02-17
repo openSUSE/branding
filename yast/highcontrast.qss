@@ -1,0 +1,312 @@
+@import url("installation.qss");
+
+/* Richtext: highcontrast_richtext.css */
+QMainWindow { background: black; }
+QFileDialog { background: black; }
+QWidget { background: black; color cyan; font-size: 11pt; }
+QDialog { background: black; }
+YQWizard { background: black; }
+
+#steps {
+background-color: black;
+color: #fff;
+}
+.current-step-name {
+color: yellow;
+}
+.done-step-name {
+color:#fff;
+}
+.todo-step-name {
+color:#fff;
+}
+.steps_heading {
+  color: cyan;
+}
+
+#work_area {
+  background-color: black;
+}
+
+YQLogView,
+QTextEdit,
+YQRichText > YQTextBrowser {
+  color: cyan;
+  border: 1px solid white;
+  background-color: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+QFrame { background-color: black; color: cyan; }
+
+QLabel, YQDialog {
+  color: cyan;
+  background-color: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+QHeaderView::section {
+  background-color: black;
+  color: #ffff00;
+  border: 1px outset white;
+}
+
+QAbstractScrollArea { background-color: black; }
+
+QTreeView, QTreeWidget {
+  color: cyan;
+  background-color: black;
+  border: 1px solid white;
+  alternate-background-color: #2a2a2a;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+QTableWidget,
+QTableView {
+  color: cyan;
+  background-color: black;
+  border: 1px solid white;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+YQTree, YQTable {
+  color: cyan;
+  background-color: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+YQPakageSelector {
+  color: cyan;
+  background-color: black;
+  border: 1px inset white;;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+YQGenericDetailsView,
+YQDescriptionDialog,
+YQPkgDescriptionView { color: cyan; background-color: black; }
+
+YQPkgPatternCategoryItem { background-color: black; color: cyan; }
+
+QListWidget {
+  color: cyan;
+  background-color: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+#DialogHeadingLeft {
+  color: #ffff00;
+}
+#DialogHeadingTop {
+  color: #ffff00;
+}
+
+QSpinBox,
+QDateEdit,
+QTimeEdit { color: cyan; background-color: black; selection-background-color: #ffff00; selection-color: black; }
+
+QDateEdit::disabled, QTimeEdit::disabled{ color: gray; background-color: black; }
+
+YQWidgetCaption  { color: cyan; background-color:black; }
+YQWidgetCaption::disabled  {  color: gray; background-color:black; }
+
+QLineEdit {
+  color: #00ff00;
+  background-color: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+  border: 1px solid white;;
+}
+
+QLineEdit:focus {
+  border: 1px solid #ffff00;
+}
+
+QCheckBox { min-height: 20px; color: cyan; }
+
+QRadioButton {color: cyan }
+
+QRadioButton::disabled { color: gray; background-color: black; }
+
+YQMultiLineEdit QTextEdit { color: cyan; }
+
+QMessageBox { background-color: black; }
+
+YQMultiProgressMeter {
+  border: 1px solid white;;
+}
+
+QTabBar::tab {
+  color: cyan;
+
+  border: 1px solid white;;
+}
+
+QTabBar::tab:selected {
+  color: white;
+  border: 1px solid white;; 
+}
+
+QTabBar::tab:!selected:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+QTabBar::tear {
+  background: black;
+  border: 1px solid white;;
+}
+
+
+QComboBox {
+  border: 1px solid #656565;
+  color: #00ff00;
+  background: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+QComboBox::disabled {
+  color: gray;
+  background-color: black;
+  border: 1px solid white;;
+}
+QComboBox:focus {
+  border: 1px solid #ffff00;
+  color: #00ff00;
+}
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+  color: white;
+}
+QComboBox QAbstractItemView,
+QMenuBar {
+  background-color: black;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+QMenuBar::item {
+  color: cyan;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+  color: #fff;
+  background: black;
+ }
+
+QMenuBar::item:pressed {
+  color: #00ff00;
+  background: black;
+}
+QMenu {
+  color: cyan;
+  background: black;
+  border: 1px outset white;;
+  selection-background-color: #ffff00;
+  selection-color: black;
+}
+
+QMenu::item:disabled { color: gray; }
+
+QGroupBox::title {
+  color: cyan;
+}
+
+QPushButton {
+  border: 1px solid #00ff00;
+  background-color: black;
+  color: #00ff00;
+}
+QPushButton:focus, QPushButton:focus:default {
+  border: 1px solid #ffff00;
+}
+QPushButton:focus:default {
+  background-color: #ffff00;
+}
+QPushButton:disabled,
+QPushButton:default:disabled {
+  color: green;
+  background: #2d2d2d;
+  border: 1px solid green;
+}
+QPushButton:default:pressed, QPushButton:pressed {
+  border: 1px solid #ffff00;
+  color: #ffff00;
+  background-color: black;
+}
+QPushButton:hover, QPushButton:default:hover  {
+  background-color: #ffff00;
+  color: black;
+  border: 1px solid #ffff00;
+}
+QPushButton:default {
+  border: 1px solid #00ff00;
+  color: black;
+  background-color: #00ff00;
+}
+QPushButton:open { /* when the button has its menu open */
+  color: black;
+  background: green;
+  border: 1px solid green;;
+}
+
+/* Tab Buttons               */
+
+QToolButton {
+  border: 1px solid white;
+  background-color: black;
+}
+
+QProgressBar {
+  border: 1px solid white;
+  color: #ff0000;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #1b1b1b, stop: 1 #1f1f1f);
+}
+QProgressBar::chunk {
+  background-color:  #ffff00;
+  border: 1px solid #ffff00;
+}
+
+QScrollBar:vertical {
+  background-color: #222;
+}
+QScrollBar::handle:vertical {
+  background-color: gray;
+}
+
+QScrollBar:horizontal {
+  background-color: black;
+}
+QScrollBar::handle:horizontal {
+  background-color: gray;
+}
+
+BusyBar {
+ border: 1px solid white;
+}
+
+#RepoUpgradeLabel {
+  color: cyan;
+  background: black;
+} 
+
+YQPkgVersionsView QWidget { background: #2d2d2d; }
+
+#qt_calendar_calendarview {
+  background-color: black;
+  color: cyan;
+}
+
+QComboBoxPrivateScroller
+{
+  background-color: black;
+  color: cyan;
+} 

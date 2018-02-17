@@ -15,7 +15,7 @@
    viewBox="0 0 52.916665 39.687501"
    version="1.1"
    id="svg8"
-   sodipodi:docname="leapxfce.svg"
+   sodipodi:docname="splash.svg"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    inkscape:export-filename="/home/lcp/leapxfce.png"
    inkscape:export-xdpi="168"
@@ -171,8 +171,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="55.214684"
-     inkscape:cy="87.661967"
+     inkscape:cx="39.777274"
+     inkscape:cy="64.405089"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -181,9 +181,9 @@
      units="px"
      inkscape:lockguides="true"
      inkscape:window-width="1366"
-     inkscape:window-height="702"
+     inkscape:window-height="713"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="53.026161,2.0392578e-05"
@@ -263,7 +263,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -273,9 +273,9 @@
      id="layer1"
      transform="translate(0,-257.31249)">
     <rect
-       style="opacity:1;fill:#6da741;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18908343;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#6da741;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1888881;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect815"
-       width="53.026161"
+       width="52.916668"
        height="39.687481"
        x="0"
        y="257.3125" />
@@ -284,7 +284,7 @@
        id="rect1036"
        width="52.916668"
        height="7.9375"
-       x="0"
+       x="-1.1518564e-15"
        y="257.3125" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03294349"

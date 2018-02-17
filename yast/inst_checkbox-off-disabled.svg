@@ -14,7 +14,7 @@
    height="14"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="inst_checkbox-off-disabled.svg"
    inkscape:export-filename="/suse/wimer/Repos/branding/yast/inst_checkbox-off-disabled.png"
    inkscape:export-xdpi="90"
@@ -102,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-170.44674"
-     inkscape:cy="7.9467581"
+     inkscape:zoom="11.313708"
+     inkscape:cx="11.368107"
+     inkscape:cy="17.470538"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -113,9 +113,9 @@
      inkscape:snap-nodes="false"
      showborder="false"
      inkscape:window-width="1148"
-     inkscape:window-height="817"
-     inkscape:window-x="531"
-     inkscape:window-y="10"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -133,7 +133,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -143,11 +143,13 @@
      id="layer1"
      transform="translate(0,-1038.3622)">
     <rect
-       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#bbbbbb;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect15525"
+       ry="2"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.55;fill:#ffffff;fill-opacity:1;stroke:#cfd6e6;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       id="rect5147-9-1-5-7-6-3-7"
        width="13"
-       height="13"
-       x="0.53033006"
-       y="1038.9038" />
+       height="13.000001"
+       x="0.5"
+       y="1038.8622"
+       rx="2" />
   </g>
 </svg>

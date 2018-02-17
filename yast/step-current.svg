@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -12,7 +13,7 @@
    height="14"
    id="svg7213"
    sodipodi:version="0.32"
-   inkscape:version="0.45.1+0.46pre1"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    version="1.0"
    sodipodi:docname="step-current.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
@@ -44,17 +45,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.4"
-     inkscape:cx="7.2166241"
-     inkscape:cy="10.098897"
+     inkscape:cx="6.0495727"
+     inkscape:cy="8.203092"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:window-width="950"
-     inkscape:window-height="862"
-     inkscape:window-x="681"
-     inkscape:window-y="100">
+     inkscape:window-height="713"
+     inkscape:window-x="416"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
        id="grid7223"
@@ -77,8 +79,16 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:1;fill:#2e3436;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 3,3 L 3,11 L 11,7 L 3,3 z"
-       id="path7225" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.2247448px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 10,7 H 4 v 1 h 6 z"
+       id="path819"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 8,10.5 3,-3 -3,-3 -1,1 2,2 -2,2 z"
+       id="path823"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
   </g>
 </svg>
