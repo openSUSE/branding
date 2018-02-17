@@ -27,7 +27,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   item_height = 32
   item_spacing = 2
 
-  selected_item_font = "DejaVu Sans Regular 12"
+  selected_item_font = "DejaVu Sans Bold 14"
   selected_item_color= "#ffffff"
   selected_item_pixmap_style = "highlight_*.png"
 
@@ -47,7 +47,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   top = 33%-32
   height = 32
 
-  font = "DejaVu Sans Regular 10"
+  font = "DejaVu Sans Bold 14"
 
   text_color = "#fff"
   fg_color = "#0D202F"
@@ -61,6 +61,6 @@ terminal-font: "Gnu Unifont Mono Regular 16"
 + hbox {
 		top = 100%-35
 		left = 20
-		+ label {text = "C: Command Line     E: Edit Entry" font = "DejaVu Sans Regular 12" color = "#ffffff" align = "left"}
+		+ label {text = "C: Command Line     E: Edit Entry" font = "DejaVu Sans Bold 14" color = "#ffffff" align = "left"}
 }
 
