@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="tumbleweedxfce.svg">
+   sodipodi:docname="splash.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -168,8 +168,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="73.659691"
-     inkscape:cy="103.94174"
+     inkscape:cx="95.461042"
+     inkscape:cy="59.976893"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -177,10 +177,10 @@
      inkscape:guide-bbox="true"
      units="px"
      inkscape:lockguides="true"
-     inkscape:window-width="711"
+     inkscape:window-width="800"
      inkscape:window-height="700"
-     inkscape:window-x="653"
-     inkscape:window-y="0"
+     inkscape:window-x="566"
+     inkscape:window-y="27"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="53.026161,2.0392578e-05"
@@ -270,9 +270,9 @@
      id="layer1"
      transform="translate(0,-257.31249)">
     <rect
-       style="opacity:1;fill:#00a489;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18908343;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#00a489;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1888881;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect815"
-       width="53.026161"
+       width="52.916668"
        height="39.687481"
        x="0"
        y="257.3125" />

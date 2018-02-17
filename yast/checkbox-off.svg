@@ -14,8 +14,11 @@
    height="14"
    id="svg2"
    version="1.1"
-   inkscape:version="0.46+devel"
-   sodipodi:docname="New document 1">
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="inst_checkbox-off.svg"
+   inkscape:export-filename="/Users/kwwii/Desktop/yast-SLE12/checkbox-off.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -76,26 +79,6 @@
          offset="1"
          id="stop15517-8-6-2-1-9" />
     </linearGradient>
-    <linearGradient
-       y2="606.00494"
-       x2="364.41537"
-       y1="599.65906"
-       x1="364.41537"
-       gradientTransform="matrix(4.1101984,0,0,0.7878788,-1491.1069,567.87494)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3323"
-       xlink:href="#linearGradient16194-5-7-2-6"
-       inkscape:collect="always" />
-    <linearGradient
-       y2="608.78851"
-       x2="826.15424"
-       y1="598.50702"
-       x1="826.27441"
-       gradientTransform="matrix(1.4711539,0,0,1.1304348,-1204.4448,363.45465)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3325"
-       xlink:href="#linearGradient15513-1-8-5-5-8"
-       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -105,20 +88,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313708"
-     inkscape:cx="9.1000538"
-     inkscape:cy="7.9467581"
+     inkscape:cx="8.9496908"
+     inkscape:cy="14.326508"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-nodes="false"
-     showborder="false"
-     inkscape:window-width="726"
-     inkscape:window-height="826"
-     inkscape:window-x="2132"
-     inkscape:window-y="258"
-     inkscape:window-maximized="0">
+     showborder="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false">
     <inkscape:grid
        type="xygrid"
        id="grid3356"
@@ -145,13 +129,13 @@
      id="layer1"
      transform="translate(0,-1038.3622)">
     <rect
-       style="color:#000000;fill:url(#linearGradient3323);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3325);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect15525"
+       ry="2"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#cfd6e6;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       id="rect5147-9-1-5-7-6-3"
        width="13"
-       height="13"
-       x="0.53033006"
-       y="1038.9038"
-       rx="1.3036165"
-       ry="1.3036165" />
+       height="12.999997"
+       x="0.5"
+       y="1038.8622"
+       rx="2" />
   </g>
 </svg>
