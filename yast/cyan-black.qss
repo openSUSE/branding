@@ -1,0 +1,304 @@
+@import url("installation.qss");
+
+/* Richtext: installation_richtext.css */
+QMainWindow { background: black; }
+QFileDialog { background: black; }
+QWidget { background: black; color: cyan; font-size: 11pt; }
+QDialog { background: black; }
+YQWizard { background: black; }
+
+#steps {
+background-color: black;
+color: #fff;
+}
+.current-step-name {
+color:#fff;
+}
+.done-step-name {
+color:#fff;
+}
+.todo-step-name {
+color:#fff;
+}
+.steps_heading {
+  color: cyan;
+}
+
+#work_area {
+  background-color: black;
+}
+
+YQLogView,
+QTextEdit,
+YQRichText > YQTextBrowser {
+  color: cyan;
+  border: 1px solid cyan;
+  background-color: black;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+QFrame { background-color: black; color: cyan; }
+
+QLabel, YQDialog {
+  color: cyan;
+  background-color: black;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+QHeaderView::section {
+  background-color: black;
+  color: cyan;
+  border: 1px outset cyan;
+}
+
+QAbstractScrollArea { background-color: black; }
+
+QTreeView, QTreeWidget {
+  color: cyan;
+  background-color: black;
+  border: 1px solid cyan;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+QTableWidget,
+QTableView {
+  color: cyan;
+  background-color: black;
+  border: 1px solid cyan;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+YQTree, YQTable {
+  color: cyan;
+  background-color: black;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+YQPakageSelector {
+  color: cyan;
+  background-color: black;
+  border: 1px inset cyan;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+YQGenericDetailsView,
+YQDescriptionDialog,
+YQPkgDescriptionView { color: cyan; background-color: black; }
+
+YQPkgPatternCategoryItem { background-color: black; color: cyan; }
+
+QListWidget {
+  color: cyan;
+  background-color: black;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+#DialogHeadingLeft {
+  color: cyan;
+}
+#DialogHeadingTop {
+  color: cyan;
+}
+
+QSpinBox,
+QDateEdit,
+QTimeEdit { color: cyan; background-color: #262626; selection-background-color: cyan; selection-color: black; }
+
+QDateEdit::disabled, QTimeEdit::disabled{ color: gray; background-color: black; }
+
+YQWidgetCaption  { color: cyan; background-color: black; }
+YQWidgetCaption::disabled  { color: gray; background-color: black; }
+
+QLineEdit {
+  color: cyan;
+  background-color: #262626;
+  selection-background-color: cyan;
+  selection-color: black;
+  border: 1px solid cyan;
+}
+
+QLineEdit::focus {
+  border: 1px inset cyan;
+}
+
+QCheckBox { min-height: 20px; color: cyan; }
+
+QRadioButton {color: cyan }
+
+QRadioButton::disabled { color: gray; background-color: black; }
+
+YQMultiLineEdit QTextEdit { color: cyan; }
+
+QMessageBox { background-color: black; }
+
+.conflict QWidget { color: cyan; }
+
+YQMultiProgressMeter {
+  border: 1px solid cyan;
+}
+
+QTabBar::tab {
+  color: cyan;
+  background: black;
+  border: 1px solid cyan;
+}
+
+QTabBar::tab:selected {
+  color: cyan;
+  background: black;
+  border: 1px solid cyan;
+}
+
+QTabBar::tab:!selected:hover {
+  color: cyan;
+  border: 1px solid cyan;
+}
+
+QTabBar::tear {
+  background: black;
+  border: 1px solid cyan;
+}
+
+
+QComboBox {
+  border: 1px solid cyan;
+  color: cyan;
+  background: black;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+QComboBox::disabled {
+  color: gray;
+  background-color: black;
+  border: 1px solid gray;
+}
+QComboBox:focus {
+  background-color: cyan;
+  border: 1px solid cyan;
+  color: black;
+}
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+  color: gray;
+}
+QComboBox QAbstractItemView,
+QMenuBar {
+  background-color: black;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+QMenuBar::item {
+  color: cyan;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+  color: #fff;
+  background: #28ae73;
+ }
+
+QMenuBar::item:pressed {
+  color: cyan;
+  background: black;
+}
+QMenu {
+  color: cyan;
+  background: black;
+  border: 1px outset cyan;
+  selection-background-color: cyan;
+  selection-color: black;
+}
+
+QGroupBox::title {
+  color: cyan;
+}
+
+QPushButton {
+  border: 1px solid cyan;
+  background-color: black;
+  color: cyan;
+}
+QPushButton:focus, QPushButton:focus:default {
+  border: 1px solid cyan;
+}
+QPushButton:focus:default {
+  background-color: cyan;
+}
+QPushButton:disabled,
+QPushButton:default:disabled {
+  color: gray;
+  background-color: black;
+}
+QPushButton:default:pressed, QPushButton:pressed {
+  border: 1px solid black;
+  color: black;
+  background-color: cyan;
+}
+QPushButton:hover, QPushButton:default:hover  {
+  background-color: gray;
+  color: cyan;
+  border: 1px solid gray;
+}
+QPushButton:default {
+  border: 1px solid cyan;
+  color: black;
+  background-color: cyan;
+}
+QPushButton:open { /* when the button has its menu open */
+  color: cyan;
+  background: black;
+  border: 1px solid cyan;
+}
+
+QToolButton {
+  border: 1px solid cyan;
+  background-color: black;
+}
+
+QProgressBar {
+  border: 1px solid cyan;
+  color: black;
+  background-color: cyan;
+}
+QScrollBar:vertical {
+  background: cyan;
+}
+QScrollBar::handle:vertical {
+  background-color: black;
+}
+QScrollBar::handle:horizontal {
+  background-color: cyan;
+}
+
+BusyBar {
+ border: 1px solid cyan;
+}
+
+#RepoUpgradeLabel {
+  color: cyan;
+  background: black;
+} 
+
+YQPkgVersionsView QWidget { background: black; }
+
+#qt_calendar_navigationbar {
+  background-color: black;
+  color: cyan;
+}
+
+#qt_calendar_calendarview {
+  background-color: black;
+  color: cyan;
+}
+
+QComboBoxPrivateScroller
+{
+  background-color: black;
+  color: cyan;
+} 

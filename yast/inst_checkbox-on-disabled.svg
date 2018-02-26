@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,13 +14,23 @@
    height="14"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="inst_checkbox-on-disabled.svg"
    inkscape:export-filename="/suse/wimer/Repos/branding/yast/inst_checkbox-on-disabled.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
-     id="defs4" />
+     id="defs4">
+    <linearGradient
+       gradientTransform="translate(-18,1007)"
+       id="selected_bg_color"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#6da741;stop-opacity:1;"
+         offset="0"
+         id="stop5956" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-175.03492"
-     inkscape:cy="7.8719314"
+     inkscape:zoom="32"
+     inkscape:cx="5.024822"
+     inkscape:cy="7.9501162"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -37,10 +48,10 @@
      inkscape:showpageshadow="false"
      inkscape:snap-nodes="false"
      showborder="false"
-     inkscape:window-width="1543"
-     inkscape:window-height="1016"
-     inkscape:window-x="76"
-     inkscape:window-y="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -58,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,17 +79,27 @@
      id="layer1"
      transform="translate(0,-1038.3622)">
     <rect
-       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#bbbbbb;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect15525"
-       width="13"
-       height="13"
-       x="0.53033006"
-       y="1038.9038" />
+       rx="1.9999943"
+       y="1038.3622"
+       x="5e-07"
+       height="13.99999"
+       width="13.999989"
+       id="rect5147-9-1-5-7-6-7-3"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.55;fill:#73ba25;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       ry="1.9999917" />
     <path
-       style="color:#000000;fill:none;stroke:#bbbbbb;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2.4105339,1044.2849 4.5052038,3.3284 4.6429903,-6.5546"
-       id="path3379"
-       sodipodi:nodetypes="ccc"
-       inkscape:connector-curvature="0" />
+       style="display:inline;opacity:0.55;fill:#f9fafb;fill-opacity:1;stroke:none"
+       d="M 3.9140625 5.8261719 C 3.7436513 5.8261719 3.5739373 5.8909065 3.4433594 6.0214844 L 2.9707031 6.4921875 C 2.7095473 6.7533433 2.7095473 7.1743911 2.9707031 7.4355469 L 4.625 9.0898438 L 6.0390625 7.6757812 L 4.3847656 6.0214844 C 4.2541877 5.8909065 4.0844737 5.8261719 3.9140625 5.8261719 z "
+       transform="translate(0,1038.3622)"
+       id="rect3977-39-0" />
+    <rect
+       transform="rotate(45)"
+       ry="0"
+       y="729.38983"
+       x="743.92542"
+       height="7.9999828"
+       width="2"
+       id="rect3979-7-6"
+       style="display:inline;opacity:0.55;fill:#f9fafb;fill-opacity:1;stroke:none" />
   </g>
 </svg>

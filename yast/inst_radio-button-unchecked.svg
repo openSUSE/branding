@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg3039"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    width="13"
    height="13"
    sodipodi:docname="inst_radio-button-unchecked.svg"
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -50,7 +50,7 @@
      inkscape:cx="-0.89890715"
      inkscape:cy="-4"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3039"
      inkscape:showpageshadow="false">
@@ -62,14 +62,13 @@
        enabled="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
-  <path
-     sodipodi:type="arc"
-     style="color:#000000;fill:none;stroke:#008a6f;stroke-width:1.73684203999999998;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1"
-     id="path3051"
-     sodipodi:cx="6.5"
-     sodipodi:cy="6.5"
-     sodipodi:rx="5.5"
-     sodipodi:ry="5.5"
-     d="m 12,6.5 a 5.5,5.5 0 1 1 -11,0 5.5,5.5 0 1 1 11,0 z"
-     transform="matrix(0.86363637,0,0,0.86363637,0.886364,0.88636362)" />
+  <rect
+     ry="5.9584408"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#cfd6e6;stroke-width:0.92857361;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     id="rect5147-9-1-7-7"
+     width="12.071426"
+     height="12.071426"
+     x="0.4642868"
+     y="0.4642868"
+     rx="5.8466163" />
 </svg>

@@ -13,9 +13,9 @@
    height="8"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    version="1.0"
-   sodipodi:docname="arr_left.svg"
+   sodipodi:docname="inst_arr_left.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/Users/kwwii/Desktop/yast-SLE12/arr_left.png"
    inkscape:export-xdpi="90"
@@ -41,18 +41,18 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="32"
-     inkscape:cx="2.0277458"
+     inkscape:cx="-3.3785042"
      inkscape:cy="0.1029455"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="882"
-     inkscape:window-height="756"
-     inkscape:window-x="14"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid5157"
@@ -67,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,7 +76,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:1;fill:#a1a1a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:1;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="M 6,-1.110223e-15 L 6,8.0000001 L 2,4 L 6,-1.110223e-15 z"
        id="path5159"
        inkscape:transform-center-y="2.3032254" />

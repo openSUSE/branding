@@ -29,13 +29,25 @@ CLEAN_DEPS+=openSUSE.d_clean
 gfxboot.d: defaults
 	mkdir -p openSUSE/gfxboot/data-boot/
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
-	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/back-800x600.png openSUSE/gfxboot/data-boot/back.jpg
+	inkscape -D -w 800 -e tmp.png raw-theme-drop/back.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
+	rm tmp.png
 	mkdir -p openSUSE/gfxboot/data-install
-	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 raw-theme-drop/back-1440x1080.png openSUSE/gfxboot/data-install/back.jpg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/welcome.png openSUSE/gfxboot/data-install/welcome.jpg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/on.png openSUSE/gfxboot/data-install/on.jpg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/off.png openSUSE/gfxboot/data-install/off.jpg
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 raw-theme-drop/glow.png openSUSE/gfxboot/data-install/glow.jpg
+	inkscape -D -w 1440 -e tmp.png raw-theme-drop/back.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/back.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/welcome.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/welcome.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/on.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/on.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/off.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/off.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/glow.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/glow.jpg
+	rm tmp.png
 	mkdir -p ~/.fonts
 	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
 	rm ~/.fonts/SourceSansPro-Light.ttf
@@ -129,7 +141,7 @@ CLEAN_DEPS+=gnome.d_clean
 
 xfce.d:
 	mkdir -p openSUSE/xfce
-	convert 'xfce/splash.png[350x]' openSUSE/xfce/splash.png
+	inkscape -D -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
 
 xfce.d_clean:
 	rm -rf openSUSE/xfce

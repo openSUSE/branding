@@ -1,0 +1,308 @@
+@import url("installation.qss");
+
+/* Richtext: white-black_richtext.css */
+QMainWindow { background: black; }
+QFileDialog { background: black; }
+QWidget { background: black; color: white; font-size: 11pt; }
+QDialog { background: black; }
+YQWizard { background: black; }
+
+#LogoHBox {
+  border-bottom: 1px solid white;
+}
+
+#steps {
+background-color: black;
+color: #fff;
+}
+.current-step-name {
+color: white;
+}
+.done-step-name {
+color:#fff;
+}
+.todo-step-name {
+color:#fff;
+}
+.steps_heading {
+  color: white;
+}
+
+#work_area {
+  background-color: black;
+}
+
+YQLogView,
+QTextEdit,
+YQRichText > YQTextBrowser {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+QFrame { background-color: black; color: white; }
+
+QLabel, YQDialog {
+  color: white;
+  background-color: black;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+QHeaderView::section {
+  background-color: black;
+  color: white;
+  border: 1px outset white;
+}
+
+QAbstractScrollArea { background-color: black; }
+
+QTreeView, QTreeWidget {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+QTableWidget,
+QTableView {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  selection-background-color: white;
+  selection-color: black;
+}
+YQTree, YQTable {
+  color: white;
+  background-color: black;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+YQPakageSelector {
+  color: white;
+  background-color: black;
+  border: 1px inset white;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+YQGenericDetailsView,
+YQDescriptionDialog,
+YQPkgDescriptionView { color: white; background-color: black; }
+
+YQPkgPatternCategoryItem { background-color: black; color: white; }
+
+QListWidget {
+  color: white;
+  background-color: black;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+#DialogHeadingLeft {
+  color: white;
+}
+#DialogHeadingTop {
+  color: white;
+}
+
+QSpinBox,
+QDateEdit,
+QTimeEdit { color: white; background-color: #262626; selection-background-color: white; selection-color: black; }
+
+QDateEdit::disabled, QTimeEdit::disabled{ color: gray; background-color: black; }
+
+YQWidgetCaption  { color: white; background-color: black; }
+YQWidgetCaption::disabled  { color: gray; background-color: black; }
+
+QLineEdit {
+  color: white;
+  background-color: #262626;
+  selection-background-color: white;
+  selection-color: black;
+  border: 1px solid white;
+}
+
+QLineEdit::focus {
+  border: 1px inset white;
+}
+
+QCheckBox { min-height: 20px; color: white; }
+
+QRadioButton {color: white }
+
+QRadioButton::disabled { color: gray; background-color: black; }
+
+YQMultiLineEdit QTextEdit { color: white; }
+
+QMessageBox { background-color: black; }
+
+.conflict QWidget { color: white; }
+
+YQMultiProgressMeter {
+  border: 1px solid white;
+}
+
+QTabBar::tab {
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+QTabBar::tab:selected {
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+QTabBar::tab:!selected:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+QTabBar::tear {
+  background: black;
+  border: 1px solid white;
+}
+
+
+QComboBox {
+  border: 1px solid white;
+  color: white;
+  background: black;
+  selection-background-color: white;
+  selection-color: black;
+}
+QComboBox::disabled {
+  color: gray;
+  background-color: black;
+  border: 1px solid gray;
+}
+QComboBox:focus {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+  color: gray;
+}
+QComboBox QAbstractItemView,
+QMenuBar {
+  background-color: black;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+QMenuBar::item {
+  color: white;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+  color: #fff;
+  background: #28ae73;
+ }
+
+QMenuBar::item:pressed {
+  color: white;
+  background: black;
+}
+QMenu {
+  color: white;
+  background: black;
+  border: 1px outset white;
+  selection-background-color: white;
+  selection-color: black;
+}
+
+QGroupBox::title {
+  color: white;
+}
+
+QPushButton {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+QPushButton:focus, QPushButton:focus:default {
+  border: 1px solid white;
+}
+QPushButton:focus:default {
+  background-color: white;
+}
+QPushButton:disabled,
+QPushButton:default:disabled {
+  color: gray;
+  background-color: black;
+}
+QPushButton:default:pressed, QPushButton:pressed {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+QPushButton:hover, QPushButton:default:hover  {
+  background-color: gray;
+  color: white;
+  border: 1px solid gray;
+}
+QPushButton:default {
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+}
+QPushButton:open { /* when the button has its menu open */
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+QToolButton {
+  border: 1px solid white;
+  background-color: black;
+}
+
+QProgressBar {
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+}
+QScrollBar:vertical {
+  background: white;
+}
+QScrollBar::handle:vertical {
+  background-color: black;
+}
+QScrollBar::handle:horizontal {
+  background-color: white;
+}
+
+BusyBar {
+ border: 1px solid white;
+}
+
+#RepoUpgradeLabel {
+  color: white;
+  background: black;
+} 
+
+YQPkgVersionsView QWidget { background: black; }
+
+#qt_calendar_navigationbar {
+  background-color: black;
+  color: white;
+}
+
+#qt_calendar_calendarview {
+  background-color: black;
+  color: white;
+}
+
+QComboBoxPrivateScroller
+{
+  background-color: black;
+  color: white;
+} 
