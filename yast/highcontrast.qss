@@ -7,6 +7,23 @@ QWidget { background: black; color cyan; font-size: 11pt; }
 QDialog { background: black; }
 YQWizard { background: black; }
 
+#steps {
+background-color: black;
+color: #fff;
+}
+.current-step-name {
+color: yellow;
+}
+.done-step-name {
+color:#fff;
+}
+.todo-step-name {
+color:#fff;
+}
+.steps_heading {
+  color: cyan;
+}
+
 #work_area {
   background-color: black;
 }

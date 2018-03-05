@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,7 +12,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg3039"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    width="13"
    height="13"
    sodipodi:docname="inst_radio-button-checked.svg"
@@ -26,12 +27,22 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3043" />
+     id="defs3043">
+    <linearGradient
+       gradientTransform="matrix(0.44240271,0,0,0.44952974,-22.832736,-56.893631)"
+       id="selected_bg_color"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#6da741;stop-opacity:1;"
+         offset="0"
+         id="stop5956" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      pagecolor="#2d2d2d"
      bordercolor="#666666"
@@ -47,10 +58,10 @@
      showgrid="false"
      showborder="false"
      inkscape:zoom="8.3181818"
-     inkscape:cx="-0.89890715"
-     inkscape:cy="-4"
+     inkscape:cx="-11.598361"
+     inkscape:cy="0.80874318"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3039"
      inkscape:showpageshadow="false">
@@ -62,14 +73,22 @@
        enabled="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
-  <path
-     sodipodi:type="arc"
-     style="color:#000000;fill:#35b9ab;stroke:#008a6f;stroke-width:1.73684203999999998;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1"
-     id="path3051"
-     sodipodi:cx="6.5"
-     sodipodi:cy="6.5"
-     sodipodi:rx="5.5"
-     sodipodi:ry="5.5"
-     d="m 12,6.5 a 5.5,5.5 0 1 1 -11,0 5.5,5.5 0 1 1 11,0 z"
-     transform="matrix(0.86363637,0,0,0.86363637,0.886364,0.88636362)" />
+  <rect
+     rx="6.4999995"
+     y="4.5367432e-07"
+     x="5e-07"
+     height="12.999999"
+     width="12.999999"
+     id="rect5147-9-1-7-2"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#73ba25;fill-opacity:1;fill-rule:nonzero;stroke:#999999;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     ry="6.4999995" />
+  <rect
+     rx="1.8560995"
+     y="4.6428504"
+     x="4.6428571"
+     height="3.7142866"
+     width="3.7142875"
+     id="use15101-5-7"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#f9fafb;fill-opacity:1;stroke:none;stroke-width:1.93921983;marker:none;enable-background:accumulate"
+     ry="1.8571433" />
 </svg>

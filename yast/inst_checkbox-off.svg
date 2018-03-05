@@ -14,8 +14,8 @@
    height="14"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
-   sodipodi:docname="checkbox-off.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="inst_checkbox-off.svg"
    inkscape:export-filename="/Users/kwwii/Desktop/yast-SLE12/checkbox-off.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -87,21 +87,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="7.5532576"
-     inkscape:cy="7.9467581"
+     inkscape:zoom="11.313708"
+     inkscape:cx="8.9496908"
+     inkscape:cy="14.326508"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-nodes="false"
-     showborder="false"
-     inkscape:window-width="726"
-     inkscape:window-height="756"
-     inkscape:window-x="437"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0">
+     showborder="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false">
     <inkscape:grid
        type="xygrid"
        id="grid3356"
@@ -128,12 +129,13 @@
      id="layer1"
      transform="translate(0,-1038.3622)">
     <rect
-       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0cad7a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect15525"
+       ry="2"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#cfd6e6;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       id="rect5147-9-1-5-7-6-3"
        width="13"
-       height="13"
-       x="0.53033006"
-       y="1038.9038"
-       ry="1.3036165" />
+       height="12.999997"
+       x="0.5"
+       y="1038.8622"
+       rx="2" />
   </g>
 </svg>

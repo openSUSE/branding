@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,7 +14,7 @@
    height="14"
    id="svg7213"
    sodipodi:version="0.32"
-   inkscape:version="0.45.17116"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    version="1.0"
    sodipodi:docname="step-done.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
@@ -39,6 +41,15 @@
        inkscape:vp_z="700 : 600 : 1"
        inkscape:persp3d-origin="300 : 400 : 1"
        id="perspective7221" />
+    <linearGradient
+       osb:paint="solid"
+       id="selected_bg_color"
+       gradientTransform="translate(-18.000005,2045.3622)">
+      <stop
+         id="stop5956"
+         offset="0"
+         style="stop-color:#6da741;stop-opacity:1;" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -51,17 +62,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.4"
-     inkscape:cx="0.23001696"
+     inkscape:cx="6.792517"
      inkscape:cy="10.098897"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="950"
-     inkscape:window-height="862"
-     inkscape:window-x="615"
-     inkscape:window-y="99">
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid7223"
@@ -77,34 +89,34 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
-        <dc:date></dc:date>
+        <dc:date />
         <dc:creator>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:creator>
         <dc:rights>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:rights>
         <dc:publisher>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:publisher>
-        <dc:identifier></dc:identifier>
-        <dc:source></dc:source>
-        <dc:relation></dc:relation>
-        <dc:language></dc:language>
+        <dc:identifier />
+        <dc:source />
+        <dc:relation />
+        <dc:language />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
-        <dc:coverage></dc:coverage>
-        <dc:description></dc:description>
+        <dc:coverage />
+        <dc:description />
         <dc:contributor>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:contributor>
         <cc:license
@@ -116,10 +128,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <path
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#2e3436;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 1.5089281,7.6250006 L 4.9107138,11.625002 L 11.508927,4.6250006"
-       id="path7784"
-       sodipodi:nodetypes="ccc" />
+    <rect
+       style="display:inline;opacity:1;fill:#73ba25;fill-opacity:1;stroke:none;stroke-width:0.99968547"
+       id="rect3977-39-7"
+       width="4.9984274"
+       height="1.9993536"
+       x="6.5545268"
+       y="1.4429492"
+       rx="0.66645116"
+       ry="0.66645116"
+       transform="matrix(0.71392572,0.70022144,-0.71392572,0.70022144,0,0)" />
+    <rect
+       style="display:inline;opacity:1;fill:#73ba25;fill-opacity:1;stroke:none;stroke-width:0.99968547"
+       id="rect3979-7-5"
+       width="1.9993709"
+       height="7.9974666"
+       x="9.5535831"
+       y="-4.5551643"
+       ry="0"
+       transform="matrix(0.71392572,0.70022144,-0.71392572,0.70022144,0,0)" />
   </g>
 </svg>

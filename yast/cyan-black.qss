@@ -7,10 +7,21 @@ QWidget { background: black; color: cyan; font-size: 11pt; }
 QDialog { background: black; }
 YQWizard { background: black; }
 
-#LogoHBox {
-  background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
-    stop: 0 cyan, stop: 0.5 #00a489, stop: 1 #6da741);
-  border-bottom: 1px solid cyan;
+#steps {
+background-color: black;
+color: #fff;
+}
+.current-step-name {
+color:#fff;
+}
+.done-step-name {
+color:#fff;
+}
+.todo-step-name {
+color:#fff;
+}
+.steps_heading {
+  color: cyan;
 }
 
 #work_area {

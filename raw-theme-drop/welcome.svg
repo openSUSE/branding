@@ -82,7 +82,7 @@
        fx="36.558491"
        fy="208.79915"
        r="105.83334"
-       gradientTransform="matrix(0.41078632,0.00479938,-0.00922089,0.789229,23.466081,46.039819)"
+       gradientTransform="matrix(1.6464975,0.00505076,-0.00230067,0.74999645,-23.15459,54.222353)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -93,8 +93,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="293.33101"
-     inkscape:cy="318.77078"
+     inkscape:cx="303.20718"
+     inkscape:cy="325.7495"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -120,7 +120,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
