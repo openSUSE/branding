@@ -17,7 +17,7 @@ openSUSE.tar.xz_clean:
 
 CLEAN_DEPS+=openSUSE.tar.xz_clean
 
-openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d
+openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d
 	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
@@ -81,6 +81,16 @@ plymouth.d_clean:
 	rm -rf openSUSE/plymouth
 
 CLEAN_DEPS+=plymouth.d_clean
+
+icewm.d:
+	rm -rf openSUSE/icewm
+	mkdir -p openSUSE/icewm
+	cp -av icewm openSUSE/
+
+icewm.d_clean:
+	rm -rf openSUSE/icewm
+
+CLEAN_DEPS+=icewm.d_clean
 
 yast.d:
 #	create directly the background from the 4:3 root's blank background
@@ -178,7 +188,11 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-
+	
+	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
+	install -m 0644 icewm/theme $(DESTDIR)/etc/icewm/
+	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
+	
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
 clean: ${CLEAN_DEPS}

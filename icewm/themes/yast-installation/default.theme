@@ -1,0 +1,104 @@
+ThemeName="zpaker"
+ThemeDescription="Un tema gris con bordes redondeados (debí de patentarlo antes)"
+ThemeAuthor="Ren Canteros Sousa <ren.kudun@gmx.com>"
+License="GPL"
+Look=flat
+
+TitleBarHeight=24
+TitleButtonsSupported="xmis"
+TitleBarJustify=50
+RolloverButtonsSupported=1
+
+BorderSizeX=4
+BorderSizeY=4
+CornerSizeX=22
+CornerSizeY=22
+DlgBorderSizeX=4
+DlgBorderSizeY=4
+
+ColorNormalBorder="rgb:99/99/99"
+ColorActiveBorder="rgb:e2/e2/e2"
+
+ColorActiveTitleBar="#e2e2e2"
+ColorNormalTitleBar="#eeeeee"
+ColorNormalButton="#e2e2e2"
+
+ColorNormalTitleBarText="#cccccc"
+ColorActiveTitleBarText="#333333"
+
+ColorNormalMenu="#fcfdfd"
+ColorActiveMenuItem="#e1e2e2"
+ColorNormalMenuItemText="black"
+ColorActiveMenuItemText="white"
+ColorDisabledMenuItemText="#9da0a5"
+
+ColorMoveSizeStatus="#4e4e4e"
+ColorMoveSizeStatusText="white"
+
+ColorQuickSwitch="#eeeeee"
+ColorQuickSwitchText="black"
+ColorQuickSwitchActive="#73ba25"
+
+ColorDefaultTaskBar="#333333"
+ColorNormalTaskBarApp="#333333"
+ColorNormalTaskBarAppText="white"
+ColorActiveTaskBarApp="#333333"
+ColorActiveTaskBarAppText="white"
+ColorMinimizedTaskBarApp="#333333"
+ColorMinimizedTaskBarAppText="white"
+
+ColorListBox="#fcfdfd"
+ColorListBoxText="black"
+ColorListBoxSelection="#707379"
+ColorListBoxSelectionText="white"
+
+ColorScrollBar="#fcfdfd"
+ColorScrollBarSlider="#d3d5da"
+ColorScrollBarButton="#fcfdfd"
+ColorScrollBarButtonArrow="black"
+
+ColorCPUStatusIdle="#707379"
+ColorCPUStatusInterrupts="#458def"
+ColorCPUStatusIoWait="#a1bde3"
+ColorCPUStatusSoftIrq="white"
+ColorCPUStatusUser="#4d90d6"
+ColorCPUStatusSystem="rgb:00/cf/ff"
+ColorCPUStatusNice="rgb:9c/ac/bd"
+
+ColorNetIdle="#707379"
+ColorNetReceive="#458def"
+ColorNetSend="#f5f5f5"
+
+ColorToolTip="#f9f9f9"
+ColorToolTipText="black"
+ColorLabel="#f9f9f9"
+ColorLabelText="black" 
+
+ColorClock=""
+ColorClockText="white"
+
+#DesktopBackgroundColor="#d4d7dc"
+#DesktopBackgroundCenter=1 # 0 / 1
+#DesktopBackgroundScaled=1 # 0 / 1
+#DesktopBackgroundImage="6_10.jpg"
+
+TitleFontNameXft="source sans pro:size=10"
+MenuFontNameXft="source sans pro:size=10"
+StatusFontNameXft="source sans pro:size=10"
+QuickSwitchFontNameXft="source sans pro:size=10"
+NormalButtonFontNameXft="source sans pro:size=10"
+ActiveButtonFontNameXft="source sans pro:size=10"
+NormalTaskBarFontNameXft="source sans pro:size=10"
+ActiveTaskBarFontNameXft="source sans pro:size=10:bold"
+ToolButtonFontNameXft="source sans pro:size=10"
+NormalWorkspaceFontNameXft="source sans pro:size=10"
+ActiveWorkspaceFontNameXft="source sans pro:size=10"
+MinimizedWindowFontNameXft="source sans pro:size=10"
+ListBoxFontNameXft="source sans pro:size=10"
+ToolTipFontNameXft="source sans pro:size=10"
+ClockFontNameXft="source sans pro:size=10:bold"
+ApmFontNameXft="source sans pro:size=10:bold"
+InputFontNameXft="source sans pro:size=10"
+LabelFontNameXft="source sans pro:size=10"
+
+TaskBarClockLeds=0
