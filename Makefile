@@ -190,6 +190,7 @@ install: # do not add requires here, this runs from generated openSUSE
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
+	mkdir -p $(DESTDIR)/etc/icewm/
 	install -m 0644 icewm/theme $(DESTDIR)/etc/icewm/
 	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
 	
