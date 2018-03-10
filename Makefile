@@ -115,19 +115,35 @@ wallpaper.d: defaults
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
 
-	cp raw-theme-drop/desktop-3840x2400.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.jpg
+	inkscape -D -e tmp.png raw-theme-drop/desktop-3840x2400.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1280x1024.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1600x1200.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1080.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1200.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1350x1080.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1440x1080.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
+	rm tmp.png
 
-	cp raw-theme-drop/desktop-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	cp raw-theme-drop/desktop-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
-	cp raw-theme-drop/desktop-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
-	cp raw-theme-drop/desktop-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
-	cp raw-theme-drop/desktop-1350x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
-	cp raw-theme-drop/desktop-1440x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
 
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
-	cp raw-theme-drop/desktop-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1200.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	rm tmp.png
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 wallpaper.d_clean:
