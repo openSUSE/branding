@@ -308,6 +308,13 @@ QComboBox:focus {
   border: 1px solid #73ba25;
   color: #fff;
 }
+
+QComboBox:editable:focus {
+  background-color: #f6f6f6;
+  border: 1px solid #73ba25;
+  color: #333;
+}
+
 /* QComboBox gets the "on" state when the popup is open */
 QComboBox:!editable:on, QComboBox::drop-down:editable:on {
   color: #000;
