@@ -3,6 +3,7 @@ QMainWindow { background: #EEEEEE; }
 QFileDialog { background: #EEEEEE;   }
 QDialog { background: #EEEEEE;  }
 YQWizard { background: #EEEEEE;  }
+YQDialog { background: #EEEEEE; color:#333;  }
 
 #LogoHBox {
   background-color: #173f4f;
@@ -79,7 +80,7 @@ YQRichText > YQTextBrowser {
 
 QFrame { background-color: none; color: #333;  }
 
-QLabel, YQDialog {
+QLabel {
 
   color: #333;
   background-color: none;
@@ -307,6 +308,13 @@ QComboBox:focus {
   border: 1px solid #73ba25;
   color: #fff;
 }
+
+QComboBox:editable:focus {
+  background-color: #f6f6f6;
+  border: 1px solid #73ba25;
+  color: #333;
+}
+
 /* QComboBox gets the "on" state when the popup is open */
 QComboBox:!editable:on, QComboBox::drop-down:editable:on {
   color: #000;

@@ -17,7 +17,7 @@ openSUSE.tar.xz_clean:
 
 CLEAN_DEPS+=openSUSE.tar.xz_clean
 
-openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d
+openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d
 	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
@@ -82,6 +82,16 @@ plymouth.d_clean:
 
 CLEAN_DEPS+=plymouth.d_clean
 
+icewm.d:
+	rm -rf openSUSE/icewm
+	mkdir -p openSUSE/icewm
+	cp -av icewm openSUSE/
+
+icewm.d_clean:
+	rm -rf openSUSE/icewm
+
+CLEAN_DEPS+=icewm.d_clean
+
 yast.d:
 #	create directly the background from the 4:3 root's blank background
 	mkdir -p openSUSE/yast_wizard
@@ -105,19 +115,35 @@ wallpaper.d: defaults
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
 
-	cp raw-theme-drop/desktop-3840x2400.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.jpg
+	inkscape -D -e tmp.png raw-theme-drop/desktop-3840x2400.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1280x1024.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1600x1200.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1080.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1200.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1350x1080.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
+	rm tmp.png
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1440x1080.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
+	rm tmp.png
 
-	cp raw-theme-drop/desktop-1280x1024.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1280x1024.jpg
-	cp raw-theme-drop/desktop-1600x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1600x1200.jpg
-	cp raw-theme-drop/desktop-1920x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg
-	cp raw-theme-drop/desktop-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.jpg
-	cp raw-theme-drop/desktop-1350x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1350x1080.jpg
-	cp raw-theme-drop/desktop-1440x1080.jpg openSUSE/wallpapers/openSUSEdefault/contents/images/1440x1080.jpg
 
 	ln -sf openSUSEdefault/contents/images/1920x1080.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1080.jpg
 	ln -sf openSUSEdefault/contents/images/1920x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1920x1200.jpg
 	ln -sf openSUSEdefault/contents/images/1600x1200.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-1600x1200.jpg
-	cp raw-theme-drop/desktop-1920x1200.jpg openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1200.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	rm tmp.png
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
 wallpaper.d_clean:
@@ -178,7 +204,12 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-
+	
+	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
+	mkdir -p $(DESTDIR)/etc/icewm/
+	install -m 0644 icewm/theme $(DESTDIR)/etc/icewm/
+	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
+	
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
 clean: ${CLEAN_DEPS}
