@@ -75,7 +75,7 @@ PLS=SLE/plymouth/theme/SLE.script
 
 SLE/plymouth/theme/SLE.script: plymouth/theme/SLE.*
 	mkdir -p SLE/plymouth/theme
-	cp -a plymouth/theme/{SLE.*,background.png,box.png,entry.png,lock.png,logo.png,progress*.png,suspend.png} SLE/plymouth/theme/
+	cp -a plymouth/theme/{SLE.*,background.png,box.png,bullet.png,entry.png,lock.png,logo.png,progress*.png,suspend.png} SLE/plymouth/theme/
 
 PLYMOUTH_DEPS=${PLS}
 
