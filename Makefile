@@ -246,8 +246,6 @@ install: # do not add requires here, this runs from generated SLE
 #	ln -sf /usr/share/wallpapers/SLEdefault/contents/images/1920x1200.jpg ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes/ksplash-qml-SLE/images/background.jpg
 
 
-	install -D -m 0644 xdg/xhost-grant-root.desktop ${DESTDIR}/etc/xdg/autostart/xhost-grant-root.desktop
-
 clean: ${CLEAN_DEPS}
 	rmdir SLE 2> /dev/null || :
 
