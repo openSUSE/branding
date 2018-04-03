@@ -259,10 +259,10 @@ QTabBar
      display messes up. See bnc#888589, bsc#948311 and QTBUG#8209 */
 }
 QTabBar::tab {
-  color: #ccc;
+  color: #555;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  border: 1px solid #ddd;
+  border: 0;
   border-bottom: 1px solid #bbb;
    min-height: 20px;
   min-width: 40px;
@@ -277,8 +277,8 @@ QTabBar::tab:selected {
 
 QTabBar::tab:!selected:hover {
   color: #333;
-  border: 1px solid #c0c0c0;
-  border-bottom: 1px solid #c0c0c0;
+  border: 0;
+  border-bottom: 1px solid #bbb;
 }
 
 QTabBar::tear {
@@ -360,7 +360,8 @@ QMenuBar::item:pressed {
 QMenu {
   color: #333333;
   background: #fff;
-  selection-color: #bbb;
+  selection-background-color: #73ba25;
+  selection-color: #fff;
 }
 QGroupBox {
   border: 0px;
