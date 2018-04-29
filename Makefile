@@ -115,6 +115,9 @@ wallpaper.d: defaults
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1200.jpg openSUSE/wallpapers/default-1920x1200.jpg
 	ln -sf openSUSE${VERSION_NO_DOT}-1920x1080.jpg openSUSE/wallpapers/default-1920x1080.jpg
 
+	inkscape -D -e tmp.png -w 5120 raw-theme-drop/desktop-3840x2400.svg
+	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/5120x3200.jpg
+	rm tmp.png
 	inkscape -D -e tmp.png raw-theme-drop/desktop-3840x2400.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/3840x2400.jpg
 	rm tmp.png
