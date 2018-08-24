@@ -21,7 +21,7 @@ Simply type 'make' to create openSUSE.tar.gz:
 
 ```
 pushd branding
-git checkout leap-15
+git checkout leap-15.1
 make
 popd
 ```
@@ -31,7 +31,7 @@ popd
 The following commands will branch the branding-openSUSE package, commit the new data and submit the changes:
 
 ```
-osc branch openSUSE:Leap:15.0 branding-openSUSE -c
+osc branch openSUSE:Leap:15.1 branding-openSUSE -c
 cp branding/openSUSE.tar.gz home:*branches*/branding-openSUSE
 cd home:*branches*/branding-openSUSE
 osc vc
