@@ -1,4 +1,4 @@
-![Wallpaper](/raw-theme-drop/desktop-1280x1024.jpg)
+![Wallpaper](/raw-theme-drop/desktop-1280x1024.svg)
 
 # Workflow process
 
