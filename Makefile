@@ -148,6 +148,7 @@ wallpaper.d: defaults
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	rm tmp.png
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
+	cp -pr os-release/hicolor openSUSE/hicolor
 
 wallpaper.d_clean:
 	rm -rf openSUSE/wallpapers
@@ -214,6 +215,9 @@ install: # do not add requires here, this runs from generated openSUSE
 	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+
+	mkdir -p $(DESTDIR)/usr/share/icons/
+	cp -r hicolor $(DESTDIR)/usr/share/icons/
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE

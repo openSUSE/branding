@@ -9,7 +9,7 @@ YQDialog { background: #EEEEEE; color:#333;  }
   background-color: #173f4f;
 }
 #DialogLogo {
-  background-image: url(logo.png);
+  background-image: url(logo.svg);
   min-width: 180px;
   margin-top:-15px;
   min-height: 70px;
@@ -20,7 +20,7 @@ YQDialog { background: #EEEEEE; color:#333;  }
 
 #steps {
 padding: 80px 2em 1em 0.5em;
-background: url(logo.png) no-repeat top;
+background: url(logo.svg) no-repeat top;
 background-color:#173f4f;
 min-width: 210px;
 color: #fff;
@@ -48,13 +48,13 @@ font-family:"Source Sans Pro Light",sans;
 }
 
 .done-step-status {
-   qproperty-pixmap: url(step-done.png);
+   qproperty-pixmap: url(step-done.svg);
    max-width: 14px;
    min-width: 14px;
 }
 
 .current-step-status {
-   qproperty-pixmap: url(step-current.png);
+   qproperty-pixmap: url(step-current.svg);
    max-width: 14px;
    min-width: 14px;
 }
@@ -98,8 +98,8 @@ QHeaderView::section {
   border-radius: 0px;
   padding: 6px 8px;
 }
-QHeaderView::down-arrow { image: url(arr_down.png); padding-top: 2px;  }
-QHeaderView::up-arrow { image: url(arr_up.png); padding-top: 2px; }
+QHeaderView::down-arrow { image: url(arr_down.svg); padding-top: 2px;  }
+QHeaderView::up-arrow { image: url(arr_up.svg); padding-top: 2px; }
 
 QAbstractScrollArea { background-color: #fff; }
 
@@ -199,19 +199,19 @@ QCheckBox::disabled { color: gray; }
 
 YQCheckBoxFrame::indicator:checked,
 QCheckBox::indicator:checked:enabled {
-  image: url(inst_checkbox-on.png);
+  image: url(inst_checkbox-on.svg);
 }
 YQCheckBoxFrame::indicator:unchecked,
 QCheckBox::indicator:unchecked:enabled {
-  image: url(inst_checkbox-off.png);
+  image: url(inst_checkbox-off.svg);
 }
 
 QCheckBox::indicator:checked:disabled {
-  image: url(inst_checkbox-on-disabled.png);
+  image: url(inst_checkbox-on-disabled.svg);
 }
 YQCheckBoxFrame::indicator:unchecked:disabled,
 QCheckBox::indicator:unchecked {
-  image: url(inst_checkbox-off-disabled.png);
+  image: url(inst_checkbox-off-disabled.svg);
 }
 
 QRadioButton {color: #333 }
@@ -219,16 +219,16 @@ QRadioButton {color: #333 }
 QRadioButton::disabled { color: #bbb; background-color: #EEEEEE; }
 
 QRadioButton::indicator:unchecked {
-   image: url(inst_radio-button-unchecked.png);
+   image: url(inst_radio-button-unchecked.svg);
 }
 QRadioButton::indicator:checked {
-   image: url(inst_radio-button-checked.png);
+   image: url(inst_radio-button-checked.svg);
 }
 QRadioButton::indicator:unchecked:disabled {
-   image: url(inst_radio-button-unchecked-disabled.png);
+   image: url(inst_radio-button-unchecked-disabled.svg);
 }
 QRadioButton::indicator:checked:disabled {
-   image: url(inst_radio-button-checked-disabled.png);
+   image: url(inst_radio-button-checked-disabled.svg);
 }
 
 YQMultiLineEdit QTextEdit { color: #333;  }
@@ -326,10 +326,10 @@ QComboBox::drop-down { /* arrow part of the widget */
   border: none;
 }
 QComboBox::down-arrow {
-  image: url(arr_down.png);
+  image: url(arr_down.svg);
 }
 QComboBox::down-arrow:on { /* shift the arrow when popup is open */
-  image: url(arr_up.png);
+  image: url(arr_up.svg);
   top: 0px;
   left: 0px;
 }
@@ -420,7 +420,7 @@ QPushButton::menu-indicator:open {
   subcontrol-origin: margin;
   left: -7px;
   subcontrol-position: right;
-  image: url(arr_down.png);
+  image: url(arr_down.svg);
 }
 QPushButton:open { /* when the button has its menu open */
   color: #333;
@@ -435,16 +435,16 @@ QToolButton {
   background-color: #EEEEEE;
 }
 QToolButton::left-arrow {
-  image: url(arr_left.png);
+  image: url(arr_left.svg);
 }
 QToolButton::right-arrow {
-  image: url(arr_right.png);
+  image: url(arr_right.svg);
 }
 QToolButton::up-arrow {
-  image: url(arr_lup.png);
+  image: url(arr_lup.svg);
 }
 QToolButton::down-arrow {
-  image: url(arr_down.png);
+  image: url(arr_down.svg);
 }
 
 
