@@ -48,19 +48,18 @@ font-family:"Source Sans Pro Light",sans;
 }
 
 .done-step-status {
-   qproperty-pixmap: url(step-done.svg);
+   image: url(step-done.svg);
    max-width: 14px;
    min-width: 14px;
 }
 
 .current-step-status {
-   qproperty-pixmap: url(step-current.svg);
+   image: url(step-current.svg);
    max-width: 14px;
    min-width: 14px;
 }
 
 #work_area {
-
   padding: 1em;
   background-color: #EEEEEE;
 }
