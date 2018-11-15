@@ -19,23 +19,23 @@ YQDialog { background: #EEEEEE; color:#333;  }
 }
 
 #steps {
-padding: 80px 2em 1em 0.5em;
-background: url(logo.svg) no-repeat top;
-background-color:#173f4f;
-min-width: 210px;
-color: #fff;
+  padding: 80px 2em 1em 0.5em;
+  background: url(logo.svg) no-repeat top;
+  background-color:#173f4f;
+  min-width: 210px;
+  color: #fff;
 }
 .current-step-name {
-color:#fff;
+  color:#fff;
   font-family:"Source Sans Pro Semibold",sans;
 }
 .done-step-name {
-color:#fff;
-font-family:"Source Sans Pro Light",sans;
+  color:#fff;
+  font-family:"Source Sans Pro Light",sans;
 }
 .todo-step-name {
-color:#fff;
-font-family:"Source Sans Pro Light",sans;
+  color:#fff;
+  font-family:"Source Sans Pro Light",sans;
 }
 .steps_heading {
   font-family:"Source Sans Pro",sans;
@@ -111,6 +111,7 @@ QTreeView, QTreeWidget {
   selection-background-color: #73ba25;
   selection-color: #fff;
   border-radius: 2px;
+  icon-size: 22px;
 }
 
 QTableWidget,
