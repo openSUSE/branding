@@ -61,6 +61,7 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2
+	optipng -o7 boot/grub2/theme/*.png
 	cp -a boot/grub2/theme openSUSE/grub2/
 
 grub2.d_clean:
@@ -75,6 +76,7 @@ PLYMOUTH_DEPS=${PLS}
 plymouth.d:
 	rm -rf openSUSE/plymouth
 	mkdir -p openSUSE/plymouth
+	optipng -o7 boot/plymouth/theme/*.png
 	cp -av boot/plymouth/theme openSUSE/plymouth/
 
 plymouth.d_clean:
@@ -172,6 +174,7 @@ CLEAN_DEPS+=gnome.d_clean
 xfce.d:
 	mkdir -p openSUSE/xfce
 	inkscape -D -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
+	optipng -o7 openSUSE/xfce/splash.png
 
 xfce.d_clean:
 	rm -rf openSUSE/xfce
