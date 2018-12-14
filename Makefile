@@ -61,7 +61,6 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 grub2.d:
 	mkdir -p openSUSE/grub2
-	optipng -o7 boot/grub2/theme/*.png
 	cp -a boot/grub2/theme openSUSE/grub2/
 
 grub2.d_clean:
