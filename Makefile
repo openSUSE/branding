@@ -17,7 +17,7 @@ openSUSE.tar.xz_clean:
 
 CLEAN_DEPS+=openSUSE.tar.xz_clean
 
-openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d
+openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d libreoffice.d
 	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
@@ -68,6 +68,17 @@ grub2.d_clean:
 
 CLEAN_DEPS+=grub2.d_clean
 
+libreoffice.d:
+	mkdir -p openSUSE/libreoffice/program
+	cp -r libreoffice/flat_logo.svg libreoffice/sofficerc libreoffice/shell openSUSE/libreoffice/program/
+	inkscape -D -e openSUSE/libreoffice/program/intro.png libreoffice/intro.svg
+	optipng -o7 openSUSE/libreoffice/program/intro.png
+
+libreoffice.d_clean:
+	rm -rf openSUSE/libreoffice
+
+CLEAN_DEPS+=libreoffice.d_clean
+
 PLS=openSUSE/plymouth/theme/openSUSE.script
 
 PLYMOUTH_DEPS=${PLS}
@@ -75,8 +86,8 @@ PLYMOUTH_DEPS=${PLS}
 plymouth.d:
 	rm -rf openSUSE/plymouth
 	mkdir -p openSUSE/plymouth
-	optipng -o7 boot/plymouth/theme/*.png
 	cp -av boot/plymouth/theme openSUSE/plymouth/
+	optipng -o7 openSUSE/plymouth/theme/*.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
@@ -217,6 +228,9 @@ install: # do not add requires here, this runs from generated openSUSE
 	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
 
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+
+	mkdir -p $(DESTDIR)/usr/share/libreoffice
+	cp -r libreoffice $(DESTDIR)/usr/share/libreoffice
 
 	mkdir -p $(DESTDIR)/usr/share/icons/
 	cp -r hicolor $(DESTDIR)/usr/share/icons/
