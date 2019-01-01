@@ -230,7 +230,7 @@ install: # do not add requires here, this runs from generated openSUSE
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
 	mkdir -p $(DESTDIR)/usr/share/libreoffice
-	cp -r libreoffice $(DESTDIR)/usr/share/libreoffice
+	cp -r libreoffice/program $(DESTDIR)/usr/share/libreoffice
 
 	mkdir -p $(DESTDIR)/usr/share/icons/
 	cp -r hicolor $(DESTDIR)/usr/share/icons/
