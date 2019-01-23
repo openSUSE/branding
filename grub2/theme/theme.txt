@@ -10,8 +10,8 @@ terminal-box: "terminal_box_*.png"
 terminal-font: "Gnu Unifont Mono Regular 16"
 
 + boot_menu {
-  left = 18%
-  width = 64%
+  left = 10%
+  width = 80%
   top = 33%
   height = 45%
 
