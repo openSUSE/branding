@@ -17,8 +17,8 @@ terminal-font: "Gnu Unifont Mono Regular 16"
 }
 
 + boot_menu {
-  left = 50%-200
-  width = 400
+  left = 10%
+  width = 80%
   top = 33%
   height = 34%	
 
