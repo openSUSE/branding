@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!DOCTYPE greeter SYSTEM "greeter.dtd">
+<!--
+Copyright 2008 Urs Wolfer <uwolfer @ kde.org>
+Copyright 2008 Oswald Buddenhagen <ossi @ kde.org>
+Copyright 2013 openSUSE Artwork Team
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of 
+the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<greeter>
+
+    <style font="Liberation Sans 14"
+        window-text-color="#bdcdd4"
+        base-color="#1b2122" alternate-base-color="#141a1a"
+        text-color="#bdcdd4" disabled-text-color="#9eabb0"
+        base-alpha="0" 
+        disabled-base-color="#1b2122"
+        disabled-base-alpha="0" 
+        disabled-highlight-alpha="0"
+        frame="false" />
+        
+    <!-- the background -->
+    <item type="pixmap" id="background" background="true">
+        <normal file="background.jpg" scalemode="free"/>
+        <pos x="0" y="0" width="100%" height="100%"/>
+    </item>
+
+    <!-- clock -->
+    <item type="label" id="clock">
+        <pos x="50%" y="10" anchor="n" />
+        <normal font="Liberation Sans 12" color="#bdcdd4" />
+        <text>%c</text>
+    </item>
+            
+    <!-- the central area -->
+    <item type="rect">
+        <pos x="50%" y="50%" width="360" min-height="350" anchor="c" />
+        <box orientation="vertical" min-height="100%" spacing="10" homogeneous="false">
+                
+            <!-- welcome message -->
+            <item type="label" id="welcome">
+                <pos x="50%" anchor="n" />
+                <normal font="Liberation Sans 15 Bold" color="#bdcdd4" />
+                <stock type="welcome-label"/>
+            </item>
+            
+            <!-- horizontal line -->
+            <item type="pixmap">
+                <pos x="50%" height="3" width="100%" anchor="n" />
+                <normal file="horizontal-line.png"/>
+            </item>
+            
+            <!-- user list -->
+            <item type="list" id="userlist">
+                <pos x="50%" min-height="100" max-height="200" width="280" anchor="n" />
+                <style highlight-color="#98ce57" font="Liberation Sans 14"/>
+                <show type="userlist"/>
+            </item>
+
+            <!-- user entry -->
+            <item type="rect" id="user-field">
+                <pos x="50%" height="32" width="280" anchor="n" />
+                <fixed>
+                    <item type="pixmap">
+                        <pos x="50%" height="32" width="280" anchor="n" />  
+                        <normal file="lineedit-normal.png"/>
+                        <prelight file="lineedit-hover.png"/>
+                        <active file="lineedit-hover.png"/>
+                    </item>
+                    <item type="pixmap">
+                        <pos x="6" y="5" anchor="nw" />  
+                        <normal file="user-icon.png" />
+                    </item>
+                    <item type="entry" id="user-entry" >
+                        <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                    </item>
+                </fixed>
+            </item>
+
+            <!-- password entry -->
+            <item type="rect" id="user-field2">
+                <pos x="50%" height="32" width="280" anchor="n" />
+                <fixed>
+                    <item type="pixmap">
+                        <pos x="50%" height="32" width="280" anchor="n" />  
+                        <normal file="lineedit-normal.png"/>
+                        <prelight file="lineedit-hover.png"/>
+                        <active file="lineedit-hover.png"/>
+                    </item>
+                    <item type="pixmap">
+                        <pos x="6" y="5" anchor="nw" />  
+                        <normal file="password-icon.png"/>
+                    </item>
+                    <item type="entry" id="pw-entry" >
+                        <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                    </item>
+                </fixed>
+            </item>
+            
+            <!-- winbind entry -->
+            <item type="rect" id="plugin-specific-winbind">
+                <pos x="50%" height="32" width="280" anchor="n" />
+                <show type="plugin-specific-winbind"/>
+                <fixed>
+                    <item type="pixmap">
+                        <pos x="50%" height="32" width="280" anchor="n" />
+                        <normal file="lineedit-normal.png"/>
+                        <prelight file="lineedit-hover.png"/>
+                        <active file="lineedit-hover.png"/>
+                    </item>
+                    <item type="pixmap">
+                        <pos x="6" y="5" anchor="nw" />
+                        <normal file="domain-icon.png"/>
+                    </item>
+                    <item type="entry" id="domain-entry" >
+                        <pos x="33" y="2" height="28" width="240" anchor="nw" />
+                        <style text-color="#141a1a" highlight-color="#98ce57" />
+                    </item>
+                </fixed>
+            </item>
+
+            <!-- messages -->
+            <item type="label" id="caps-lock-warning">
+                <pos x="50%" anchor="n" />
+                <normal font="Liberation Sans 12" color="#98ce57" />
+                <stock type="caps-lock-warning" />
+            </item>
+
+            <item type="label" id="pam-error">
+                <pos x="50%" anchor="n" expand="true" />
+                <normal font="Liberation Sans 12" color="#bf0000" />
+            </item>
+
+        </box>
+    </item>
+
+    <!-- the bottom buttons -->
+    <item type="rect" id="bottom-toolbar">
+        <pos x="50%" y="-10" width="64" height="22" anchor="s" />
+
+        <box orientation="horizontal" spacing="20" homogeneous="true">
+            <item button="true" type="pixmap" id="session_button">
+                <normal file="config-icon.png" alpha="0.7" />
+                <prelight file="config-icon.png" alpha="0.8" />
+                <active file="config-icon.png" alpha="1.0" />
+            </item>
+            <item button="true" type="pixmap" id="system_button">
+                <normal file="exit-icon.png" alpha="0.7" />
+                <prelight file="exit-icon.png" alpha="0.8" />
+                <active file="exit-icon.png" alpha="1.0" />
+            </item>
+        </box>
+
+    </item>
+
+</greeter>

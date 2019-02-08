@@ -1,0 +1,5 @@
+[KSplash Theme: ksplashx-suse]
+Name = openSUSE 12.0
+Description = KDE openSUSE 12.0 Splash
+Version = 1.0
+Engine = KSplashX

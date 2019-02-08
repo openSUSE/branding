@@ -1,54 +1,58 @@
-This repo is left intentionally blank in master branch.
+![Wallpaper](/wallpapers/SLEdefault/contents/images/1280x1024.jpg)
 
-If you want to work on branding for a new distribution, please
-create a branch based on master and copy the artwork you want to 
-base your work on into and then push it as new branch to github.
+Workflow process
+================
+A complete workflow process in available in the master branch README
+(visible from the home page of the github repository)
 
-Do not rebase the history - the repository becomes too large otherwise
-and we need to be able to deleted old branches at times.
+Important files
+===============
+
+  default*.jpg: wallpapers, also used by various svg in subdirectories
 
 -----------------------------------------------------------------------
 
-Working with branding repo in GitHub
-------------------------------------
+How to update the wallpaper in the distribution
+===============================================
 
-On github world : origin link to your forked repository, and we
-standarized the name of the original to upstream by convention.
+1) Create SLE.tar.gz with make
 
-First, create a fork of openSUSE branding repo, here you have a guide: 
-https://help.github.com/articles/fork-a-repo 
+Simply type 'make' to create SLE.tar.gz:
 
-Then clone your fork in your PC:
+  pushd branding
+  git checkout sle-15-sp1
+  make
+  popd
 
-    git clone https://github.com/$YOUR_GITHUB_ACCOUNT/branding.git
+2) Update the data in the branding-SLE package
 
-and add the original repository as remote:
+The following commands will branch the branding-SLE package, commit the new
+data and submit the changes:
 
-    cd branding
-    git remote add upstream https://github.com/openSUSE/branding.git
+  osc branch SUSE:SLE-15-SP1:GA branding-SLE -c
+  cp branding/SLE.tar.gz home:*branches*/branding-SLE
+  cd home:*branches*/branding-SLE
+  osc vc
+  osc ci
+  osc sr
+    -> created request id XXXXX
 
-Fetch the original content and checkout/merge the branch you want to work on:
 
-    git fetch upstream
-    git checkout -b leap-15.1
-    git merge upstream leap-15.1
+How to create artwork for a new version of SLE
+===================================================
 
-Now you can work with your local branch as you already know.
+Simply copy all files from this directory to a new directory, and change:
 
-To commit your changes to your fork, do:
+ - the NAME variable at the top of Makefile to the name of the artwork theme
+   for the version of openSUSE you target.
+ - the VERSION variable at the top of Makefile to the version of openSUSE you
+   target.
 
-    git commit -a -m "A useful description (eventually boo#NR) describing what change"
-(use -a if all the changes are relatives to the same commit)
 
-    git push 
-will update your repository fork.
+Need help?
+==========
 
-Then you can create a pull request (here you have a guide: 
-https://help.github.com/articles/creating-a-pull-request
+If you need help with packaging the artwork, you can contact the following
+people:
 
-If you want to sync with upstream changes, do a:
-
-    git fetch upstream
-    git merge upstream leap-15.1
-
- (this action is manually what git pull will do if setup)
+  Frederic Crozat (fcrozat@suse.com)
