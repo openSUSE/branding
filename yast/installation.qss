@@ -164,7 +164,7 @@ QListWidget {
 #DialogHeadingLeft {
 
   font-family: "Open Sans Condensed", Sans-serif;
-  font: 25px;
+  font: 18pt;
   color: #333;
   qproperty-alignment:AlignLeft;
   font-weight:bold;
@@ -172,7 +172,7 @@ QListWidget {
 #DialogHeadingTop {
 
   font-family: "Open Sans Condensed", Sans-serif;
-  font: 25px;
+  font: 18pt;
   color: #333;
   font-weight:bold;
 }
