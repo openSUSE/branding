@@ -68,6 +68,17 @@ grub2.d_clean:
 
 CLEAN_DEPS+=grub2.d_clean
 
+libreoffice.d:
+	mkdir -p openSUSE/libreoffice/program
+	cp -r libreoffice/flat_logo.svg libreoffice/sofficerc libreoffice/shell openSUSE/libreoffice/program/
+	inkscape -D -e openSUSE/libreoffice/program/intro.png libreoffice/intro.svg
+	optipng -o7 openSUSE/libreoffice/program/intro.png
+
+libreoffice.d_clean:
+	rm -rf openSUSE/libreoffice
+
+CLEAN_DEPS+=libreoffice.d_clean
+
 PLS=openSUSE/plymouth/theme/openSUSE.script
 
 PLYMOUTH_DEPS=${PLS}
@@ -76,6 +87,7 @@ plymouth.d:
 	rm -rf openSUSE/plymouth
 	mkdir -p openSUSE/plymouth
 	cp -av boot/plymouth/theme openSUSE/plymouth/
+	optipng -o7 openSUSE/plymouth/theme/*.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
@@ -171,6 +183,7 @@ CLEAN_DEPS+=gnome.d_clean
 xfce.d:
 	mkdir -p openSUSE/xfce
 	inkscape -D -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
+	optipng -o7 openSUSE/xfce/splash.png
 
 xfce.d_clean:
 	rm -rf openSUSE/xfce
@@ -197,7 +210,7 @@ install: # do not add requires here, this runs from generated openSUSE
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
 	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
-	
+
 	install -d ${DESTDIR}/usr/share/YaST2/theme/current
 	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
 
@@ -207,13 +220,19 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-	
+
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
 	mkdir -p $(DESTDIR)/etc/icewm/
 	install -m 0644 icewm/theme $(DESTDIR)/etc/icewm/
 	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
-	
+
 	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+
+	mkdir -p $(DESTDIR)/usr/share/libreoffice
+	cp -r libreoffice/program $(DESTDIR)/usr/share/libreoffice
+
+	mkdir -p $(DESTDIR)/usr/share/icons/
+	cp -r hicolor $(DESTDIR)/usr/share/icons/
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE

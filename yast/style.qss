@@ -1,7 +1,7 @@
 /* Richtext: richtext.css */
 #steps {
 padding: 80px 2em 1em 0.5em;
-background: url(logo.png) no-repeat top;
+background: url(logo.svg) no-repeat top;
 background-color:#173f4f;
 min-width: 210px;
 color: #fff;
@@ -29,13 +29,13 @@ font-family:"Source Sans Pro Light",sans;
 }
 
 .done-step-status {
-   qproperty-pixmap: url(step-done.png);
+   qproperty-pixmap: url(step-done.svg);
    max-width: 14px;
    min-width: 14px;
 }
 
 .current-step-status {
-   qproperty-pixmap: url(step-current.png);
+   qproperty-pixmap: url(step-current.svg);
    max-width: 14px;
    min-width: 14px;
 }
