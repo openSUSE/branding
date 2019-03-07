@@ -17,7 +17,7 @@ openSUSE.tar.xz_clean:
 
 CLEAN_DEPS+=openSUSE.tar.xz_clean
 
-openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d
+openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d libreoffice.d
 	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
@@ -160,6 +160,7 @@ wallpaper.d: defaults
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	rm tmp.png
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
+	cp -pr os-release/hicolor openSUSE/hicolor
 
 wallpaper.d_clean:
 	rm -rf openSUSE/wallpapers
