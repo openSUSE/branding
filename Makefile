@@ -211,7 +211,7 @@ install: # do not add requires here, this runs from generated openSUSE
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
 	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
-	
+
 	install -d ${DESTDIR}/usr/share/YaST2/theme/current
 	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
 
@@ -221,7 +221,7 @@ install: # do not add requires here, this runs from generated openSUSE
 
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-	
+
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
 	mkdir -p $(DESTDIR)/etc/icewm/
 	install -m 0644 icewm/theme $(DESTDIR)/etc/icewm/
