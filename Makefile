@@ -3,26 +3,14 @@ VERSION=15.0
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
-all: info openSUSE.tar.xz
+all: info
 
 info:
 	echo "Make sure to have inkscape, GraphicsMagick and optipng installed"
 
-openSUSE.tar.xz: openSUSE.d
-	tar cvfJ openSUSE.tar.xz openSUSE
-#	rm -r openSUSE
-
-openSUSE.tar.xz_clean:
-	rm -f openSUSE.tar.xz
-
-CLEAN_DEPS+=openSUSE.tar.xz_clean
-
 openSUSE.d: gfxboot.d grub2.d yast.d wallpaper.d gnome.d xfce.d plymouth.d icewm.d libreoffice.d
-	cp Makefile LICENSE openSUSE
 
 openSUSE.d_clean:
-	rm -rf openSUSE/Makefile
-	rm -rf openSUSE/LICENSE
 
 CLEAN_DEPS+=openSUSE.d_clean
 
@@ -194,7 +182,7 @@ CLEAN_DEPS+=xfce.d_clean
 install: # do not add requires here, this runs from generated openSUSE
 
 	install -d ${DESTDIR}/usr/share/wallpapers
-	cp -a wallpapers/* ${DESTDIR}/usr/share/wallpapers
+	cp -a openSUSE/wallpapers/* ${DESTDIR}/usr/share/wallpapers
 
 	## Install xml files used by GNOME to find default wallpaper
 	# Here's the setup we use:
@@ -209,31 +197,31 @@ install: # do not add requires here, this runs from generated openSUSE
 	#    dynamic background (since this XML file moves from a version to another)
 	#
 	# Static wallpaper
-	install -D -m 0644 gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
-	install -m 0644 gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
+	install -D -m 0644 openSUSE/gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
+	install -m 0644 openSUSE/gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
 
 	install -d ${DESTDIR}/usr/share/YaST2/theme/current
-	cp -a yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
+	cp -a openSUSE/yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
 
 	install -d ${DESTDIR}/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
-	cp -a grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
+	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
 
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
+	cp -a openSUSE/plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
 	mkdir -p $(DESTDIR)/etc/icewm/
-	install -m 0644 icewm/theme $(DESTDIR)/etc/icewm/
-	cp -r icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
+	install -m 0644 openSUSE/icewm/theme $(DESTDIR)/etc/icewm/
+	cp -r openSUSE/icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
 
-	install -D xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
+	install -D openSUSE/xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 
 	mkdir -p $(DESTDIR)/usr/share/libreoffice
-	cp -r libreoffice/program $(DESTDIR)/usr/share/libreoffice
+	cp -r openSUSE/libreoffice/program $(DESTDIR)/usr/share/libreoffice
 
 	mkdir -p $(DESTDIR)/usr/share/icons/
-	cp -r hicolor $(DESTDIR)/usr/share/icons/
+	cp -r openSUSE/hicolor $(DESTDIR)/usr/share/icons/
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
