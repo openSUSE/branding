@@ -14,7 +14,7 @@ openSUSE.d_clean:
 
 CLEAN_DEPS+=openSUSE.d_clean
 
-gfxboot.d: defaults
+gfxboot.d:
 	mkdir -p ~/.fonts openSUSE/gfxboot/data-boot/ openSUSE/gfxboot/data-install
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
 	for name in back welcome on off glow
@@ -36,7 +36,7 @@ gfxboot.d_clean:
 
 CLEAN_DEPS+=gfxboot.d_clean
 
-gnome.d: # gnome_dynamic
+gnome.d:
 	mkdir -p openSUSE/gnome
 	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
 	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
@@ -76,7 +76,7 @@ libreoffice.d_clean:
 
 CLEAN_DEPS+=libreoffice.d_clean
 
-osrelease.d: defaults
+osrelease.d:
 	cp -pr os-release/hicolor openSUSE/hicolor
 
 osrelease.d_clean:
@@ -95,7 +95,7 @@ plymouth.d_clean:
 
 CLEAN_DEPS+=plymouth.d_clean
 
-wallpaper.d: defaults
+wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080
 	do
