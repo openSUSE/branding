@@ -101,10 +101,6 @@ wallpaper.d:
 		gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.jpg; \
 		rm tmp.png; \
 	done
-	#TODO: Generate appropriately sized SVG for 5120 too
-	rsvg-convert raw-theme-drop/desktop-3840x2400.svg -w 5120 -a -o tmp.png
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/5120x3200.jpg
-	rm tmp.png
 	for size in 1600x1200 1920x1200 1920x1080; do \
 		cp wallpapers/default-$${size}.jpg.desktop openSUSE/wallpapers; \
 		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-$${size}.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-$${size}.jpg.desktop; \
