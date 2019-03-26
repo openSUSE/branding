@@ -16,7 +16,9 @@ CLEAN_DEPS+=openSUSE.d_clean
 
 gfxboot.d: defaults
 	mkdir -p openSUSE/gfxboot/data-boot/
+	mkdir -p ~/.fonts
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
+	rm ~/.fonts/SourceSansPro-Light.ttf
 	inkscape -D -w 800 -e tmp.png raw-theme-drop/back.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
 	rm tmp.png
