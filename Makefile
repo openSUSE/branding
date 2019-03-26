@@ -170,8 +170,6 @@ install:
 	# osrelease icons
 	mkdir -p $(DESTDIR)/usr/share/icons/
 	cp -r openSUSE/hicolor $(DESTDIR)/usr/share/icons/
-	# Theme
-	cp -r openSUSE/SUSE-brand $(DESTDIR)/etc/
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
