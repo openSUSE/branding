@@ -17,11 +17,10 @@ CLEAN_DEPS+=openSUSE.d_clean
 gfxboot.d:
 	mkdir -p ~/.fonts openSUSE/gfxboot/data-boot/ openSUSE/gfxboot/data-install
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
-	for name in back welcome on off glow
-	do
-		inkscape -D -w 800 -e tmp.png raw-theme-drop/${name}.svg
-		gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/${name}.jpg
-		rm tmp.png
+	for name in back welcome on off glow; do \
+		inkscape -D -w 800 -e tmp.png raw-theme-drop/${name}.svg; \
+		gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/${name}.jpg; \
+		rm tmp.png; \
 	done
 	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
@@ -97,22 +96,20 @@ CLEAN_DEPS+=plymouth.d_clean
 
 wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
-	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080
-	do
-		inkscape -D -e tmp.png raw-theme-drop/desktop-${size}.svg
-		gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/${size}.jpg
-		rm tmp.png
+	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
+		inkscape -D -e tmp.png raw-theme-drop/desktop-${size}.svg; \
+		gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/${size}.jpg; \
+		rm tmp.png; \
 	done
 	#TODO: Generate appropriately sized SVG for 5120 too
 	inkscape -D -e tmp.png -w 5120 raw-theme-drop/desktop-3840x2400.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/5120x3200.jpg
 	rm tmp.png
-	for size in 1600x1200 1920x1200 1920x1080
-	do
-		cp wallpapers/default-${size}.jpg.desktop openSUSE/wallpapers
-		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-${size}.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-${size}.jpg.desktop
-		ln -sf openSUSE${VERSION_NO_DOT}-${size}.jpg openSUSE/wallpapers/default-${size}.jpg
-		ln -sf openSUSEdefault/contents/images/${size}.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-${size}.jpg
+	for size in 1600x1200 1920x1200 1920x1080; do \
+		cp wallpapers/default-${size}.jpg.desktop openSUSE/wallpapers; \
+		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-${size}.jpg.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-${size}.jpg.desktop; \
+		ln -sf openSUSE${VERSION_NO_DOT}-${size}.jpg openSUSE/wallpapers/default-${size}.jpg; \
+		ln -sf openSUSEdefault/contents/images/${size}.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-${size}.jpg; \
 	done
 	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1200.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
