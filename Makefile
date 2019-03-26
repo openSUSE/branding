@@ -3,7 +3,7 @@ VERSION=15.0
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
-all: info
+all: info openSUSE.d
 
 info:
 	echo "Make sure to have inkscape, GraphicsMagick and optipng installed"
