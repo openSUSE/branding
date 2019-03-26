@@ -18,7 +18,6 @@ gfxboot.d: defaults
 	mkdir -p openSUSE/gfxboot/data-boot/
 	mkdir -p ~/.fonts
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
-	rm ~/.fonts/SourceSansPro-Light.ttf
 	inkscape -D -w 800 -e tmp.png raw-theme-drop/back.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
 	rm tmp.png
@@ -38,7 +37,6 @@ gfxboot.d: defaults
 	inkscape -D -e tmp.png raw-theme-drop/glow.svg
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/glow.jpg
 	rm tmp.png
-	mkdir -p ~/.fonts
 	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
 	rm ~/.fonts/SourceSansPro-Light.ttf
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
