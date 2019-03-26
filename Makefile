@@ -94,6 +94,17 @@ plymouth.d_clean:
 
 CLEAN_DEPS+=plymouth.d_clean
 
+theme.d:
+	cat >openSUSE/SUSE-brand <<EOF
+	%{THEME}
+	VERSION = %{VERSION}
+	EOF
+
+theme.d_clean:
+	rm -f openSUSE/SUSE-brand
+
+CLEAN_DEPS+=theme.d_clean
+
 wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
@@ -143,6 +154,10 @@ install:
 	cp -a openSUSE/wallpapers/* ${DESTDIR}/usr/share/wallpapers
 	install -D -m 0644 openSUSE/gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
 	install -m 0644 openSUSE/gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
+	# Alternatives for default wallpapers
+	mkdir -p ${DESTDIR}/etc/alternatives
+	ln -s -f /etc/alternatives/openSUSE-default.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default.xml
+	ln -sf /usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
 	# YaST2 Qt theme
 	mkdir -p $(DESTDIR)/usr/share/YaST2/theme/current
 	cp -a openSUSE/yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
@@ -166,6 +181,8 @@ install:
 	# osrelease icons
 	mkdir -p $(DESTDIR)/usr/share/icons/
 	cp -r openSUSE/hicolor $(DESTDIR)/usr/share/icons/
+	# Theme
+	cp -r openSUSE/SUSE-brand $(DESTDIR)/etc/
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
