@@ -6,7 +6,7 @@ THEME=openSUSE
 all: info openSUSE.d
 
 info:
-	echo "Make sure to have inkscape, GraphicsMagick and optipng installed"
+	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
 
 openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d osrelease.d plymouth.d wallpaper.d xfce.d yast.d
 
@@ -18,14 +18,14 @@ gfxboot.d:
 	mkdir -p ~/.fonts openSUSE/gfxboot/data-boot/ openSUSE/gfxboot/data-install
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
 	for name in back welcome on off glow; do \
-		inkscape -D -w 800 -e tmp.png raw-theme-drop/${name}.svg; \
+		rsvg-convert raw-theme-drop/${name}.svg -w 800 -a -o tmp.png; \
 		gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/${name}.jpg; \
 		rm tmp.png; \
 	done
-	inkscape -D -w 114 -e tmp.png gfxboot/text.svg
+	rsvg-convert gfxboot/text.svg -w 114 -a -o tmp.png
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-install/text.jpg
 	rm tmp.png
-	inkscape -D -w 800 -e tmp.png raw-theme-drop/back.svg
+	rsvg-convert raw-theme-drop/back.svg -w 800 -a -o tmp.png
 	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp.png openSUSE/gfxboot/data-boot/back.jpg
 	rm tmp.png
 	rm ~/.fonts/SourceSansPro-Light.ttf
@@ -67,7 +67,7 @@ CLEAN_DEPS+=icewm.d_clean
 libreoffice.d:
 	mkdir -p openSUSE/libreoffice/program
 	cp -r libreoffice/flat_logo.svg libreoffice/sofficerc libreoffice/shell openSUSE/libreoffice/program/
-	inkscape -D -e openSUSE/libreoffice/program/intro.png libreoffice/intro.svg
+	rsvg-convert libreoffice/intro.svg -o openSUSE/libreoffice/program/intro.png
 	optipng -o7 openSUSE/libreoffice/program/intro.png
 
 libreoffice.d_clean:
@@ -97,12 +97,12 @@ CLEAN_DEPS+=plymouth.d_clean
 wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
-		inkscape -D -e tmp.png raw-theme-drop/desktop-${size}.svg; \
+		rsvg-convert raw-theme-drop/desktop-${size}.svg -o tmp.png; \
 		gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/${size}.jpg; \
 		rm tmp.png; \
 	done
 	#TODO: Generate appropriately sized SVG for 5120 too
-	inkscape -D -e tmp.png -w 5120 raw-theme-drop/desktop-3840x2400.svg
+	rsvg-convert raw-theme-drop/desktop-3840x2400.svg -w 5120 -a -o tmp.png
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/contents/images/5120x3200.jpg
 	rm tmp.png
 	for size in 1600x1200 1920x1200 1920x1080; do \
@@ -111,7 +111,7 @@ wallpaper.d:
 		ln -sf openSUSE${VERSION_NO_DOT}-${size}.jpg openSUSE/wallpapers/default-${size}.jpg; \
 		ln -sf openSUSEdefault/contents/images/${size}.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-${size}.jpg; \
 	done
-	inkscape -D -e tmp.png raw-theme-drop/desktop-1920x1200.svg
+	rsvg-convert raw-theme-drop/desktop-1920x1200.svg -o tmp.png
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	rm tmp.png
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
@@ -123,7 +123,7 @@ CLEAN_DEPS+=wallpaper.d_clean
 
 xfce.d:
 	mkdir -p openSUSE/xfce
-	inkscape -D -w 350 -e openSUSE/xfce/splash.png xfce/splash.svg
+	rsvg-convert xfce/splash.svg -w 350 -a -o openSUSE/xfce/splash.png
 	optipng -o7 openSUSE/xfce/splash.png
 
 xfce.d_clean:
