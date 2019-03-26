@@ -8,7 +8,7 @@ all: info openSUSE.d
 info:
 	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
 
-openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d osrelease.d plymouth.d theme.d wallpaper.d xfce.d yast.d
+openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d osrelease.d plymouth.d wallpaper.d xfce.d yast.d
 
 openSUSE.d_clean:
 
@@ -93,17 +93,6 @@ plymouth.d_clean:
 	rm -rf openSUSE/plymouth
 
 CLEAN_DEPS+=plymouth.d_clean
-
-theme.d:
-	cat >openSUSE/SUSE-brand <<EOF
-	%{THEME}
-	VERSION = %{VERSION}
-	EOF
-
-theme.d_clean:
-	rm -f openSUSE/SUSE-brand
-
-CLEAN_DEPS+=theme.d_clean
 
 wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
