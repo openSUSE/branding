@@ -1,5 +1,4 @@
-NAME=tumbleweed
-VERSION=15.1
+VERSION=tumbleweed
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
@@ -86,8 +85,8 @@ CLEAN_DEPS+=osrelease.d_clean
 plymouth.d:
 	rm -rf openSUSE/plymouth
 	mkdir -p openSUSE/plymouth
-	cp -av boot/plymouth/theme openSUSE/plymouth/
-	optipng -o7 openSUSE/plymouth/theme/*.png
+	rsvg-convert boot/plymouth/watermark.svg -o openSUSE/plymouth/watermark.png
+	optipng -o7 openSUSE/plymouth/watermark.png
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
@@ -145,8 +144,8 @@ install:
 	install -m 0644 openSUSE/gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
 	# Alternatives for default wallpapers
 	mkdir -p ${DESTDIR}/etc/alternatives
-	ln -s -f /etc/alternatives/openSUSE-default.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default.xml
-	ln -sf /usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
+	ln -sf ${DESTDIR}/etc/alternatives/openSUSE-default.xml /usr/share/wallpapers/openSUSE-default.xml
+	ln -sf ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml /usr/share/wallpapers/openSUSE-default-dynamic.xml
 	# YaST2 Qt theme
 	mkdir -p $(DESTDIR)/usr/share/YaST2/theme/current
 	cp -a openSUSE/yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
@@ -156,7 +155,7 @@ install:
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
 	# Plymouth theme
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
-	cp -a openSUSE/plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
+	cp -a openSUSE/plymouth/* ${DESTDIR}/usr/share/plymouth/themes/spinner/
 	# IceWM theme
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
 	mkdir -p $(DESTDIR)/etc/icewm/
@@ -170,6 +169,8 @@ install:
 	# osrelease icons
 	mkdir -p $(DESTDIR)/usr/share/icons/
 	cp -r openSUSE/hicolor $(DESTDIR)/usr/share/icons/
+	# Brand file
+	cp -r SUSE-brand $(DESTDIR)/etc/
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
