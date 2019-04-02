@@ -144,8 +144,8 @@ install:
 	install -m 0644 openSUSE/gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
 	# Alternatives for default wallpapers
 	mkdir -p ${DESTDIR}/etc/alternatives
-	ln -sf ${DESTDIR}/etc/alternatives/openSUSE-default.xml /usr/share/wallpapers/openSUSE-default.xml
-	ln -sf ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml /usr/share/wallpapers/openSUSE-default-dynamic.xml
+	ln -sf /etc/alternatives/openSUSE-default.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default.xml
+	ln -sf /usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
 	# YaST2 Qt theme
 	mkdir -p $(DESTDIR)/usr/share/YaST2/theme/current
 	cp -a openSUSE/yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
