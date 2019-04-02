@@ -154,7 +154,7 @@ install:
 	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
 	# Plymouth theme
-	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
+	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
 	cp -a openSUSE/plymouth/* ${DESTDIR}/usr/share/plymouth/themes/spinner/
 	# IceWM theme
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
