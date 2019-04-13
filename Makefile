@@ -7,7 +7,7 @@ all: info openSUSE.d
 info:
 	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
 
-openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d osrelease.d plymouth.d wallpaper.d xfce.d yast.d
+openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d xfce.d yast.d
 
 openSUSE.d_clean:
 
@@ -74,25 +74,6 @@ libreoffice.d_clean:
 
 CLEAN_DEPS+=libreoffice.d_clean
 
-osrelease.d:
-	cp -pr os-release/hicolor openSUSE/hicolor
-
-osrelease.d_clean:
-	rm -rf openSUSE/hicolor
-
-CLEAN_DEPS+=osrelease.d_clean
-
-plymouth.d:
-	rm -rf openSUSE/plymouth
-	mkdir -p openSUSE/plymouth
-	rsvg-convert boot/plymouth/watermark.svg -o openSUSE/plymouth/watermark.png
-	optipng -o7 openSUSE/plymouth/watermark.png
-
-plymouth.d_clean:
-	rm -rf openSUSE/plymouth
-
-CLEAN_DEPS+=plymouth.d_clean
-
 wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
@@ -149,13 +130,14 @@ install:
 	# YaST2 Qt theme
 	mkdir -p $(DESTDIR)/usr/share/YaST2/theme/current
 	cp -a openSUSE/yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
+	ln -sf /usr/share/pixmaps/distribution-logos/light-dual-branding.svg ${DESTDIR}/usr/share/YaST2/theme/current/wizard/logo.svg
 	# Grub2 theme
 	mkdir -p $(DESTDIR)/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
 	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
 	# Plymouth theme
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
-	cp -a openSUSE/plymouth/* ${DESTDIR}/usr/share/plymouth/themes/spinner/
+	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/plymouth/themes/spinner/watermark.png
 	# IceWM theme
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
 	mkdir -p $(DESTDIR)/etc/icewm/
@@ -167,8 +149,9 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/libreoffice
 	cp -r openSUSE/libreoffice/program $(DESTDIR)/usr/share/libreoffice
 	# osrelease icons
-	mkdir -p $(DESTDIR)/usr/share/icons/
-	cp -r openSUSE/hicolor $(DESTDIR)/usr/share/icons/
+	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems
+	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/icons/hicolor/scalable/emblems/square-hicolor.svg
+	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems/square-symbolic.svg
 	# Brand file
 	cp -r SUSE-brand $(DESTDIR)/etc/
 
