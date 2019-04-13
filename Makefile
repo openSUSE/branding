@@ -135,6 +135,7 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
 	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
+	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/boot/grub2/themes/${THEME}/logo.png
 	# Plymouth theme
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
 	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/plymouth/themes/spinner/watermark.png
@@ -150,8 +151,8 @@ install:
 	cp -r openSUSE/libreoffice/program $(DESTDIR)/usr/share/libreoffice
 	# osrelease icons
 	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems
-	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/icons/hicolor/scalable/emblems/square-hicolor.svg
-	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems/square-symbolic.svg
+	ln -sf /usr/share/pixmaps/distribution-logos/square-hicolor.png ${DESTDIR}/usr/share/icons/hicolor/scalable/emblems/distributor-logo.svg
+	ln -sf /usr/share/pixmaps/distribution-logos/square-symbolic.png $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems/distributor-logo-symbolic.svg
 	# Brand file
 	cp -r SUSE-brand $(DESTDIR)/etc/
 
