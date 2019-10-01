@@ -7,7 +7,7 @@ all: info openSUSE.d
 info:
 	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
 
-openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d xfce.d yast.d
+openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d yast.d
 
 openSUSE.d_clean:
 
@@ -97,16 +97,6 @@ wallpaper.d_clean:
 
 CLEAN_DEPS+=wallpaper.d_clean
 
-xfce.d:
-	mkdir -p openSUSE/xfce
-	rsvg-convert xfce/splash.svg -w 350 -a -o openSUSE/xfce/splash.png
-	optipng -o7 openSUSE/xfce/splash.png
-
-xfce.d_clean:
-	rm -rf openSUSE/xfce
-
-CLEAN_DEPS+=xfce.d_clean
-
 yast.d:
 #	create directly the background from the 4:3 root's blank background
 	mkdir -p openSUSE/yast_wizard
@@ -144,8 +134,6 @@ install:
 	mkdir -p $(DESTDIR)/etc/icewm/
 	install -m 0644 openSUSE/icewm/theme $(DESTDIR)/etc/icewm/
 	cp -r openSUSE/icewm/themes/yast-installation/ $(DESTDIR)/usr/share/icewm/themes/
-	# Xfce splash
-	install -D openSUSE/xfce/splash.png ${DESTDIR}/usr/share/pixmaps/xfce4-splash-openSUSE.png
 	# Libreoffice branding
 	mkdir -p $(DESTDIR)/usr/share/libreoffice
 	cp -r openSUSE/libreoffice/program $(DESTDIR)/usr/share/libreoffice
