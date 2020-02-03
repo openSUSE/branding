@@ -1,4 +1,5 @@
-VERSION=tumbleweed
+NAME=leap
+VERSION=15.2
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
