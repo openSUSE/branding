@@ -19,14 +19,14 @@ gfxboot.d:
 	cp gfxboot/SourceSansPro-Light.ttf ~/.fonts
 	for name in back welcome on off glow; do \
 		rsvg-convert raw-theme-drop/$${name}.svg -w 800 -a -o tmp-$@.png; \
-		gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp-$@.png openSUSE/gfxboot/data-install/$${name}.jpg; \
+		gm convert -quality 95 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 1x1 tmp-$@.png openSUSE/gfxboot/data-install/$${name}.jpg; \
 		rm tmp-$@.png; \
 	done
 	rsvg-convert gfxboot/text.svg -w 114 -a -o tmp-$@.png
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp-$@.png openSUSE/gfxboot/data-install/text.jpg
+	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 1x1 tmp-$@.png openSUSE/gfxboot/data-install/text.jpg
 	rm tmp-$@.png
 	rsvg-convert raw-theme-drop/back.svg -w 800 -a -o tmp-$@.png
-	gm convert -quality 100 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 2x2 tmp-$@.png openSUSE/gfxboot/data-boot/back.jpg
+	gm convert -quality 95 -interlace None -colorspace YCbCr -geometry 800x600 -sampling-factor 1x1 tmp-$@.png openSUSE/gfxboot/data-boot/back.jpg
 	rm tmp-$@.png
 	rm ~/.fonts/SourceSansPro-Light.ttf
 
@@ -79,7 +79,7 @@ wallpaper.d:
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
 		rsvg-convert raw-theme-drop/desktop-$${size}.svg -o tmp-$@.png; \
-		gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp-$@.png openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.jpg; \
+		gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 1x1 tmp-$@.png openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.jpg; \
 		rm tmp-$@.png; \
 	done
 	for size in 1600x1200 1920x1200 1920x1080; do \
@@ -89,7 +89,7 @@ wallpaper.d:
 		ln -sf openSUSEdefault/contents/images/$${size}.jpg openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-$${size}.jpg; \
 	done
 	rsvg-convert raw-theme-drop/desktop-1920x1200.svg -o tmp-$@.png
-	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp-$@.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
+	gm convert -quality 95 -interlace None -colorspace YCbCr -sampling-factor 1x1 tmp-$@.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	rm tmp-$@.png
 	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
 
