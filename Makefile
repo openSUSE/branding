@@ -1,4 +1,4 @@
-VERSION=15.1
+VERSION=15.3
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.:_:g'`
 THEME=SLE
 
