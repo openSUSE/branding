@@ -164,12 +164,34 @@ fun display_password_callback (prompt, bullets)
       }
   }
 
+fun replace_new_lines(string)
+  {
+    index  = 0;
+    ret    = String("");
+    start  = 0;
+    escape = 0;
+    while(c = string.CharAt(index)) {
+      if (escape && c == "n") {
+        ret += string.SubString(start, index - 1) + "\n";
+        start = index + 1;
+        escape = 0;
+      }
+      else if (!escape && c == "\\") {
+        escape = 1;
+      }
+      index++;
+    }
+    ret += string.SubString(start, index);
+    return ret;
+  }
+
 fun display_message_callback (prompt)
   {
   
 #prompt = Image.Text(prompt, 0.71764706, 0.90588235, 0.58431373);
 # Change the text to white for better readability
-prompt = Image.Text(prompt, 1, 1, 1);
+str = replace_new_lines(prompt);
+prompt = Image.Text(str, 1, 1, 1);
 sprite_prompt.SetImage(prompt);
 #sprite_prompt.SetPosition(Window.GetX() + (Window.GetWidth() - prompt.GetWidth()) / 2, Window.GetY() + Window.GetHeight() * 0.93, 2);
 sprite_prompt.SetPosition(Window.GetX() + (Window.GetWidth() - prompt.GetWidth()) / 2, Window.GetY() + 20, 2);
