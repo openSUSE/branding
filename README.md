@@ -17,10 +17,10 @@ How to update the wallpaper in the distribution
 
 1) Create SLE.tar.gz with make
 
-Simply type 'make' to create SLE.tar.gz:
+Simply type 'make' to create SLE.tar.xz:
 
   pushd branding
-  git checkout sle-15-sp1
+  git checkout sle-15-sp3
   make
   popd
 
@@ -29,8 +29,8 @@ Simply type 'make' to create SLE.tar.gz:
 The following commands will branch the branding-SLE package, commit the new
 data and submit the changes:
 
-  osc branch SUSE:SLE-15-SP1:GA branding-SLE -c
-  cp branding/SLE.tar.gz home:*branches*/branding-SLE
+  osc branch SUSE:SLE-15-SP3:GA branding-SLE -c
+  cp branding/SLE.tar.xz home:*branches*/branding-SLE
   cd home:*branches*/branding-SLE
   osc vc
   osc ci
