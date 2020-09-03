@@ -220,6 +220,7 @@ install: # do not add requires here, this runs from generated SLE
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
 
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/${THEME}
+	cp -a plymouth/config/plymouthd.defaults ${DESTDIR}/usr/share/plymouth/
 	cp -a plymouth/theme/* ${DESTDIR}/usr/share/plymouth/themes/${THEME}
 
 #	install -d ${DESTDIR}/usr/share/kde4/apps/ksplash/Themes
