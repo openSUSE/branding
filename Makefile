@@ -169,7 +169,7 @@ gnome.d:
 	for res in ${wallpaper_resolutions} ; do \
 		w=`echo $$res | sed "s:x.*::g"` ;\
 		h=`echo $$res | sed "s:.*x::g"` ;\
-		echo "		<size width="@WIDTH@" height="@HEIGHT@">/usr/share/wallpapers/SLEdefault/contents/images/@WIDTH@x@HEIGHT@.${wallpaper_ext}</size>" | sed -e "s:@WIDTH@:$$w:g;s:@HEIGHT@:$$h:g;s:@EXT:$$res:g" >> SLE/gnome/SLE-default-static.xml ;\
+		echo "		<size width=\"@WIDTH@\" height=\"@HEIGHT@\">/usr/share/wallpapers/SLEdefault/contents/images/@WIDTH@x@HEIGHT@.${wallpaper_ext}</size>" | sed -e "s:@WIDTH@:$$w:g;s:@HEIGHT@:$$h:g;s:@EXT:$$res:g" >> SLE/gnome/SLE-default-static.xml ;\
 	done
 	cat gnome/SLE-default-static-end.xml.in >> SLE/gnome/SLE-default-static.xml
 
