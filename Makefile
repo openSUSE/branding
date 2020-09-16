@@ -223,7 +223,7 @@ check:	# do not add requires here, this runs from generated SLE
 	  done ; \
 	done
 	# Check that xml files reference all relevant files
-	for file in ${DESTDIR}/usr/share/wallpapers/SLEdefault/contents/images/*.jpg; do \
+	for file in ${DESTDIR}/usr/share/wallpapers/SLEdefault/contents/images/*.${wallpaper_ext}; do \
 	   IMG=$${file#${DESTDIR}} ; \
 	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml || { echo "$${IMG} not mentioned in SLE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
