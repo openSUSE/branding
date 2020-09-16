@@ -1,7 +1,7 @@
 VERSION=15.3
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.:_:g'`
 THEME=SLE
-wallpaper_resolutions=1280x1024 1350x1080 1400x1080 1600x1200 1920x1200 1920x1080
+wallpaper_resolutions=1280x1024 1350x1080 1400x1080 1600x1200 1920x1200 1920x1080 1024x768
 wallpaper_ext=png
 
 all: info SLE.tar.xz
