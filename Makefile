@@ -7,7 +7,7 @@ all: info openSUSE.d
 info:
 	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
 
-openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d yast.d
+openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d yast.d plymouth.d
 
 openSUSE.d_clean:
 
@@ -107,6 +107,15 @@ yast.d_clean:
 
 CLEAN_DEPS+=yast.d_clean
 
+plymouth.d:
+	mkdir -p openSUSE/plymouth
+	cp -r plymouth/config/plymouthd.defaults openSUSE/plymouth
+
+plymouth.d_clean:
+	rm -rf openSUSE/plymouth
+
+CLEAN_DEPS+=plymouth.d_clean
+
 install:
 	# Wallpapers
 	mkdir -p $(DESTDIR)/usr/share/wallpapers
@@ -128,6 +137,8 @@ install:
 	# Plymouth theme
 	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
 	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/plymouth/themes/spinner/watermark.png
+	# Plymouth default config (jsc#SLE-11637)
+	cp openSUSE/plymouth/plymouthd.defaults $(DESTDIR)/usr/share/plymouth
 	# IceWM theme
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
 	mkdir -p $(DESTDIR)/etc/icewm/
