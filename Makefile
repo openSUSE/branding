@@ -84,7 +84,9 @@ PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-54.png SLE/plymouth/theme/log
 
 PLYMOUTH_DEPS+=SLE/plymouth/theme/blank-background-43.png SLE/plymouth/theme/logo-43.png
 
-plymouth.d: ${PLYMOUTH_DEPS}
+plymouth.d: ${PLYMOUTH_DEPS} plymouth/config/plymouthd.defaults
+	mkdir -p SLE/plymouth/config
+	cp -a plymouth/config/plymouthd.defaults SLE/plymouth/config/
 
 plymouth.d_clean:
 	rm -rf SLE/plymouth
