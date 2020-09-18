@@ -109,6 +109,7 @@ wallpaper.d: defaults
 	for res in ${wallpaper_resolutions} ; do \
 		cp wallpapers/SLEdefault/contents/images/$${res}.${wallpaper_ext} SLE/wallpapers/SLEdefault/contents/images/$${res}.${wallpaper_ext} ;\
 		ln -sf SLEdefault/contents/images/$${res}.${wallpaper_ext} SLE/wallpapers/SLE-${VERSION_NO_DOT}-$${res}.${wallpaper_ext} ;\
+		cp wallpapers/SLElock/$${res}.${wallpaper_ext} SLE/wallpapers/SLEdefault/contents/images/$${res}-lockscreen.${wallpaper_ext} ;\
 	done
 	gm convert -quality 90 -geometry 400x250 wallpapers/SLEdefault/contents/images/1920x1200.${wallpaper_ext} SLE/wallpapers/SLEdefault/screenshot.${wallpaper_ext}
 
@@ -174,6 +175,13 @@ gnome.d:
 		echo "		<size width=\"@WIDTH@\" height=\"@HEIGHT@\">/usr/share/wallpapers/SLEdefault/contents/images/@WIDTH@x@HEIGHT@.${wallpaper_ext}</size>" | sed -e "s:@WIDTH@:$$w:g;s:@HEIGHT@:$$h:g;s:@EXT:$$res:g" >> SLE/gnome/SLE-default-static.xml ;\
 	done
 	cat gnome/SLE-default-static-end.xml.in >> SLE/gnome/SLE-default-static.xml
+	cat gnome/SLE-default-static-begin.xml.in >  SLE/gnome/SLE-default-static-lockscreen.xml
+	for res in ${wallpaper_resolutions} ; do \
+		w=`echo $$res | sed "s:x.*::g"` ;\
+		h=`echo $$res | sed "s:.*x::g"` ;\
+		echo "		<size width=\"@WIDTH@\" height=\"@HEIGHT@\">/usr/share/wallpapers/SLEdefault/contents/images/@WIDTH@x@HEIGHT@-lockscreen.${wallpaper_ext}</size>" | sed -e "s:@WIDTH@:$$w:g;s:@HEIGHT@:$$h:g;s:@EXT:$$res:g" >> SLE/gnome/SLE-default-static-lockscreen.xml ;\
+	done
+	cat gnome/SLE-default-static-end.xml.in >> SLE/gnome/SLE-default-static-lockscreen.xml
 
 gnome.d_clean:
 	rm -rf SLE/gnome
@@ -200,6 +208,7 @@ install: # do not add requires here, this runs from generated SLE
 	# Static wallpaper
 	install -D -m 0644 gnome/wallpaper-branding-SLE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-SLE.xml
 	install -m 0644 gnome/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml
+	install -m 0644 gnome/SLE-default-static-lockscreen.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-static-lockscreen.xml
 	## End xml files used by GNOME
 
 	install -d ${DESTDIR}/usr/share/grub2/backgrounds/${THEME} ${DESTDIR}/boot/grub2/backgrounds/${THEME}
@@ -218,7 +227,7 @@ clean: ${CLEAN_DEPS}
 
 check:	# do not add requires here, this runs from generated SLE
 	# Check that all files referenced in xml files actually exist
-	for xml in ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml ${DESTDIR}/usr/share/wallpapers/SLE-default-dynamic.xml; do \
+	for xml in ${DESTDIR}/usr/share/wallpapers/*.xml ; do \
 	  xml_basename=`basename $${xml}` ; \
 	  for file in `sed "s:<[^>]*>::g" $${xml} | grep /usr`; do \
 	      test -f ${DESTDIR}/$${file} || { echo "$${file} is mentioned in $${xml_basename} but does not exist. Please update $${xml_basename}, or contact the GNOME team for help."; exit 1 ;} ; \
@@ -227,7 +236,7 @@ check:	# do not add requires here, this runs from generated SLE
 	# Check that xml files reference all relevant files
 	for file in ${DESTDIR}/usr/share/wallpapers/SLEdefault/contents/images/*.${wallpaper_ext}; do \
 	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/SLE-default-static.xml || { echo "$${IMG} not mentioned in SLE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
+	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/*.xml || { echo "$${IMG} not mentioned in the XML files. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
 	done
 
 	## End check of GNOME-related xml files
