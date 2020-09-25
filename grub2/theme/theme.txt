@@ -44,7 +44,7 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   font = "DejaVu Sans Regular 12"
 
   text_color = "#fff"
-  fg_color = "#0D5B53"
+  fg_color = "#139448"
 
   bg_color = "#000"
   border_color = "#000"
