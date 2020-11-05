@@ -28,7 +28,7 @@ SLE.d_clean:
 
 CLEAN_DEPS+=SLE.d_clean
 
-gdm.d: gdm/custom.conf gdm/distributor.svg
+gdm.d: gdm/custom.conf gdm/distributor.svg gdm/SLE-background.png
 	mkdir -p SLE/gdm
 	cp -a gdm SLE
 
