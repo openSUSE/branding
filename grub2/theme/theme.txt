@@ -44,9 +44,9 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   font = "DejaVu Sans Regular 12"
 
   text_color = "#fff"
-  fg_color = "#139448"
+  fg_color = "#008acf"
 
-  bg_color = "#000"
+  bg_color = "#1F222B"
   border_color = "#000"
 
   # instead of the above colors, use pixmaps
