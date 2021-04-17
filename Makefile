@@ -147,10 +147,6 @@ install:
 	# Libreoffice branding
 	mkdir -p $(DESTDIR)/usr/share/libreoffice
 	cp -r openSUSE/libreoffice/program $(DESTDIR)/usr/share/libreoffice
-	# osrelease icons
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems
-	ln -sf /usr/share/pixmaps/distribution-logos/square-hicolor.svg ${DESTDIR}/usr/share/icons/hicolor/scalable/emblems/distributor-logo.svg
-	ln -sf /usr/share/pixmaps/distribution-logos/square-symbolic.svg $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems/distributor-logo-symbolic.svg
 	# Brand file
 	cp -r SUSE-brand $(DESTDIR)/etc/
 
