@@ -368,6 +368,9 @@ QMenu {
   selection-background-color: #73ba25;
   selection-color: #fff;
 }
+QMenu::item:disabled {
+  color: rgba(0, 0, 0, 60);
+}
 QGroupBox {
   border: 0px;
   margin-top: 2.5ex;
