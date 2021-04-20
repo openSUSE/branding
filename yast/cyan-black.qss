@@ -219,7 +219,6 @@ QMenu::item:disabled {
 }
 QMenu::separator {
   background: rgba(0, 255, 255, 150);
-  height: 1px;
 }
 
 QGroupBox::title {

@@ -372,6 +372,9 @@ QMenu {
 QMenu::item:disabled {
   color: rgba(0, 0, 0, 60);
 }
+QMenu::separator {
+  height: 1px;
+}
 QGroupBox {
   border: 0px;
   margin-top: 2.5ex;
