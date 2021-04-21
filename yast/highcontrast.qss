@@ -215,6 +215,10 @@ QMenu {
 
 QMenu::item:disabled { color: gray; }
 
+QMenu::separator {
+  background: gray;
+}
+
 QGroupBox::title {
   color: cyan;
 }

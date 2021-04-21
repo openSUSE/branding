@@ -214,6 +214,12 @@ QMenu {
   selection-background-color: cyan;
   selection-color: black;
 }
+QMenu::item:disabled {
+  color: rgba(0, 255, 255, 150);
+}
+QMenu::separator {
+  background: rgba(0, 255, 255, 150);
+}
 
 QGroupBox::title {
   color: cyan;
