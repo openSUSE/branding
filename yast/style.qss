@@ -8,18 +8,18 @@ color: #fff;
 }
 .current-step-name {
 color:#fff;
-  font-family:"Source Sans Pro Semibold",sans;
+  font-family:"Source Sans 3 Semibold",sans;
 }
 .done-step-name {
 color:#fff;
-font-family:"Source Sans Pro Light",sans;
+font-family:"Source Sans 3 Light",sans;
 }
 .todo-step-name {
 color:#fff;
-font-family:"Source Sans Pro Light",sans;
+font-family:"Source Sans 3 Light",sans;
 }
 .steps_heading {
-  font-family:"Source Sans Pro",sans;
+  font-family:"Source Sans 3",sans;
   color: #35b9ab;
   font-weight:bold;
 }
