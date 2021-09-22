@@ -134,9 +134,6 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
 	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
-	# Plymouth theme
-	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
-	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/plymouth/themes/spinner/watermark.png
 	# Plymouth default config (jsc#SLE-11637)
 	cp openSUSE/plymouth/plymouthd.defaults $(DESTDIR)/usr/share/plymouth
 	# IceWM theme
