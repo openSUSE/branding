@@ -109,7 +109,7 @@ CLEAN_DEPS+=yast.d_clean
 
 plymouth.d:
 	mkdir -p openSUSE/plymouth
-	cp -r plymouth/config/plymouthd.defaults openSUSE/plymouth
+	cp plymouth/config/plymouthd.defaults openSUSE/plymouth
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
@@ -134,10 +134,8 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
 	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
-	# Plymouth theme
-	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
-	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/plymouth/themes/spinner/watermark.png
 	# Plymouth default config (jsc#SLE-11637)
+	mkdir -p $(DESTDIR)/usr/share/plymouth/
 	cp openSUSE/plymouth/plymouthd.defaults $(DESTDIR)/usr/share/plymouth
 	# IceWM theme
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
