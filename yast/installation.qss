@@ -13,6 +13,11 @@ YQDialog { background: #EEEEEE; color:#333;  }
 #LogoHBox {
   background-color: #173f4f;
 }
+
+#LogoHBox QToolButton {
+  background: transparent;
+}
+
 #DialogLogo {
   background-image: url(logo.svg);
   min-width: 180px;
