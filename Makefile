@@ -1,5 +1,5 @@
 NAME=leap
-VERSION=15.4
+VERSION=15.5
 VERSION_NO_DOT=`echo ${VERSION} | sed 's:\.::g'`
 THEME=openSUSE
 
