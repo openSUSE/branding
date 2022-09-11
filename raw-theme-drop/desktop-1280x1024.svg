@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.56105174"
-     inkscape:cx="861.01033"
-     inkscape:cy="359.57533"
+     inkscape:zoom="1.1221035"
+     inkscape:cx="492.04954"
+     inkscape:cy="-25.123734"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -247,6 +247,10 @@
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="1146.1571,904.00271"
+       orientation="0,-1"
+       id="guide69" />
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -415,31 +419,8 @@
        height="10.271605"
        x="1055.6323"
        y="860.74951" />
-    <path
-       d="m 1146.1118,80 a 1.2906078,1.2906078 0 0 0 -0.8518,0.373032 l -14.1952,14.195173 a 1.2906078,1.2906078 0 0 0 0,1.82472 L 1145.26,110.5881 a 1.2906078,1.2906078 0 0 0 1.8247,0 l 14.1952,-14.195175 a 1.2906078,1.2906078 0 0 0 0,-1.82472 L 1147.0847,80.373032 A 1.2906078,1.2906078 0 0 0 1146.1118,80 Z m 0.061,3.110204 12.3705,12.370451 -12.3705,12.370435 -12.3704,-12.370435 z m -15.4856,20.112416 v 1.29046 a 1.2904701,1.2904701 0 0 0 0.3781,0.9124 l 14.1952,14.19517 a 1.2906078,1.2906078 0 0 0 1.8247,0 l 14.1952,-14.19517 a 1.2904701,1.2904701 0 0 0 0.378,-0.9124 1.2904701,1.2904701 0 0 0 0,-0.0605 v -1.22999 h -1.2905 a 1.2904701,1.2904701 0 0 0 -0.9123,0.37809 l -13.2828,13.28271 -13.2827,-13.28271 a 1.2904701,1.2904701 0 0 0 -0.9124,-0.37304 v -0.005 z"
-       color="#000000"
-       color-rendering="auto"
-       dominant-baseline="auto"
-       fill="#fbc75d"
-       image-rendering="auto"
-       shape-rendering="auto"
-       solid-color="#000000"
-       stop-color="#000000"
-       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.172063"
-       id="path64" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-       x="1165.9778"
-       y="111.85928"
-       id="text323"><tspan
-         sodipodi:role="line"
-         id="tspan321"
-         x="1165.9778"
-         y="111.85928"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff">Leap</tspan></text>
     <g
-       transform="matrix(0.1109746,0,0,0.1109746,972.06876,738.77071)"
+       transform="matrix(0.0941817,0,0,0.0941817,320.97405,711.09238)"
        fill="#73ba25"
        id="g64"
        style="fill:#ffffff">
@@ -460,5 +441,28 @@
            style="fill:#ffffff" />
       </g>
     </g>
+    <path
+       d="m 1135.4783,79.961812 a 1.250052,1.2645612 0 0 0 -0.8246,0.36426 l -13.7494,13.908738 a 1.250052,1.2645612 0 0 0 0,1.787963 l 13.7494,13.908557 a 1.250052,1.2645612 0 0 0 1.7671,0 l 13.7491,-13.908557 a 1.250052,1.2645612 0 0 0 0,-1.787963 l -13.7491,-13.908738 a 1.250052,1.2645612 0 0 0 -0.9423,-0.36426 z m 0.058,3.04745 11.9819,12.120775 -11.9819,12.120703 -11.9814,-12.120703 z m -14.9986,19.706308 v 1.26452 a 1.2499188,1.2644264 0 0 0 0.3672,0.89396 l 13.7493,13.90857 a 1.250052,1.2645612 0 0 0 1.7672,0 l 13.7491,-13.90857 a 1.2499188,1.2644264 0 0 0 0.3672,-0.89396 1.2499188,1.2644264 0 0 0 0,-0.0571 v -1.20537 h -1.2501 a 1.2499188,1.2644264 0 0 0 -0.8835,0.37187 l -12.8654,13.01466 -12.8652,-13.01466 a 1.2499188,1.2644264 0 0 0 -0.8834,-0.36424 v -0.002 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#fbc75d"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.16762"
+       id="path64-3" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642"
+       x="1165.7961"
+       y="112.75704"
+       id="text323-6"><tspan
+         sodipodi:role="line"
+         id="tspan321-7"
+         x="1165.7961"
+         y="112.75704"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642">Leap</tspan></text>
   </g>
 </svg>
