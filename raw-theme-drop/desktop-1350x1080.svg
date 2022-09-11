@@ -12,7 +12,7 @@
    viewBox="0 0 1350 1080"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="desktop-1350x1080.svg"
+   sodipodi:docname="desktop-1280x1024.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    inkscape:export-filename="/home/lkocman/Pictures/leap155/FHD_1920x1080.png"
    inkscape:export-xdpi="96"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.24"
-     inkscape:cx="1243.8602"
-     inkscape:cy="100.90935"
+     inkscape:zoom="0.39672349"
+     inkscape:cx="465.9225"
+     inkscape:cy="409.55996"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -234,38 +234,23 @@
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="1299.791,1000"
+       position="1092.7006,944"
        orientation="0,1"
+       id="guide60"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="1245,928.84556"
+       orientation="-1,0"
        id="guide72"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="394.57227,276.42559"
+       position="1146.1571,904.00271"
        orientation="0,-1"
-       id="guide95" />
-    <sodipodi:guide
-       position="394.09275,276.33045"
-       orientation="1,0"
-       id="guide109" />
-    <sodipodi:guide
-       position="1405,1054.5883"
-       orientation="-1,0"
-       id="guide111"
-       inkscape:label=""
-       inkscape:locked="false"
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="1315,1097.1252"
-       orientation="-1,0"
-       id="guide113"
-       inkscape:label=""
-       inkscape:locked="false"
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="1216.3521,955.98795"
-       orientation="0,-1"
-       id="guide73" />
+       id="guide69" />
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -275,7 +260,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -286,156 +271,156 @@
     <path
        id="rect25"
        style="fill:#173f4f;fill-opacity:1;stroke-width:0.838523"
-       d="M 0,0 H 1350 V 1079.9999 H 0 Z" />
+       d="M 0,0 H 1349.9999 V 1080.0001 H 0 Z" />
     <rect
        style="fill:#35b9ab;fill-opacity:1;stroke-width:0.735988"
        id="rect859"
-       width="354.90643"
+       width="354.9064"
        height="10.833332"
-       x="1.5258789e-06"
-       y="795.32178" />
+       x="0"
+       y="795.32184" />
     <rect
        style="fill:#173f4f;fill-opacity:1;stroke-width:0.989373"
        id="rect865"
-       width="46.429031"
+       width="46.429028"
        height="10.833332"
-       x="354.90634"
-       y="795.32178" />
+       x="354.90631"
+       y="795.32184" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke-width:1.73575"
        id="rect869"
-       width="180.08839"
+       width="180.08838"
        height="10.833332"
-       x="401.34177"
-       y="795.32178" />
+       x="401.34174"
+       y="795.32184" />
     <rect
        style="fill:#21a4df;fill-opacity:1;stroke-width:1.58601"
        id="rect873"
-       width="251.84232"
+       width="251.8423"
        height="10.833332"
-       x="581.48199"
-       y="795.32178" />
+       x="581.48193"
+       y="795.32184" />
     <rect
        style="fill:#9adcd5;fill-opacity:1;stroke-width:0.60997"
        id="rect877"
-       width="516.67542"
+       width="516.67535"
        height="10.833332"
-       x="833.32446"
-       y="795.32178" />
+       x="833.32434"
+       y="795.32184" />
     <rect
        style="fill:#35b9ab;fill-opacity:1;stroke-width:0.740127"
        id="rect859-3"
        width="358.90897"
        height="10.833332"
-       x="1.5258789e-06"
+       x="0"
        y="832.82172" />
     <rect
        style="fill:#173f4f;fill-opacity:1;stroke-width:0.989373"
        id="rect865-6"
-       width="46.429031"
+       width="46.429028"
        height="10.833332"
-       x="1065.5496"
+       x="1065.5494"
        y="832.82172" />
     <rect
        style="fill:#9adcd5;fill-opacity:1;stroke-width:1.73575"
        id="rect869-7"
-       width="180.08839"
+       width="180.08838"
        height="10.833332"
        x="868.92676"
        y="832.82172" />
     <rect
        style="fill:#35b9ab;fill-opacity:1;stroke-width:1.58863"
        id="rect873-5"
-       width="252.68011"
+       width="252.6801"
        height="10.833332"
-       x="1097.3197"
+       x="1097.3196"
        y="832.82172" />
     <rect
        style="fill:#59bbe7;fill-opacity:1;stroke-width:0.60811"
        id="rect877-3"
        width="513.53326"
        height="10.833332"
-       x="358.90894"
+       x="358.90891"
        y="832.82172" />
     <rect
        style="fill:#73ba25;fill-opacity:1;stroke-width:0.585359"
        id="rect932"
-       width="232.34648"
+       width="232.34647"
        height="10.833332"
-       x="1.5258789e-06"
-       y="870.32178" />
+       x="0"
+       y="870.32184" />
     <rect
        style="fill:#59bbe7;fill-opacity:1;stroke-width:0.689113"
        id="rect937"
        width="123.04686"
        height="10.833332"
-       x="232.34644"
-       y="870.32178" />
+       x="232.34641"
+       y="870.32184" />
     <rect
        style="fill:#173f4f;fill-opacity:1;stroke-width:0.70076"
        id="rect957"
        width="33.749996"
        height="10.833332"
        x="355.39331"
-       y="870.32178" />
+       y="870.32184" />
     <rect
        style="fill:#35b9ab;fill-opacity:1;stroke-width:3.24558"
        id="rect961"
-       width="875.3905"
+       width="875.39044"
        height="10.833332"
        x="389.14331"
-       y="870.32178" />
+       y="870.32184" />
     <rect
        style="fill:#73ba25;fill-opacity:1;stroke-width:0.770787"
        id="rect965"
        width="85.46595"
        height="10.833332"
-       x="1264.5338"
-       y="870.32178" />
+       x="1264.5337"
+       y="870.32184" />
     <rect
-       style="fill:#21a4df;fill-opacity:1;stroke-width:0.696665"
+       style="fill:#21a4df;fill-opacity:1;stroke-width:0.696664"
        id="rect976"
-       width="79.106377"
+       width="79.106369"
        height="10.833332"
-       x="1.5258789e-06"
-       y="907.82166" />
+       x="0"
+       y="907.82172" />
     <rect
        style="fill:#00a489;fill-opacity:1;stroke-width:0.614592"
        id="rect980"
        width="530.85931"
        height="10.833332"
-       x="79.065201"
-       y="907.82166" />
+       x="79.065186"
+       y="907.82172" />
     <rect
-       style="fill:#173f4f;fill-opacity:1;stroke-width:0.683034"
+       style="fill:#173f4f;fill-opacity:1;stroke-width:0.683035"
        id="rect984"
        width="127.96873"
        height="10.833332"
-       x="609.92456"
-       y="907.82166" />
+       x="609.9245"
+       y="907.82172" />
     <rect
-       style="fill:#21a4df;fill-opacity:1;stroke-width:0.50435"
+       style="fill:#21a4df;fill-opacity:1;stroke-width:0.504349"
        id="rect992"
-       width="249.60934"
+       width="249.60933"
        height="10.833332"
-       x="737.89325"
-       y="907.82166" />
+       x="737.89319"
+       y="907.82172" />
     <rect
        style="fill:#9adcd5;fill-opacity:1;stroke-width:0.511825"
        id="rect996"
-       width="125.85936"
+       width="125.85935"
        height="10.833332"
-       x="987.50269"
-       y="907.82166" />
+       x="987.50262"
+       y="907.82172" />
     <rect
        style="fill:#35b9ab;fill-opacity:1;stroke-width:0.716446"
        id="rect998"
-       width="236.63785"
+       width="236.63783"
        height="10.833332"
        x="1113.3622"
-       y="907.82166" />
+       y="907.82172" />
     <g
-       transform="matrix(0.0941817,0,0,0.0941817,339.81363,752.93429)"
+       transform="matrix(0.09933226,0,0,0.09933226,338.5273,749.98021)"
        fill="#73ba25"
        id="g64"
        style="fill:#ffffff">
@@ -457,7 +442,7 @@
       </g>
     </g>
     <path
-       d="m 1205.2587,84 a 1.250052,1.2645612 0 0 0 -0.8246,0.36426 l -13.7494,13.908738 a 1.250052,1.2645612 0 0 0 0,1.787962 l 13.7494,13.90856 a 1.250052,1.2645612 0 0 0 1.7671,0 l 13.7491,-13.90856 a 1.250052,1.2645612 0 0 0 0,-1.787962 L 1206.2012,84.36426 A 1.250052,1.2645612 0 0 0 1205.2589,84 Z m 0.058,3.04745 11.9819,12.120775 -11.9819,12.120705 -11.9814,-12.120705 z m -14.9986,19.70631 v 1.26452 a 1.2499188,1.2644264 0 0 0 0.3672,0.89396 l 13.7493,13.90857 a 1.250052,1.2645612 0 0 0 1.7672,0 l 13.7491,-13.90857 a 1.2499188,1.2644264 0 0 0 0.3672,-0.89396 1.2499188,1.2644264 0 0 0 0,-0.0571 v -1.20537 h -1.2501 a 1.2499188,1.2644264 0 0 0 -0.8835,0.37187 l -12.8654,13.01466 -12.8652,-13.01466 a 1.2499188,1.2644264 0 0 0 -0.8834,-0.36424 v -0.002 z"
+       d="m 1197.5747,84.33472 a 1.3184142,1.3337168 0 0 0 -0.8697,0.38418 l -14.5013,14.669371 a 1.3184142,1.3337168 0 0 0 0,1.885739 l 14.5013,14.66918 a 1.3184142,1.3337168 0 0 0 1.8638,0 l 14.501,-14.66918 a 1.3184142,1.3337168 0 0 0 0,-1.885739 L 1198.5688,84.7189 a 1.3184142,1.3337168 0 0 0 -0.9939,-0.38418 z m 0.061,3.214107 12.6371,12.783633 -12.6371,12.78355 -12.6366,-12.78355 z m -15.8189,20.783993 v 1.33368 a 1.3182737,1.3335747 0 0 0 0.3873,0.94284 l 14.5012,14.6692 a 1.3184142,1.3337168 0 0 0 1.8639,0 l 14.501,-14.6692 a 1.3182737,1.3335747 0 0 0 0.3873,-0.94284 1.3182737,1.3335747 0 0 0 0,-0.0602 v -1.27129 h -1.3185 a 1.3182737,1.3335747 0 0 0 -0.9318,0.39221 l -13.569,13.7264 -13.5687,-13.7264 a 1.3182737,1.3335747 0 0 0 -0.9318,-0.38416 v -0.002 z"
        color="#000000"
        color-rendering="auto"
        dominant-baseline="auto"
@@ -466,18 +451,18 @@
        shape-rendering="auto"
        solid-color="#000000"
        stop-color="#000000"
-       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.16762"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.176787"
        id="path64-3" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642;"
-       x="1235.5765"
-       y="116.79522"
+       style="font-style:normal;font-weight:normal;font-size:42.4582px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.06146"
+       x="1229.5505"
+       y="118.92344"
        id="text323-6"><tspan
          sodipodi:role="line"
          id="tspan321-7"
-         x="1235.5765"
-         y="116.79522"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642;">Leap</tspan></text>
+         x="1229.5505"
+         y="118.92344"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.06146">Leap</tspan></text>
   </g>
 </svg>
