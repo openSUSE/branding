@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-89.315681"
-     inkscape:cy="811.7887"
+     inkscape:zoom="1.979899"
+     inkscape:cx="1772.7778"
+     inkscape:cy="185.10024"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -256,7 +256,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -438,7 +438,7 @@
       </g>
     </g>
     <path
-       d="m 1785.4246,79.897021 a 1.2906078,1.2906078 0 0 0 -0.8518,0.373032 l -14.1952,14.195171 a 1.2906078,1.2906078 0 0 0 0,1.824725 l 14.1952,14.195171 a 1.2906078,1.2906078 0 0 0 1.8247,0 l 14.1952,-14.195171 a 1.2906078,1.2906078 0 0 0 0,-1.824725 l -14.1952,-14.195171 a 1.2906078,1.2906078 0 0 0 -0.9729,-0.373032 z m 0.061,3.110205 12.3705,12.370447 -12.3705,12.370447 -12.3704,-12.370447 z M 1770,103.11964 v 1.29047 a 1.2904701,1.2904701 0 0 0 0.3781,0.91239 l 14.1952,14.19517 a 1.2906078,1.2906078 0 0 0 1.8247,0 l 14.1952,-14.19517 a 1.2904701,1.2904701 0 0 0 0.378,-0.91239 1.2904701,1.2904701 0 0 0 0,-0.0605 v -1.22998 h -1.2905 a 1.2904701,1.2904701 0 0 0 -0.9123,0.37808 l -13.2828,13.28272 -13.2827,-13.28272 a 1.2904701,1.2904701 0 0 0 -0.9124,-0.37304 v -0.005 z"
+       d="m 1774.5177,80 a 1.250052,1.2645612 0 0 0 -0.8246,0.36426 l -13.7494,13.908738 a 1.250052,1.2645612 0 0 0 0,1.787963 l 13.7494,13.908559 a 1.250052,1.2645612 0 0 0 1.7671,0 l 13.7491,-13.908559 a 1.250052,1.2645612 0 0 0 0,-1.787963 L 1775.4602,80.36426 A 1.250052,1.2645612 0 0 0 1774.5179,80 Z m 0.058,3.04745 11.9819,12.120775 -11.9819,12.120705 -11.9814,-12.120705 z m -14.9986,19.70631 v 1.26452 a 1.2499188,1.2644264 0 0 0 0.3672,0.89396 l 13.7493,13.90857 a 1.250052,1.2645612 0 0 0 1.7672,0 l 13.7491,-13.90857 a 1.2499188,1.2644264 0 0 0 0.3672,-0.89396 1.2499188,1.2644264 0 0 0 0,-0.0571 v -1.20537 h -1.2501 a 1.2499188,1.2644264 0 0 0 -0.8835,0.37187 l -12.8654,13.01466 -12.8652,-13.01466 a 1.2499188,1.2644264 0 0 0 -0.8834,-0.36424 v -0.002 z"
        color="#000000"
        color-rendering="auto"
        dominant-baseline="auto"
@@ -447,18 +447,18 @@
        shape-rendering="auto"
        solid-color="#000000"
        stop-color="#000000"
-       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.172063"
-       id="path64" />
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.16762"
+       id="path64-3" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-       x="1805.2905"
-       y="111.75632"
-       id="text323"><tspan
+       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642;"
+       x="1804.8356"
+       y="112.79522"
+       id="text323-6"><tspan
          sodipodi:role="line"
-         id="tspan321"
-         x="1805.2905"
-         y="111.75632"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff">Leap</tspan></text>
+         id="tspan321-7"
+         x="1804.8356"
+         y="112.79522"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642;">Leap</tspan></text>
   </g>
 </svg>
