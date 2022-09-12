@@ -12,7 +12,7 @@
    viewBox="0 0 1920.0001 1199.9999"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="desktop-1920x1200.svg"
+   sodipodi:docname="desktop-5120x3200.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    inkscape:export-filename="/home/lkocman/Pictures/leap155/FHD_1920x1080.png"
    inkscape:export-xdpi="96"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="1566.5956"
-     inkscape:cy="106.76568"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="3164.5258"
+     inkscape:cy="824.1481"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -262,7 +262,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -499,7 +499,7 @@
        shape-rendering="auto"
        solid-color="#000000"
        stop-color="#000000"
-       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#fbc75d;stroke-width:0.173185;fill-opacity:1"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.173185"
        id="path64-3" />
     <text
        xml:space="preserve"
