@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.56105174"
-     inkscape:cx="498.84737"
-     inkscape:cy="480.13715"
+     inkscape:zoom="1.586894"
+     inkscape:cx="1300.0127"
+     inkscape:cy="195.56668"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text323-6"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -456,16 +456,14 @@
        stop-color="#000000"
        style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.16762"
        id="path64-3" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642"
-       x="1484.6533"
-       y="112.79522"
-       id="text323-6"><tspan
-         sodipodi:role="line"
-         id="tspan321-7"
-         x="1484.6533"
-         y="112.79522"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642">Leap</tspan></text>
+    <g
+       aria-label="Leap"
+       id="text323-6"
+       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642">
+      <path
+         id="path5338"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642"
+         d="M 1488.2773 86.386719 L 1488.2773 112.79492 L 1503.1719 112.79492 L 1503.1719 109.9375 L 1491.6172 109.9375 L 1491.6172 86.386719 L 1488.2773 86.386719 z M 1514.3633 92.748047 C 1509.8948 92.748047 1505.5859 96.651917 1505.5859 103.05273 C 1505.5859 109.45354 1509.7334 113.27734 1514.9668 113.27734 C 1517.6237 113.27734 1519.7174 112.35257 1521.4082 111.26562 L 1520.2402 109.0918 C 1518.7909 110.01771 1517.2209 110.62109 1515.3691 110.62109 C 1511.6252 110.62109 1509.0893 107.9648 1508.8477 103.81836 L 1522.0527 103.81836 C 1522.1337 103.33528 1522.1719 102.61014 1522.1719 101.92578 C 1522.1719 96.330101 1519.3551 92.748047 1514.3633 92.748047 z M 1533.7656 92.748047 C 1530.6256 92.748047 1527.8897 94.115758 1526.0781 95.283203 L 1527.3652 97.578125 C 1528.895 96.531451 1530.9487 95.484375 1533.2031 95.484375 C 1536.4236 95.484375 1537.2285 97.900565 1537.2285 100.39648 C 1528.8954 101.32238 1525.2324 103.45545 1525.2324 107.72266 C 1525.2324 111.22499 1527.6884 113.27734 1530.9492 113.27734 C 1533.4048 113.27734 1535.5779 111.9907 1537.4297 110.46094 L 1537.5508 110.46094 L 1537.832 112.79492 L 1540.5703 112.79492 L 1540.5703 100.79883 C 1540.5703 95.927771 1538.5562 92.748047 1533.7656 92.748047 z M 1556.1094 92.748047 C 1553.8148 92.748047 1551.6404 93.994877 1549.8691 95.484375 L 1549.748 95.484375 L 1549.4668 93.230469 L 1546.7285 93.230469 L 1546.7285 121.04688 L 1550.0293 121.04688 L 1550.0293 114.44531 L 1549.9492 111.02344 C 1551.7608 112.43243 1553.5732 113.27734 1555.3848 113.27734 C 1559.8533 113.27734 1563.8379 109.37283 1563.8379 102.73047 C 1563.8379 96.651712 1561.1415 92.748047 1556.1094 92.748047 z M 1514.4434 95.363281 C 1517.5029 95.363281 1519.2734 97.498203 1519.2734 101.44336 L 1508.8066 101.44336 C 1509.2091 97.578716 1511.706 95.363281 1514.4434 95.363281 z M 1555.2637 95.525391 C 1558.9673 95.525391 1560.416 98.423007 1560.416 102.73047 C 1560.416 107.56128 1558.0408 110.5 1554.8203 110.5 C 1553.5321 110.5 1551.8006 109.93676 1550.0293 108.44727 L 1550.0293 98.181641 C 1551.9617 96.450603 1553.6132 95.525391 1555.2637 95.525391 z M 1537.2285 102.57031 L 1537.2285 108.00391 C 1535.3365 109.69469 1533.8062 110.62109 1531.9141 110.62109 C 1529.9818 110.62109 1528.4531 109.69458 1528.4531 107.48047 C 1528.4531 104.98455 1530.7069 103.37544 1537.2285 102.57031 z " />
+    </g>
   </g>
 </svg>
