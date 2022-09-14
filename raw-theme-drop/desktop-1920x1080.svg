@@ -30,7 +30,7 @@
      inkscape:cx="1772.7778"
      inkscape:cy="185.10024"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text323-6"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -256,7 +256,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -449,16 +449,14 @@
        stop-color="#000000"
        style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.16762"
        id="path64-3" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642;"
-       x="1804.8356"
-       y="112.79522"
-       id="text323-6"><tspan
-         sodipodi:role="line"
-         id="tspan321-7"
-         x="1804.8356"
-         y="112.79522"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642;">Leap</tspan></text>
+    <g
+       aria-label="Leap"
+       id="text323-6"
+       style="font-style:normal;font-weight:normal;font-size:40.2567px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00642">
+      <path
+         id="path5298"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.00642"
+         d="M 1808.459 86.386719 L 1808.459 112.79492 L 1823.3535 112.79492 L 1823.3535 109.9375 L 1811.8008 109.9375 L 1811.8008 86.386719 L 1808.459 86.386719 z M 1834.5449 92.748047 C 1830.0764 92.748047 1825.7695 96.651917 1825.7695 103.05273 C 1825.7695 109.45354 1829.915 113.27734 1835.1484 113.27734 C 1837.8053 113.27734 1839.899 112.35257 1841.5898 111.26562 L 1840.4219 109.0918 C 1838.9727 110.01771 1837.4026 110.62109 1835.5508 110.62109 C 1831.8069 110.62109 1829.2708 107.9648 1829.0293 103.81836 L 1842.2344 103.81836 C 1842.3154 103.33528 1842.3555 102.61014 1842.3555 101.92578 C 1842.3555 96.330101 1839.5367 92.748047 1834.5449 92.748047 z M 1853.9492 92.748047 C 1850.8092 92.748047 1848.0713 94.115758 1846.2598 95.283203 L 1847.5488 97.578125 C 1849.0785 96.531451 1851.1304 95.484375 1853.3848 95.484375 C 1856.6053 95.484375 1857.4102 97.900565 1857.4102 100.39648 C 1849.077 101.32238 1845.4141 103.45545 1845.4141 107.72266 C 1845.4141 111.22499 1847.8701 113.27734 1851.1309 113.27734 C 1853.5866 113.27734 1855.7594 111.9907 1857.6113 110.46094 L 1857.7324 110.46094 L 1858.0156 112.79492 L 1860.752 112.79492 L 1860.752 100.79883 C 1860.752 95.927771 1858.7397 92.748047 1853.9492 92.748047 z M 1876.291 92.748047 C 1873.9964 92.748047 1871.8221 93.994877 1870.0508 95.484375 L 1869.9297 95.484375 L 1869.6484 93.230469 L 1866.9102 93.230469 L 1866.9121 121.04688 L 1870.2129 121.04688 L 1870.2129 114.44531 L 1870.1309 111.02344 C 1871.9424 112.43243 1873.7549 113.27734 1875.5664 113.27734 C 1880.0349 113.27734 1884.0195 109.37283 1884.0195 102.73047 C 1884.0195 96.651712 1881.3231 92.748047 1876.291 92.748047 z M 1834.625 95.363281 C 1837.6845 95.363281 1839.457 97.498203 1839.457 101.44336 L 1828.9902 101.44336 C 1829.3928 97.578716 1831.8875 95.363281 1834.625 95.363281 z M 1875.4453 95.525391 C 1879.1489 95.525391 1880.5996 98.423007 1880.5996 102.73047 C 1880.5996 107.56128 1878.2245 110.5 1875.0039 110.5 C 1873.7157 110.5 1871.9842 109.93676 1870.2129 108.44727 L 1870.2129 98.181641 C 1872.1452 96.450603 1873.7947 95.525391 1875.4453 95.525391 z M 1857.4102 102.57031 L 1857.4102 108.00391 C 1855.5181 109.69469 1853.9898 110.62109 1852.0977 110.62109 C 1850.1654 110.62109 1848.6348 109.69458 1848.6348 107.48047 C 1848.6348 104.98455 1850.8886 103.37544 1857.4102 102.57031 z " />
+    </g>
   </g>
 </svg>

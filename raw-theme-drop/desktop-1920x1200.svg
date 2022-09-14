@@ -12,7 +12,7 @@
    viewBox="0 0 1920.0001 1199.9999"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="desktop-5120x3200.svg"
+   sodipodi:docname="desktop-1920x1200.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    inkscape:export-filename="/home/lkocman/Pictures/leap155/FHD_1920x1080.png"
    inkscape:export-xdpi="96"
@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.1767767"
-     inkscape:cx="3164.5258"
-     inkscape:cy="824.1481"
+     inkscape:zoom="4.0000001"
+     inkscape:cx="1766.1125"
+     inkscape:cy="114.42574"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text323-6"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -262,7 +262,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -501,16 +501,14 @@
        stop-color="#000000"
        style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.173185"
        id="path64-3" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:41.5931px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.03983"
-       x="1804.8549"
-       y="123.50903"
-       id="text323-6"><tspan
-         sodipodi:role="line"
-         id="tspan321-7"
-         x="1804.8549"
-         y="123.50903"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.03983">Leap</tspan></text>
+    <g
+       aria-label="Leap"
+       id="text323-6"
+       style="font-style:normal;font-weight:normal;font-size:41.5931px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.03983">
+      <path
+         id="path5328"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:1.03983"
+         d="M 1808.5977 96.224609 L 1808.5977 123.50977 L 1823.9883 123.50977 L 1823.9883 120.55664 L 1812.0508 120.55664 L 1812.0508 96.224609 L 1808.5977 96.224609 z M 1835.5508 102.79492 C 1830.934 102.79492 1826.4824 106.83006 1826.4824 113.44336 C 1826.4824 120.05667 1830.7667 124.00781 1836.1738 124.00781 C 1838.9189 124.00781 1841.0832 123.05074 1842.8301 121.92773 L 1841.623 119.68164 C 1840.1256 120.63828 1838.5031 121.26367 1836.5898 121.26367 C 1832.7217 121.26367 1830.1011 118.51847 1829.8516 114.23438 L 1843.4941 114.23438 C 1843.5771 113.73525 1843.6191 112.98638 1843.6191 112.2793 C 1843.6191 106.49785 1840.7083 102.79492 1835.5508 102.79492 z M 1855.5977 102.79492 C 1852.3534 102.79492 1849.526 104.20982 1847.6543 105.41602 L 1848.9844 107.78711 C 1850.5649 106.70569 1852.6864 105.62305 1855.0156 105.62305 C 1858.343 105.62305 1859.1758 108.12045 1859.1758 110.69922 C 1850.566 111.65586 1846.7812 113.85871 1846.7812 118.26758 C 1846.7812 121.88618 1849.3184 124.00781 1852.6875 124.00781 C 1855.2247 124.00781 1857.4695 122.67624 1859.3828 121.0957 L 1859.5078 121.0957 L 1859.7988 123.50977 L 1862.627 123.50977 L 1862.627 111.11523 C 1862.627 106.08246 1860.5473 102.79492 1855.5977 102.79492 z M 1878.6836 102.79492 C 1876.3127 102.79492 1874.0664 104.0841 1872.2363 105.62305 L 1872.1113 105.62305 L 1871.8203 103.29492 L 1868.9922 103.29492 L 1868.9922 132.03516 L 1872.4023 132.03516 L 1872.4023 125.21484 L 1872.3184 121.67969 C 1874.1901 123.13545 1876.0619 124.00781 1877.9336 124.00781 C 1882.5504 124.00781 1886.668 119.97419 1886.668 113.11133 C 1886.668 106.83077 1883.8827 102.79492 1878.6836 102.79492 z M 1835.6348 105.5 C 1838.7959 105.5 1840.625 107.70317 1840.625 111.7793 L 1829.8105 111.7793 C 1830.2264 107.78636 1832.8065 105.5 1835.6348 105.5 z M 1877.8086 105.66602 C 1881.6352 105.66602 1883.1328 108.66087 1883.1328 113.11133 C 1883.1328 118.1025 1880.679 121.13867 1877.3516 121.13867 C 1876.0206 121.13867 1874.2324 120.55652 1872.4023 119.01758 L 1872.4023 108.41016 C 1874.3988 106.62165 1876.1033 105.66602 1877.8086 105.66602 z M 1859.1758 112.94531 L 1859.1758 118.55859 C 1857.2209 120.3055 1855.6404 121.26367 1853.6855 121.26367 C 1851.689 121.26367 1850.1074 120.30715 1850.1074 118.01953 C 1850.1074 115.44076 1852.4377 113.77717 1859.1758 112.94531 z " />
+    </g>
   </g>
 </svg>

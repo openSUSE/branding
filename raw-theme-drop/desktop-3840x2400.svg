@@ -12,7 +12,7 @@
    viewBox="0 0 3840.0001 2399.9999"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="desktop-5120x3200.svg"
+   sodipodi:docname="desktop-3840x2400.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    inkscape:export-filename="/home/lkocman/Pictures/leap155/FHD_1920x1080.png"
    inkscape:export-xdpi="96"
@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.1767767"
-     inkscape:cx="3164.5258"
-     inkscape:cy="824.1481"
+     inkscape:zoom="1"
+     inkscape:cx="3697.9105"
+     inkscape:cy="539.60727"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text323-6"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -262,7 +262,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -501,16 +501,14 @@
        stop-color="#000000"
        style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.34637"
        id="path64-3" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:83.1862px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.07966"
-       x="3609.7097"
-       y="247.01807"
-       id="text323-6"><tspan
-         sodipodi:role="line"
-         id="tspan321-7"
-         x="3609.7097"
-         y="247.01807"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:2.07966">Leap</tspan></text>
+    <g
+       aria-label="Leap"
+       id="text323-6"
+       style="font-style:normal;font-weight:normal;font-size:83.1862px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.07966">
+      <path
+         id="path5318"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:2.07966"
+         d="M 3617.1973 192.44727 L 3617.1973 247.01758 L 3647.9746 247.01758 L 3647.9746 241.11133 L 3624.1016 241.11133 L 3624.1016 192.44727 L 3617.1973 192.44727 z M 3671.1016 205.5918 C 3661.8679 205.5918 3652.9668 213.66011 3652.9668 226.88672 C 3652.9668 240.11332 3661.5354 248.01562 3672.3496 248.01562 C 3677.8399 248.01562 3682.1644 246.10345 3685.6582 243.85742 L 3683.2461 239.36523 C 3680.2514 241.27851 3677.0081 242.52539 3673.1816 242.52539 C 3665.4452 242.52539 3660.2042 237.03498 3659.7051 228.4668 L 3686.9902 228.4668 C 3687.1565 227.46857 3687.2402 225.97276 3687.2402 224.55859 C 3687.2402 212.99571 3681.4167 205.5918 3671.1016 205.5918 z M 3711.1973 205.5918 C 3704.7088 205.5918 3699.052 208.41963 3695.3086 210.83203 L 3697.9707 215.57422 C 3701.1318 213.41138 3705.3748 211.24805 3710.0332 211.24805 C 3716.6881 211.24805 3718.3516 216.23893 3718.3516 221.39648 C 3701.1321 223.30976 3693.5605 227.71938 3693.5605 236.53711 C 3693.5605 243.77431 3698.6349 248.01562 3705.373 248.01562 C 3710.4473 248.01562 3714.9411 245.35443 3718.7676 242.19336 L 3719.0156 242.19336 L 3719.5996 247.01758 L 3725.2559 247.01758 L 3725.2559 222.22852 C 3725.2559 212.16299 3721.0964 205.5918 3711.1973 205.5918 z M 3757.3652 205.5918 C 3752.6236 205.5918 3748.1309 208.17016 3744.4707 211.24805 L 3744.2227 211.24805 L 3743.6387 206.58984 L 3737.9824 206.58984 L 3737.9824 264.07031 L 3744.8047 264.07031 L 3744.8047 250.42773 L 3744.6387 243.35742 C 3748.3821 246.26894 3752.1238 248.01562 3755.8672 248.01562 C 3765.1008 248.01562 3773.3379 239.94642 3773.3379 226.2207 C 3773.3379 213.65958 3767.7635 205.5918 3757.3652 205.5918 z M 3671.2676 210.99805 C 3677.5897 210.99805 3681.25 215.40634 3681.25 223.55859 L 3659.6211 223.55859 C 3660.453 215.57271 3665.6109 210.99805 3671.2676 210.99805 z M 3755.6191 211.33203 C 3763.2722 211.33203 3766.2656 217.31977 3766.2656 226.2207 C 3766.2656 236.20304 3761.358 242.27734 3754.7031 242.27734 C 3752.0412 242.27734 3748.4649 241.11109 3744.8047 238.0332 L 3744.8047 216.82227 C 3748.7976 213.24527 3752.2085 211.33203 3755.6191 211.33203 z M 3718.3516 225.88867 L 3718.3516 237.11914 C 3714.4419 240.61296 3711.2809 242.52539 3707.3711 242.52539 C 3703.3782 242.52539 3700.2168 240.61235 3700.2168 236.03711 C 3700.2168 230.87956 3704.8754 227.55239 3718.3516 225.88867 z " />
+    </g>
   </g>
 </svg>

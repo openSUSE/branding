@@ -30,7 +30,7 @@
      inkscape:cx="4259.2364"
      inkscape:cy="444.20773"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text323-6"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -501,16 +501,14 @@
        stop-color="#000000"
        style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;stroke-width:0.461826"
        id="path64-3" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:110.915px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.77288;"
-       x="4812.9463"
-       y="329.35742"
-       id="text323-6"><tspan
-         sodipodi:role="line"
-         id="tspan321-7"
-         x="4812.9463"
-         y="329.35742"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:2.77288;">Leap</tspan></text>
+    <g
+       aria-label="Leap"
+       id="text323-6"
+       style="font-style:normal;font-weight:normal;font-size:110.915px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.77288">
+      <path
+         id="path5308"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;stroke-width:2.77288"
+         d="M 4822.9277 256.59766 L 4822.9277 329.35742 L 4863.9668 329.35742 L 4863.9668 321.48242 L 4832.1348 321.48242 L 4832.1348 256.59766 L 4822.9277 256.59766 z M 4894.8008 274.12109 C 4882.4892 274.12109 4870.623 284.88015 4870.623 302.51562 C 4870.623 320.15112 4882.0458 330.6875 4896.4648 330.6875 C 4903.7852 330.6875 4909.5525 328.13729 4914.2109 325.14258 L 4910.9961 319.15234 C 4907.0031 321.70339 4902.6763 323.36719 4897.5742 323.36719 C 4887.2591 323.36719 4880.271 316.04729 4879.6055 304.62305 L 4915.9863 304.62305 C 4916.2082 303.29207 4916.3184 301.29572 4916.3184 299.41016 C 4916.3184 283.99298 4908.5542 274.12109 4894.8008 274.12109 z M 4948.2637 274.12109 C 4939.6124 274.12109 4932.0692 277.89284 4927.0781 281.10938 L 4930.627 287.43164 C 4934.8418 284.54785 4940.4978 281.66406 4946.709 281.66406 C 4955.5822 281.66406 4957.8008 288.31858 4957.8008 295.19531 C 4934.8414 297.74636 4924.748 303.62582 4924.748 315.38281 C 4924.748 325.03242 4931.5139 330.6875 4940.498 330.6875 C 4947.2638 330.6875 4953.2534 327.1386 4958.3555 322.92383 L 4958.6895 322.92383 L 4959.4648 329.35742 L 4967.0078 329.35742 L 4967.0078 296.30469 C 4967.0078 282.88398 4961.4626 274.12109 4948.2637 274.12109 z M 5009.8203 274.12109 C 5003.4982 274.12109 4997.5092 277.56021 4992.6289 281.66406 L 4992.2969 281.66406 L 4991.5195 275.45312 L 4983.9766 275.45312 L 4983.9766 352.0957 L 4993.0723 352.0957 L 4993.0723 333.9043 L 4992.8496 324.47656 C 4997.8408 328.35859 5002.8331 330.6875 5007.8242 330.6875 C 5020.1358 330.6875 5031.1152 319.92989 5031.1152 301.62891 C 5031.1152 284.88075 5023.6847 274.12109 5009.8203 274.12109 z M 4895.0234 281.33203 C 4903.4529 281.33203 4908.334 287.21041 4908.334 298.08008 L 4879.4961 298.08008 C 4880.6052 287.43224 4887.4812 281.33203 4895.0234 281.33203 z M 5007.4922 281.77539 C 5017.6964 281.77539 5021.6875 289.76101 5021.6875 301.62891 C 5021.6875 314.93871 5015.1447 323.03516 5006.2715 323.03516 C 5002.7223 323.03516 4997.9525 321.48277 4993.0723 317.37891 L 4993.0723 289.0957 C 4998.3962 284.32635 5002.9447 281.77539 5007.4922 281.77539 z M 4957.8008 301.18555 L 4957.8008 316.1582 C 4952.5878 320.81663 4948.3732 323.36719 4943.1602 323.36719 C 4937.8363 323.36719 4933.6211 320.81713 4933.6211 314.7168 C 4933.6211 307.84007 4939.8326 303.40385 4957.8008 301.18555 z " />
+    </g>
   </g>
 </svg>
