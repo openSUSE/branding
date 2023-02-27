@@ -5,7 +5,7 @@ THEME=openSUSE
 all: info openSUSE.d
 
 info:
-	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
+	echo "Make sure to have rsvg-view and GraphicsMagick installed"
 
 openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d yast.d plymouth.d
 
@@ -67,7 +67,6 @@ libreoffice.d:
 	mkdir -p openSUSE/libreoffice/program
 	cp -r libreoffice/flat_logo.svg libreoffice/sofficerc libreoffice/shell openSUSE/libreoffice/program/
 	rsvg-convert libreoffice/intro.svg -o openSUSE/libreoffice/program/intro.png
-	optipng -o7 openSUSE/libreoffice/program/intro.png
 
 libreoffice.d_clean:
 	rm -rf openSUSE/libreoffice
