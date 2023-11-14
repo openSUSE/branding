@@ -89,7 +89,7 @@ wallpaper.d:
 	rsvg-convert raw-theme-drop/desktop-1920x1200.svg -o tmp-$@.png
 	gm convert -quality 100 -interlace None -colorspace YCbCr -sampling-factor 2x2 tmp-$@.png openSUSE/wallpapers/openSUSEdefault/screenshot.jpg
 	rm tmp-$@.png
-	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
+	cp -p kde-workspace/metadata.json openSUSE/wallpapers/openSUSEdefault/metadata.json
 
 wallpaper.d_clean:
 	rm -rf openSUSE/wallpapers
