@@ -76,20 +76,25 @@ libreoffice.d_clean:
 CLEAN_DEPS+=libreoffice.d_clean
 
 wallpaper.d:
+# We're now using single 4096x4096 wallpaper which is then scaled/zoomed-in as needed
+# https://github.com/openSUSE/branding/issues/161
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
-	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
-		rsvg-convert raw-theme-drop/desktop-$${size}.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.png; \
-		optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.png; \
-	done
-	for size in 1600x1200 1920x1200 1920x1080; do \
-		cp wallpapers/default-$${size}.png.desktop openSUSE/wallpapers; \
-		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-$${size}.png.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-$${size}.png.desktop; \
-		ln -sf openSUSE${VERSION_NO_DOT}-$${size}.png openSUSE/wallpapers/default-$${size}.png; \
-		ln -sf openSUSEdefault/contents/images/$${size}.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-$${size}.png; \
-	done
-	rsvg-convert raw-theme-drop/desktop-1920x1200.svg -o openSUSE/wallpapers/openSUSEdefault/screenshot.png
-	optipng -o5 openSUSE/wallpapers/openSUSEdefault/screenshot.png
-	cp -p kde-workspace/metadata.desktop openSUSE/wallpapers/openSUSEdefault/metadata.desktop
+	rsvg-convert raw-theme-drop/default-dark.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
+	rsvg-convert raw-theme-drop/default.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
+	optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
+	optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
+
+	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE.png.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}.png.desktop
+	ln -sf openSUSE${VERSION_NO_DOT}.png openSUSE/wallpapers/default.png
+	ln -sf openSUSE${VERSION_NO_DOT}-dark.png openSUSE/wallpapers/default-dark.png
+	ln -sf openSUSEdefault/contents/images/default.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}.png
+	ln -sf openSUSEdefault/contents/images/default-dark.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-dark.png
+
+	cp -p kde-workspace/metadata.json openSUSE/wallpapers/openSUSEdefault/metadata.json
+
+# Screenshot.png has 1600x1200 resolution (50:50 blend of dark and light variants)
+	cp -p raw-theme-drop/screenshot.png openSUSE/wallpapers/openSUSEdefault/screenshot.png
+	cp -p kde-workspace/metadata.json openSUSE/wallpapers/openSUSEdefault/metadata.json
 
 wallpaper.d_clean:
 	rm -rf openSUSE/wallpapers
@@ -108,7 +113,7 @@ CLEAN_DEPS+=yast.d_clean
 
 plymouth.d:
 	mkdir -p openSUSE/plymouth
-	cp -r plymouth/config/plymouthd.defaults openSUSE/plymouth
+	cp plymouth/config/plymouthd.defaults openSUSE/plymouth
 
 plymouth.d_clean:
 	rm -rf openSUSE/plymouth
@@ -133,10 +138,8 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/grub2/themes/${THEME} ${DESTDIR}/boot/grub2/themes/${THEME}
 	cp -a openSUSE/grub2/theme/* ${DESTDIR}/usr/share/grub2/themes/${THEME}
 	perl -pi -e "s/THEME_NAME/${THEME}/" ${DESTDIR}/usr/share/grub2/themes/${THEME}/activate-theme
-	# Plymouth theme
-	mkdir -p ${DESTDIR}/usr/share/plymouth/themes/spinner/
-	ln -sf /usr/share/pixmaps/distribution-logos/light-inline.png ${DESTDIR}/usr/share/plymouth/themes/spinner/watermark.png
 	# Plymouth default config (jsc#SLE-11637)
+	mkdir -p $(DESTDIR)/usr/share/plymouth/
 	cp openSUSE/plymouth/plymouthd.defaults $(DESTDIR)/usr/share/plymouth
 	# IceWM theme
 	mkdir -p $(DESTDIR)/usr/share/icewm/themes/
@@ -146,11 +149,6 @@ install:
 	# Libreoffice branding
 	mkdir -p $(DESTDIR)/usr/share/libreoffice
 	cp -r openSUSE/libreoffice/program $(DESTDIR)/usr/share/libreoffice
-	# osrelease icons
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems
-	ln -sf /usr/share/pixmaps/distribution-logos/square-hicolor.svg ${DESTDIR}/usr/share/icons/hicolor/scalable/emblems/distributor-logo.svg
-	ln -sf /usr/share/pixmaps/distribution-logos/square-symbolic.svg $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems/distributor-logo-symbolic.svg
-	ln -sf /usr/share/pixmaps/distribution-logos/apple-touch-icon.png $(DESTDIR)/usr/share/icons/hicolor/symbolic/emblems/apple-touch-icon.png
 	# Brand file
 	cp -r SUSE-brand $(DESTDIR)/etc/
 
