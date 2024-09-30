@@ -1,16 +1,13 @@
-<background>
- <static>
-  <!-- 100 days -->
-  <duration>8640000.0</duration>
-  <file>
-   <size width="1280" height="1024">/usr/share/wallpapers/openSUSEdefault/contents/images/1280x1024.png</size>
-   <size width="1600" height="1200">/usr/share/wallpapers/openSUSEdefault/contents/images/1600x1200.png</size>
-   <size width="1920" height="1080">/usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.png</size>
-   <size width="1920" height="1200">/usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.png</size>
-   <size width="1350" height="1080">/usr/share/wallpapers/openSUSEdefault/contents/images/1350x1080.png</size>
-   <size width="1440" height="1080">/usr/share/wallpapers/openSUSEdefault/contents/images/1440x1080.png</size>
-   <size width="3840" height="2400">/usr/share/wallpapers/openSUSEdefault/contents/images/3840x2400.png</size>
-   <size width="5120" height="3200">/usr/share/wallpapers/openSUSEdefault/contents/images/5120x3200.png</size>
-  </file>
- </static>
-</background>
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Default Background</name>
+    <filename>/usr/share/wallpapers/openSUSEdefault/contents/images/default.png</filename>
+    <filename-dark>/usr/share/wallpapers/openSUSEdefault/contents/images/default-dark.png</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#63bbb2ff</pcolor>
+    <scolor>#0c2a27ff</scolor>
+  </wallpaper>
+</wallpapers>

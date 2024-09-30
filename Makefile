@@ -5,7 +5,7 @@ THEME=openSUSE
 all: info openSUSE.d
 
 info:
-	echo "Make sure to have rsvg-view and GraphicsMagick installed"
+	echo "Make sure to have rsvg-view, GraphicsMagick and optipng installed"
 
 openSUSE.d: gfxboot.d gnome.d grub2.d icewm.d libreoffice.d wallpaper.d yast.d plymouth.d
 
@@ -67,6 +67,7 @@ libreoffice.d:
 	mkdir -p openSUSE/libreoffice/program
 	cp -r libreoffice/flat_logo.svg libreoffice/sofficerc libreoffice/shell openSUSE/libreoffice/program/
 	rsvg-convert libreoffice/intro.svg -o openSUSE/libreoffice/program/intro.png
+	optipng -o7 openSUSE/libreoffice/program/intro.png
 
 libreoffice.d_clean:
 	rm -rf openSUSE/libreoffice
@@ -74,18 +75,18 @@ libreoffice.d_clean:
 CLEAN_DEPS+=libreoffice.d_clean
 
 wallpaper.d:
+# We're now using single 4096x4096 wallpaper which is then scaled/zoomed-in as needed
+# https://github.com/openSUSE/branding/issues/161
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
-	for size in 5120x3200 3840x2400 1280x1024 1600x1200 1920x1080 1920x1200 1350x1080 1440x1080; do \
-		rsvg-convert raw-theme-drop/desktop-$${size}.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.png; \
-		optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/$${size}.png; \
-	done
-	for size in 1600x1200 1920x1200 1920x1080; do \
-		cp wallpapers/default-$${size}.png.desktop openSUSE/wallpapers; \
-		sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE-$${size}.png.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-$${size}.png.desktop; \
-		ln -sf openSUSE${VERSION_NO_DOT}-$${size}.png openSUSE/wallpapers/default-$${size}.png; \
-		ln -sf openSUSEdefault/contents/images/$${size}.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-$${size}.png; \
-	done
-	ln -s contents/images/1920x1200.png openSUSE/wallpapers/openSUSEdefault/screenshot.png
+	rsvg-convert raw-theme-drop/default-dark.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
+	rsvg-convert raw-theme-drop/default.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
+	optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
+	optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
+
+	cp -p kde-workspace/metadata.json openSUSE/wallpapers/openSUSEdefault/metadata.json
+
+# Screenshot.png has 1600x1200 resolution (50:50 blend of dark and light variants)
+	cp -p raw-theme-drop/screenshot.png openSUSE/wallpapers/openSUSEdefault/screenshot.png
 	cp -p kde-workspace/metadata.json openSUSE/wallpapers/openSUSEdefault/metadata.json
 
 wallpaper.d_clean:
