@@ -56,3 +56,11 @@ terminal-font: "Gnu Unifont Mono Regular 16"
   text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
++ label {
+  color = "white"
+  top = 100%-35
+  width = 100%
+  align = "center"
+  text = "@KEYMAP_SHORT@"
+  font = "DejaVu Sans Regular 12"
+}
