@@ -76,6 +76,10 @@ CLEAN_DEPS+=libreoffice.d_clean
 wallpaper.d:
 # We're now using single 4096x4096 wallpaper which is then scaled/zoomed-in as needed
 # https://github.com/openSUSE/branding/issues/161
+# !!! WARNING !!! THE DEFAULT WALLPAPER PATH IN GNOME IS SET IN THESE TWO FILES
+# https://build.opensuse.org/projects/openSUSE:Factory/packages/glib2-branding/files/glib2-branding.gschema.override.in?expand=1
+# https://build.opensuse.org/projects/openSUSE:Factory/packages/glib2-branding/files/glib2-branding.spec?expand=1
+
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	rsvg-convert raw-theme-drop/default-dark.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
 	rsvg-convert raw-theme-drop/default.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
