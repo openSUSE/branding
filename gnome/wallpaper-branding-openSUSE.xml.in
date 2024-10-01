@@ -2,8 +2,12 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
 	<wallpaper deleted="false">
-		<filename>/usr/share/wallpapers/openSUSE-default-@GNOME_STATIC_DYNAMIC@.xml</filename>
+		<filename>/usr/share/wallpapers/openSUSEdefault/contents/images/default.png</filename>
+	    <filename-dark>/usr/share/wallpapers/openSUSEdefault/contents/images/default-dark.png</filename-dark>
 		<options>zoom</options>
 		<name>openSUSE Tumbleweed</name>
+		<shade_type>solid</shade_type>
+		<pcolor>#63bbb2ff</pcolor>
+		<scolor>#0c2a27ff</scolor>
 	</wallpaper>
 </wallpapers>
