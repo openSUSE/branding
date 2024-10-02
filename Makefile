@@ -37,8 +37,7 @@ CLEAN_DEPS+=gfxboot.d_clean
 
 gnome.d:
 	mkdir -p openSUSE/gnome
-	sed "s:@VERSION@:${VERSION}:g;s:@GNOME_STATIC_DYNAMIC@:static:g" gnome/wallpaper-branding-openSUSE.xml.in > openSUSE/gnome/wallpaper-branding-openSUSE.xml
-	cp gnome/openSUSE-default-static.xml openSUSE/gnome/openSUSE-default-static.xml
+	cp gnome/wallpaper-branding-openSUSE.xml.in  openSUSE/gnome/wallpaper-branding-openSUSE.xml
 
 gnome.d_clean:
 	rm -rf openSUSE/gnome
@@ -78,19 +77,23 @@ CLEAN_DEPS+=libreoffice.d_clean
 wallpaper.d:
 # We're now using single 4096x4096 wallpaper which is then scaled/zoomed-in as needed
 # https://github.com/openSUSE/branding/issues/161
+# !!! WARNING !!! THE DEFAULT WALLPAPER PATH IN GNOME IS SET IN THESE TWO FILES
+# https://build.opensuse.org/projects/openSUSE:Factory/packages/glib2-branding/files/glib2-branding.gschema.override.in?expand=1
+# https://build.opensuse.org/projects/openSUSE:Factory/packages/glib2-branding/files/glib2-branding.spec?expand=1
+
 	mkdir -p openSUSE/wallpapers openSUSE/wallpapers/openSUSEdefault/contents/images
 	rsvg-convert raw-theme-drop/default-dark.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
 	rsvg-convert raw-theme-drop/default.svg -o openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
 	optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/default-dark.png
 	optipng -o5 openSUSE/wallpapers/openSUSEdefault/contents/images/default.png
 
+	cp wallpapers/default.png.desktop openSUSE/wallpapers
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE.png.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}.png.desktop
 	ln -sf openSUSE${VERSION_NO_DOT}.png openSUSE/wallpapers/default.png
-	ln -sf openSUSE${VERSION_NO_DOT}-dark.png openSUSE/wallpapers/default-dark.png
 	ln -sf openSUSEdefault/contents/images/default.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}.png
-	ln -sf openSUSEdefault/contents/images/default-dark.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-dark.png
-
-	cp -p kde-workspace/metadata.json openSUSE/wallpapers/openSUSEdefault/metadata.json
+# This path is used as a default by Xfce and KDE, let's temporarily keep it
+# until they implement both dark and light themes
+	ln -sf default.png openSUSE/wallpapers/openSUSEdefault/contents/images/1920x1200.png
 
 # Screenshot.png has 1600x1200 resolution (50:50 blend of dark and light variants)
 	cp -p raw-theme-drop/screenshot.png openSUSE/wallpapers/openSUSEdefault/screenshot.png
@@ -125,11 +128,6 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/wallpapers
 	cp -a openSUSE/wallpapers/* ${DESTDIR}/usr/share/wallpapers
 	install -D -m 0644 openSUSE/gnome/wallpaper-branding-openSUSE.xml ${DESTDIR}/usr/share/gnome-background-properties/wallpaper-branding-openSUSE.xml
-	install -m 0644 openSUSE/gnome/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml
-	# Alternatives for default wallpapers
-	mkdir -p ${DESTDIR}/etc/alternatives
-	ln -sf /etc/alternatives/openSUSE-default.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default.xml
-	ln -sf /usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml
 	# YaST2 Qt theme
 	mkdir -p $(DESTDIR)/usr/share/YaST2/theme/current
 	cp -a openSUSE/yast_wizard ${DESTDIR}/usr/share/YaST2/theme/current/wizard
@@ -154,22 +152,3 @@ install:
 
 clean: ${CLEAN_DEPS}
 	rmdir openSUSE
-
-check: # do not add requires here, this runs from generated openSUSE
-	## Check GNOME-related xml files have contant that make sense
-	# Check that the link for the dynamic wallpaper is valid
-	LINK_TARGET=`readlink --canonicalize ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml` ; \
-	test -f "$${LINK_TARGET}" || { echo "The link for openSUSE-default-dynamic.xml is invalid. Please fix it, or contact the GNOME team for help."; exit 1 ;}
-	# Check that all files referenced in xml files actually exist
-	for xml in ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml ${DESTDIR}/usr/share/wallpapers/openSUSE-default-dynamic.xml; do \
-	  xml_basename=`basename $${xml}` ; \
-	  for file in `sed "s:<[^>]*>::g" $${xml} | grep /usr`; do \
-	      test -f ${DESTDIR}/$${file} || { echo "$${file} is mentioned in $${xml_basename} but does not exist. Please update $${xml_basename}, or contact the GNOME team for help."; exit 1 ;} ; \
-	  done ; \
-	done
-	# Check that xml files reference all relevant files
-	for file in ${DESTDIR}/usr/share/wallpapers/openSUSEdefault/contents/images/*.jpg; do \
-	   IMG=$${file#${DESTDIR}} ; \
-	   grep -q $${IMG} ${DESTDIR}/usr/share/wallpapers/openSUSE-default-static.xml || { echo "$${IMG} not mentioned in openSUSE-default-static.xml. Please add it there, or contact the GNOME team for help." ; exit 1 ;} ; \
-	done
-
