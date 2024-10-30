@@ -88,7 +88,9 @@ wallpaper.d:
 
 	cp wallpapers/default.png.desktop openSUSE/wallpapers
 	sed "s:@VERSION@:${VERSION}:g;s:@VERSION_NO_DOT@:${VERSION_NO_DOT}:g" wallpapers/openSUSE.png.desktop.in > openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}.png.desktop
+	ln -sf openSUSE${VERSION_NO_DOT}-dark.png openSUSE/wallpapers/default-dark.png
 	ln -sf openSUSE${VERSION_NO_DOT}.png openSUSE/wallpapers/default.png
+	ln -sf openSUSEdefault/contents/images/default-dark.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}-dark.png
 	ln -sf openSUSEdefault/contents/images/default.png openSUSE/wallpapers/openSUSE${VERSION_NO_DOT}.png
 # This path is used as a default by Xfce and KDE, let's temporarily keep it
 # until they implement both dark and light themes
