@@ -19,7 +19,7 @@ SLE.tar.xz_clean:
 CLEAN_DEPS+=SLE.tar.xz_clean
 
 #SLE.d: gfxboot.d grub2.d kdelibs.d wallpaper.d ksplashx.d ksplash-qml.d kdm.d gnome.d susegreeter.d xfce.d plymouth.d
-SLE.d: gfxboot.d grub2.d wallpaper.d plymouth.d gdm.d gnome.d 
+SLE.d: gfxboot.d grub2.d wallpaper.d plymouth.d gdm.d gnome.d distribution-logos.d
 	cp Makefile LICENSE SLE
 
 SLE.d_clean:
@@ -27,6 +27,10 @@ SLE.d_clean:
 	rm -rf SLE/LICENSE
 
 CLEAN_DEPS+=SLE.d_clean
+
+distribution-logos.d: distribution-logos/*.svg distribution-logos/*.png distribution-logos/*.ico
+	mkdir -p SLE/distribution-logos
+	cp -a distribution-logos SLE
 
 gdm.d: gdm/custom.conf gdm/distributor.svg gdm/SLE-background.png
 	mkdir -p SLE/gdm
